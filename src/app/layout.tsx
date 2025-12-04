@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
-import { BookmarkProvider } from '@/context/bookmark-context';
 import Header from '@/components/header';
+import { ClientProviders } from '@/components/client-providers';
 
 export const metadata: Metadata = {
   title: 'Jargon Decoder',
@@ -25,13 +25,13 @@ export default function RootLayout({
         />
       </head>
       <body className="font-body antialiased">
-        <BookmarkProvider>
+        <ClientProviders>
           <div className="relative flex min-h-screen w-full flex-col">
             <Header />
             <main className="flex-1">{children}</main>
           </div>
           <Toaster />
-        </BookmarkProvider>
+        </ClientProviders>
       </body>
     </html>
   );
