@@ -534,7 +534,7 @@ export const terms: Term[] = [
     example: 'The corporate firewall uses an allowlist, only permitting traffic to pre-approved websites and services.',
   },
   {
-id: 'alpha-channel',
+    id: 'alpha-channel',
     term: 'Alpha Channel',
     slug: 'alpha-channel',
     definition: 'An extra component of a color value that represents the degree of transparency or opacity of that color.',
@@ -3057,7 +3057,7 @@ id: 'alpha-channel',
     id: 'bi',
     term: 'BI (Business Intelligence)',
     slug: 'bi',
-definition: 'The use of software and services to turn data into actionable insights that inform an organization\'s business decisions.',
+    definition: 'The use of software and services to turn data into actionable insights that inform an organization\'s business decisions.',
     example: 'The company uses a BI tool to analyze sales data and identify trends.',
   },
   {
@@ -3379,7 +3379,7 @@ definition: 'The use of software and services to turn data into actionable insig
     id: 'binary-parser',
     term: 'Binary Parser',
     slug: 'binary-parser',
-definition: 'A program or library that can read and interpret data from a binary format.',
+    definition: 'A program or library that can read and interpret data from a binary format.',
     example: 'He wrote a binary parser to extract the metadata from the image file.'
   },
   {
@@ -5169,7 +5169,8 @@ definition: 'A program or library that can read and interpret data from a binary
   },
   {
     id: 'block-scheduler',
-slug: 'block-scheduler',
+    term: 'Block Scheduler',
+    slug: 'block-scheduler',
     definition: 'A component in an operating system that manages the order of I/O requests to a block device.',
     example: 'The Linux kernel has several different block schedulers to choose from.'
   },
