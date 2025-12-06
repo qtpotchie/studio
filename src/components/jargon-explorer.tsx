@@ -1,52 +1,43 @@
 "use client";
 
-import { useState, useMemo, FormEvent } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import type { Term } from '@/lib/data';
 import { Input } from '@/components/ui/input';
 import { Search } from 'lucide-react';
 import TermCard from '@/components/term-card';
-import { Button } from '@/components/ui/button';
 import { useSearchHistory } from '@/context/search-history-context';
+import { useDebounce } from '@/hooks/use-debounce';
 
 export default function JargonExplorer({ terms }: { terms: Term[] }) {
   const [searchQuery, setSearchQuery] = useState('');
-  const [filterQuery, setFilterQuery] = useState('');
+  const debouncedSearchQuery = useDebounce(searchQuery, 300);
   const { addSearchQuery } = useSearchHistory();
 
-  const handleSearchSubmit = (e: FormEvent) => {
-    e.preventDefault();
-    setFilterQuery(searchQuery);
-    if (searchQuery.trim()) {
-      addSearchQuery(searchQuery);
-    }
-  };
-
   const filteredTerms = useMemo(() => {
-    if (!filterQuery) {
-      return terms;
-    }
     return terms.filter((term) =>
-      term.term.toLowerCase().includes(filterQuery.toLowerCase())
+      term.term.toLowerCase().includes(debouncedSearchQuery.toLowerCase())
     );
-  }, [terms, filterQuery]);
+  }, [terms, debouncedSearchQuery]);
+
+  useEffect(() => {
+    if (debouncedSearchQuery.trim()) {
+      addSearchQuery(debouncedSearchQuery);
+    }
+  }, [debouncedSearchQuery]); // addSearchQuery was removed as it's a stable function from context
 
   return (
     <div className="space-y-8">
       <div className="max-w-xl mx-auto">
-        <form
-          className="relative flex items-center gap-2"
-          onSubmit={handleSearchSubmit}
-        >
+        <div className="relative">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
           <Input
             type="search"
             placeholder="Search for a term..."
-            className="pl-10 text-lg flex-1"
+            className="pl-10 text-lg"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />
-          <Button type="submit">Search</Button>
-        </form>
+        </div>
       </div>
 
       {filteredTerms.length > 0 ? (
@@ -57,7 +48,7 @@ export default function JargonExplorer({ terms }: { terms: Term[] }) {
         </div>
       ) : (
         <div className="text-center py-16 text-muted-foreground">
-          <p>No terms found for &quot;{filterQuery}&quot;.</p>
+          <p>No terms found for &quot;{debouncedSearchQuery}&quot;.</p>
         </div>
       )}
     </div>
