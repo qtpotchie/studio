@@ -1,32 +1,25 @@
 "use client";
 
-import { useState, useMemo, FormEvent, useEffect } from 'react';
+import { useState, useMemo, FormEvent } from 'react';
 import type { Term } from '@/lib/data';
 import { Input } from '@/components/ui/input';
 import { Search } from 'lucide-react';
 import TermCard from '@/components/term-card';
 import { Button } from '@/components/ui/button';
 import { useSearchHistory } from '@/context/search-history-context';
-import { useDebounce } from '@/hooks/use-debounce';
 
 export default function JargonExplorer({ terms }: { terms: Term[] }) {
   const [searchQuery, setSearchQuery] = useState('');
   const [filterQuery, setFilterQuery] = useState('');
   const { addSearchQuery } = useSearchHistory();
 
-  const debouncedSearch = useDebounce(searchQuery, 300);
-
   const handleSearchSubmit = (e: FormEvent) => {
     e.preventDefault();
     setFilterQuery(searchQuery);
-    if (searchQuery) {
+    if (searchQuery.trim()) {
       addSearchQuery(searchQuery);
     }
   };
-
-  useEffect(() => {
-    setFilterQuery(debouncedSearch);
-  }, [debouncedSearch]);
 
   const filteredTerms = useMemo(() => {
     if (!filterQuery) {
@@ -64,7 +57,7 @@ export default function JargonExplorer({ terms }: { terms: Term[] }) {
         </div>
       ) : (
         <div className="text-center py-16 text-muted-foreground">
-          <p>No terms found. Try a different search or filter.</p>
+          <p>No terms found for &quot;{filterQuery}&quot;.</p>
         </div>
       )}
     </div>
