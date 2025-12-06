@@ -6,8 +6,6 @@ import { Separator } from '@/components/ui/separator';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
-import Image from 'next/image';
 
 export async function generateStaticParams() {
   return terms.map((term) => ({
@@ -21,8 +19,6 @@ export default function TermPage({ params }: { params: { slug: string } }) {
   if (!term) {
     notFound();
   }
-  
-  const placeholderImage = PlaceHolderImages.find(p => p.id === term.id);
 
   return (
     <div className="max-w-4xl mx-auto py-8 px-4">
@@ -49,18 +45,6 @@ export default function TermPage({ params }: { params: { slug: string } }) {
           <Separator />
           <div>
             <h3 className="text-2xl font-semibold mb-3 text-primary">Example</h3>
-            {placeholderImage && (
-              <div className="my-4 rounded-lg overflow-hidden border">
-                <Image
-                  src={placeholderImage.imageUrl}
-                  alt={placeholderImage.description}
-                  width={600}
-                  height={400}
-                  className="w-full"
-                  data-ai-hint={placeholderImage.imageHint}
-                />
-              </div>
-            )}
             <blockquote className="border-l-4 border-primary/50 pl-6 italic text-muted-foreground">
               {term.example}
             </blockquote>
