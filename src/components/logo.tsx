@@ -10,32 +10,25 @@ const Logo = ({ className }: { className?: string }) => (
     xmlns="http://www.w3.org/2000/svg"
     aria-label="TechTermz Logo"
   >
-    <path 
-      d="M4 19.5C4 18.5 4 17.5 4 16C4 12 7.5 11 12 11C16.5 11 20 12 20 16C20 17.5 20 18.5 20 19.5M4 19.5C4 20.5 4 21.5 4 22H20V19.5M4 19.5V4H20V19.5" 
-      stroke="hsl(var(--foreground))" 
-      strokeWidth="1.5" 
-      strokeLinecap="round" 
+    <path
+      d="M4 19.5C4 18.5 4 17.5 4 16C4 12 7.5 11 12 11C16.5 11 20 12 20 16C20 17.5 20 18.5 20 19.5M4 19.5C4 20.5 4 21.5 4 22H20V19.5M4 19.5V4H20V19.5"
+      stroke="hsl(var(--foreground))"
+      strokeWidth="1.5"
+      strokeLinecap="round"
       strokeLinejoin="round"
     />
-    <path 
-      d="M9 13H11" 
-      stroke="hsl(var(--primary))" 
-      strokeWidth="1.5" 
-      strokeLinecap="round" 
+    <path
+      d="M8 14L10 16L8 18"
+      stroke="hsl(var(--primary))"
+      strokeWidth="1.5"
+      strokeLinecap="round"
       strokeLinejoin="round"
     />
-    <path 
-      d="M10 13V17" 
-      stroke="hsl(var(--primary))" 
-      strokeWidth="1.5" 
-      strokeLinecap="round" 
-      strokeLinejoin="round"
-    />
-    <path 
-      d="M13 13H15L13 17H15" 
-      stroke="hsl(var(--primary))" 
-      strokeWidth="1.5" 
-      strokeLinecap="round" 
+    <path
+      d="M12 18H16"
+      stroke="hsl(var(--primary))"
+      strokeWidth="1.5"
+      strokeLinecap="round"
       strokeLinejoin="round"
     />
   </svg>
