@@ -9,11 +9,8 @@ import { Button } from '@/components/ui/button';
 import { useSearchHistory } from '@/context/search-history-context';
 import { useDebounce } from '@/hooks/use-debounce';
 
-const ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
-
 export default function JargonExplorer({ terms }: { terms: Term[] }) {
   const [searchQuery, setSearchQuery] = useState('');
-  const [activeLetter, setActiveLetter] = useState<string | null>(null);
   const [filterQuery, setFilterQuery] = useState('');
   const { addSearchQuery } = useSearchHistory();
 
@@ -22,7 +19,7 @@ export default function JargonExplorer({ terms }: { terms: Term[] }) {
   const handleSearchSubmit = (e: FormEvent) => {
     e.preventDefault();
     setFilterQuery(searchQuery);
-    if(searchQuery) {
+    if (searchQuery) {
       addSearchQuery(searchQuery);
     }
   };
@@ -31,30 +28,14 @@ export default function JargonExplorer({ terms }: { terms: Term[] }) {
     setFilterQuery(debouncedSearch);
   }, [debouncedSearch]);
 
-
   const filteredTerms = useMemo(() => {
-    let results = terms;
-
-    if (activeLetter) {
-      results = results.filter((term) =>
-        term.term.toUpperCase().startsWith(activeLetter)
-      );
+    if (!filterQuery) {
+      return terms;
     }
-
-    if (filterQuery) {
-      results = results.filter((term) =>
-        term.term.toLowerCase().includes(filterQuery.toLowerCase())
-      );
-    }
-    
-    return results;
-  }, [terms, filterQuery, activeLetter]);
-  
-  const handleLetterClick = (letter: string | null) => {
-    setActiveLetter(letter);
-    setSearchQuery('');
-    setFilterQuery('');
-  }
+    return terms.filter((term) =>
+      term.term.toLowerCase().includes(filterQuery.toLowerCase())
+    );
+  }, [terms, filterQuery]);
 
   return (
     <div className="space-y-8">
@@ -73,27 +54,6 @@ export default function JargonExplorer({ terms }: { terms: Term[] }) {
           />
           <Button type="submit">Search</Button>
         </form>
-      </div>
-
-      <div className="flex flex-wrap justify-center gap-1.5 md:gap-2">
-        <Button
-          variant={activeLetter === null ? 'default' : 'outline'}
-          size="sm"
-          onClick={() => handleLetterClick(null)}
-        >
-          All
-        </Button>
-        {ALPHABET.map((letter) => (
-          <Button
-            key={letter}
-            variant={activeLetter === letter ? 'default' : 'outline'}
-            size="sm"
-            className="w-9"
-            onClick={() => handleLetterClick(letter)}
-          >
-            {letter}
-          </Button>
-        ))}
       </div>
 
       {filteredTerms.length > 0 ? (
