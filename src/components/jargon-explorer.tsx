@@ -1,17 +1,28 @@
 "use client";
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect, useCallback } from 'react';
 import type { Term } from '@/lib/data';
 import { Input } from '@/components/ui/input';
 import { Search } from 'lucide-react';
 import TermCard from '@/components/term-card';
 import { Button } from '@/components/ui/button';
+import { useSearchHistory } from '@/context/search-history-context';
+import { useDebounce } from '@/hooks/use-debounce';
 
 const ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 
 export default function JargonExplorer({ terms }: { terms: Term[] }) {
   const [searchQuery, setSearchQuery] = useState('');
   const [activeLetter, setActiveLetter] = useState<string | null>(null);
+  const { addSearchQuery } = useSearchHistory();
+  
+  const debouncedSearchQuery = useDebounce(searchQuery, 300);
+
+  useEffect(() => {
+    if (debouncedSearchQuery) {
+      addSearchQuery(debouncedSearchQuery);
+    }
+  }, [debouncedSearchQuery, addSearchQuery]);
 
   const filteredTerms = useMemo(() => {
     return terms

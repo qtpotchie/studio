@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Logo from './logo';
 import { Button } from './ui/button';
-import { Bookmark } from 'lucide-react';
+import { Bookmark, History } from 'lucide-react';
 
 export default function Header() {
   return (
@@ -13,8 +13,13 @@ export default function Header() {
             <span className="font-bold">TechTermz</span>
           </Link>
         </div>
-        <div className="flex flex-1 items-center justify-end">
+        <div className="flex flex-1 items-center justify-end space-x-2">
           <nav className="flex items-center">
+            <Button asChild variant="ghost" size="icon">
+              <Link href="/history" aria-label="View Search History">
+                <History className="h-5 w-5" />
+              </Link>
+            </Button>
             <Button asChild variant="ghost" size="icon">
               <Link href="/bookmarks" aria-label="View Bookmarks">
                 <Bookmark className="h-5 w-5" />
