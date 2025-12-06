@@ -2809,6 +2809,20 @@ export const terms: Term[] = [
     example: 'The manager reviewed the weekly BI report to track the team\'s key performance indicators.',
   },
   {
+    id: 'binaryheap',
+    term: 'Binary Heap',
+    slug: 'binaryheap',
+    definition: 'A tree-based data structure that satisfies the heap property: in a min heap, for any given node C, if P is a parent node of C, then the key (the value) of P is less than or equal to the key of C.',
+    example: 'A priority queue is often implemented using a binary heap because it allows for efficient retrieval of the minimum or maximum element.'
+  },
+  {
+    id: 'binaryprotocol',
+    term: 'Binary Protocol',
+    slug: 'binaryprotocol',
+    definition: 'A communication protocol that uses a binary format for message encoding, which is generally more efficient in terms of size and parsing speed than text-based protocols like JSON or XML.',
+    example: 'gRPC uses a binary protocol called Protocol Buffers for high-performance communication between microservices.'
+  },
+  {
     id: 'bindvariable',
     term: 'Bind Variable',
     slug: 'bindvariable',
@@ -2940,13 +2954,6 @@ export const terms: Term[] = [
     slug: 'byteboundary',
     definition: 'A specific memory address that is a multiple of a certain power of two. Aligning data to byte boundaries can improve performance.',
     example: 'For optimal performance, the data structure was aligned to an 8-byte boundary.',
-  },
-  {
-    id: 'big-data',
-    term: 'Big Data',
-    slug: 'big-data',
-    definition: 'Extremely large and complex datasets that traditional data-processing application software is inadequate to deal with. It is characterized by the three Vs: volume, velocity, and variety.',
-    example: 'Social media companies analyze big data to understand user behavior and serve targeted ads.',
   },
   {
     id: 'backhaul',
@@ -3409,13 +3416,6 @@ export const terms: Term[] = [
     slug: 'binary-operation',
     definition: 'An operation that takes two operands, such as addition or subtraction. Also refers to bitwise operations on binary numbers.',
     example: 'The CPU\'s arithmetic logic unit (ALU) is responsible for performing binary operations.'
-  },
-  {
-    id: 'binary-packet',
-    term: 'Binary Packet',
-    slug: 'binary-packet',
-    definition: 'A network packet whose payload is composed of binary data rather than plain text.',
-    example: 'The gRPC protocol uses binary packets for efficient communication between services.'
   },
   {
     id: 'binary-parser',
@@ -4117,6 +4117,951 @@ export const terms: Term[] = [
     definition: 'A non-standard term, possibly for a tool or process that adds metadata (tags) at the bit level of a file.',
     example: 'The custom forensics tool acted as a bit tagger, marking suspicious sections of the binary file.'
   },
+  {
+    id: 'bittimer',
+    term: 'Bit Timer',
+    slug: 'bittimer',
+    definition: 'A hardware timer in a communication interface that controls the timing for sampling or transmitting individual bits.',
+    example: 'The CAN bus controller uses a bit timer to synchronize communication with other nodes on the network.'
+  },
+  {
+    id: 'bittokenmap',
+    term: 'Bit Token Map',
+    slug: 'bittokenmap',
+    definition: 'A non-standard term, likely referring to a data structure that maps binary tokens to specific values or actions.',
+    example: 'The custom protocol used a bit token map to interpret the meaning of different command sequences.'
+  },
+  {
+    id: 'bittools',
+    term: 'Bit Tools',
+    slug: 'bittools',
+    definition: 'A collection of software utilities designed for low-level manipulation and analysis of binary data.',
+    example: 'The reverse engineer used a suite of bit tools to analyze the malware\'s executable file.'
+  },
+  {
+    id: 'bittrace',
+    term: 'Bit Trace',
+    slug: 'bittrace',
+    definition: 'A detailed log or visualization of the flow of bits in a digital system, often used for debugging hardware or low-level protocols.',
+    example: 'Using a logic analyzer, the engineer captured a bit trace of the SPI communication to find the source of the error.'
+  },
+  {
+    id: 'bittracker',
+    term: 'Bit Tracker',
+    slug: 'bittracker',
+    definition: 'A non-standard term, possibly referring to a system that tracks the state or flow of individual bits for analysis or debugging.',
+    example: 'The simulation software included a bit tracker to monitor for data corruption in the signal processing pipeline.'
+  },
+  {
+    id: 'bittransport',
+    term: 'Bit Transport',
+    slug: 'bittransport',
+    definition: 'The process of moving bits from one point to another, referring to the physical layer of data transmission.',
+    example: 'Fiber optic cables provide a reliable medium for high-speed bit transport.'
+  },
+  {
+    id: 'bittreenode',
+    term: 'Bit Tree Node',
+    slug: 'bittreenode',
+    definition: 'A node in a tree data structure where each branching decision is based on a single bit, such as in a binary trie or radix tree.',
+    example: 'The routing table was implemented as a tree of bit tree nodes for efficient IP address lookups.'
+  },
+  {
+    id: 'bittrigger',
+    term: 'Bit Trigger',
+    slug: 'bittrigger',
+    definition: 'A trigger in a debugging or monitoring tool that activates when a specific bit or pattern of bits is detected.',
+    example: 'He set a bit trigger on the logic analyzer to capture data only when the error flag was set.'
+  },
+  {
+    id: 'bìttunnel',
+    term: 'Bit Tunnel',
+    slug: 'bìttunnel',
+    definition: 'A non-standard or slang term for a communication channel that transmits raw binary data, often encapsulating another protocol.',
+    example: 'They created a simple bit tunnel over a serial line to send proprietary sensor data.'
+  },
+  {
+    id: 'bittype',
+    term: 'Bit Type',
+    slug: 'bittype',
+    definition: 'A data type that represents a single bit, having a value of either 0 or 1. While not a primitive type in most languages, it can be simulated.',
+    example: 'The database used a special bit type column to efficiently store boolean flags.'
+  },
+  {
+    id: 'bitunit',
+    term: 'Bit Unit',
+    slug: 'bitunit',
+    definition: 'The smallest unit of data, a single bit. The term can also refer to a functional block in a processor that performs bitwise operations.',
+    example: 'The processor\'s bit unit handled all the bitwise shifting and masking operations.'
+  },
+  {
+    id: 'bitvalidator',
+    term: 'Bit Validator',
+    slug: 'bitvalidator',
+    definition: 'A system or function that checks a stream of bits for correctness, often by verifying checksums, parity bits, or CRCs.',
+    example: 'The communications receiver has a bit validator to detect and flag corrupted frames.'
+  },
+  {
+    id: 'bitvalue',
+    term: 'Bit Value',
+    slug: 'bitvalue',
+    definition: 'The value of a single bit, either 0 or 1.',
+    example: 'He checked the bit value at the fifth position to see if the option was enabled.'
+  },
+  {
+    id: 'bitversion',
+    term: 'Bit Version',
+    slug: 'bitversion',
+    definition: 'A non-standard term, possibly referring to a version number stored or compared at the bit level.',
+    example: 'The firmware update failed because the bit version of the bootloader was too old.'
+  },
+  {
+    id: 'bitview',
+    term: 'Bit View',
+    slug: 'bitview',
+    definition: 'A user interface or tool that allows for the visualization and editing of data at the bit level.',
+    example: 'The hex editor provided a bit view to show the individual bits of each selected byte.'
+  },
+  {
+    id: 'bitvision',
+    term: 'Bit Vision',
+    slug: 'bitvision',
+    definition: 'A non-standard or marketing term, possibly for a system that performs analysis or processing on raw binary image data.',
+    example: 'The company\'s new "Bit Vision" technology could detect anomalies directly from raw sensor data.'
+  },
+  {
+    id: 'bitwatch',
+    term: 'Bit Watch',
+    slug: 'bitwatch',
+    definition: 'A debugging feature that allows a developer to "watch" a specific bit or bit field and be notified when its value changes.',
+    example: 'He set a bit watch on the status register to see exactly when the hardware completed the operation.'
+  },
+  {
+    id: 'bitwave',
+    term: 'Bit Wave',
+    slug: 'bitwave',
+    definition: 'A non-standard term for the physical waveform that represents a stream of bits in a digital signal.',
+    example: 'The oscilloscope displayed the square bit wave of the TTL signal.'
+  },
+  {
+    id: 'bitwindow',
+    term: 'Bit Window',
+    slug: 'bitwindow',
+    definition: 'A specific time interval during which a bit is transmitted or sampled in a digital communication system.',
+    example: 'The receiver must sample the signal in the middle of the bit window to correctly determine its value.'
+  },
+  {
+    id: 'bizops',
+    term: 'BizOps',
+    slug: 'bizops',
+    definition: 'A methodology that combines business operations with IT and DevOps to align technology delivery with business goals and outcomes.',
+    example: 'The BizOps team analyzed the new feature\'s impact on revenue and customer engagement.'
+  },
+  {
+    id: 'biztalk',
+    term: 'BizTalk',
+    slug: 'biztalk',
+    definition: 'A Microsoft server product that enables companies to automate business processes, using adapters to communicate with different software systems.',
+    example: 'The company used Microsoft BizTalk Server to integrate its legacy ERP system with its modern cloud-based CRM.'
+  },
+  {
+    id: 'bktree',
+    term: 'BK-Tree',
+    slug: 'bktree',
+    definition: 'A tree data structure specialized for partitioning data in a metric space, used for finding nearest neighbors or approximate string matching.',
+    example: 'A spell checker might use a BK-Tree to efficiently find dictionary words that are "close" to a misspelled word.'
+  },
+  {
+    id: 'blackarch',
+    term: 'BlackArch',
+    slug: 'blackarch',
+    definition: 'A penetration testing and security research Linux distribution based on Arch Linux, containing a large repository of cybersecurity tools.',
+    example: 'The security professional booted into BlackArch to access its extensive collection of network analysis tools.'
+  },
+  {
+    id: 'blackboxmodel',
+    term: 'Black Box Model',
+    slug: 'blackboxmodel',
+    definition: 'In AI and machine learning, a model whose internal workings are opaque or difficult to interpret, such as a deep neural network.',
+    example: 'While the black box model was highly accurate, the team struggled to explain why it made certain predictions.'
+  },
+  {
+    id: 'blackfiber',
+    term: 'Black Fiber',
+    slug: 'blackfiber',
+    definition: 'A non-standard term, likely a misspelling of "dark fiber," which is unused fiber optic cable that can be leased for private networks.',
+    example: 'The company leased black fiber between its two data centers to build a private, high-speed connection.'
+  },
+  {
+    id: 'blackholeroute',
+    term: 'Black Hole Route',
+    slug: 'blackholeroute',
+    definition: 'A network route that silently discards traffic without notifying the source. It is often used to mitigate DDoS attacks.',
+    example: 'The network administrator configured a black hole route to drop all traffic coming from the attacking IP addresses.'
+  },
+  {
+    id: 'blacklistfilter',
+    term: 'Blacklist Filter',
+    slug: 'blacklistfilter',
+    definition: 'A filter that blocks access from entities on a predefined list (a blacklist or denylist). The modern term is "denylist filter."',
+    example: 'The web application firewall used a blacklist filter to block requests from known malicious IP addresses.'
+  },
+  {
+    id: 'blacknet',
+    term: 'BlackNet',
+    slug: 'blacknet',
+    definition: 'A slang or fictional term for a hidden, illegal, or malicious network, similar to the dark web.',
+    example: 'The protagonist in the cyberpunk novel had to access the BlackNet to find the secret information.'
+  },
+  {
+    id: 'blackops',
+    term: 'Black Ops',
+    slug: 'blackops',
+    definition: 'In a cybersecurity context, covert operations conducted by a security team or government agency, often involving offensive hacking.',
+    example: 'The nation-state actor was accused of running black ops campaigns to steal intellectual property.'
+  },
+  {
+    id: 'blackouttest',
+    term: 'Blackout Test',
+    slug: 'blackouttest',
+    definition: 'A type of stress test where a system is subjected to a complete power failure to test its recovery and data integrity capabilities.',
+    example: 'The data center performed a blackout test to ensure its backup generators and UPS systems would function correctly during an outage.'
+  },
+  {
+    id: 'blackscreen',
+    term: 'Black Screen',
+    slug: 'blackscreen',
+    definition: 'A common computer error where the monitor displays nothing but a black screen, often indicating a problem with the operating system, drivers, or hardware.',
+    example: 'After the driver update, the computer booted to a black screen, forcing him to restart in safe mode.'
+  },
+  {
+    id: 'blacksite',
+    term: 'Black Site',
+    slug: 'blacksite',
+    definition: 'In a tech context, slang for a secret or undocumented data center or server location used for sensitive or covert operations.',
+    example: 'The intelligence agency stored its most sensitive data in a network of undisclosed black site servers.'
+  },
+  {
+    id: 'blacksocket',
+    term: 'Black Socket',
+    slug: 'blacksocket',
+    definition: 'A non-standard term. In some contexts, this could refer to a network socket that is being used for malicious or hidden communication.',
+    example: 'The rootkit opened a black socket to exfiltrate data without being detected by the firewall.'
+  },
+  {
+    id: 'blackwall',
+    term: 'Blackwall',
+    slug: 'blackwall',
+    definition: 'A slang or marketing term for an advanced, impenetrable firewall or security system.',
+    example: 'The company advertised its new "Blackwall" security appliance as the ultimate defense against cyberattacks.'
+  },
+  {
+    id: 'bladearray',
+    term: 'Blade Array',
+    slug: 'bladearray',
+    definition: 'A collection of blade servers housed within a single chassis.',
+    example: 'The data center\'s new blade array provided high-density computing for their virtualization platform.'
+  },
+  {
+    id: 'bladecluster',
+    term: 'Blade Cluster',
+    slug: 'bladecluster',
+    definition: 'A computing cluster built using blade servers, often used for high-performance computing (HPC).',
+    example: 'The research lab used a blade cluster to run their complex fluid dynamics simulations.'
+  },
+  {
+    id: 'bladedisk',
+    term: 'Blade Disk',
+    slug: 'bladedisk',
+    definition: 'A storage drive, typically an SSD, designed in a blade form factor to be used within a blade server or storage array.',
+    example: 'The new storage blade was populated with high-performance NVMe blade disks.'
+  },
+  {
+    id: 'bladefabric',
+    term: 'Blade Fabric',
+    slug: 'bladefabric',
+    definition: 'The high-speed interconnect or backplane within a blade chassis that provides network and storage connectivity to all the blades.',
+    example: 'The blade fabric supported 100Gbps Ethernet, providing fast communication between all the servers in the chassis.'
+  },
+  {
+    id: 'blademanager',
+    term: 'Blade Manager',
+    slug: 'blademanager',
+    definition: 'A hardware or software component that manages the blade servers within a chassis, handling tasks like power, cooling, and remote administration.',
+    example: 'The system administrator used the blade manager to remotely reboot one of the servers.'
+  },
+  {
+    id: 'bladememory',
+    term: 'Blade Memory',
+    slug: 'bladememory',
+    definition: 'Memory modules (RAM) that are installed in a blade server.',
+    example: 'He upgraded the blade memory to 512GB to support more virtual machines.'
+  },
+  {
+    id: 'bladenetwork',
+    term: 'Blade Network',
+    slug: 'bladenetwork',
+    definition: 'The networking components within a blade system, including switches and interconnects that connect the blades to each other and the external network.',
+    example: 'The blade network was configured with redundant switches for high availability.'
+  },
+  {
+    id: 'bladepower',
+    term: 'Blade Power',
+    slug: 'bladepower',
+    definition: 'The power delivery system within a blade chassis, which provides shared power to all the blade servers.',
+    example: 'The blade chassis had redundant power supplies to ensure continuous blade power in case one failed.'
+  },
+  {
+    id: 'bladeservice',
+    term: 'Blade Service',
+    slug: 'bladeservice',
+    definition: 'A service or application that is running on a blade server.',
+    example: 'The virtualization blade service hosted dozens of virtual machines for different departments.'
+  },
+  {
+    id: 'bladeswitch',
+    term: 'Blade Switch',
+    slug: 'bladeswitch',
+    definition: 'A network switch designed in a modular form factor to be installed directly into a blade chassis.',
+    example: 'They added a new fiber channel blade switch to the chassis to provide storage connectivity.'
+  },
+  {
+    id: 'blastradius',
+    term: 'Blast Radius',
+    slug: 'blastradius',
+    definition: 'In IT and cybersecurity, the potential damage or impact that a failure, outage, or security breach could have on a system and its connected components.',
+    example: 'By using microservices, they were able to limit the blast radius of a single component failure.'
+  },
+  {
+    id: 'bleadapter',
+    term: 'BLE Adapter',
+    slug: 'bleadapter',
+    definition: 'A USB dongle or internal hardware component that adds Bluetooth Low Energy (BLE) capability to a computer.',
+    example: 'He plugged in a BLE adapter to connect his new wireless keyboard to his old desktop PC.'
+  },
+  {
+    id: 'blebeacon',
+    term: 'BLE Beacon',
+    slug: 'blebeacon',
+    definition: 'A small, low-power hardware transmitter that broadcasts a unique identifier using Bluetooth Low Energy, allowing smartphones and other devices to determine their location.',
+    example: 'The museum placed BLE beacons near exhibits to provide visitors with location-aware information on their phones.'
+  },
+  {
+    id: 'blecontroller',
+    term: 'BLE Controller',
+    slug: 'blecontroller',
+    definition: 'The hardware part of a Bluetooth Low Energy system that manages the radio and low-level link layer operations.',
+    example: 'The BLE controller is responsible for the timing and frequency hopping of the radio signal.'
+  },
+  {
+    id: 'bledaemon',
+    term: 'BLE Daemon',
+    slug: 'bledaemon',
+    definition: 'A background service or process on an operating system that manages Bluetooth Low Energy connections and communications.',
+    example: 'The `bluetoothd` process on Linux is the BLE daemon that handles all Bluetooth operations.'
+  },
+  {
+    id: 'bledriver',
+    term: 'BLE Driver',
+    slug: 'bledriver',
+    definition: 'The software driver that allows the operating system to communicate with the Bluetooth Low Energy hardware controller.',
+    example: 'After the OS update, he had to install a new BLE driver for his wireless adapter.'
+  },
+  {
+    id: 'blefirmware',
+    term: 'BLE Firmware',
+    slug: 'blefirmware',
+    definition: 'The software that runs on the processor of a Bluetooth Low Energy device, controlling its behavior and communication.',
+    example: 'The manufacturer released a BLE firmware update to improve the battery life of the fitness tracker.'
+  },
+  {
+    id: 'blegateway',
+    term: 'BLE Gateway',
+    slug: 'blegateway',
+    definition: 'A device that scans for data from nearby Bluetooth Low Energy devices and forwards it to another network, such as Wi-Fi or Ethernet, and often to the cloud.',
+    example: 'The company used a BLE gateway to collect temperature data from hundreds of wireless sensors in the warehouse.'
+  },
+  {
+    id: 'blehost',
+    term: 'BLE Host',
+    slug: 'blehost',
+    definition: 'The upper layers of the Bluetooth Low Energy protocol stack, which run on the main processor of a device and handle application-level logic.',
+    example: 'The BLE host is responsible for managing profiles, services, and characteristics.'
+  },
+  {
+    id: 'blelayer',
+    term: 'BLE Layer',
+    slug: 'blelayer',
+    definition: 'A specific layer within the Bluetooth Low Energy protocol stack, such as the Physical Layer, Link Layer, or Application Layer.',
+    example: 'The problem was traced to a timing issue in the Link Layer of the BLE layer stack.'
+  },
+  {
+    id: 'blemesh',
+    term: 'BLE Mesh',
+    slug: 'blemesh',
+    definition: 'A network topology for Bluetooth Low Energy that allows for many-to-many communication, enabling the creation of large-scale device networks.',
+    example: 'The smart lighting system used a BLE mesh network, so that any light could communicate with any other light, extending the network\'s range.'
+  },
+  {
+    id: 'blescanner',
+    term: 'BLE Scanner',
+    slug: 'blescanner',
+    definition: 'A device or application that listens for Bluetooth Low Energy advertising packets to discover nearby devices.',
+    example: 'He used a BLE scanner app on his phone to find his lost wireless earbuds.'
+  },
+  {
+    id: 'bleservice',
+    term: 'BLE Service',
+    slug: 'bleservice',
+    definition: 'In the Bluetooth Low Energy protocol, a service is a collection of related data and behaviors, defined by one or more characteristics.',
+    example: 'The heart rate monitor exposes a standard "Heart Rate Service" that any compatible device can read.'
+  },
+  {
+    id: 'blendpipeline',
+    term: 'Blend Pipeline',
+    slug: 'blendpipeline',
+    definition: 'In computer graphics, the sequence of operations that combines the color of a fragment (a potential pixel) with the color already in the framebuffer, allowing for transparency and other effects.',
+    example: 'To render the semi-transparent window, the graphics engine configured the blend pipeline to mix the window color with the scene behind it.'
+  },
+  {
+    id: 'blockadapter',
+    term: 'Block Adapter',
+    slug: 'blockadapter',
+    definition: 'A hardware or software component that allows a system to access a block storage device.',
+    example: 'The virtual machine\'s block adapter provided access to a virtual hard disk file.'
+  },
+  {
+    id: 'blockallocator',
+    term: 'Block Allocator',
+    slug: 'blockallocator',
+    definition: 'The part of a file system or memory manager responsible for allocating and freeing blocks of storage.',
+    example: 'The file system\'s block allocator uses a bitmap to keep track of which disk blocks are in use.'
+  },
+  {
+    id: 'blockchainnode',
+    term: 'Blockchain Node',
+    slug: 'blockchainnode',
+    definition: 'A computer connected to a blockchain network that validates and relays transactions and, in some cases, creates new blocks.',
+    example: 'He ran a full Bitcoin blockchain node to help support the network and have a complete copy of the ledger.'
+  },
+  {
+    id: 'blockchecksum',
+    term: 'Block Checksum',
+    slug: 'blockchecksum',
+    definition: 'A checksum value calculated for a block of data, used to verify its integrity and detect corruption.',
+    example: 'The file system stored a block checksum for each data block to protect against silent data corruption.'
+  },
+  {
+    id: 'blockclustermap',
+    term: 'Block Cluster',
+    slug: 'blockcluster',
+    definition: 'A group of one or more contiguous blocks on a storage device that are allocated as a single unit by the file system.',
+    example: 'Even for a 1-byte file, the file system had to allocate a full 4KB block cluster on the disk.'
+  },
+  {
+    id: 'blockcommit',
+    term: 'Block Commit',
+    slug: 'blockcommit',
+    definition: 'In a blockchain, the process of adding a new, validated block of transactions to the end of the chain.',
+    example: 'After the block commit, the transactions were considered confirmed and irreversible.'
+  },
+  {
+    id: 'blockcompression',
+    term: 'Block Compression',
+    slug: 'blockcompression',
+    definition: 'A compression technique that divides data into blocks and compresses each block independently.',
+    example: 'The backup software used block compression to reduce the size of the backup files.'
+  },
+  {
+    id: 'blockcopy',
+    term: 'Block Copy',
+    slug: 'blockcopy',
+    definition: 'An operation that copies a block of data from one location to another, typically in memory.',
+    example: 'The `memcpy` function in C performs a fast block copy of memory.'
+  },
+  {
+    id: 'blockdriver',
+    term: 'Block Driver',
+    slug: 'blockdriver',
+    definition: 'A device driver that handles communication with a block storage device, like a hard drive or SSD.',
+    example: 'The operating system loaded the SATA block driver to be able to access the connected SSD.'
+  },
+  {
+    id: 'blockdump',
+    term: 'Block Dump',
+    slug: 'blockdump',
+    definition: 'A raw, hexadecimal representation of the data contained within a block on a storage device or in memory.',
+    example: 'The forensics tool created a block dump of the suspect sector for detailed analysis.'
+  },
+  {
+    id: 'blockengine',
+    term: 'Block Engine',
+    slug: 'blockengine',
+    definition: 'A non-standard term, likely referring to a software engine that operates on data in blocks, such as a storage engine or a compression engine.',
+    example: 'The database\'s custom block engine was optimized for fast reads of large, sequential blocks of data.'
+  },
+  {
+    id: 'blockentry',
+    term: 'Block Entry',
+    slug: 'blockentry',
+    definition: 'An entry in a table or data structure that points to or describes a block of data.',
+    example: 'The file allocation table contains a block entry for each cluster on the disk.'
+  },
+  {
+    id: 'blockfile',
+    term: 'Block File',
+    slug: 'blockfile',
+    definition: 'A file that represents a block device in a Unix-like operating system, found in the `/dev` directory.',
+    example: 'The block file `/dev/sda` represents the first hard disk in the system.'
+  },
+  {
+    id: 'blockid',
+    term: 'Block ID',
+    slug: 'blockid',
+    definition: 'A unique identifier for a block of data, used in storage systems and blockchains.',
+    example: 'Each transaction is stored in a block with a unique block ID.'
+  },
+  {
+    id: 'blockindex',
+    term: 'Block Index',
+    slug: 'blockindex',
+    definition: 'An index that maps keys to the specific blocks on a storage device where the corresponding data is located.',
+    example: 'The database used a block index to quickly find the location of a specific record on disk.'
+  },
+  {
+    id: 'blocklink',
+    term: 'Block Link',
+    slug: 'blocklink',
+    definition: 'In a linked data structure like a blockchain or a linked list of blocks, a pointer that connects one block to the next.',
+    example: 'Each block in the blockchain contains a hash of the previous block, forming a secure block link.'
+  },
+  {
+    id: 'blocklist',
+    term: 'Blocklist',
+    slug: 'blocklist',
+    definition: 'A list of entities that are blocked or denied access. A more modern and inclusive term for "blacklist."',
+    example: 'The email server uses a blocklist of known spam domains to reject junk mail.'
+  },
+  {
+    id: 'blockloader',
+    term: 'Block Loader',
+    slug: 'blockloader',
+    definition: 'A system component responsible for loading blocks of data from a storage device into memory.',
+    example: 'The operating system\'s block loader reads the necessary application code from the disk into RAM.'
+  },
+  {
+    id: 'blockmap',
+    term: 'Block Map',
+    slug: 'blockmap',
+    definition: 'A data structure, often a bitmap, that keeps track of which blocks on a storage device are free and which are allocated.',
+    example: 'When creating a new file, the file system consults the block map to find free blocks to use.'
+  },
+  {
+    id: 'blockmask',
+    term: 'Block Mask',
+    slug: 'blockmask',
+    definition: 'A bitmask used to select or modify a specific block of data or a set of blocks.',
+    example: 'He used a block mask to apply the operation to every other block in the memory region.'
+  },
+  {
+    id: 'blockmerge',
+    term: 'Block Merge',
+    slug: 'blockmerge',
+    definition: 'The process of combining two or more adjacent blocks of data into a single, larger block, often used in memory management and file systems.',
+    example: 'The disk defragmenter performed a block merge to consolidate fragmented files into contiguous blocks.'
+  },
+  {
+    id: 'blockmessage',
+    term: 'Block Message',
+    slug: 'blockmessage',
+    definition: 'A message or piece of data that is transmitted or processed as a single block.',
+    example: 'The network protocol grouped smaller packets into a single block message for more efficient transmission.'
+  },
+  {
+    id: 'blockmodel',
+    term: 'Block Model',
+    slug: 'blockmodel',
+    definition: 'In data analysis and network science, a model that partitions the nodes of a graph into blocks, where nodes within the same block have similar connection patterns.',
+    example: 'They used a stochastic block model to identify communities within the social network.'
+  },
+  {
+    id: 'blocknode',
+    term: 'Block Node',
+    slug: 'blocknode',
+    definition: 'A node in a distributed system (like a blockchain) that is responsible for storing and validating blocks.',
+    example: 'He set up a new block node to help secure the decentralized network.'
+  },
+  {
+    id: 'blockobject',
+    term: 'Block Object',
+    slug: 'blockobject',
+    definition: 'A data object that represents a single block in a storage system or blockchain, containing data and metadata.',
+    example: 'The developer deserialized the raw data from the network into a block object.'
+  },
+  {
+    id: 'blockoperation',
+    term: 'Block Operation',
+    slug: 'blockoperation',
+    definition: 'An operation that is performed on an entire block of data at once, such as a block copy or a block checksum.',
+    example: 'Modern CPUs have special instructions for performing very fast block operations on memory.'
+  },
+  {
+    id: 'blockpacket',
+    term: 'Block Packet',
+    slug: 'blockpacket',
+    definition: 'A network packet that contains a block of data.',
+    example: 'The file transfer protocol sent the file as a series of block packets.'
+  },
+  {
+    id: 'blockparser',
+    term: 'Block Parser',
+    slug: 'blockparser',
+    definition: 'A program or function that reads and interprets the structure of a block of data.',
+    example: 'He wrote a block parser to decode the custom file format used by the legacy application.'
+  },
+  {
+    id: 'blockpartition',
+    term: 'Block Partition',
+    slug: 'blockpartition',
+    definition: 'A partition on a storage device that is treated as a raw block device, without a file system.',
+    example: 'The high-performance database used a raw block partition to bypass the file system and get maximum I/O throughput.'
+  },
+  {
+    id: 'blockpatch',
+    term: 'Block Patch',
+    slug: 'blockpatch',
+    definition: 'A patch that is applied at the block level of a file or storage device, rather than at the file level.',
+    example: 'The game update used a block patch to modify the large data files, resulting in a much smaller download.'
+  },
+  {
+    id: 'blockpool',
+    term: 'Block Pool',
+    slug: 'blockpool',
+    definition: 'A pre-allocated collection of memory or storage blocks that can be efficiently allocated and freed by an application.',
+    example: 'The video editor used a block pool to manage memory for video frames, avoiding the overhead of frequent memory allocations.'
+  },
+  {
+    id: 'blockprotocol',
+    term: 'Block Protocol',
+    slug: 'blockprotocol',
+    definition: 'A communication protocol that transmits data in discrete blocks or packets.',
+    example: 'The iSCSI protocol is a block protocol that allows computers to access storage devices over a standard IP network.'
+  },
+  {
+    id: 'blockqueue',
+    term: 'Block Queue',
+    slug: 'blockqueue',
+    definition: 'A queue data structure that stores blocks of data waiting to be processed.',
+    example: 'The I/O scheduler maintained a block queue of disk requests to be sent to the hard drive.'
+  },
+  {
+    id: 'blockreader',
+    term: 'Block Reader',
+    slug: 'blockreader',
+    definition: 'A function or component that reads data from a storage device or stream one block at a time.',
+    example: 'He used a block reader to process the large file without loading the entire thing into memory.'
+  },
+  {
+    id: 'blockregion',
+    term: 'Block Region',
+    slug: 'blockregion',
+    definition: 'A contiguous area of storage or memory that is composed of one or more blocks.',
+    example: 'The file was stored in a block region at the beginning of the disk.'
+  },
+  {
+    id: 'blockrepair',
+    term: 'Block Repair',
+    slug: 'blockrepair',
+    definition: 'The process of repairing a corrupted or damaged block on a storage device, often by using redundant data from a RAID array or a backup.',
+    example: 'The RAID controller automatically initiated a block repair when it detected a checksum mismatch.'
+  },
+  {
+    id: 'blockreplica',
+    term: 'Block Replica',
+    slug: 'blockreplica',
+    definition: 'A copy of a block of data stored in a different location for redundancy and high availability.',
+    example: 'Distributed file systems like HDFS store multiple block replicas across different servers to protect against data loss.'
+  },
+  {
+    id: 'blockrequest',
+    term: 'Block Request',
+    slug: 'blockrequest',
+    definition: 'A request sent to a storage system or network service to read or write a specific block of data.',
+    example: 'The operating system sent a block request to the disk driver to load a page into memory.'
+  },
+  {
+    id: 'blockresolver',
+    term: 'Block Resolver',
+    slug: 'blockresolver',
+    definition: 'A system that translates a logical block address to a physical block address on a storage device.',
+    example: 'The flash translation layer in an SSD acts as a block resolver, mapping logical block addresses to physical locations on the flash memory chips.'
+  },
+  {
+    id: 'blockrouting',
+    term: 'Block Routing',
+    slug: 'blockrouting',
+    definition: 'The process of routing requests for data blocks to the correct server or storage device in a distributed storage system.',
+    example: 'The storage cluster used a consistent hashing algorithm for efficient block routing.'
+  },
+  {
+    id: 'blockscanner',
+    term: 'Block Scanner',
+    slug: 'blockscanner',
+    definition: 'A tool that reads through the blocks of a storage device to check for errors or search for specific data.',
+    example: 'He ran a block scanner on the hard drive to check for bad sectors.'
+  },
+  {
+    id: 'blockscheduler',
+    term: 'Block Scheduler',
+    slug: 'blockscheduler',
+    definition: 'The component of an operating system\'s I/O scheduler that decides the order in which block requests are sent to a storage device.',
+    example: 'The Linux kernel\'s block scheduler tries to merge and reorder requests to minimize disk head movement.'
+  },
+  {
+    id: 'blocksector',
+    term: 'Block Sector',
+    slug: 'blocksector',
+    definition: 'A sector is the smallest physical storage unit on a disk. In some contexts, a block may be composed of one or more sectors.',
+    example: 'The file system was configured with a block size of 4096 bytes, which corresponded to eight 512-byte block sectors.'
+  },
+  {
+    id: 'blocksensor',
+    term: 'Block Sensor',
+    slug: 'blocksensor',
+    definition: 'A non-standard term, possibly referring to a sensor that outputs data in discrete blocks rather than as a continuous stream.',
+    example: 'The imaging device acted as a block sensor, providing a complete frame of pixel data at a time.'
+  },
+  {
+    id: 'blockserver',
+    term: 'Block Server',
+    slug: 'blockserver',
+    definition: 'A server in a distributed storage system that is responsible for storing and serving blocks of data.',
+    example: 'In a Ceph cluster, the Object Storage Daemons (OSDs) act as block servers.'
+  },
+  {
+    id: 'blockservice',
+    term: 'Block Service',
+    slug: 'blockservice',
+    definition: 'A network service that provides access to block-level storage over a network, such as iSCSI or Fibre Channel.',
+    example: 'Amazon\'s Elastic Block Store (EBS) is a popular cloud-based block service.'
+  },
+  {
+    id: 'blocksession',
+    term: 'Block Session',
+    slug: 'blocksession',
+    definition: 'A communication session that is oriented around the transfer of data blocks.',
+    example: 'The iSCSI initiator established a block session with the storage target.'
+  },
+  {
+    id: 'blockset',
+    term: 'Block Set',
+    slug: 'blockset',
+    definition: 'A collection of blocks that are treated as a single unit.',
+    example: 'The backup job processed the entire block set for the virtual machine\'s disk image.'
+  },
+  {
+    id: 'blockshift',
+    term: 'Block Shift',
+    slug: 'blockshift',
+    definition: 'An operation that shifts the contents of a block of memory by a certain number of bytes.',
+    example: 'He used a block shift operation to make room for a new header at the beginning of the data buffer.'
+  },
+  {
+    id: 'blocksignal',
+    term: 'Block Signal',
+    slug: 'blocksignal',
+    definition: 'In concurrent programming, to temporarily prevent a process or thread from receiving a specific signal.',
+    example: 'The thread would block signals during the critical section to prevent being interrupted.'
+  },
+  {
+    id: 'blockslice',
+    term: 'Block Slice',
+    slug: 'blockslice',
+    definition: 'A view or portion of a larger block of data.',
+    example: 'The function took a block slice as an argument, allowing it to process just a part of the larger buffer.'
+  },
+  {
+    id: 'blockspace',
+    term: 'Block Space',
+    slug: 'blockspace',
+    definition: 'The amount of storage space available or used, measured in blocks.',
+    example: 'The file system was running low on block space, so he had to delete some old files.'
+  },
+  {
+    id: 'blockstack',
+    term: 'Block Stack',
+    slug: 'blockstack',
+    definition: 'A non-standard term, possibly referring to a stack data structure that stores blocks of data.',
+    example: 'The memory manager used a block stack to keep track of free memory regions.'
+  },
+  {
+    id: 'blockstamp',
+    term: 'Block Stamp',
+    slug: 'blockstamp',
+    definition: 'A timestamp or other piece of metadata that is associated with a block of data.',
+    example: 'Each block in the log file had a block stamp indicating when it was written.'
+  },
+  {
+    id: 'blockstate',
+    term: 'Block State',
+    slug: 'blockstate',
+    definition: 'The state of a block, such as whether it is free, allocated, or corrupted.',
+    example: 'The disk utility displayed the block state for every block on the volume.'
+  },
+  {
+    id: 'blockstoragenode',
+    term: 'Block Storage Node',
+    slug: 'blockstoragenode',
+    definition: 'A server in a distributed storage system that is dedicated to providing block storage.',
+    example: 'They added another block storage node to the cluster to increase its total capacity and performance.'
+  },
+  {
+    id: 'blockstream',
+    term: 'Block Stream',
+    slug: 'blockstream',
+    definition: 'A stream of data that is read or written in discrete blocks.',
+    example: 'He processed the block stream from the file, reading 4KB at a time.'
+  },
+  {
+    id: 'blockstructure',
+    term: 'Block Structure',
+    slug: 'blockstructure',
+    definition: 'The way in which data is organized within a block, including any headers, metadata, or data fields.',
+    example: 'The developer had to understand the file format\'s block structure to parse it correctly.'
+  },
+  {
+    id: 'blockswitch',
+    term: 'Block Switch',
+    slug: 'blockswitch',
+    definition: 'A high-speed network switch that is optimized for block-level storage traffic, such as a Fibre Channel switch.',
+    example: 'The storage area network (SAN) was built around a high-performance block switch.'
+  },
+  {
+    id: 'blocksystem',
+    term: 'Block System',
+    slug: 'blocksystem',
+    definition: 'A system that operates on or manages data at the block level, such as a file system or a block storage service.',
+    example: 'RAID is a block system that combines multiple physical disks into a single logical one.'
+  },
+  {
+    id: 'blocktag',
+    term: 'Block Tag',
+    slug: 'blocktag',
+    definition: 'A piece of metadata attached to a block of data to identify it or describe its contents.',
+    example: 'The file system used a block tag to mark a block as containing inode data.'
+  },
+  {
+    id: 'blocktimer',
+    term: 'Block Timer',
+    slug: 'blocktimer',
+    definition: 'A timer that operates on or is synchronized with block-based operations.',
+    example: 'The I/O scheduler used a block timer to set a timeout for disk requests.'
+  },
+  {
+    id: 'blocktoken',
+    term: 'Block Token',
+    slug: 'blocktoken',
+    definition: 'A token or credential that grants permission to access a specific block or range of blocks in a storage system.',
+    example: 'The client presented a block token to the storage server to prove it was authorized to read the data.'
+  },
+  {
+    id: 'blocktrace',
+    term: 'Block Trace',
+    slug: 'blocktrace',
+    definition: 'A detailed log of all block-level I/O operations, used for performance analysis and debugging.',
+    example: 'He used the `blktrace` tool on Linux to get a detailed block trace of the database\'s disk activity.'
+  },
+  {
+    id: 'blocktracker',
+    term: 'Block Tracker',
+    slug: 'blocktracker',
+    definition: 'A system that keeps track of the state and location of data blocks, especially in a distributed storage system.',
+    example: 'The BitTorrent client acts as a block tracker, keeping a list of which pieces of the file it has and which it needs.'
+  },
+  {
+    id: 'blocktransfer',
+    term: 'Block Transfer',
+    slug: 'blocktransfer',
+    definition: 'The transfer of data from one location to another as a single block.',
+    example: 'DMA (Direct Memory Access) allows for fast block transfers between peripherals and memory without involving the CPU.'
+  },
+  {
+    id: 'blocktree',
+    term: 'Block Tree',
+    slug: 'blocktree',
+    definition: 'A tree data structure where each node represents a block of data, often used to represent the allocation of a file on a disk.',
+    example: 'The ext4 file system uses an extent tree, which is a type of block tree, to map file offsets to disk blocks.'
+  },
+  {
+    id: 'blocktrigger',
+    term: 'Block Trigger',
+    slug: 'blocktrigger',
+    definition: 'A trigger in a system that is activated when a specific block-level event occurs, such as a block being written or read.',
+    example: 'The data replication system used a block trigger to automatically copy a block to the replica as soon as it was written to the primary.'
+  },
+  {
+    id: 'blocktunnel',
+    term: 'Block Tunnel',
+    slug: 'blocktunnel',
+    definition: 'A network tunnel that encapsulates and transmits block-level traffic over another network, such as iSCSI over IP.',
+    example: 'They created a block tunnel to connect their on-premises server to a cloud storage volume.'
+  },
+  {
+    id: 'blockupgrade',
+    term: 'Block Upgrade',
+    slug: 'blockupgrade',
+    definition: 'An upgrade process that is performed at the block level, often by applying a binary patch.',
+    example: 'The firmware block upgrade was faster than downloading and flashing the entire new firmware image.'
+  },
+  {
+    id: 'blockvalidator',
+    term: 'Block Validator',
+    slug: 'blockvalidator',
+    definition: 'A component in a blockchain system that is responsible for verifying the validity of new blocks before they are added to the chain.',
+    example: 'The block validator checked the block\'s hash, timestamp, and all the transactions within it.'
+  },
+  {
+    id: 'blockvalue',
+    term: 'Block Value',
+    slug: 'blockvalue',
+    definition: 'The data contained within a single block.',
+    example: 'He read the block value from the disk to retrieve the requested file content.'
+  },
+  {
+    id: 'blockvector',
+    term: 'Block Vector',
+    slug: 'blockvector',
+    definition: 'A vector or array where each element represents a block.',
+    example: 'The program used a block vector to store the sequence of disk blocks that made up the file.'
+  },
+  {
+    id: 'blockversion',
+    term: 'Block Version',
+    slug: 'blockversion',
+    definition: 'A version number associated with a block of data, used to track changes or for concurrency control.',
+    example: 'The distributed file system used a block version to detect and resolve write conflicts.'
+  },
+  {
+    id: 'blockview',
+    term: 'Block View',
+    slug: 'blockview',
+    definition: 'A user interface or tool that allows for the visualization of data at the block level.',
+    example: 'The disk editor provided a block view that showed how files were laid out on the disk.'
+  },
+  {
+    id: 'blockwatcher',
+    term: 'Block Watcher',
+    slug: 'blockwatcher',
+    definition: 'A service or process that monitors a block device or blockchain for new blocks or changes.',
+    example: 'The application used a block watcher to get real-time notifications of new transactions on the Ethereum network.'
+  },
+  {
+    id: 'blockwindow',
+    term: 'Block Window',
+    slug: 'blockwindow',
+    definition: 'A range or "window" of blocks that are being processed or considered at a given time.',
+    example: 'The data streaming algorithm processed the file using a sliding block window.'
+  }
 ];
 
     
