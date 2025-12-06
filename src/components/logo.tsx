@@ -5,16 +5,17 @@ const Logo = ({ className }: { className?: string }) => (
     className={cn(className)}
     width="32"
     height="32"
-    viewBox="0 0 100 100"
+    viewBox="0 0 24 24"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     aria-label="TechTermz Logo"
   >
     <path
-      d="M20 20V80H45C64.33 80 80 64.33 80 45V20H55V45C55 50.523 50.523 55 45 55H20Z"
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM8 7H16V9H13V17H11V9H8V7Z"
       fill="hsl(var(--primary))"
     />
-    <rect x="20" y="20" width="35" height="10" fill="hsl(var(--background))" />
   </svg>
 );
 
