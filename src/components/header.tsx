@@ -1,7 +1,8 @@
+
 import Link from 'next/link';
 import Logo from './logo';
 import { Button } from './ui/button';
-import { Bookmark, History, Menu, HomeIcon, CalendarDays } from 'lucide-react';
+import { Bookmark, History, Menu, HomeIcon, CalendarDays, BookOpen } from 'lucide-react';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -47,6 +48,12 @@ export default function Header() {
                   <Link href="/">
                     <HomeIcon className="mr-2 h-4 w-4" />
                     <span>Home</span>
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/all-terms">
+                    <BookOpen className="mr-2 h-4 w-4" />
+                    <span>All Terms</span>
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuSeparator />
