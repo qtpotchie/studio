@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo, useCallback } from 'react';
+import { useState, useMemo, FormEvent } from 'react';
 import type { Term } from '@/lib/data';
 import { Input } from '@/components/ui/input';
 import { Search } from 'lucide-react';
@@ -13,39 +13,45 @@ const ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 export default function JargonExplorer({ terms }: { terms: Term[] }) {
   const [searchQuery, setSearchQuery] = useState('');
   const [activeLetter, setActiveLetter] = useState<string | null>(null);
+  const [filterQuery, setFilterQuery] = useState('');
   const { addSearchQuery } = useSearchHistory();
 
-  const handleSearch = useCallback((query: string) => {
-    if (query) {
-      addSearchQuery(query);
-    }
-  }, [addSearchQuery]);
+  const handleSearchSubmit = (e: FormEvent) => {
+    e.preventDefault();
+    addSearchQuery(searchQuery);
+    setFilterQuery(searchQuery);
+  };
 
   const filteredTerms = useMemo(() => {
-    return terms
-      .filter((term) => {
-        if (activeLetter) {
-          return term.term.toUpperCase().startsWith(activeLetter);
-        }
-        return true;
-      })
-      .filter((term) => {
-        if (searchQuery) {
-          return term.term.toLowerCase().includes(searchQuery.toLowerCase());
-        }
-        return true;
-      });
-  }, [terms, searchQuery, activeLetter]);
+    let results = terms;
+
+    if (activeLetter) {
+      results = results.filter((term) =>
+        term.term.toUpperCase().startsWith(activeLetter)
+      );
+    }
+
+    if (filterQuery) {
+      results = results.filter((term) =>
+        term.term.toLowerCase().includes(filterQuery.toLowerCase())
+      );
+    }
+    
+    return results;
+  }, [terms, filterQuery, activeLetter]);
+  
+  const handleLetterClick = (letter: string | null) => {
+    setActiveLetter(letter);
+    setSearchQuery('');
+    setFilterQuery('');
+  }
 
   return (
     <div className="space-y-8">
       <div className="max-w-xl mx-auto">
         <form
           className="relative flex items-center gap-2"
-          onSubmit={(e) => {
-            e.preventDefault();
-            handleSearch(searchQuery);
-          }}
+          onSubmit={handleSearchSubmit}
         >
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
           <Input
@@ -63,7 +69,7 @@ export default function JargonExplorer({ terms }: { terms: Term[] }) {
         <Button
           variant={activeLetter === null ? 'default' : 'outline'}
           size="sm"
-          onClick={() => setActiveLetter(null)}
+          onClick={() => handleLetterClick(null)}
         >
           All
         </Button>
@@ -73,7 +79,7 @@ export default function JargonExplorer({ terms }: { terms: Term[] }) {
             variant={activeLetter === letter ? 'default' : 'outline'}
             size="sm"
             className="w-9"
-            onClick={() => setActiveLetter(letter)}
+            onClick={() => handleLetterClick(letter)}
           >
             {letter}
           </Button>
