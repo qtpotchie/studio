@@ -6,28 +6,36 @@ import { Input } from '@/components/ui/input';
 import { Search } from 'lucide-react';
 import TermCard from '@/components/term-card';
 import { useSearchHistory } from '@/context/search-history-context';
-import { useDebounce } from '@/hooks/use-debounce';
 
 export default function JargonExplorer({ terms }: { terms: Term[] }) {
   const [searchQuery, setSearchQuery] = useState('');
-  const debouncedSearchQuery = useDebounce(searchQuery, 300);
+  const [submittedQuery, setSubmittedQuery] = useState('');
   const { addSearchQuery } = useSearchHistory();
 
   const filteredTerms = useMemo(() => {
+    if (!submittedQuery) {
+      // Show all terms if the submitted query is empty
+      return terms;
+    }
     return terms.filter((term) =>
-      term.term.toLowerCase().includes(debouncedSearchQuery.toLowerCase())
+      term.term.toLowerCase().includes(submittedQuery.toLowerCase())
     );
-  }, [terms, debouncedSearchQuery]);
+  }, [terms, submittedQuery]);
 
   useEffect(() => {
-    if (debouncedSearchQuery.trim()) {
-      addSearchQuery(debouncedSearchQuery);
+    if (submittedQuery.trim()) {
+      addSearchQuery(submittedQuery);
     }
-  }, [debouncedSearchQuery]); // addSearchQuery was removed as it's a stable function from context
+  }, [submittedQuery]); // addSearchQuery is stable
+
+  const handleSearchSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setSubmittedQuery(searchQuery);
+  };
 
   return (
     <div className="space-y-8">
-      <div className="max-w-xl mx-auto">
+      <form onSubmit={handleSearchSubmit} className="max-w-xl mx-auto">
         <div className="relative">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
           <Input
@@ -38,7 +46,9 @@ export default function JargonExplorer({ terms }: { terms: Term[] }) {
             onChange={(e) => setSearchQuery(e.target.value)}
           />
         </div>
-      </div>
+        {/* Hidden submit button to allow form submission on Enter */}
+        <button type="submit" className="hidden" />
+      </form>
 
       {filteredTerms.length > 0 ? (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -48,7 +58,7 @@ export default function JargonExplorer({ terms }: { terms: Term[] }) {
         </div>
       ) : (
         <div className="text-center py-16 text-muted-foreground">
-          <p>No terms found for &quot;{debouncedSearchQuery}&quot;.</p>
+          <p>No terms found for &quot;{submittedQuery}&quot;.</p>
         </div>
       )}
     </div>
