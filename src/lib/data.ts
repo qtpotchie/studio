@@ -884,13 +884,6 @@ export const terms: Term[] = [
     example: 'He chose Arch Linux for his new development machine because he wanted full control over every package that was installed.',
   },
   {
-    id: 'archive-bit',
-    term: 'Archive Bit',
-    slug: 'archive-bit',
-    definition: 'A file attribute indicating whether the file has been backed up.',
-    example: 'Backup software checks the archive bit on files to determine which ones have changed since the last backup and need to be saved again.',
-  },
-  {
     id: 'arcmap-projection',
     term: 'ArcMap Projection',
     slug: 'arcmap-projection',
@@ -1459,13 +1452,6 @@ export const terms: Term[] = [
     example: 'Financial systems use AMQP for guaranteed message delivery between different trading and processing services.',
   },
   {
-    id: 'ansible',
-    term: 'Ansible',
-    slug: 'ansible',
-    definition: 'An automation tool for configuration management, provisioning, and application deployment using YAML.',
-    example: 'A DevOps engineer wrote an Ansible playbook to automatically configure and deploy a web server on 100 different machines.',
-  },
-  {
     id: 'android-runtime-art',
     term: 'Android Runtime (ART)',
     slug: 'android-runtime-art',
@@ -1534,6 +1520,13 @@ export const terms: Term[] = [
     slug: 'application-pool-iis',
     definition: 'An isolated environment where web applications run, improving security and stability.',
     example: 'The admin configured each website to run in its own application pool, so if one site crashed, it wouldn\'t bring down the others on the same server.',
+  },
+  {
+    id: 'archive-bit',
+    term: 'Archive Bit',
+    slug: 'archive-bit',
+    definition: 'A file attribute indicating whether the file has been backed up.',
+    example: 'Backup software checks the archive bit on files to determine which ones have changed since the last backup and need to be saved again.',
   },
   {
     id: 'arm-architecture',
