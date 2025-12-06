@@ -40,11 +40,12 @@ export default function AllTermsPage() {
             <h2 className="text-2xl font-bold font-headline text-primary mb-4 pb-2 border-b-2 border-primary/30">
               {letter}
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-2">
               {groupedTerms[letter].map((term) => (
-                <Link href={`/term/${term.slug}`} key={term.id} className="block hover:text-primary transition-colors">
-                  <div className="p-3 rounded-md hover:bg-accent">
-                    {term.term}
+                <Link href={`/term/${term.slug}`} key={term.id} className="block hover:text-primary transition-colors group">
+                  <div className="flex items-center p-2 rounded-md group-hover:bg-accent">
+                    <span className="text-primary mr-3 text-xl">&bull;</span>
+                    <span className='flex-1'>{term.term}</span>
                   </div>
                 </Link>
               ))}
