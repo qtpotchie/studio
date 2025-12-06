@@ -7,6 +7,7 @@ import { ClientProviders } from '@/components/client-providers';
 export const metadata: Metadata = {
   title: 'TechTermz',
   description: 'Your go-to dictionary for IT and tech jargon.',
+  manifest: '/manifest.json',
 };
 
 export default function RootLayout({
