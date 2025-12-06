@@ -11,28 +11,42 @@ const Logo = ({ className }: { className?: string }) => (
     aria-label="TechTermz Logo"
   >
     <path
-      d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H9.5"
+      d="M19.5 21C19.5 21 16.5 19.5 12 19.5C7.5 19.5 4.5 21 4.5 21"
       stroke="hsl(var(--foreground))"
       strokeWidth="1.5"
       strokeLinecap="round"
       strokeLinejoin="round"
     />
     <path
-      d="M12 3V11.5C12 11.7761 12.2239 12 12.5 12H21V5C21 3.9 20.1 3 19 3H12Z"
-      stroke="hsl(var(--primary))"
+      d="M19.5 3C19.5 3 16.5 4.5 12 4.5C7.5 4.5 4.5 3 4.5 3"
+      stroke="hsl(var(--foreground))"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M4.5 3V21"
+      stroke="hsl(var(--foreground))"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M19.5 3V21"
+      stroke="hsl(var(--foreground))"
       strokeWidth="1.5"
       strokeLinecap="round"
       strokeLinejoin="round"
     />
     <circle
-      cx="16.5"
-      cy="16.5"
-      r="3"
+      cx="12"
+      cy="12"
+      r="4.5"
       stroke="hsl(var(--primary))"
       strokeWidth="1.5"
     />
     <path
-      d="M21 21L18.8 18.8"
+      d="M15.5 15.5L18 18"
       stroke="hsl(var(--primary))"
       strokeWidth="1.5"
       strokeLinecap="round"
