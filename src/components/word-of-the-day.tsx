@@ -5,42 +5,19 @@ import type { Term } from '@/lib/data';
 import Link from 'next/link';
 import { Card, CardContent } from '@/components/ui/card';
 import { ArrowRight } from 'lucide-react';
+import { useWordOfTheDay } from '@/hooks/use-word-of-the-day';
 
 export default function WordOfTheDay({ terms }: { terms: Term[] }) {
-  const [word, setWord] = useState<Term | null>(null);
+  const { word } = useWordOfTheDay(terms);
   const [currentDate, setCurrentDate] = useState('');
 
   useEffect(() => {
-    let storedWordId: string | null = null;
-    try {
-      storedWordId = sessionStorage.getItem('word-of-the-day');
-    } catch (error) {
-      console.error('Session storage is not available.');
-    }
-
-    if (storedWordId) {
-      const foundWord = terms.find((t) => t.id === storedWordId);
-      if (foundWord) {
-        setWord(foundWord);
-      }
-    } else {
-      const randomIndex = Math.floor(Math.random() * terms.length);
-      const randomWord = terms[randomIndex];
-      setWord(randomWord);
-      try {
-        sessionStorage.setItem('word-of-the-day', randomWord.id);
-      } catch (error) {
-        console.error('Session storage is not available.');
-      }
-    }
-    
     setCurrentDate(new Date().toLocaleDateString('en-US', {
       year: 'numeric',
       month: 'long',
       day: 'numeric',
     }));
-
-  }, [terms]);
+  }, []);
 
   if (!word) {
     return null;

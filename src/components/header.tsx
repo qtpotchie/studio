@@ -1,13 +1,15 @@
 import Link from 'next/link';
 import Logo from './logo';
 import { Button } from './ui/button';
-import { Bookmark, History, Menu, HomeIcon } from 'lucide-react';
+import { Bookmark, History, Menu, HomeIcon, CalendarDays } from 'lucide-react';
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
+  DropdownMenuSeparator,
 } from '@/components/ui/dropdown-menu';
+import WordOfTheDayLink from './word-of-the-day-link';
 
 export default function Header() {
   return (
@@ -20,7 +22,7 @@ export default function Header() {
           </Link>
         </div>
         <div className="flex flex-1 items-center justify-end space-x-2">
-          <nav className="hidden md:flex items-center">
+          <nav className="flex items-center">
             <Button asChild variant="ghost" size="icon">
               <Link href="/history" aria-label="View Search History">
                 <History className="h-5 w-5" />
@@ -47,16 +49,18 @@ export default function Header() {
                     <span>Home</span>
                   </Link>
                 </DropdownMenuItem>
+                <DropdownMenuSeparator />
+                <WordOfTheDayLink />
                 <DropdownMenuItem asChild>
                   <Link href="/history">
                     <History className="mr-2 h-4 w-4" />
-                    <span>History</span>
+                    <span>Search History</span>
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
                   <Link href="/bookmarks">
                     <Bookmark className="mr-2 h-4 w-4" />
-                    <span>Bookmarks</span>
+                    <span>Bookmarked Terms</span>
                   </Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
