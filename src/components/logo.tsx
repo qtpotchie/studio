@@ -11,10 +11,13 @@ const Logo = ({ className }: { className?: string }) => (
     aria-label="TechTermz Logo"
   >
     <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM8 7H16V9H13V17H11V9H8V7Z"
+      d="M4 4H20V6H13V18H11V6H4V4Z"
       fill="hsl(var(--primary))"
+    />
+    <path
+      d="M11 18L20 18L11 8L13 8L22 18L22 20L4 20L13 10L11 10L2 20L2 18L11 18Z"
+      fill="hsl(var(--primary))"
+      fillOpacity="0.6"
     />
   </svg>
 );
