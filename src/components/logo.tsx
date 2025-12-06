@@ -8,7 +8,7 @@ const Logo = ({ className }: { className?: string }) => (
     viewBox="0 0 100 100"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    aria-label="Jargon Decoder Logo"
+    aria-label="TechTermz Logo"
   >
     <path
       d="M20 20V80H45C64.33 80 80 64.33 80 45V20H55V45C55 50.523 50.523 55 45 55H20Z"

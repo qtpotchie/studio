@@ -5,7 +5,7 @@ import Header from '@/components/header';
 import { ClientProviders } from '@/components/client-providers';
 
 export const metadata: Metadata = {
-  title: 'Jargon Decoder',
+  title: 'TechTermz',
   description: 'Your go-to dictionary for IT and tech jargon.',
 };
 
