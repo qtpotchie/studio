@@ -1,3 +1,4 @@
+
 export type Term = {
   id: string;
   term: string;
@@ -323,3 +324,5 @@ export const terms: Term[] = [
     example: 'To send a folder of photos via email, you might first compress it into a single .zip file to reduce the overall size and make it a single attachment.',
   },
 ];
+
+    
