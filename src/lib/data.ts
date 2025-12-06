@@ -310,6 +310,13 @@ export const terms: Term[] = [
     example: 'The developer built an aggregation pipeline to process raw log data, grouping entries by user and calculating their average session duration.',
   },
   {
+    id: 'agile-methodology',
+    term: 'Agile Methodology',
+    slug: 'agile-methodology',
+    definition: 'A software development approach that focuses on iterative development, collaboration, and responding to change. Work is done in short cycles called "sprints" to deliver value incrementally.',
+    example: 'The development team adopted the Agile methodology, allowing them to release new features every two weeks and quickly adapt to customer feedback.'
+  },
+  {
     id: 'agp-slot',
     term: 'AGP Slot',
     slug: 'agp-slot',
@@ -331,11 +338,25 @@ export const terms: Term[] = [
     example: 'Google\'s Tensor Processing Unit (TPU) is a powerful AI accelerator designed specifically for running their TensorFlow framework.',
   },
   {
+    id: 'ai-alignment',
+    term: 'AI Alignment',
+    slug: 'ai-alignment',
+    definition: 'The field of research focused on ensuring that artificial intelligence systems are aligned with human values and goals.',
+    example: 'The goal of AI alignment is to prevent advanced AI from having unintended and harmful consequences.',
+  },
+  {
     id: 'ai-inference-engine',
     term: 'AI Inference Engine',
     slug: 'ai-inference-engine',
     definition: 'The part of an AI system that uses a trained model to make predictions or decisions based on new, unseen data.',
     example: 'The self-driving car\'s AI inference engine processed the camera feed in real-time to identify pedestrians and other vehicles.',
+  },
+  {
+    id: 'ai-llm-pipeline',
+    term: 'AI LLM Pipeline',
+    slug: 'ai-llm-pipeline',
+    definition: 'An end-to-end workflow for building and deploying a large language model, including data preprocessing, training, evaluation, and deployment.',
+    example: 'The company built an AI LLM pipeline to continuously improve their customer service chatbot.',
   },
   {
     id: 'ai-model-compression',
@@ -345,11 +366,39 @@ export const terms: Term[] = [
     example: 'Through AI model compression, they were able to deploy the large language model on a mobile device.',
   },
   {
+    id: 'ai-model-quantization',
+    term: 'AI Model Quantization',
+    slug: 'ai-model-quantization',
+    definition: 'An optimization technique that reduces the precision of the numerical weights and activations in an AI model (e.g., from 32-bit floating-point numbers to 8-bit integers). This makes the model smaller, faster, and more energy-efficient with minimal loss of accuracy.',
+    example: 'The developers applied AI model quantization to deploy their complex image recognition model on a smartphone with limited memory and processing power.'
+  },
+  {
+    id: 'ai-quantization',
+    term: 'AI Quantization',
+    slug: 'ai-quantization',
+    definition: 'A technique to reduce the precision of the numbers used to represent a model\'s parameters, which can make the model smaller and faster.',
+    example: 'They used AI quantization to run the large language model on a mobile device.',
+  },
+  {
+    id: 'ai-tokenization',
+    term: 'AI Tokenization',
+    slug: 'ai-tokenization',
+    definition: 'The process of breaking down a piece of text into smaller units called tokens, which can be words, subwords, or characters. This is a fundamental step in natural language processing.',
+    example: 'The language model first uses AI tokenization to convert the input sentence into a sequence of tokens.',
+  },
+  {
     id: 'ai-workflow',
     term: 'AI Workflow',
     slug: 'ai-workflow',
     definition: 'The end-to-end process of building an AI application, from data collection and model training to deployment and monitoring.',
     example: 'The MLOps team was responsible for automating the entire AI workflow to enable continuous training and deployment.',
+  },
+  {
+    id: 'aidl-android-interface-definition-language',
+    term: 'AIDL (Android Interface Definition Language)',
+    slug: 'aidl-android-interface-definition-language',
+    definition: 'In Android, AIDL is used to define the programming interface that both a client and service agree upon in order to communicate with each other using interprocess communication (IPC).',
+    example: 'The music player app used AIDL to allow other applications to control playback, like pausing or skipping tracks.'
   },
   {
     id: 'aimd-algorithm',
@@ -359,6 +408,13 @@ export const terms: Term[] = [
     example: 'TCP uses the AIMD algorithm to fairly share network bandwidth and avoid congestion collapse.',
   },
   {
+    id: 'aio-all-in-one-computer',
+    term: 'AIO (All-in-One Computer)',
+    slug: 'aio-all-in-one-computer',
+    definition: 'A desktop computer where the internal components (like the motherboard, CPU, and storage) are integrated into the same case as the display, creating a compact and streamlined form factor.',
+    example: 'The office reception desk was equipped with an AIO computer to save space and reduce cable clutter.'
+  },
+  {
     id: 'aio-cooler',
     term: 'AIO Cooler (All-in-One)',
     slug: 'aio-cooler',
@@ -366,11 +422,39 @@ export const terms: Term[] = [
     example: 'He installed an AIO cooler to keep his overclocked CPU temperatures low during intense gaming sessions.',
   },
   {
+    id: 'aiops-artificial-intelligence-for-it-operations',
+    term: 'AIOps (Artificial Intelligence for IT Operations)',
+    slug: 'aiops-artificial-intelligence-for-it-operations',
+    definition: 'The application of big data analytics and machine learning to IT operations. AIOps platforms use AI to automate tasks like monitoring, event correlation, and root cause analysis, helping IT teams detect and resolve issues faster.',
+    example: 'The company implemented an AIOps solution that could predict potential system failures by analyzing subtle patterns in performance logs.'
+  },
+  {
     id: 'air-gap-security',
     term: 'Air Gap Security',
     slug: 'air-gap-security',
     definition: 'A security measure where a computer or network is physically isolated from other networks, such as the internet, to prevent remote attacks.',
     example: 'The control systems for the nuclear power plant are protected by air gap security, with no physical connection to the outside world.',
+  },
+  {
+    id: 'airgap-network',
+    term: 'Airgap Network',
+    slug: 'airgap-network',
+    definition: 'A security measure where a computer or network is physically isolated from unsecured networks, such as the public internet or an unsecured local area network. This is the highest level of network security.',
+    example: 'The control systems for the nuclear power plant were on an airgap network, completely disconnected from the outside world, to prevent cyberattacks.'
+  },
+  {
+    id: 'aix-operating-system',
+    term: 'AIX Operating System',
+    slug: 'aix-operating-system',
+    definition: 'A series of proprietary Unix operating systems developed and sold by IBM for several of its computer platforms.',
+    example: 'The bank\'s critical legacy application still runs on a powerful IBM server running the AIX operating system.',
+  },
+  {
+    id: 'ajax-asynchronous-javascript-and-xml',
+    term: 'AJAX (Asynchronous JavaScript and XML)',
+    slug: 'ajax-asynchronous-javascript-and-xml',
+    definition: 'A set of web development techniques that allows a web page to communicate with a server in the background to send or retrieve data, without interfering with the display and behavior of the existing page.',
+    example: 'When you type a search query on Google, AJAX is used to fetch and display search suggestions in real-time as you type.'
   },
   {
     id: 'ajax-request',
@@ -387,11 +471,32 @@ export const terms: Term[] = [
     example: 'The programmer registered an alarm handler to automatically save the user\'s document every five minutes.',
   },
   {
+    id: 'alarm-manager-android',
+    term: 'Alarm Manager (Android)',
+    slug: 'alarm-manager-android',
+    definition: 'An Android system service that allows developers to schedule their application to be run at some point in the future. The system will run the app, even if it is not currently active, to perform the scheduled task.',
+    example: 'The calendar app used the Alarm Manager to schedule notifications for upcoming events.'
+  },
+  {
+    id: 'algorithmic-complexity',
+    term: 'Algorithmic Complexity',
+    slug: 'algorithmic-complexity',
+    definition: 'A formal measure of the amount of resources (time and space) an algorithm requires to run as a function of the size of its input. It is often expressed using Big O notation, like O(n) or O(n^2).',
+    example: 'A simple search algorithm has a linear complexity of O(n), meaning the time it takes grows in direct proportion to the number of items being searched.'
+  },
+  {
     id: 'algorithmic-trading-system',
     term: 'Algorithmic Trading System',
     slug: 'algorithmic-trading-system',
     definition: 'A computer system that automates stock trading by executing orders based on pre-defined algorithms and market data.',
     example: 'The high-frequency trading firm relies on a sophisticated algorithmic trading system to execute thousands of trades per second.',
+  },
+  {
+    id: 'alias-record-dns',
+    term: 'Alias Record (DNS)',
+    slug: 'alias-record-dns',
+    definition: 'A type of DNS record that maps an alias domain name to a canonical name (the "true" name). It is similar to a CNAME record but can be used at the root domain (e.g., example.com), which CNAMEs cannot.',
+    example: 'The website `www.example.com` used an Alias record to point to the dynamically changing hostname of a cloud load balancer.'
   },
   {
     id: 'alignment-padding',
@@ -415,6 +520,13 @@ export const terms: Term[] = [
     example: 'The File Allocation Table (FAT) in older Windows systems is a well-known example of an allocation table.',
   },
   {
+    id: 'allocator-memory-allocator',
+    term: 'Allocator (Memory Allocator)',
+    slug: 'allocator-memory-allocator',
+    definition: 'A fundamental part of a computer\'s operating system or a program\'s runtime environment responsible for managing memory. It handles requests for blocks of memory (allocation) and returns them to the system when they are no longer needed (deallocation).',
+    example: 'The C programming language uses the `malloc` function as its standard memory allocator.'
+  },
+  {
     id: 'allowlist',
     term: 'Allowlist',
     slug: 'allowlist',
@@ -422,7 +534,7 @@ export const terms: Term[] = [
     example: 'The corporate firewall uses an allowlist, only permitting traffic to pre-approved websites and services.',
   },
   {
-    id: 'alpha-channel',
+id: 'alpha-channel',
     term: 'Alpha Channel',
     slug: 'alpha-channel',
     definition: 'An extra component of a color value that represents the degree of transparency or opacity of that color.',
@@ -478,6 +590,13 @@ export const terms: Term[] = [
     example: 'The splash screen showed the AMI BIOS logo before booting into Windows.',
   },
   {
+    id: 'amp-accelerated-mobile-pages',
+    term: 'AMP (Accelerated Mobile Pages)',
+    slug: 'amp-accelerated-mobile-pages',
+    definition: 'An open-source HTML framework developed by Google to create lightweight, fast-loading web pages for mobile devices. AMP pages are often cached by Google and served directly from its servers for near-instant loading.',
+    example: 'The news organization created AMP versions of their articles to improve the reading experience for mobile users coming from Google search.'
+  },
+  {
     id: 'amplification-attack',
     term: 'Amplification Attack',
     slug: 'amplification-attack',
@@ -490,6 +609,13 @@ export const terms: Term[] = [
     slug: 'ampere-microarchitecture',
     definition: 'A GPU microarchitecture developed by NVIDIA, used in their GeForce 30 series and A100 data center GPUs.',
     example: 'The new Ampere microarchitecture brought significant improvements in ray tracing and AI performance.',
+  },
+  {
+    id: 'amqp-advanced-message-queuing-protocol',
+    term: 'AMQP (Advanced Message Queuing Protocol)',
+    slug: 'amqp-advanced-message-queuing-protocol',
+    definition: 'An open standard application layer protocol for message-oriented middleware. AMQP defines a binary wire protocol that enables reliable, interoperable messaging between different applications and systems.',
+    example: 'The microservices used RabbitMQ, a message broker that implements AMQP, to communicate with each other asynchronously.'
   },
   {
     id: 'anaconda-distribution',
@@ -527,6 +653,13 @@ export const terms: Term[] = [
     example: 'The developer used ADB to install the app, view logs, and take a screenshot of the device.',
   },
   {
+    id: 'android-runtime-art',
+    term: 'Android Runtime (ART)',
+    slug: 'android-runtime-art',
+    definition: 'The managed runtime environment used by applications on Android. ART uses Ahead-Of-Time (AOT) compilation to compile applications into native machine code upon installation, resulting in faster app launch times and improved performance compared to its predecessor, Dalvik.',
+    example: 'Since the switch to Android Runtime, apps on the phone launch faster and the system feels more responsive.'
+  },
+  {
     id: 'angular-cli',
     term: 'Angular CLI',
     slug: 'angular-cli',
@@ -546,6 +679,13 @@ export const terms: Term[] = [
     slug: 'anisotropic-filtering',
     definition: 'A technique in computer graphics that enhances the quality of textures on surfaces that are viewed at oblique angles.',
     example: 'He enabled 16x anisotropic filtering in the game settings to make the textures on the road ahead look sharp and clear.',
+  },
+  {
+    id: 'anomaly-detection',
+    term: 'Anomaly Detection',
+    slug: 'anomaly-detection',
+    definition: 'The process of identifying rare items, events, or observations which raise suspicions by differing significantly from the majority of the data. It is often used in fraud detection, network security, and system health monitoring.',
+    example: 'The credit card company\'s anomaly detection system flagged a transaction as potentially fraudulent because it was made in a different country from the user\'s usual location.'
   },
   {
     id: 'ansible',
@@ -590,6 +730,13 @@ export const terms: Term[] = [
     example: 'The attacker used anti-forensics methods like data wiping and encryption to cover their tracks.',
   },
   {
+    id: 'anti-spoofing',
+    term: 'Anti-spoofing',
+    slug: 'anti-spoofing',
+    definition: 'Measures taken to prevent spoofing attacks, where an attacker impersonates another device or user on a network.',
+    example: 'The email server implemented DMARC as an anti-spoofing measure to prevent fraudulent emails.',
+  },
+  {
     id: 'anti-tamper-module',
     term: 'Anti-tamper Module',
     slug: 'anti-tamper-module',
@@ -597,18 +744,11 @@ export const terms: Term[] = [
     example: 'The gaming console has an anti-tamper module to prevent users from running pirated games.',
   },
   {
-    id: 'ant-protocol',
-    term: 'ANT+ Protocol',
-    slug: 'ant-protocol',
-    definition: 'A wireless sensor network protocol primarily used for sports and fitness sensors, like heart rate monitors and bike computers.',
-    example: 'His new smartwatch supports the ANT+ protocol, allowing it to connect to his bike\'s power meter.',
-  },
-  {
-    id: 'anti-spoofing',
-    term: 'Anti-spoofing',
-    slug: 'anti-spoofing',
-    definition: 'Measures taken to prevent spoofing attacks, where an attacker impersonates another device or user on a network.',
-    example: 'The email server implemented DMARC as an anti-spoofing measure to prevent fraudulent emails.',
+    id: 'antimalware-engine',
+    term: 'Antimalware Engine',
+    slug: 'antimalware-engine',
+    definition: 'The core component of an antivirus or antimalware software that is responsible for scanning files and system activity to detect, block, and remove malicious software.',
+    example: 'The antimalware engine used a combination of signature-based detection and behavioral heuristics to identify the new virus.'
   },
   {
     id: 'antivirus-heuristic',
@@ -618,11 +758,25 @@ export const terms: Term[] = [
     example: 'The antivirus heuristic analysis flagged the program as potentially malicious because it was attempting to modify system files.',
   },
   {
+    id: 'ant-protocol',
+    term: 'ANT+ Protocol',
+    slug: 'ant-protocol',
+    definition: 'A wireless sensor network protocol primarily used for sports and fitness sensors, like heart rate monitors and bike computers.',
+    example: 'His new smartwatch supports the ANT+ protocol, allowing it to connect to his bike\'s power meter.',
+  },
+  {
     id: 'aon-memory',
     term: 'AON (Always-On) Memory',
     slug: 'aon-memory',
     definition: 'A small amount of memory in a system-on-a-chip (SoC) that remains powered even when the rest of the chip is in a low-power state.',
     example: 'The AON memory stored the state needed to quickly wake the device from sleep mode.',
+  },
+  {
+    id: 'aot-compilation-ahead-of-time',
+    term: 'AOT Compilation (Ahead-of-Time)',
+    slug: 'aot-compilation-ahead-of-time',
+    definition: 'The act of compiling a higher-level programming language into a lower-level language (like machine code) before the program is executed. This contrasts with Just-In-Time (JIT) compilation, which happens at runtime.',
+    example: 'Android\'s ART runtime uses AOT compilation to improve application performance and reduce startup time.'
   },
   {
     id: 'ap-mode',
@@ -667,6 +821,13 @@ export const terms: Term[] = [
     example: 'The data scientists used Apache Spark to process terabytes of log data and train a machine learning model.',
   },
   {
+    id: 'api-chaining',
+    term: 'API Chaining',
+    slug: 'api-chaining',
+    definition: 'A process where the output of one API call is used as the input for another API call.',
+    example: 'He used API chaining to first get a user\'s ID, and then use that ID to fetch their profile information.',
+  },
+  {
     id: 'api-endpoint',
     term: 'API Endpoint',
     slug: 'api-endpoint',
@@ -688,11 +849,25 @@ export const terms: Term[] = [
     example: 'He had to include his API key in the request to access the weather data service.',
   },
   {
+    id: 'api-rate-limiting',
+    term: 'API Rate Limiting',
+    slug: 'api-rate-limiting',
+    definition: 'A strategy for limiting network traffic. It puts a cap on how often a user can call the API within a certain timeframe to prevent abuse or overload.',
+    example: 'To prevent abuse, the weather API implemented a rate limit of 100 requests per hour for free users.'
+  },
+  {
     id: 'apic-advanced-programmable-interrupt-controller',
     term: 'APIC (Advanced Programmable Interrupt Controller)',
     slug: 'apic-advanced-programmable-interrupt-controller',
     definition: 'A type of interrupt controller in x86 systems that allows for more complex interrupt management in multiprocessor systems.',
     example: 'Modern multi-core CPUs use APIC to manage hardware interrupts efficiently across all cores.',
+  },
+  {
+    id: 'apk-android-package-kit',
+    term: 'APK (Android Package Kit)',
+    slug: 'apk-android-package-kit',
+    definition: 'The file format used by the Android operating system for the distribution and installation of mobile apps. An APK file contains all of the elements that an app needs to install correctly on a device.',
+    example: 'To install the beta version of the app, he had to download the APK file directly from the developer\'s website and "sideload" it onto his phone.'
   },
   {
     id: 'apk-file',
@@ -716,6 +891,13 @@ export const terms: Term[] = [
     example: 'The DevOps team used an APM tool like New Relic to diagnose a performance bottleneck in their web application.',
   },
   {
+    id: 'app-bundle-aab',
+    term: 'App Bundle (AAB)',
+    slug: 'app-bundle-aab',
+    definition: 'A publishing format for Android apps that includes all the app\'s compiled code and resources, but defers APK generation and signing to Google Play. This allows Google to deliver a highly optimized APK for each specific device configuration.',
+    example: 'By publishing an App Bundle instead of a universal APK, the developer reduced the download size of their app for most users.'
+  },
+  {
     id: 'app-container',
     term: 'App Container',
     slug: 'app-container',
@@ -728,6 +910,13 @@ export const terms: Term[] = [
     slug: 'app-manifest',
     definition: 'A file (like `AndroidManifest.xml` or `manifest.json`) that describes essential information about an application to the operating system or browser.',
     example: 'The app manifest file declares the app\'s permissions, activities, and required hardware features.',
+  },
+  {
+    id: 'app-sandbox-android',
+    term: 'App Sandbox (Android)',
+    slug: 'app-sandbox-android',
+    definition: 'A security mechanism in the Android OS that isolates each application in its own restricted environment. The sandbox prevents apps from accessing data from other apps or making changes to the system without explicit permission.',
+    example: 'Thanks to the App Sandbox, a malicious app cannot steal your login credentials from your banking app.'
   },
   {
     id: 'apparmor',
@@ -758,6 +947,13 @@ export const terms: Term[] = [
     example: 'The M1, M2, and M3 chips are all part of the Apple Silicon family, known for their high performance and power efficiency.',
   },
   {
+    id: 'applet',
+    term: 'Applet',
+    slug: 'applet',
+    definition: 'A small application that performs one specific task and runs within the context of a larger program, often a web browser (now largely obsolete).',
+    example: 'In the early 2000s, many websites used Java applets to display interactive animations or games.',
+  },
+  {
     id: 'application-binary-interface',
     term: 'Application Binary Interface (ABI)',
     slug: 'application-binary-interface',
@@ -786,6 +982,13 @@ export const terms: Term[] = [
     example: 'HTTP, FTP, and SMTP are all protocols that function at the Application Layer.',
   },
   {
+    id: 'application-layer-osi-model',
+    term: 'Application Layer (OSI Model)',
+    slug: 'application-layer-osi-model',
+    definition: 'The seventh and highest layer of the Open Systems Interconnection (OSI) model. This layer is closest to the end user and provides network services to the applications of the user, such as web browsers and email clients. Examples of protocols at this layer include HTTP, FTP, and SMTP.',
+    example: 'When you browse a website, your web browser is interacting with the web server at the Application Layer using the HTTP protocol.'
+  },
+  {
     id: 'application-load-balancer',
     term: 'Application Load Balancer (ALB)',
     slug: 'application-load-balancer',
@@ -800,18 +1003,25 @@ export const terms: Term[] = [
     example: 'Game engines and GUI frameworks are built around an application loop that processes user input and updates the screen every frame.',
   },
   {
+    id: 'application-pool',
+    term: 'Application Pool',
+    slug: 'application-pool',
+    definition: 'In Microsoft\'s IIS web server, an isolated environment where web applications run, improving stability and security.',
+    example: 'The administrator configured each website to run in its own application pool, so if one site crashed, it wouldn\'t affect the others.',
+  },
+  {
+    id: 'application-profiler',
+    term: 'Application Profiler',
+    slug: 'application-profiler',
+    definition: 'A tool that analyzes the performance of a software application to identify bottlenecks and areas for optimization.',
+    example: 'The developer used an application profiler to find out which functions were taking the most time to execute.',
+  },
+  {
     id: 'application-signing',
     term: 'Application Signing',
     slug: 'application-signing',
     definition: 'The process of digitally signing an application package to verify the author and ensure it has not been tampered with.',
     example: 'Apple requires all iOS apps to go through application signing with a valid developer certificate before they can be installed.',
-  },
-  {
-    id: 'applet',
-    term: 'Applet',
-    slug: 'applet',
-    definition: 'A small application that performs one specific task and runs within the context of a larger program, often a web browser (now largely obsolete).',
-    example: 'In the early 2000s, many websites used Java applets to display interactive animations or games.',
   },
   {
     id: 'appsync',
@@ -877,6 +1087,13 @@ export const terms: Term[] = [
     example: 'He chose Arch Linux for his new development machine because he wanted full control over every package that was installed.',
   },
   {
+    id: 'archive-bit',
+    term: 'Archive Bit',
+    slug: 'archive-bit',
+    definition: 'A file attribute indicating whether the file has been backed up since its last modification.',
+    example: 'Backup software clears the archive bit after a successful backup and the OS sets it when the file is changed.',
+  },
+  {
     id: 'arcmap-projection',
     term: 'Arcmap Projection',
     slug: 'arcmap-projection',
@@ -905,11 +1122,11 @@ export const terms: Term[] = [
     example: 'When a program needs to add two numbers, the instruction is sent to the Arithmetic Logic Unit for calculation.',
   },
   {
-    id: 'arm64-instruction-set',
-    term: 'Arm64 Instruction Set',
-    slug: 'arm64-instruction-set',
-    definition: 'The 64-bit version of the ARM instruction set architecture, used in modern mobile devices and an increasing number of servers and laptops.',
-    example: 'Apple\'s M-series chips are based on the Arm64 instruction set.',
+    id: 'arm-architecture',
+    term: 'ARM Architecture',
+    slug: 'arm-architecture',
+    definition: 'A family of reduced instruction set computing (RISC) architectures for computer processors, configured for various environments. ARM processors are widely used in consumer electronics, including smartphones and tablets, due to their low power consumption.',
+    example: 'Apple\'s M-series chips and Qualcomm\'s Snapdragon processors are both based on the ARM architecture.'
   },
   {
     id: 'arm-trustzone',
@@ -917,6 +1134,20 @@ export const terms: Term[] = [
     slug: 'arm-trustzone',
     definition: 'A hardware-based security technology in ARM processors that creates an isolated, secure world for running trusted applications.',
     example: 'Mobile payment apps use ARM TrustZone to handle sensitive data like fingerprints and credit card information in a secure environment.',
+  },
+  {
+    id: 'arm64-instruction-set',
+    term: 'Arm64 Instruction Set',
+    slug: 'arm64-instruction-set',
+    definition: 'The 64-bit version of the ARM instruction set architecture, used in modern mobile devices and an increasing number of servers and laptops.',
+    example: 'Apple\'s M-series chips are based on the Arm64 instruction set.',
+  },
+  {
+    id: 'arp-address-resolution-protocol',
+    term: 'ARP (Address Resolution Protocol)',
+    slug: 'arp-address-resolution-protocol',
+    definition: 'A communication protocol used for discovering the link layer address, such as a MAC address, associated with a given internet layer address, typically an IPv4 address.',
+    example: 'When your computer wants to send a packet to another device on the same local network, it uses ARP to find the destination device\'s MAC address.'
   },
   {
     id: 'arp-cache',
@@ -947,11 +1178,25 @@ export const terms: Term[] = [
     example: 'In the array `[10, 20, 30]`, array indexing with `[1]` would return the value `20`.',
   },
   {
+    id: 'array-slicing',
+    term: 'Array Slicing',
+    slug: 'array-slicing',
+    definition: 'A syntax for extracting a portion of an array.',
+    example: 'In Python, you can use array slicing to get a sub-array, like `my_array[1:3]`.',
+  },
+  {
     id: 'arraylist',
     term: 'ArrayList',
     slug: 'arraylist',
     definition: 'A resizable array data structure, commonly found in languages like Java, that provides dynamic resizing as elements are added and removed.',
     example: 'He used an ArrayList to store a list of user names because he didn\'t know how many users there would be in advance.',
+  },
+  {
+    id: 'artifact-ci-cd',
+    term: 'Artifact (CI/CD)',
+    slug: 'artifact-ci-cd',
+    definition: 'In a continuous integration/continuous delivery (CI/CD) pipeline, an artifact is the output of a build process. This can include compiled code, executables, libraries, a Docker image, or a packaged application.',
+    example: 'After a successful build, the CI server uploaded the final build artifact—a deployable ZIP file—to the storage repository.'
   },
   {
     id: 'artifact-repository',
@@ -996,11 +1241,39 @@ export const terms: Term[] = [
     example: 'The website\'s Auto Scaling Group automatically added more servers during the Black Friday traffic spike to keep the site responsive.',
   },
   {
+    id: 'asgi-asynchronous-server-gateway-interface',
+    term: 'ASGI (Asynchronous Server Gateway Interface)',
+    slug: 'asgi-asynchronous-server-gateway-interface',
+    definition: 'A spiritual successor to WSGI, it is a standard interface between asynchronous Python web servers, frameworks, and applications. It is designed to handle modern protocols like WebSockets that require long-lived connections.',
+    example: 'The real-time chat application was built with FastAPI, a Python framework that uses ASGI to manage its WebSocket connections.'
+  },
+  {
     id: 'asic',
     term: 'ASIC',
     slug: 'asic',
     definition: 'An integrated circuit (IC) customized for a particular use, rather than intended for general-purpose use.',
     example: 'Bitcoin mining is most efficiently done using an ASIC specifically designed for SHA-256 hashing.',
+  },
+  {
+    id: 'asimd-advanced-simd-neon-instructions',
+    term: 'ASIMD (Advanced SIMD / Neon Instructions)',
+    slug: 'asimd-advanced-simd-neon-instructions',
+    definition: 'A Single Instruction, Multiple Data (SIMD) vector processing extension for ARM processors. It allows for parallel processing of data, significantly accelerating tasks like multimedia encoding/decoding and signal processing.',
+    example: 'The mobile video editor was optimized with Neon instructions to speed up the rendering of video effects.'
+  },
+  {
+    id: 'asm-js',
+    term: 'asm.js',
+    slug: 'asm-js',
+    definition: 'A strict subset of JavaScript that can be used as a low-level, efficient target language for compilers. Code written in asm.js can be highly optimized by JavaScript engines, resulting in near-native performance for web applications.',
+    example: 'The game engine was compiled from C++ to asm.js, allowing it to run in a web browser with impressive performance.'
+  },
+  {
+    id: 'asn-1-abstract-syntax-notation-one',
+    term: 'ASN.1 (Abstract Syntax Notation One)',
+    slug: 'asn-1-abstract-syntax-notation-one',
+    definition: 'A standard and notation that describes rules and structures for representing, encoding, transmitting, and decoding data in telecommunications and computer networking. It is widely used in protocols like X.509 for digital certificates.',
+    example: 'The SSL certificate was encoded using ASN.1, which defined the structure for fields like the common name, public key, and expiration date.'
   },
   {
     id: 'asn1-encoding',
@@ -1017,11 +1290,18 @@ export const terms: Term[] = [
     example: 'The development team chose ASP.NET Core to build their new high-performance web API.',
   },
   {
-    id: 'asset-bundle',
-    term: 'Asset Bundle',
-    slug: 'asset-bundle',
-    definition: 'In game development (like Unity), a package of assets (models, textures, audio) that can be loaded on demand to manage memory and download size.',
-    example: 'The game loads a new asset bundle for each level, containing only the textures and models needed for that specific area.',
+    id: 'asp-net-core-middleware',
+    term: 'ASP.NET Core Middleware',
+    slug: 'asp-net-core-middleware',
+    definition: 'Software components that are assembled into an application pipeline to handle requests and responses. Each component chooses whether to pass the request to the next component in the pipeline, and can perform work before and after the next component is invoked.',
+    example: 'The developer added an authentication middleware to the ASP.NET Core pipeline to ensure that only logged-in users could access certain pages.'
+  },
+  {
+    id: 'aspect-ratio',
+    term: 'Aspect Ratio',
+    slug: 'aspect-ratio',
+    definition: 'The proportional relationship between the width and height of an image or screen.',
+    example: 'A 16:9 aspect ratio is common for widescreen TVs and monitors.'
   },
   {
     id: 'assembler-directive',
@@ -1045,6 +1325,27 @@ export const terms: Term[] = [
     example: 'The program crashed with an assertion failure because a function that was supposed to return a non-null value returned null.',
   },
   {
+    id: 'asset-bundle',
+    term: 'Asset Bundle',
+    slug: 'asset-bundle',
+    definition: 'In game development (like Unity), a package of assets (models, textures, audio) that can be loaded on demand to manage memory and download size.',
+    example: 'The game loads a new asset bundle for each level, containing only the textures and models needed for that specific area.',
+  },
+  {
+    id: 'asset-hashing',
+    term: 'Asset Hashing',
+    slug: 'asset-hashing',
+    definition: 'A technique used in web development to append a unique hash to the filename of static assets like CSS and JavaScript files. This is used for cache busting.',
+    example: 'Asset hashing ensures that users always get the latest version of the CSS file when it changes.',
+  },
+  {
+    id: 'asset-pipeline',
+    term: 'Asset Pipeline',
+    slug: 'asset-pipeline',
+    definition: 'A framework in web development for processing and serving static assets like CSS, JavaScript, and images.',
+    example: 'The Rails asset pipeline concatenates and minifies JavaScript files to improve page load times.'
+  },
+  {
     id: 'assignment-operator',
     term: 'Assignment Operator',
     slug: 'assignment-operator',
@@ -1066,6 +1367,13 @@ export const terms: Term[] = [
     example: 'Using async/await, the developer could write code to fetch data from an API as if it were a simple, blocking operation.',
   },
   {
+    id: 'asymmetric-encryption',
+    term: 'Asymmetric Encryption',
+    slug: 'asymmetric-encryption',
+    definition: 'A cryptographic system that uses pairs of keys: public keys, which may be disseminated widely, and private keys, which are known only to the owner. This allows for both secure communication and digital signatures.',
+    example: 'When you send an encrypted email using PGP, you encrypt it with the recipient\'s public key, and they decrypt it with their private key. This is an example of asymmetric encryption.'
+  },
+  {
     id: 'asynchronous-bus',
     term: 'Asynchronous Bus',
     slug: 'asynchronous-bus',
@@ -1078,6 +1386,13 @@ export const terms: Term[] = [
     slug: 'asynchronous-replication',
     definition: 'In databases, a method of data replication where the primary server commits a transaction and sends the data to replicas without waiting for their confirmation.',
     example: 'They chose asynchronous replication for better performance, accepting a small risk of data loss if the primary server crashed immediately after a write.',
+  },
+  {
+    id: 'asynchronous-sockets',
+    term: 'Asynchronous Sockets',
+    slug: 'asynchronous-sockets',
+    definition: 'A programming model for network sockets that allows a program to perform other tasks while waiting for network operations to complete.',
+    example: 'The high-performance server used asynchronous sockets to handle thousands of concurrent connections.',
   },
   {
     id: 'ata-advanced-technology-attachment',
@@ -1171,6 +1486,13 @@ export const terms: Term[] = [
     example: 'By closing unnecessary open ports on the server, the administrator reduced the system\'s attack surface.',
   },
   {
+    id: 'attack-vector',
+    term: 'Attack Vector',
+    slug: 'attack-vector',
+    definition: 'A path or means by which a hacker can gain access to a computer or network server in order to deliver a payload or malicious outcome.',
+    example: 'Phishing emails are a common attack vector for malware.',
+  },
+  {
     id: 'attenuation',
     term: 'Attenuation',
     slug: 'attenuation',
@@ -1204,6 +1526,13 @@ export const terms: Term[] = [
     slug: 'audio-driver',
     definition: 'Software that allows the operating system to communicate with and control the computer\'s audio hardware.',
     example: 'After reinstalling Windows, he had to install the correct audio driver to get sound working again.',
+  },
+  {
+    id: 'audio-latency',
+    term: 'Audio Latency',
+    slug: 'audio-latency',
+    definition: 'The delay between the time an audio signal is generated and the time it is heard.',
+    example: 'Professional musicians require low audio latency for real-time monitoring.',
   },
   {
     id: 'audit-log',
@@ -1255,11 +1584,46 @@ export const terms: Term[] = [
     example: 'In some online games, using an auto clicker is considered cheating as it gives an unfair advantage.',
   },
   {
+    id: 'auto-failover',
+    term: 'Auto-Failover',
+    slug: 'auto-failover',
+    definition: 'A process that automatically switches to a standby system in the event of a failure of the primary system.',
+    example: 'The database was configured with auto-failover to a replica in another data center.',
+  },
+  {
+    id: 'auto-formatter',
+    term: 'Auto-formatter',
+    slug: 'auto-formatter',
+    definition: 'A tool that automatically formats source code to conform to a specific style guide.',
+    example: 'He configured his code editor to run an auto-formatter every time he saved a file.',
+  },
+  {
     id: 'auto-scaling',
     term: 'Auto Scaling',
     slug: 'auto-scaling',
     definition: 'A cloud computing feature that automatically adds or removes compute resources based on application demand.',
     example: 'The website\'s auto-scaling policy added more web servers to handle the surge in traffic during the Super Bowl.',
+  },
+  {
+    id: 'auto-scaling-threshold',
+    term: 'Auto-Scaling Threshold',
+    slug: 'auto-scaling-threshold',
+    definition: 'The metric threshold that triggers an auto-scaling event, such as CPU utilization exceeding 80%.',
+    example: 'They set the auto-scaling threshold to add a new server when CPU usage was above 70% for 5 minutes.',
+  },
+  {
+    id: 'auto-typer-dev-tool',
+    term: 'Auto Typer (Dev tool)',
+    slug: 'auto-typer-dev-tool',
+    definition: 'A tool that automatically generates type definitions or boilerplate code for a programming language.',
+    example: 'He used an auto typer to generate the TypeScript interfaces from his JSON data.'
+  },
+  {
+    id: 'auto-versioning',
+    term: 'Auto Versioning',
+    slug: 'auto-versioning',
+    definition: 'The process of automatically assigning version numbers to software builds.',
+    example: 'The CI/CD pipeline was configured for auto-versioning based on the Git commit hash.',
   },
   {
     id: 'autocad-script',
@@ -1304,11 +1668,53 @@ export const terms: Term[] = [
     example: 'Modern PHP frameworks use an autoloader to improve performance by only loading the specific class files that are needed for a request.',
   },
   {
+    id: 'automated-patch-deployment',
+    term: 'Automated Patch Deployment',
+    slug: 'automated-patch-deployment',
+    definition: 'The process of automatically distributing and applying software patches to systems in a network.',
+    example: 'The company used an automated patch deployment system to keep all their servers up to date with the latest security fixes.',
+  },
+  {
+    id: 'automated-provisioning',
+    term: 'Automated Provisioning',
+    slug: 'automated-provisioning',
+    definition: 'The process of automatically setting up new servers or cloud resources without manual intervention.',
+    example: 'They used Terraform for automated provisioning of their cloud infrastructure.',
+  },
+  {
+    id: 'automated-rollback',
+    term: 'Automated Rollback',
+    slug: 'automated-rollback',
+    definition: 'A feature in a deployment system that automatically reverts a failed deployment to the previous stable version.',
+    example: 'The CI/CD pipeline was configured for automated rollback if the new version failed its health checks.',
+  },
+  {
+    id: 'automated-testing',
+    term: 'Automated Testing',
+    slug: 'automated-testing',
+    definition: 'The use of software to automatically execute tests on another piece of software.',
+    example: 'The team wrote a suite of automated tests to ensure the application was working correctly after every code change.',
+  },
+  {
+    id: 'automatic-gain-control',
+    term: 'Automatic Gain Control',
+    slug: 'automatic-gain-control',
+    definition: 'A closed-loop feedback regulating circuit in an amplifier or chain of amplifiers, the purpose of which is to maintain a suitable signal amplitude at its output, despite variation of the signal amplitude at the input.',
+    example: 'The radio receiver uses automatic gain control to keep the volume level constant.'
+  },
+  {
     id: 'autonomous-drone-os',
     term: 'Autonomous Drone OS',
     slug: 'autonomous-drone-os',
     definition: 'An operating system specifically designed for drones that enables them to perform tasks without direct human control, using AI for navigation and decision-making.',
     example: 'The agricultural company uses drones running an autonomous drone OS to monitor crop health and apply pesticides precisely.',
+  },
+  {
+    id: 'autonomous-server',
+    term: 'Autonomous Server',
+    slug: 'autonomous-server',
+    definition: 'A server that can manage itself, including tasks like patching, tuning, and security, without human intervention.',
+    example: 'Oracle offers an autonomous server database that automates many of the routine tasks of a database administrator.',
   },
   {
     id: 'auto-responder-filter',
@@ -1346,6 +1752,13 @@ export const terms: Term[] = [
     example: 'The IT department uses the AutoSys scheduler to manage the nightly batch processing jobs for the entire company.',
   },
   {
+    id: 'availability-heuristic-sys',
+    term: 'Availability Heuristic (Sys)',
+    slug: 'availability-heuristic-sys',
+    definition: 'A mental shortcut that relies on immediate examples that come to a given person\'s mind when evaluating a specific topic, concept, method or decision.',
+    example: 'Because of the availability heuristic, the system administrator overestimated the probability of a hardware failure after one had just occurred.',
+  },
+  {
     id: 'availability-zone',
     term: 'Availability Zone',
     slug: 'availability-zone',
@@ -1367,11 +1780,18 @@ export const terms: Term[] = [
     example: 'The forum uses an MD5 avatar hash of the user\'s email to display a unique default profile picture for each member.',
   },
   {
-    id: 'avg-heuristics',
-    term: 'AVG Heuristics',
-    slug: 'avg-heuristics',
-    definition: 'The heuristic analysis methods used by AVG antivirus software to detect new and unknown malware based on suspicious code structure or behavior.',
-    example: 'The file was flagged by AVG heuristics because it was attempting to write to a protected system directory, a common malware behavior.',
+    id: 'average-latency',
+    term: 'Average Latency',
+    slug: 'average-latency',
+    definition: 'The average time it takes for a system to respond to a request.',
+    example: 'The monitoring dashboard showed that the average latency for the API was 50 milliseconds.',
+  },
+  {
+    id: 'avif-format',
+    term: 'AVIF Format',
+    slug: 'avif-format',
+    definition: 'A modern image file format that provides superior compression and quality compared to older formats like JPEG and WebP.',
+    example: 'The website started using the AVIF format to serve smaller, faster-loading images.',
   },
   {
     id: 'avr-microcontroller',
@@ -1379,6 +1799,13 @@ export const terms: Term[] = [
     slug: 'avr-microcontroller',
     definition: 'A family of microcontrollers developed by Atmel (now Microchip Technology), widely used in hobbyist and embedded projects, including many Arduino boards.',
     example: 'He used an ATmega328P, a popular AVR microcontroller, as the brain for his custom robotics project.',
+  },
+  {
+    id: 'avx-instructions',
+    term: 'AVX Instructions',
+    slug: 'avx-instructions',
+    definition: 'Advanced Vector Extensions, a set of instructions for x86 processors that allow for parallel processing of data (SIMD).',
+    example: 'The scientific computing application was optimized to use AVX instructions for faster calculations.',
   },
   {
     id: 'aws-batch',
@@ -1465,18 +1892,18 @@ export const terms: Term[] = [
     example: 'The marketing team used AWS QuickSight to create interactive dashboards to visualize their campaign performance data.',
   },
   {
-    id: 'aws-redshift',
-    term: 'AWS Redshift',
-    slug: 'aws-redshift',
-    definition: 'A fully managed, petabyte-scale data warehouse service in the cloud from AWS.',
-    example: 'The company loaded all its historical sales data into an AWS Redshift cluster to run complex analytical queries and generate business reports.',
-  },
-  {
     id: 'aws-rds',
     term: 'AWS RDS',
     slug: 'aws-rds',
     definition: 'Amazon Relational Database Service (RDS) is a managed service that makes it easy to set up, operate, and scale a relational database in the cloud.',
     example: 'They migrated their on-premises MySQL database to AWS RDS to offload the burden of database administration, like backups and patching.',
+  },
+  {
+    id: 'aws-redshift',
+    term: 'AWS Redshift',
+    slug: 'aws-redshift',
+    definition: 'A fully managed, petabyte-scale data warehouse service in the cloud from AWS.',
+    example: 'The company loaded all its historical sales data into an AWS Redshift cluster to run complex analytical queries and generate business reports.',
   },
   {
     id: 'aws-s3',
@@ -1542,13 +1969,6 @@ export const terms: Term[] = [
     example: 'In the SoC, the high-speed processor and the DDR memory controller communicate over a wide AXI bus for maximum bandwidth.',
   },
   {
-    id: 'aix-operating-system',
-    term: 'AIX Operating System',
-    slug: 'aix-operating-system',
-    definition: 'A series of proprietary Unix operating systems developed and sold by IBM for several of its computer platforms.',
-    example: 'The bank\'s critical legacy application still runs on a powerful IBM server running the AIX operating system.',
-  },
-  {
     id: 'azure-ad',
     term: 'Azure AD',
     slug: 'azure-ad',
@@ -1577,6 +1997,13 @@ export const terms: Term[] = [
     example: 'The team uses Azure DevOps for the entire software lifecycle, from planning tasks on Azure Boards to running builds with Azure Pipelines.',
   },
   {
+    id: 'azure-dns',
+    term: 'Azure DNS',
+    slug: 'azure-dns',
+    definition: 'A hosting service for DNS domains that provides name resolution using Microsoft Azure infrastructure.',
+    example: 'He hosted the DNS for his website on Azure DNS.',
+  },
+  {
     id: 'azure-front-door',
     term: 'Azure Front Door',
     slug: 'azure-front-door',
@@ -1589,6 +2016,13 @@ export const terms: Term[] = [
     slug: 'azure-functions',
     definition: 'A serverless compute service from Microsoft Azure that enables you to run event-triggered code without having to explicitly provision or manage infrastructure.',
     example: 'He wrote an Azure Function that is triggered every time a new file is added to Blob Storage, which then processes the file automatically.',
+  },
+  {
+    id: 'azure-kubernetes-service',
+    term: 'Azure Kubernetes Service',
+    slug: 'azure-kubernetes-service',
+    definition: 'A managed container orchestration service from Microsoft Azure, based on the open-source Kubernetes system.',
+    example: 'They deployed their containerized application to Azure Kubernetes Service for scalability and reliability.',
   },
   {
     id: 'azure-logic-apps',
@@ -1640,2470 +2074,6 @@ export const terms: Term[] = [
     example: 'She deployed her personal portfolio, built with React and a serverless API, to Azure Static Web Apps in just a few minutes.',
   },
   {
-    id: 'azure-virtual-desktop',
-    term: 'Azure Virtual Desktop',
-    slug: 'azure-virtual-desktop',
-    definition: 'A desktop and app virtualization service that runs on the cloud, offered by Microsoft Azure.',
-    example: 'The company provided its remote employees with access to all their corporate applications through Azure Virtual Desktop.',
-  },
-  {
-    id: 'azure-vm-scale-sets',
-    term: 'Azure VM Scale Sets',
-    slug: 'azure-vm-scale-sets',
-    definition: 'A feature in Microsoft Azure that lets you create and manage a group of load-balanced virtual machines (VMs). The number of VM instances can automatically increase or decrease in response to demand or a defined schedule.',
-    example: 'The e-commerce site uses Azure VM Scale Sets to automatically add more web servers during peak shopping seasons.',
-  },
-  {
-    id: 'aar-android-archive',
-    term: 'AAR (Android Archive)',
-    slug: 'aar-android-archive',
-    definition: 'A package file format for Android libraries. An .aar file bundle contains compiled code, resources, and a manifest, allowing developers to easily share and reuse components across different Android projects.',
-    example: 'The developer imported the new UI component library by adding its AAR file as a dependency in the app\'s build script.'
-  },
-  {
-    id: 'abi-application-binary-interface',
-    term: 'ABI (Application Binary Interface)',
-    slug: 'abi-application-binary-interface',
-    definition: 'A low-level interface between two program modules, one of which is often a library or operating system. The ABI defines how functions are called, how data is passed between them, and the layout of data structures in memory, ensuring that separately compiled code can work together.',
-    example: 'For the C++ library to be compatible with the Python application, both had to be compiled for the same processor architecture and follow the same ABI.'
-  },
-  {
-    id: 'abr-adaptive-bitrate-streaming',
-    term: 'ABR (Adaptive Bitrate Streaming)',
-    slug: 'abr-adaptive-bitrate-streaming',
-    definition: 'A technique used in streaming media where the video quality is automatically adjusted in real-time based on the user\'s network bandwidth and device capabilities. This ensures smooth playback without buffering.',
-    example: 'Netflix uses ABR to seamlessly switch between high-definition and standard-definition video streams as your Wi-Fi signal strength changes.'
-  },
-  {
-    id: 'acid-properties',
-    term: 'ACID Properties',
-    slug: 'acid-properties',
-    definition: 'A set of properties for database transactions (Atomicity, Consistency, Isolation, Durability) that guarantee data validity despite errors, power failures, and other mishaps. In short, all parts of a transaction succeed, or the entire transaction is rolled back.',
-    example: 'A bank transfer must follow ACID properties; the money is either successfully moved from one account to the other, or the transaction fails completely and no money is lost.'
-  },
-  {
-    id: 'ack-acknowledgment-packet',
-    term: 'ACK (Acknowledgment Packet)',
-    slug: 'ack-acknowledgment-packet',
-    definition: 'In computer networking, a small packet sent by a device to acknowledge the successful receipt of a data packet. It is a key component of reliable protocols like TCP.',
-    example: 'After sending a chunk of data, the server waited for an ACK packet from the client before sending the next chunk.'
-  },
-  {
-    id: 'acl-access-control-list',
-    term: 'ACL (Access Control List)',
-    slug: 'acl-access-control-list',
-    definition: 'A list of permissions attached to an object (like a file, folder, or network resource). An ACL specifies which users or system processes are granted access to objects, as well as what operations are allowed on given objects.',
-    example: 'The network administrator configured the router\'s ACL to block all traffic from a specific range of IP addresses.'
-  },
-  {
-    id: 'acpi-advanced-configuration-and-power-interface',
-    term: 'ACPI (Advanced Configuration and Power Interface)',
-    slug: 'acpi-advanced-configuration-and-power-interface',
-    definition: 'An open standard that provides an operating system with the ability to discover and configure computer hardware components, and to manage power consumption (e.g., sleep, hibernate) and status.',
-    example: 'When you close your laptop lid and it goes to sleep, the operating system is using ACPI to manage the power state.'
-  },
-  {
-    id: 'active-directory-ad',
-    term: 'Active Directory (AD)',
-    slug: 'active-directory-ad',
-    definition: 'Microsoft\'s directory service for Windows domain networks. It is included in most Windows Server operating systems as a set of processes and services, authenticating and authorizing all users and computers in a network.',
-    example: 'When a new employee joins the company, the IT department creates a user account for them in Active Directory to grant them access to network resources.'
-  },
-  {
-    id: 'ad-hoc-network',
-    term: 'Ad Hoc Network',
-    slug: 'ad-hoc-network',
-    definition: 'A temporary, decentralized type of wireless network where devices connect directly to each other (peer-to-peer) without relying on a central router or access point.',
-    example: 'During a power outage, the team set up an ad hoc network with their laptops to share files and continue working.'
-  },
-  {
-    id: 'address-bus',
-    term: 'Address Bus',
-    slug: 'address-bus',
-    definition: 'A computer bus (a series of wires) that is used to specify a physical address. When a processor needs to read or write to a memory location, it specifies that memory location on the address bus.',
-    example: 'A 32-bit address bus can access 2^32, or 4 gigabytes, of memory locations.'
-  },
-  {
-    id: 'address-space-layout-randomization-aslr',
-    term: 'Address Space Layout Randomization (ASLR)',
-    slug: 'address-space-layout-randomization-aslr',
-    definition: 'A computer security technique involved in preventing exploitation of memory corruption vulnerabilities. ASLR randomly arranges the address space positions of key data areas of a process, including the base of the executable and the positions of the stack, heap, and libraries.',
-    example: 'Modern operating systems use ASLR to make it much harder for attackers to predict the location of code and data, thereby preventing many types of buffer overflow attacks.'
-  },
-  {
-    id: 'aes-advanced-encryption-standard',
-    term: 'AES (Advanced Encryption Standard)',
-    slug: 'aes-advanced-encryption-standard',
-    definition: 'A widely used symmetric encryption algorithm established by the U.S. National Institute of Standards and Technology (NIST). It encrypts data in blocks of 128 bits and can use keys of 128, 192, or 256 bits.',
-    example: 'The WPA2 security protocol used by your Wi-Fi network uses AES to encrypt the data transmitted between your device and the router.'
-  },
-  {
-    id: 'aft-android-file-transfer',
-    term: 'AFT (Android File Transfer)',
-    slug: 'aft-android-file-transfer',
-    definition: 'A protocol and an official application by Google for macOS that allows users to view and transfer files between a macOS computer and an Android device.',
-    example: 'Since his Mac couldn\'t natively browse his Android phone\'s files, he had to install Android File Transfer to copy his photos.'
-  },
-  {
-    id: 'agile-methodology',
-    term: 'Agile Methodology',
-    slug: 'agile-methodology',
-    definition: 'A software development approach that focuses on iterative development, collaboration, and responding to change. Work is done in short cycles called "sprints" to deliver value incrementally.',
-    example: 'The development team adopted the Agile methodology, allowing them to release new features every two weeks and quickly adapt to customer feedback.'
-  },
-  {
-    id: 'aidl-android-interface-definition-language',
-    term: 'AIDL (Android Interface Definition Language)',
-    slug: 'aidl-android-interface-definition-language',
-    definition: 'In Android, AIDL is used to define the programming interface that both a client and service agree upon in order to communicate with each other using interprocess communication (IPC).',
-    example: 'The music player app used AIDL to allow other applications to control playback, like pausing or skipping tracks.'
-  },
-  {
-    id: 'ai-model-quantization',
-    term: 'AI Model Quantization',
-    slug: 'ai-model-quantization',
-    definition: 'An optimization technique that reduces the precision of the numerical weights and activations in an AI model (e.g., from 32-bit floating-point numbers to 8-bit integers). This makes the model smaller, faster, and more energy-efficient with minimal loss of accuracy.',
-    example: 'The developers applied AI model quantization to deploy their complex image recognition model on a smartphone with limited memory and processing power.'
-  },
-  {
-    id: 'aio-all-in-one-computer',
-    term: 'AIO (All-in-One Computer)',
-    slug: 'aio-all-in-one-computer',
-    definition: 'A desktop computer where the internal components (like the motherboard, CPU, and storage) are integrated into the same case as the display, creating a compact and streamlined form factor.',
-    example: 'The office reception desk was equipped with an AIO computer to save space and reduce cable clutter.'
-  },
-  {
-    id: 'aiops-artificial-intelligence-for-it-operations',
-    term: 'AIOps (Artificial Intelligence for IT Operations)',
-    slug: 'aiops-artificial-intelligence-for-it-operations',
-    definition: 'The application of big data analytics and machine learning to IT operations. AIOps platforms use AI to automate tasks like monitoring, event correlation, and root cause analysis, helping IT teams detect and resolve issues faster.',
-    example: 'The company implemented an AIOps solution that could predict potential system failures by analyzing subtle patterns in performance logs.'
-  },
-  {
-    id: 'airgap-network',
-    term: 'Airgap Network',
-    slug: 'airgap-network',
-    definition: 'A security measure where a computer or network is physically isolated from unsecured networks, such as the public internet or an unsecured local area network. This is the highest level of network security.',
-    example: 'The control systems for the nuclear power plant were on an airgap network, completely disconnected from the outside world, to prevent cyberattacks.'
-  },
-  {
-    id: 'ajax-asynchronous-javascript-and-xml',
-    term: 'AJAX (Asynchronous JavaScript and XML)',
-    slug: 'ajax-asynchronous-javascript-and-xml',
-    definition: 'A set of web development techniques that allows a web page to communicate with a server in the background to send or retrieve data, without interfering with the display and behavior of the existing page.',
-    example: 'When you type a search query on Google, AJAX is used to fetch and display search suggestions in real-time as you type.'
-  },
-  {
-    id: 'alarm-manager-android',
-    term: 'Alarm Manager (Android)',
-    slug: 'alarm-manager-android',
-    definition: 'An Android system service that allows developers to schedule their application to be run at some point in the future. The system will run the app, even if it is not currently active, to perform the scheduled task.',
-    example: 'The calendar app used the Alarm Manager to schedule notifications for upcoming events.'
-  },
-  {
-    id: 'algorithmic-complexity',
-    term: 'Algorithmic Complexity',
-    slug: 'algorithmic-complexity',
-    definition: 'A formal measure of the amount of resources (time and space) an algorithm requires to run as a function of the size of its input. It is often expressed using Big O notation, like O(n) or O(n^2).',
-    example: 'A simple search algorithm has a linear complexity of O(n), meaning the time it takes grows in direct proportion to the number of items being searched.'
-  },
-  {
-    id: 'alias-record-dns',
-    term: 'Alias Record (DNS)',
-    slug: 'alias-record-dns',
-    definition: 'A type of DNS record that maps an alias domain name to a canonical name (the "true" name). It is similar to a CNAME record but can be used at the root domain (e.g., example.com), which CNAMEs cannot.',
-    example: 'The website `www.example.com` used an Alias record to point to the dynamically changing hostname of a cloud load balancer.'
-  },
-  {
-    id: 'allocator-memory-allocator',
-    term: 'Allocator (Memory Allocator)',
-    slug: 'allocator-memory-allocator',
-    definition: 'A fundamental part of a computer\'s operating system or a program\'s runtime environment responsible for managing memory. It handles requests for blocks of memory (allocation) and returns them to the system when they are no longer needed (deallocation).',
-    example: 'The C programming language uses the `malloc` function as its standard memory allocator.'
-  },
-  {
-    id: 'amp-accelerated-mobile-pages',
-    term: 'AMP (Accelerated Mobile Pages)',
-    slug: 'amp-accelerated-mobile-pages',
-    definition: 'An open-source HTML framework developed by Google to create lightweight, fast-loading web pages for mobile devices. AMP pages are often cached by Google and served directly from its servers for near-instant loading.',
-    example: 'The news organization created AMP versions of their articles to improve the reading experience for mobile users coming from Google search.'
-  },
-  {
-    id: 'amqp-advanced-message-queuing-protocol',
-    term: 'AMQP (Advanced Message Queuing Protocol)',
-    slug: 'amqp-advanced-message-queuing-protocol',
-    definition: 'An open standard application layer protocol for message-oriented middleware. AMQP defines a binary wire protocol that enables reliable, interoperable messaging between different applications and systems.',
-    example: 'The microservices used RabbitMQ, a message broker that implements AMQP, to communicate with each other asynchronously.'
-  },
-  {
-    id: 'android-runtime-art',
-    term: 'Android Runtime (ART)',
-    slug: 'android-runtime-art',
-    definition: 'The managed runtime environment used by applications on Android. ART uses Ahead-Of-Time (AOT) compilation to compile applications into native machine code upon installation, resulting in faster app launch times and improved performance compared to its predecessor, Dalvik.',
-    example: 'Since the switch to Android Runtime, apps on the phone launch faster and the system feels more responsive.'
-  },
-  {
-    id: 'anomaly-detection',
-    term: 'Anomaly Detection',
-    slug: 'anomaly-detection',
-    definition: 'The process of identifying rare items, events, or observations which raise suspicions by differing significantly from the majority of the data. It is often used in fraud detection, network security, and system health monitoring.',
-    example: 'The credit card company\'s anomaly detection system flagged a transaction as potentially fraudulent because it was made in a different country from the user\'s usual location.'
-  },
-  {
-    id: 'antimalware-engine',
-    term: 'Antimalware Engine',
-    slug: 'antimalware-engine',
-    definition: 'The core component of an antivirus or antimalware software that is responsible for scanning files and system activity to detect, block, and remove malicious software.',
-    example: 'The antimalware engine used a combination of signature-based detection and behavioral heuristics to identify the new virus.'
-  },
-  {
-    id: 'aot-compilation-ahead-of-time',
-    term: 'AOT Compilation (Ahead-of-Time)',
-    slug: 'aot-compilation-ahead-of-time',
-    definition: 'The act of compiling a higher-level programming language into a lower-level language (like machine code) before the program is executed. This contrasts with Just-In-Time (JIT) compilation, which happens at runtime.',
-    example: 'Android\'s ART runtime uses AOT compilation to improve application performance and reduce startup time.'
-  },
-  {
-    id: 'api-rate-limiting',
-    term: 'API Rate Limiting',
-    slug: 'api-rate-limiting',
-    definition: 'A strategy for limiting network traffic. It puts a cap on how often a user can call the API within a certain timeframe to prevent abuse or overload.',
-    example: 'To prevent abuse, the weather API implemented a rate limit of 100 requests per hour for free users.'
-  },
-  {
-    id: 'apk-android-package-kit',
-    term: 'APK (Android Package Kit)',
-    slug: 'apk-android-package-kit',
-    definition: 'The file format used by the Android operating system for the distribution and installation of mobile apps. An APK file contains all of the elements that an app needs to install correctly on a device.',
-    example: 'To install the beta version of the app, he had to download the APK file directly from the developer\'s website and "sideload" it onto his phone.'
-  },
-  {
-    id: 'app-bundle-aab',
-    term: 'App Bundle (AAB)',
-    slug: 'app-bundle-aab',
-    definition: 'A publishing format for Android apps that includes all the app\'s compiled code and resources, but defers APK generation and signing to Google Play. This allows Google to deliver a highly optimized APK for each specific device configuration.',
-    example: 'By publishing an App Bundle instead of a universal APK, the developer reduced the download size of their app for most users.'
-  },
-  {
-    id: 'app-sandbox-android',
-    term: 'App Sandbox (Android)',
-    slug: 'app-sandbox-android',
-    definition: 'A security mechanism in the Android OS that isolates each application in its own restricted environment. The sandbox prevents apps from accessing data from other apps or making changes to the system without explicit permission.',
-    example: 'Thanks to the App Sandbox, a malicious app cannot steal your login credentials from your banking app.'
-  },
-  {
-    id: 'application-layer-osi-model',
-    term: 'Application Layer (OSI Model)',
-    slug: 'application-layer-osi-model',
-    definition: 'The seventh and highest layer of the Open Systems Interconnection (OSI) model. This layer is closest to the end user and provides network services to the applications of the user, such as web browsers and email clients. Examples of protocols at this layer include HTTP, FTP, and SMTP.',
-    example: 'When you browse a website, your web browser is interacting with the web server at the Application Layer using the HTTP protocol.'
-  },
-  {
-    id: 'application-pool',
-    term: 'Application Pool',
-    slug: 'application-pool',
-    definition: 'In Microsoft\'s IIS web server, an isolated environment where web applications run, improving stability and security.',
-    example: 'The administrator configured each website to run in its own application pool, so if one site crashed, it wouldn\'t affect the others.',
-  },
-  {
-    id: 'archive-bit',
-    term: 'Archive Bit',
-    slug: 'archive-bit',
-    definition: 'A file attribute indicating whether the file has been backed up since its last modification.',
-    example: 'Backup software clears the archive bit after a successful backup and the OS sets it when the file is changed.',
-  },
-  {
-    id: 'arm-architecture',
-    term: 'ARM Architecture',
-    slug: 'arm-architecture',
-    definition: 'A family of reduced instruction set computing (RISC) architectures for computer processors, configured for various environments. ARM processors are widely used in consumer electronics, including smartphones and tablets, due to their low power consumption.',
-    example: 'Apple\'s M-series chips and Qualcomm\'s Snapdragon processors are both based on the ARM architecture.'
-  },
-  {
-    id: 'arp-address-resolution-protocol',
-    term: 'ARP (Address Resolution Protocol)',
-    slug: 'arp-address-resolution-protocol',
-    definition: 'A communication protocol used for discovering the link layer address, such as a MAC address, associated with a given internet layer address, typically an IPv4 address.',
-    example: 'When your computer wants to send a packet to another device on the same local network, it uses ARP to find the destination device\'s MAC address.'
-  },
-  {
-    id: 'artifact-ci-cd',
-    term: 'Artifact (CI/CD)',
-    slug: 'artifact-ci-cd',
-    definition: 'In a continuous integration/continuous delivery (CI/CD) pipeline, an artifact is the output of a build process. This can include compiled code, executables, libraries, a Docker image, or a packaged application.',
-    example: 'After a successful build, the CI server uploaded the final build artifact—a deployable ZIP file—to the storage repository.'
-  },
-  {
-    id: 'asgi-asynchronous-server-gateway-interface',
-    term: 'ASGI (Asynchronous Server Gateway Interface)',
-    slug: 'asgi-asynchronous-server-gateway-interface',
-    definition: 'A spiritual successor to WSGI, it is a standard interface between asynchronous Python web servers, frameworks, and applications. It is designed to handle modern protocols like WebSockets that require long-lived connections.',
-    example: 'The real-time chat application was built with FastAPI, a Python framework that uses ASGI to manage its WebSocket connections.'
-  },
-  {
-    id: 'asimd-advanced-simd-neon-instructions',
-    term: 'ASIMD (Advanced SIMD / Neon Instructions)',
-    slug: 'asimd-advanced-simd-neon-instructions',
-    definition: 'A Single Instruction, Multiple Data (SIMD) vector processing extension for ARM processors. It allows for parallel processing of data, significantly accelerating tasks like multimedia encoding/decoding and signal processing.',
-    example: 'The mobile video editor was optimized with Neon instructions to speed up the rendering of video effects.'
-  },
-  {
-    id: 'asm-js',
-    term: 'asm.js',
-    slug: 'asm-js',
-    definition: 'A strict subset of JavaScript that can be used as a low-level, efficient target language for compilers. Code written in asm.js can be highly optimized by JavaScript engines, resulting in near-native performance for web applications.',
-    example: 'The game engine was compiled from C++ to asm.js, allowing it to run in a web browser with impressive performance.'
-  },
-  {
-    id: 'asn-1-abstract-syntax-notation-one',
-    term: 'ASN.1 (Abstract Syntax Notation One)',
-    slug: 'asn-1-abstract-syntax-notation-one',
-    definition: 'A standard and notation that describes rules and structures for representing, encoding, transmitting, and decoding data in telecommunications and computer networking. It is widely used in protocols like X.509 for digital certificates.',
-    example: 'The SSL certificate was encoded using ASN.1, which defined the structure for fields like the common name, public key, and expiration date.'
-  },
-  {
-    id: 'asp-net-core-middleware',
-    term: 'ASP.NET Core Middleware',
-    slug: 'asp-net-core-middleware',
-    definition: 'Software components that are assembled into an application pipeline to handle requests and responses. Each component chooses whether to pass the request to the next component in the pipeline, and can perform work before and after the next component is invoked.',
-    example: 'The developer added an authentication middleware to the ASP.NET Core pipeline to ensure that only logged-in users could access certain pages.'
-  },
-  {
-    id: 'asset-pipeline',
-    term: 'Asset Pipeline',
-    slug: 'asset-pipeline',
-    definition: 'A framework in web development for processing and serving static assets like CSS, JavaScript, and images.',
-    example: 'The Rails asset pipeline concatenates and minifies JavaScript files to improve page load times.'
-  },
-  {
-    id: 'asymmetric-encryption',
-    term: 'Asymmetric Encryption',
-    slug: 'asymmetric-encryption',
-    definition: 'A cryptographic system that uses pairs of keys: public keys, which may be disseminated widely, and private keys, which are known only to the owner. This allows for both secure communication and digital signatures.',
-    example: 'When you send an encrypted email using PGP, you encrypt it with the recipient\'s public key, and they decrypt it with their private key. This is an example of asymmetric encryption.'
-  },
-  {
-    id: 'backdoor',
-    term: 'Backdoor',
-    slug: 'backdoor',
-    definition: 'A covert method of bypassing normal authentication or encryption in a computer, product, embedded device, or its embodiment.',
-    example: 'A malicious actor installed a backdoor on the server, allowing them to access it later without needing credentials.',
-  },
-  {
-    id: 'backend',
-    term: 'Backend',
-    slug: 'backend',
-    definition: 'The backend of a website or software application is the part that the user doesn\'t see. It includes the server, database, and application logic. It\'s responsible for storing and organizing data and ensuring everything on the client-side works.',
-    example: 'When you sign up for a new account, the backend is what processes your information, creates your user profile, and stores it securely in a database.'
-  },
-  {
-    id: 'bandwidth',
-    term: 'Bandwidth',
-    slug: 'bandwidth',
-    definition: 'The maximum rate of data transfer across a given path. It is often mistaken for internet speed, but it\'s actually the volume of information that can be sent over a connection in a measured amount of time.',
-    example: 'Streaming a 4K movie requires more bandwidth than browsing a simple text-based website.',
-  },
-  {
-    id: 'baseband',
-    term: 'Baseband',
-    slug: 'baseband',
-    definition: 'In telecommunications, baseband refers to the original frequency range of a transmission signal before it is modulated. It can also refer to the processor in a phone that manages all radio communications.',
-    example: 'A smartphone\'s baseband processor is responsible for handling connections to cellular networks.',
-  },
-  {
-    id: 'baseline',
-    term: 'Baseline',
-    slug: 'baseline',
-    definition: 'A standardized point of reference. In performance testing, it is a set of measurements used as a basis for comparison.',
-    example: 'The team established a performance baseline for the application before making any changes, so they could measure the impact of their optimizations.',
-  },
-  {
-    id: 'bash',
-    term: 'Bash',
-    slug: 'bash',
-    definition: 'A command-line interpreter and scripting language for Unix-like operating systems. It is the default shell for many Linux distributions and for macOS.',
-    example: 'The developer wrote a Bash script to automate the process of backing up files every night.',
-  },
-  {
-    id: 'baudrate',
-    term: 'Baud Rate',
-    slug: 'baudrate',
-    definition: 'The rate at which information is transferred in a communication channel. In the serial port context, "baud rate" is the speed at which data is sent over a serial line, measured in bits per second.',
-    example: 'The two devices needed to be configured with the same baud rate of 9600 to communicate correctly over the serial connection.',
-  },
-  {
-    id: 'bearertoken',
-    term: 'Bearer Token',
-    slug: 'bearertoken',
-    definition: 'A type of access token in OAuth 2.0. The "bearer" of the token can use it to access protected resources without further identification.',
-    example: 'The web application included the Bearer Token in the Authorization header of its API requests to authenticate itself.',
-  },
-  {
-    id: 'betabuild',
-    term: 'Beta Build',
-    slug: 'betabuild',
-    definition: 'A pre-release version of software that is distributed to a group of users for testing before its official release.',
-    example: 'The developers released a beta build of the new operating system to gather feedback and find bugs.',
-  },
-  {
-    id: 'bgp',
-    term: 'BGP (Border Gateway Protocol)',
-    slug: 'bgp',
-    definition: 'The routing protocol used to exchange routing information across the internet.',
-    example: 'BGP is what allows different internet service providers to share information about how to reach various IP address ranges.',
-  },
-  {
-    id: 'bios',
-    term: 'BIOS',
-    slug: 'bios',
-    definition: 'Basic Input/Output System. Firmware used to perform hardware initialization during the booting process (power-on startup) and to provide runtime services for operating systems and programs.',
-    example: 'I had to enter the BIOS to change the boot order of my computer.',
-  },
-  {
-    id: 'blob',
-    term: 'BLOB (Binary Large Object)',
-    slug: 'blob',
-    definition: 'A collection of binary data stored as a single entity in a database management system.',
-    example: 'The user\'s profile picture was stored as a BLOB in the database.',
-  },
-  {
-    id: 'blockchain',
-    term: 'Blockchain',
-    slug: 'blockchain',
-    definition: 'A blockchain is a distributed, immutable ledger that is used to record transactions and track assets in a business network. An asset can be tangible (a house, car, cash, land) or intangible (intellectual property, patents, copyrights, branding).',
-    example: 'Bitcoin uses a blockchain to record all transactions. Each "block" contains a list of transactions, and it\'s linked to the previous one, creating a secure and unchangeable chain.',
-  },
-  {
-    id: 'blueteam',
-    term: 'Blue Team',
-    slug: 'blueteam',
-    definition: 'In cybersecurity, a group of individuals who are responsible for defending an enterprise\'s information systems against attacks.',
-    example: 'During the security drill, the blue team successfully defended the network against the red team\'s simulated attack.',
-  },
-  {
-    id: 'bluetoothle',
-    term: 'Bluetooth LE',
-    slug: 'bluetoothle',
-    definition: 'Bluetooth Low Energy is a power-conserving variant of Bluetooth, intended for applications that do not require continuous data transfer.',
-    example: 'Your fitness tracker uses Bluetooth LE to sync data with your phone without draining its battery.',
-  },
-  {
-    id: 'bottleneck',
-    term: 'Bottleneck',
-    slug: 'bottleneck',
-    definition: 'A point of congestion in a system that limits its overall performance. The bottleneck is the component that has the lowest capacity and therefore slows down the entire system.',
-    example: 'The slow database query was the bottleneck that was causing the entire application to respond slowly.',
-  },
-  {
-    id: 'bootstrap',
-    term: 'Bootstrap',
-    slug: 'bootstrap',
-    definition: 'The process of loading a set of instructions when a computer is first turned on or booted. In web development, it also refers to a popular front-end framework for creating responsive websites.',
-    example: 'The developer used the Bootstrap framework to quickly create a responsive layout for the new website.',
-  },
-  {
-    id: 'botnet',
-    term: 'Botnet',
-    slug: 'botnet',
-    definition: 'A network of private computers infected with malicious software and controlled as a group without the owners\' knowledge, e.g., to send spam or launch DDoS attacks.',
-    example: 'The massive DDoS attack was launched by a botnet consisting of thousands of compromised IoT devices.',
-  },
-  {
-    id: 'branch',
-    term: 'Branch',
-    slug: 'branch',
-    definition: 'In version control systems like Git, a branch is a parallel version of a repository. It allows you to work on different features or fixes without affecting the main codebase.',
-    example: 'The developer created a new branch to work on the user authentication feature.',
-  },
-  {
-    id: 'breakfix',
-    term: 'Break-Fix',
-    slug: 'breakfix',
-    definition: 'A model of IT support where services are provided on an as-needed basis, rather than through a proactive maintenance plan. The technician is called to "fix" something when it "breaks".',
-    example: 'The small business relied on a break-fix model, calling an IT consultant only when their server went down.',
-  },
-  {
-    id: 'bridge',
-    term: 'Bridge',
-    slug: 'bridge',
-    definition: 'A network device that connects two or more network segments, forwarding traffic between them. It operates at the data link layer (Layer 2) of the OSI model.',
-    example: 'The network administrator used a bridge to connect the two separate office LANs.',
-  },
-  {
-    id: 'bringup',
-    term: 'Bring-up',
-    slug: 'bringup',
-    definition: 'In hardware engineering, the process of powering on a new circuit board or system for the first time and getting it to a basic functional state.',
-    example: 'The hardware team spent the week on the bring-up of the new prototype, starting with just powering it on and getting a serial console.',
-  },
-  {
-    id: 'bruteforce',
-    term: 'Brute-Force Attack',
-    slug: 'bruteforce',
-    definition: 'A trial-and-error method used by application programs to decode encrypted data such as passwords or Data Encryption Standard (DES) keys, through exhaustive effort (using brute force) rather than employing intellectual strategies.',
-    example: 'The attacker launched a brute-force attack, trying every possible password combination until they found the correct one.',
-  },
-  {
-    id: 'bufferoverflow',
-    term: 'Buffer Overflow',
-    slug: 'bufferoverflow',
-    definition: 'A security vulnerability that occurs when a program writes data beyond the boundary of a buffer. This can be exploited by an attacker to execute arbitrary code.',
-    example: 'The hacker exploited a buffer overflow vulnerability to gain control of the web server.',
-  },
-  {
-    id: 'bugbash',
-    term: 'Bug Bash',
-    slug: 'bugbash',
-    definition: 'A procedure in software development where all the developers, testers, and anyone else involved in the project, get together to find and report as many bugs as possible in a short period.',
-    example: 'The team held a bug bash before the final release to catch any remaining issues.',
-  },
-  {
-    id: 'bugreport',
-    term: 'Bug Report',
-    slug: 'bugreport',
-    definition: 'A detailed document that describes a bug or defect found in a software application, including steps to reproduce it.',
-    example: 'The QA tester filed a detailed bug report, which helped the developer quickly identify and fix the issue.',
-  },
-  {
-    id: 'buildartifact',
-    term: 'Build Artifact',
-    slug: 'buildartifact',
-    definition: 'The output of a software build process, such as a compiled executable, a library, or a packaged application.',
-    example: 'The CI/CD pipeline stored the build artifact in a repository after a successful build.',
-  },
-  {
-    id: 'buildpipeline',
-    term: 'Build Pipeline',
-    slug: 'buildpipeline',
-    definition: 'An automated process that takes source code, builds it, runs tests, and packages it for deployment.',
-    example: 'The company\'s build pipeline ensures that every code change is automatically tested before it is deployed.',
-  },
-  {
-    id: 'burnin',
-    term: 'Burn-In',
-    slug: 'burnin',
-    definition: 'The process of running a new piece of hardware or a system for a period of time to detect any early failures.',
-    example: 'The server underwent a 48-hour burn-in test to ensure all its components were stable before being put into production.',
-  },
-  {
-    id: 'bustopology',
-    term: 'Bus Topology',
-    slug: 'bus-topology',
-    definition: 'A network topology in which all devices are connected to a single central cable, called the bus or backbone.',
-    example: 'Early Ethernet networks often used a bus topology, but it has been largely replaced by star topologies.',
-  },
-  {
-    id: 'bytecode',
-    term: 'Bytecode',
-    slug: 'bytecode',
-    definition: 'A form of instruction set designed for efficient execution by a software interpreter or virtual machine.',
-    example: 'When you compile a Java program, it is converted into bytecode, which is then executed by the Java Virtual Machine (JVM).',
-  },
-  {
-    id: 'byteorder',
-    term: 'Byte Order',
-    slug: 'byteorder',
-    definition: 'The order in which bytes of a multi-byte data word are stored in memory. The two main types are big-endian and little-endian.',
-    example: 'Network protocols typically use big-endian byte order, so systems must convert their native format if it differs.',
-  },
-  {
-    id: 'byod',
-    term: 'BYOD (Bring Your Own Device)',
-    slug: 'byod',
-    definition: 'A policy that allows employees to use their personal devices, such as laptops and smartphones, for work purposes.',
-    example: 'The company implemented a BYOD policy to reduce hardware costs and allow employees to work on their preferred devices.',
-  },
-  {
-    id: 'baas',
-    term: 'BaaS (Backend as a Service)',
-    slug: 'baas',
-    definition: 'A cloud service model that provides backend functionality like databases, user authentication, and push notifications, allowing developers to focus on the frontend.',
-    example: 'The mobile app developer used Firebase, a popular BaaS, to handle user accounts and data storage without writing any server-side code.',
-  },
-  {
-    id: 'baremetal',
-    term: 'Bare metal',
-    slug: 'bare-metal',
-    definition: 'A computer server that is a physical piece of hardware, dedicated to a single tenant. The tenant can run their choice of operating system and software directly on the hardware.',
-    example: 'For maximum performance, the gaming company decided to run its application on a bare-metal server instead of in a virtualized environment.',
-  },
-  {
-    id: 'baseimage',
-    term: 'Base Image',
-    slug: 'base-image',
-    definition: 'In containerization (like Docker), the starting image upon which you build your own custom image. It typically contains an operating system.',
-    example: 'He chose a lightweight Alpine Linux base image for his Docker container to keep the final image size small.',
-  },
-  {
-    id: 'batchprocess',
-    term: 'Batch Process',
-    slug: 'batchprocess',
-    definition: 'The execution of a series of jobs ("a batch") on a computer without manual intervention.',
-    example: 'The bank runs a batch process every night to calculate interest and update all customer accounts.',
-  },
-  {
-    id: 'beaconframe',
-    term: 'Beacon Frame',
-    slug: 'beaconframe',
-    definition: 'One of the management frames in Wi-Fi. It is periodically sent by the access point to announce its presence and provide the network\'s parameters.',
-    example: 'Your phone discovers nearby Wi-Fi networks by listening for the beacon frames they broadcast.',
-  },
-  {
-    id: 'bitdepth',
-    term: 'Bit Depth',
-    slug: 'bitdepth',
-    definition: 'The number of bits used to represent the color of a single pixel in an image or the amplitude of a single sample in an audio file.',
-    example: 'A 24-bit image has a higher bit depth than an 8-bit image, allowing it to display millions more colors.',
-  },
-  {
-    id: 'bitrate',
-    term: 'Bit Rate',
-    slug: 'bitrate',
-    definition: 'The number of bits that are processed or transmitted per unit of time, often measured in bits per second (bps).',
-    example: 'The MP3 was encoded at a bit rate of 128 kbps, which is a common quality for music streaming.',
-  },
-  {
-    id: 'bitbucket',
-    term: 'Bitbucket',
-    slug: 'bitbucket',
-    definition: 'A web-based version control repository hosting service, owned by Atlassian, for source code and development projects that use either Mercurial or (since 2011) Git.',
-    example: 'The team uses Bitbucket for their private Git repositories and integrates it with Jira for issue tracking.',
-  },
-  {
-    id: 'blackbox',
-    term: 'Black Box',
-    slug: 'blackbox',
-    definition: 'In science, computing, and engineering, a device, system, or object which can be viewed in terms of its inputs and outputs, without any knowledge of its internal workings.',
-    example: 'In black-box testing, the tester evaluates the software without knowing its internal code structure.',
-  },
-  {
-    id: 'blacklist',
-    term: 'Blacklist',
-    slug: 'blacklist',
-    definition: 'A list of entities, such as IP addresses or email addresses, that are denied access to a system or service. The more modern term is "denylist".',
-    example: 'The email server maintains a blacklist of known spam sources to protect users from junk mail.',
-  },
-  {
-    id: 'bladeserver',
-    term: 'Blade Server',
-    slug: 'bladeserver',
-    definition: 'A stripped-down server computer with a modular design optimized to minimize the use of physical space and energy. Blade servers have many components removed to save space, minimize power consumption, and other considerations, while still having all the functional components to be considered a computer.',
-    example: 'The data center used blade servers to achieve high-density computing in a small footprint.',
-  },
-  {
-    id: 'blockcipher',
-    term: 'Block Cipher',
-    slug: 'blockcipher',
-    definition: 'A symmetric key cipher that operates on fixed-length groups of bits, called blocks.',
-    example: 'AES is a popular block cipher that encrypts data in 128-bit blocks.',
-  },
-  {
-    id: 'blockstorage',
-    term: 'Block Storage',
-    slug: 'blockstorage',
-    definition: 'A type of data storage where data is stored in volumes referred to as blocks. Each block acts as an individual hard drive and is configured by the administrator.',
-    example: 'Cloud providers like AWS offer block storage (EBS) that can be attached to virtual machines for persistent storage.',
-  },
-  {
-    id: 'bootloader',
-    term: 'Bootloader',
-    slug: 'bootloader',
-    definition: 'A program that loads the main operating system for the computer when it is turned on.',
-    example: 'GRUB is a popular bootloader for Linux that allows you to choose between multiple operating systems at startup.',
-  },
-  {
-    id: 'bootvolume',
-    term: 'Boot Volume',
-    slug: 'bootvolume',
-    definition: 'The storage volume that contains the operating system and files needed to boot a computer.',
-    example: 'If the boot volume is corrupted, the computer will fail to start.',
-  },
-  {
-    id: 'bootstraptoken',
-    term: 'Bootstrap Token',
-    slug: 'bootstraptoken',
-    definition: 'In systems like Kubernetes, a short-lived token used to securely join a new node to a cluster.',
-    example: 'The administrator generated a bootstrap token to add a new worker node to the Kubernetes cluster.',
-  },
-  {
-    id: 'branchpredictor',
-    term: 'Branch Predictor',
-    slug: 'branchpredictor',
-    definition: 'A digital circuit in a modern microprocessor that tries to guess which way a branch (an if-then-else structure) will go before this is known for sure.',
-    example: 'The processor\'s advanced branch predictor correctly guessed the outcome of the loop condition 99% of the time, significantly improving performance.',
-  },
-  {
-    id: 'breakpoint',
-    term: 'Breakpoint',
-    slug: 'breakpoint',
-    definition: 'An intentional stopping or pausing place in a program, put in place for debugging purposes.',
-    example: 'The developer set a breakpoint in the code to inspect the value of a variable at a specific point in the execution.',
-  },
-  {
-    id: 'broadcastdomain',
-    term: 'Broadcast Domain',
-    slug: 'broadcastdomain',
-    definition: 'A logical division of a computer network in which all nodes can reach each other by broadcast at the data link layer.',
-    example: 'A router is used to connect different broadcast domains, while a switch operates within a single broadcast domain.',
-  },
-  {
-    id: 'buffercache',
-    term: 'Buffer Cache',
-    slug: 'buffercache',
-    definition: 'A portion of a computer\'s memory used to temporarily store data that is being read from or written to a disk.',
-    example: 'The operating system uses a buffer cache to improve disk I/O performance by holding frequently accessed data in RAM.',
-  },
-  {
-    id: 'bugfixpatch',
-    term: 'Bugfix Patch',
-    slug: 'bugfixpatch',
-    definition: 'A small piece of software designed to update a computer program or its supporting data, to fix or improve it.',
-    example: 'The company released a bugfix patch to address a critical security vulnerability.',
-  },
-  {
-    id: 'bundleid',
-    term: 'Bundle ID',
-    slug: 'bundleid',
-    definition: 'A unique identifier for an application, used by operating systems like iOS and macOS to recognize the app.',
-    example: 'When submitting an app to the Apple App Store, you must provide a unique Bundle ID.',
-  },
-  {
-    id: 'busmastering',
-    term: 'Bus Mastering',
-    slug: 'busmastering',
-    definition: 'A feature that allows a device on a computer bus to initiate transactions, enabling it to directly access system memory without involving the CPU.',
-    example: 'A high-speed network card might use bus mastering to transfer data directly to memory, freeing up the CPU for other tasks.',
-  },
-  {
-    id: 'bytealignment',
-    term: 'Byte Alignment',
-    slug: 'bytealignment',
-    definition: 'The way data is arranged and accessed in computer memory. It refers to the requirement that data be stored at a memory address that is a multiple of its size.',
-    example: 'Proper byte alignment is important for performance, as misaligned data can require extra memory accesses.',
-  },
-  {
-    id: 'bytecodevm',
-    term: 'Bytecode VM',
-    slug: 'bytecodevm',
-    definition: 'A virtual machine that executes bytecode, which is a form of instruction set designed for efficient execution by a software interpreter.',
-    example: 'The Java Virtual Machine (JVM) is a well-known bytecode VM that allows Java programs to run on any device.',
-  },
-  {
-    id: 'bitmask',
-    term: 'Bitmask',
-    slug: 'bitmask',
-    definition: 'Data that is used for bitwise operations, particularly in a bit field. Using a mask, multiple bits can be set on or off, or inverted, in a single bitwise operation.',
-    example: 'A programmer used a bitmask to store multiple true/false flags in a single byte to save memory.',
-  },
-  {
-    id: 'bmc',
-    term: 'BMC (Baseboard Management Controller)',
-    slug: 'bmc',
-    definition: 'A specialized service processor that monitors the physical state of a computer, network server or other hardware device using sensors and communicating with the system administrator through an independent connection.',
-    example: 'The sysadmin used the BMC to remotely power cycle the server even though the operating system was unresponsive.',
-  },
-  {
-    id: 'bootstrapping',
-    term: 'Bootstrapping',
-    slug: 'bootstrapping',
-    definition: 'The process of starting a computer system, where a small initial program (the boot loader) loads a larger, more complex program (the operating system).',
-    example: 'The BIOS performs the initial bootstrapping of the computer, leading to the loading of Windows or Linux.',
-  },
-  {
-    id: 'bourneshell',
-    term: 'Bourne Shell',
-    slug: 'bourneshell',
-    definition: 'The original Unix shell, `sh`, which provided the basic scripting and command-line capabilities. Many modern shells are based on it.',
-    example: 'For maximum portability, he wrote the script in Bourne shell syntax so it would run on any Unix-like system.',
-  },
-  {
-    id: 'browsercache',
-    term: 'Browser Cache',
-    slug: 'browsercache',
-    definition: 'A temporary storage area in your computer that holds web pages and their assets (like images) that you have recently visited.',
-    example: 'Clearing your browser cache can sometimes fix issues with websites not loading correctly.',
-  },
-  {
-    id: 'browserfingerprint',
-    term: 'Browser Fingerprint',
-    slug: 'browserfingerprint',
-    definition: 'A collection of information about a user\'s browser and device (such as browser type, version, plugins, and screen resolution) that can be used to track them online.',
-    example: 'Websites can use browser fingerprinting to identify and track users even if they clear their cookies.',
-  },
-  {
-    id: 'browsersandbox',
-    term: 'Browser Sandbox',
-    slug: 'browsersandbox',
-    definition: 'A security mechanism that isolates web pages in the browser from the rest of the computer, preventing malicious code from accessing your files or system.',
-    example: 'The browser sandbox ensures that a malicious website cannot infect your computer with a virus.',
-  },
-  {
-    id: 'bufferpool',
-    term: 'Buffer Pool',
-    slug: 'bufferpool',
-    definition: 'In a database management system, a buffer pool is an area in main memory that is used to cache table and index data as it is being accessed.',
-    example: 'Increasing the size of the buffer pool can significantly improve database performance by reducing disk I/O.',
-  },
-  {
-    id: 'bugtracker',
-    term: 'Bug Tracker',
-    slug: 'bugtracker',
-    definition: 'A software application that is used to keep track of reported software bugs in software development projects.',
-    example: 'The team uses Jira as their bug tracker to manage all reported issues and assign them to developers.',
-  },
-  {
-    id: 'bulkheadpattern',
-    term: 'Bulkhead Pattern',
-    slug: 'bulkheadpattern',
-    definition: 'A design pattern used in distributed systems to isolate elements of an application into pools so that if one fails, the others will continue to function.',
-    example: 'By using the bulkhead pattern, a failure in the payment processing service did not bring down the entire e-commerce website.',
-  },
-  {
-    id: 'bursttransfer',
-    term: 'Burst Transfer',
-    slug: 'bursttransfer',
-    definition: 'A mode of data transfer in which a large amount of data is sent in a short period of time.',
-    example: 'The memory controller supports burst transfers to quickly fill the CPU cache.',
-  },
-  {
-    id: 'baitingattack',
-    term: 'Baiting Attack',
-    slug: 'baitingattack',
-    definition: 'A type of social engineering attack where an attacker leaves a malware-infected physical device, such as a USB drive, in a place where it is likely to be found and used.',
-    example: 'An employee found a USB drive in the parking lot and plugged it into their computer, falling victim to a baiting attack.',
-  },
-  {
-    id: 'baselinesecurity',
-    term: 'Baseline Security',
-    slug: 'baselinesecurity',
-    definition: 'A minimum level of security controls that should be applied to all systems in an organization.',
-    example: 'The company\'s baseline security policy requires all servers to have a firewall enabled and all passwords to be complex.',
-  },
-  {
-    id: 'batchscheduler',
-    term: 'Batch Scheduler',
-    slug: 'batchscheduler',
-    definition: 'A software tool used to manage and execute batch jobs. It can schedule jobs to run at specific times, manage dependencies between jobs, and monitor their execution.',
-    example: 'The university uses a batch scheduler to manage the large number of computational jobs submitted by researchers to the high-performance computing cluster.',
-  },
-  {
-    id: 'bitwiseand',
-    term: 'Bitwise AND',
-    slug: 'bitwiseand',
-    definition: 'A bitwise operation that takes two equal-length binary representations and performs the logical AND operation on each pair of corresponding bits.',
-    example: 'The programmer used a bitwise AND operation to check if a specific flag was set in a status byte.',
-  },
-  {
-    id: 'bitwiseor',
-    term: 'Bitwise OR',
-    slug: 'bitwiseor',
-    definition: 'A bitwise operation that takes two bit patterns of equal length and performs the logical inclusive OR operation on each pair of corresponding bits.',
-    example: 'She used a bitwise OR to set multiple permission flags in a single operation.',
-  },
-  {
-    id: 'bitwisexor',
-    term: 'Bitwise XOR',
-    slug: 'bitwisexor',
-    definition: 'A bitwise operation that takes two bit patterns of equal length and performs the logical exclusive OR operation on each pair of corresponding bits.',
-    example: 'A simple encryption algorithm can be created by performing a bitwise XOR with a key.',
-  },
-  {
-    id: 'bitrot',
-    term: 'Bit Rot',
-    slug: 'bitrot',
-    definition: 'Also known as data degradation or data decay, it is the gradual decay of data stored on storage media over time.',
-    example: 'File systems like ZFS have built-in checksums to detect and protect against bit rot.',
-  },
-  {
-    id: 'bi',
-    term: 'BI (Business Intelligence)',
-    slug: 'bi',
-    definition: 'The use of software and services to turn data into actionable insights that inform an organization\'s business decisions.',
-    example: 'The company uses a BI tool to analyze sales data and identify trends.',
-  },
-  {
-    id: 'bireport',
-    term: 'BI Report',
-    slug: 'bireport',
-    definition: 'A report generated by a Business Intelligence (BI) tool that presents data and analysis in a readable format, often with charts and graphs.',
-    example: 'The manager reviewed the weekly BI report to track the team\'s key performance indicators.',
-  },
-  {
-    id: 'binaryheap',
-    term: 'Binary Heap',
-    slug: 'binaryheap',
-    definition: 'A tree-based data structure that satisfies the heap property: in a min heap, for any given node C, if P is a parent node of C, then the key (the value) of P is less than or equal to the key of C.',
-    example: 'A priority queue is often implemented using a binary heap because it allows for efficient retrieval of the minimum or maximum element.'
-  },
-  {
-    id: 'binaryprotocol',
-    term: 'Binary Protocol',
-    slug: 'binaryprotocol',
-    definition: 'A communication protocol that uses a binary format for message encoding, which is generally more efficient in terms of size and parsing speed than text-based protocols like JSON or XML.',
-    example: 'gRPC uses a binary protocol called Protocol Buffers for high-performance communication between microservices.'
-  },
-  {
-    id: 'bindvariable',
-    term: 'Bind Variable',
-    slug: 'bindvariable',
-    definition: 'In databases, a placeholder in a SQL statement that is replaced with a literal value at execution time. It is used to prevent SQL injection and improve performance.',
-    example: 'Instead of concatenating user input into the query, the developer used a bind variable to safely pass the value to the database.',
-  },
-  {
-    id: 'bitflip',
-    term: 'Bit Flip',
-    slug: 'bitflip',
-    definition: 'An error in computer data in which a single bit is inverted, from 0 to 1 or vice versa. This can be caused by radiation or hardware faults.',
-    example: 'A random bit flip in memory caused the program to crash unexpectedly.',
-  },
-  {
-    id: 'bittorrent',
-    term: 'BitTorrent',
-    slug: 'bittorrent',
-    definition: 'A communication protocol for peer-to-peer file sharing (P2P) which is used to distribute large amounts of data and electronic files over the Internet.',
-    example: 'He used BitTorrent to download the latest Linux distribution, which was faster than downloading from a single server.',
-  },
-  {
-    id: 'blackhat',
-    term: 'Black Hat',
-    slug: 'blackhat',
-    definition: 'A hacker who violates computer security for personal gain or malice.',
-    example: 'A black hat hacker broke into the company\'s network and held their data for ransom.',
-  },
-  {
-    id: 'bluetoothstack',
-    term: 'Bluetooth Stack',
-    slug: 'bluetoothstack',
-    definition: 'The software that implements the Bluetooth protocols, allowing an operating system to communicate with Bluetooth devices.',
-    example: 'He had to update his computer\'s Bluetooth stack to support the new features of his wireless headphones.',
-  },
-  {
-    id: 'bootsector',
-    term: 'Boot Sector',
-    slug: 'boot-sector',
-    definition: 'The first sector of a hard disk or other storage device that contains the code for starting the boot process.',
-    example: 'A boot sector virus infects the master boot record of a hard drive and is loaded into memory at startup.',
-  },
-  {
-    id: 'bounceattack',
-    term: 'Bounce Attack',
-    slug: 'bounceattack',
-    definition: 'A type of network attack where an attacker sends requests to a server with the source IP address spoofed to be the victim\'s address. The server then sends its replies to the victim, flooding them with traffic.',
-    example: 'A DNS amplification attack is a type of bounce attack.',
-  },
-  {
-    id: 'browserexploitkit',
-    term: 'Browser Exploit Kit',
-    slug: 'browserexploitkit',
-    definition: 'A software kit that is used to exploit vulnerabilities in web browsers. It is often hosted on a compromised website and used to automatically install malware on visitors\' computers.',
-    example: 'The user\'s computer was infected with ransomware after visiting a website that was running a browser exploit kit.',
-  },
-  {
-    id: 'bufferingstrategy',
-    term: 'Buffering Strategy',
-    slug: 'bufferingstrategy',
-    definition: 'The method used to manage a buffer, such as how much data to store before processing or transmitting it.',
-    example: 'The video player uses a clever buffering strategy to ensure smooth playback even on a slow internet connection.',
-  },
-  {
-    id: 'builtinfunction',
-    term: 'Built-in Function',
-    slug: 'builtinfunction',
-    definition: 'A function that is provided by a programming language or environment, rather than being defined by the user.',
-    example: 'In Python, `print()` and `len()` are examples of built-in functions.',
-  },
-  {
-    id: 'buserror',
-    term: 'Bus Error',
-    slug: 'buserror',
-    definition: 'A type of fault raised by a computer\'s hardware, indicating that the processor has attempted an invalid memory access.',
-    example: 'The program crashed with a bus error because it tried to access an unaligned memory address.',
-  },
-  {
-    id: 'busywait',
-    term: 'Busy-wait',
-    slug: 'busywait',
-    definition: 'A technique in which a process repeatedly checks a condition, such as whether a lock is available. This can be very inefficient as it consumes CPU cycles without doing useful work.',
-    example: 'The code used a busy-wait loop to wait for the hardware to become ready, which was inefficient and drained the battery on the mobile device.',
-  },
-  {
-    id: 'byteswapping',
-    term: 'Byte Swapping',
-    slug: 'byteswapping',
-    definition: 'The process of changing the byte order of a multi-byte data value, for example, from big-endian to little-endian.',
-    example: 'When reading data from a network packet, the program had to perform byte swapping to convert the data to the processor\'s native byte order.',
-  },
-  {
-    id: 'bytestream',
-    term: 'Byte Stream',
-    slug: 'bytestream',
-    definition: 'A sequence of bytes, often used to represent data being transferred over a network or read from a file.',
-    example: 'The TCP protocol provides a reliable byte stream between two applications.',
-  },
-  {
-    id: 'bytearray',
-    term: 'Byte Array',
-    slug: 'bytearray',
-    definition: 'An array data structure that holds a sequence of bytes.',
-    example: 'He read the contents of the image file into a byte array to process it in memory.',
-  },
-  {
-    id: 'bytepointer',
-    term: 'Byte Pointer',
-    slug: 'bytepointer',
-    definition: 'A pointer that points to a memory location containing a single byte of data.',
-    example: 'In C, you can use a byte pointer to iterate through the individual bytes of a larger data structure.',
-  },
-  {
-    id: 'byteslice',
-    term: 'Byte Slice',
-    slug: 'byteslice',
-    definition: 'In languages like Go, a slice is a flexible view into the elements of an array. A byte slice is a slice of a byte array.',
-    example: 'The Go program used a byte slice to efficiently read a portion of a file into memory.',
-  },
-  {
-    id: 'bytewrapper',
-    term: 'Byte Wrapper',
-    slug: 'bytewrapper',
-    definition: 'A class or object that "wraps" a raw byte array or buffer, providing a more convenient interface for reading and writing different data types.',
-    example: 'Java\'s `ByteBuffer` is a byte wrapper that provides methods for reading and writing primitive types like integers and floats.',
-  },
-  {
-    id: 'byteboundary',
-    term: 'Byte Boundary',
-    slug: 'byteboundary',
-    definition: 'A specific memory address that is a multiple of a certain power of two. Aligning data to byte boundaries can improve performance.',
-    example: 'For optimal performance, the data structure was aligned to an 8-byte boundary.',
-  },
-  {
-    id: 'backhaul',
-    term: 'Backhaul',
-    slug: 'backhaul',
-    definition: 'The portion of a network that comprises the intermediate links between the core network (or backbone) and the small subnetworks at the edge of the network.',
-    example: 'The cell tower uses a fiber optic backhaul to connect to the main telephone network.'
-  },
-  {
-    id: 'backing-store',
-    term: 'Backing Store',
-    slug: 'backing-store',
-    definition: 'In virtual memory systems, the portion of a secondary storage device (like a hard drive) where pages of memory are stored when they are not in main memory.',
-    example: 'The operating system swapped the inactive process out to the backing store to free up RAM.'
-  },
-  {
-    id: 'backbone-network',
-    term: 'Backbone Network',
-    slug: 'backbone-network',
-    definition: 'The part of a computer network that interconnects various pieces of the network, providing a path for the exchange of information between different LANs or sub-networks.',
-    example: 'The university\'s fiber optic backbone network connects all the campus buildings to the central data center.'
-  },
-  {
-    id: 'backscatter',
-    term: 'Backscatter',
-    slug: 'backscatter',
-    definition: 'In network security, backscatter is the side-effect of a spoofed denial-of-service attack. It consists of the reply packets sent by the victim to the spoofed source IP address.',
-    example: 'Security researchers analyze backscatter traffic to measure the scope and scale of DDoS attacks across the internet.'
-  },
-  {
-    id: 'backtrace',
-    term: 'Backtrace',
-    slug: 'backtrace',
-    definition: 'A report of the active stack frames at a certain point in time during the execution of a program. Also known as a stack trace.',
-    example: 'When the program crashed, it printed a backtrace showing the sequence of function calls that led to the error.'
-  },
-  {
-    id: 'backup-agent',
-    term: 'Backup Agent',
-    slug: 'backup-agent',
-    definition: 'A piece of software installed on a computer or server that is responsible for backing up its data to a central backup server or cloud service.',
-    example: 'The IT department installed a backup agent on all employee laptops.'
-  },
-  {
-    id: 'batchfile',
-    term: 'Batch File',
-    slug: 'batchfile',
-    definition: 'A text file containing a sequence of commands for a command-line interpreter.',
-    example: 'He wrote a batch file to automate the process of copying files and running a program.',
-  },
-  {
-    id: 'backoff-algorithm',
-    term: 'Backoff Algorithm',
-    slug: 'backoff-algorithm',
-    definition: 'A strategy used in networking where a device waits for a random amount of time before retransmitting a packet after a collision.',
-    example: 'Ethernet uses an exponential backoff algorithm to handle collisions on the network.',
-  },
-  {
-    id: 'backplane-bus',
-    term: 'Backplane Bus',
-    slug: 'backplane-bus',
-    definition: 'A group of parallel electrical connectors that are used to connect multiple circuit boards together to form a computer system.',
-    example: 'Blade servers connect to the chassis through a high-speed backplane bus.',
-  },
-  {
-    id: 'backpressure',
-    term: 'Backpressure',
-    slug: 'backpressure',
-    definition: 'In data streaming, a mechanism that allows a consumer to signal to a producer that it is receiving data too quickly, preventing the consumer from being overwhelmed.',
-    example: 'Reactive programming frameworks use backpressure to handle streams of data from fast producers to slow consumers.',
-  },
-  {
-    id: 'backup-rotation',
-    term: 'Backup Rotation',
-    slug: 'backup-rotation',
-    definition: 'A strategy for managing backup media, where older backups are replaced by newer ones to manage storage space and provide a history of data.',
-    example: 'The company uses a Grandfather-Father-Son backup rotation scheme.',
-  },
-  {
-    id: 'backscatter-analysis',
-    term: 'Backscatter Analysis',
-    slug: 'backscatter-analysis',
-    definition: 'The process of analyzing backscatter traffic to understand the characteristics of DDoS attacks.',
-    example: 'Security researchers use backscatter analysis to monitor global DDoS activity.',
-  },
-  {
-    id: 'backup-snapshot',
-    term: 'Backup Snapshot',
-    slug: 'backup-snapshot',
-    definition: 'A point-in-time copy of a storage volume, which can be used to restore the data to that state.',
-    example: 'Before upgrading the database, the administrator took a backup snapshot.',
-  },
-  {
-    id: 'backdoor-logic',
-    term: 'Backdoor Logic',
-    slug: 'backdoor-logic',
-    definition: 'Code intentionally added to a system to allow an unauthorized user to bypass normal security controls.',
-    example: 'A disgruntled employee added backdoor logic to the application before they quit.',
-  },
-  {
-    id: 'backhaul-network',
-    term: 'Backhaul Network',
-    slug: 'backhaul-network',
-    definition: 'The part of a network that connects the edge of the network to the core network.',
-    example: 'Cell towers use a backhaul network to connect to the main telecommunications infrastructure.',
-  },
-  {
-    id: 'background-daemon',
-    term: 'Background Daemon',
-    slug: 'background-daemon',
-    definition: 'A program that runs in the background, rather than under the direct control of a user.',
-    example: 'The `sshd` daemon listens for incoming SSH connections on a Linux server.',
-  },
-  {
-    id: 'background-job',
-    term: 'Background Job',
-    slug: 'background-job',
-    definition: 'A task that is run in the background, allowing the user to continue working on other things.',
-    example: 'He started the video encoding as a background job so he could continue editing other clips.',
-  },
-  {
-    id: 'backport',
-    term: 'Backport',
-    slug: 'backport',
-    definition: 'The action of taking a feature or patch from a newer version of software and applying it to an older version.',
-    example: 'The security fix was backported from the development branch to the stable release.',
-  },
-  {
-    id: 'back-end-system',
-    term: 'Back-end System',
-    slug: 'back-end-system',
-    definition: 'The part of a software system that is not directly accessed by the user, typically responsible for data storage and business logic.',
-    example: 'The mobile app communicates with a back-end system to retrieve user data.',
-  },
-  {
-    id: 'backspace-character',
-    term: 'Backspace Character',
-    slug: 'backspace-character',
-    definition: 'A control character that moves the cursor one position backwards.',
-    example: 'The terminal interpreted the backspace character and deleted the previous letter.',
-  },
-  {
-    id: 'backtesting-engine',
-    term: 'Backtesting Engine',
-    slug: 'backtesting-engine',
-    definition: 'A software tool used in finance to test a trading strategy on historical data.',
-    example: 'The quantitative analyst used a backtesting engine to see how their new algorithm would have performed last year.',
-  },
-  {
-    id: 'backend-for-frontend',
-    term: 'Backend for Frontend',
-    slug: 'backend-for-frontend',
-    definition: 'An architectural pattern where a dedicated backend is created for each frontend application, providing an API that is tailored to the needs of that specific frontend.',
-    example: 'The company built a Backend for Frontend for their mobile app to optimize the data it received.',
-  },
-  {
-    id: 'bad-block',
-    term: 'Bad Block',
-    slug: 'bad-block',
-    definition: 'A sector on a storage device that is no longer reliable for storing and retrieving data.',
-    example: 'The hard drive controller automatically marked the bad block and remapped it to a spare sector.',
-  },
-  {
-    id: 'badge-component',
-    term: 'Badge Component',
-    slug: 'badge-component',
-    definition: 'A UI element, often a small circle or box, used to display a number or a status, such as the number of unread notifications.',
-    example: 'The email icon had a badge component showing "3" unread messages.',
-  },
-  {
-    id: 'bag-of-words',
-    term: 'Bag-of-Words',
-    slug: 'bag-of-words',
-    definition: 'A representation of text in natural language processing that disregards grammar and word order, but keeps track of word frequency.',
-    example: 'The spam filter used a bag-of-words model to identify emails containing certain keywords.',
-  },
-  {
-    id: 'balanced-tree',
-    term: 'Balanced Tree',
-    slug: 'balanced-tree',
-    definition: 'A tree data structure in which the height of the left and right subtrees of any node differ by at most one.',
-    example: 'AVL trees and Red-Black trees are examples of self-balancing binary search trees.',
-  },
-  {
-    id: 'balancer-node',
-    term: 'Balancer Node',
-    slug: 'balancer-node',
-    definition: 'A server in a distributed system that is responsible for distributing incoming requests across a cluster of servers.',
-    example: 'The balancer node ensures that no single web server is overwhelmed with traffic.',
-  },
-  {
-    id: 'band-steering',
-    term: 'Band Steering',
-    slug: 'band-steering',
-    definition: 'A feature in dual-band Wi-Fi access points that encourages dual-band clients to connect to the less-congested 5 GHz network.',
-    example: 'The new router uses band steering to automatically move devices to the 5 GHz band for better performance.',
-  },
-  {
-    id: 'band-pass-filter',
-    term: 'Band-Pass Filter',
-    slug: 'band-pass-filter',
-    definition: 'An electronic filter that passes frequencies within a certain range and rejects frequencies outside that range.',
-    example: 'An audio equalizer uses band-pass filters to boost or cut specific frequency ranges.',
-  },
-  {
-    id: 'bank-switching',
-    term: 'Bank Switching',
-    slug: 'bank-switching',
-    definition: 'A technique used in early computers to increase the amount of usable memory by switching between different banks of RAM.',
-    example: 'Vintage video game consoles used bank switching to fit larger games onto small cartridges.',
-  },
-  {
-    id: 'banner-grabbing',
-    term: 'Banner Grabbing',
-    slug: 'banner-grabbing',
-    definition: 'A technique used to gain information about a computer system on a network and the services running on its open ports.',
-    example: 'The penetration tester used banner grabbing to identify the version of the web server software.',
-  },
-  {
-    id: 'bar-chart-library',
-    term: 'Bar Chart Library',
-    slug: 'bar-chart-library',
-    definition: 'A software library that provides tools for creating bar charts to visualize data.',
-    example: 'He used Chart.js, a popular bar chart library, to create a dashboard for his web application.',
-  },
-  {
-    id: 'bare-metal-server',
-    term: 'Bare-metal Server',
-    slug: 'bare-metal-server',
-    definition: 'A physical server dedicated to a single tenant, without any virtualization layer.',
-    example: 'For their high-performance database, they chose a bare-metal server to avoid the overhead of a hypervisor.',
-  },
-  {
-    id: 'base-address-register',
-    term: 'Base Address Register',
-    slug: 'base-address-register',
-    definition: 'A register in a CPU that holds the beginning address of a memory region.',
-    example: 'The operating system sets the base address register when it allocates a new memory segment for a process.',
-  },
-  {
-    id: 'base-command',
-    term: 'Base Command',
-    slug: 'base-command',
-    definition: 'The main command in a command-line interface, which can be followed by subcommands and options.',
-    example: 'In `git commit -m "Initial commit"`, `git` is the base command.',
-  },
-  {
-    id: 'base-station',
-    term: 'Base Station',
-    slug: 'base-station',
-    definition: 'A fixed radio transceiver in a wireless network that serves as the hub of the local network.',
-    example: 'A cell tower is a type of base station.',
-  },
-  {
-    id: 'base64-encoding',
-    term: 'Base64 Encoding',
-    slug: 'base64-encoding',
-    definition: 'A group of binary-to-text encoding schemes that represent binary data in an ASCII string format by translating it into a radix-64 representation.',
-    example: 'Images are sometimes embedded directly in web pages using Base64 encoding in a data URI.',
-  },
-  {
-    id: 'baseline-drift',
-    term: 'Baseline Drift',
-    slug: 'baseline-drift',
-    definition: 'A phenomenon in sensor readings or analytical measurements where the baseline signal slowly changes over time.',
-    example: 'The scientist had to correct for baseline drift in the temperature sensor data.',
-  },
-  {
-    id: 'bash-script',
-    term: 'Bash Script',
-    slug: 'bash-script',
-    definition: 'A text file containing a series of commands for the Bash shell.',
-    example: 'He wrote a bash script to automate the process of deploying his website.',
-  },
-  {
-    id: 'basic-input-output-system',
-    term: 'Basic Input Output System',
-    slug: 'basic-input-output-system',
-    definition: 'Firmware used to perform hardware initialization during the booting process on IBM PC compatible computers.',
-    example: 'You can enter the BIOS setup screen to change hardware settings.',
-  },
-  {
-    id: 'batch-job',
-    term: 'Batch Job',
-    slug: 'batch-job',
-    definition: 'A program or a set of programs that are executed without manual intervention.',
-    example: 'The company runs a batch job every night to process the day\'s sales data.',
-  },
-  {
-    id: 'batch-normalization',
-    term: 'Batch Normalization',
-    slug: 'batch-normalization',
-    definition: 'A technique in deep learning that normalizes the inputs of each layer in a neural network, which can speed up training and improve performance.',
-    example: 'Adding batch normalization to the neural network helped it train much faster.',
-  },
-  {
-    id: 'batch-processor',
-    term: 'Batch Processor',
-    slug: 'batch-processor',
-    definition: 'A system that processes data in large groups, or batches.',
-    example: 'Apache Spark is a popular batch processor for big data analytics.',
-  },
-  {
-    id: 'batch-queue',
-    term: 'Batch Queue',
-    slug: 'batch-queue',
-    definition: 'A queue of batch jobs waiting to be executed by a batch processing system.',
-    example: 'His job was number 50 in the batch queue and would run overnight.',
-  },
-  {
-    id: 'bcrypt-hash',
-    term: 'Bcrypt Hash',
-    slug: 'bcrypt-hash',
-    definition: 'A password hashing function designed to be slow and computationally intensive to protect against brute-force attacks.',
-    example: 'The website stored user passwords as bcrypt hashes for security.',
-  },
-  {
-    id: 'beamforming',
-    term: 'Beamforming',
-    slug: 'beamforming',
-    definition: 'A signal processing technique used in sensor arrays for directional signal transmission or reception. In Wi-Fi, it focuses the signal towards a specific device.',
-    example: 'The new Wi-Fi router uses beamforming to improve signal strength and speed for connected devices.',
-  },
-  {
-    id: 'beautifier-tool',
-    term: 'Beautifier Tool',
-    slug: 'beautifier-tool',
-    definition: 'A program that reformats source code to make it more readable and conform to a specific style guide.',
-    example: 'He ran his JavaScript code through a beautifier tool before committing it to the repository.',
-  },
-  {
-    id: 'beaver-code',
-    term: 'Beaver Code',
-    slug: 'beaver-code',
-    definition: 'Slang for overly complex or convoluted code that is difficult to understand, as if built by a busy beaver without a clear plan.',
-    example: 'The new developer had to spend a week trying to understand the beaver code left by his predecessor.',
-  },
-  {
-    id: 'benchmark-suite',
-    term: 'Benchmark Suite',
-    slug: 'benchmark-suite',
-    definition: 'A collection of programs or tests used to evaluate the performance of a computer system.',
-    example: 'The SPEC CPU benchmark suite is widely used to compare the performance of different processors.',
-  },
-  {
-    id: 'bend-radius-fiber',
-    term: 'Bend Radius (Fiber)',
-    slug: 'bend-radius-fiber',
-    definition: 'The minimum radius an optical fiber can be bent without damaging it or causing signal loss.',
-    example: 'The technician was careful not to exceed the bend radius when installing the fiber optic cable.',
-  },
-  {
-    id: 'ber-bit-error-rate',
-    term: 'BER (Bit Error Rate)',
-    slug: 'ber-bit-error-rate',
-    definition: 'The number of bit errors per unit time. It is a key measure of the quality of a digital communication channel.',
-    example: 'A high bit error rate on the satellite link was causing data corruption.',
-  },
-  {
-    id: 'berkeley-db',
-    term: 'Berkeley DB',
-    slug: 'berkeley-db',
-    definition: 'A high-performance embedded database library that provides a simple key-value store.',
-    example: 'Many open-source projects use Berkeley DB for internal data storage.',
-  },
-  {
-    id: 'berkeley-packet-filter',
-    term: 'Berkeley Packet Filter',
-    slug: 'berkeley-packet-filter',
-    definition: 'A technology used in certain computer operating systems for programs that need to analyze network traffic.',
-    example: 'Tools like `tcpdump` use the Berkeley Packet Filter to capture only the network packets that match a specific criteria.',
-  },
-  {
-    id: 'beta-channel',
-    term: 'Beta Channel',
-    slug: 'beta-channel',
-    definition: 'A software release channel that provides access to pre-release versions of software for testing.',
-    example: 'He switched to the beta channel of the browser to try out new features before they were released to the public.',
-  },
-  {
-    id: 'beta-software',
-    term: 'Beta Software',
-    slug: 'beta-software',
-    definition: 'A version of software that is made available for testing by a group of users before its official release.',
-    example: 'The company is looking for users to test the beta software for their new application.',
-  },
-  {
-    id: 'bettercap-toolkit',
-    term: 'Bettercap Toolkit',
-    slug: 'bettercap-toolkit',
-    definition: 'A powerful, flexible, and portable tool for penetration testing and network attacks.',
-    example: 'The security expert used Bettercap to perform a man-in-the-middle attack on the test network.',
-  },
-  {
-    id: 'bezier-curve',
-    term: 'Bezier Curve',
-    slug: 'bezier-curve',
-    definition: 'A parametric curve used in computer graphics and related fields. It is defined by a set of control points.',
-    example: 'Vector graphics programs like Adobe Illustrator use Bezier curves to create smooth, scalable shapes.',
-  },
-  {
-    id: 'bfs-algorithm',
-    term: 'BFS Algorithm',
-    slug: 'bfs-algorithm',
-    definition: 'Breadth-First Search, an algorithm for traversing or searching tree or graph data structures.',
-    example: 'He used the BFS algorithm to find the shortest path between two nodes in a graph.',
-  },
-  {
-    id: 'bgp-routing-table',
-    term: 'BGP Routing Table',
-    slug: 'bgp-routing-table',
-    definition: 'A table maintained by a BGP router that lists all the reachable networks and the paths to reach them.',
-    example: 'The full BGP routing table for the internet contains millions of entries.',
-  },
-  {
-    id: 'bgp-session',
-    term: 'BGP Session',
-    slug: 'bgp-session',
-    definition: 'A TCP connection between two BGP routers over which they exchange routing information.',
-    example: 'The two internet service providers established a BGP session to exchange routes.',
-  },
-  {
-    id: 'bias-node',
-    term: 'Bias Node',
-    slug: 'bias-node',
-    definition: 'In a neural network, a bias node is an extra node added to each layer that provides a constant value, allowing the activation function to be shifted.',
-    example: 'Adding a bias node to the neural network improved its ability to learn complex patterns.',
-  },
-  {
-    id: 'bidirectional-bus',
-    term: 'Bidirectional Bus',
-    slug: 'bidirectional-bus',
-    definition: 'A computer bus that can transfer data in both directions.',
-    example: 'The data bus in a modern computer is a bidirectional bus.',
-  },
-  {
-    id: 'big-data-pipeline',
-    term: 'Big Data Pipeline',
-    slug: 'big-data-pipeline',
-    definition: 'An end-to-end process for moving data from various sources, processing it, and storing it in a data warehouse or data lake for analysis.',
-    example: 'The company built a big data pipeline to collect and analyze customer behavior data from their website and mobile app.',
-  },
-  {
-    id: 'big-endian',
-    term: 'Big Endian',
-    slug: 'big-endian',
-    definition: 'A byte order in which the most significant byte of a multi-byte data word is stored at the lowest memory address.',
-    example: 'Network protocols typically use big-endian byte order.',
-  },
-  {
-    id: 'big-integer',
-    term: 'Big Integer',
-    slug: 'big-integer',
-    definition: 'A data type in some programming languages that can represent integers of arbitrary size.',
-    example: 'He used a big integer library to work with numbers that were too large to fit in a standard 64-bit integer.',
-  },
-  {
-    id: 'bikeshare-api',
-    term: 'Bikeshare API',
-    slug: 'bikeshare-api',
-    definition: 'An API that provides data about a bike-sharing system, such as the location of bikes and docking stations.',
-    example: 'The developer used the city\'s bikeshare API to build an app that shows the nearest available bike.',
-  },
-  {
-    id: 'binary-blob',
-    term: 'Binary Blob',
-    slug: 'binary-blob',
-    definition: 'A large piece of binary data stored as a single entity. It can also refer to a proprietary, closed-source driver used in an open-source operating system.',
-    example: 'The firmware for the Wi-Fi card was provided as a binary blob.',
-  },
-  {
-    id: 'binary-diff',
-    term: 'Binary Diff',
-    slug: 'binary-diff',
-    definition: 'A comparison of two binary files to identify the differences between them. This is used to create small patches for updating software.',
-    example: 'The software update was delivered as a binary diff to reduce the download size.',
-  },
-  {
-    id: 'binary-search',
-    term: 'Binary Search',
-    slug: 'binary-search',
-    definition: 'A search algorithm that finds the position of a target value within a sorted array.',
-    example: 'Binary search is much more efficient than linear search for large datasets.',
-  },
-  {
-    id: 'binding-address',
-    term: 'Binding Address',
-    slug: 'binding-address',
-    definition: 'The IP address that a server or service listens on for incoming connections.',
-    example: 'The web server was configured with a binding address of 0.0.0.0 to listen on all available network interfaces.',
-  },
-  {
-    id: 'binding-energy-computation',
-    term: 'Binding Energy (Computation)',
-    slug: 'binding-energy-computation',
-    definition: 'A term from computational chemistry referring to the calculation of the energy required to separate a system of particles into its constituent parts.',
-    example: 'The researchers used a supercomputer to perform a binding energy computation for the new drug molecule.',
-  },
-  {
-    id: 'bing-spellcheck',
-    term: 'Bing Spellcheck',
-    slug: 'bing-spellcheck',
-    definition: 'A cloud-based spell-checking service provided by Microsoft as part of their Cognitive Services.',
-    example: 'The application integrated the Bing Spellcheck API to provide real-time spelling corrections.',
-  },
-  {
-    id: 'bit-bang-mode',
-    term: 'Bit Bang Mode',
-    slug: 'bit-bang-mode',
-    definition: 'A technique for serial communication where the individual bits are transmitted by directly controlling the state of a general-purpose I/O pin.',
-    example: 'He used bit bang mode to communicate with a simple sensor that didn\'t have a standard serial interface.',
-  },
-  {
-    id: 'bit-error',
-    term: 'Bit Error',
-    slug: 'bit-error',
-    definition: 'An error in data transmission where a bit is flipped, from 0 to 1 or vice versa.',
-    example: 'The communication channel had a high bit error rate, causing frequent data corruption.',
-  },
-  {
-    id: 'bit-mask',
-    term: 'Bit Mask',
-    slug: 'bit-mask',
-    definition: 'A value used to set, clear, or toggle specific bits in another value using bitwise operations.',
-    example: 'He used a bit mask to extract the permission flags from a status byte.',
-  },
-  {
-    id: 'bit-packing',
-    term: 'Bit Packing',
-    slug: 'bit-packing',
-    definition: 'A technique for storing multiple small data values in a single byte or word to save memory.',
-    example: 'The game used bit packing to store the state of multiple game objects in a single integer.',
-  },
-  {
-    id: 'bit-rate',
-    term: 'Bit Rate',
-    slug: 'bit-rate',
-    definition: 'The number of bits that are conveyed or processed per unit of time.',
-    example: 'The video was streamed at a bit rate of 5 megabits per second.',
-  },
-  {
-    id: 'bit-rotation',
-    term: 'Bit Rotation',
-    slug: 'bit-rotation',
-    definition: 'A bitwise operation that shifts all bits in a register, where the bits that are shifted out of one end are put back into the other end.',
-    example: 'Some encryption algorithms use bit rotation as part of their process.',
-  },
-  {
-    id: 'bit-shift',
-    term: 'Bit Shift',
-    slug: 'bit-shift',
-    definition: 'A bitwise operation that shifts the bits of a binary number to the left or right.',
-    example: 'He used a left bit shift to multiply a number by two.',
-  },
-  {
-    id: 'bit-sliced-architecture',
-    term: 'Bit Sliced Architecture',
-    slug: 'bit-sliced-architecture',
-    definition: 'A technique for constructing a processor from modules of smaller bit width.',
-    example: 'Early supercomputers used a bit-sliced architecture to build powerful processors.',
-  },
-  {
-    id: 'bit-stream',
-    term: 'Bit Stream',
-    slug: 'bit-stream',
-    definition: 'A sequence of bits.',
-    example: 'The modem converted the analog signal into a digital bit stream.',
-  },
-  {
-    id: 'bit-vector',
-    term: 'Bit Vector',
-    slug: 'bit-vector',
-    definition: 'An array data structure that compactly stores bits.',
-    example: 'A Bloom filter is implemented using a bit vector.',
-  },
-  {
-    id: 'bitcoin-script',
-    term: 'Bitcoin Script',
-    slug: 'bitcoin-script',
-    definition: 'A simple, stack-based programming language used to define the conditions for spending bitcoins.',
-    example: 'A standard Bitcoin transaction uses a script that requires a valid digital signature.',
-  },
-  {
-    id: 'bitlocker',
-    term: 'Bitlocker',
-    slug: 'bitlocker',
-    definition: 'A full-volume encryption feature included with Microsoft Windows versions starting with Windows Vista.',
-    example: 'He enabled Bitlocker on his laptop to protect his data in case it was lost or stolen.',
-  },
-  {
-    id: 'bitmap-index',
-    term: 'Bitmap Index',
-    slug: 'bitmap-index',
-    definition: 'A special kind of database index that uses bitmaps (bit arrays). They are particularly efficient for columns with a low number of distinct values.',
-    example: 'The data warehouse used a bitmap index on the "gender" column to speed up queries.',
-  },
-  {
-    id: 'bitmap-renderer',
-    term: 'Bitmap Renderer',
-    slug: 'bitmap-renderer',
-    definition: 'A component in a graphics system that renders images from a bitmap representation.',
-    example: 'Early computer graphics systems used a simple bitmap renderer.',
-  },
-  {
-    id: 'bittorrent-peer',
-    term: 'Bittorrent Peer',
-    slug: 'bittorrent-peer',
-    definition: 'A computer in a BitTorrent network that is downloading and uploading pieces of a file.',
-    example: 'He was connected to over 50 Bittorrent peers while downloading the movie.',
-  },
-  {
-    id: 'bivariate-analysis',
-    term: 'Bivariate Analysis',
-    slug: 'bivariate-analysis',
-    definition: 'The analysis of two variables to determine the empirical relationship between them.',
-    example: 'The data scientist performed a bivariate analysis to see if there was a correlation between ad spending and sales.',
-  },
-  {
-    id: 'bjt-oscillator-mixed-signal',
-    term: 'BJT Oscillator (Mixed signal)',
-    slug: 'bjt-oscillator-mixed-signal',
-    definition: 'An electronic oscillator circuit that uses a Bipolar Junction Transistor (BJT) as its active element, often found in mixed-signal designs.',
-    example: 'The radio transmitter used a BJT oscillator to generate the carrier frequency.',
-  },
-  {
-    id: 'black-hat',
-    term: 'Black Hat',
-    slug: 'black-hat',
-    definition: 'A hacker who violates computer security for personal gain or malice.',
-    example: 'A black hat hacker exploited a vulnerability to steal customer data.',
-  },
-  {
-    id: 'blackhole-route',
-    term: 'Blackhole Route',
-    slug: 'blackhole-route',
-    definition: 'A network route that directs traffic to a null interface, effectively dropping it. This is used to mitigate DDoS attacks.',
-    example: 'The network administrator configured a blackhole route to drop all traffic from the attacker\'s IP address.',
-  },
-  {
-    id: 'blacklist-check',
-    term: 'Blacklist Check',
-    slug: 'blacklist-check',
-    definition: 'The process of checking if an IP address or domain is on a blacklist of known malicious entities.',
-    example: 'The email server performed a blacklist check on the sender\'s IP address before accepting the message.',
-  },
-  {
-    id: 'blade-chassis',
-    term: 'Blade Chassis',
-    slug: 'blade-chassis',
-    definition: 'An enclosure that houses multiple blade servers, providing power, cooling, and networking.',
-    example: 'The data center installed a new blade chassis to increase their server density.',
-  },
-  {
-    id: 'blameless-postmortem',
-    term: 'Blameless Postmortem',
-    slug: 'blameless-postmortem',
-    definition: 'A process for analyzing an incident or outage with a focus on identifying systemic causes, not on blaming individuals.',
-    example: 'After the site outage, the team held a blameless postmortem to understand what went wrong and how to prevent it in the future.',
-  },
-  {
-    id: 'blazor-app',
-    term: 'Blazor App',
-    slug: 'blazor-app',
-    definition: 'A web application built using Blazor, a framework from Microsoft for building interactive web UIs with C# instead of JavaScript.',
-    example: 'The .NET developer built a full-featured single-page application as a Blazor app.',
-  },
-  {
-    id: 'block-device',
-    term: 'Block Device',
-    slug: 'block-device',
-    definition: 'A storage device that moves data in fixed-size blocks, such as a hard drive or SSD.',
-    example: 'In Linux, hard drives are represented as block devices in the `/dev` directory.',
-  },
-  {
-    id: 'block-explorer',
-    term: 'Block Explorer',
-    slug: 'block-explorer',
-    definition: 'A web-based tool for exploring the contents of a blockchain, such as viewing transactions and blocks.',
-    example: 'He used a block explorer to check the status of his Bitcoin transaction.',
-  },
-  {
-    id: 'block-header',
-    term: 'Block Header',
-    slug: 'block-header',
-    definition: 'In a blockchain, the part of a block that contains metadata about the block, such as the hash of the previous block, a timestamp, and a nonce.',
-    example: 'Miners compete to find a valid hash for the block header.',
-  },
-  {
-    id: 'block-io',
-    term: 'Block I/O',
-    slug: 'block-io',
-    definition: 'Input/output operations that involve reading or writing data in fixed-size blocks.',
-    example: 'The database performance was limited by slow block I/O from the hard drive.',
-  },
-  {
-    id: 'block-level-storage',
-    term: 'Block-level Storage',
-    slug: 'block-level-storage',
-    definition: 'A type of data storage where data is stored in volumes called blocks. Each block can be controlled as an individual hard drive.',
-    example: 'Storage Area Networks (SANs) provide block-level storage to servers.',
-  },
-  {
-    id: 'blockchain-node',
-    term: 'Blockchain Node',
-    slug: 'blockchain-node',
-    definition: 'A computer connected to a blockchain network that helps to validate and relay transactions.',
-    example: 'He ran a full Bitcoin blockchain node to support the network.',
-  },
-  {
-    id: 'blockquote-tag',
-    term: 'Blockquote Tag',
-    slug: 'blockquote-tag',
-    definition: 'An HTML tag used to indicate that the enclosed text is an extended quotation.',
-    example: 'The blog post used the `<blockquote>` tag to format the quote from the book.',
-  },
-  {
-    id: 'bloom-filter',
-    term: 'Bloom Filter',
-    slug: 'bloom-filter',
-    definition: 'A space-efficient probabilistic data structure that is used to test whether an element is a member of a set. False positives are possible, but false negatives are not.',
-    example: 'Google Chrome uses a Bloom filter to check if a URL is on a list of malicious websites.',
-  },
-  {
-    id: 'bloatware',
-    term: 'Bloatware',
-    slug: 'bloatware',
-    definition: 'Software that has become so large and complex that it is slow and inefficient. Also refers to unwanted pre-installed software.',
-    example: 'He bought a new laptop and spent an hour uninstalling all the bloatware that came with it.',
-  },
-  {
-    id: 'blob-storage',
-    term: 'Blob Storage',
-    slug: 'blob-storage',
-    definition: 'A type of data storage for large binary objects, such as images and videos.',
-    example: 'Azure Blob Storage is a popular cloud service for storing unstructured data.',
-  },
-  {
-    id: 'block-reward',
-    term: 'Block Reward',
-    slug: 'block-reward',
-    definition: 'In a proof-of-work blockchain, the reward given to a miner for successfully mining a new block.',
-    example: 'The current Bitcoin block reward is 6.25 BTC.',
-  },
-  {
-    id: 'blue-team-operation',
-    term: 'Blue Team Operation',
-    slug: 'blue-team-operation',
-    definition: 'In cybersecurity, an exercise where a blue team defends a network against a simulated attack by a red team.',
-    example: 'The company runs a quarterly blue team operation to test its security defenses.',
-  },
-  {
-    id: 'blue-green-deployment',
-    term: 'Blue-Green Deployment',
-    slug: 'blue-green-deployment',
-    definition: 'A software release strategy that involves running two identical production environments, "blue" and "green". The new version is deployed to the green environment, and once it is tested, traffic is switched from blue to green.',
-    example: 'Using a blue-green deployment allowed them to release the new version of the website with zero downtime.',
-  },
-  {
-    id: 'blurring-algorithm',
-    term: 'Blurring Algorithm',
-    slug: 'blurring-algorithm',
-    definition: 'An algorithm used in image processing to reduce detail and noise, creating a "blurry" effect.',
-    example: 'A Gaussian blur is a common type of blurring algorithm.',
-  },
-  {
-    id: 'bmp-file',
-    term: 'BMP File',
-    slug: 'bmp-file',
-    definition: 'A bitmap image file format used to store bitmap digital images, independently of the display device.',
-    example: 'He saved the screenshot as a BMP file.',
-  },
-  {
-    id: 'bms-battery-management-system',
-    term: 'BMS (Battery Management System)',
-    slug: 'bms-battery-management-system',
-    definition: 'An electronic system that manages a rechargeable battery (cell or battery pack), such as by protecting the battery from operating outside its safe operating area, monitoring its state, calculating secondary data, reporting that data, controlling its environment, authenticating it and / or balancing it.',
-    example: 'The electric car has a sophisticated BMS to optimize battery life and performance.',
-  },
-  {
-    id: 'boarding-logic-ml',
-    term: 'Boarding Logic (ML)',
-    slug: 'boarding-logic-ml',
-    definition: 'A non-standard term, likely referring to the initial logic or code for loading and preparing a machine learning model for inference.',
-    example: 'The boarding logic for the model included loading the weights from a file and initializing the computation graph.',
-  },
-  {
-    id: 'bof-buffer-overflow',
-    term: 'BoF (Buffer Overflow)',
-    slug: 'bof-buffer-overflow',
-    definition: 'An anomaly where a program, while writing data to a buffer, overruns the buffer\'s boundary and overwrites adjacent memory locations.',
-    example: 'The attacker used a buffer overflow exploit to execute malicious code on the server.',
-  },
-  {
-    id: 'boiling-plate-dev-slang',
-    term: 'Boiling Plate (Dev slang)',
-    slug: 'boiling-plate-dev-slang',
-    definition: 'A humorous misspelling of "boilerplate," referring to sections of code that have to be included in many places with little or no alteration.',
-    example: 'He was tired of writing the same boiling plate code for every new component.',
-  },
-  {
-    id: 'boltdb',
-    term: 'BoltDB',
-    slug: 'boltdb',
-    definition: 'A pure Go key/value store inspired by Howard Chu\'s LMDB project. It is simple, fast, and reliable.',
-    example: 'The application used BoltDB for its embedded database.',
-  },
-  {
-    id: 'boolean-algebra',
-    term: 'Boolean Algebra',
-    slug: 'boolean-algebra',
-    definition: 'The branch of algebra in which the values of the variables are the truth values true and false, usually denoted 1 and 0 respectively.',
-    example: 'Digital logic circuits are designed using the principles of Boolean algebra.',
-  },
-  {
-    id: 'boolean-mask',
-    term: 'Boolean Mask',
-    slug: 'boolean-mask',
-    definition: 'An array of boolean values used to select elements from another array.',
-    example: 'He used a boolean mask to filter the dataset and select only the rows that met a certain condition.',
-  },
-  {
-    id: 'boolean-query',
-    term: 'Boolean Query',
-    slug: 'boolean-query',
-    definition: 'A type of search query that uses boolean operators (AND, OR, NOT) to combine keywords.',
-    example: 'He used the boolean query "cats AND dogs" to find documents that contained both words.',
-  },
-  {
-    id: 'boot-flag',
-    term: 'Boot Flag',
-    slug: 'boot-flag',
-    definition: 'A flag on a disk partition that indicates it is the active partition from which the operating system should be booted.',
-    example: 'He had to set the boot flag on the new partition after installing Linux.',
-  },
-  {
-    id: 'boot-image',
-    term: 'Boot Image',
-    slug: 'boot-image',
-    definition: 'A file that contains the operating system and other files needed to boot a computer.',
-    example: 'He created a bootable USB drive from a Windows boot image.',
-  },
-  {
-    id: 'boot-loader',
-    term: 'Boot Loader',
-    slug: 'boot-loader',
-    definition: 'A program that loads the main operating system for the computer when it is turned on.',
-    example: 'GRUB is a common boot loader for Linux systems.',
-  },
-  {
-    id: 'boot-partition',
-    term: 'Boot Partition',
-    slug: 'boot-partition',
-    definition: 'A partition on a storage device that contains the operating system and files needed to boot the computer.',
-    example: 'The boot partition was corrupted, so the computer would not start.',
-  },
-  {
-    id: 'boot-priority',
-    term: 'Boot Priority',
-    slug: 'boot-priority',
-    definition: 'The order in which a computer tries to boot from different devices, such as the hard drive, USB drive, or network.',
-    example: 'He changed the boot priority in the BIOS to boot from the USB drive first.',
-  },
-  {
-    id: 'bootstrap-grid',
-    term: 'Bootstrap Grid',
-    slug: 'bootstrap-grid',
-    definition: 'A responsive, mobile-first grid system that is part of the Bootstrap front-end framework.',
-    example: 'She used the Bootstrap grid to create a responsive layout that worked on both desktop and mobile devices.',
-  },
-  {
-    id: 'border-gateway-protocol',
-    term: 'Border Gateway Protocol',
-    slug: 'border-gateway-protocol',
-    definition: 'A standardized exterior gateway protocol designed to exchange routing and reachability information among autonomous systems on the Internet.',
-    example: 'BGP is the protocol that makes the internet work by allowing different networks to communicate with each other.',
-  },
-  {
-    id: 'borrow-checker',
-    term: 'Borrow Checker',
-    slug: 'borrow-checker',
-    definition: 'A key feature of the Rust programming language that enforces memory safety rules at compile time, preventing common bugs like null pointer dereferences and data races.',
-    example: 'The Rust compiler\'s borrow checker caught the memory error before the code was even run.',
-  },
-  {
-    id: 'bot-detection',
-    term: 'Bot Detection',
-    slug: 'bot-detection',
-    definition: 'The process of identifying automated software (bots) that are interacting with a website or application.',
-    example: 'The e-commerce site uses bot detection to prevent scalpers from buying up all the limited-edition sneakers.',
-  },
-  {
-    id: 'bottleneck-analysis',
-    term: 'Bottleneck Analysis',
-    slug: 'bottleneck-analysis',
-    definition: 'The process of identifying the point in a system that is limiting its overall performance.',
-    example: 'The performance engineer conducted a bottleneck analysis and found that the database was the slowest component.',
-  },
-  {
-    id: 'bpf-trace',
-    term: 'BPF Trace',
-    slug: 'bpf-trace',
-    definition: 'A powerful tracing tool in Linux that uses Berkeley Packet Filter (BPF) to trace events in the kernel and user space.',
-    example: 'The system administrator used bpf-trace to debug a complex performance issue.',
-  },
-  {
-    id: 'bpf-probe',
-    term: 'BPF Probe',
-    slug: 'bpf-probe',
-    definition: 'A probe that is inserted into the kernel or a user-space program using BPF to collect data or trace events.',
-    example: 'He attached a BPF probe to the `open` system call to see which files a program was accessing.',
-  },
-  {
-    id: 'bpsk-modulation',
-    term: 'BPSK Modulation',
-    slug: 'bpsk-modulation',
-    definition: 'Binary Phase-Shift Keying, a simple form of digital modulation where the phase of a carrier signal is shifted to represent binary data.',
-    example: 'Early modems used BPSK modulation to transmit data over telephone lines.',
-  },
-  {
-    id: 'bracket-notation',
-    term: 'Bracket Notation',
-    slug: 'bracket-notation',
-    definition: 'A syntax for accessing the properties of an object or elements of an array using square brackets.',
-    example: 'In JavaScript, you can access an object property using bracket notation like `myObject["propertyName"]`.',
-  },
-  {
-    id: 'branch-protection',
-    term: 'Branch Protection',
-    slug: 'branch-protection',
-    definition: 'A feature in version control systems like GitHub that allows you to enforce rules on a branch, such as requiring code reviews before merging.',
-    example: 'The team enabled branch protection on the `main` branch to ensure code quality.',
-  },
-  {
-    id: 'branchless-algorithm',
-    term: 'Branchless Algorithm',
-    slug: 'branchless-algorithm',
-    definition: 'An algorithm that avoids conditional branches (if-then-else statements) to improve performance by preventing pipeline stalls in the processor.',
-    example: 'He wrote a branchless algorithm to calculate the absolute value of a number, which was faster than using an `if` statement.',
-  },
-  {
-    id: 'breadcrumb-navigation',
-    term: 'Breadcrumb Navigation',
-    slug: 'breadcrumb-navigation',
-    definition: 'A secondary navigation scheme that reveals the user\'s location in a website or web app.',
-    example: 'The breadcrumb navigation at the top of the page showed "Home > Products > Laptops".',
-  },
-  {
-    id: 'bridge-network',
-    term: 'Bridge Network',
-    slug: 'bridge-network',
-    definition: 'In containerization (like Docker), a type of network that allows containers running on the same host to communicate with each other.',
-    example: 'The web server and database containers were connected to the same bridge network so they could communicate.',
-  },
-  {
-    id: 'brightness-filter',
-    term: 'Brightness Filter',
-    slug: 'brightness-filter',
-    definition: 'An image processing filter that adjusts the overall brightness of an image.',
-    example: 'He applied a brightness filter to make the dark photo easier to see.',
-  },
-  {
-    id: 'broadcast-address',
-    term: 'Broadcast Address',
-    slug: 'broadcast-address',
-    definition: 'An IP address that is used to send a message to all devices on a specific network.',
-    example: 'A DHCP client sends a request to the broadcast address to find a DHCP server.',
-  },
-  {
-    id: 'broken-access-control',
-    term: 'Broken Access Control',
-    slug: 'broken-access-control',
-    definition: 'A security vulnerability where an attacker can gain access to resources or perform actions that they are not authorized to.',
-    example: 'The website had a broken access control vulnerability that allowed any user to access the admin panel.',
-  },
-  {
-    id: 'broken-authentication',
-    term: 'Broken Authentication',
-    slug: 'broken-authentication',
-    definition: 'A security vulnerability related to how a system manages user authentication and sessions, which can allow an attacker to impersonate users.',
-    example: 'The application had broken authentication because it did not properly invalidate session tokens after logout.',
-  },
-  {
-    id: 'broker-node',
-    term: 'Broker Node',
-    slug: 'broker-node',
-    definition: 'In a distributed messaging system like Apache Kafka, a broker node is a server that stores and manages messages.',
-    example: 'The Kafka cluster consisted of three broker nodes for high availability.',
-  },
-  {
-    id: 'brotli-compression',
-    term: 'Brotli Compression',
-    slug: 'brotli-compression',
-    definition: 'A modern data compression algorithm developed by Google that provides better compression ratios than Gzip.',
-    example: 'The web server used Brotli compression to reduce the size of the HTML, CSS, and JavaScript files.',
-  },
-  {
-    id: 'browser-engine',
-    term: 'Browser Engine',
-    slug: 'browser-engine',
-    definition: 'The core software component of a web browser that is responsible for rendering web pages.',
-    example: 'Chrome uses the Blink browser engine, while Firefox uses Gecko.',
-  },
-  {
-    id: 'browser-storage-api',
-    term: 'Browser Storage API',
-    slug: 'browser-storage-api',
-    definition: 'A set of APIs that allow web applications to store data on the user\'s computer, such as Local Storage, Session Storage, and IndexedDB.',
-    example: 'The web app used the Browser Storage API to save user preferences locally.',
-  },
-  {
-    id: 'bsod',
-    term: 'BSOD',
-    slug: 'bsod',
-    definition: 'Blue Screen of Death, an error screen displayed on a Windows computer system following a fatal system error.',
-    example: 'His computer crashed and showed a BSOD after he installed a faulty driver.',
-  },
-  {
-    id: 'bssid',
-    term: 'BSSID',
-    slug: 'bssid',
-    definition: 'Basic Service Set Identifier, the MAC address of a wireless access point.',
-    example: 'He used a Wi-Fi scanner to see the BSSID of all the nearby access points.',
-  },
-  {
-    id: 'bss-transition',
-    term: 'BSS Transition',
-    slug: 'bss-transition',
-    definition: 'A feature in Wi-Fi that allows a client device to seamlessly roam from one access point to another without losing its connection.',
-    example: 'The enterprise Wi-Fi network supported BSS transition, allowing employees to walk around the office without their calls dropping.',
-  },
-  {
-    id: 'bug-bounty',
-    term: 'Bug Bounty',
-    slug: 'bug-bounty',
-    definition: 'A program offered by many websites and software developers by which individuals can receive recognition and compensation for reporting bugs, especially those pertaining to security exploits.',
-    example: 'He earned a bug bounty for finding a critical security vulnerability in the social media platform.',
-  },
-  {
-    id: 'build-cache',
-    term: 'Build Cache',
-    slug: 'build-cache',
-    definition: 'A cache used in a software build system to store the outputs of previous builds, which can be reused to speed up future builds.',
-    example: 'Enabling the build cache significantly reduced the time it took to compile the project.',
-  },
-  {
-    id: 'build-chain',
-    term: 'Build Chain',
-    slug: 'build-chain',
-    definition: 'A sequence of build steps that are executed in a specific order to produce a software artifact.',
-    example: 'The build chain started with compiling the code, then running tests, and finally packaging the application.',
-  },
-  {
-    id: 'build-failure',
-    term: 'Build Failure',
-    slug: 'build-failure',
-    definition: 'An error that occurs during a software build process that prevents it from completing successfully.',
-    example: 'The build failure was caused by a syntax error in one of the source files.',
-  },
-  {
-    id: 'build-number',
-    term: 'Build Number',
-    slug: 'build-number',
-    definition: 'A unique number assigned to each build of a software project, often incremented automatically by the build server.',
-    example: 'The testers were asked to report which build number they were using.',
-  },
-  {
-    id: 'build-optimization',
-    term: 'Build Optimization',
-    slug: 'build-optimization',
-    definition: 'Techniques used to make a software build process faster or to produce smaller or more efficient output.',
-    example: 'The team spent a week on build optimization to reduce their application\'s startup time.',
-  },
-  {
-    id: 'build-script',
-    term: 'Build Script',
-    slug: 'build-script',
-    definition: 'A script that automates the process of building a software project.',
-    example: 'He wrote a build script to compile the code, run tests, and create a distributable package.',
-  },
-  {
-    id: 'build-server',
-    term: 'Build Server',
-    slug: 'build-server',
-    definition: 'A server that is dedicated to running software builds.',
-    example: 'The company uses Jenkins as their build server to automate their CI/CD pipeline.',
-  },
-  {
-    id: 'bulk-endpoint',
-    term: 'Bulk Endpoint',
-    slug: 'bulk-endpoint',
-    definition: 'An API endpoint that allows for sending or receiving a large amount of data in a single request.',
-    example: 'The application used a bulk endpoint to upload all the user data at once.',
-  },
-  {
-    id: 'bulldozer-architecture',
-    term: 'Bulldozer Architecture',
-    slug: 'bulldozer-architecture',
-    definition: 'A microprocessor microarchitecture developed by AMD for their desktop and server processors, released in 2011.',
-    example: 'The AMD FX series of processors were based on the Bulldozer architecture.',
-  },
-  {
-    id: 'bullet-physics-engine',
-    term: 'Bullet Physics Engine',
-    slug: 'bullet-physics-engine',
-    definition: 'An open-source physics engine which simulates collision detection, soft and rigid body dynamics.',
-    example: 'The 3D game used the Bullet Physics Engine for realistic object interactions.',
-  },
-  {
-    id: 'bundle-identifier',
-    term: 'Bundle Identifier',
-    slug: 'bundle-identifier',
-    definition: 'A unique string used by iOS and macOS to identify an application.',
-    example: 'The bundle identifier for the app was `com.company.appname`.',
-  },
-  {
-    id: 'bundle-loader',
-    term: 'Bundle Loader',
-    slug: 'bundle-loader',
-    definition: 'A tool used in web development to combine multiple JavaScript files into a single file, or "bundle".',
-    example: 'Webpack is a popular bundle loader for modern web applications.',
-  },
-  {
-    id: 'bus-contention',
-    term: 'Bus Contention',
-    slug: 'bus-contention',
-    definition: 'A situation in which multiple devices on a computer bus try to transmit data at the same time.',
-    example: 'Bus contention can lead to data corruption and system instability.',
-  },
-  {
-    id: 'bus-cycle',
-    term: 'Bus Cycle',
-    slug: 'bus-cycle',
-    definition: 'The time required for a microprocessor to fetch an instruction or data from memory.',
-    example: 'The performance of the processor is limited by the speed of its bus cycle.',
-  },
-  {
-    id: 'bus-error',
-    term: 'Bus Error',
-    slug: 'bus-error',
-    definition: 'A type of fault raised by a computer\'s hardware, indicating that the processor has attempted an invalid memory access.',
-    example: 'The program crashed with a bus error because it tried to access an unaligned memory address.',
-  },
-  {
-    id: 'bus-mastering',
-    term: 'Bus Mastering',
-    slug: 'bus-mastering',
-    definition: 'A feature that allows a device on a computer bus to initiate transactions, enabling it to directly access system memory without involving the CPU.',
-    example: 'A high-speed network card might use bus mastering to transfer data directly to memory, freeing up the CPU for other tasks.',
-  },
-  {
-    id: 'busy-loop',
-    term: 'Busy Loop',
-    slug: 'busy-loop',
-    definition: 'A loop that repeatedly checks a condition without yielding the CPU. This is generally inefficient and should be avoided.',
-    example: 'The old code had a busy loop that wasted CPU cycles while waiting for input.',
-  },
-  {
-    id: 'byte-address',
-    term: 'Byte Address',
-    slug: 'byte-address',
-    definition: 'The memory address of a single byte of data.',
-    example: 'The pointer contained the byte address of the beginning of the string.',
-  },
-  {
-    id: 'byte-alignment',
-    term: 'Byte Alignment',
-    slug: 'byte-alignment',
-    definition: 'The requirement that data be stored at a memory address that is a multiple of its size. For example, a 4-byte integer should be stored at an address that is a multiple of 4.',
-    example: 'Misaligned data can cause performance penalties or even crashes on some processor architectures.',
-  },
-  {
-    id: 'byte-buffer',
-    term: 'Byte Buffer',
-    slug: 'byte-buffer',
-    definition: 'A data structure that represents a sequence of bytes.',
-    example: 'He read the data from the network socket into a byte buffer.',
-  },
-  {
-    id: 'byte-channel',
-    term: 'Byte Channel',
-    slug: 'byte-channel',
-    definition: 'In Java NIO, a channel that can read and write bytes.',
-    example: 'He used a FileChannel, which is a type of byte channel, to read data from a file.',
-  },
-  {
-    id: 'byte-code',
-    term: 'Byte Code',
-    slug: 'byte-code',
-    definition: 'A form of instruction set designed for efficient execution by a software interpreter or virtual machine.',
-    example: 'Java programs are compiled into byte code, which is then executed by the Java Virtual Machine.',
-  },
-  {
-    id: 'byte-offset',
-    term: 'Byte Offset',
-    slug: 'byte-offset',
-    definition: 'The position of a byte within a file or memory block, relative to the beginning.',
-    example: 'He sought to a specific byte offset in the file to read a piece of data.',
-  },
-  {
-    id: 'byte-order-mark',
-    term: 'Byte Order Mark',
-    slug: 'byte-order-mark',
-    definition: 'A special character at the beginning of a text file that indicates the byte order (endianness) of the file.',
-    example: 'The text editor used the byte order mark to correctly display the UTF-16 encoded file.',
-  },
-  {
-    id: 'byte-level-encryption',
-    term: 'Byte-level Encryption',
-    slug: 'byte-level-encryption',
-    definition: 'Encryption that operates on individual bytes of data.',
-    example: 'Stream ciphers perform byte-level encryption.',
-  },
-  {
-    id: 'bytecode-interpreter',
-    term: 'Bytecode Interpreter',
-    slug: 'bytecode-interpreter',
-    definition: 'A program that executes bytecode.',
-    example: 'The Python interpreter is a bytecode interpreter.',
-  },
-  {
-    id: 'bypass-capacitor',
-    term: 'Bypass Capacitor',
-    slug: 'bypass-capacitor',
-    definition: 'A capacitor used in an electronic circuit to filter out noise and provide a stable power supply to an integrated circuit.',
-    example: 'He added a bypass capacitor to the power pin of the microcontroller to improve its stability.',
-  },
-  {
-    id: 'bypass-mode',
-    term: 'Bypass Mode',
-    slug: 'bypass-mode',
-    definition: 'A mode of operation in a network device, such as a firewall or IDS, where traffic is allowed to pass through without being inspected.',
-    example: 'The administrator put the firewall in bypass mode while troubleshooting a network issue.',
-  },
-  {
-    id: 'byod-policy',
-    term: 'BYOD Policy',
-    slug: 'byod-policy',
-    definition: 'A policy that allows employees to use their personal devices for work purposes.',
-    example: 'The company has a strict BYOD policy that requires all personal devices to have security software installed.',
-  },
-  {
-    id: 'byzantine-fault',
-    term: 'Byzantine Fault',
-    slug: 'byzantine-fault',
-    definition: 'A condition of a distributed computing system where components may fail and there is imperfect information about whether a component has failed.',
-    example: 'Blockchain consensus algorithms are designed to be tolerant of Byzantine faults.',
-  },
-  {
-    id: 'bzip2-compression',
-    term: 'BZip2 Compression',
-    slug: 'bzip2-compression',
-    definition: 'A free and open-source file compression program that uses the Burrows–Wheeler algorithm. It typically compresses files more effectively than Gzip, but is slower.',
-    example: 'He used bzip2 compression to create a smaller archive of his log files.',
-  },
-  {
-    id: 'bzrfs',
-    term: 'BZRFS',
-    slug: 'bzrfs',
-    definition: 'A non-standard term, likely a typo for a file system like Btrfs or ZFS.',
-    example: 'The server used a modern copy-on-write filesystem, but the name BZRFS was unfamiliar.',
-  },
-  {
-    id: 'b-tree-index',
-    term: 'B-tree Index',
-    slug: 'b-tree-index',
-    definition: 'A self-balancing tree data structure that maintains sorted data and allows for efficient insertion, deletion, and search operations. It is the default index type for most relational databases.',
-    example: 'The database used a B-tree index on the primary key column to speed up lookups.',
-  },
-  {
-    id: 'b-tree-node',
-    term: 'B-tree Node',
-    slug: 'b-tree-node',
-    definition: 'A node in a B-tree, which can have multiple children and contains a sorted list of keys.',
-    example: 'Each B-tree node corresponds to a page or block on the disk.',
-  },
-  {
-    id: 'bump-allocator',
-    term: 'Bump Allocator',
-    slug: 'bump-allocator',
-    definition: 'A very fast, simple memory allocator that allocates memory by simply incrementing a pointer (bumping it). It is often used for short-lived allocations.',
-    example: 'The game engine used a bump allocator for allocations made within a single frame.',
-  },
-  {
-    id: 'bus-arbitration',
-    term: 'Bus Arbitration',
-    slug: 'bus-arbitration',
-    definition: 'The process of determining which device on a computer bus is allowed to transmit data at a given time.',
-    example: 'The PCI bus uses a centralized bus arbitration scheme.',
-  },
-  {
-    id: 'bus-snooping',
-    term: 'Bus Snooping',
-    slug: 'bus-snooping',
-    definition: 'A technique used in multiprocessor systems to maintain cache coherency. Each processor monitors the bus for memory transactions from other processors.',
-    example: 'Bus snooping ensures that all processors have a consistent view of memory.',
-  },
-  {
-    id: 'busybox',
-    term: 'BusyBox',
-    slug: 'busybox',
-    definition: 'A software suite that provides several stripped-down Unix tools in a single executable file. It is often used in embedded systems and Linux distributions with a small footprint.',
-    example: 'The Alpine Linux container image is very small because it uses BusyBox.',
-  },
-  {
-    id: 'bitwise-not',
-    term: 'Bitwise NOT',
-    slug: 'bitwise-not',
-    definition: 'A bitwise operation that inverts all the bits of its operand.',
-    example: 'He used the bitwise NOT operator to flip all the bits in a byte.',
-  },
-  {
-    id: 'bitwise-shifting',
-    term: 'Bitwise Shifting',
-    slug: 'bitwise-shifting',
-    definition: 'A bitwise operation that shifts the bits of a binary number to the left or right.',
-    example: 'Left bitwise shifting is a fast way to multiply by powers of two.',
-  },
-  {
-    id: 'ai-alignment',
-    term: 'AI Alignment',
-    slug: 'ai-alignment',
-    definition: 'The field of research focused on ensuring that artificial intelligence systems are aligned with human values and goals.',
-    example: 'The goal of AI alignment is to prevent advanced AI from having unintended and harmful consequences.',
-  },
-  {
-    id: 'api-chaining',
-    term: 'API Chaining',
-    slug: 'api-chaining',
-    definition: 'A process where the output of one API call is used as the input for another API call.',
-    example: 'He used API chaining to first get a user\'s ID, and then use that ID to fetch their profile information.',
-  },
-  {
-    id: 'asynchronous-sockets',
-    term: 'Asynchronous Sockets',
-    slug: 'asynchronous-sockets',
-    definition: 'A programming model for network sockets that allows a program to perform other tasks while waiting for network operations to complete.',
-    example: 'The high-performance server used asynchronous sockets to handle thousands of concurrent connections.',
-  },
-  {
-    id: 'automated-patch-deployment',
-    term: 'Automated Patch Deployment',
-    slug: 'automated-patch-deployment',
-    definition: 'The process of automatically distributing and applying software patches to systems in a network.',
-    example: 'The company used an automated patch deployment system to keep all their servers up to date with the latest security fixes.',
-  },
-  {
-    id: 'automated-rollback',
-    term: 'Automated Rollback',
-    slug: 'automated-rollback',
-    definition: 'A feature in a deployment system that automatically reverts a failed deployment to the previous stable version.',
-    example: 'The CI/CD pipeline was configured for automated rollback if the new version failed its health checks.',
-  },
-  {
-    id: 'automated-provisioning',
-    term: 'Automated Provisioning',
-    slug: 'automated-provisioning',
-    definition: 'The process of automatically setting up new servers or cloud resources without manual intervention.',
-    example: 'They used Terraform for automated provisioning of their cloud infrastructure.',
-  },
-  {
-    id: 'avx-instructions',
-    term: 'AVX Instructions',
-    slug: 'avx-instructions',
-    definition: 'Advanced Vector Extensions, a set of instructions for x86 processors that allow for parallel processing of data (SIMD).',
-    example: 'The scientific computing application was optimized to use AVX instructions for faster calculations.',
-  },
-  {
-    id: 'avif-format',
-    term: 'AVIF Format',
-    slug: 'avif-format',
-    definition: 'A modern image file format that provides superior compression and quality compared to older formats like JPEG and WebP.',
-    example: 'The website started using the AVIF format to serve smaller, faster-loading images.',
-  },
-  {
-    id: 'average-latency',
-    term: 'Average Latency',
-    slug: 'average-latency',
-    definition: 'The average time it takes for a system to respond to a request.',
-    example: 'The monitoring dashboard showed that the average latency for the API was 50 milliseconds.',
-  },
-  {
-    id: 'availability-heuristic-sys',
-    term: 'Availability Heuristic (Sys)',
-    slug: 'availability-heuristic-sys',
-    definition: 'A mental shortcut that relies on immediate examples that come to a given person\'s mind when evaluating a specific topic, concept, method or decision.',
-    example: 'Because of the availability heuristic, the system administrator overestimated the probability of a hardware failure after one had just occurred.',
-  },
-  {
-    id: 'attack-vector',
-    term: 'Attack Vector',
-    slug: 'attack-vector',
-    definition: 'A path or means by which a hacker can gain access to a computer or network server in order to deliver a payload or malicious outcome.',
-    example: 'Phishing emails are a common attack vector for malware.',
-  },
-  {
-    id: 'audio-latency',
-    term: 'Audio Latency',
-    slug: 'audio-latency',
-    definition: 'The delay between the time an audio signal is generated and the time it is heard.',
-    example: 'Professional musicians require low audio latency for real-time monitoring.',
-  },
-  {
-    id: 'auto-failover',
-    term: 'Auto-Failover',
-    slug: 'auto-failover',
-    definition: 'A process that automatically switches to a standby system in the event of a failure of the primary system.',
-    example: 'The database was configured with auto-failover to a replica in another data center.',
-  },
-  {
-    id: 'auto-scaling-threshold',
-    term: 'Auto-Scaling Threshold',
-    slug: 'auto-scaling-threshold',
-    definition: 'The metric threshold that triggers an auto-scaling event, such as CPU utilization exceeding 80%.',
-    example: 'They set the auto-scaling threshold to add a new server when CPU usage was above 70% for 5 minutes.',
-  },
-  {
-    id: 'azure-dns',
-    term: 'Azure DNS',
-    slug: 'azure-dns',
-    definition: 'A hosting service for DNS domains that provides name resolution using Microsoft Azure infrastructure.',
-    example: 'He hosted the DNS for his website on Azure DNS.',
-  },
-  {
-    id: 'azure-kubernetes-service',
-    term: 'Azure Kubernetes Service',
-    slug: 'azure-kubernetes-service',
-    definition: 'A managed container orchestration service from Microsoft Azure, based on the open-source Kubernetes system.',
-    example: 'They deployed their containerized application to Azure Kubernetes Service for scalability and reliability.',
-  },
-  {
     id: 'azure-storage-queue',
     term: 'Azure Storage Queue',
     slug: 'azure-storage-queue',
@@ -4125,6 +2095,13 @@ export const terms: Term[] = [
     example: 'They used Azure Traffic Manager to direct users to the closest data center for lower latency.',
   },
   {
+    id: 'azure-virtual-desktop',
+    term: 'Azure Virtual Desktop',
+    slug: 'azure-virtual-desktop',
+    definition: 'A desktop and app virtualization service that runs on the cloud, offered by Microsoft Azure.',
+    example: 'The company provided its remote employees with access to all their corporate applications through Azure Virtual Desktop.',
+  },
+  {
     id: 'azure-virtual-network',
     term: 'Azure Virtual Network',
     slug: 'azure-virtual-network',
@@ -4132,379 +2109,834 @@ export const terms: Term[] = [
     example: 'He created an Azure Virtual Network to isolate his application servers from the public internet.',
   },
   {
-    id: 'ai-quantization',
-    term: 'AI Quantization',
-    slug: 'ai-quantization',
-    definition: 'A technique to reduce the precision of the numbers used to represent a model\'s parameters, which can make the model smaller and faster.',
-    example: 'They used AI quantization to run the large language model on a mobile device.',
+    id: 'azure-vm-scale-sets',
+    term: 'Azure VM Scale Sets',
+    slug: 'azure-vm-scale-sets',
+    definition: 'A feature in Microsoft Azure that lets you create and manage a group of load-balanced virtual machines (VMs). The number of VM instances can automatically increase or decrease in response to demand or a defined schedule.',
+    example: 'The e-commerce site uses Azure VM Scale Sets to automatically add more web servers during peak shopping seasons.',
   },
   {
-    id: 'ai-tokenization',
-    term: 'AI Tokenization',
-    slug: 'ai-tokenization',
-    definition: 'The process of breaking down a piece of text into smaller units called tokens, which can be words, subwords, or characters. This is a fundamental step in natural language processing.',
-    example: 'The language model first uses AI tokenization to convert the input sentence into a sequence of tokens.',
+    id: 'baas',
+    term: 'BaaS (Backend as a Service)',
+    slug: 'baas',
+    definition: 'A cloud service model that provides backend functionality like databases, user authentication, and push notifications, allowing developers to focus on the frontend.',
+    example: 'The mobile app developer used Firebase, a popular BaaS, to handle user accounts and data storage without writing any server-side code.',
   },
   {
-    id: 'ai-llm-pipeline',
-    term: 'AI LLM Pipeline',
-    slug: 'ai-llm-pipeline',
-    definition: 'An end-to-end workflow for building and deploying a large language model, including data preprocessing, training, evaluation, and deployment.',
-    example: 'The company built an AI LLM pipeline to continuously improve their customer service chatbot.',
+    id: 'backbone-network',
+    term: 'Backbone Network',
+    slug: 'backbone-network',
+    definition: 'The part of a computer network that interconnects various pieces of the network, providing a path for the exchange of information between different LANs or sub-networks.',
+    example: 'The university\'s fiber optic backbone network connects all the campus buildings to the central data center.'
   },
   {
-    id: 'adaptive-routing',
-    term: 'Adaptive Routing',
-    slug: 'adaptive-routing',
-    definition: 'A routing algorithm that changes its routing decisions based on the current state of the network, such as traffic and topology.',
-    example: 'The network uses adaptive routing to find the least congested path for data packets.',
+    id: 'backdoor',
+    term: 'Backdoor',
+    slug: 'backdoor',
+    definition: 'A covert method of bypassing normal authentication or encryption in a computer, product, embedded device, or its embodiment.',
+    example: 'A malicious actor installed a backdoor on the server, allowing them to access it later without needing credentials.',
   },
   {
-    id: 'agent-based-modeling',
-    term: 'Agent-Based Modeling',
-    slug: 'agent-based-modeling',
-    definition: 'A computational modeling paradigm that simulates the actions and interactions of autonomous agents (both individual or collective entities such as organizations or groups) with a view to assessing their effects on the system as a whole.',
-    example: 'They used agent-based modeling to simulate the spread of a disease through a population.',
+    id: 'backdoor-logic',
+    term: 'Backdoor Logic',
+    slug: 'backdoor-logic',
+    definition: 'Code intentionally added to a system to allow an unauthorized user to bypass normal security controls.',
+    example: 'A disgruntled employee added backdoor logic to the application before they quit.',
   },
   {
-    id: 'application-profiler',
-    term: 'Application Profiler',
-    slug: 'application-profiler',
-    definition: 'A tool that analyzes the performance of a software application to identify bottlenecks and areas for optimization.',
-    example: 'The developer used an application profiler to find out which functions were taking the most time to execute.',
+    id: 'backend',
+    term: 'Backend',
+    slug: 'backend',
+    definition: 'The backend of a website or software application is the part that the user doesn\'t see. It includes the server, database, and application logic. It\'s responsible for storing and organizing data and ensuring everything on the client-side works.',
+    example: 'When you sign up for a new account, the backend is what processes your information, creates your user profile, and stores it securely in a database.'
   },
   {
-    id: 'array-slicing',
-    term: 'Array Slicing',
-    slug: 'array-slicing',
-    definition: 'A syntax for extracting a portion of an array.',
-    example: 'In Python, you can use array slicing to get a sub-array, like `my_array[1:3]`.',
+    id: 'backend-for-frontend',
+    term: 'Backend for Frontend',
+    slug: 'backend-for-frontend',
+    definition: 'An architectural pattern where a dedicated backend is created for each frontend application, providing an API that is tailored to the needs of that specific frontend.',
+    example: 'The company built a Backend for Frontend for their mobile app to optimize the data it received.',
   },
   {
-    id: 'aspect-ratio',
-    term: 'Aspect Ratio',
-    slug: 'aspect-ratio',
-    definition: 'The proportional relationship between the width and height of an image or screen.',
-    example: 'A 16:9 aspect ratio is common for widescreen TVs and monitors.'
+    id: 'back-end-system',
+    term: 'Back-end System',
+    slug: 'back-end-system',
+    definition: 'The part of a software system that is not directly accessed by the user, typically responsible for data storage and business logic.',
+    example: 'The mobile app communicates with a back-end system to retrieve user data.',
   },
   {
-    id: 'asset-hashing',
-    term: 'Asset Hashing',
-    slug: 'asset-hashing',
-    definition: 'A technique used in web development to append a unique hash to the filename of static assets like CSS and JavaScript files. This is used for cache busting.',
-    example: 'Asset hashing ensures that users always get the latest version of the CSS file when it changes.',
+    id: 'backfill',
+    term: 'Backfill',
+    slug: 'backfill',
+    definition: 'The process of retroactively processing historical data with new logic or a new system.',
+    example: 'After deploying the new analytics engine, they had to backfill the last six months of data.',
   },
   {
-    id: 'auto-typer-dev-tool',
-    term: 'Auto Typer (Dev tool)',
-    slug: 'auto-typer-dev-tool',
-    definition: 'A tool that automatically generates type definitions or boilerplate code for a programming language.',
-    example: 'He used an auto typer to generate the TypeScript interfaces from his JSON data.'
+    id: 'backhaul',
+    term: 'Backhaul',
+    slug: 'backhaul',
+    definition: 'The portion of a network that comprises the intermediate links between the core network (or backbone) and the small subnetworks at the edge of the network.',
+    example: 'The cell tower uses a fiber optic backhaul to connect to the main telephone network.'
   },
   {
-    id: 'auto-versioning',
-    term: 'Auto Versioning',
-    slug: 'auto-versioning',
-    definition: 'The process of automatically assigning version numbers to software builds.',
-    example: 'The CI/CD pipeline was configured for auto-versioning based on the Git commit hash.',
+    id: 'backhaul-network',
+    term: 'Backhaul Network',
+    slug: 'backhaul-network',
+    definition: 'The part of a network that connects the edge of the network to the core network.',
+    example: 'Cell towers use a backhaul network to connect to the main telecommunications infrastructure.',
   },
   {
-    id: 'automated-testing',
-    term: 'Automated Testing',
-    slug: 'automated-testing',
-    definition: 'The use of software to automatically execute tests on another piece of software.',
-    example: 'The team wrote a suite of automated tests to ensure the application was working correctly after every code change.',
+    id: 'backing-store',
+    term: 'Backing Store',
+    slug: 'backing-store',
+    definition: 'In virtual memory systems, the portion of a secondary storage device (like a hard drive) where pages of memory are stored when they are not in main memory.',
+    example: 'The operating system swapped the inactive process out to the backing store to free up RAM.'
   },
   {
-    id: 'automatic-gain-control',
-    term: 'Automatic Gain Control',
-    slug: 'automatic-gain-control',
-    definition: 'A closed-loop feedback regulating circuit in an amplifier or chain of amplifiers, the purpose of which is to maintain a suitable signal amplitude at its output, despite variation of the signal amplitude at the input.',
-    example: 'The radio receiver uses automatic gain control to keep the volume level constant.'
+    id: 'backoff-algorithm',
+    term: 'Backoff Algorithm',
+    slug: 'backoff-algorithm',
+    definition: 'A strategy used in networking where a device waits for a random amount of time before retransmitting a packet after a collision.',
+    example: 'Ethernet uses an exponential backoff algorithm to handle collisions on the network.',
   },
   {
-    id: 'autonomous-server',
-    term: 'Autonomous Server',
-    slug: 'autonomous-server',
-    definition: 'A server that can manage itself, including tasks like patching, tuning, and security, without human intervention.',
-    example: 'Oracle offers an autonomous server database that automates many of the routine tasks of a database administrator.',
+    id: 'backplane',
+    term: 'Backplane',
+    slug: 'backplane',
+    definition: 'A circuit board that connects several connectors in parallel to each other, so that each pin of each connector is linked to the same relative pin of all the other connectors.',
+    example: 'Blade servers slide into a chassis and connect to a common backplane for power and networking.',
   },
   {
-    id: 'auto-formatter',
-    term: 'Auto-formatter',
-    slug: 'auto-formatter',
-    definition: 'A tool that automatically formats source code to conform to a specific style guide.',
-    example: 'He configured his code editor to run an auto-formatter every time he saved a file.',
+    id: 'backplane-bus',
+    term: 'Backplane Bus',
+    slug: 'backplane-bus',
+    definition: 'A group of parallel electrical connectors that are used to connect multiple circuit boards together to form a computer system.',
+    example: 'Blade servers connect to the chassis through a high-speed backplane bus.',
+  },
+  {
+    id: 'backport',
+    term: 'Backport',
+    slug: 'backport',
+    definition: 'The action of taking a feature or patch from a newer version of software and applying it to an older version.',
+    example: 'The security fix was backported from the development branch to the stable release.',
+  },
+  {
+    id: 'backpressure',
+    term: 'Backpressure',
+    slug: 'backpressure',
+    definition: 'In data streaming, a mechanism that allows a consumer to signal to a producer that it is receiving data too quickly, preventing the consumer from being overwhelmed.',
+    example: 'Reactive programming frameworks use backpressure to handle streams of data from fast producers to slow consumers.',
+  },
+  {
+    id: 'backprop',
+    term: 'Backprop',
+    slug: 'backprop',
+    definition: 'Short for backpropagation, it is the core algorithm for training artificial neural networks. It works by calculating the gradient of the loss function with respect to the network\'s weights, allowing the network to learn.',
+    example: 'During training, the model uses backprop to adjust its weights and reduce the error.',
+  },
+  {
+    id: 'backscatter',
+    term: 'Backscatter',
+    slug: 'backscatter',
+    definition: 'In network security, backscatter is the side-effect of a spoofed denial-of-service attack. It consists of the reply packets sent by the victim to the spoofed source IP address.',
+    example: 'Security researchers analyze backscatter traffic to measure the scope and scale of DDoS attacks across the internet.'
+  },
+  {
+    id: 'backscatter-analysis',
+    term: 'Backscatter Analysis',
+    slug: 'backscatter-analysis',
+    definition: 'The process of analyzing backscatter traffic to understand the characteristics of DDoS attacks.',
+    example: 'Security researchers use backscatter analysis to monitor global DDoS activity.',
+  },
+  {
+    id: 'backscatter-radiation',
+    term: 'Backscatter Radiation',
+    slug: 'backscatter-radiation',
+    definition: 'Radiation that is reflected or scattered back in the direction of the source. In airport security, backscatter X-ray scanners are used to create images of passengers.',
+    example: 'The airport installed new backscatter radiation scanners for improved security screening.',
+  },
+  {
+    id: 'backspace-character',
+    term: 'Backspace Character',
+    slug: 'backspace-character',
+    definition: 'A control character that moves the cursor one position backwards.',
+    example: 'The terminal interpreted the backspace character and deleted the previous letter.',
+  },
+  {
+    id: 'backtesting-engine',
+    term: 'Backtesting Engine',
+    slug: 'backtesting-engine',
+    definition: 'A software tool used in finance to test a trading strategy on historical data.',
+    example: 'The quantitative analyst used a backtesting engine to see how their new algorithm would have performed last year.',
+  },
+  {
+    id: 'backtrace',
+    term: 'Backtrace',
+    slug: 'backtrace',
+    definition: 'A report of the active stack frames at a certain point in time during the execution of a program. Also known as a stack trace.',
+    example: 'When the program crashed, it printed a backtrace showing the sequence of function calls that led to the error.'
+  },
+  {
+    id: 'backup-agent',
+    term: 'Backup Agent',
+    slug: 'backup-agent',
+    definition: 'A piece of software installed on a computer or server that is responsible for backing up its data to a central backup server or cloud service.',
+    example: 'The IT department installed a backup agent on all employee laptops.'
   },
   {
     id: 'backup-drive',
-    term: 'BackupDrive',
+    term: 'Backup Drive',
     slug: 'backup-drive',
     definition: 'An external or secondary storage device used to store copies of data.',
     example: 'He regularly backs up his important files to an external backup drive.'
   },
   {
     id: 'backup-node',
-    term: 'BackupNode',
+    term: 'Backup Node',
     slug: 'backup-node',
     definition: 'In a distributed system, a node that is designated to store backup data.',
     example: 'The primary database replicates its data to a backup node in another data center.'
   },
   {
+    id: 'backup-rotation',
+    term: 'Backup Rotation',
+    slug: 'backup-rotation',
+    definition: 'A strategy for managing backup media, where older backups are replaced by newer ones to manage storage space and provide a history of data.',
+    example: 'The company uses a Grandfather-Father-Son backup rotation scheme.',
+  },
+  {
     id: 'backup-server',
-    term: 'BackupServer',
+    term: 'Backup Server',
     slug: 'backup-server',
     definition: 'A server that is dedicated to storing and managing backups.',
     example: 'The company uses a dedicated backup server to store all its critical data.'
   },
   {
     id: 'backup-set',
-    term: 'BackupSet',
+    term: 'Backup Set',
     slug: 'backup-set',
     definition: 'A collection of files or data that is backed up as a single unit.',
     example: 'The daily backup set includes all the files that have changed since the previous day.'
   },
   {
+    id: 'backup-snapshot',
+    term: 'Backup Snapshot',
+    slug: 'backup-snapshot',
+    definition: 'A point-in-time copy of a storage volume, which can be used to restore the data to that state.',
+    example: 'Before upgrading the database, the administrator took a backup snapshot.',
+  },
+  {
     id: 'backup-window',
-    term: 'BackupWindow',
+    term: 'Backup Window',
     slug: 'backup-window',
     definition: 'The period of time during which backups are scheduled to run.',
     example: 'The backup window is from 1 AM to 4 AM, when system usage is lowest.'
   },
   {
     id: 'backward-compatibility',
-    term: 'BackwardCompatibility',
+    term: 'Backward Compatibility',
     slug: 'backward-compatibility',
     definition: 'A property of a system, product, or technology that allows for interoperability with an older legacy system.',
     example: 'The new version of the software is backward compatible with files created in the previous version.'
   },
   {
     id: 'backward-propagation',
-    term: 'BackwardPropagation',
+    term: 'Backward Propagation',
     slug: 'backward-propagation',
     definition: 'A key algorithm in training neural networks. It calculates the gradient of the loss function with respect to the weights of the network, which is then used to update the weights.',
     example: 'The deep learning model uses backward propagation to learn from its mistakes.'
   },
   {
     id: 'backwards-routing',
-    term: 'BackwardsRouting',
+    term: 'Backwards Routing',
     slug: 'backwards-routing',
     definition: 'A non-standard term, possibly referring to reverse path forwarding or a similar concept where the return path of traffic is considered.',
     example: 'The firewall used backwards routing checks to prevent IP spoofing.'
   },
   {
+    id: 'bad-block',
+    term: 'Bad Block',
+    slug: 'bad-block',
+    definition: 'A sector on a storage device that is no longer reliable for storing and retrieving data.',
+    example: 'The hard drive controller automatically marked the bad block and remapped it to a spare sector.',
+  },
+  {
+    id: 'badge-component',
+    term: 'Badge Component',
+    slug: 'badge-component',
+    definition: 'A UI element, often a small circle or box, used to display a number or a status, such as the number of unread notifications.',
+    example: 'The email icon had a badge component showing "3" unread messages.',
+  },
+  {
     id: 'badge-reader',
-    term: 'BadgeReader',
+    term: 'Badge Reader',
     slug: 'badge-reader',
     definition: 'A device that reads the information stored on a security badge, often used for access control.',
     example: 'He swiped his ID card at the badge reader to enter the building.'
   },
   {
-    id: 'band-reject',
-    term: 'BandReject',
-    slug: 'band-reject',
-    definition: 'A filter that passes most frequencies unaltered, but attenuates those in a specific range to very low levels.',
-    example: 'He used a band reject filter to remove a specific interfering signal from the audio.'
+    id: 'bag-of-words',
+    term: 'Bag-of-Words',
+    slug: 'bag-of-words',
+    definition: 'A representation of text in natural language processing that disregards grammar and word order, but keeps track of word frequency.',
+    example: 'The spam filter used a bag-of-words model to identify emails containing certain keywords.',
+  },
+  {
+    id: 'baiting-attack',
+    term: 'Baiting Attack',
+    slug: 'baiting-attack',
+    definition: 'A type of social engineering attack where an attacker leaves a malware-infected physical device, such as a USB drive, in a place where it is likely to be found and used.',
+    example: 'An employee found a USB drive in the parking lot and plugged it into their computer, falling victim to a baiting attack.',
+  },
+  {
+    id: 'balanced-tree',
+    term: 'Balanced Tree',
+    slug: 'balanced-tree',
+    definition: 'A tree data structure in which the height of the left and right subtrees of any node differ by at most one.',
+    example: 'AVL trees and Red-Black trees are examples of self-balancing binary search trees.',
+  },
+  {
+    id: 'balancer',
+    term: 'Balancer',
+    slug: 'balancer',
+    definition: 'A device or software that distributes network or application traffic across a number of servers.',
+    example: 'The load balancer ensured that no single web server was overwhelmed with traffic.',
+  },
+  {
+    id: 'balancer-node',
+    term: 'Balancer Node',
+    slug: 'balancer-node',
+    definition: 'A server in a distributed system that is responsible for distributing incoming requests across a cluster of servers.',
+    example: 'The balancer node ensures that no single web server is overwhelmed with traffic.',
+  },
+  {
+    id: 'balun',
+    term: 'Balun',
+    slug: 'balun',
+    definition: 'A type of transformer that converts electrical signals that are balanced about ground (differential) to signals that are unbalanced (single-ended) and vice versa.',
+    example: 'A balun is often used to connect a coaxial cable to a dipole antenna.',
   },
   {
     id: 'band-pass',
-    term: 'BandPass',
+    term: 'Band Pass',
     slug: 'band-pass',
     definition: 'A filter that passes frequencies within a certain range and rejects frequencies outside that range.',
     example: 'The radio receiver uses a band pass filter to select the desired station.'
   },
   {
+    id: 'band-pass-filter',
+    term: 'Band-Pass Filter',
+    slug: 'band-pass-filter',
+    definition: 'An electronic filter that passes frequencies within a certain range and rejects frequencies outside that range.',
+    example: 'An audio equalizer uses band-pass filters to boost or cut specific frequency ranges.',
+  },
+  {
+    id: 'band-reject',
+    term: 'Band Reject',
+    slug: 'band-reject',
+    definition: 'A filter that passes most frequencies unaltered, but attenuates those in a specific range to very low levels.',
+    example: 'He used a band reject filter to remove a specific interfering signal from the audio.'
+  },
+  {
     id: 'band-scan',
-    term: 'BandScan',
+    term: 'Band Scan',
     slug: 'band-scan',
     definition: 'The process of scanning a range of radio frequencies to find active signals.',
     example: 'He used a software-defined radio to perform a band scan and discover nearby wireless devices.'
   },
   {
     id: 'band-select',
-    term: 'BandSelect',
+    term: 'Band Select',
     slug: 'band-select',
     definition: 'A feature that allows a device to choose between different frequency bands, such as 2.4 GHz and 5 GHz for Wi-Fi.',
     example: 'The smartphone used band select to connect to the fastest available Wi-Fi network.'
   },
   {
     id: 'band-split',
-    term: 'BandSplit',
+    term: 'Band Split',
     slug: 'band-split',
     definition: 'The division of a frequency band into multiple smaller bands.',
     example: 'The cable company used a band split to provide both TV and internet service on the same cable.'
   },
   {
+    id: 'band-steering',
+    term: 'Band Steering',
+    slug: 'band-steering',
+    definition: 'A feature in dual-band Wi-Fi access points that encourages dual-band clients to connect to the less-congested 5 GHz network.',
+    example: 'The new router uses band steering to automatically move devices to the 5 GHz band for better performance.',
+  },
+  {
+    id: 'bandwidth',
+    term: 'Bandwidth',
+    slug: 'bandwidth',
+    definition: 'The maximum rate of data transfer across a given path. It is often mistaken for internet speed, but it\'s actually the volume of information that can be sent over a connection in a measured amount of time.',
+    example: 'Streaming a 4K movie requires more bandwidth than browsing a simple text-based website.',
+  },
+  {
+    id: 'bank-switching',
+    term: 'Bank Switching',
+    slug: 'bank-switching',
+    definition: 'A technique used in early computers to increase the amount of usable memory by switching between different banks of RAM.',
+    example: 'Vintage video game consoles used bank switching to fit larger games onto small cartridges.',
+  },
+  {
     id: 'banner-grab',
-    term: 'BannerGrab',
+    term: 'Banner Grab',
     slug: 'banner-grab',
     definition: 'A technique to gain information about a computer system on a network and the services running on its open ports.',
     example: 'The security analyst performed a banner grab to identify the web server software and version.'
   },
   {
+    id: 'banner-grabbing',
+    term: 'Banner Grabbing',
+    slug: 'banner-grabbing',
+    definition: 'A technique used to gain information about a computer system on a network and the services running on its open ports.',
+    example: 'The penetration tester used banner grabbing to identify the version of the web server software.',
+  },
+  {
+    id: 'bar-chart-library',
+    term: 'Bar Chart Library',
+    slug: 'bar-chart-library',
+    definition: 'A software library that provides tools for creating bar charts to visualize data.',
+    example: 'He used Chart.js, a popular bar chart library, to create a dashboard for his web application.',
+  },
+  {
     id: 'barcode-scanner',
-    term: 'BarCodeScanner',
+    term: 'Barcode Scanner',
     slug: 'barcode-scanner',
     definition: 'An electronic device that can read and output printed barcodes to a computer.',
     example: 'The cashier used a barcode scanner to ring up the groceries.'
   },
   {
-    id: 'bare-container',
-    term: 'BareContainer',
-    slug: 'bare-container',
-    definition: 'A lightweight container that runs directly on the host operating system without a separate guest OS.',
-    example: 'Docker containers are a type of bare container.'
-  },
-  {
     id: 'bare-cluster',
-    term: 'BareCluster',
+    term: 'Bare Cluster',
     slug: 'bare-cluster',
     definition: 'A cluster of bare-metal servers, without any virtualization layer.',
     example: 'The high-performance computing application ran on a bare cluster for maximum performance.'
   },
   {
+    id: 'bare-container',
+    term: 'Bare Container',
+    slug: 'bare-container',
+    definition: 'A lightweight container that runs directly on the host operating system without a separate guest OS.',
+    example: 'Docker containers are a type of bare container.'
+  },
+  {
+    id: 'bare-metal',
+    term: 'Bare Metal',
+    slug: 'bare-metal',
+    definition: 'A computer server that is a physical piece of hardware, dedicated to a single tenant. The tenant can run their choice of operating system and software directly on the hardware.',
+    example: 'For maximum performance, the gaming company decided to run its application on a bare-metal server instead of in a virtualized environment.',
+  },
+  {
+    id: 'bare-metal-server',
+    term: 'Bare-metal Server',
+    slug: 'bare-metal-server',
+    definition: 'A physical server dedicated to a single tenant, without any virtualization layer.',
+    example: 'For their high-performance database, they chose a bare-metal server to avoid the overhead of a hypervisor.',
+  },
+  {
     id: 'bare-partition',
-    term: 'BarePartition',
+    term: 'Bare Partition',
     slug: 'bare-partition',
     definition: 'A disk partition that is not formatted with a file system.',
     example: 'Some databases can use a bare partition for raw data storage to improve performance.'
   },
   {
     id: 'bare-snapshot',
-    term: 'BareSnapshot',
+    term: 'Bare Snapshot',
     slug: 'bare-snapshot',
     definition: 'A point-in-time copy of a bare-metal server or storage volume.',
     example: 'He took a bare snapshot of the server before performing the major upgrade.'
   },
   {
     id: 'bark-algorithm',
-    term: 'BarkAlgorithm',
+    term: 'Bark Algorithm',
     slug: 'bark-algorithm',
     definition: 'A non-standard term, possibly referring to a specific algorithm in a niche field or a typo.',
     example: 'The audio processing software used a proprietary Bark algorithm for psychoacoustic modeling.'
   },
   {
     id: 'barrel-roll-encryption',
-    term: 'BarrelRollEncryption',
+    term: 'Barrel Roll Encryption',
     slug: 'barrel-roll-encryption',
     definition: 'A humorous or slang term for a weak or convoluted encryption scheme. Not a real cryptographic term.',
     example: 'The developer joked that the simple XOR cipher was just barrel roll encryption.'
   },
   {
     id: 'base-address',
-    term: 'BaseAddress',
+    term: 'Base Address',
     slug: 'base-address',
     definition: 'The starting address of a block of memory or a data structure.',
     example: 'The linker assigned a base address to the program when it was loaded into memory.'
   },
   {
+    id: 'base-address-register',
+    term: 'Base Address Register',
+    slug: 'base-address-register',
+    definition: 'A register in a CPU that holds the beginning address of a memory region.',
+    example: 'The operating system sets the base address register when it allocates a new memory segment for a process.',
+  },
+  {
+    id: 'base-command',
+    term: 'Base Command',
+    slug: 'base-command',
+    definition: 'The main command in a command-line interface, which can be followed by subcommands and options.',
+    example: 'In `git commit -m "Initial commit"`, `git` is the base command.',
+  },
+  {
+    id: 'base-image',
+    term: 'Base Image',
+    slug: 'base-image',
+    definition: 'In containerization (like Docker), the starting image upon which you build your own custom image. It typically contains an operating system.',
+    example: 'He chose a lightweight Alpine Linux base image for his Docker container to keep the final image size small.',
+  },
+  {
     id: 'base-register',
-    term: 'BaseRegister',
+    term: 'Base Register',
     slug: 'base-register',
     definition: 'A register in a CPU that holds a base address, used for calculating memory addresses.',
     example: 'The program used a base register to access elements of an array.'
   },
   {
+    id: 'base-station',
+    term: 'Base Station',
+    slug: 'base-station',
+    definition: 'A fixed radio transceiver in a wireless network that serves as the hub of the local network.',
+    example: 'A cell tower is a type of base station.',
+  },
+  {
     id: 'base-system',
-    term: 'BaseSystem',
+    term: 'Base System',
     slug: 'base-system',
     definition: 'The minimal set of software required to run an operating system.',
     example: 'Arch Linux provides a minimal base system that the user can build upon.'
   },
   {
+    id: 'base64-encoding',
+    term: 'Base64 Encoding',
+    slug: 'base64-encoding',
+    definition: 'A group of binary-to-text encoding schemes that represent binary data in an ASCII string format by translating it into a radix-64 representation.',
+    example: 'Images are sometimes embedded directly in web pages using Base64 encoding in a data URI.',
+  },
+  {
+    id: 'baseband',
+    term: 'Baseband',
+    slug: 'baseband',
+    definition: 'In telecommunications, baseband refers to the original frequency range of a transmission signal before it is modulated. It can also refer to the processor in a phone that manages all radio communications.',
+    example: 'A smartphone\'s baseband processor is responsible for handling connections to cellular networks.',
+  },
+  {
+    id: 'baseline',
+    term: 'Baseline',
+    slug: 'baseline',
+    definition: 'A standardized point of reference. In performance testing, it is a set of measurements used as a basis for comparison.',
+    example: 'The team established a performance baseline for the application before making any changes, so they could measure the impact of their optimizations.',
+  },
+  {
+    id: 'baseline-drift',
+    term: 'Baseline Drift',
+    slug: 'baseline-drift',
+    definition: 'A phenomenon in sensor readings or analytical measurements where the baseline signal slowly changes over time.',
+    example: 'The scientist had to correct for baseline drift in the temperature sensor data.',
+  },
+  {
+    id: 'baseline-security',
+    term: 'Baseline Security',
+    slug: 'baseline-security',
+    definition: 'A minimum level of security controls that should be applied to all systems in an organization.',
+    example: 'The company\'s baseline security policy requires all servers to have a firewall enabled and all passwords to be complex.',
+  },
+  {
+    id: 'bash',
+    term: 'Bash',
+    slug: 'bash',
+    definition: 'A command-line interpreter and scripting language for Unix-like operating systems. It is the default shell for many Linux distributions and for macOS.',
+    example: 'The developer wrote a Bash script to automate the process of backing up files every night.',
+  },
+  {
     id: 'bash-profile',
-    term: 'BashProfile',
+    term: 'Bash Profile',
     slug: 'bash-profile',
     definition: 'A configuration file for the Bash shell, located at `~/.bash_profile`. It is executed for login shells.',
     example: 'He added an alias to his bash profile to create a shortcut for a long command.'
   },
   {
+    id: 'bash-script',
+    term: 'Bash Script',
+    slug: 'bash-script',
+    definition: 'A text file containing a series of commands for the Bash shell.',
+    example: 'He wrote a bash script to automate the process of deploying his website.'
+  },
+  {
+    id: 'bashrc',
+    term: 'Bashrc',
+    slug: 'bashrc',
+    definition: 'A script file that is executed whenever a new terminal session is started in interactive mode in Bash.',
+    example: 'He added his custom aliases to the `.bashrc` file so they would be available in every new terminal he opened.',
+  },
+  {
+    id: 'basic-auth',
+    term: 'Basic Auth',
+    slug: 'basic-auth',
+    definition: 'A simple authentication scheme built into the HTTP protocol. The client sends a username and password with each request, encoded with Base64.',
+    example: 'The simple internal tool was protected with Basic Auth.',
+  },
+  {
     id: 'basic-input-output',
-    term: 'BasicInputOutput',
+    term: 'Basic Input Output',
     slug: 'basic-input-output',
     definition: 'The fundamental operations a computer performs to get input and display output.',
     example: 'The `printf` function in C is a form of basic input output.'
   },
   {
+    id: 'basic-input-output-system',
+    term: 'Basic Input Output System',
+    slug: 'basic-input-output-system',
+    definition: 'Firmware used to perform hardware initialization during the booting process on IBM PC compatible computers.',
+    example: 'You can enter the BIOS setup screen to change hardware settings.',
+  },
+  {
     id: 'batch-compiler',
-    term: 'BatchCompiler',
+    term: 'Batch Compiler',
     slug: 'batch-compiler',
     definition: 'A compiler that processes a group of source files at once.',
     example: 'The nightly build process used a batch compiler to compile the entire project.'
   },
   {
     id: 'batch-export',
-    term: 'BatchExport',
+    term: 'Batch Export',
     slug: 'batch-export',
     definition: 'The process of exporting a large amount of data in a single operation.',
     example: 'He performed a batch export of all the customer data into a CSV file.'
   },
   {
     id: 'batch-import',
-    term: 'BatchImport',
+    term: 'Batch Import',
     slug: 'batch-import',
     definition: 'The process of importing a large amount of data in a single operation.',
     example: 'She used the batch import feature to load the product catalog into the database.'
   },
   {
+    id: 'batch-job',
+    term: 'Batch Job',
+    slug: 'batch-job',
+    definition: 'A program or a set of programs that are executed without manual intervention.',
+    example: 'The company runs a batch job every night to process the day\'s sales data.',
+  },
+  {
+    id: 'batch-normalization',
+    term: 'Batch Normalization',
+    slug: 'batch-normalization',
+    definition: 'A technique in deep learning that normalizes the inputs of each layer in a neural network, which can speed up training and improve performance.',
+    example: 'Adding batch normalization to the neural network helped it train much faster.',
+  },
+  {
+    id: 'batch-process',
+    term: 'Batch Process',
+    slug: 'batchprocess',
+    definition: 'The execution of a series of jobs ("a batch") on a computer without manual intervention.',
+    example: 'The bank runs a batch process every night to calculate interest and update all customer accounts.',
+  },
+  {
+    id: 'batch-processor',
+    term: 'Batch Processor',
+    slug: 'batch-processor',
+    definition: 'A system that processes data in large groups, or batches.',
+    example: 'Apache Spark is a popular batch processor for big data analytics.',
+  },
+  {
+    id: 'batch-queue',
+    term: 'Batch Queue',
+    slug: 'batch-queue',
+    definition: 'A queue of batch jobs waiting to be executed by a batch processing system.',
+    example: 'His job was number 50 in the batch queue and would run overnight.'
+  },
+  {
     id: 'batch-rate',
-    term: 'BatchRate',
+    term: 'Batch Rate',
     slug: 'batch-rate',
     definition: 'The number of batches processed per unit of time.',
     example: 'The system was able to achieve a batch rate of 100 batches per second.'
   },
   {
+    id: 'batch-scheduler',
+    term: 'Batch Scheduler',
+    slug: 'batch-scheduler',
+    definition: 'A software tool used to manage and execute batch jobs. It can schedule jobs to run at specific times, manage dependencies between jobs, and monitor their execution.',
+    example: 'The university uses a batch scheduler to manage the large number of computational jobs submitted by researchers to the high-performance computing cluster.',
+  },
+  {
+    id: 'batchfile',
+    term: 'Batch File',
+    slug: 'batchfile',
+    definition: 'A text file containing a sequence of commands for a command-line interpreter.',
+    example: 'He wrote a batch file to automate the process of copying files and running a program.',
+  },
+  {
+    id: 'baudrate',
+    term: 'Baud Rate',
+    slug: 'baudrate',
+    definition: 'The rate at which information is transferred in a communication channel. In the serial port context, "baud rate" is the speed at which data is sent over a serial line, measured in bits per second.',
+    example: 'The two devices needed to be configured with the same baud rate of 9600 to communicate correctly over the serial connection.',
+  },
+  {
+    id: 'b-tree-index',
+    term: 'B-tree Index',
+    slug: 'b-tree-index',
+    definition: 'A self-balancing tree data structure that maintains sorted data and allows for efficient insertion, deletion, and search operations. It is the default index type for most relational databases.',
+    example: 'The database used a B-tree index on the primary key column to speed up lookups.',
+  },
+  {
+    id: 'b-tree-node',
+    term: 'B-tree Node',
+    slug: 'b-tree-node',
+    definition: 'A node in a B-tree, which can have multiple children and contains a sorted list of keys.',
+    example: 'Each B-tree node corresponds to a page or block on the disk.',
+  },
+  {
+    id: 'bcrypt-hash',
+    term: 'Bcrypt Hash',
+    slug: 'bcrypt-hash',
+    definition: 'A password hashing function designed to be slow and computationally intensive to protect against brute-force attacks.',
+    example: 'The website stored user passwords as bcrypt hashes for security.',
+  },
+  {
+    id: 'beacon-frame',
+    term: 'Beacon Frame',
+    slug: 'beaconframe',
+    definition: 'One of the management frames in Wi-Fi. It is periodically sent by the access point to announce its presence and provide the network\'s parameters.',
+    example: 'Your phone discovers nearby Wi-Fi networks by listening for the beacon frames they broadcast.',
+  },
+  {
     id: 'beacon-interval',
-    term: 'BeaconInterval',
+    term: 'Beacon Interval',
     slug: 'beacon-interval',
     definition: 'The time interval between two consecutive beacon frames sent by a Wi-Fi access point.',
     example: 'A shorter beacon interval can help devices find the network faster, but it also consumes more airtime.'
   },
   {
+    id: 'beamforming',
+    term: 'Beamforming',
+    slug: 'beamforming',
+    definition: 'A signal processing technique used in sensor arrays for directional signal transmission or reception. In Wi-Fi, it focuses the signal towards a specific device.',
+    example: 'The new Wi-Fi router uses beamforming to improve signal strength and speed for connected devices.'
+  },
+  {
+    id: 'bearer-token',
+    term: 'Bearer Token',
+    slug: 'bearer-token',
+    definition: 'A type of access token in OAuth 2.0. The "bearer" of the token can use it to access protected resources without further identification.',
+    example: 'The web application included the Bearer Token in the Authorization header of its API requests to authenticate itself.',
+  },
+  {
+    id: 'beautifier-tool',
+    term: 'Beautifier Tool',
+    slug: 'beautifier-tool',
+    definition: 'A program that reformats source code to make it more readable and conform to a specific style guide.',
+    example: 'He ran his JavaScript code through a beautifier tool before committing it to the repository.',
+  },
+  {
+    id: 'beaver-code',
+    term: 'Beaver Code',
+    slug: 'beaver-code',
+    definition: 'Slang for overly complex or convoluted code that is difficult to understand, as if built by a busy beaver without a clear plan.',
+    example: 'The new developer had to spend a week trying to understand the beaver code left by his predecessor.',
+  },
+  {
+    id: 'becn',
+    term: 'BECN',
+    slug: 'becn',
+    definition: 'Backward Explicit Congestion Notification, a bit set in a Frame Relay frame to notify a device that congestion was experienced in the network.',
+    example: 'The router received frames with the BECN bit set, so it reduced its transmission rate.',
+  },
+  {
+    id: 'benchmark-suite',
+    term: 'Benchmark Suite',
+    slug: 'benchmark-suite',
+    definition: 'A collection of programs or tests used to evaluate the performance of a computer system.',
+    example: 'The SPEC CPU benchmark suite is widely used to compare the performance of different processors.',
+  },
+  {
     id: 'benchmark-test',
-    term: 'BenchmarkTest',
+    term: 'Benchmark Test',
     slug: 'benchmark-test',
     definition: 'A test used to measure the performance of a system or component.',
     example: 'They ran a benchmark test to compare the performance of the two different CPUs.'
   },
   {
     id: 'benign-fault',
-    term: 'BenignFault',
+    term: 'Benign Fault',
     slug: 'benign-fault',
     definition: 'A fault that does not cause a system to fail.',
     example: 'The single bit error in the image data was a benign fault that was not noticeable to the user.'
   },
   {
+    id: 'ber-bit-error-rate',
+    term: 'BER (Bit Error Rate)',
+    slug: 'ber-bit-error-rate',
+    definition: 'The number of bit errors per unit time. It is a key measure of the quality of a digital communication channel.',
+    example: 'A high bit error rate on the satellite link was causing data corruption.',
+  },
+  {
     id: 'ber-test',
-    term: 'BERTest',
+    term: 'BER Test',
     slug: 'ber-test',
     definition: 'A Bit Error Rate Test, used to measure the quality of a digital communication channel.',
     example: 'The technician performed a BER test on the fiber optic link to ensure it met the quality standards.'
   },
   {
+    id: 'berkeley-db',
+    term: 'Berkeley DB',
+    slug: 'berkeley-db',
+    definition: 'A high-performance embedded database library that provides a simple key-value store.',
+    example: 'Many open-source projects use Berkeley DB for internal data storage.'
+  },
+  {
+    id: 'berkeley-packet-filter',
+    term: 'Berkeley Packet Filter',
+    slug: 'berkeley-packet-filter',
+    definition: 'A technology used in certain computer operating systems for programs that need to analyze network traffic.',
+    example: 'Tools like `tcpdump` use the Berkeley Packet Filter to capture only the network packets that match a specific criteria.',
+  },
+  {
     id: 'bernoulli-drive',
-    term: 'BernoulliDrive',
+    term: 'Bernoulli Drive',
     slug: 'bernoulli-drive',
     definition: 'A type of removable disk storage system from the 1980s that used a flexible disk.',
     example: 'He found an old Bernoulli drive in the closet, a relic from the early days of personal computing.'
   },
   {
+    id: 'beta-build',
+    term: 'Beta Build',
+    slug: 'beta-build',
+    definition: 'A pre-release version of software that is distributed to a group of users for testing before its official release.',
+    example: 'The developers released a beta build of the new operating system to gather feedback and find bugs.',
+  },
+  {
+    id: 'beta-channel',
+    term: 'Beta Channel',
+    slug: 'beta-channel',
+    definition: 'A software release channel that provides access to pre-release versions of software for testing.',
+    example: 'He switched to the beta channel of the browser to try out new features before they were released to the public.'
+  },
+  {
     id: 'beta-flag',
-    term: 'BetaFlag',
+    term: 'Beta Flag',
     slug: 'beta-flag',
     definition: 'A feature flag that is used to enable a new feature for a limited group of beta testers.',
     example: 'The new dashboard was hidden behind a beta flag, only visible to internal employees.'
   },
   {
     id: 'beta-firmware',
-    term: 'BetaFirmware',
+    term: 'Beta Firmware',
     slug: 'beta-firmware',
     definition: 'A pre-release version of firmware for a hardware device, distributed for testing.',
     example: 'He installed the beta firmware on his router to try out the new features.'
   },
   {
     id: 'beta-program',
-    term: 'BetaProgram',
+    term: 'Beta Program',
     slug: 'beta-program',
     definition: 'A program where users can sign up to test pre-release versions of software.',
     example: 'She joined the beta program for the new mobile game.'
@@ -4517,218 +2949,358 @@ export const terms: Term[] = [
     example: 'The QA team used the betaprobe to collect performance metrics from the test devices.'
   },
   {
+    id: 'beta-software',
+    term: 'Beta Software',
+    slug: 'beta-software',
+    definition: 'A version of software that is made available for testing by a group of users before its official release.',
+    example: 'The company is looking for users to test the beta software for their new application.'
+  },
+  {
+    id: 'bettercap-toolkit',
+    term: 'Bettercap Toolkit',
+    slug: 'bettercap-toolkit',
+    definition: 'A powerful, flexible, and portable tool for penetration testing and network attacks.',
+    example: 'The security expert used Bettercap to perform a man-in-the-middle attack on the test network.'
+  },
+  {
     id: 'beveridge-curve-algorithm',
-    term: 'BeveridgeCurveAlgorithm',
+    term: 'Beveridge Curve Algorithm',
     slug: 'beveridge-curve-algorithm',
     definition: 'In economics, the Beveridge curve is a graphical representation of the relationship between unemployment and the job vacancy rate. An algorithm might model this.',
     example: 'The economist used a Beveridge curve algorithm to analyze the labor market.'
   },
   {
+    id: 'bezier-curve',
+    term: 'Bezier Curve',
+    slug: 'bezier-curve',
+    definition: 'A parametric curve used in computer graphics and related fields. It is defined by a set of control points.',
+    example: 'Vector graphics programs like Adobe Illustrator use Bezier curves to create smooth, scalable shapes.'
+  },
+  {
     id: 'bfq-scheduler',
-    term: 'BFQScheduler',
+    term: 'BFQ Scheduler',
     slug: 'bfq-scheduler',
     definition: 'Budget Fair Queueing, an I/O scheduler for the Linux kernel that is designed to provide low latency for interactive tasks.',
     example: 'He enabled the BFQ scheduler to make his desktop more responsive while copying large files.'
   },
   {
+    id: 'bfs-algorithm',
+    term: 'BFS Algorithm',
+    slug: 'bfs-algorithm',
+    definition: 'Breadth-First Search, an algorithm for traversing or searching tree or graph data structures.',
+    example: 'He used the BFS algorithm to find the shortest path between two nodes in a graph.',
+  },
+  {
+    id: 'bgp',
+    term: 'BGP (Border Gateway Protocol)',
+    slug: 'bgp',
+    definition: 'The routing protocol used to exchange routing information across the internet.',
+    example: 'BGP is what allows different internet service providers to share information about how to reach various IP address ranges.',
+  },
+  {
     id: 'bgp-community',
-    term: 'BGPCommunity',
+    term: 'BGP Community',
     slug: 'bgp-community',
     definition: 'An attribute that can be attached to a BGP route to tag it with additional information, used for policy control.',
     example: 'The ISP used a BGP community to signal to its peers that certain routes should not be advertised to other networks.'
   },
   {
     id: 'bgp-neighbor',
-    term: 'BGPNeighbor',
+    term: 'BGP Neighbor',
     slug: 'bgp-neighbor',
     definition: 'Another term for a BGP peer, a router that is directly connected and exchanging routing information.',
     example: 'The router lost its connection to its BGP neighbor, causing a major outage.'
   },
   {
     id: 'bgp-peer',
-    term: 'BGPPeer',
+    term: 'BGP Peer',
     slug: 'bgp-peer',
     definition: 'A BGP router that has an established session with another BGP router to exchange routing information.',
     example: 'The network engineer configured the BGP peer relationship between the two routers.'
   },
   {
     id: 'bgp-router',
-    term: 'BGPRouter',
+    term: 'BGP Router',
     slug: 'bgp-router',
     definition: 'A router that runs the Border Gateway Protocol and participates in the global internet routing system.',
     example: 'The core of the ISP\'s network is made up of powerful BGP routers.'
   },
   {
+    id: 'bgp-routing-table',
+    term: 'BGP Routing Table',
+    slug: 'bgp-routing-table',
+    definition: 'A table maintained by a BGP router that lists all the reachable networks and the paths to reach them.',
+    example: 'The full BGP routing table for the internet contains millions of entries.',
+  },
+  {
+    id: 'bgp-session',
+    term: 'BGP Session',
+    slug: 'bgp-session',
+    definition: 'A TCP connection between two BGP routers over which they exchange routing information.',
+    example: 'The two internet service providers established a BGP session to exchange routes.'
+  },
+  {
     id: 'bgp-table',
-    term: 'BGPTable',
+    term: 'BGP Table',
     slug: 'bgp-table',
     definition: 'The routing table maintained by a BGP router, containing all the known routes on the internet.',
     example: 'A full internet BGP table can contain over a million routes.'
   },
   {
     id: 'bgp-traffic',
-    term: 'BGPTraffic',
+    term: 'BGP Traffic',
     slug: 'bgp-traffic',
     definition: 'The network traffic associated with the Border Gateway Protocol, used for exchanging routing information.',
     example: 'The network administrator monitored the BGP traffic to ensure the routing was stable.'
   },
   {
+    id: 'bi',
+    term: 'BI (Business Intelligence)',
+    slug: 'bi',
+definition: 'The use of software and services to turn data into actionable insights that inform an organization\'s business decisions.',
+    example: 'The company uses a BI tool to analyze sales data and identify trends.',
+  },
+  {
     id: 'bi-domain',
-    term: 'BIDomain',
+    term: 'BI Domain',
     slug: 'bi-domain',
     definition: 'A specific area of business intelligence, such as sales analytics or financial reporting.',
     example: 'She was an expert in the BI domain of customer churn analysis.'
   },
   {
+    id: 'bi-report',
+    term: 'BI Report',
+    slug: 'bireport',
+    definition: 'A report generated by a Business Intelligence (BI) tool that presents data and analysis in a readable format, often with charts and graphs.',
+    example: 'The manager reviewed the weekly BI report to track the team\'s key performance indicators.',
+  },
+  {
+    id: 'bias-node',
+    term: 'Bias Node',
+    slug: 'bias-node',
+    definition: 'In a neural network, a bias node is an extra node added to each layer that provides a constant value, allowing the activation function to be shifted.',
+    example: 'Adding a bias node to the neural network improved its ability to learn complex patterns.'
+  },
+  {
+    id: 'bidirectional-bus',
+    term: 'Bidirectional Bus',
+    slug: 'bidirectional-bus',
+    definition: 'A computer bus that can transfer data in both directions.',
+    example: 'The data bus in a modern computer is a bidirectional bus.'
+  },
+  {
+    id: 'big-data',
+    term: 'Big Data',
+    slug: 'big-data',
+    definition: 'Extremely large and complex datasets that traditional data-processing application software is inadequate to deal with. It is characterized by the three Vs: volume, velocity, and variety.',
+    example: 'Social media companies analyze big data to understand user behavior and serve targeted ads.',
+  },
+  {
+    id: 'big-data-pipeline',
+    term: 'Big Data Pipeline',
+    slug: 'big-data-pipeline',
+    definition: 'An end-to-end process for moving data from various sources, processing it, and storing it in a data warehouse or data lake for analysis.',
+    example: 'The company built a big data pipeline to collect and analyze customer behavior data from their website and mobile app.'
+  },
+  {
+    id: 'big-endian',
+    term: 'Big Endian',
+    slug: 'big-endian',
+    definition: 'A byte order in which the most significant byte of a multi-byte data word is stored at the lowest memory address.',
+    example: 'Network protocols typically use big-endian byte order.',
+  },
+  {
+    id: 'big-integer',
+    term: 'Big Integer',
+    slug: 'big-integer',
+    definition: 'A data type in some programming languages that can represent integers of arbitrary size.',
+    example: 'He used a big integer library to work with numbers that were too large to fit in a standard 64-bit integer.',
+  },
+  {
+    id: 'big-int',
+    term: 'BigInt',
+    slug: 'big-int',
+    definition: 'A built-in object in JavaScript that provides a way to represent whole numbers larger than 2^53 - 1.',
+    example: 'He used a BigInt to handle the large numbers returned by the cryptography API.',
+  },
+  {
     id: 'big-machine',
-    term: 'BigMachine',
+    term: 'Big Machine',
     slug: 'big-machine',
     definition: 'Slang for a large, powerful server or mainframe computer.',
     example: 'The complex simulation could only be run on the big machine in the data center.'
-  },
-  {
-    id: 'big-table',
-    term: 'BigTable',
-    slug: 'big-table',
-    definition: 'A fully managed, scalable NoSQL wide-column database service from Google Cloud.',
-    example: 'Google uses Bigtable to power many of its services, including Search, Analytics, and Gmail.'
-  },
-  {
-    id: 'big-theta',
-    term: 'BigTheta',
-    slug: 'big-theta',
-    definition: 'In computational complexity theory, Big Theta notation (Θ) is used to describe the tight bound of an algorithm\'s running time.',
-    example: 'The algorithm has a running time of Θ(n log n), meaning its best and worst-case performance are the same.'
   },
   {
     id: 'big-o',
     term: 'BigO',
     slug: 'big-o',
     definition: 'A notation used to describe the limiting behavior of a function when the argument tends towards a particular value or infinity. In computer science, it is used to classify algorithms according to how their run time or space requirements grow as the input size grows.',
-    example: 'A binary search algorithm has a time complexity of O(log n), which is very efficient.'
+    example: 'A binary search algorithm has a time complexity of O(log n), which is very efficient.',
+  },
+  {
+    id: 'big-table',
+    term: 'Big Table',
+    slug: 'big-table',
+    definition: 'A fully managed, scalable NoSQL wide-column database service from Google Cloud.',
+    example: 'Google uses Bigtable to power many of its services, including Search, Analytics, and Gmail.'
+  },
+  {
+    id: 'big-theta',
+    term: 'Big Theta',
+    slug: 'big-theta',
+    definition: 'In computational complexity theory, Big Theta notation (Θ) is used to describe the tight bound of an algorithm\'s running time.',
+    example: 'The algorithm has a running time of Θ(n log n), meaning its best and worst-case performance are the same.'
+  },
+  {
+    id: 'bikeshare-api',
+    term: 'Bikeshare API',
+    slug: 'bikeshare-api',
+    definition: 'An API that provides data about a bike-sharing system, such as the location of bikes and docking stations.',
+    example: 'The developer used the city\'s bikeshare API to build an app that shows the nearest available bike.'
   },
   {
     id: 'binary-asset',
-    term: 'BinaryAsset',
+    term: 'Binary Asset',
     slug: 'binary-asset',
     definition: 'Any non-text file, such as an image, audio, or video file, used in a software project.',
     example: 'The game engine loaded all the binary assets for the level into memory.'
   },
   {
+    id: 'binary-blob',
+    term: 'Binary Blob',
+    slug: 'binary-blob',
+    definition: 'A large piece of binary data stored as a single entity. It can also refer to a proprietary, closed-source driver used in an open-source operating system.',
+    example: 'The firmware for the Wi-Fi card was provided as a binary blob.',
+  },
+  {
     id: 'binary-build',
-    term: 'BinaryBuild',
+    term: 'Binary Build',
     slug: 'binary-build',
     definition: 'A version of a software project that has been compiled into an executable binary format.',
     example: 'He downloaded the latest binary build of the application from the website.'
   },
   {
     id: 'binary-cache',
-    term: 'BinaryCache',
+    term: 'Binary Cache',
     slug: 'binary-cache',
     definition: 'A cache that stores pre-compiled binary packages to speed up software installation and builds.',
     example: 'The Nix package manager uses a binary cache to avoid having to compile every package from source.'
   },
   {
     id: 'binary-counter',
-    term: 'BinaryCounter',
+    term: 'Binary Counter',
     slug: 'binary-counter',
     definition: 'A digital circuit that counts in binary.',
     example: 'He built a simple binary counter using a few flip-flops.'
   },
   {
     id: 'binary-data',
-    term: 'BinaryData',
+    term: 'Binary Data',
     slug: 'binary-data',
     definition: 'Data whose unit can take on only two possible states, traditionally termed 0 and 1.',
     example: 'An image file is composed of binary data.'
   },
   {
     id: 'binary-decoder',
-    term: 'BinaryDecoder',
+    term: 'Binary Decoder',
     slug: 'binary-decoder',
     definition: 'A logic circuit that converts a binary input to a specific output. For example, a 2-to-4 decoder takes a 2-bit input and activates one of four output lines.',
     example: 'The memory controller uses a binary decoder to select the correct memory chip.'
   },
   {
+    id: 'binary-diff',
+    term: 'Binary Diff',
+    slug: 'binary-diff',
+    definition: 'A comparison of two binary files to identify the differences between them. This is used to create small patches for updating software.',
+    example: 'The software update was delivered as a binary diff to reduce the download size.',
+  },
+  {
     id: 'binary-encoder',
-    term: 'BinaryEncoder',
+    term: 'Binary Encoder',
     slug: 'binary-encoder',
     definition: 'A logic circuit that performs the reverse operation of a decoder, converting a set of input lines into a binary code.',
     example: 'A keyboard uses a binary encoder to convert key presses into ASCII codes.'
   },
   {
     id: 'binary-field',
-    term: 'BinaryField',
+    term: 'Binary Field',
     slug: 'binary-field',
     definition: 'In mathematics, a finite field with two elements. It is fundamental to computer science and cryptography.',
     example: 'Elliptic curve cryptography is often performed over a binary field.'
   },
   {
     id: 'binary-file',
-    term: 'BinaryFile',
+    term: 'Binary File',
     slug: 'binary-file',
     definition: 'A computer file that is not a text file. It may contain any type of data, encoded in binary form for computer storage and processing purposes.',
     example: 'An executable program is a type of binary file.'
   },
   {
     id: 'binary-flag',
-    term: 'BinaryFlag',
+    term: 'Binary Flag',
     slug: 'binary-flag',
     definition: 'A single bit used to represent a true/false or on/off state.',
     example: 'He used a binary flag to indicate whether the user was logged in.'
   },
   {
     id: 'binary-format',
-    term: 'BinaryFormat',
+    term: 'Binary Format',
     slug: 'binary-format',
     definition: 'A format for storing data that is not human-readable text.',
     example: 'Protocol Buffers is a binary format for serializing structured data.'
   },
   {
     id: 'binary-frame',
-    term: 'BinaryFrame',
+    term: 'Binary Frame',
     slug: 'binary-frame',
     definition: 'In networking, a single unit of data transmitted as a binary sequence.',
     example: 'A WebSocket can transmit data in both text and binary frames.'
   },
   {
     id: 'binary-grid',
-    term: 'BinaryGrid',
+    term: 'Binary Grid',
     slug: 'binary-grid',
     definition: 'A grid where each cell can have one of two states, such as black or white.',
     example: 'A QR code is a type of binary grid.'
   },
   {
+    id: 'binary-heap',
+    term: 'Binary Heap',
+    slug: 'binaryheap',
+    definition: 'A tree-based data structure that satisfies the heap property: in a min heap, for any given node C, if P is a parent node of C, then the key (the value) of P is less than or equal to the key of C.',
+    example: 'A priority queue is often implemented using a binary heap because it allows for efficient retrieval of the minimum or maximum element.'
+  },
+  {
     id: 'binary-image',
-    term: 'BinaryImage',
+    term: 'Binary Image',
     slug: 'binary-image',
     definition: 'An image where each pixel has one of only two possible values, typically black or white.',
     example: 'He converted the color photo to a binary image to reduce its file size.'
   },
   {
     id: 'binary-input',
-    term: 'BinaryInput',
+    term: 'Binary Input',
     slug: 'binary-input',
     definition: 'Input data that is in a binary format.',
     example: 'The program expected a file with binary input, not a text file.'
   },
   {
     id: 'binary-instruction',
-    term: 'BinaryInstruction',
+    term: 'Binary Instruction',
     slug: 'binary-instruction',
     definition: 'A machine code instruction in its raw binary form.',
     example: 'The CPU fetches and executes binary instructions from memory.'
   },
   {
     id: 'binary-key',
-    term: 'BinaryKey',
+    term: 'Binary Key',
     slug: 'binary-key',
     definition: 'An encryption key that is represented as a sequence of bits.',
     example: 'The AES algorithm uses a binary key of 128, 192, or 256 bits.'
   },
   {
     id: 'binary-level',
-    term: 'BinaryLevel',
+    term: 'Binary Level',
     slug: 'binary-level',
     definition: 'Referring to operations or analysis done at the level of machine code, rather than source code.',
     example: 'The security researcher performed a binary level analysis of the malware to understand its behavior.'
@@ -4742,157 +3314,199 @@ export const terms: Term[] = [
   },
   {
     id: 'binary-mapping',
-    term: 'BinaryMapping',
+    term: 'Binary Mapping',
     slug: 'binary-mapping',
     definition: 'The process of associating binary data with a specific structure or meaning.',
     example: 'The protocol specification included a binary mapping for the packet header.'
   },
   {
     id: 'binary-merge',
-    term: 'BinaryMerge',
+    term: 'Binary Merge',
     slug: 'binary-merge',
     definition: 'The process of combining two or more binary files.',
     example: 'He had to perform a binary merge of the two different firmware versions.'
   },
   {
     id: 'binary-mode',
-    term: 'BinaryMode',
+    term: 'Binary Mode',
     slug: 'binary-mode',
     definition: 'A mode for file I/O where data is read and written as raw bytes, without any translation of line endings.',
     example: 'He opened the file in binary mode to read the image data correctly.'
   },
   {
     id: 'binary-module',
-    term: 'BinaryModule',
+    term: 'Binary Module',
     slug: 'binary-module',
     definition: 'A software module that is distributed in a compiled, binary format.',
     example: 'He downloaded the binary module for the Python library instead of compiling it from source.'
   },
   {
     id: 'binary-model',
-    term: 'BinaryModel',
+    term: 'Binary Model',
     slug: 'binary-model',
     definition: 'A machine learning model that produces a binary output, such as yes/no or true/false.',
     example: 'The spam filter is a binary model that classifies emails as either spam or not spam.'
   },
   {
     id: 'binary-object',
-    term: 'BinaryObject',
+    term: 'Binary Object',
     slug: 'binary-object',
     definition: 'A file containing compiled machine code or data.',
     example: 'The linker combines multiple binary object files to create an executable program.'
   },
   {
     id: 'binary-operand',
-    term: 'BinaryOperand',
+    term: 'Binary Operand',
     slug: 'binary-operand',
     definition: 'An operand in a computation that is represented in binary.',
     example: 'The ALU performed an addition on the two binary operands.'
   },
   {
     id: 'binary-operation',
-    term: 'BinaryOperation',
+    term: 'Binary Operation',
     slug: 'binary-operation',
     definition: 'An operation that takes two operands, such as addition or multiplication.',
     example: 'A bitwise AND is a type of binary operation.'
   },
   {
     id: 'binary-packet',
-    term: 'BinaryPacket',
+    term: 'Binary Packet',
     slug: 'binary-packet',
     definition: 'A network packet whose payload is in a binary format.',
     example: 'The custom protocol used binary packets for efficiency.'
   },
   {
     id: 'binary-parser',
-    term: 'BinaryParser',
+    term: 'Binary Parser',
     slug: 'binary-parser',
-    definition: 'A program or library that can read and interpret data from a binary format.',
+definition: 'A program or library that can read and interpret data from a binary format.',
     example: 'He wrote a binary parser to extract the metadata from the image file.'
   },
   {
     id: 'binary-patch',
-    term: 'BinaryPatch',
+    term: 'Binary Patch',
     slug: 'binary-patch',
     definition: 'A small file containing the differences between two binary files, used to update a file from one version to another.',
     example: 'The game update was delivered as a small binary patch.'
   },
   {
     id: 'binary-payload',
-    term: 'BinaryPayload',
+    term: 'Binary Payload',
     slug: 'binary-payload',
     definition: 'The part of a network packet or message that contains the actual data, in a binary format.',
     example: 'The MQTT message contained a JSON text string as its binary payload.'
   },
   {
+    id: 'binary-protocol',
+    term: 'Binary Protocol',
+    slug: 'binaryprotocol',
+    definition: 'A communication protocol that uses a binary format for message encoding, which is generally more efficient in terms of size and parsing speed than text-based protocols like JSON or XML.',
+    example: 'gRPC uses a binary protocol called Protocol Buffers for high-performance communication between microservices.'
+  },
+  {
     id: 'binary-record',
-    term: 'BinaryRecord',
+    term: 'Binary Record',
     slug: 'binary-record',
     definition: 'A record in a database or file that is stored in a binary format.',
     example: 'The database stored each customer record as a compact binary record.'
   },
   {
+    id: 'binary-search',
+    term: 'Binary Search',
+    slug: 'binary-search',
+    definition: 'A search algorithm that finds the position of a target value within a sorted array.',
+    example: 'Binary search is much more efficient than linear search for large datasets.',
+  },
+  {
     id: 'binary-sensor',
-    term: 'BinarySensor',
+    term: 'Binary Sensor',
     slug: 'binary-sensor',
     definition: 'A sensor that has only two states, such as on/off or open/closed.',
     example: 'A door sensor is a type of binary sensor.'
   },
   {
     id: 'binary-set',
-    term: 'BinarySet',
+    term: 'Binary Set',
     slug: 'binary-set',
     definition: 'A collection of binary data.',
     example: 'The program processed the binary set to find specific patterns.'
   },
   {
     id: 'binary-stream',
-    term: 'BinaryStream',
+    term: 'Binary Stream',
     slug: 'binary-stream',
     definition: 'A sequence of binary data, typically used for transmitting or storing data.',
     example: 'The file was read as a binary stream.'
   },
   {
     id: 'binary-symbol',
-    term: 'BinarySymbol',
+    term: 'Binary Symbol',
     slug: 'binary-symbol',
     definition: 'In a symbol table, an entry for a function or variable in a binary file.',
     example: 'The debugger used the binary symbols to show the names of the functions in the stack trace.'
   },
   {
     id: 'binary-system',
-    term: 'BinarySystem',
+    term: 'Binary System',
     slug: 'binary-system',
     definition: 'A number system that uses only two digits, 0 and 1.',
     example: 'All data in a computer is ultimately represented in the binary system.'
   },
   {
     id: 'binary-tag',
-    term: 'BinaryTag',
+    term: 'Binary Tag',
     slug: 'binary-tag',
     definition: 'A piece of metadata in a binary format.',
     example: 'The audio file contained a binary tag with the song title and artist.'
   },
   {
     id: 'binary-token',
-    term: 'BinaryToken',
+    term: 'Binary Token',
     slug: 'binary-token',
     definition: 'An authentication token that is in a binary format, such as a JWT.',
     example: 'The server issued a binary token to the client after a successful login.'
   },
   {
     id: 'binary-tree-map',
-    term: 'BinaryTreeMap',
+    term: 'Binary Tree Map',
     slug: 'binary-tree-map',
     definition: 'A map data structure that is implemented using a binary search tree.',
     example: 'The C++ standard library provides `std::map`, which is often implemented as a red-black tree, a type of binary tree map.'
   },
   {
     id: 'binary-version',
-    term: 'BinaryVersion',
+    term: 'Binary Version',
     slug: 'binary-version',
     definition: 'The version number of a compiled, binary application or library.',
     example: 'He checked the binary version of the library to ensure it was compatible.'
+  },
+  {
+    id: 'bind-variable',
+    term: 'Bind Variable',
+    slug: 'bindvariable',
+    definition: 'In databases, a placeholder in a SQL statement that is replaced with a literal value at execution time. It is used to prevent SQL injection and improve performance.',
+    example: 'Instead of concatenating user input into the query, the developer used a bind variable to safely pass the value to the database.',
+  },
+  {
+    id: 'binding-address',
+    term: 'Binding Address',
+    slug: 'binding-address',
+    definition: 'The IP address that a server or service listens on for incoming connections.',
+    example: 'The web server was configured with a binding address of 0.0.0.0 to listen on all available network interfaces.',
+  },
+  {
+    id: 'binding-energy-computation',
+    term: 'Binding Energy (Computation)',
+    slug: 'binding-energy-computation',
+    definition: 'A term from computational chemistry referring to the calculation of the energy required to separate a system of particles into its constituent parts.',
+    example: 'The researchers used a supercomputer to perform a binding energy computation for the new drug molecule.'
+  },
+  {
+    id: 'bing-spellcheck',
+    term: 'Bing Spellcheck',
+    slug: 'bing-spellcheck',
+    definition: 'A cloud-based spell-checking service provided by Microsoft as part of their Cognitive Services.',
+    example: 'The application integrated the Bing Spellcheck API to provide real-time spelling corrections.'
   },
   {
     id: 'binlog',
@@ -4916,6 +3530,13 @@ export const terms: Term[] = [
     example: 'Bin sort is an efficient algorithm for sorting data that is uniformly distributed.',
   },
   {
+    id: 'bios',
+    term: 'BIOS',
+    slug: 'bios',
+    definition: 'Basic Input/Output System. Firmware used to perform hardware initialization during the booting process (power-on startup) and to provide runtime services for operating systems and programs.',
+    example: 'I had to enter the BIOS to change the boot order of my computer.',
+  },
+  {
     id: 'bit-bake',
     term: 'BitBake',
     slug: 'bit-bake',
@@ -4928,6 +3549,13 @@ export const terms: Term[] = [
     slug: 'bit-bang',
     definition: 'A technique for serial communication where the individual bits are transmitted by directly toggling a general-purpose I/O pin.',
     example: 'He used the bit bang method to implement a software-based I2C interface.'
+  },
+  {
+    id: 'bit-bang-mode',
+    term: 'Bit Bang Mode',
+    slug: 'bit-bang-mode',
+    definition: 'A technique for serial communication where the individual bits are transmitted by directly controlling the state of a general-purpose I/O pin.',
+    example: 'He used bit bang mode to communicate with a simple sensor that didn\'t have a standard serial interface.'
   },
   {
     id: 'bit-bank',
@@ -4952,7 +3580,7 @@ export const terms: Term[] = [
   },
   {
     id: 'bit-bucket-error',
-    term: 'BitBucketError',
+    term: 'BitBucket Error',
     slug: 'bit-bucket-error',
     definition: 'An error message or condition originating from the Bitbucket version control hosting service.',
     example: 'He received a Bitbucket error when trying to push his changes because he did not have permission.'
@@ -5007,6 +3635,13 @@ export const terms: Term[] = [
     example: 'He installed BitDefender on his computer to protect it from malware.'
   },
   {
+    id: 'bit-depth',
+    term: 'Bit Depth',
+    slug: 'bitdepth',
+    definition: 'The number of bits used to represent the color of a single pixel in an image or the amplitude of a single sample in an audio file.',
+    example: 'A 24-bit image has a higher bit depth than an 8-bit image, allowing it to display millions more colors.',
+  },
+  {
     id: 'bit-domain',
     term: 'BitDomain',
     slug: 'bit-domain',
@@ -5035,22 +3670,29 @@ export const terms: Term[] = [
     example: 'The custom processor had a dedicated bit engine for cryptographic operations.'
   },
   {
+    id: 'bit-error',
+    term: 'Bit Error',
+    slug: 'bit-error',
+    definition: 'An error in data transmission where a bit is flipped, from 0 to 1 or vice versa.',
+    example: 'The communication channel had a high bit error rate, causing frequent data corruption.'
+  },
+  {
     id: 'bit-error-rate',
-    term: 'BitErrorRate',
+    term: 'Bit Error Rate',
     slug: 'bit-error-rate',
     definition: 'The number of bit errors divided by the total number of transferred bits during a studied time interval.',
     example: 'The satellite communication link had a very low bit error rate.'
   },
   {
     id: 'bit-field',
-    term: 'BitField',
+    term: 'Bit Field',
     slug: 'bit-field',
     definition: 'A data structure that allows for packing multiple logical values into a single byte or word.',
     example: 'He used a bit field to store several boolean flags in a single integer to save memory.'
   },
   {
     id: 'bit-file',
-    term: 'BitFile',
+    term: 'Bit File',
     slug: 'bit-file',
     definition: 'A file containing the configuration data for a Field-Programmable Gate Array (FPGA).',
     example: 'He loaded the bit file onto the FPGA to program it with his custom logic design.'
@@ -5061,6 +3703,13 @@ export const terms: Term[] = [
     slug: 'bit-flash',
     definition: 'A non-standard term, possibly referring to programming a flash memory device bit by bit.',
     example: 'The custom programmer performed a bit flash to update the firmware.'
+  },
+  {
+    id: 'bit-flip',
+    term: 'Bit Flip',
+    slug: 'bitflip',
+    definition: 'An error in computer data in which a single bit is inverted, from 0 to 1 or vice versa. This can be caused by radiation or hardware faults.',
+    example: 'A random bit flip in memory caused the program to crash unexpectedly.',
   },
   {
     id: 'bit-flow',
@@ -5162,14 +3811,21 @@ export const terms: Term[] = [
   },
   {
     id: 'bit-map-file',
-    term: 'BitMapFile',
+    term: 'BitMap File',
     slug: 'bit-map-file',
     definition: 'An image file format that stores a bitmap digital image.',
     example: 'The BMP file format is a common type of bitmap file.'
   },
   {
+    id: 'bit-mask',
+    term: 'Bit Mask',
+    slug: 'bit-mask',
+    definition: 'A value used to set, clear, or toggle specific bits in another value using bitwise operations.',
+    example: 'He used a bit mask to extract the permission flags from a status byte.',
+  },
+  {
     id: 'bit-masking',
-    term: 'BitMasking',
+    term: 'Bit Masking',
     slug: 'bit-masking',
     definition: 'The act of using a bit mask to set, clear, or toggle specific bits in a value.',
     example: 'He used bit masking to isolate the red component of a color value.'
@@ -5308,6 +3964,13 @@ export const terms: Term[] = [
     example: 'He implemented a bit queue for the serial communication driver.'
   },
   {
+    id: 'bit-rate',
+    term: 'Bit Rate',
+    slug: 'bit-rate',
+    definition: 'The number of bits that are conveyed or processed per unit of time.',
+    example: 'The video was streamed at a bit rate of 5 megabits per second.',
+  },
+  {
     id: 'bit-rate-control',
     term: 'BitRateControl',
     slug: 'bit-rate-control',
@@ -5364,11 +4027,25 @@ export const terms: Term[] = [
     example: 'The error correction code used a bit resolver to correct single-bit errors.'
   },
   {
+    id: 'bit-rotation',
+    term: 'Bit Rotation',
+    slug: 'bit-rotation',
+    definition: 'A bitwise operation that shifts all bits in a register, where the bits that are shifted out of one end are put back into the other end.',
+    example: 'Some encryption algorithms use bit rotation as part of their process.'
+  },
+  {
     id: 'bit-routing',
     term: 'BitRouting',
     slug: 'bit-routing',
     definition: 'A non-standard term, possibly the process of routing individual bits in a network or circuit.',
     example: 'The custom switch was capable of bit routing.'
+  },
+  {
+    id: 'bit-rot',
+    term: 'Bit Rot',
+    slug: 'bitrot',
+    definition: 'Also known as data degradation or data decay, it is the gradual decay of data stored on storage media over time.',
+    example: 'File systems like ZFS have built-in checksums to detect and protect against bit rot.',
   },
   {
     id: 'bit-sample',
@@ -5427,6 +4104,13 @@ export const terms: Term[] = [
     example: 'The C++ `std::bitset` class provides several bit set operations.'
   },
   {
+    id: 'bit-shift',
+    term: 'Bit Shift',
+    slug: 'bit-shift',
+    definition: 'A bitwise operation that shifts the bits of a binary number to the left or right.',
+    example: 'He used a left bit shift to multiply a number by two.',
+  },
+  {
     id: 'bit-signal',
     term: 'BitSignal',
     slug: 'bit-signal',
@@ -5446,6 +4130,13 @@ export const terms: Term[] = [
     slug: 'bit-slice',
     definition: 'A technique for constructing a processor from modules of smaller bit width. Also, a view into a portion of a bit array.',
     example: 'He used a bit slice to extract a specific field from the data packet.',
+  },
+  {
+    id: 'bit-sliced-architecture',
+    term: 'Bit Sliced Architecture',
+    slug: 'bit-sliced-architecture',
+    definition: 'A technique for constructing a processor from modules of smaller bit width.',
+    example: 'Early supercomputers used a bit-sliced architecture to build powerful processors.'
   },
   {
     id: 'bit-slot',
@@ -5609,6 +4300,13 @@ export const terms: Term[] = [
     example: 'He checked the bit value to see if the flag was set.'
   },
   {
+    id: 'bit-vector',
+    term: 'Bit Vector',
+    slug: 'bit-vector',
+    definition: 'An array data structure that compactly stores bits.',
+    example: 'A Bloom filter is implemented using a bit vector.'
+  },
+  {
     id: 'bit-version',
     term: 'BitVersion',
     slug: 'bit-version',
@@ -5651,29 +4349,127 @@ export const terms: Term[] = [
     example: 'The sliding bit window algorithm was used to find patterns in the data.'
   },
   {
+    id: 'bitcoin-script',
+    term: 'Bitcoin Script',
+    slug: 'bitcoin-script',
+    definition: 'A simple, stack-based programming language used to define the conditions for spending bitcoins.',
+    example: 'A standard Bitcoin transaction uses a script that requires a valid digital signature.'
+  },
+  {
+    id: 'bitbucket',
+    term: 'Bitbucket',
+    slug: 'bitbucket',
+    definition: 'A web-based version control repository hosting service, owned by Atlassian, for source code and development projects that use either Mercurial or (since 2011) Git.',
+    example: 'The team uses Bitbucket for their private Git repositories and integrates it with Jira for issue tracking.',
+  },
+  {
+    id: 'bitlocker',
+    term: 'Bitlocker',
+    slug: 'bitlocker',
+    definition: 'A full-volume encryption feature included with Microsoft Windows versions starting with Windows Vista.',
+    example: 'He enabled Bitlocker on his laptop to protect his data in case it was lost or stolen.'
+  },
+  {
+    id: 'bitmap-index',
+    term: 'Bitmap Index',
+    slug: 'bitmap-index',
+    definition: 'A special kind of database index that uses bitmaps (bit arrays). They are particularly efficient for columns with a low number of distinct values.',
+    example: 'The data warehouse used a bitmap index on the "gender" column to speed up queries.'
+  },
+  {
+    id: 'bitmap-renderer',
+    term: 'Bitmap Renderer',
+    slug: 'bitmap-renderer',
+    definition: 'A component in a graphics system that renders images from a bitmap representation.',
+    example: 'Early computer graphics systems used a simple bitmap renderer.'
+  },
+  {
+    id: 'bittorrent',
+    term: 'BitTorrent',
+    slug: 'bittorrent',
+    definition: 'A communication protocol for peer-to-peer file sharing (P2P) which is used to distribute large amounts of data and electronic files over the Internet.',
+    example: 'He used BitTorrent to download the latest Linux distribution, which was faster than downloading from a single server.',
+  },
+  {
+    id: 'bittorrent-peer',
+    term: 'Bittorrent Peer',
+    slug: 'bittorrent-peer',
+    definition: 'A computer in a BitTorrent network that is downloading and uploading pieces of a file.',
+    example: 'He was connected to over 50 Bittorrent peers while downloading the movie.'
+  },
+  {
+    id: 'bivariate-analysis',
+    term: 'Bivariate Analysis',
+    slug: 'bivariate-analysis',
+    definition: 'The analysis of two variables to determine the empirical relationship between them.',
+    example: 'The data scientist performed a bivariate analysis to see if there was a correlation between ad spending and sales.'
+  },
+  {
+    id: 'bitwise-and',
+    term: 'Bitwise AND',
+    slug: 'bitwiseand',
+    definition: 'A bitwise operation that takes two equal-length binary representations and performs the logical AND operation on each pair of corresponding bits.',
+    example: 'The programmer used a bitwise AND operation to check if a specific flag was set in a status byte.',
+  },
+  {
+    id: 'bitwise-not',
+    term: 'Bitwise NOT',
+    slug: 'bitwise-not',
+    definition: 'A bitwise operation that inverts all the bits of its operand.',
+    example: 'He used the bitwise NOT operator to flip all the bits in a byte.',
+  },
+  {
+    id: 'bitwise-or',
+    term: 'Bitwise OR',
+    slug: 'bitwiseor',
+    definition: 'A bitwise operation that takes two bit patterns of equal length and performs the logical inclusive OR operation on each pair of corresponding bits.',
+    example: 'She used a bitwise OR to set multiple permission flags in a single operation.',
+  },
+  {
     id: 'bitwise-shift',
     term: 'Bitwise Shift',
-    slug: 'bitwise-shift',
+    slug: 'bitwise-shifting',
     definition: 'A bitwise operation that shifts the bits of a binary number to the left or right.',
     example: 'A bitwise shift to the left by one is equivalent to multiplying by two.',
+  },
+  {
+    id: 'bitwise-shifting',
+    term: 'Bitwise Shifting',
+    slug: 'bitwise-shifting',
+    definition: 'A bitwise operation that shifts the bits of a binary number to the left or right.',
+    example: 'Left bitwise shifting is a fast way to multiply by powers of two.',
+  },
+  {
+    id: 'bitwise-xor',
+    term: 'Bitwise XOR',
+    slug: 'bitwisexor',
+    definition: 'A bitwise operation that takes two bit patterns of equal length and performs the logical exclusive OR operation on each pair of corresponding bits.',
+    example: 'A simple encryption algorithm can be created by performing a bitwise XOR with a key.',
   },
   {
     id: 'bizops',
     term: 'BizOps',
     slug: 'bizops',
     definition: 'Business Operations, a cross-functional team that works to align business goals with operational execution.',
-    example: 'The BizOps team helped the company to improve its sales forecasting process.',
+    example: 'The BizOps team helped the company to improve its sales forecasting process.'
   },
   {
     id: 'biztalk',
     term: 'BizTalk',
     slug: 'biztalk',
     definition: 'A Microsoft server that enables companies to automate business processes.',
-    example: 'The company used BizTalk to integrate its ERP system with its CRM system.',
+    example: 'The company used BizTalk to integrate its ERP system with its CRM system.'
+  },
+  {
+    id: 'bjt-oscillator-mixed-signal',
+    term: 'BJT Oscillator (Mixed signal)',
+    slug: 'bjt-oscillator-mixed-signal',
+    definition: 'An electronic oscillator circuit that uses a Bipolar Junction Transistor (BJT) as its active element, often found in mixed-signal designs.',
+    example: 'The radio transmitter used a BJT oscillator to generate the carrier frequency.'
   },
   {
     id: 'bk-tree',
-    term: 'BKTree',
+    term: 'BK Tree',
     slug: 'bk-tree',
     definition: 'A tree data structure specialized for partitioning data in a metric space.',
     example: 'A BK-Tree is often used for spell checking, to find words that are close to a given word.'
@@ -5686,8 +4482,15 @@ export const terms: Term[] = [
     example: 'The security researcher used BlackArch for their penetration test.'
   },
   {
+    id: 'black-box',
+    term: 'Black Box',
+    slug: 'blackbox',
+    definition: 'In science, computing, and engineering, a device, system, or object which can be viewed in terms of its inputs and outputs, without any knowledge of its internal workings.',
+    example: 'In black-box testing, the tester evaluates the software without knowing its internal code structure.',
+  },
+  {
     id: 'black-box-model',
-    term: 'BlackBoxModel',
+    term: 'BlackBox Model',
     slug: 'black-box-model',
     definition: 'A system or model where the internal workings are not understood or are not important. Only the inputs and outputs are considered.',
     example: 'Many deep learning models are treated as black box models because it is difficult to interpret how they make their decisions.'
@@ -5700,18 +4503,18 @@ export const terms: Term[] = [
     example: 'The company leased black fiber from the telecom provider to build their own private network.'
   },
   {
+    id: 'black-hat',
+    term: 'Black Hat',
+    slug: 'black-hat',
+    definition: 'A hacker who violates computer security for personal gain or malice.',
+    example: 'A black hat hacker exploited a vulnerability to steal customer data.',
+  },
+  {
     id: 'black-hole-route',
-    term: 'BlackHoleRoute',
+    term: 'Black Hole Route',
     slug: 'black-hole-route',
     definition: 'A network route that silently drops traffic. It is often used to mitigate DDoS attacks.',
     example: 'The ISP configured a black hole route to drop all traffic destined for the attacked server.'
-  },
-  {
-    id: 'blacklist-filter',
-    term: 'BlacklistFilter',
-    slug: 'blacklist-filter',
-    definition: 'A filter that blocks access from entities that are on a blacklist.',
-    example: 'The email server used a blacklist filter to block messages from known spammers.'
   },
   {
     id: 'black-net',
@@ -5729,7 +4532,7 @@ export const terms: Term[] = [
   },
   {
     id: 'blackout-test',
-    term: 'BlackoutTest',
+    term: 'Blackout Test',
     slug: 'blackout-test',
     definition: 'A test where a system is subjected to a complete power failure to see how it recovers.',
     example: 'The data center performed a blackout test to validate its disaster recovery plan.'
@@ -5763,197 +4566,253 @@ export const terms: Term[] = [
     example: 'The company\'s network was protected by a powerful black wall.'
   },
   {
+    id: 'blacklist',
+    term: 'Blacklist',
+    slug: 'blacklist',
+    definition: 'A list of entities, such as IP addresses or email addresses, that are denied access to a system or service. The more modern term is "denylist".',
+    example: 'The email server maintains a blacklist of known spam sources to protect users from junk mail.',
+  },
+  {
+    id: 'blacklist-check',
+    term: 'Blacklist Check',
+    slug: 'blacklist-check',
+    definition: 'The process of checking if an IP address or domain is on a blacklist of known malicious entities.',
+    example: 'The email server performed a blacklist check on the sender\'s IP address before accepting the message.'
+  },
+  {
+    id: 'blacklist-filter',
+    term: 'Blacklist Filter',
+    slug: 'blacklist-filter',
+    definition: 'A filter that blocks access from entities that are on a blacklist.',
+    example: 'The email server used a blacklist filter to block messages from known spammers.'
+  },
+  {
     id: 'blade-array',
-    term: 'BladeArray',
+    term: 'Blade Array',
     slug: 'blade-array',
     definition: 'A storage array that is built using blade servers.',
     example: 'The data center used a blade array for high-density storage.'
   },
   {
     id: 'blade-chassis',
-    term: 'BladeChassis',
+    term: 'Blade Chassis',
     slug: 'blade-chassis',
     definition: 'An enclosure that houses multiple blade servers, providing power, cooling, and networking.',
     example: 'The data center installed a new blade chassis to increase their server density.'
   },
   {
     id: 'blade-cluster',
-    term: 'BladeCluster',
+    term: 'Blade Cluster',
     slug: 'blade-cluster',
     definition: 'A cluster of computers built using blade servers.',
     example: 'The scientific research was performed on a large blade cluster.'
   },
   {
     id: 'blade-disk',
-    term: 'BladeDisk',
+    term: 'Blade Disk',
     slug: 'blade-disk',
     definition: 'A hard drive or SSD that is designed to be used in a blade server.',
     example: 'He replaced the faulty blade disk in the server.'
   },
   {
     id: 'blade-fabric',
-    term: 'BladeFabric',
+    term: 'Blade Fabric',
     slug: 'blade-fabric',
     definition: 'The high-speed network that connects the blade servers in a chassis.',
     example: 'The blade fabric provided low-latency communication between the servers.'
   },
   {
     id: 'blade-manager',
-    term: 'BladeManager',
+    term: 'Blade Manager',
     slug: 'blade-manager',
     definition: 'Software that is used to manage a blade chassis and its servers.',
     example: 'He used the blade manager to remotely power on a new server.'
   },
   {
     id: 'blade-memory',
-    term: 'BladeMemory',
+    term: 'Blade Memory',
     slug: 'blade-memory',
     definition: 'RAM modules that are designed to be used in a blade server.',
     example: 'He upgraded the blade memory to improve the performance of the virtual machines.'
   },
   {
     id: 'blade-network',
-    term: 'BladeNetwork',
+    term: 'Blade Network',
     slug: 'blade-network',
     definition: 'The networking components within a blade chassis.',
     example: 'The blade network included redundant switches for high availability.'
   },
   {
     id: 'blade-power',
-    term: 'BladePower',
+    term: 'Blade Power',
     slug: 'blade-power',
     definition: 'The power supply system for a blade chassis.',
     example: 'The blade power system was designed for N+1 redundancy.'
   },
   {
+    id: 'blade-server',
+    term: 'Blade Server',
+    slug: 'bladeserver',
+    definition: 'A stripped-down server computer with a modular design optimized to minimize the use of physical space and energy. Blade servers have many components removed to save space, minimize power consumption, and other considerations, while still having all the functional components to be considered a computer.',
+    example: 'The data center used blade servers to achieve high-density computing in a small footprint.',
+  },
+  {
     id: 'blade-service',
-    term: 'BladeService',
+    term: 'Blade Service',
     slug: 'blade-service',
     definition: 'A service that is run on a blade server.',
     example: 'The company offered a blade service for hosting web applications.'
   },
   {
     id: 'blade-switch',
-    term: 'BladeSwitch',
+    term: 'Blade Switch',
     slug: 'blade-switch',
     definition: 'A network switch that is designed to be used in a blade chassis.',
     example: 'The blade switch provided high-speed connectivity to all the servers.'
   },
   {
+    id: 'blameless-postmortem',
+    term: 'Blameless Postmortem',
+    slug: 'blameless-postmortem',
+    definition: 'A process for analyzing an incident or outage with a focus on identifying systemic causes, not on blaming individuals.',
+    example: 'After the site outage, the team held a blameless postmortem to understand what went wrong and how to prevent it in the future.'
+  },
+  {
     id: 'blast-radius',
-    term: 'BlastRadius',
+    term: 'Blast Radius',
     slug: 'blast-radius',
     definition: 'The potential impact of a failure or security breach.',
     example: 'The company used microservices to limit the blast radius of any single component failure.'
   },
   {
+    id: 'blazor-app',
+    term: 'Blazor App',
+    slug: 'blazor-app',
+    definition: 'A web application built using Blazor, a framework from Microsoft for building interactive web UIs with C# instead of JavaScript.',
+    example: 'The .NET developer built a full-featured single-page application as a Blazor app.'
+  },
+  {
     id: 'ble-adapter',
-    term: 'BleAdapter',
+    term: 'BLE Adapter',
     slug: 'ble-adapter',
     definition: 'A hardware device that adds Bluetooth Low Energy capability to a computer.',
     example: 'He plugged in a BLE adapter to connect his new wireless keyboard.'
   },
   {
     id: 'ble-beacon',
-    term: 'BleBeacon',
+    term: 'BLE Beacon',
     slug: 'ble-beacon',
     definition: 'A small Bluetooth Low Energy device that broadcasts a unique identifier. Smartphones can detect these beacons and perform actions based on their proximity.',
     example: 'The museum used BLE beacons to provide location-based information to visitors.'
   },
   {
     id: 'ble-controller',
-    term: 'BleController',
+    term: 'BLE Controller',
     slug: 'ble-controller',
     definition: 'The hardware component in a device that manages the Bluetooth Low Energy radio.',
     example: 'The BLE controller is responsible for sending and receiving packets.'
   },
   {
     id: 'ble-daemon',
-    term: 'BleDaemon',
+    term: 'BLE Daemon',
     slug: 'ble-daemon',
     definition: 'A background process that manages Bluetooth Low Energy connections and services.',
     example: 'The BLE daemon on his laptop handled the connection to his heart rate monitor.'
   },
   {
     id: 'ble-driver',
-    term: 'BleDriver',
+    term: 'BLE Driver',
     slug: 'ble-driver',
     definition: 'A software driver that allows the operating system to communicate with a Bluetooth Low Energy controller.',
     example: 'He had to install the correct BLE driver for his new adapter.'
   },
   {
     id: 'ble-firmware',
-    term: 'BleFirmware',
+    term: 'BLE Firmware',
     slug: 'ble-firmware',
     definition: 'The firmware that runs on a Bluetooth Low Energy device.',
     example: 'He updated the BLE firmware on his fitness tracker to get the latest features.'
   },
   {
     id: 'ble-gateway',
-    term: 'BleGateway',
+    term: 'BLE Gateway',
     slug: 'ble-gateway',
     definition: 'A device that connects a Bluetooth Low Energy network to another network, such as the internet.',
     example: 'The smart home system used a BLE gateway to allow remote control of the lights.'
   },
   {
     id: 'ble-host',
-    term: 'BleHost',
+    term: 'BLE Host',
     slug: 'ble-host',
     definition: 'The part of the Bluetooth Low Energy stack that runs on the application processor and handles the higher-level protocols.',
     example: 'The mobile app acted as the BLE host for the connected sensor.'
   },
   {
     id: 'ble-layer',
-    term: 'BleLayer',
+    term: 'BLE Layer',
     slug: 'ble-layer',
     definition: 'A layer in the Bluetooth Low Energy protocol stack, such as the Physical Layer or the Link Layer.',
     example: 'The problem was traced to an issue in the BLE layer of the firmware.'
   },
   {
     id: 'ble-mesh',
-    term: 'BleMesh',
+    term: 'BLE Mesh',
     slug: 'ble-mesh',
     definition: 'A network topology for Bluetooth Low Energy devices that allows for many-to-many communication.',
     example: 'The smart lighting system used a BLE mesh network to control all the lights in the building.'
   },
   {
     id: 'ble-scanner',
-    term: 'BleScanner',
+    term: 'BLE Scanner',
     slug: 'ble-scanner',
     definition: 'A device or application that can discover and connect to Bluetooth Low Energy devices.',
     example: 'He used a BLE scanner app on his phone to find his lost keys.'
   },
   {
     id: 'ble-service',
-    term: 'BleService',
+    term: 'BLE Service',
     slug: 'ble-service',
     definition: 'In Bluetooth Low Energy, a collection of characteristics that define a specific function of a device.',
     example: 'The heart rate monitor exposed a Heart Rate Service with a Heart Rate Measurement characteristic.'
   },
   {
     id: 'ble-stack',
-    term: 'BleStack',
+    term: 'BLE Stack',
     slug: 'ble-stack',
     definition: 'The software that implements the Bluetooth Low Energy protocol stack.',
     example: 'He used an open-source BLE stack for his custom IoT device.'
   },
   {
     id: 'blend-pipeline',
-    term: 'BlendPipeline',
+    term: 'Blend Pipeline',
     slug: 'blend-pipeline',
     definition: 'In computer graphics, the part of the rendering pipeline that combines the colors of objects with the background.',
     example: 'The game used a custom blend pipeline to create a transparency effect.'
   },
   {
+    id: 'blob',
+    term: 'BLOB (Binary Large Object)',
+    slug: 'blob',
+    definition: 'A collection of binary data stored as a single entity in a database management system.',
+    example: 'The user\'s profile picture was stored as a BLOB in the database.',
+  },
+  {
+    id: 'blob-storage',
+    term: 'Blob Storage',
+    slug: 'blob-storage',
+    definition: 'A type of data storage for large binary objects, such as images and videos.',
+    example: 'Azure Blob Storage is a popular cloud service for storing unstructured data.',
+  },
+  {
     id: 'block-adapter',
-    term: 'BlockAdapter',
+    term: 'Block Adapter',
     slug: 'block-adapter',
     definition: 'A non-standard term, possibly a hardware adapter for a block storage device.',
     example: 'He needed a special block adapter to connect the old hard drive.'
   },
   {
     id: 'block-allocator',
-    term: 'BlockAllocator',
+    term: 'Block Allocator',
     slug: 'block-allocator',
     definition: 'A memory allocator that allocates memory in fixed-size blocks.',
     example: 'The game engine used a block allocator for its object pool to reduce memory fragmentation.'
@@ -5963,7 +4822,7 @@ export const terms: Term[] = [
     term: 'Block Cache',
     slug: 'block-cache',
     definition: 'A cache that stores blocks of data from a storage device to improve performance.',
-    example: 'The database performance was improved by increasing the size of the block cache.',
+    example: 'The database performance was improved by increasing the size of the block cache.'
   },
   {
     id: 'block-chain-node',
@@ -5974,793 +4833,1800 @@ export const terms: Term[] = [
   },
   {
     id: 'block-checksum',
-    term: 'BlockChecksum',
+    term: 'Block Checksum',
     slug: 'block-checksum',
     definition: 'A checksum calculated for a block of data to verify its integrity.',
     example: 'The file system uses a block checksum to detect data corruption.'
   },
   {
+    id: 'block-cipher',
+    term: 'Block Cipher',
+    slug: 'blockcipher',
+    definition: 'A symmetric key cipher that operates on fixed-length groups of bits, called blocks.',
+    example: 'AES is a popular block cipher that encrypts data in 128-bit blocks.',
+  },
+  {
     id: 'block-cipher-mode',
-    term: 'BlockCipherMode',
+    term: 'Block Cipher Mode',
     slug: 'block-cipher-mode',
     definition: 'A mode of operation for a block cipher that allows it to encrypt messages longer than a single block.',
     example: 'CBC (Cipher Block Chaining) is a common block cipher mode.'
   },
   {
     id: 'block-cluster',
-    term: 'BlockCluster',
+    term: 'Block Cluster',
     slug: 'block-cluster',
     definition: 'A group of blocks on a storage device that are treated as a single unit.',
     example: 'The file system allocated a new block cluster for the growing file.'
   },
   {
     id: 'block-commit',
-    term: 'BlockCommit',
+    term: 'Block Commit',
     slug: 'block-commit',
     definition: 'In a blockchain, the process of adding a new block to the chain.',
     example: 'The block commit was successful after the majority of nodes reached a consensus.'
   },
   {
     id: 'block-compression',
-    term: 'BlockCompression',
+    term: 'Block Compression',
     slug: 'block-compression',
     definition: 'A type of data compression that operates on fixed-size blocks of data.',
     example: 'The file archive used block compression to reduce its size.'
   },
   {
     id: 'block-copy',
-    term: 'BlockCopy',
+    term: 'Block Copy',
     slug: 'block-copy',
     definition: 'The process of copying a block of data from one location to another.',
     example: 'He performed a block copy of the disk image to a new drive.'
   },
   {
+    id: 'block-device',
+    term: 'Block Device',
+    slug: 'block-device',
+    definition: 'A storage device that moves data in fixed-size blocks, such as a hard drive or SSD.',
+    example: 'In Linux, hard drives are represented as block devices in the `/dev` directory.',
+  },
+  {
     id: 'block-driver',
-    term: 'BlockDriver',
+    term: 'Block Driver',
     slug: 'block-driver',
     definition: 'A device driver that manages a block device, such as a hard drive.',
     example: 'The Linux kernel has a generic block driver that can be used with many different types of storage devices.'
   },
   {
     id: 'block-dump',
-    term: 'BlockDump',
+    term: 'Block Dump',
     slug: 'block-dump',
     definition: 'A raw dump of the data in a block on a storage device.',
     example: 'He created a block dump of the corrupted sector to analyze the damage.'
   },
   {
     id: 'block-engine',
-    term: 'BlockEngine',
+    term: 'Block Engine',
     slug: 'block-engine',
     definition: 'A non-standard term, possibly a software engine that operates on blocks of data.',
     example: 'The custom database had its own block engine for storing and retrieving data.'
   },
   {
     id: 'block-entry',
-    term: 'BlockEntry',
+    term: 'Block Entry',
     slug: 'block-entry',
     definition: 'An entry in a data structure that points to a block of data.',
     example: 'The file allocation table contains a block entry for each file on the disk.'
   },
   {
+    id: 'block-explorer',
+    term: 'Block Explorer',
+    slug: 'block-explorer',
+    definition: 'A web-based tool for exploring the contents of a blockchain, such as viewing transactions and blocks.',
+    example: 'He used a block explorer to check the status of his Bitcoin transaction.',
+  },
+  {
     id: 'block-file',
-    term: 'BlockFile',
+    term: 'Block File',
     slug: 'block-file',
     definition: 'A file that is stored as a series of blocks on a storage device.',
     example: 'The database used a single large block file to store all its data.'
   },
   {
+    id: 'block-header',
+    term: 'Block Header',
+    slug: 'block-header',
+    definition: 'In a blockchain, the part of a block that contains metadata about the block, such as the hash of the previous block, a timestamp, and a nonce.',
+    example: 'Miners compete to find a valid hash for the block header.',
+  },
+  {
     id: 'block-id',
-    term: 'BlockID',
+    term: 'Block ID',
     slug: 'block-id',
     definition: 'A unique identifier for a block of data.',
     example: 'Each block in the blockchain has a unique block ID.'
   },
   {
     id: 'block-index',
-    term: 'BlockIndex',
+    term: 'Block Index',
     slug: 'block-index',
     definition: 'An index that maps keys to blocks of data.',
     example: 'The database used a block index to quickly find the data for a specific customer.'
   },
   {
+    id: 'block-io',
+    term: 'Block I/O',
+    slug: 'block-io',
+    definition: 'Input/output operations that involve reading or writing data in fixed-size blocks.',
+    example: 'The database performance was limited by slow block I/O from the hard drive.',
+  },
+  {
+    id: 'block-level-storage',
+    term: 'Block-level Storage',
+    slug: 'block-level-storage',
+    definition: 'A type of data storage where data is stored in volumes called blocks. Each block can be controlled as an individual hard drive.',
+    example: 'Storage Area Networks (SANs) provide block-level storage to servers.',
+  },
+  {
     id: 'block-link',
-    term: 'BlockLink',
+    term: 'Block Link',
     slug: 'block-link',
     definition: 'In a blockchain, the link between one block and the next, typically the hash of the previous block.',
     example: 'The block link ensures the integrity of the blockchain.'
   },
   {
     id: 'block-list',
-    term: 'BlockList',
+    term: 'Block List',
     slug: 'block-list',
     definition: 'A list of entities that are denied access to a system. A more modern term is "denylist".',
     example: 'The firewall used a block list to prevent access from known malicious IP addresses.'
   },
   {
     id: 'block-loader',
-    term: 'BlockLoader',
+    term: 'Block Loader',
     slug: 'block-loader',
     definition: 'A program that loads data in blocks.',
     example: 'The custom bootloader was a simple block loader.'
   },
   {
     id: 'block-map',
-    term: 'BlockMap',
+    term: 'Block Map',
     slug: 'block-map',
     definition: 'A data structure that maps logical block addresses to physical block addresses.',
     example: 'The file system uses a block map to keep track of where files are stored on the disk.'
   },
   {
     id: 'block-mask',
-    term: 'BlockMask',
+    term: 'Block Mask',
     slug: 'block-mask',
     definition: 'A non-standard term, possibly a bitmask used at the block level.',
     example: 'He used a block mask to select specific blocks for processing.'
   },
   {
     id: 'block-merge',
-    term: 'BlockMerge',
+    term: 'Block Merge',
     slug: 'block-merge',
     definition: 'The process of merging two or more blocks of data.',
     example: 'The version control system performed a block merge to combine the changes from two different branches.'
   },
   {
     id: 'block-message',
-    term: 'BlockMessage',
+    term: 'Block Message',
     slug: 'block-message',
     definition: 'A message that is composed of a block of data.',
     example: 'The protocol used block messages for efficient communication.'
   },
   {
     id: 'block-metadata',
-    term: 'BlockMetadata',
+    term: 'Block Metadata',
     slug: 'block-metadata',
     definition: 'Data about a block of data, such as its size, creation date, and permissions.',
     example: 'The file system stores block metadata in its inodes.'
   },
   {
     id: 'block-model',
-    term: 'BlockModel',
+    term: 'Block Model',
     slug: 'block-model',
     definition: 'A computational model that operates on blocks of data.',
     example: 'The compression algorithm used a statistical block model.'
   },
   {
     id: 'block-node',
-    term: 'BlockNode',
+    term: 'Block Node',
     slug: 'block-node',
     definition: 'In a distributed storage system, a node that is responsible for storing and retrieving blocks of data.',
     example: 'The Ceph cluster consisted of multiple block nodes.'
   },
   {
     id: 'block-object',
-    term: 'BlockObject',
+    term: 'Block Object',
     slug: 'block-object',
     definition: 'An object that is stored as a block of data.',
     example: 'The object storage system treated each file as a block object.'
   },
   {
     id: 'block-offset',
-    term: 'BlockOffset',
+    term: 'Block Offset',
     slug: 'block-offset',
     definition: 'The position of a byte within a block of data.',
     example: 'He used the block offset to read a specific field from the data record.'
   },
   {
     id: 'block-operation',
-    term: 'BlockOperation',
+    term: 'Block Operation',
     slug: 'block-operation',
     definition: 'An operation that is performed on a block of data.',
     example: 'The encryption algorithm performed a series of block operations on the data.'
   },
   {
     id: 'block-packet',
-    term: 'BlockPacket',
+    term: 'Block Packet',
     slug: 'block-packet',
     definition: 'A network packet that contains a block of data.',
     example: 'The file transfer protocol used block packets to send the file.'
   },
   {
     id: 'block-parser',
-    term: 'BlockParser',
+    term: 'Block Parser',
     slug: 'block-parser',
     definition: 'A parser that reads and interprets data in blocks.',
     example: 'He wrote a block parser for the custom file format.'
   },
   {
     id: 'block-partition',
-    term: 'BlockPartition',
+    term: 'Block Partition',
     slug: 'block-partition',
     definition: 'A partition on a storage device that is formatted for block storage.',
     example: 'He created a new block partition for the database.'
   },
   {
     id: 'block-patch',
-    term: 'BlockPatch',
+    term: 'Block Patch',
     slug: 'block-patch',
     definition: 'A patch that modifies data at the block level.',
     example: 'The software update was delivered as a block patch to reduce the download size.'
   },
   {
     id: 'block-payload',
-    term: 'BlockPayload',
+    term: 'Block Payload',
     slug: 'block-payload',
     definition: 'The data portion of a block.',
     example: 'The block header contained the checksum of the block payload.'
   },
   {
     id: 'block-pool',
-    term: 'BlockPool',
+    term: 'Block Pool',
     slug: 'block-pool',
     definition: 'A pool of pre-allocated blocks of memory.',
     example: 'The memory manager used a block pool to speed up allocations.'
   },
   {
     id: 'block-protocol',
-    term: 'BlockProtocol',
+    term: 'Block Protocol',
     slug: 'block-protocol',
     definition: 'A communication protocol that operates on blocks of data.',
     example: 'The iSCSI protocol is a block protocol for accessing storage over a network.'
   },
   {
     id: 'block-queue',
-    term: 'BlockQueue',
+    term: 'Block Queue',
     slug: 'block-queue',
     definition: 'A queue that stores blocks of data.',
     example: 'The I/O scheduler used a block queue to manage disk requests.'
   },
   {
     id: 'block-reader',
-    term: 'BlockReader',
+    term: 'Block Reader',
     slug: 'block-reader',
     definition: 'A program or component that reads data in blocks.',
     example: 'He wrote a simple block reader to read a large file efficiently.'
   },
   {
     id: 'block-region',
-    term: 'BlockRegion',
+    term: 'Block Region',
     slug: 'block-region',
     definition: 'A contiguous area of blocks on a storage device.',
     example: 'The file was stored in a single block region for better performance.'
   },
   {
     id: 'block-repair',
-    term: 'BlockRepair',
+    term: 'Block Repair',
     slug: 'block-repair',
     definition: 'The process of repairing a corrupted block of data.',
     example: 'The RAID system automatically performed a block repair when it detected a checksum error.'
   },
   {
     id: 'block-replica',
-    term: 'BlockReplica',
+    term: 'Block Replica',
     slug: 'block-replica',
     definition: 'A copy of a block of data stored on a different device for redundancy.',
     example: 'The distributed file system stored three block replicas for each block of data.'
   },
   {
     id: 'block-request',
-    term: 'BlockRequest',
+    term: 'Block Request',
     slug: 'block-request',
     definition: 'A request for a block of data.',
     example: 'The application sent a block request to the storage server.'
   },
   {
     id: 'block-resolver',
-    term: 'BlockResolver',
+    term: 'Block Resolver',
     slug: 'block-resolver',
     definition: 'A non-standard term, possibly a component that resolves block addresses.',
     example: 'The custom file system had its own block resolver.'
   },
   {
     id: 'block-routing',
-    term: 'BlockRouting',
+    term: 'Block Routing',
     slug: 'block-routing',
     definition: 'The process of routing requests for blocks of data in a distributed storage system.',
     example: 'The Ceph storage cluster uses a dynamic block routing algorithm.'
   },
   {
     id: 'block-scanner',
-    term: 'BlockScanner',
+    term: 'Block Scanner',
     slug: 'block-scanner',
     definition: 'A tool that scans a storage device for bad blocks.',
     example: 'He ran a block scanner on the old hard drive to check its health.'
   },
   {
     id: 'block-scheduler',
-    term: 'BlockScheduler',
-    slug: 'block-scheduler',
+slug: 'block-scheduler',
     definition: 'A component in an operating system that manages the order of I/O requests to a block device.',
     example: 'The Linux kernel has several different block schedulers to choose from.'
   },
   {
     id: 'block-sector',
-    term: 'BlockSector',
+    term: 'Block Sector',
     slug: 'block-sector',
     definition: 'A sector on a storage device that is part of a block.',
     example: 'A block is typically composed of multiple block sectors.'
   },
   {
     id: 'block-sensor',
-    term: 'BlockSensor',
+    term: 'Block Sensor',
     slug: 'block-sensor',
     definition: 'A non-standard term, possibly a sensor that detects blocks.',
     example: 'The factory automation system used a block sensor to detect when a new part was in position.'
   },
   {
     id: 'block-server',
-    term: 'BlockServer',
+    term: 'Block Server',
     slug: 'block-server',
     definition: 'A server that provides block-level storage.',
     example: 'The iSCSI target was a dedicated block server.'
   },
   {
     id: 'block-service',
-    term: 'BlockService',
+    term: 'Block Service',
     slug: 'block-service',
     definition: 'A service that provides block-level storage.',
     example: 'Amazon EBS is a popular block service.'
   },
   {
     id: 'block-session',
-    term: 'BlockSession',
+    term: 'Block Session',
     slug: 'block-session',
     definition: 'A communication session that involves the transfer of blocks of data.',
     example: 'The two servers established a block session to replicate the database.'
   },
   {
     id: 'block-set',
-    term: 'BlockSet',
+    term: 'Block Set',
     slug: 'block-set',
     definition: 'A collection of blocks.',
     example: 'The file was stored as a block set on the distributed file system.'
   },
   {
     id: 'block-shift',
-    term: 'BlockShift',
+    term: 'Block Shift',
     slug: 'block-shift',
     definition: 'A non-standard term, possibly the act of shifting or moving blocks of data.',
     example: 'The storage array performed a block shift to rebalance the data.'
   },
   {
     id: 'block-signal',
-    term: 'BlockSignal',
+    term: 'Block Signal',
     slug: 'block-signal',
     definition: 'A non-standard term, possibly a signal related to a block of data.',
     example: 'The hardware sent a block signal to indicate that the data transfer was complete.'
   },
   {
     id: 'block-slice',
-    term: 'BlockSlice',
+    term: 'Block Slice',
     slug: 'block-slice',
     definition: 'A portion of a block of data.',
     example: 'He read a block slice to get just the data he needed.'
   },
   {
     id: 'block-space',
-    term: 'BlockSpace',
+    term: 'Block Space',
     slug: 'block-space',
     definition: 'The amount of storage space available in a blockchain for transactions.',
     example: 'The high demand for block space on the Ethereum network has led to high transaction fees.'
   },
   {
     id: 'block-stack',
-    term: 'BlockStack',
+    term: 'Block Stack',
     slug: 'block-stack',
     definition: 'A stack data structure that stores blocks of data.',
     example: 'The custom memory manager used a block stack.'
   },
   {
     id: 'block-stamp',
-    term: 'BlockStamp',
+    term: 'Block Stamp',
     slug: 'block-stamp',
     definition: 'A non-standard term, possibly a timestamp associated with a block.',
     example: 'The blockchain protocol included a block stamp to record the creation time of each block.'
   },
   {
     id: 'block-state',
-    term: 'BlockState',
+    term: 'Block State',
     slug: 'block-state',
     definition: 'The state of a block of data.',
     example: 'The distributed file system tracked the block state to ensure consistency.'
   },
   {
+    id: 'block-storage',
+    term: 'Block Storage',
+    slug: 'blockstorage',
+    definition: 'A type of data storage where data is stored in volumes referred to as blocks. Each block acts as an individual hard drive and is configured by the administrator.',
+    example: 'Cloud providers like AWS offer block storage (EBS) that can be attached to virtual machines for persistent storage.',
+  },
+  {
     id: 'block-storage-node',
-    term: 'BlockStorageNode',
+    term: 'Block Storage Node',
     slug: 'block-storage-node',
     definition: 'A node in a distributed storage system that provides block storage.',
     example: 'He added a new block storage node to the Ceph cluster to increase its capacity.'
   },
   {
     id: 'block-stream',
-    term: 'BlockStream',
+    term: 'Block Stream',
     slug: 'block-stream',
     definition: 'A stream of data that is composed of blocks.',
     example: 'The application processed a block stream from the network.'
   },
   {
     id: 'block-structure',
-    term: 'BlockStructure',
+    term: 'Block Structure',
     slug: 'block-structure',
     definition: 'The internal structure of a block of data.',
     example: 'He had to understand the block structure to parse the custom file format.'
   },
   {
     id: 'block-switch',
-    term: 'BlockSwitch',
+    term: 'Block Switch',
     slug: 'block-switch',
     definition: 'A non-standard term, possibly a switch that operates on blocks of data.',
     example: 'The custom storage fabric used high-speed block switches.'
   },
   {
     id: 'block-system',
-    term: 'BlockSystem',
+    term: 'Block System',
     slug: 'block-system',
     definition: 'A system that operates on blocks of data.',
     example: 'A database is a type of block system.'
   },
   {
     id: 'block-tag',
-    term: 'BlockTag',
+    term: 'Block Tag',
     slug: 'block-tag',
     definition: 'A piece of metadata associated with a block of data.',
     example: 'The file system used a block tag to indicate the type of data in the block.'
   },
   {
     id: 'block-timer',
-    term: 'BlockTimer',
+    term: 'Block Timer',
     slug: 'block-timer',
     definition: 'A non-standard term, possibly a timer associated with a block of data.',
     example: 'The real-time system used a block timer for precise scheduling.'
   },
   {
     id: 'block-token',
-    term: 'BlockToken',
+    term: 'Block Token',
     slug: 'block-token',
     definition: 'A non-standard term, possibly a token that represents a block of data.',
     example: 'The distributed ledger used block tokens to track ownership.'
   },
   {
     id: 'block-trace',
-    term: 'BlockTrace',
+    term: 'Block Trace',
     slug: 'block-trace',
     definition: 'A trace or log of operations on blocks of data.',
     example: 'He enabled block trace to debug the storage performance issue.'
   },
   {
     id: 'block-tracker',
-    term: 'BlockTracker',
+    term: 'Block Tracker',
     slug: 'block-tracker',
     definition: 'A tool for tracking or monitoring blocks of data.',
     example: 'The distributed file system had a built-in block tracker.'
   },
   {
     id: 'block-transfer',
-    term: 'BlockTransfer',
+    term: 'Block Transfer',
     slug: 'block-transfer',
     definition: 'The process of transferring data in blocks.',
     example: 'The DMA controller performed a high-speed block transfer from memory to the peripheral.'
   },
   {
     id: 'block-tree',
-    term: 'BlockTree',
+    term: 'Block Tree',
     slug: 'block-tree',
     definition: 'A tree data structure where each node represents a block of data.',
     example: 'The custom file system used a block tree to organize the data.'
   },
   {
     id: 'block-trigger',
-    term: 'BlockTrigger',
+    term: 'Block Trigger',
     slug: 'block-trigger',
     definition: 'A trigger that is activated by an operation on a block of data.',
     example: 'The database had a block trigger that logged all changes to a specific table.'
   },
   {
     id: 'block-tunnel',
-    term: 'BlockTunnel',
+    term: 'Block Tunnel',
     slug: 'block-tunnel',
     definition: 'A non-standard term, possibly a logical connection that transports blocks of data.',
     example: 'They created a block tunnel to replicate the database over the WAN.'
   },
   {
     id: 'block-upgrade',
-    term: 'BlockUpgrade',
+    term: 'Block Upgrade',
     slug: 'block-upgrade',
     definition: 'The process of upgrading the format or structure of blocks of data.',
     example: 'The database required a block upgrade to support the new features.'
   },
   {
     id: 'block-validator',
-    term: 'BlockValidator',
+    term: 'Block Validator',
     slug: 'block-validator',
     definition: 'A component in a blockchain network that is responsible for validating new blocks.',
     example: 'The block validator checked the proof-of-work and all the transactions in the new block.'
   },
   {
     id: 'block-value',
-    term: 'BlockValue',
+    term: 'Block Value',
     slug: 'block-value',
     definition: 'The data contained within a block.',
     example: 'He inspected the block value to find the specific piece of information he needed.'
   },
   {
     id: 'block-vector',
-    term: 'BlockVector',
+    term: 'Block Vector',
     slug: 'block-vector',
     definition: 'A vector where each element is a block of data.',
     example: 'The scientific computing application used a block vector to represent the simulation state.'
   },
   {
     id: 'block-version',
-    term: 'BlockVersion',
+    term: 'Block Version',
     slug: 'block-version',
     definition: 'The version number of a block format.',
     example: 'The new software was not compatible with the old block version.'
   },
   {
     id: 'block-view',
-    term: 'BlockView',
+    term: 'Block View',
     slug: 'block-view',
     definition: 'A way of looking at or interpreting data at the block level.',
     example: 'The debugging tool provided a block view of the file system.'
   },
   {
     id: 'block-watcher',
-    term: 'BlockWatcher',
+    term: 'Block Watcher',
     slug: 'block-watcher',
     definition: 'A tool for monitoring blocks of data.',
     example: 'He used a block watcher to see when new blocks were added to the blockchain.'
   },
   {
     id: 'block-window',
-    term: 'BlockWindow',
+    term: 'Block Window',
     slug: 'block-window',
     definition: 'A fixed-size window into a stream of blocks.',
     example: 'The sliding block window algorithm was used to process the streaming data.'
   },
   {
+    id: 'blockchain',
+    term: 'Blockchain',
+    slug: 'blockchain',
+    definition: 'A blockchain is a distributed, immutable ledger that is used to record transactions and track assets in a business network. An asset can be tangible (a house, car, cash, land) or intangible (intellectual property, patents, copyrights, branding).',
+    example: 'Bitcoin uses a blockchain to record all transactions. Each "block" contains a list of transactions, and it\'s linked to the previous one, creating a secure and unchangeable chain.',
+  },
+  {
+    id: 'blockchain-node',
+    term: 'Blockchain Node',
+    slug: 'blockchain-node',
+    definition: 'A computer connected to a blockchain network that helps to validate and relay transactions.',
+    example: 'He ran a full Bitcoin blockchain node to support the network.',
+  },
+  {
+    id: 'blockquote-tag',
+    term: 'Blockquote Tag',
+    slug: 'blockquote-tag',
+    definition: 'An HTML tag used to indicate that the enclosed text is an extended quotation.',
+    example: 'The blog post used the `<blockquote>` tag to format the quote from the book.',
+  },
+  {
+    id: 'bloom-filter',
+    term: 'Bloom Filter',
+    slug: 'bloom-filter',
+    definition: 'A space-efficient probabilistic data structure that is used to test whether an element is a member of a set. False positives are possible, but false negatives are not.',
+    example: 'Google Chrome uses a Bloom filter to check if a URL is on a list of malicious websites.',
+  },
+  {
     id: 'bloom-hash',
-    term: 'BloomHash',
+    term: 'Bloom Hash',
     slug: 'bloom-hash',
     definition: 'A hash function used in a Bloom filter.',
     example: 'The Bloom filter used three different bloom hash functions to reduce the probability of false positives.'
   },
   {
     id: 'bloom-index',
-    term: 'BloomIndex',
+    term: 'Bloom Index',
     slug: 'bloom-index',
     definition: 'An index that uses a Bloom filter to speed up lookups.',
     example: 'The database used a bloom index to quickly check if a key existed before performing a more expensive disk read.'
   },
   {
     id: 'bloom-key',
-    term: 'BloomKey',
+    term: 'Bloom Key',
     slug: 'bloom-key',
     definition: 'A key that is inserted into a Bloom filter.',
     example: 'He added the user ID as a bloom key to the filter.'
   },
   {
+    id: 'bloatware',
+    term: 'Bloatware',
+    slug: 'bloatware',
+    definition: 'Software that has become so large and complex that it is slow and inefficient. Also refers to unwanted pre-installed software.',
+    example: 'He bought a new laptop and spent an hour uninstalling all the bloatware that came with it.',
+  },
+  {
     id: 'blue-bugging',
-    term: 'BlueBugging',
+    term: 'Blue Bugging',
     slug: 'blue-bugging',
     definition: 'A hacking technique that allows an attacker to access a Bluetooth-enabled device and use its features.',
     example: 'The attacker used bluebugging to remotely make calls from the victim\'s phone.'
   },
   {
+    id: 'blue-green-deployment',
+    term: 'Blue-Green Deployment',
+    slug: 'blue-green-deployment',
+    definition: 'A software release strategy that involves running two identical production environments, "blue" and "green". The new version is deployed to the green environment, and once it is tested, traffic is switched from blue to green.',
+    example: 'Using a blue-green deployment allowed them to release the new version of the website with zero downtime.'
+  },
+  {
     id: 'blue-hacking',
-    term: 'BlueHacking',
+    term: 'Blue Hacking',
     slug: 'blue-hacking',
     definition: 'The act of hacking into a Bluetooth-enabled device.',
     example: 'Bluehacking is a serious security risk for devices with outdated Bluetooth firmware.'
   },
   {
     id: 'blue-jacking',
-    term: 'BlueJacking',
+    term: 'Blue Jacking',
     slug: 'blue-jacking',
     definition: 'The sending of unsolicited messages over Bluetooth to Bluetooth-enabled devices.',
     example: 'He received a spam message on his phone via bluejacking.'
   },
   {
     id: 'blue-snarfing',
-    term: 'BlueSnarfing',
+    term: 'Blue Snarfing',
     slug: 'blue-snarfing',
     definition: 'The unauthorized access of information from a wireless device through a Bluetooth connection.',
     example: 'The attacker used bluesnarfing to steal the contact list from the victim\'s phone.'
   },
   {
+    id: 'blue-team',
+    term: 'Blue Team',
+    slug: 'blueteam',
+    definition: 'In cybersecurity, a group of individuals who are responsible for defending an enterprise\'s information systems against attacks.',
+    example: 'During the security drill, the blue team successfully defended the network against the red team\'s simulated attack.',
+  },
+  {
+    id: 'blue-team-operation',
+    term: 'Blue Team Operation',
+    slug: 'blue-team-operation',
+    definition: 'In cybersecurity, an exercise where a blue team defends a network against a simulated attack by a red team.',
+    example: 'The company runs a quarterly blue team operation to test its security defenses.'
+  },
+  {
     id: 'blueprint-file',
-    term: 'BlueprintFile',
+    term: 'Blueprint File',
     slug: 'blueprint-file',
     definition: 'A file that defines the structure or configuration of a system.',
     example: 'Unreal Engine uses blueprint files to define game logic without writing code.'
   },
   {
     id: 'bluetooth-adaptor',
-    term: 'BluetoothAdaptor',
+    term: 'Bluetooth Adaptor',
     slug: 'bluetooth-adaptor',
     definition: 'A hardware device that adds Bluetooth capability to a computer.',
     example: 'He plugged in a Bluetooth adaptor to connect his wireless mouse.'
   },
   {
     id: 'bluetooth-driver',
-    term: 'BluetoothDriver',
+    term: 'Bluetooth Driver',
     slug: 'bluetooth-driver',
     definition: 'A software driver that allows the operating system to communicate with a Bluetooth adapter.',
     example: 'He had to update his Bluetooth driver to fix a connection issue.'
   },
   {
+    id: 'bluetooth-le',
+    term: 'Bluetooth LE',
+    slug: 'bluetoothle',
+    definition: 'Bluetooth Low Energy is a power-conserving variant of Bluetooth, intended for applications that do not require continuous data transfer.',
+    example: 'Your fitness tracker uses Bluetooth LE to sync data with your phone without draining its battery.'
+  },
+  {
     id: 'bluetooth-module',
-    term: 'BluetoothModule',
+    term: 'Bluetooth Module',
     slug: 'bluetooth-module',
     definition: 'A hardware module that provides Bluetooth connectivity.',
     example: 'The IoT device used a small Bluetooth module to communicate with a smartphone app.'
   },
   {
     id: 'bluetooth-monitor',
-    term: 'BluetoothMonitor',
+    term: 'Bluetooth Monitor',
     slug: 'bluetooth-monitor',
     definition: 'A tool for monitoring Bluetooth traffic.',
     example: 'He used a Bluetooth monitor to debug the communication between his two devices.'
   },
   {
     id: 'bluetooth-security',
-    term: 'BluetoothSecurity',
+    term: 'Bluetooth Security',
     slug: 'bluetooth-security',
     definition: 'The measures taken to protect Bluetooth devices and communications from unauthorized access.',
     example: 'Modern Bluetooth security includes features like encryption and secure pairing.'
   },
   {
     id: 'bluetooth-service',
-    term: 'BluetoothService',
+    term: 'Bluetooth Service',
     slug: 'bluetooth-service',
     definition: 'In Bluetooth, a collection of characteristics that define a specific function of a device.',
     example: 'The wireless headphones exposed a Headset Service and an Audio Sink Service.'
   },
   {
     id: 'bluetooth-socket',
-    term: 'BluetoothSocket',
+    term: 'Bluetooth Socket',
     slug: 'bluetooth-socket',
     definition: 'A programming interface for sending and receiving data over a Bluetooth connection.',
     example: 'The Android app used a Bluetooth socket to communicate with the Arduino.'
   },
   {
+    id: 'bluetooth-stack',
+    term: 'Bluetooth Stack',
+    slug: 'bluetoothstack',
+    definition: 'The software that implements the Bluetooth protocols, allowing an operating system to communicate with Bluetooth devices.',
+    example: 'He had to update his computer\'s Bluetooth stack to support the new features of his wireless headphones.',
+  },
+  {
+    id: 'blurring-algorithm',
+    term: 'Blurring Algorithm',
+    slug: 'blurring-algorithm',
+    definition: 'An algorithm used in image processing to reduce detail and noise, creating a "blurry" effect.',
+    example: 'A Gaussian blur is a common type of blurring algorithm.'
+  },
+  {
+    id: 'bmc',
+    term: 'BMC (Baseboard Management Controller)',
+    slug: 'bmc',
+    definition: 'A specialized service processor that monitors the physical state of a computer, network server or other hardware device using sensors and communicating with the system administrator through an independent connection.',
+    example: 'The sysadmin used the BMC to remotely power cycle the server even though the operating system was unresponsive.',
+  },
+  {
+    id: 'bmp-file',
+    term: 'BMP File',
+    slug: 'bmp-file',
+    definition: 'A bitmap image file format used to store bitmap digital images, independently of the display device.',
+    example: 'He saved the screenshot as a BMP file.',
+  },
+  {
+    id: 'bms-battery-management-system',
+    term: 'BMS (Battery Management System)',
+    slug: 'bms-battery-management-system',
+    definition: 'An electronic system that manages a rechargeable battery (cell or battery pack), such as by protecting the battery from operating outside its safe operating area, monitoring its state, calculating secondary data, reporting that data, controlling its environment, authenticating it and / or balancing it.',
+    example: 'The electric car has a sophisticated BMS to optimize battery life and performance.'
+  },
+  {
+    id: 'boarding-logic-ml',
+    term: 'Boarding Logic (ML)',
+    slug: 'boarding-logic-ml',
+    definition: 'A non-standard term, likely referring to the initial logic or code for loading and preparing a machine learning model for inference.',
+    example: 'The boarding logic for the model included loading the weights from a file and initializing the computation graph.'
+  },
+  {
+    id: 'bof-buffer-overflow',
+    term: 'BoF (Buffer Overflow)',
+    slug: 'bof-buffer-overflow',
+    definition: 'An anomaly where a program, while writing data to a buffer, overruns the buffer\'s boundary and overwrites adjacent memory locations.',
+    example: 'The attacker used a buffer overflow exploit to execute malicious code on the server.',
+  },
+  {
+    id: 'boiling-plate-dev-slang',
+    term: 'Boiling Plate (Dev slang)',
+    slug: 'boiling-plate-dev-slang',
+    definition: 'A humorous misspelling of "boilerplate," referring to sections of code that have to be included in many places with little or no alteration.',
+    example: 'He was tired of writing the same boiling plate code for every new component.'
+  },
+  {
+    id: 'boltdb',
+    term: 'BoltDB',
+    slug: 'boltdb',
+    definition: 'A pure Go key/value store inspired by Howard Chu\'s LMDB project. It is simple, fast, and reliable.',
+    example: 'The application used BoltDB for its embedded database.'
+  },
+  {
+    id: 'boolean-algebra',
+    term: 'Boolean Algebra',
+    slug: 'boolean-algebra',
+    definition: 'The branch of algebra in which the values of the variables are the truth values true and false, usually denoted 1 and 0 respectively.',
+    example: 'Digital logic circuits are designed using the principles of Boolean algebra.'
+  },
+  {
+    id: 'boolean-mask',
+    term: 'Boolean Mask',
+    slug: 'boolean-mask',
+    definition: 'An array of boolean values used to select elements from another array.',
+    example: 'He used a boolean mask to filter the dataset and select only the rows that met a certain condition.'
+  },
+  {
+    id: 'boolean-query',
+    term: 'Boolean Query',
+    slug: 'boolean-query',
+    definition: 'A type of search query that uses boolean operators (AND, OR, NOT) to combine keywords.',
+    example: 'He used the boolean query "cats AND dogs" to find documents that contained both words.'
+  },
+  {
     id: 'boot-animation',
-    term: 'BootAnimation',
+    term: 'Boot Animation',
     slug: 'boot-animation',
     definition: 'The animation that is displayed on a device while it is booting up.',
     example: 'He created a custom boot animation for his Android phone.'
   },
   {
     id: 'boot-args',
-    term: 'BootArgs',
+    term: 'Boot Args',
     slug: 'boot-args',
     definition: 'Arguments or parameters that are passed to the kernel during the boot process.',
     example: 'He added a boot arg to enable verbose logging.'
   },
   {
     id: 'boot-config',
-    term: 'BootConfig',
+    term: 'Boot Config',
     slug: 'boot-config',
     definition: 'The configuration file for a bootloader.',
     example: 'He edited the boot config file to change the default operating system.'
   },
   {
+    id: 'boot-flag',
+    term: 'Boot Flag',
+    slug: 'boot-flag',
+    definition: 'A flag on a disk partition that indicates it is the active partition from which the operating system should be booted.',
+    example: 'He had to set the boot flag on the new partition after installing Linux.'
+  },
+  {
+    id: 'boot-image',
+    term: 'Boot Image',
+    slug: 'boot-image',
+    definition: 'A file that contains the operating system and other files needed to boot a computer.',
+    example: 'He created a bootable USB drive from a Windows boot image.'
+  },
+  {
     id: 'boot-key',
-    term: 'BootKey',
+    term: 'Boot Key',
     slug: 'boot-key',
     definition: 'A key that is pressed during the boot process to enter the BIOS setup or a boot menu.',
     example: 'He pressed the F12 boot key to select the USB drive to boot from.'
   },
   {
     id: 'boot-kernel',
-    term: 'BootKernel',
+    term: 'Boot Kernel',
     slug: 'boot-kernel',
     definition: 'The operating system kernel that is loaded by the bootloader.',
     example: 'The bootloader loaded the Linux boot kernel into memory.'
   },
   {
+    id: 'boot-loader',
+    term: 'Boot Loader',
+    slug: 'boot-loader',
+    definition: 'A program that loads the main operating system for the computer when it is turned on.',
+    example: 'GRUB is a common boot loader for Linux systems.'
+  },
+  {
     id: 'boot-log',
-    term: 'BootLog',
+    term: 'Boot Log',
     slug: 'boot-log',
     definition: 'A log file that records the events that occur during the boot process.',
     example: 'He checked the boot log to see why the computer was taking so long to start.'
   },
   {
     id: 'boot-manager',
-    term: 'BootManager',
+    term: 'Boot Manager',
     slug: 'boot-manager',
     definition: 'A program that allows the user to choose which operating system to boot.',
     example: 'The Windows Boot Manager allows you to dual-boot Windows and Linux.'
   },
   {
     id: 'boot-mode',
-    term: 'BootMode',
+    term: 'Boot Mode',
     slug: 'boot-mode',
     definition: 'A mode that a device can be booted into, such as normal mode, safe mode, or recovery mode.',
     example: 'He booted the computer into safe mode to troubleshoot a driver issue.'
   },
   {
     id: 'boot-option',
-    term: 'BootOption',
+    term: 'Boot Option',
     slug: 'boot-option',
     definition: 'An option in the BIOS or bootloader that controls how the computer boots.',
     example: 'He changed a boot option to enable virtualization support.'
   },
   {
-    id: 'boot-patch',
-    term: 'BootPatch',
-    slug: 'boot-patch',
-    definition: 'A patch that is applied to the bootloader or kernel.',
-    example: 'He had to apply a boot patch to get the new hardware to work.'
-  },
-  {
     id: 'boot-params',
-    term: 'BootParams',
+    term: 'Boot Params',
     slug: 'boot-params',
     definition: 'Short for boot parameters, arguments passed to the kernel during boot.',
     example: 'He added `nomodeset` to the boot params to fix a graphics issue.'
   },
   {
+    id: 'boot-partition',
+    term: 'Boot Partition',
+    slug: 'boot-partition',
+    definition: 'A partition on a storage device that contains the operating system and files needed to boot the computer.',
+    example: 'The boot partition was corrupted, so the computer would not start.'
+  },
+  {
+    id: 'boot-patch',
+    term: 'Boot Patch',
+    slug: 'boot-patch',
+    definition: 'A patch that is applied to the bootloader or kernel.',
+    example: 'He had to apply a boot patch to get the new hardware to work.'
+  },
+  {
+    id: 'boot-priority',
+    term: 'Boot Priority',
+    slug: 'boot-priority',
+    definition: 'The order in which a computer tries to boot from different devices, such as the hard drive, USB drive, or network.',
+    example: 'He changed the boot priority in the BIOS to boot from the USB drive first.'
+  },
+  {
     id: 'boot-recovery',
-    term: 'BootRecovery',
+    term: 'Boot Recovery',
     slug: 'boot-recovery',
     definition: 'The process of recovering a system that will not boot.',
     example: 'He used a live USB to perform a boot recovery on his corrupted system.'
   },
   {
     id: 'boot-script',
-    term: 'BootScript',
+    term: 'Boot Script',
     slug: 'boot-script',
     definition: 'A script that is run during the boot process.',
     example: 'He added a command to his boot script to start a custom service.'
   },
   {
+    id: 'boot-sector',
+    term: 'Boot Sector',
+    slug: 'boot-sector',
+    definition: 'The first sector of a hard disk or other storage device that contains the code for starting the boot process.',
+    example: 'A boot sector virus infects the master boot record of a hard drive and is loaded into memory at startup.',
+  },
+  {
     id: 'boot-service',
-    term: 'BootService',
+    term: 'Boot Service',
     slug: 'boot-service',
     definition: 'A service that is started during the boot process.',
     example: 'The network manager is a boot service that configures the network interfaces.'
   },
   {
     id: 'boot-stack',
-    term: 'BootStack',
+    term: 'Boot Stack',
     slug: 'boot-stack',
     definition: 'The stack used by the bootloader and kernel during the early stages of the boot process.',
     example: 'The boot stack is typically small and has limited space.'
   },
   {
     id: 'boot-state',
-    term: 'BootState',
+    term: 'Boot State',
     slug: 'boot-state',
     definition: 'The state of the system during the boot process.',
     example: 'He monitored the boot state to see where the process was getting stuck.'
   },
   {
     id: 'boot-time',
-    term: 'BootTime',
+    term: 'Boot Time',
     slug: 'boot-time',
     definition: 'The amount of time it takes for a computer to start up.',
     example: 'He upgraded to an SSD to reduce his computer\'s boot time.'
   },
   {
     id: 'boot-utils',
-    term: 'BootUtils',
+    term: 'Boot Utils',
     slug: 'boot-utils',
     definition: 'A collection of utility programs for working with the boot process.',
     example: 'He used the boot utils to repair the master boot record.'
   },
   {
     id: 'boot-vector',
-    term: 'BootVector',
+    term: 'Boot Vector',
     slug: 'boot-vector',
     definition: 'The memory address where the processor starts executing code after a reset.',
     example: 'The boot vector pointed to the beginning of the bootloader.'
   },
   {
+    id: 'boot-volume',
+    term: 'Boot Volume',
+    slug: 'bootvolume',
+    definition: 'The storage volume that contains the operating system and files needed to boot a computer.',
+    example: 'If the boot volume is corrupted, the computer will fail to start.',
+  },
+  {
+    id: 'bootloader',
+    term: 'Bootloader',
+    slug: 'bootloader',
+    definition: 'A program that loads the main operating system for the computer when it is turned on.',
+    example: 'GRUB is a popular bootloader for Linux that allows you to choose between multiple operating systems at startup.',
+  },
+  {
+    id: 'bootstrap',
+    term: 'Bootstrap',
+    slug: 'bootstrap',
+    definition: 'The process of loading a set of instructions when a computer is first turned on or booted. In web development, it also refers to a popular front-end framework for creating responsive websites.',
+    example: 'The developer used the Bootstrap framework to quickly create a responsive layout for the new website.',
+  },
+  {
+    id: 'bootstrap-grid',
+    term: 'Bootstrap Grid',
+    slug: 'bootstrap-grid',
+    definition: 'A responsive, mobile-first grid system that is part of the Bootstrap front-end framework.',
+    example: 'She used the Bootstrap grid to create a responsive layout that worked on both desktop and mobile devices.'
+  },
+  {
+    id: 'bootstrap-token',
+    term: 'Bootstrap Token',
+    slug: 'bootstraptoken',
+    definition: 'In systems like Kubernetes, a short-lived token used to securely join a new node to a cluster.',
+    example: 'The administrator generated a bootstrap token to add a new worker node to the Kubernetes cluster.',
+  },
+  {
+    id: 'bootstrapping',
+    term: 'Bootstrapping',
+    slug: 'bootstrapping',
+    definition: 'The process of starting a computer system, where a small initial program (the boot loader) loads a larger, more complex program (the operating system).',
+    example: 'The BIOS performs the initial bootstrapping of the computer, leading to the loading of Windows or Linux.',
+  },
+  {
+    id: 'border-gateway-protocol',
+    term: 'Border Gateway Protocol',
+    slug: 'border-gateway-protocol',
+    definition: 'A standardized exterior gateway protocol designed to exchange routing and reachability information among autonomous systems on the Internet.',
+    example: 'BGP is the protocol that makes the internet work by allowing different networks to communicate with each other.',
+  },
+  {
+    id: 'borrow-checker',
+    term: 'Borrow Checker',
+    slug: 'borrow-checker',
+    definition: 'A key feature of the Rust programming language that enforces memory safety rules at compile time, preventing common bugs like null pointer dereferences and data races.',
+    example: 'The Rust compiler\'s borrow checker caught the memory error before the code was even run.',
+  },
+  {
+    id: 'bot-detection',
+    term: 'Bot Detection',
+    slug: 'bot-detection',
+    definition: 'The process of identifying automated software (bots) that are interacting with a website or application.',
+    example: 'The e-commerce site uses bot detection to prevent scalpers from buying up all the limited-edition sneakers.'
+  },
+  {
+    id: 'botnet',
+    term: 'Botnet',
+    slug: 'botnet',
+    definition: 'A network of private computers infected with malicious software and controlled as a group without the owners\' knowledge, e.g., to send spam or launch DDoS attacks.',
+    example: 'The massive DDoS attack was launched by a botnet consisting of thousands of compromised IoT devices.',
+  },
+  {
+    id: 'bottleneck',
+    term: 'Bottleneck',
+    slug: 'bottleneck',
+    definition: 'A point of congestion in a system that limits its overall performance. The bottleneck is the component that has the lowest capacity and therefore slows down the entire system.',
+    example: 'The slow database query was the bottleneck that was causing the entire application to respond slowly.',
+  },
+  {
+    id: 'bottleneck-analysis',
+    term: 'Bottleneck Analysis',
+    slug: 'bottleneck-analysis',
+    definition: 'The process of identifying the point in a system that is limiting its overall performance.',
+    example: 'The performance engineer conducted a bottleneck analysis and found that the database was the slowest component.'
+  },
+  {
+    id: 'bounce-attack',
+    term: 'Bounce Attack',
+    slug: 'bounceattack',
+    definition: 'A type of network attack where an attacker sends requests to a server with the source IP address spoofed to be the victim\'s address. The server then sends its replies to the victim, flooding them with traffic.',
+    example: 'A DNS amplification attack is a type of bounce attack.',
+  },
+  {
     id: 'boundary-scan',
-    term: 'BoundaryScan',
+    term: 'Boundary Scan',
     slug: 'boundary-scan',
     definition: 'A method for testing interconnections on printed circuit boards or within integrated circuits.',
     example: 'The factory used boundary scan to test the circuit boards after manufacturing.'
+  },
+  {
+    id: 'bourne-shell',
+    term: 'Bourne Shell',
+    slug: 'bourneshell',
+    definition: 'The original Unix shell, `sh`, which provided the basic scripting and command-line capabilities. Many modern shells are based on it.',
+    example: 'For maximum portability, he wrote the script in Bourne shell syntax so it would run on any Unix-like system.',
+  },
+  {
+    id: 'bpf-probe',
+    term: 'BPF Probe',
+    slug: 'bpf-probe',
+    definition: 'A probe that is inserted into the kernel or a user-space program using BPF to collect data or trace events.',
+    example: 'He attached a BPF probe to the `open` system call to see which files a program was accessing.'
+  },
+  {
+    id: 'bpf-trace',
+    term: 'BPF Trace',
+    slug: 'bpf-trace',
+    definition: 'A powerful tracing tool in Linux that uses Berkeley Packet Filter (BPF) to trace events in the kernel and user space.',
+    example: 'The system administrator used bpf-trace to debug a complex performance issue.'
+  },
+  {
+    id: 'bpsk-modulation',
+    term: 'BPSK Modulation',
+    slug: 'bpsk-modulation',
+    definition: 'Binary Phase-Shift Keying, a simple form of digital modulation where the phase of a carrier signal is shifted to represent binary data.',
+    example: 'Early modems used BPSK modulation to transmit data over telephone lines.'
+  },
+  {
+    id: 'bracket-notation',
+    term: 'Bracket Notation',
+    slug: 'bracket-notation',
+    definition: 'A syntax for accessing the properties of an object or elements of an array using square brackets.',
+    example: 'In JavaScript, you can access an object property using bracket notation like `myObject["propertyName"]`.'
+  },
+  {
+    id: 'branch',
+    term: 'Branch',
+    slug: 'branch',
+    definition: 'In version control systems like Git, a branch is a parallel version of a repository. It allows you to work on different features or fixes without affecting the main codebase.',
+    example: 'The developer created a new branch to work on the user authentication feature.',
+  },
+  {
+    id: 'branch-predictor',
+    term: 'Branch Predictor',
+    slug: 'branchpredictor',
+    definition: 'A digital circuit in a modern microprocessor that tries to guess which way a branch (an if-then-else structure) will go before this is known for sure.',
+    example: 'The processor\'s advanced branch predictor correctly guessed the outcome of the loop condition 99% of the time, significantly improving performance.',
+  },
+  {
+    id: 'branch-protection',
+    term: 'Branch Protection',
+    slug: 'branch-protection',
+    definition: 'A feature in version control systems like GitHub that allows you to enforce rules on a branch, such as requiring code reviews before merging.',
+    example: 'The team enabled branch protection on the `main` branch to ensure code quality.'
+  },
+  {
+    id: 'branchless-algorithm',
+    term: 'Branchless Algorithm',
+    slug: 'branchless-algorithm',
+    definition: 'An algorithm that avoids conditional branches (if-then-else statements) to improve performance by preventing pipeline stalls in the processor.',
+    example: 'He wrote a branchless algorithm to calculate the absolute value of a number, which was faster than using an `if` statement.'
+  },
+  {
+    id: 'breadcrumb-navigation',
+    term: 'Breadcrumb Navigation',
+    slug: 'breadcrumb-navigation',
+    definition: 'A secondary navigation scheme that reveals the user\'s location in a website or web app.',
+    example: 'The breadcrumb navigation at the top of the page showed "Home > Products > Laptops".'
+  },
+  {
+    id: 'break-fix',
+    term: 'Break-Fix',
+    slug: 'breakfix',
+    definition: 'A model of IT support where services are provided on an as-needed basis, rather than through a proactive maintenance plan. The technician is called to "fix" something when it "breaks".',
+    example: 'The small business relied on a break-fix model, calling an IT consultant only when their server went down.',
+  },
+  {
+    id: 'breakpoint',
+    term: 'Breakpoint',
+    slug: 'breakpoint',
+    definition: 'An intentional stopping or pausing place in a program, put in place for debugging purposes.',
+    example: 'The developer set a breakpoint in the code to inspect the value of a variable at a specific point in the execution.',
+  },
+  {
+    id: 'bridge',
+    term: 'Bridge',
+    slug: 'bridge',
+    definition: 'A network device that connects two or more network segments, forwarding traffic between them. It operates at the data link layer (Layer 2) of the OSI model.',
+    example: 'The network administrator used a bridge to connect the two separate office LANs.',
+  },
+  {
+    id: 'bridge-network',
+    term: 'Bridge Network',
+    slug: 'bridge-network',
+    definition: 'In containerization (like Docker), a type of network that allows containers running on the same host to communicate with each other.',
+    example: 'The web server and database containers were connected to the same bridge network so they could communicate.'
+  },
+  {
+    id: 'brightness-filter',
+    term: 'Brightness Filter',
+    slug: 'brightness-filter',
+    definition: 'An image processing filter that adjusts the overall brightness of an image.',
+    example: 'He applied a brightness filter to make the dark photo easier to see.'
+  },
+  {
+    id: 'bring-up',
+    term: 'Bring-up',
+    slug: 'bringup',
+    definition: 'In hardware engineering, the process of powering on a new circuit board or system for the first time and getting it to a basic functional state.',
+    example: 'The hardware team spent the week on the bring-up of the new prototype, starting with just powering it on and getting a serial console.',
+  },
+  {
+    id: 'broadcast-address',
+    term: 'Broadcast Address',
+    slug: 'broadcast-address',
+    definition: 'An IP address that is used to send a message to all devices on a specific network.',
+    example: 'A DHCP client sends a request to the broadcast address to find a DHCP server.'
+  },
+  {
+    id: 'broadcast-domain',
+    term: 'Broadcast Domain',
+    slug: 'broadcastdomain',
+    definition: 'A logical division of a computer network in which all nodes can reach each other by broadcast at the data link layer.',
+    example: 'A router is used to connect different broadcast domains, while a switch operates within a single broadcast domain.',
+  },
+  {
+    id: 'broken-access-control',
+    term: 'Broken Access Control',
+    slug: 'broken-access-control',
+    definition: 'A security vulnerability where an attacker can gain access to resources or perform actions that they are not authorized to.',
+    example: 'The website had a broken access control vulnerability that allowed any user to access the admin panel.'
+  },
+  {
+    id: 'broken-authentication',
+    term: 'Broken Authentication',
+    slug: 'broken-authentication',
+    definition: 'A security vulnerability related to how a system manages user authentication and sessions, which can allow an attacker to impersonate users.',
+    example: 'The application had broken authentication because it did not properly invalidate session tokens after logout.'
+  },
+  {
+    id: 'broker-node',
+    term: 'Broker Node',
+    slug: 'broker-node',
+    definition: 'In a distributed messaging system like Apache Kafka, a broker node is a server that stores and manages messages.',
+    example: 'The Kafka cluster consisted of three broker nodes for high availability.'
+  },
+  {
+    id: 'brotli-compression',
+    term: 'Brotli Compression',
+    slug: 'brotli-compression',
+    definition: 'A modern data compression algorithm developed by Google that provides better compression ratios than Gzip.',
+    example: 'The web server used Brotli compression to reduce the size of the HTML, CSS, and JavaScript files.'
+  },
+  {
+    id: 'browser-cache',
+    term: 'Browser Cache',
+    slug: 'browsercache',
+    definition: 'A temporary storage area in your computer that holds web pages and their assets (like images) that you have recently visited.',
+    example: 'Clearing your browser cache can sometimes fix issues with websites not loading correctly.',
+  },
+  {
+    id: 'browser-engine',
+    term: 'Browser Engine',
+    slug: 'browser-engine',
+    definition: 'The core software component of a web browser that is responsible for rendering web pages.',
+    example: 'Chrome uses the Blink browser engine, while Firefox uses Gecko.'
+  },
+  {
+    id: 'browser-exploit-kit',
+    term: 'Browser Exploit Kit',
+    slug: 'browserexploitkit',
+    definition: 'A software kit that is used to exploit vulnerabilities in web browsers. It is often hosted on a compromised website and used to automatically install malware on visitors\' computers.',
+    example: 'The user\'s computer was infected with ransomware after visiting a website that was running a browser exploit kit.',
+  },
+  {
+    id: 'browser-fingerprint',
+    term: 'Browser Fingerprint',
+    slug: 'browserfingerprint',
+    definition: 'A collection of information about a user\'s browser and device (such as browser type, version, plugins, and screen resolution) that can be used to track them online.',
+    example: 'Websites can use browser fingerprinting to identify and track users even if they clear their cookies.',
+  },
+  {
+    id: 'browser-sandbox',
+    term: 'Browser Sandbox',
+    slug: 'browsersandbox',
+    definition: 'A security mechanism that isolates web pages in the browser from the rest of the computer, preventing malicious code from accessing your files or system.',
+    example: 'The browser sandbox ensures that a malicious website cannot infect your computer with a virus.',
+  },
+  {
+    id: 'browser-storage-api',
+    term: 'Browser Storage API',
+    slug: 'browser-storage-api',
+    definition: 'A set of APIs that allow web applications to store data on the user\'s computer, such as Local Storage, Session Storage, and IndexedDB.',
+    example: 'The web app used the Browser Storage API to save user preferences locally.',
+  },
+  {
+    id: 'brute-force',
+    term: 'Brute-Force Attack',
+    slug: 'bruteforce',
+    definition: 'A trial-and-error method used by application programs to decode encrypted data such as passwords or Data Encryption Standard (DES) keys, through exhaustive effort (using brute force) rather than employing intellectual strategies.',
+    example: 'The attacker launched a brute-force attack, trying every possible password combination until they found the correct one.',
+  },
+  {
+    id: 'bsod',
+    term: 'BSOD',
+    slug: 'bsod',
+    definition: 'Blue Screen of Death, an error screen displayed on a Windows computer system following a fatal system error.',
+    example: 'His computer crashed and showed a BSOD after he installed a faulty driver.',
+  },
+  {
+    id: 'bssid',
+    term: 'BSSID',
+    slug: 'bssid',
+    definition: 'Basic Service Set Identifier, the MAC address of a wireless access point.',
+    example: 'He used a Wi-Fi scanner to see the BSSID of all the nearby access points.',
+  },
+  {
+    id: 'bss-transition',
+    term: 'BSS Transition',
+    slug: 'bss-transition',
+    definition: 'A feature in Wi-Fi that allows a client device to seamlessly roam from one access point to another without losing its connection.',
+    example: 'The enterprise Wi-Fi network supported BSS transition, allowing employees to walk around the office without their calls dropping.'
+  },
+  {
+    id: 'btrfs',
+    term: 'Btrfs',
+    slug: 'btrfs',
+    definition: 'A modern copy-on-write (CoW) filesystem for Linux aimed at implementing advanced features while focusing on fault tolerance, repair and easy administration.',
+    example: 'He formatted his new SSD with Btrfs to take advantage of its snapshot capabilities.',
+  },
+  {
+    id: 'buffer-cache',
+    term: 'Buffer Cache',
+    slug: 'buffercache',
+    definition: 'A portion of a computer\'s memory used to temporarily store data that is being read from or written to a disk.',
+    example: 'The operating system uses a buffer cache to improve disk I/O performance by holding frequently accessed data in RAM.',
+  },
+  {
+    id: 'buffer-overflow',
+    term: 'Buffer Overflow',
+    slug: 'bufferoverflow',
+    definition: 'A security vulnerability that occurs when a program writes data beyond the boundary of a buffer. This can be exploited by an attacker to execute arbitrary code.',
+    example: 'The hacker exploited a buffer overflow vulnerability to gain control of the web server.',
+  },
+  {
+    id: 'buffer-pool',
+    term: 'Buffer Pool',
+    slug: 'bufferpool',
+    definition: 'In a database management system, a buffer pool is an area in main memory that is used to cache table and index data as it is being accessed.',
+    example: 'Increasing the size of the buffer pool can significantly improve database performance by reducing disk I/O.',
+  },
+  {
+    id: 'buffering-strategy',
+    term: 'Buffering Strategy',
+    slug: 'bufferingstrategy',
+    definition: 'The method used to manage a buffer, such as how much data to store before processing or transmitting it.',
+    example: 'The video player uses a clever buffering strategy to ensure smooth playback even on a slow internet connection.',
+  },
+  {
+    id: 'bug-bounty',
+    term: 'Bug Bounty',
+    slug: 'bug-bounty',
+    definition: 'A program offered by many websites and software developers by which individuals can receive recognition and compensation for reporting bugs, especially those pertaining to security exploits.',
+    example: 'He earned a bug bounty for finding a critical security vulnerability in the social media platform.'
+  },
+  {
+    id: 'bug-bash',
+    term: 'Bug Bash',
+    slug: 'bugbash',
+    definition: 'A procedure in software development where all the developers, testers, and anyone else involved in the project, get together to find and report as many bugs as possible in a short period.',
+    example: 'The team held a bug bash before the final release to catch any remaining issues.',
+  },
+  {
+    id: 'bug-report',
+    term: 'Bug Report',
+    slug: 'bugreport',
+    definition: 'A detailed document that describes a bug or defect found in a software application, including steps to reproduce it.',
+    example: 'The QA tester filed a detailed bug report, which helped the developer quickly identify and fix the issue.',
+  },
+  {
+    id: 'bug-tracker',
+    term: 'Bug Tracker',
+    slug: 'bugtracker',
+    definition: 'A software application that is used to keep track of reported software bugs in software development projects.',
+    example: 'The team uses Jira as their bug tracker to manage all reported issues and assign them to developers.',
+  },
+  {
+    id: 'bugfix-patch',
+    term: 'Bugfix Patch',
+    slug: 'bugfixpatch',
+    definition: 'A small piece of software designed to update a computer program or its supporting data, to fix or improve it.',
+    example: 'The company released a bugfix patch to address a critical security vulnerability.',
+  },
+  {
+    id: 'build-artifact',
+    term: 'Build Artifact',
+    slug: 'buildartifact',
+    definition: 'The output of a software build process, such as a compiled executable, a library, or a packaged application.',
+    example: 'The CI/CD pipeline stored the build artifact in a repository after a successful build.',
+  },
+  {
+    id: 'build-cache',
+    term: 'Build Cache',
+    slug: 'build-cache',
+    definition: 'A cache used in a software build system to store the outputs of previous builds, which can be reused to speed up future builds.',
+    example: 'Enabling the build cache significantly reduced the time it took to compile the project.'
+  },
+  {
+    id: 'build-chain',
+    term: 'Build Chain',
+    slug: 'build-chain',
+    definition: 'A sequence of build steps that are executed in a specific order to produce a software artifact.',
+    example: 'The build chain started with compiling the code, then running tests, and finally packaging the application.'
+  },
+  {
+    id: 'build-failure',
+    term: 'Build Failure',
+    slug: 'build-failure',
+    definition: 'An error that occurs during a software build process that prevents it from completing successfully.',
+    example: 'The build failure was caused by a syntax error in one of the source files.'
+  },
+  {
+    id: 'build-number',
+    term: 'Build Number',
+    slug: 'build-number',
+    definition: 'A unique number assigned to each build of a software project, often incremented automatically by the build server.',
+    example: 'The testers were asked to report which build number they were using.'
+  },
+  {
+    id: 'build-optimization',
+    term: 'Build Optimization',
+    slug: 'build-optimization',
+    definition: 'Techniques used to make a software build process faster or to produce smaller or more efficient output.',
+    example: 'The team spent a week on build optimization to reduce their application\'s startup time.'
+  },
+  {
+    id: 'build-pipeline',
+    term: 'Build Pipeline',
+    slug: 'buildpipeline',
+    definition: 'An automated process that takes source code, builds it, runs tests, and packages it for deployment.',
+    example: 'The company\'s build pipeline ensures that every code change is automatically tested before it is deployed.',
+  },
+  {
+    id: 'build-script',
+    term: 'Build Script',
+    slug: 'build-script',
+    definition: 'A script that automates the process of building a software project.',
+    example: 'He wrote a build script to compile the code, run tests, and create a distributable package.'
+  },
+  {
+    id: 'build-server',
+    term: 'Build Server',
+    slug: 'build-server',
+    definition: 'A server that is dedicated to running software builds.',
+    example: 'The company uses Jenkins as their build server to automate their CI/CD pipeline.'
+  },
+  {
+    id: 'built-in-function',
+    term: 'Built-in Function',
+    slug: 'builtinfunction',
+    definition: 'A function that is provided by a programming language or environment, rather than being defined by the user.',
+    example: 'In Python, `print()` and `len()` are examples of built-in functions.',
+  },
+  {
+    id: 'bulk-endpoint',
+    term: 'Bulk Endpoint',
+    slug: 'bulk-endpoint',
+    definition: 'An API endpoint that allows for sending or receiving a large amount of data in a single request.',
+    example: 'The application used a bulk endpoint to upload all the user data at once.'
+  },
+  {
+    id: 'bulkhead-pattern',
+    term: 'Bulkhead Pattern',
+    slug: 'bulkheadpattern',
+    definition: 'A design pattern used in distributed systems to isolate elements of an application into pools so that if one fails, the others will continue to function.',
+    example: 'By using the bulkhead pattern, a failure in the payment processing service did not bring down the entire e-commerce website.',
+  },
+  {
+    id: 'bulldozer-architecture',
+    term: 'Bulldozer Architecture',
+    slug: 'bulldozer-architecture',
+    definition: 'A microprocessor microarchitecture developed by AMD for their desktop and server processors, released in 2011.',
+    example: 'The AMD FX series of processors were based on the Bulldozer architecture.'
+  },
+  {
+    id: 'bullet-physics-engine',
+    term: 'Bullet Physics Engine',
+    slug: 'bullet-physics-engine',
+    definition: 'An open-source physics engine which simulates collision detection, soft and rigid body dynamics.',
+    example: 'The 3D game used the Bullet Physics Engine for realistic object interactions.'
+  },
+  {
+    id: 'bump-allocator',
+    term: 'Bump Allocator',
+    slug: 'bump-allocator',
+    definition: 'A very fast, simple memory allocator that allocates memory by simply incrementing a pointer (bumping it). It is often used for short-lived allocations.',
+    example: 'The game engine used a bump allocator for allocations made within a single frame.'
+  },
+  {
+    id: 'bundle-id',
+    term: 'Bundle ID',
+    slug: 'bundleid',
+    definition: 'A unique identifier for an application, used by operating systems like iOS and macOS to recognize the app.',
+    example: 'When submitting an app to the Apple App Store, you must provide a unique Bundle ID.',
+  },
+  {
+    id: 'bundle-identifier',
+    term: 'Bundle Identifier',
+    slug: 'bundle-identifier',
+    definition: 'A unique string used by iOS and macOS to identify an application.',
+    example: 'The bundle identifier for the app was `com.company.appname`.'
+  },
+  {
+    id: 'bundle-loader',
+    term: 'Bundle Loader',
+    slug: 'bundle-loader',
+    definition: 'A tool used in web development to combine multiple JavaScript files into a single file, or "bundle".',
+    example: 'Webpack is a popular bundle loader for modern web applications.'
+  },
+  {
+    id: 'burn-in',
+    term: 'Burn-In',
+    slug: 'burnin',
+    definition: 'The process of running a new piece of hardware or a system for a period of time to detect any early failures.',
+    example: 'The server underwent a 48-hour burn-in test to ensure all its components were stable before being put into production.',
+  },
+  {
+    id: 'burst-transfer',
+    term: 'Burst Transfer',
+    slug: 'bursttransfer',
+    definition: 'A mode of data transfer in which a large amount of data is sent in a short period of time.',
+    example: 'The memory controller supports burst transfers to quickly fill the CPU cache.',
+  },
+  {
+    id: 'bus-arbitration',
+    term: 'Bus Arbitration',
+    slug: 'bus-arbitration',
+    definition: 'The process of determining which device on a computer bus is allowed to transmit data at a given time.',
+    example: 'The PCI bus uses a centralized bus arbitration scheme.'
+  },
+  {
+    id: 'bus-contention',
+    term: 'Bus Contention',
+    slug: 'bus-contention',
+    definition: 'A situation in which multiple devices on a computer bus try to transmit data at the same time.',
+    example: 'Bus contention can lead to data corruption and system instability.'
+  },
+  {
+    id: 'bus-cycle',
+    term: 'Bus Cycle',
+    slug: 'bus-cycle',
+    definition: 'The time required for a microprocessor to fetch an instruction or data from memory.',
+    example: 'The performance of the processor is limited by the speed of its bus cycle.'
+  },
+  {
+    id: 'bus-error',
+    term: 'Bus Error',
+    slug: 'bus-error',
+    definition: 'A type of fault raised by a computer\'s hardware, indicating that the processor has attempted an invalid memory access.',
+    example: 'The program crashed with a bus error because it tried to access an unaligned memory address.',
+  },
+  {
+    id: 'bus-mastering',
+    term: 'Bus Mastering',
+    slug: 'busmastering',
+    definition: 'A feature that allows a device on a computer bus to initiate transactions, enabling it to directly access system memory without involving the CPU.',
+    example: 'A high-speed network card might use bus mastering to transfer data directly to memory, freeing up the CPU for other tasks.',
+  },
+  {
+    id: 'bus-snooping',
+    term: 'Bus Snooping',
+    slug: 'bus-snooping',
+    definition: 'A technique used in multiprocessor systems to maintain cache coherency. Each processor monitors the bus for memory transactions from other processors.',
+    example: 'Bus snooping ensures that all processors have a consistent view of memory.'
+  },
+  {
+    id: 'bus-topology',
+    term: 'Bus Topology',
+    slug: 'bus-topology',
+    definition: 'A network topology in which all devices are connected to a single central cable, called the bus or backbone.',
+    example: 'Early Ethernet networks often used a bus topology, but it has been largely replaced by star topologies.',
+  },
+  {
+    id: 'busy-loop',
+    term: 'Busy Loop',
+    slug: 'busy-loop',
+    definition: 'A loop that repeatedly checks a condition without yielding the CPU. This is generally inefficient and should be avoided.',
+    example: 'The old code had a busy loop that wasted CPU cycles while waiting for input.'
+  },
+  {
+    id: 'busy-wait',
+    term: 'Busy-wait',
+    slug: 'busywait',
+    definition: 'A technique in which a process repeatedly checks a condition, such as whether a lock is available. This can be very inefficient as it consumes CPU cycles without doing useful work.',
+    example: 'The code used a busy-wait loop to wait for the hardware to become ready, which was inefficient and drained the battery on the mobile device.',
+  },
+  {
+    id: 'busybox',
+    term: 'BusyBox',
+    slug: 'busybox',
+    definition: 'A software suite that provides several stripped-down Unix tools in a single executable file. It is often used in embedded systems and Linux distributions with a small footprint.',
+    example: 'The Alpine Linux container image is very small because it uses BusyBox.'
+  },
+  {
+    id: 'bypass-capacitor',
+    term: 'Bypass Capacitor',
+    slug: 'bypass-capacitor',
+    definition: 'A capacitor used in an electronic circuit to filter out noise and provide a stable power supply to an integrated circuit.',
+    example: 'He added a bypass capacitor to the power pin of the microcontroller to improve its stability.'
+  },
+  {
+    id: 'bypass-mode',
+    term: 'Bypass Mode',
+    slug: 'bypass-mode',
+    definition: 'A mode of operation in a network device, such as a firewall or IDS, where traffic is allowed to pass through without being inspected.',
+    example: 'The administrator put the firewall in bypass mode while troubleshooting a network issue.'
+  },
+  {
+    id: 'byod',
+    term: 'BYOD (Bring Your Own Device)',
+    slug: 'byod',
+    definition: 'A policy that allows employees to use their personal devices, such as laptops and smartphones, for work purposes.',
+    example: 'The company implemented a BYOD policy to reduce hardware costs and allow employees to work on their preferred devices.',
+  },
+  {
+    id: 'byod-policy',
+    term: 'BYOD Policy',
+    slug: 'byod-policy',
+    definition: 'A policy that allows employees to use their personal devices for work purposes.',
+    example: 'The company has a strict BYOD policy that requires all personal devices to have security software installed.'
+  },
+  {
+    id: 'byte-address',
+    term: 'Byte Address',
+    slug: 'byte-address',
+    definition: 'The memory address of a single byte of data.',
+    example: 'The pointer contained the byte address of the beginning of the string.'
+  },
+  {
+    id: 'byte-alignment',
+    term: 'Byte Alignment',
+    slug: 'bytealignment',
+    definition: 'The requirement that data be stored at a memory address that is a multiple of its size. For example, a 4-byte integer should be stored at an address that is a multiple of 4.',
+    example: 'Misaligned data can cause performance penalties or even crashes on some processor architectures.',
+  },
+  {
+    id: 'byte-array',
+    term: 'Byte Array',
+    slug: 'bytearray',
+    definition: 'An array data structure that holds a sequence of bytes.',
+    example: 'He read the contents of the image file into a byte array to process it in memory.',
+  },
+  {
+    id: 'byte-boundary',
+    term: 'Byte Boundary',
+    slug: 'byteboundary',
+    definition: 'A specific memory address that is a multiple of a certain power of two. Aligning data to byte boundaries can improve performance.',
+    example: 'For optimal performance, the data structure was aligned to an 8-byte boundary.',
+  },
+  {
+    id: 'byte-buffer',
+    term: 'Byte Buffer',
+    slug: 'byte-buffer',
+    definition: 'A data structure that represents a sequence of bytes.',
+    example: 'He read the data from the network socket into a byte buffer.'
+  },
+  {
+    id: 'byte-channel',
+    term: 'Byte Channel',
+    slug: 'byte-channel',
+    definition: 'In Java NIO, a channel that can read and write bytes.',
+    example: 'He used a FileChannel, which is a type of byte channel, to read data from a file.'
+  },
+  {
+    id: 'byte-code',
+    term: 'Byte Code',
+    slug: 'byte-code',
+    definition: 'A form of instruction set designed for efficient execution by a software interpreter or virtual machine.',
+    example: 'Java programs are compiled into byte code, which is then executed by the Java Virtual Machine.'
+  },
+  {
+    id: 'byte-offset',
+    term: 'Byte Offset',
+    slug: 'byte-offset',
+    definition: 'The position of a byte within a file or memory block, relative to the beginning.',
+    example: 'He sought to a specific byte offset in the file to read a piece of data.'
+  },
+  {
+    id: 'byte-order',
+    term: 'Byte Order',
+    slug: 'byteorder',
+    definition: 'The order in which bytes of a multi-byte data word are stored in memory. The two main types are big-endian and little-endian.',
+    example: 'Network protocols typically use big-endian byte order, so systems must convert their native format if it differs.',
+  },
+  {
+    id: 'byte-order-mark',
+    term: 'Byte Order Mark',
+    slug: 'byte-order-mark',
+    definition: 'A special character at the beginning of a text file that indicates the byte order (endianness) of the file.',
+    example: 'The text editor used the byte order mark to correctly display the UTF-16 encoded file.'
+  },
+  {
+    id: 'byte-pointer',
+    term: 'Byte Pointer',
+    slug: 'bytepointer',
+    definition: 'A pointer that points to a memory location containing a single byte of data.',
+    example: 'In C, you can use a byte pointer to iterate through the individual bytes of a larger data structure.',
+  },
+  {
+    id: 'byte-slice',
+    term: 'Byte Slice',
+    slug: 'byteslice',
+    definition: 'In languages like Go, a slice is a flexible view into the elements of an array. A byte slice is a slice of a byte array.',
+    example: 'The Go program used a byte slice to efficiently read a portion of a file into memory.',
+  },
+  {
+    id: 'byte-stream',
+    term: 'Byte Stream',
+    slug: 'bytestream',
+    definition: 'A sequence of bytes, often used to represent data being transferred over a network or read from a file.',
+    example: 'The TCP protocol provides a reliable byte stream between two applications.',
+  },
+  {
+    id: 'byte-swapping',
+    term: 'Byte Swapping',
+    slug: 'byteswapping',
+    definition: 'The process of changing the byte order of a multi-byte data value, for example, from big-endian to little-endian.',
+    example: 'When reading data from a network packet, the program had to perform byte swapping to convert the data to the processor\'s native byte order.',
+  },
+  {
+    id: 'byte-wrapper',
+    term: 'Byte Wrapper',
+    slug: 'bytewrapper',
+    definition: 'A class or object that "wraps" a raw byte array or buffer, providing a more convenient interface for reading and writing different data types.',
+    example: 'Java\'s `ByteBuffer` is a byte wrapper that provides methods for reading and writing primitive types like integers and floats.',
+  },
+  {
+    id: 'bytecode',
+    term: 'Bytecode',
+    slug: 'bytecode',
+    definition: 'A form of instruction set designed for efficient execution by a software interpreter or virtual machine.',
+    example: 'When you compile a Java program, it is converted into bytecode, which is then executed by the Java Virtual Machine (JVM).',
+  },
+  {
+    id: 'bytecode-interpreter',
+    term: 'Bytecode Interpreter',
+    slug: 'bytecode-interpreter',
+    definition: 'A program that executes bytecode.',
+    example: 'The Python interpreter is a bytecode interpreter.'
+  },
+  {
+    id: 'bytecode-vm',
+    term: 'Bytecode VM',
+    slug: 'bytecodevm',
+    definition: 'A virtual machine that executes bytecode, which is a form of instruction set designed for efficient execution by a software interpreter.',
+    example: 'The Java Virtual Machine (JVM) is a well-known bytecode VM that allows Java programs to run on any device.',
+  },
+  {
+    id: 'byzantine-fault',
+    term: 'Byzantine Fault',
+    slug: 'byzantine-fault',
+    definition: 'A condition of a distributed computing system where components may fail and there is imperfect information about whether a component has failed.',
+    example: 'Blockchain consensus algorithms are designed to be tolerant of Byzantine faults.'
+  },
+  {
+    id: 'bzip2-compression',
+    term: 'BZip2 Compression',
+    slug: 'bzip2-compression',
+    definition: 'A free and open-source file compression program that uses the Burrows–Wheeler algorithm. It typically compresses files more effectively than Gzip, but is slower.',
+    example: 'He used bzip2 compression to create a smaller archive of his log files.'
+  },
+  {
+    id: 'bzrfs',
+    term: 'BZRFS',
+    slug: 'bzrfs',
+    definition: 'A non-standard term, likely a typo for a file system like Btrfs or ZFS.',
+    example: 'The server used a modern copy-on-write filesystem, but the name BZRFS was unfamiliar.'
   }
 ];
