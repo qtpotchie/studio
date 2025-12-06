@@ -1,13 +1,12 @@
 "use client";
 
-import { useState, useMemo, useEffect, useCallback } from 'react';
+import { useState, useMemo, useCallback } from 'react';
 import type { Term } from '@/lib/data';
 import { Input } from '@/components/ui/input';
 import { Search } from 'lucide-react';
 import TermCard from '@/components/term-card';
 import { Button } from '@/components/ui/button';
 import { useSearchHistory } from '@/context/search-history-context';
-import { useDebounce } from '@/hooks/use-debounce';
 
 const ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 
@@ -15,14 +14,12 @@ export default function JargonExplorer({ terms }: { terms: Term[] }) {
   const [searchQuery, setSearchQuery] = useState('');
   const [activeLetter, setActiveLetter] = useState<string | null>(null);
   const { addSearchQuery } = useSearchHistory();
-  
-  const debouncedSearchQuery = useDebounce(searchQuery, 300);
 
-  useEffect(() => {
-    if (debouncedSearchQuery) {
-      addSearchQuery(debouncedSearchQuery);
+  const handleSearch = useCallback((query: string) => {
+    if (query) {
+      addSearchQuery(query);
     }
-  }, [debouncedSearchQuery, addSearchQuery]);
+  }, [addSearchQuery]);
 
   const filteredTerms = useMemo(() => {
     return terms
@@ -43,16 +40,23 @@ export default function JargonExplorer({ terms }: { terms: Term[] }) {
   return (
     <div className="space-y-8">
       <div className="max-w-xl mx-auto">
-        <div className="relative">
+        <form
+          className="relative flex items-center gap-2"
+          onSubmit={(e) => {
+            e.preventDefault();
+            handleSearch(searchQuery);
+          }}
+        >
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
           <Input
             type="search"
             placeholder="Search for a term..."
-            className="pl-10 text-lg"
+            className="pl-10 text-lg flex-1"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />
-        </div>
+          <Button type="submit">Search</Button>
+        </form>
       </div>
 
       <div className="flex flex-wrap justify-center gap-1.5 md:gap-2">
