@@ -11,8 +11,9 @@ const Logo = ({ className }: { className?: string }) => (
     aria-label="TechTermz Logo"
   >
     <path d="M6 8L2 12L6 16" stroke="hsl(var(--primary))" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-    <path d="M18 8L22 12L18 16" stroke="hsl(var(--primary))" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-    <path d="M14 6H10V18H14V6Z" fill="hsl(var(--primary))" fillOpacity="0.8" />
+    <path d="M18 16L22 12L18 8" stroke="hsl(var(--primary))" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+    <rect x="7" y="6" width="10" height="12" rx="1" fill="hsl(var(--primary))" fillOpacity="0.1" />
+    <path d="M12 9V15M9 9H15" stroke="hsl(var(--primary))" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
   </svg>
 );
 
