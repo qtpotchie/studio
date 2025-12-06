@@ -18,28 +18,14 @@ const Logo = ({ className }: { className?: string }) => (
       strokeLinejoin="round"
     />
     <path
-      d="M8 14H11"
-      stroke="hsl(var(--primary))"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-     <path
-      d="M9.5 14V18"
+      d="M8.5 14.5L10.5 16L8.5 17.5"
       stroke="hsl(var(--primary))"
       strokeWidth="1.5"
       strokeLinecap="round"
       strokeLinejoin="round"
     />
     <path
-      d="M13 16L14.5 17.5L13 19"
-      stroke="hsl(var(--primary))"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-    <path
-      d="M16 19H17.5"
+      d="M12.5 18H15.5"
       stroke="hsl(var(--primary))"
       strokeWidth="1.5"
       strokeLinecap="round"
