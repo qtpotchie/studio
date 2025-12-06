@@ -32,7 +32,7 @@ export default function Header() {
               </Link>
             </Button>
           </nav>
-          <div className="md:hidden">
+          <div>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="ghost" size="icon">
