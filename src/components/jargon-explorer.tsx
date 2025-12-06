@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo, useEffect, FormEvent } from 'react';
+import { useState, useMemo, FormEvent } from 'react';
 import type { Term } from '@/lib/data';
 import { Input } from '@/components/ui/input';
 import { Search } from 'lucide-react';
@@ -11,30 +11,23 @@ import { Button } from '@/components/ui/button';
 
 export default function JargonExplorer({ terms }: { terms: Term[] }) {
   const [searchQuery, setSearchQuery] = useState('');
-  const [submittedQuery, setSubmittedQuery] = useState('');
   const { addSearchQuery } = useSearchHistory();
   const debouncedSearchQuery = useDebounce(searchQuery, 300);
 
-  const queryToFilter = submittedQuery || debouncedSearchQuery;
-
   const filteredTerms = useMemo(() => {
-    if (!queryToFilter) {
+    if (!debouncedSearchQuery) {
       return terms;
     }
     return terms.filter((term) =>
-      term.term.toLowerCase().includes(queryToFilter.toLowerCase())
+      term.term.toLowerCase().includes(debouncedSearchQuery.toLowerCase())
     );
-  }, [terms, queryToFilter]);
-
-  useEffect(() => {
-    if (queryToFilter.trim()) {
-      addSearchQuery(queryToFilter);
-    }
-  }, [queryToFilter]); // addSearchQuery is stable
+  }, [terms, debouncedSearchQuery]);
 
   const handleSearchSubmit = (e: FormEvent) => {
     e.preventDefault();
-    setSubmittedQuery(searchQuery);
+    if (searchQuery.trim()) {
+      addSearchQuery(searchQuery);
+    }
   };
 
   return (
@@ -49,7 +42,6 @@ export default function JargonExplorer({ terms }: { terms: Term[] }) {
             value={searchQuery}
             onChange={(e) => {
               setSearchQuery(e.target.value);
-              setSubmittedQuery(''); // Clear submitted query to allow debouncing
             }}
           />
           <Button type="submit" size="icon" className="ml-2">
@@ -67,7 +59,7 @@ export default function JargonExplorer({ terms }: { terms: Term[] }) {
         </div>
       ) : (
         <div className="text-center py-16 text-muted-foreground">
-          <p>No terms found for &quot;{queryToFilter}&quot;.</p>
+          <p>No terms found for &quot;{debouncedSearchQuery}&quot;.</p>
         </div>
       )}
     </div>
