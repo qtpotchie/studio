@@ -3,8 +3,10 @@
 import { BookmarkProvider } from "@/context/bookmark-context";
 import { SearchHistoryProvider } from "@/context/search-history-context";
 import { SearchProvider } from "@/context/search-context";
+import { VoiceSearchProvider } from "@/context/voice-search-context";
 import { ReactNode } from "react";
 import SearchDialog from "./search-dialog";
+import VoiceSearchDialog from "./voice-search-dialog";
 import { terms } from "@/lib/data";
 
 export function ClientProviders({ children }: { children: ReactNode }) {
@@ -12,8 +14,11 @@ export function ClientProviders({ children }: { children: ReactNode }) {
     <SearchHistoryProvider>
       <BookmarkProvider>
         <SearchProvider>
-          {children}
-          <SearchDialog terms={terms} />
+          <VoiceSearchProvider>
+            {children}
+            <SearchDialog terms={terms} />
+            <VoiceSearchDialog />
+          </VoiceSearchProvider>
         </SearchProvider>
       </BookmarkProvider>
     </SearchHistoryProvider>

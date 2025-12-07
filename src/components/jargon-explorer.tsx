@@ -11,6 +11,7 @@ import { cn } from '@/lib/utils';
 import TermCard from './term-card';
 import WordOfTheDay from './word-of-the-day';
 import { useToast } from "@/hooks/use-toast";
+import { useVoiceSearch } from '@/context/voice-search-context';
 import {
   Select,
   SelectContent,
@@ -25,32 +26,15 @@ export default function JargonExplorer({ terms }: { terms: Term[] }) {
   const [sortOrder, setSortOrder] = useState('alphabetical');
   const debouncedSearchQuery = useDebounce(searchQuery, 300);
   const { toast } = useToast();
+  const { setOpen, setOnResult } = useVoiceSearch();
 
-  const { isListening, transcript, startListening, stopListening, isSupported, error } =
-    useSpeechRecognition();
+  const { isSupported } = useSpeechRecognition();
 
   const [isClient, setIsClient] = useState(false);
   
   useEffect(() => {
     setIsClient(true);
   }, []);
-
-  useEffect(() => {
-    if (transcript) {
-      setSearchQuery(transcript);
-    }
-  }, [transcript]);
-
-  useEffect(() => {
-    if (error) {
-      toast({
-        variant: "destructive",
-        title: "Voice Search Error",
-        description: `Could not start voice search. Error: "${error}". Please check your internet connection and microphone permissions.`,
-      });
-    }
-  }, [error, toast]);
-
 
   const filteredTerms = useMemo(() => {
     let filtered = terms;
@@ -73,43 +57,44 @@ export default function JargonExplorer({ terms }: { terms: Term[] }) {
   }, [terms, debouncedSearchQuery, sortOrder]);
 
   const handleVoiceSearch = () => {
-    if (isListening) {
-      stopListening();
-    } else {
-      startListening();
-    }
+    setOnResult((result: string) => {
+      setSearchQuery(result);
+    });
+    setOpen(true);
   }
 
   return (
     <div className="space-y-8">
       <WordOfTheDay terms={terms} />
       <div className="space-y-6">
-        <div className="flex flex-col md:flex-row gap-4 items-center max-w-xl mx-auto">
+        <div className="flex flex-col md:flex-row gap-2 items-center max-w-xl mx-auto">
           <form onSubmit={(e) => e.preventDefault()} className="relative flex-grow w-full">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
             <Input
               type="search"
-              placeholder={isListening ? "Listening..." : "Explore terms..."}
+              placeholder="Explore terms..."
               className="pl-10 text-lg h-14"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
-             {isClient && isSupported && (
-               <Button type="button" size="icon" variant="default" onClick={handleVoiceSearch} className={cn("absolute right-2 top-1/2 -translate-y-1/2 h-10 w-10", isListening && 'text-primary animate-pulse')}>
-                <Mic className="h-5 w-5" />
+          </form>
+          <div className="flex w-full md:w-auto items-center gap-2">
+            {isClient && isSupported && (
+              <Button type="button" size="icon" variant="default" onClick={handleVoiceSearch} className="h-14 w-14">
+                <Mic className="h-6 w-6" />
                 <span className="sr-only">Search by voice</span>
               </Button>
             )}
-          </form>
-           <Select value={sortOrder} onValueChange={setSortOrder}>
-            <SelectTrigger className="w-full md:w-[180px] h-14 text-lg">
-              <SelectValue placeholder="Sort by" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="alphabetical">Alphabetical</SelectItem>
-              <SelectItem value="random">Random</SelectItem>
-            </SelectContent>
-          </Select>
+            <Select value={sortOrder} onValueChange={setSortOrder}>
+              <SelectTrigger className="w-full md:w-[180px] h-14 text-lg">
+                <SelectValue placeholder="Sort by" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="alphabetical">Alphabetical</SelectItem>
+                <SelectItem value="random">Random</SelectItem>
+              </SelectContent>
+            </Select>
+          </div>
         </div>
 
         {filteredTerms.length > 0 ? (

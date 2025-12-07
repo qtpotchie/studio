@@ -14,6 +14,7 @@ import { useDebounce } from "@/hooks/use-debounce";
 import { cn } from "@/lib/utils";
 import { useSpeechRecognition } from "@/hooks/use-speech-recognition";
 import { useToast } from "@/hooks/use-toast";
+import { useVoiceSearch } from "@/context/voice-search-context";
 
 export default function SearchDialog({ terms }: { terms: Term[] }) {
   const { isOpen, setOpen } = useSearch();
@@ -21,31 +22,14 @@ export default function SearchDialog({ terms }: { terms: Term[] }) {
   const debouncedSearchQuery = useDebounce(searchQuery, 300);
   const { addSearchQuery } = useSearchHistory();
   const { toast } = useToast();
+  const { setOpen: setVoiceOpen, setOnResult } = useVoiceSearch();
 
-  const { isListening, transcript, startListening, stopListening, isSupported, error } =
-    useSpeechRecognition();
+  const { isSupported } = useSpeechRecognition();
   
   const [isClient, setIsClient] = useState(false);
   useEffect(() => {
     setIsClient(true);
   }, []);
-
-  useEffect(() => {
-    if (transcript) {
-      setSearchQuery(transcript);
-    }
-  }, [transcript]);
-
-  useEffect(() => {
-    if (error) {
-      toast({
-        variant: "destructive",
-        title: "Voice Search Error",
-        description: `Could not start voice search. Error: "${error}". Please check your internet connection and microphone permissions.`,
-      });
-    }
-  }, [error, toast]);
-
 
   const filteredTerms = useMemo(() => {
     if (!debouncedSearchQuery) return [];
@@ -61,20 +45,19 @@ export default function SearchDialog({ terms }: { terms: Term[] }) {
     if (searchQuery.trim()) {
       addSearchQuery(searchQuery);
     }
-    if (isListening) {
-      stopListening();
-    }
   };
 
   const handleVoiceSearch = () => {
-    if (isListening) {
-      stopListening();
-    } else {
-      startListening();
-    }
+    setOnResult((result: string) => {
+      setSearchQuery(result);
+    });
+    setVoiceOpen(true);
   }
 
   const handleResultClick = () => {
+    if (searchQuery.trim()) {
+      addSearchQuery(searchQuery);
+    }
     setOpen(false);
     setSearchQuery('');
   }
@@ -82,7 +65,7 @@ export default function SearchDialog({ terms }: { terms: Term[] }) {
   return (
     <Dialog open={isOpen} onOpenChange={setOpen}>
       <DialogContent className="p-0 gap-0 max-w-2xl h-[calc(100%-4rem)] flex flex-col">
-        <DialogTitle className="sr-only">Search Terms</DialogTitle>
+        <DialogTitle className="sr-only">Search</DialogTitle>
         <div className="p-4 border-b">
           <form onSubmit={handleSearchSubmit}>
             <div className="relative flex items-center gap-2">
@@ -93,7 +76,7 @@ export default function SearchDialog({ terms }: { terms: Term[] }) {
               <Search className="absolute left-12 h-5 w-5 text-muted-foreground" />
               <Input
                 type="search"
-                placeholder={isListening ? "Listening..." : "Search for a term..."}
+                placeholder={"Search for a term..."}
                 className="pl-10 text-lg h-10"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
@@ -104,7 +87,7 @@ export default function SearchDialog({ terms }: { terms: Term[] }) {
                   type="button"
                   variant="ghost"
                   size="icon"
-                  className="absolute right-[4.5rem] h-9 w-9"
+                  className="absolute right-[3.5rem] md:right-[4.5rem] h-9 w-9"
                   onClick={() => setSearchQuery("")}
                 >
                   <X className="h-5 w-5" />
@@ -112,7 +95,7 @@ export default function SearchDialog({ terms }: { terms: Term[] }) {
                 </Button>
               )}
                {isClient && isSupported && (
-                 <Button type="button" size="icon" onClick={handleVoiceSearch} variant="ghost" className={cn("h-9 w-9", isListening && 'text-primary animate-pulse')}>
+                 <Button type="button" size="icon" onClick={handleVoiceSearch} variant="ghost" className="h-9 w-9">
                   <Mic className="h-5 w-5" />
                   <span className="sr-only">Search by voice</span>
                 </Button>

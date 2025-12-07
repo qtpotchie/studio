@@ -22,7 +22,7 @@ export function useSpeechRecognition() {
     }
 
     const recognition = new SpeechRecognition();
-    recognition.continuous = true;
+    recognition.continuous = false; // Only listen for one utterance
     recognition.interimResults = true;
     recognition.lang = 'en-US';
 
@@ -38,6 +38,9 @@ export function useSpeechRecognition() {
         }
       }
       setTranscript(finalTranscript || interimTranscript);
+      if (finalTranscript) {
+        recognition.stop();
+      }
     };
 
     recognition.onend = () => {
@@ -53,7 +56,9 @@ export function useSpeechRecognition() {
     recognitionRef.current = recognition;
 
     return () => {
-      recognition.stop();
+      if (recognitionRef.current) {
+        recognitionRef.current.stop();
+      }
     };
   }, []);
 
