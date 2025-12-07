@@ -1,105 +1,26 @@
 
 "use client";
 
-import { useState, useMemo, FormEvent, useEffect } from 'react';
+import { useState, useMemo } from 'react';
 import type { Term } from '@/lib/data';
-import { Input } from '@/components/ui/input';
-import { Mic, Search } from 'lucide-react';
 import TermCard from '@/components/term-card';
-import { useSearchHistory } from '@/context/search-history-context';
-import { useDebounce } from '@/hooks/use-debounce';
-import { Button } from '@/components/ui/button';
 import WordOfTheDay from './word-of-the-day';
-import { useSpeechRecognition } from '@/hooks/use-speech-recognition';
-import { cn } from '@/lib/utils';
-import { useToast } from '@/hooks/use-toast';
 
 export default function JargonExplorer({ terms }: { terms: Term[] }) {
   const [searchQuery, setSearchQuery] = useState('');
-  const { addSearchQuery } = useSearchHistory();
-  const debouncedSearchQuery = useDebounce(searchQuery, 300);
-  const { toast } = useToast();
-
-  const { isListening, transcript, startListening, stopListening, isSupported, error } =
-    useSpeechRecognition();
-
-  const [isClient, setIsClient] = useState(false);
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
-
-  useEffect(() => {
-    if (transcript) {
-      setSearchQuery(transcript);
-    }
-  }, [transcript]);
-
-  useEffect(() => {
-    if (error) {
-      toast({
-        variant: "destructive",
-        title: "Voice Search Error",
-        description: `Could not start voice search. Error: "${error}". Please check your internet connection and microphone permissions.`,
-      });
-    }
-  }, [error, toast]);
 
   const filteredTerms = useMemo(() => {
-    if (!debouncedSearchQuery) {
+    if (!searchQuery) {
       return terms;
     }
     return terms.filter((term) =>
-      term.term.toLowerCase().includes(debouncedSearchQuery.toLowerCase())
+      term.term.toLowerCase().includes(searchQuery.toLowerCase())
     );
-  }, [terms, debouncedSearchQuery]);
-
-  const handleSearchSubmit = (e: FormEvent) => {
-    e.preventDefault();
-    if (searchQuery.trim()) {
-      addSearchQuery(searchQuery);
-    }
-    if (isListening) {
-      stopListening();
-    }
-  };
-
-  const handleVoiceSearch = () => {
-    if (isListening) {
-      stopListening();
-    } else {
-      startListening();
-    }
-  }
+  }, [terms, searchQuery]);
 
   return (
     <div className="space-y-8">
       <div className="space-y-6">
-        <form onSubmit={handleSearchSubmit} className="max-w-xl mx-auto">
-          <div className="relative flex items-center">
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
-            <Input
-              type="search"
-              placeholder={isListening ? "Listening..." : "Search for a term..."}
-              className="pl-10 text-lg flex-1"
-              value={searchQuery}
-              onChange={(e) => {
-                setSearchQuery(e.target.value);
-              }}
-            />
-            <div className='flex items-center ml-2 gap-2'>
-              {isClient && isSupported && (
-                 <Button type="button" size="icon" onClick={handleVoiceSearch} className={cn(isListening && 'bg-primary/80 animate-pulse')}>
-                  <Mic className="h-5 w-5" />
-                  <span className="sr-only">Search by voice</span>
-                </Button>
-              )}
-              <Button type="submit" size="icon">
-                <Search className="h-5 w-5" />
-                <span className="sr-only">Search</span>
-              </Button>
-            </div>
-          </div>
-        </form>
         <WordOfTheDay terms={terms} />
       </div>
 
@@ -111,7 +32,7 @@ export default function JargonExplorer({ terms }: { terms: Term[] }) {
         </div>
       ) : (
         <div className="text-center py-16 text-muted-foreground">
-          <p>No terms found for &quot;{debouncedSearchQuery}&quot;.</p>
+          <p>No terms found for &quot;{searchQuery}&quot;.</p>
         </div>
       )}
     </div>

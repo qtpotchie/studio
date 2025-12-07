@@ -1,8 +1,9 @@
+"use client";
 
 import Link from 'next/link';
 import Logo from './logo';
 import { Button } from './ui/button';
-import { Bookmark, History, Menu, HomeIcon, CalendarDays, BookOpen } from 'lucide-react';
+import { Bookmark, History, Menu, HomeIcon, CalendarDays, BookOpen, Search } from 'lucide-react';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -11,8 +12,11 @@ import {
   DropdownMenuSeparator,
 } from '@/components/ui/dropdown-menu';
 import WordOfTheDayLink from './word-of-the-day-link';
+import { useSearch } from '@/hooks/use-search';
 
 export default function Header() {
+  const { setOpen } = useSearch();
+
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 max-w-screen-2xl items-center">
@@ -24,6 +28,10 @@ export default function Header() {
         </div>
         <div className="flex flex-1 items-center justify-end space-x-2">
           <nav className="flex items-center">
+             <Button variant="ghost" size="icon" onClick={() => setOpen(true)}>
+              <Search className="h-5 w-5" />
+              <span className="sr-only">Search</span>
+            </Button>
             <Button asChild variant="ghost" size="icon">
               <Link href="/history" aria-label="View Search History">
                 <History className="h-5 w-5" />
