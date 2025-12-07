@@ -86,6 +86,20 @@ export const terms: Term[] = [
     example: 'The power outlet in your wall supplies AC power to charge your laptop.',
   },
   {
+    id: 'aca-azure-cloud-architecture',
+    term: 'ACA (Azure Cloud Architecture)',
+    slug: 'aca-azure-cloud-architecture',
+    definition: 'Refers to the overall design and structure of a solution built on Microsoft\'s Azure cloud platform, encompassing compute, storage, networking, and other services.',
+    example: 'The architect presented the Azure Cloud Architecture diagram, showing how the web app, database, and functions would interact.',
+  },
+  {
+    id: 'acars',
+    term: 'ACARS',
+    slug: 'acars',
+    definition: 'Aircraft Communications Addressing and Reporting System. A digital datalink system for transmission of short messages between aircraft and ground stations.',
+    example: 'The airline used ACARS to automatically send engine performance data to its maintenance hub during the flight.',
+  },
+  {
     id: 'accelerated-graphics-port',
     term: 'Accelerated Graphics Port',
     slug: 'accelerated-graphics-port',
@@ -98,6 +112,13 @@ export const terms: Term[] = [
     slug: 'accelerator-key',
     definition: 'A keyboard shortcut that allows a user to perform an action more quickly than using a mouse, such as Ctrl+S to save.',
     example: 'The application\'s menu showed the accelerator key `Ctrl+P` next to the "Print" option.',
+  },
+  {
+    id: 'access-control-list',
+    term: 'Access Control List',
+    slug: 'access-control-list',
+    definition: 'A list of permissions attached to an object. An ACL specifies which users or system processes are granted access to objects, as well as what operations are allowed on given objects.',
+    example: 'The network administrator configured the router\'s Access Control List to block traffic from a specific IP range.',
   },
   {
     id: 'access-log',
@@ -149,6 +170,20 @@ export const terms: Term[] = [
     example: 'The CPU loaded a value into the accumulator register, added another value to it, and then stored the final sum back in memory.',
   },
   {
+    id: 'acknowledgement-packet',
+    term: 'Acknowledgement Packet',
+    slug: 'acknowledgement-packet',
+    definition: 'In networking, a small packet sent by a receiver to a sender to confirm that a data packet was successfully received. It is a key part of reliable protocols like TCP.',
+    example: 'The server sent an acknowledgement packet (ACK) to the client to confirm it had received the previous chunk of data.',
+  },
+  {
+    id: 'aco-application-container-optimization',
+    term: 'ACO (Application Container Optimization)',
+    slug: 'aco-application-container-optimization',
+    definition: 'The process of making container images (like Docker images) smaller and more efficient by removing unnecessary files, using smaller base images, and optimizing layers.',
+    example: 'Through Application Container Optimization, they reduced their final container image size from 1GB to 150MB, speeding up deployment times.',
+  },
+  {
     id: 'acoustic-coupler',
     term: 'Acoustic Coupler',
     slug: 'acoustic-coupler',
@@ -156,11 +191,25 @@ export const terms: Term[] = [
     example: 'In the early days of the internet, you had to use an acoustic coupler with a payphone to get online.',
   },
   {
+    id: 'acp-android-certified-partner',
+    term: 'ACP (Android Certified Partner)',
+    slug: 'acp-android-certified-partner',
+    definition: 'A company that is officially certified by Google to manufacture or distribute Android devices that meet Google\'s compatibility and performance standards.',
+    example: 'As an Android Certified Partner, the manufacturer had early access to new versions of the operating system.',
+  },
+  {
     id: 'acpi-tables',
     term: 'ACPI Tables',
     slug: 'acpi-tables',
     definition: 'Data structures in the system firmware that describe hardware devices, power management features, and system configuration to the OS.',
     example: 'The operating system reads the ACPI tables during boot-up to know how to control the CPU\'s power states.',
+  },
+  {
+    id: 'active-directory',
+    term: 'Active Directory',
+    slug: 'active-directory',
+    definition: 'A directory service developed by Microsoft for Windows domain networks. It is included in most Windows Server operating systems as a set of processes and services.',
+    example: 'The company uses Active Directory to manage all employee user accounts, computers, and permissions on the corporate network.',
   },
   {
     id: 'active-hash',
@@ -184,18 +233,18 @@ export const terms: Term[] = [
     example: 'Frameworks like Akka use the actor model to build highly concurrent and distributed applications without the complexity of manual thread management.',
   },
   {
+    id: 'adaptive-bitrate',
+    term: 'Adaptive Bitrate',
+    slug: 'adaptive-bitrate',
+    definition: 'A technique used in streaming media where the quality of the video is dynamically adjusted in real-time based on the user\'s network conditions and playback performance.',
+    example: 'Netflix uses adaptive bitrate streaming to ensure a smooth video playback experience, even if your internet connection slows down.',
+  },
+  {
     id: 'adaptive-firewall',
     term: 'Adaptive Firewall',
     slug: 'adaptive-firewall',
     definition: 'A firewall that can modify its own security rules in real-time based on traffic patterns and detected threats.',
     example: 'The adaptive firewall automatically blocked an IP address after detecting a port scan originating from it.',
-  },
-  {
-    id: 'adaptive-routing',
-    term: 'Adaptive Routing',
-    slug: 'adaptive-routing',
-    definition: 'A routing algorithm that changes its path decisions based on network conditions, such as traffic or topology changes.',
-    example: 'The network uses adaptive routing to automatically divert traffic away from congested links.',
   },
   {
     id: 'adc-analog-to-digital-converter',
@@ -210,6 +259,20 @@ export const terms: Term[] = [
     slug: 'add-on-module',
     definition: 'A software component that adds a specific feature or functionality to an existing program.',
     example: 'He installed an add-on module to his browser to block advertisements.',
+  },
+  {
+    id: 'address-bus',
+    term: 'Address Bus',
+    slug: 'address-bus',
+    definition: 'A computer bus that is used by the CPU to specify a physical address in memory. The width of the address bus determines the maximum amount of memory the system can address.',
+    example: 'A 32-bit address bus can access 2^32, or 4 gigabytes, of physical memory.',
+  },
+  {
+    id: 'address-resolution-protocol',
+    term: 'Address Resolution Protocol',
+    slug: 'address-resolution-protocol',
+    definition: 'A communication protocol used for discovering the link layer address, such as a MAC address, associated with a given internet layer address, typically an IPv4 address.',
+    example: 'When your computer wants to send a packet to a local IP address, it first sends out an ARP request to find the corresponding MAC address.',
   },
   {
     id: 'ad-hoc-mode',
@@ -262,17 +325,17 @@ export const terms: Term[] = [
   },
   {
     id: 'advanced-host-controller-interface',
-    term: 'Advanced Host Controller Interface (AHCI)',
-    slug: 'ahci',
-    definition: 'A technical standard for an interface that allows software to communicate with Serial ATA (SATA) host bus adapters.',
-    example: 'To get the best performance from his SSD, he made sure to enable AHCI mode in the BIOS.',
+    term: 'Advanced Host Controller Interface',
+    slug: 'advanced-host-controller-interface',
+    definition: 'A technical standard for an interface that allows software to communicate with Serial ATA (SATA) host bus adapters. Enabling it allows for features like hot-plugging and native command queuing.',
+    example: 'To get the best performance from his SSD, he made sure to enable AHCI mode in the BIOS settings.',
   },
   {
     id: 'advanced-malware-protection',
-    term: 'Advanced Malware Protection (AMP)',
+    term: 'Advanced Malware Protection',
     slug: 'advanced-malware-protection',
-    definition: 'A security solution that provides comprehensive protection against malware by analyzing files, monitoring behavior, and using threat intelligence.',
-    example: 'Cisco\'s Advanced Malware Protection for Endpoints blocked a zero-day exploit before it could infect the system.',
+    definition: 'A comprehensive security solution that goes beyond traditional signature-based antivirus to detect and block malware by analyzing file behavior, reputation, and threat intelligence.',
+    example: 'Cisco\'s Advanced Malware Protection (AMP) for Endpoints blocked a zero-day exploit by identifying its malicious behavior.',
   },
   {
     id: 'adware',
@@ -296,9 +359,9 @@ export const terms: Term[] = [
     example: 'To optimize performance, the database administrator set the affinity mask to ensure the main process only ran on specific CPU cores.',
   },
   {
-    id: 'afk-channel',
-    term: 'AFK Channel',
-    slug: 'afk-channel',
+    id: 'afk-channel-servers',
+    term: 'AFK Channel (Servers)',
+    slug: 'afk-channel-servers',
     definition: 'In chat services like Discord, a voice channel where users are automatically moved if they are idle (Away From Keyboard) for a certain period.',
     example: 'He was moved to the AFK channel because he hadn\'t spoken in the voice chat for over an hour.',
   },
@@ -321,7 +384,7 @@ export const terms: Term[] = [
     term: 'Agile Methodology',
     slug: 'agile-methodology',
     definition: 'A software development approach that focuses on iterative development, collaboration, and responding to change. Work is done in short cycles called "sprints" to deliver value incrementally.',
-    example: 'The development team adopted the Agile methodology, allowing them to release new features every two weeks and quickly adapt to customer feedback.'
+    example: 'The development team adopted the Agile methodology, allowing them to release new features every two weeks and quickly adapt to customer feedback.',
   },
   {
     id: 'agp-slot',
@@ -332,9 +395,9 @@ export const terms: Term[] = [
   },
   {
     id: 'ahb-bus',
-    term: 'AHB Bus (Advanced High-performance Bus)',
+    term: 'AHB Bus',
     slug: 'ahb-bus',
-    definition: 'A bus protocol in the ARM AMBA standard used for connecting high-performance components in a system-on-a-chip (SoC).',
+    definition: 'Advanced High-performance Bus, a bus protocol in the ARM AMBA standard used for connecting high-performance components in a system-on-a-chip (SoC).',
     example: 'The CPU communicates with the main memory controller over the high-speed AHB bus.',
   },
   {
@@ -345,13 +408,6 @@ export const terms: Term[] = [
     example: 'Google\'s Tensor Processing Unit (TPU) is a powerful AI accelerator designed specifically for running their TensorFlow framework.',
   },
   {
-    id: 'ai-alignment',
-    term: 'AI Alignment',
-    slug: 'ai-alignment',
-    definition: 'The field of research focused on ensuring that artificial intelligence systems are aligned with human values and goals.',
-    example: 'The goal of AI alignment is to prevent advanced AI from having unintended and harmful consequences.',
-  },
-  {
     id: 'ai-inference-engine',
     term: 'AI Inference Engine',
     slug: 'ai-inference-engine',
@@ -359,39 +415,11 @@ export const terms: Term[] = [
     example: 'The self-driving car\'s AI inference engine processed the camera feed in real-time to identify pedestrians and other vehicles.',
   },
   {
-    id: 'ai-llm-pipeline',
-    term: 'AI LLM Pipeline',
-    slug: 'ai-llm-pipeline',
-    definition: 'An end-to-end workflow for building and deploying a large language model, including data preprocessing, training, evaluation, and deployment.',
-    example: 'The company built an AI LLM pipeline to continuously improve their customer service chatbot.',
-  },
-  {
     id: 'ai-model-compression',
     term: 'AI Model Compression',
     slug: 'ai-model-compression',
     definition: 'Techniques like quantization and pruning used to reduce the size of a machine learning model to make it run faster and consume less memory.',
     example: 'Through AI model compression, they were able to deploy the large language model on a mobile device.',
-  },
-  {
-    id: 'ai-model-quantization',
-    term: 'AI Model Quantization',
-    slug: 'ai-model-quantization',
-    definition: 'An optimization technique that reduces the precision of the numerical weights and activations in an AI model (e.g., from 32-bit floating-point numbers to 8-bit integers). This makes the model smaller, faster, and more energy-efficient with minimal loss of accuracy.',
-    example: 'The developers applied AI model quantization to deploy their complex image recognition model on a smartphone with limited memory and processing power.'
-  },
-  {
-    id: 'ai-quantization',
-    term: 'AI Quantization',
-    slug: 'ai-quantization',
-    definition: 'A technique to reduce the precision of the numbers used to represent a model\'s parameters, which can make the model smaller and faster.',
-    example: 'They used AI quantization to run the large language model on a mobile device.',
-  },
-  {
-    id: 'ai-tokenization',
-    term: 'AI Tokenization',
-    slug: 'ai-tokenization',
-    definition: 'The process of breaking down a piece of text into smaller units called tokens, which can be words, subwords, or characters. This is a fundamental step in natural language processing.',
-    example: 'The language model first uses AI tokenization to convert the input sentence into a sequence of tokens.',
   },
   {
     id: 'ai-workflow',
@@ -405,35 +433,28 @@ export const terms: Term[] = [
     term: 'AIDL (Android Interface Definition Language)',
     slug: 'aidl-android-interface-definition-language',
     definition: 'In Android, AIDL is used to define the programming interface that both a client and service agree upon in order to communicate with each other using interprocess communication (IPC).',
-    example: 'The music player app used AIDL to allow other applications to control playback, like pausing or skipping tracks.'
+    example: 'The music player app used AIDL to allow other applications to control playback, like pausing or skipping tracks.',
   },
   {
     id: 'aimd-algorithm',
-    term: 'AIMD Algorithm (Additive Increase, Multiplicative Decrease)',
+    term: 'AIMD Algorithm',
     slug: 'aimd-algorithm',
-    definition: 'A feedback control algorithm used in TCP congestion control, where the congestion window is increased additively but decreased multiplicatively.',
+    definition: 'Additive Increase, Multiplicative Decrease. A feedback control algorithm used in TCP congestion control, where the congestion window is increased additively but decreased multiplicatively.',
     example: 'TCP uses the AIMD algorithm to fairly share network bandwidth and avoid congestion collapse.',
   },
   {
-    id: 'aio-all-in-one-computer',
-    term: 'AIO (All-in-One Computer)',
-    slug: 'aio-all-in-one-computer',
-    definition: 'A desktop computer where the internal components (like the motherboard, CPU, and storage) are integrated into the same case as the display, creating a compact and streamlined form factor.',
-    example: 'The office reception desk was equipped with an AIO computer to save space and reduce cable clutter.'
-  },
-  {
     id: 'aio-cooler',
-    term: 'AIO Cooler (All-in-One)',
+    term: 'AIO Cooler',
     slug: 'aio-cooler',
-    definition: 'A self-contained liquid cooling system for a CPU, consisting of a radiator, pump, and water block.',
+    definition: 'All-in-One. A self-contained liquid cooling system for a CPU, consisting of a radiator, pump, and water block.',
     example: 'He installed an AIO cooler to keep his overclocked CPU temperatures low during intense gaming sessions.',
   },
   {
-    id: 'aiops-artificial-intelligence-for-it-operations',
-    term: 'AIOps (Artificial Intelligence for IT Operations)',
-    slug: 'aiops-artificial-intelligence-for-it-operations',
-    definition: 'The application of big data analytics and machine learning to IT operations. AIOps platforms use AI to automate tasks like monitoring, event correlation, and root cause analysis, helping IT teams detect and resolve issues faster.',
-    example: 'The company implemented an AIOps solution that could predict potential system failures by analyzing subtle patterns in performance logs.'
+    id: 'aiops',
+    term: 'AIOps',
+    slug: 'aiops',
+    definition: 'Artificial Intelligence for IT Operations. The application of AI and machine learning to automate and improve IT operations, such as monitoring, event correlation, and root cause analysis.',
+    example: 'The company implemented an AIOps platform to proactively detect and resolve IT issues before they impacted users.',
   },
   {
     id: 'air-gap-security',
@@ -443,31 +464,10 @@ export const terms: Term[] = [
     example: 'The control systems for the nuclear power plant are protected by air gap security, with no physical connection to the outside world.',
   },
   {
-    id: 'airgap-network',
-    term: 'Airgap Network',
-    slug: 'airgap-network',
-    definition: 'A security measure where a computer or network is physically isolated from unsecured networks, such as the public internet or an unsecured local area network. This is the highest level of network security.',
-    example: 'The control systems for the nuclear power plant were on an airgap network, completely disconnected from the outside world, to prevent cyberattacks.'
-  },
-  {
-    id: 'aix-operating-system',
-    term: 'AIX Operating System',
-    slug: 'aix-operating-system',
-    definition: 'A series of proprietary Unix operating systems developed and sold by IBM for several of its computer platforms.',
-    example: 'The bank\'s critical legacy application still runs on a powerful IBM server running the AIX operating system.',
-  },
-  {
-    id: 'ajax-asynchronous-javascript-and-xml',
-    term: 'AJAX (Asynchronous JavaScript and XML)',
-    slug: 'ajax-asynchronous-javascript-and-xml',
-    definition: 'A set of web development techniques that allows a web page to communicate with a server in the background to send or retrieve data, without interfering with the display and behavior of the existing page.',
-    example: 'When you type a search query on Google, AJAX is used to fetch and display search suggestions in real-time as you type.'
-  },
-  {
     id: 'ajax-request',
     term: 'AJAX Request',
     slug: 'ajax-request',
-    definition: 'An asynchronous request made by a web page to a server to send or retrieve data without reloading the entire page.',
+    definition: 'Asynchronous JavaScript and XML. An asynchronous request made by a web page to a server to send or retrieve data without reloading the entire page.',
     example: 'When you type in a search box and see suggestions appear, the page is making AJAX requests in the background to fetch those suggestions.',
   },
   {
@@ -478,20 +478,6 @@ export const terms: Term[] = [
     example: 'The programmer registered an alarm handler to automatically save the user\'s document every five minutes.',
   },
   {
-    id: 'alarm-manager-android',
-    term: 'Alarm Manager (Android)',
-    slug: 'alarm-manager-android',
-    definition: 'An Android system service that allows developers to schedule their application to be run at some point in the future. The system will run the app, even if it is not currently active, to perform the scheduled task.',
-    example: 'The calendar app used the Alarm Manager to schedule notifications for upcoming events.'
-  },
-  {
-    id: 'algorithmic-complexity',
-    term: 'Algorithmic Complexity',
-    slug: 'algorithmic-complexity',
-    definition: 'A formal measure of the amount of resources (time and space) an algorithm requires to run as a function of the size of its input. It is often expressed using Big O notation, like O(n) or O(n^2).',
-    example: 'A simple search algorithm has a linear complexity of O(n), meaning the time it takes grows in direct proportion to the number of items being searched.'
-  },
-  {
     id: 'algorithmic-trading-system',
     term: 'Algorithmic Trading System',
     slug: 'algorithmic-trading-system',
@@ -499,11 +485,11 @@ export const terms: Term[] = [
     example: 'The high-frequency trading firm relies on a sophisticated algorithmic trading system to execute thousands of trades per second.',
   },
   {
-    id: 'alias-record-dns',
-    term: 'Alias Record (DNS)',
-    slug: 'alias-record-dns',
-    definition: 'A type of DNS record that maps an alias domain name to a canonical name (the "true" name). It is similar to a CNAME record but can be used at the root domain (e.g., example.com), which CNAMEs cannot.',
-    example: 'The website `www.example.com` used an Alias record to point to the dynamically changing hostname of a cloud load balancer.'
+    id: 'alias-record',
+    term: 'Alias Record',
+    slug: 'alias-record',
+    definition: 'A type of DNS record that maps an alias domain name to a canonical name (the "true" name). It is similar to a CNAME record but can be used at the root domain.',
+    example: 'The website `www.example.com` used an Alias record to point to the dynamically changing hostname of a cloud load balancer.',
   },
   {
     id: 'alignment-padding',
@@ -514,7 +500,7 @@ export const terms: Term[] = [
   },
   {
     id: 'all-pairs-shortest-path',
-    term: 'All-Pairs Shortest Path',
+    term: 'All-pairs Shortest Path',
     slug: 'all-pairs-shortest-path',
     definition: 'An algorithm problem in graph theory that involves finding the shortest path between every pair of vertices in a graph.',
     example: 'The Floyd-Warshall algorithm can be used to solve the all-pairs shortest path problem.',
@@ -525,13 +511,6 @@ export const terms: Term[] = [
     slug: 'allocation-table',
     definition: 'A data structure used in a file system to keep track of which blocks or clusters on a storage device are allocated to which files.',
     example: 'The File Allocation Table (FAT) in older Windows systems is a well-known example of an allocation table.',
-  },
-  {
-    id: 'allocator-memory-allocator',
-    term: 'Allocator (Memory Allocator)',
-    slug: 'allocator-memory-allocator',
-    definition: 'A fundamental part of a computer\'s operating system or a program\'s runtime environment responsible for managing memory. It handles requests for blocks of memory (allocation) and returns them to the system when they are no longer needed (deallocation).',
-    example: 'The C programming language uses the `malloc` function as its standard memory allocator.'
   },
   {
     id: 'allowlist',
@@ -556,9 +535,9 @@ export const terms: Term[] = [
   },
   {
     id: 'alpn-protocol',
-    term: 'ALPN (Application-Layer Protocol Negotiation)',
+    term: 'ALPN Protocol',
     slug: 'alpn-protocol',
-    definition: 'A TLS extension that allows the application layer to negotiate which protocol (like HTTP/2 or HTTP/1.1) should be handled over a secure connection.',
+    definition: 'Application-Layer Protocol Negotiation. A TLS extension that allows the application layer to negotiate which protocol (like HTTP/2 or HTTP/1.1) should be handled over a secure connection.',
     example: 'Thanks to the ALPN protocol, the browser was able to establish an HTTP/2 connection with the server for faster page loads.',
   },
   {
@@ -584,9 +563,9 @@ export const terms: Term[] = [
   },
   {
     id: 'amd-v',
-    term: 'AMD-V (AMD Virtualization)',
+    term: 'AMD-V',
     slug: 'amd-v',
-    definition: 'Hardware-assisted virtualization technology from AMD that allows a single CPU to run multiple operating systems simultaneously.',
+    definition: 'AMD Virtualization. Hardware-assisted virtualization technology from AMD that allows a single CPU to run multiple operating systems simultaneously.',
     example: 'He enabled AMD-V in his BIOS to get better performance when running virtual machines.',
   },
   {
@@ -597,11 +576,11 @@ export const terms: Term[] = [
     example: 'The splash screen showed the AMI BIOS logo before booting into Windows.',
   },
   {
-    id: 'amp-accelerated-mobile-pages',
-    term: 'AMP (Accelerated Mobile Pages)',
-    slug: 'amp-accelerated-mobile-pages',
-    definition: 'An open-source HTML framework developed by Google to create lightweight, fast-loading web pages for mobile devices. AMP pages are often cached by Google and served directly from its servers for near-instant loading.',
-    example: 'The news organization created AMP versions of their articles to improve the reading experience for mobile users coming from Google search.'
+    id: 'amp-accelerated-mobile-page',
+    term: 'AMP (Accelerated Mobile Page)',
+    slug: 'amp-accelerated-mobile-page',
+    definition: 'An open-source HTML framework for creating lightweight, fast-loading web pages for mobile devices.',
+    example: 'The news website implemented AMP to ensure their articles loaded almost instantly on mobile search results.',
   },
   {
     id: 'amplification-attack',
@@ -618,11 +597,11 @@ export const terms: Term[] = [
     example: 'The new Ampere microarchitecture brought significant improvements in ray tracing and AI performance.',
   },
   {
-    id: 'amqp-advanced-message-queuing-protocol',
-    term: 'AMQP (Advanced Message Queuing Protocol)',
-    slug: 'amqp-advanced-message-queuing-protocol',
-    definition: 'An open standard application layer protocol for message-oriented middleware. AMQP defines a binary wire protocol that enables reliable, interoperable messaging between different applications and systems.',
-    example: 'The microservices used RabbitMQ, a message broker that implements AMQP, to communicate with each other asynchronously.'
+    id: 'amqp',
+    term: 'AMQP',
+    slug: 'amqp',
+    definition: 'Advanced Message Queuing Protocol. An open standard for passing business messages between applications or organizations.',
+    example: 'The microservices used RabbitMQ, which implements AMQP, for reliable asynchronous communication.',
   },
   {
     id: 'anaconda-distribution',
@@ -654,17 +633,17 @@ export const terms: Term[] = [
   },
   {
     id: 'android-debug-bridge',
-    term: 'Android Debug Bridge (ADB)',
+    term: 'Android Debug Bridge',
     slug: 'android-debug-bridge',
     definition: 'A command-line tool that lets you communicate with an Android device for development and debugging purposes.',
     example: 'The developer used ADB to install the app, view logs, and take a screenshot of the device.',
   },
   {
-    id: 'android-runtime-art',
-    term: 'Android Runtime (ART)',
-    slug: 'android-runtime-art',
-    definition: 'The managed runtime environment used by applications on Android. ART uses Ahead-Of-Time (AOT) compilation to compile applications into native machine code upon installation, resulting in faster app launch times and improved performance compared to its predecessor, Dalvik.',
-    example: 'Since the switch to Android Runtime, apps on the phone launch faster and the system feels more responsive.'
+    id: 'android-runtime',
+    term: 'Android Runtime',
+    slug: 'android-runtime',
+    definition: 'The managed runtime environment used by applications on Android. ART uses Ahead-Of-Time (AOT) compilation to improve performance.',
+    example: 'Since the switch from Dalvik to the Android Runtime (ART), apps on the phone launch much faster.',
   },
   {
     id: 'angular-cli',
@@ -686,20 +665,6 @@ export const terms: Term[] = [
     slug: 'anisotropic-filtering',
     definition: 'A technique in computer graphics that enhances the quality of textures on surfaces that are viewed at oblique angles.',
     example: 'He enabled 16x anisotropic filtering in the game settings to make the textures on the road ahead look sharp and clear.',
-  },
-  {
-    id: 'anomaly-detection',
-    term: 'Anomaly Detection',
-    slug: 'anomaly-detection',
-    definition: 'The process of identifying rare items, events, or observations which raise suspicions by differing significantly from the majority of the data. It is often used in fraud detection, network security, and system health monitoring.',
-    example: 'The credit card company\'s anomaly detection system flagged a transaction as potentially fraudulent because it was made in a different country from the user\'s usual location.'
-  },
-  {
-    id: 'ansible',
-    term: 'Ansible',
-    slug: 'ansible',
-    definition: 'An open-source automation tool for configuration management, application deployment, and task automation.',
-    example: 'A DevOps engineer wrote an Ansible playbook to automatically configure and deploy a web server on 100 different machines.',
   },
   {
     id: 'ansible-playbook',
@@ -737,32 +702,11 @@ export const terms: Term[] = [
     example: 'The attacker used anti-forensics methods like data wiping and encryption to cover their tracks.',
   },
   {
-    id: 'anti-spoofing',
-    term: 'Anti-spoofing',
-    slug: 'anti-spoofing',
-    definition: 'Measures taken to prevent spoofing attacks, where an attacker impersonates another device or user on a network.',
-    example: 'The email server implemented DMARC as an anti-spoofing measure to prevent fraudulent emails.',
-  },
-  {
     id: 'anti-tamper-module',
-    term: 'Anti-tamper Module',
+    term: 'Anti-Tamper Module',
     slug: 'anti-tamper-module',
     definition: 'A hardware or software mechanism designed to prevent or detect unauthorized modification of a system.',
     example: 'The gaming console has an anti-tamper module to prevent users from running pirated games.',
-  },
-  {
-    id: 'antimalware-engine',
-    term: 'Antimalware Engine',
-    slug: 'antimalware-engine',
-    definition: 'The core component of an antivirus or antimalware software that is responsible for scanning files and system activity to detect, block, and remove malicious software.',
-    example: 'The antimalware engine used a combination of signature-based detection and behavioral heuristics to identify the new virus.'
-  },
-  {
-    id: 'antivirus-heuristic',
-    term: 'Antivirus Heuristic',
-    slug: 'antivirus-heuristic',
-    definition: 'A method used by antivirus software to detect new, unknown viruses by analyzing their code for suspicious characteristics.',
-    example: 'The antivirus heuristic analysis flagged the program as potentially malicious because it was attempting to modify system files.',
   },
   {
     id: 'ant-protocol',
@@ -772,67 +716,1075 @@ export const terms: Term[] = [
     example: 'His new smartwatch supports the ANT+ protocol, allowing it to connect to his bike\'s power meter.',
   },
   {
-    id: 'backend-as-a-service',
-    term: 'Backend as a Service (BaaS)',
-    slug: 'backend-as-a-service',
-    definition: 'A cloud computing service model that provides backend functionality like user authentication, database management, and cloud storage, allowing developers to focus on the frontend.',
-    example: 'Firebase is a popular Backend as a Service that handles user accounts, data storage, and hosting for web and mobile apps.',
+    id: 'anti-spoofing',
+    term: 'Anti-spoofing',
+    slug: 'anti-spoofing',
+    definition: 'Measures taken to prevent spoofing attacks, where an attacker impersonates another device or user on a network.',
+    example: 'The email server implemented DMARC as an anti-spoofing measure to prevent fraudulent emails.',
   },
   {
-    id: 'back-end-developer',
-    term: 'Back-end Developer',
-    slug: 'back-end-developer',
-    definition: 'A developer who specializes in the server-side of web development, working with databases, servers, and application logic.',
-    example: 'The back-end developer wrote the API that the mobile app uses to fetch user data.',
+    id: 'antivirus-heuristic',
+    term: 'Antivirus Heuristic',
+    slug: 'antivirus-heuristic',
+    definition: 'A method used by antivirus software to detect new, unknown viruses by analyzing their code for suspicious characteristics.',
+    example: 'The antivirus heuristic analysis flagged the program as potentially malicious because it was attempting to modify system files.',
   },
   {
-    id: 'back-end-framework',
-    term: 'Back-end Framework',
-    slug: 'back-end-framework',
-    definition: 'A library of pre-written code that provides a structure for building the server-side of a web application.',
-    example: 'Popular back-end frameworks include Express.js for Node.js, Django for Python, and Ruby on Rails for Ruby.',
+    id: 'aon-memory',
+    term: 'AON Memory',
+    slug: 'aon-memory',
+    definition: 'Always-On Memory. A small portion of memory in a system-on-a-chip (SoC) that remains powered even when the rest of the chip is in a deep sleep state.',
+    example: 'The AON memory stored the necessary state for the device to wake up quickly when the power button was pressed.',
   },
   {
-    id: 'back-end-programming-language',
-    term: 'Back-end Programming Language',
-    slug: 'back-end-programming-language',
-    definition: 'A programming language used to write the server-side logic of a web application, such as Python, Ruby, Java, or PHP.',
-    example: 'She chose Python as the back-end programming language for her new web service because of its extensive data science libraries.',
+    id: 'ap-mode',
+    term: 'AP Mode',
+    slug: 'ap-mode',
+    definition: 'Access Point Mode. A mode in which a wireless device, such as a router or even a laptop, acts as an access point, creating its own Wi-Fi network for other devices to connect to.',
+    example: 'He put his travel router into AP mode to create a private Wi-Fi network in his hotel room.',
   },
   {
-    id: 'backfill-data',
-    term: 'Backfill Data',
-    slug: 'backfill-data',
-    definition: 'The process of retroactively populating a database or data store with historical data.',
-    example: 'After adding a new "creation_date" field to the user table, they ran a script to backfill data for all existing users.',
+    id: 'apache-beam',
+    term: 'Apache Beam',
+    slug: 'apache-beam',
+    definition: 'An open-source, unified model for defining both batch and streaming data-parallel processing pipelines.',
+    example: 'They used Apache Beam to write a single data processing pipeline that could run on both Apache Flink for streaming and Apache Spark for batch processing.',
   },
   {
-    id: 'background-job-processing',
-    term: 'Background Job Processing',
-    slug: 'background-job-processing',
-    definition: 'Running tasks or processes in the background, separate from the main application thread, to avoid blocking user interactions.',
-    example: 'Sending welcome emails to new users is handled by a background job processing system to avoid delaying the sign-up process.',
+    id: 'apache-flink',
+    term: 'Apache Flink',
+    slug: 'apache-flink',
+    definition: 'An open-source, unified stream-processing and batch-processing framework developed by the Apache Software Foundation.',
+    example: 'The company used Apache Flink to process real-time streaming data from their IoT devices for immediate analysis.',
   },
   {
-    id: 'background-process-daemon',
-    term: 'Background Process (Daemon)',
-    slug: 'background-process-daemon',
-    definition: 'A program that runs in the background, without direct user interaction, to perform tasks like system monitoring or maintenance.',
-    example: 'The `cron` daemon on Linux is a background process that runs scheduled tasks at specific times.',
+    id: 'apache-kafka',
+    term: 'Apache Kafka',
+    slug: 'apache-kafka',
+    definition: 'A distributed event streaming platform used for building real-time data pipelines and streaming applications.',
+    example: 'Microservices in the application communicated with each other by publishing and subscribing to events on an Apache Kafka topic.',
   },
   {
-    id: 'background-sync-api',
-    term: 'Background Sync API',
-    slug: 'background-sync-api',
-    definition: 'A web API that allows a Progressive Web App (PWA) to defer actions until the user has a stable network connection.',
-    example: 'The chat app uses the Background Sync API to ensure that messages sent while offline are delivered as soon as the connection is restored.',
+    id: 'apache-mesos',
+    term: 'Apache Mesos',
+    slug: 'apache-mesos',
+    definition: 'An open-source cluster manager that provides efficient resource isolation and sharing across distributed applications.',
+    example: 'Twitter famously used Apache Mesos to manage the resources for its massive, distributed infrastructure.',
   },
   {
-    id: 'backlight-bleeding',
-    term: 'Backlight Bleeding',
-    slug: 'backlight-bleeding',
-    definition: 'An issue on LCD screens where the backlight leaks through the edges of the display, causing uneven brightness, especially visible on dark screens.',
-    example: 'He noticed some backlight bleeding on his new monitor when watching movies in a dark room.',
+    id: 'apache-spark',
+    term: 'Apache Spark',
+    slug: 'apache-spark',
+    definition: 'A unified analytics engine for large-scale data processing. It provides an interface for programming entire clusters with implicit data parallelism and fault tolerance.',
+    example: 'The data science team used Apache Spark to run a machine learning algorithm on a terabyte of log data.',
+  },
+  {
+    id: 'api-endpoint',
+    term: 'API Endpoint',
+    slug: 'api-endpoint',
+    definition: 'A specific URL where an API can be accessed by a client application. Each endpoint corresponds to a specific function or resource.',
+    example: 'To get user information, the mobile app sends a GET request to the `/api/v1/users/{userId}` endpoint.',
+  },
+  {
+    id: 'api-gateway',
+    term: 'API Gateway',
+    slug: 'api-gateway',
+    definition: 'A management tool that sits between a client and a collection of backend services. It acts as a single entry point for all API requests.',
+    example: 'The company used an API Gateway to handle authentication, rate limiting, and routing for all of their microservices.',
+  },
+  {
+    id: 'api-key',
+    term: 'API Key',
+    slug: 'api-key',
+    definition: 'A unique code that is passed in to an API to identify the calling application or user. It is used for authentication and tracking.',
+    example: 'He had to include his personal API key in the request header to access the weather data service.',
+  },
+  {
+    id: 'apic',
+    term: 'APIC',
+    slug: 'apic',
+    definition: 'Advanced Programmable Interrupt Controller. A type of interrupt controller in x86 systems that supports more interrupts and more complex priority schemes than the traditional PIC.',
+    example: 'Modern multi-core processors use an APIC to manage hardware interrupts efficiently across all cores.',
+  },
+  {
+    id: 'apk-file',
+    term: 'APK File',
+    slug: 'apk-file',
+    definition: 'Android Package Kit. The package file format used by the Android operating system for distribution and installation of mobile apps.',
+    example: 'He downloaded the APK file directly from the developer\'s website to sideload the application onto his phone.',
+  },
+  {
+    id: 'apk-signing',
+    term: 'APK Signing',
+    slug: 'apk-signing',
+    definition: 'The process of digitally signing an Android application (APK) with a certificate. This verifies the app\'s author and ensures the app has not been tampered with.',
+    example: 'Before uploading to the Google Play Store, all apps must undergo APK signing with a private key.',
+  },
+  {
+    id: 'apm-application-performance-monitoring',
+    term: 'APM (Application Performance Monitoring)',
+    slug: 'apm-application-performance-monitoring',
+    definition: 'Tools and practices for monitoring the performance of software applications in production. APM helps identify and diagnose performance issues.',
+    example: 'The DevOps team used an APM tool like New Relic to trace the source of the slow database query.',
+  },
+  {
+    id: 'app-bundle',
+    term: 'App Bundle',
+    slug: 'app-bundle',
+    definition: 'A publishing format for Android applications that includes all the app\'s compiled code and resources, but defers APK generation and signing to Google Play.',
+    example: 'By using the Android App Bundle, the developer was able to significantly reduce the download size of their app for users.',
+  },
+  {
+    id: 'app-container',
+    term: 'App Container',
+    slug: 'app-container',
+    definition: 'A lightweight, standalone, executable package of software that includes everything needed to run it: code, runtime, system tools, system libraries and settings.',
+    example: 'They packaged their web application as a Docker App Container to ensure it would run consistently across different environments.',
+  },
+  {
+    id: 'app-manifest',
+    term: 'App Manifest',
+    slug: 'app-manifest',
+    definition: 'A file that contains metadata about an application, such as its name, icon, version, and required permissions. The `AndroidManifest.xml` is a key example for Android apps.',
+    example: 'He had to add the location permission to the App Manifest before his app could access the device\'s GPS.',
+  },
+  {
+    id: 'apparmor',
+    term: 'AppArmor',
+    slug: 'apparmor',
+    definition: 'A Linux kernel security module that allows the system administrator to restrict programs\' capabilities with per-program profiles.',
+    example: 'The system administrator created an AppArmor profile for the web server to prevent it from accessing any files outside of its web root directory.',
+  },
+  {
+    id: 'append-log',
+    term: 'Append Log',
+    slug: 'append-log',
+    definition: 'A log file or data structure where new data is only ever appended to the end. This immutability makes it useful for audit trails and data replication.',
+    example: 'Many distributed databases use an append-only log internally to record all changes before applying them to the data files.',
+  },
+  {
+    id: 'apple-filing-protocol',
+    term: 'Apple Filing Protocol',
+    slug: 'apple-filing-protocol',
+    definition: 'A proprietary network protocol that offers file services for macOS and classic Mac OS.',
+    example: 'The office\'s file server supported AFP, allowing Mac users to connect to it seamlessly.',
+  },
+  {
+    id: 'apple-silicon',
+    term: 'Apple Silicon',
+    slug: 'apple-silicon',
+    definition: 'A series of ARM-based system-on-a-chip (SoC) processors designed by Apple Inc., used in their newer Mac computers.',
+    example: 'The new MacBook with Apple Silicon offered incredible performance and battery life compared to the previous Intel-based models.',
+  },
+  {
+    id: 'application-binary-interface',
+    term: 'Application Binary Interface',
+    slug: 'application-binary-interface',
+    definition: 'An interface between two binary program modules; often, one of these modules is a library or operating system and the other is a user program.',
+    example: 'For the two compiled modules to work together, they had to conform to the same Application Binary Interface (ABI).',
+  },
+  {
+    id: 'application-cache',
+    term: 'Application Cache',
+    slug: 'application-cache',
+    definition: 'A deprecated web technology that allowed an application to be cached and made available offline. It has been replaced by Service Workers.',
+    example: 'The old PWA used the Application Cache manifest file to specify which resources to store for offline use.',
+  },
+  {
+    id: 'application-gateway',
+    term: 'Application Gateway',
+    slug: 'application-gateway',
+    definition: 'A type of firewall or load balancer that operates at the application layer (Layer 7). It can make routing decisions based on the content of the traffic, such as the URL path.',
+    example: 'Azure Application Gateway was used to route requests for `/video` to a different set of servers than requests for `/images`.',
+  },
+  {
+    id: 'application-layer',
+    term: 'Application Layer',
+    slug: 'application-layer',
+    definition: 'The 7th layer of the OSI model, which is the layer closest to the end user. It provides the interface between applications and the network.',
+    example: 'Protocols like HTTP, FTP, and SMTP all operate at the Application Layer.',
+  },
+  {
+    id: 'application-load-balancer',
+    term: 'Application Load Balancer',
+    slug: 'application-load-balancer',
+    definition: 'A type of load balancer that operates at the application layer (Layer 7) and can distribute incoming traffic based on the content of the request.',
+    example: 'The Application Load Balancer was configured to route requests based on the hostname, sending traffic for `api.example.com` to the API servers.',
+  },
+  {
+    id: 'application-loop',
+    term: 'Application Loop',
+    slug: 'application-loop',
+    definition: 'The main loop of a program that continuously processes events, updates the application state, and renders the user interface. Also known as an event loop.',
+    example: 'A video game\'s application loop must run at a consistent 60 times per second to provide a smooth experience.',
+  },
+  {
+    id: 'application-pool',
+    term: 'Application Pool',
+    slug: 'application-pool',
+    definition: 'In Microsoft\'s IIS web server, a container that isolates web applications from one another, even if they are running on the same server.',
+    example: 'He configured each website to run in its own Application Pool to improve security and stability.',
+  },
+  {
+    id: 'application-signing',
+    term: 'Application Signing',
+    slug: 'application-signing',
+    definition: 'The process of digitally signing an application with a developer certificate to verify its authenticity and integrity.',
+    example: 'macOS Gatekeeper checks for valid Application Signing to ensure that downloaded apps have not been tampered with.',
+  },
+  {
+    id: 'applet',
+    term: 'Applet',
+    slug: 'applet',
+    definition: 'A small application that performs one specific task and runs within the context of a larger program, often a web browser. Java Applets are a classic example.',
+    example: 'The old banking website required a Java Applet to run its stock ticker.',
+  },
+  {
+    id: 'appsync',
+    term: 'AppSync',
+    slug: 'appsync',
+    definition: 'AWS AppSync is a managed service that uses GraphQL to make it easy for applications to get exactly the data they need.',
+    example: 'The mobile development team used AWS AppSync to build a flexible API that allowed them to fetch all required data in a single request.',
+  },
+  {
+    id: 'apr-apache-portable-runtime',
+    term: 'APR (Apache Portable Runtime)',
+    slug: 'apr-apache-portable-runtime',
+    definition: 'A supporting library for the Apache Web Server. It provides a set of APIs that map to the underlying operating system, making Apache code more portable.',
+    example: 'The developer used the APR library to write cross-platform C code that could handle file I/O on both Windows and Linux.',
+  },
+  {
+    id: 'apt-package-manager',
+    term: 'APT Package Manager',
+    slug: 'apt-package-manager',
+    definition: 'Advanced Package Tool. The command-line package manager used by Debian and its derivatives, like Ubuntu, to handle the installation and removal of software.',
+    example: 'He used the command `sudo apt-get install nginx` to install the Nginx web server.',
+  },
+  {
+    id: 'apu-accelerated-processing-unit',
+    term: 'APU (Accelerated Processing Unit)',
+    slug: 'apu-accelerated-processing-unit',
+    definition: 'A type of processor that combines the CPU and a graphics processor (GPU) on a single chip.',
+    example: 'The gaming console was powered by a custom AMD APU, which provided both powerful processing and graphics capabilities.',
+  },
+  {
+    id: 'ar-tag',
+    term: 'AR Tag',
+    slug: 'ar-tag',
+    definition: 'Augmented Reality Tag. A visual marker, similar to a QR code, that an AR application can recognize and use to anchor virtual objects in the real world.',
+    example: 'By pointing her phone\'s camera at the AR Tag on the poster, a 3D model of the product appeared on her screen.',
+  },
+  {
+    id: 'arbitrary-code-execution',
+    term: 'Arbitrary Code Execution',
+    slug: 'arbitrary-code-execution',
+    definition: 'A type of security vulnerability that allows an attacker to execute any commands or code of their choice on a target machine.',
+    example: 'The buffer overflow vulnerability in the software could lead to Arbitrary Code Execution.',
+  },
+  {
+    id: 'arc-cache',
+    term: 'ARC Cache',
+    slug: 'arc-cache',
+    definition: 'Adaptive Replacement Cache. A cache eviction algorithm that balances between keeping recently used and frequently used items, offering better performance than traditional LRU.',
+    example: 'The ZFS file system uses an ARC Cache to optimize its disk caching performance.',
+  },
+  {
+    id: 'arc-welding-fiber-term',
+    term: 'Arc Welding (Fiber term)',
+    slug: 'arc-welding-fiber-term',
+    definition: 'In fiber optics, the process of using an electric arc to melt and fuse two optical fibers together, creating a permanent, low-loss connection. Also known as fusion splicing.',
+    example: 'The technician used a fusion splicer to perform an arc weld on the broken fiber optic cable, restoring the connection.',
+  },
+  {
+    id: 'arch-linux',
+    term: 'Arch Linux',
+    slug: 'arch-linux',
+    definition: 'A Linux distribution known for its simplicity, minimalism, and "do-it-yourself" philosophy. It uses a rolling-release model to provide the latest software updates.',
+    example: 'He chose to install Arch Linux on his laptop because he wanted full control over every package installed on his system.',
+  },
+  {
+    id: 'archive-bit',
+    term: 'Archive Bit',
+    slug: 'archive-bit',
+    definition: 'A file attribute used by backup software to identify which files have been changed since their last backup.',
+    example: 'The backup software only backed up files that had the Archive Bit set, and then cleared the bit after a successful backup.',
+  },
+  {
+    id: 'arcmap-projection',
+    term: 'Arcmap Projection',
+    slug: 'arcmap-projection',
+    definition: 'A map projection used in Esri\'s ArcGIS software. It defines how the 3D surface of the Earth is represented on a 2D map.',
+    example: 'The cartographer had to choose the correct ArcMap projection to minimize distortion for the region she was mapping.',
+  },
+  {
+    id: 'area-network',
+    term: 'Area Network',
+    slug: 'area-network',
+    definition: 'A general term for a computer network, categorized by its geographical scope, such as Local Area Network (LAN), Wide Area Network (WAN), or Personal Area Network (PAN).',
+    example: 'The office\'s Local Area Network allowed all the computers to share a single printer.',
+  },
+  {
+    id: 'argument-vector',
+    term: 'Argument Vector',
+    slug: 'argument-vector',
+    definition: 'In C programming, the array of strings (`argv`) passed to the `main` function that contains the command-line arguments the program was run with.',
+    example: 'The program parsed the argument vector to check for flags like `--verbose` or `--help`.',
+  },
+  {
+    id: 'arithmetic-logic-unit',
+    term: 'Arithmetic Logic Unit',
+    slug: 'arithmetic-logic-unit',
+    definition: 'A digital circuit within a CPU that performs arithmetic and bitwise logic operations on integer binary numbers.',
+    example: 'The Arithmetic Logic Unit (ALU) is the fundamental building block of a central processing unit.',
+  },
+  {
+    id: 'arm64-instruction-set',
+    term: 'Arm64 Instruction Set',
+    slug: 'arm64-instruction-set',
+    definition: 'The 64-bit instruction set architecture used by modern ARM processors. It is known for its efficiency and is widely used in mobile devices and servers.',
+    example: 'Apple\'s M-series chips use the Arm64 instruction set.',
+  },
+  {
+    id: 'arm-trustzone',
+    term: 'ARM TrustZone',
+    slug: 'arm-trustzone',
+    definition: 'A hardware-based security technology integrated into ARM processors that creates an isolated, secure world for running trusted applications.',
+    example: 'Mobile payment applications often use the ARM TrustZone to protect sensitive data and cryptographic keys.',
+  },
+  {
+    id: 'arp-cache',
+    term: 'ARP Cache',
+    slug: 'arp-cache',
+    definition: 'A table on a computer that stores the mapping between IP addresses and their corresponding MAC addresses on a local network.',
+    example: 'You can view the ARP cache on a Windows machine by running the command `arp -a`.',
+  },
+  {
+    id: 'arp-poisoning',
+    term: 'ARP Poisoning',
+    slug: 'arp-poisoning',
+    definition: 'A type of cyber attack where an attacker sends forged ARP messages onto a local area network to associate their MAC address with the IP address of another host.',
+    example: 'The attacker used ARP poisoning to intercept all traffic between the victim and the network router.',
+  },
+  {
+    id: 'array-buffer',
+    term: 'Array Buffer',
+    slug: 'array-buffer',
+    definition: 'A JavaScript object used to represent a generic, fixed-length raw binary data buffer. It is used to handle and manipulate binary data directly.',
+    example: 'The WebSockets client received the binary message as an ArrayBuffer, which was then parsed into meaningful data.',
+  },
+  {
+    id: 'array-indexing',
+    term: 'Array Indexing',
+    slug: 'array-indexing',
+    definition: 'The process of accessing an element in an array by its position, or "index". In most languages, array indexing is zero-based.',
+    example: 'To get the first element of the array `my_array`, you would use the syntax `my_array[0]`.',
+  },
+  {
+    id: 'arraylist',
+    term: 'ArrayList',
+    slug: 'arraylist',
+    definition: 'A resizable array data structure, commonly found in languages like Java and C#. It provides dynamic resizing as more elements are added.',
+    example: 'He used an ArrayList to store the list of user names because he didn\'t know how many users there would be in advance.',
+  },
+  {
+    id: 'artifact-repository',
+    term: 'Artifact Repository',
+    slug: 'artifact-repository',
+    definition: 'A storage system designed to hold and manage binary software artifacts, such as compiled code, libraries, and container images. Examples include Nexus and Artifactory.',
+    example: 'The CI/CD pipeline published the newly built JAR file to the company\'s artifact repository.',
+  },
+  {
+    id: 'artificial-general-intelligence',
+    term: 'Artificial General Intelligence',
+    slug: 'artificial-general-intelligence',
+    definition: 'A hypothetical type of artificial intelligence that possesses the ability to understand or learn any intellectual task that a human being can.',
+    example: 'Current AI systems are specialized for specific tasks; a true Artificial General Intelligence (AGI) does not yet exist.',
+  },
+  {
+    id: 'artificial-neural-network',
+    term: 'Artificial Neural Network',
+    slug: 'artificial-neural-network',
+    definition: 'A computing system inspired by the biological neural networks that constitute animal brains. It is the core component of deep learning models.',
+    example: 'The image recognition service was powered by a deep artificial neural network with millions of parameters.',
+  },
+  {
+    id: 'as-autonomous-system',
+    term: 'AS (Autonomous System)',
+    slug: 'as-autonomous-system',
+    definition: 'A collection of connected Internet Protocol (IP) routing prefixes under the control of one or more network operators on behalf of a single administrative entity.',
+    example: 'Your Internet Service Provider (ISP) operates its own Autonomous System and uses BGP to exchange routing information with other ASes.',
+  },
+  {
+    id: 'ascii-table',
+    term: 'ASCII Table',
+    slug: 'ascii-table',
+    definition: 'American Standard Code for Information Interchange. A character encoding standard for electronic communication, which maps 128 specified characters into 7-bit integers.',
+    example: 'He looked up the ASCII table to find that the decimal value for the letter \'A\' is 65.',
+  },
+  {
+    id: 'asg-auto-scaling-group',
+    term: 'ASG (Auto Scaling Group)',
+    slug: 'asg-auto-scaling-group',
+    definition: 'In AWS, a collection of EC2 instances that are treated as a logical grouping for the purposes of automatic scaling and management.',
+    example: 'The Auto Scaling Group was configured to add a new server whenever the average CPU utilization went above 70%.',
+  },
+  {
+    id: 'asgi',
+    term: 'ASGI',
+    slug: 'asgi',
+    definition: 'Asynchronous Server Gateway Interface. A standard interface between asynchronous Python web servers and applications.',
+    example: 'The Django application was deployed using an ASGI server like Uvicorn to handle asynchronous features like WebSockets.',
+  },
+  {
+    id: 'asic',
+    term: 'ASIC',
+    slug: 'asic',
+    definition: 'Application-Specific Integrated Circuit. An integrated circuit chip customized for a particular use, rather than intended for general-purpose use.',
+    example: 'Bitcoin mining is now primarily done on powerful ASICs designed specifically for that task.',
+  },
+  {
+    id: 'asn.1-encoding',
+    term: 'ASN.1 Encoding',
+    slug: 'asn.1-encoding',
+    definition: 'Abstract Syntax Notation One. A standard and notation that describes rules and structures for representing, encoding, transmitting, and decoding data in telecommunications and computer networking.',
+    example: 'X.509 certificates are defined using ASN.1 syntax and are typically encoded using DER, a form of ASN.1 encoding.',
+  },
+  {
+    id: 'asp.net-core',
+    term: 'ASP.NET Core',
+    slug: 'asp.net-core',
+    definition: 'A free and open-source, cross-platform web framework for building modern, cloud-based, internet-connected applications, developed by Microsoft.',
+    example: 'The development team chose ASP.NET Core for their new web API because of its high performance and cross-platform capabilities.',
+  },
+  {
+    id: 'asset-bundle',
+    term: 'Asset Bundle',
+    slug: 'asset-bundle',
+    definition: 'A file that contains non-code assets, such as models, textures, and audio clips, for a game or application. This allows assets to be loaded on demand.',
+    example: 'The game downloaded a new Asset Bundle containing the content for the holiday-themed event.',
+  },
+  {
+    id: 'asset-pipeline',
+    term: 'Asset Pipeline',
+    slug: 'asset-pipeline',
+    definition: 'A framework in web development that processes and prepares assets like CSS, JavaScript, and images for production. This can include minification, concatenation, and fingerprinting.',
+    example: 'The Ruby on Rails Asset Pipeline automatically compiles and minifies all the JavaScript and CSS files into single, optimized files.',
+  },
+  {
+    id: 'assembler-directive',
+    term: 'Assembler Directive',
+    slug: 'assembler-directive',
+    definition: 'An instruction in assembly language that tells the assembler to do something, but does not correspond to a machine instruction. For example, `.data` or `.text` sections.',
+    example: 'The `.data` assembler directive was used to indicate the start of the section for initialized data.',
+  },
+  {
+    id: 'assembly-instruction',
+    term: 'Assembly Instruction',
+    slug: 'assembly-instruction',
+    definition: 'A single, low-level instruction in assembly language that corresponds directly to a machine code instruction for a specific CPU architecture.',
+    example: 'The assembly instruction `MOV EAX, 1` moves the value 1 into the EAX register.',
+  },
+  {
+    id: 'assertion-failure',
+    term: 'Assertion Failure',
+    slug: 'assertion-failure',
+    definition: 'An error that occurs when an assertion—a statement that a certain condition must be true at a particular point in the code—is found to be false.',
+    example: 'The program crashed with an assertion failure because a function that was supposed to return a non-null value returned null.',
+  },
+  {
+    id: 'assignment-operator',
+    term: 'Assignment Operator',
+    slug: 'assignment-operator',
+    definition: 'An operator used in programming to assign a value to a variable. The most common assignment operator is the equals sign (`=`).',
+    example: 'In the statement `x = 5;`, the `=` is the assignment operator.',
+  },
+  {
+    id: 'assistive-touch-api',
+    term: 'Assistive Touch API',
+    slug: 'assistive-touch-api',
+    definition: 'An API that allows applications to interact with accessibility features on a device, such as those for users with motor impairments.',
+    example: 'The app used the Assistive Touch API to provide larger, easier-to-press buttons for its users.',
+  },
+  {
+    id: 'async-await',
+    term: 'Async/Await',
+    slug: 'async-await',
+    definition: 'A programming language feature that provides a more readable, synchronous-looking syntax for writing asynchronous code.',
+    example: 'Using async/await, the developer could write `const data = await fetchData();` instead of using complex promise chains or callbacks.',
+  },
+  {
+    id: 'asynchronous-bus',
+    term: 'Asynchronous Bus',
+    slug: 'asynchronous-bus',
+    definition: 'A computer bus that does not have a central clock signal. Instead, data transfers are coordinated using handshaking signals between the sender and receiver.',
+    example: 'The I2C bus is an example of an asynchronous bus, using start and stop conditions to frame data transfers.',
+  },
+  {
+    id: 'asynchronous-replication',
+    term: 'Asynchronous Replication',
+    slug: 'asynchronous-replication',
+    definition: 'A data replication method where the primary server writes data and immediately acknowledges the write to the client, while the data is replicated to secondary servers in the background.',
+    example: 'The database used asynchronous replication for its disaster recovery site to minimize the performance impact on the primary server.',
+  },
+  {
+    id: 'ata-advanced-technology-attachment',
+    term: 'ATA (Advanced Technology Attachment)',
+    slug: 'ata-advanced-technology-attachment',
+    definition: 'A standard interface for connecting storage devices such as hard disk drives and CD-ROM drives to a computer. PATA and SATA are two types of ATA interfaces.',
+    example: 'The old computer had two hard drives connected via the parallel ATA (PATA) interface.',
+  },
+  {
+    id: 'ata-secure-erase',
+    term: 'ATA Secure Erase',
+    slug: 'ata-secure-erase',
+    definition: 'A command built into the firmware of modern hard drives and SSDs that securely wipes all data on the drive, making it unrecoverable.',
+    example: 'Before decommissioning the old server, he ran the ATA Secure Erase command on its SSDs to protect sensitive data.',
+  },
+  {
+    id: 'atapi',
+    term: 'ATAPI',
+    slug: 'atapi',
+    definition: 'ATA Packet Interface. A protocol that allows devices like CD-ROM and tape drives to be connected to an ATA interface.',
+    example: 'The ATAPI standard made it possible to connect a CD-ROM drive to the same IDE cable as a hard drive.',
+  },
+  {
+    id: 'athenz',
+    term: 'Athenz',
+    slug: 'athenz',
+    definition: 'An open-source platform for X.509 certificate-based service authentication and authorization for dynamic infrastructures.',
+    example: 'Yahoo developed Athenz to manage service-to-service authentication in its large-scale cloud environment.',
+  },
+  {
+    id: 'atlassian-suite',
+    term: 'Atlassian Suite',
+    slug: 'atlassian-suite',
+    definition: 'A collection of software development and collaboration tools from the company Atlassian, including Jira, Confluence, and Bitbucket.',
+    example: 'The development team managed their entire workflow using the Atlassian Suite, from tracking tasks in Jira to documenting their work in Confluence.',
+  },
+  {
+    id: 'atm-network',
+    term: 'ATM Network',
+    slug: 'atm-network',
+    definition: 'Asynchronous Transfer Mode. A telecommunications standard for carrying a complete range of user traffic, including voice, data, and video signals.',
+    example: 'In the 1990s, ATM networks were seen as a promising technology for high-speed broadband services.',
+  },
+  {
+    id: 'atomic-clock-sync',
+    term: 'Atomic Clock Sync',
+    slug: 'atomic-clock-sync',
+    definition: 'The process of synchronizing a computer\'s clock with an atomic clock, the most accurate time standard available. This is often done using the Network Time Protocol (NTP).',
+    example: 'Financial trading systems require precise Atomic Clock Sync to ensure all transactions are timestamped correctly.',
+  },
+  {
+    id: 'atomic-commit',
+    term: 'Atomic Commit',
+    slug: 'atomic-commit',
+    definition: 'An operation in a transactional system (like a database or version control system) where a set of changes is applied as a single, indivisible unit. Either all changes succeed, or none of them do.',
+    example: 'The database used an atomic commit to ensure that both the debit from one account and the credit to another account happened together or not at all.',
+  },
+  {
+    id: 'atomic-counter',
+    term: 'Atomic Counter',
+    slug: 'atomic-counter',
+    definition: 'A counter variable that can be incremented or decremented as an atomic operation, ensuring that it is safe to use in a multithreaded environment without race conditions.',
+    example: 'The server used an atomic counter to keep track of the number of active connections.',
+  },
+  {
+    id: 'atomic-operation',
+    term: 'Atomic Operation',
+    slug: 'atomic-operation',
+    definition: 'A an operation that is performed as a single, indivisible unit. In a multithreaded environment, an atomic operation cannot be partially completed.',
+    example: 'Incrementing a shared counter is not an atomic operation by default and requires special handling to avoid race conditions.',
+  },
+  {
+    id: 'atomizer-cloud-build-system',
+    term: 'Atomizer (Cloud build system)',
+    slug: 'atomizer-cloud-build-system',
+    definition: 'A component of Google\'s internal cloud build system that is responsible for breaking down build tasks into smaller, parallelizable units.',
+    example: 'The Atomizer analyzed the build dependencies and created a graph of small tasks that could be executed across many machines.',
+  },
+  {
+    id: 'attach-rate',
+    term: 'Attach Rate',
+    slug: 'attach-rate',
+    definition: 'In business and technology, a measure of the number of secondary products or services sold for each primary product. For example, the attach rate of games for a gaming console.',
+    example: 'The new gaming console had a high attach rate, with the average user buying three games along with the hardware.',
+  },
+  {
+    id: 'attack-surface',
+    term: 'Attack Surface',
+    slug: 'attack-surface',
+    definition: 'The sum of the different points ("attack vectors") where an unauthorized user (the "attacker") can try to enter data to or extract data from an environment.',
+    example: 'By closing unnecessary open ports on the firewall, the administrator reduced the server\'s attack surface.',
+  },
+  {
+    id: 'attenuation',
+    term: 'Attenuation',
+    slug: 'attenuation',
+    definition: 'The reduction in the strength of a signal as it travels through a medium. This is a key concern in both wired and wireless communication.',
+    example: 'The long fiber optic cable caused significant attenuation of the light signal, requiring an amplifier at the receiving end.',
+  },
+  {
+    id: 'attribute-selector',
+    term: 'Attribute Selector',
+    slug: 'attribute-selector',
+    definition: 'In CSS, a selector that matches elements based on the presence or value of their attributes.',
+    example: 'She used the attribute selector `input[type="submit"]` to style only the submit buttons on the form.',
+  },
+  {
+    id: 'atx-power-supply',
+    term: 'ATX Power Supply',
+    slug: 'atx-power-supply',
+    definition: 'A standard for power supply units in desktop computers. It defines the form factor and the connectors used to power the motherboard and other components.',
+    example: 'He bought a 750-watt ATX power supply to provide enough power for his new high-end graphics card.',
+  },
+  {
+    id: 'audio-codec',
+    term: 'Audio Codec',
+    slug: 'audio-codec',
+    definition: 'A device or computer program which encodes or decodes a digital audio data stream. MP3 and AAC are examples of audio codecs.',
+    example: 'He converted his WAV files to the FLAC audio codec to save space without losing any quality.',
+  },
+  {
+    id: 'audio-driver',
+    term: 'Audio Driver',
+    slug: 'audio-driver',
+    definition: 'A low-level software driver that allows the operating system to communicate with and control a computer\'s audio hardware.',
+    example: 'After updating Windows, he had to reinstall the audio driver to get his speakers to work again.',
+  },
+  {
+    id: 'audit-log',
+    term: 'Audit Log',
+    slug: 'audit-log',
+    definition: 'A chronological record of events and actions that have occurred on a system. It is used for security, compliance, and troubleshooting.',
+    example: 'The security team reviewed the audit log to see which administrator had changed the firewall rules.',
+  },
+  {
+    id: 'aura-sync',
+    term: 'Aura Sync',
+    slug: 'aura-sync',
+    definition: 'A utility from ASUS that allows users to synchronize the RGB lighting across all their compatible computer components, such as the motherboard, graphics card, and peripherals.',
+    example: 'He used Aura Sync to set all the RGB lights in his gaming PC to a pulsing red color.',
+  },
+  {
+    id: 'authentication-mechanism',
+    term: 'Authentication Mechanism',
+    slug: 'authentication-mechanism',
+    definition: 'The specific method used to verify the identity of a user or system, such as passwords, multi-factor authentication, or biometric verification.',
+    example: 'The bank\'s mobile app used a combination of a password and a fingerprint scan as its authentication mechanism.',
+  },
+  {
+    id: 'authorization-header',
+    term: 'Authorization Header',
+    slug: 'authorization-header',
+    definition: 'An HTTP header that is used to carry credentials for authenticating a client with a server, typically a bearer token or an API key.',
+    example: 'The client sent the access token in the Authorization header with the format `Bearer {token}`.',
+  },
+  {
+    id: 'auto-clicker',
+    term: 'Auto Clicker',
+    slug: 'auto-clicker',
+    definition: 'A type of software or macro that can be used to automate mouse clicking. It is often used in gaming to perform repetitive tasks.',
+    example: 'He used an auto clicker to repeatedly click the "mine" button in the incremental game.',
+  },
+  {
+    id: 'auto-scaling',
+    term: 'Auto Scaling',
+    slug: 'auto-scaling',
+    definition: 'A cloud computing feature that automatically adjusts the number of compute resources in a server farm based on the current load.',
+    example: 'The website used auto scaling to automatically add more web servers during the traffic spike on Black Friday.',
+  },
+  {
+    id: 'autocad-script',
+    term: 'AutoCAD Script',
+    slug: 'autocad-script',
+    definition: 'A text file containing a sequence of AutoCAD commands that can be run to automate repetitive tasks in the CAD software.',
+    example: 'The architect wrote an AutoCAD script to automatically draw the grid lines for the new building plan.',
+  },
+  {
+    id: 'autocomplete-engine',
+    term: 'Autocomplete Engine',
+    slug: 'autocomplete-engine',
+    definition: 'The software component that provides suggestions to a user as they type into a text field, based on a dictionary or user history.',
+    example: 'The search bar\'s autocomplete engine suggested "New York City" after the user typed "New Y".',
+  },
+  {
+    id: 'autocorrect-library',
+    term: 'Autocorrect Library',
+    slug: 'autocorrect-library',
+    definition: 'A software library that provides functionality for automatically correcting spelling errors as a user types.',
+    example: 'The mobile keyboard used an autocorrect library to fix common typos.',
+  },
+  {
+    id: 'autoencoder',
+    term: 'Autoencoder',
+    slug: 'autoencoder',
+    definition: 'A type of artificial neural network used to learn efficient data codings in an unsupervised manner. It is often used for dimensionality reduction and feature learning.',
+    example: 'The data scientist trained an autoencoder to compress the high-dimensional image data into a smaller, more meaningful representation.',
+  },
+  {
+    id: 'autohotkey-script',
+    term: 'AutoHotkey Script',
+    slug: 'autohotkey-script',
+    definition: 'A script written for AutoHotkey, a free and open-source custom scripting language for Microsoft Windows.',
+    example: 'He wrote an AutoHotkey script to automate a series of repetitive data entry tasks.',
+  },
+  {
+    id: 'autoloader',
+    term: 'Autoloader',
+    slug: 'autoloader',
+    definition: 'In programming, a function or mechanism that automatically loads classes or modules on demand, without needing to explicitly include them at the start of a file.',
+    example: 'The PHP framework used a PSR-4 autoloader to automatically load the correct class file based on its namespace.',
+  },
+  {
+    id: 'autonomous-drone-os',
+    term: 'Autonomous Drone OS',
+    slug: 'autonomous-drone-os',
+    definition: 'An operating system designed specifically for autonomous drones, providing features for flight control, navigation, sensor data processing, and communication.',
+    example: 'The new delivery drone ran a custom Autonomous Drone OS based on Linux.',
+  },
+  {
+    id: 'auto-responder-filter',
+    term: 'Auto-Responder Filter',
+    slug: 'auto-responder-filter',
+    definition: 'A rule in an email system that automatically sends a predefined response to incoming messages, often used for "out of office" notifications.',
+    example: 'He set up an auto-responder filter to let people know he would be on vacation for a week.',
+  },
+  {
+    id: 'autosave-interval',
+    term: 'Autosave Interval',
+    slug: 'autosave-interval',
+    definition: 'The time period after which a program automatically saves the user\'s work.',
+    example: 'He set the autosave interval in his word processor to one minute to avoid losing any work.',
+  },
+  {
+    id: 'autoscaling-trigger',
+    term: 'Autoscaling Trigger',
+    slug: 'autoscaling-trigger',
+    definition: 'The specific condition or metric threshold that causes an auto-scaling event to occur. For example, CPU utilization exceeding 75% for 5 minutes.',
+    example: 'The autoscaling trigger was set too low, causing the system to add new servers unnecessarily.',
+  },
+  {
+    id: 'autostart-entry',
+    term: 'Autostart Entry',
+    slug: 'autostart-entry',
+    definition: 'An entry in an operating system\'s configuration that causes a specific program to start automatically when the system boots up.',
+    example: 'He removed the unwanted software from the startup list by deleting its autostart entry from the Windows Registry.',
+  },
+  {
+    id: 'autosys-scheduler',
+    term: 'AutoSys Scheduler',
+    slug: 'autosys-scheduler',
+    definition: 'A popular enterprise-level job scheduling and workload automation tool.',
+    example: 'The bank used the AutoSys Scheduler to manage all of its nightly batch processing jobs.',
+  },
+  {
+    id: 'availability-zone',
+    term: 'Availability Zone',
+    slug: 'availability-zone',
+    definition: 'In cloud computing, a distinct location within a region that is isolated from failures in other availability zones. Deploying across multiple AZs provides high availability.',
+    example: 'To ensure high availability, the company deployed its web servers across three different availability zones in the `us-east-1` region.',
+  },
+  {
+    id: 'avalanche-network',
+    term: 'Avalanche Network',
+    slug: 'avalanche-network',
+    definition: 'A blockchain platform that is known for its high transaction throughput and fast finality, achieved through its novel consensus protocol.',
+    example: 'The DeFi application was built on the Avalanche Network to take advantage of its low transaction fees.',
+  },
+  {
+    id: 'avatar-hash',
+    term: 'Avatar Hash',
+    slug: 'avatar-hash',
+    definition: 'A hash generated from a user\'s identifier (like an email address) that is used to create a unique, procedurally generated avatar. Gravatar is a well-known service that uses this concept.',
+    example: 'The forum software used an MD5 avatar hash of the user\'s email to generate a simple, unique profile picture for them.',
+  },
+  {
+    id: 'avg-heuristics',
+    term: 'AVG Heuristics',
+    slug: 'avg-heuristics',
+    definition: 'The heuristic analysis engine used by AVG antivirus software to detect new and unknown malware based on its behavior and characteristics.',
+    example: 'AVG Heuristics flagged the unknown program as suspicious because it was trying to write to a system file.',
+  },
+  {
+    id: 'avr-microcontroller',
+    term: 'AVR Microcontroller',
+    slug: 'avr-microcontroller',
+    definition: 'A family of microcontrollers developed by Atmel (now part of Microchip Technology). They are widely used in hobbyist and embedded projects, and are the basis for many Arduino boards.',
+    example: 'The Arduino Uno is based on the ATmega328P, which is an AVR microcontroller.',
+  },
+  {
+    id: 'aws-batch',
+    term: 'AWS Batch',
+    slug: 'aws-batch',
+    definition: 'A service on Amazon Web Services that enables developers to run batch computing workloads on the AWS Cloud.',
+    example: 'They used AWS Batch to run their large-scale data processing jobs without having to manage the underlying servers.',
+  },
+  {
+    id: 'aws-cloudformation',
+    term: 'AWS CloudFormation',
+    slug: 'aws-cloudformation',
+    definition: 'An AWS service that allows you to define and provision your AWS infrastructure as code using a template file.',
+    example: 'The entire production environment was defined in a single AWS CloudFormation template, making it easy to replicate.',
+  },
+  {
+    id: 'aws-direct-connect',
+    term: 'AWS Direct Connect',
+    slug: 'aws-direct-connect',
+    definition: 'A cloud service solution that is a dedicated network connection from your on-premises data center to AWS.',
+    example: 'The company established an AWS Direct Connect link to get a high-speed, private connection to their VPC.',
+  },
+  {
+    id: 'aws-fargate',
+    term: 'AWS Fargate',
+    slug: 'aws-fargate',
+    definition: 'A serverless compute engine for containers on AWS. It allows you to run containers without having to manage the underlying servers or clusters.',
+    example: 'They chose to run their containers on AWS Fargate to simplify operations and reduce management overhead.',
+  },
+  {
+    id: 'aws-iam',
+    term: 'AWS IAM',
+    slug: 'aws-iam',
+    definition: 'Identity and Access Management. An AWS service that helps you securely control access to AWS resources.',
+    example: 'The administrator created an AWS IAM user with read-only permissions to the S3 bucket.',
+  },
+  {
+    id: 'aws-lambda',
+    term: 'AWS Lambda',
+    slug: 'aws-lambda',
+    definition: 'A serverless compute service on AWS that lets you run code without provisioning or managing servers. You pay only for the compute time you consume.',
+    example: 'She wrote an AWS Lambda function that was triggered whenever a new file was uploaded to an S3 bucket.',
+  },
+  {
+    id: 'aws-lightsail',
+    term: 'AWS LightSail',
+    slug: 'aws-lightsail',
+    definition: 'An easy-to-use cloud platform on AWS that offers everything you need to build an application or website, with a simple, low-cost monthly plan.',
+    example: 'He launched his WordPress blog on an AWS LightSail instance because it was much simpler to set up than a full EC2 instance.',
+  },
+  {
+    id: 'aws-macie',
+    term: 'AWS Macie',
+    slug: 'aws-macie',
+    definition: 'A data security and privacy service on AWS that uses machine learning to automatically discover, classify, and protect sensitive data in AWS.',
+    example: 'The company used AWS Macie to scan their S3 buckets for any accidentally exposed personal identifiable information (PII).',
+  },
+  {
+    id: 'aws-neptune',
+    term: 'AWS Neptune',
+    slug: 'aws-neptune',
+    definition: 'A fast, reliable, fully-managed graph database service on AWS that makes it easy to build and run applications that work with highly connected datasets.',
+    example: 'The social network application was built on AWS Neptune to efficiently model the complex relationships between users.',
+  },
+  {
+    id: 'aws-outposts',
+    term: 'AWS Outposts',
+    slug: 'aws-outposts',
+    definition: 'An AWS service that brings native AWS services, infrastructure, and operating models to virtually any data center, co-location space, or on-premises facility.',
+    example: 'For low-latency processing, the factory used AWS Outposts to run AWS services directly on their factory floor.',
+  },
+  {
+    id: 'aws-parameter-store',
+    term: 'AWS Parameter Store',
+    slug: 'aws-parameter-store',
+    definition: 'A service in AWS Systems Manager that provides secure, hierarchical storage for configuration data and secrets management.',
+    example: 'The application loaded its database password from the AWS Parameter Store at startup instead of hardcoding it in a configuration file.',
+  },
+  {
+    id: 'aws-quicksight',
+    term: 'AWS QuickSight',
+    slug: 'aws-quicksight',
+    definition: 'A scalable, serverless, embeddable, machine learning-powered business intelligence (BI) service built for the cloud.',
+    example: 'The marketing team used AWS QuickSight to create interactive dashboards to visualize their campaign performance.',
+  },
+  {
+    id: 'aws-redshift',
+    term: 'AWS Redshift',
+    slug: 'aws-redshift',
+    definition: 'A fully managed, petabyte-scale data warehouse service in the cloud.',
+    example: 'The company loaded all of its sales data into an AWS Redshift cluster to run complex analytical queries.',
+  },
+  {
+    id: 'aws-rds',
+    term: 'AWS RDS',
+    slug: 'aws-rds',
+    definition: 'Relational Database Service. An AWS service that makes it easy to set up, operate, and scale a relational database in the cloud.',
+    example: 'He migrated his on-premises MySQL database to AWS RDS to take advantage of managed backups and automatic failover.',
+  },
+  {
+    id: 'aws-s3',
+    term: 'AWS S3',
+    slug: 'aws-s3',
+    definition: 'Simple Storage Service. A secure, durable, and highly-scalable object storage service from AWS.',
+    example: 'The website stored all of its static images and videos in an AWS S3 bucket.',
+  },
+  {
+    id: 'aws-secrets-manager',
+    term: 'AWS Secrets Manager',
+    slug: 'aws-secrets-manager',
+    definition: 'An AWS service that helps you protect secrets needed to access your applications, services, and IT resources. It enables you to easily rotate, manage, and retrieve database credentials, API keys, and other secrets.',
+    example: 'They used AWS Secrets Manager to automatically rotate the database password every 30 days without any code changes.',
+  },
+  {
+    id: 'aws-ses',
+    term: 'AWS SES',
+    slug: 'aws-ses',
+    definition: 'Simple Email Service. A cloud-based email sending service on AWS designed to help digital marketers and application developers send marketing, notification, and transactional emails.',
+    example: 'The application used AWS SES to send password reset emails to its users.',
+  },
+  {
+    id: 'aws-shield',
+    term: 'AWS Shield',
+    slug: 'aws-shield',
+    definition: 'A managed Distributed Denial of Service (DDoS) protection service on AWS that safeguards applications running on AWS.',
+    example: 'All applications running behind their Application Load Balancer were automatically protected by AWS Shield Standard.',
+  },
+  {
+    id: 'aws-snowball',
+    term: 'AWS Snowball',
+    slug: 'aws-snowball',
+    definition: 'A petabyte-scale data transport solution from AWS that uses secure appliances to transfer large amounts of data into and out of the AWS cloud.',
+    example: 'To migrate their 50 terabytes of data to the cloud, they ordered an AWS Snowball appliance, loaded the data onto it, and shipped it back to AWS.',
+  },
+  {
+    id: 'aws-step-functions',
+    term: 'AWS Step Functions',
+    slug: 'aws-step-functions',
+    definition: 'A serverless function orchestrator on AWS that makes it easy to sequence AWS Lambda functions and multiple AWS services into business-critical applications.',
+    example: 'They modeled their entire order processing workflow, which involved several Lambda functions, using AWS Step Functions.',
+  },
+  {
+    id: 'aws-storage-gateway',
+    term: 'AWS Storage Gateway',
+    slug: 'aws-storage-gateway',
+    definition: 'A hybrid cloud storage service that gives you on-premises access to virtually unlimited cloud storage.',
+    example: 'The office used an AWS Storage Gateway to back up their local file server to S3.',
+  },
+  {
+    id: 'aws-vpc',
+    term: 'AWS VPC',
+    slug: 'aws-vpc',
+    definition: 'Virtual Private Cloud. An AWS service that lets you provision a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network that you define.',
+    example: 'The company created an AWS VPC with public and private subnets to securely host their multi-tier web application.',
+  },
+  {
+    id: 'axi-bus',
+    term: 'AXI Bus',
+    slug: 'axi-bus',
+    definition: 'Advanced eXtensible Interface. A part of the ARM AMBA specification, it is a high-performance, high-frequency bus protocol for system-on-a-chip (SoC) design.',
+    example: 'The high-speed DMA controller used the AXI bus to transfer data directly to memory.',
+  },
+  {
+    id: 'aix-operating-system',
+    term: 'AIX Operating System',
+    slug: 'aix-operating-system',
+    definition: 'A series of proprietary Unix operating systems developed and sold by IBM for several of its computer platforms.',
+    example: 'The bank\'s critical legacy application still runs on a powerful IBM server running the AIX operating system.',
+  },
+  {
+    id: 'azure-ad',
+    term: 'Azure AD',
+    slug: 'azure-ad',
+    definition: 'Azure Active Directory. Microsoft’s cloud-based identity and access management service.',
+    example: 'Employees used their Azure AD credentials to log in to both their Windows PCs and cloud applications like Office 365.',
+  },
+  {
+    id: 'azure-blob-storage',
+    term: 'Azure Blob Storage',
+    slug: 'azure-blob-storage',
+    definition: 'Microsoft\'s object storage solution for the cloud. Blob storage is optimized for storing massive amounts of unstructured data.',
+    example: 'The application stored all user-uploaded videos and images in Azure Blob Storage.',
+  },
+  {
+    id: 'azure-container-apps',
+    term: 'Azure Container Apps',
+    slug: 'azure-container-apps',
+    definition: 'A serverless container service on Azure that allows you to run containerized apps without managing complex infrastructure.',
+    example: 'They deployed their microservices as Azure Container Apps to benefit from serverless auto-scaling.',
+  },
+  {
+    id: 'azure-devops',
+    term: 'Azure DevOps',
+    slug: 'azure-devops',
+    definition: 'A suite of services from Microsoft that provides developer services for allowing teams to plan work, collaborate on code development, and build and deploy applications.',
+    example: 'The team used Azure DevOps for their entire software lifecycle, from sprint planning in Azure Boards to CI/CD in Azure Pipelines.',
+  },
+  {
+    id: 'azure-front-door',
+    term: 'Azure Front Door',
+    slug: 'azure-front-door',
+    definition: 'A scalable and secure entry point for fast delivery of your global web applications. It combines a global load balancer, CDN, and WAF.',
+    example: 'They used Azure Front Door to provide a single global endpoint for their application, which was deployed in multiple regions.',
+  },
+  {
+    id: 'azure-functions',
+    term: 'Azure Functions',
+    slug: 'azure-functions',
+    definition: 'A serverless compute service on Azure that enables you to run event-triggered code without having to explicitly provision or manage infrastructure.',
+    example: 'He wrote an Azure Function that was triggered by a message on a storage queue to process new orders.',
+  },
+  {
+    id: 'azure-logic-apps',
+    term: 'Azure Logic Apps',
+    slug: 'azure-logic-apps',
+    definition: 'A cloud service on Azure that helps you schedule, automate, and orchestrate tasks, business processes, and workflows.',
+    example: 'They created an Azure Logic App to automate the process of approving and provisioning new user accounts.',
+  },
+  {
+    id: 'azure-monitor',
+    term: 'Azure Monitor',
+    slug: 'azure-monitor',
+    definition: 'A service in Azure that provides a comprehensive solution for collecting, analyzing, and acting on telemetry from your cloud and on-premises environments.',
+    example: 'The operations team used Azure Monitor to create dashboards and alerts for the health of their virtual machines.',
+  },
+  {
+    id: 'azure-pipelines',
+    term: 'Azure Pipelines',
+    slug: 'azure-pipelines',
+    definition: 'A cloud service in Azure DevOps that you can use to automatically build and test your code project and make it available to other users.',
+    example: 'Their Azure Pipelines CI/CD workflow automatically deployed the application to a staging environment for testing after every successful build.',
+  },
+  {
+    id: 'azure-redis-cache',
+    term: 'Azure Redis Cache',
+    slug: 'azure-redis-cache',
+    definition: 'A secure and dedicated Redis cache, managed by Microsoft and hosted in Azure. It provides a powerful in-memory caching solution.',
+    example: 'The application used Azure Redis Cache to store user session data and reduce load on the main database.',
+  },
+  {
+    id: 'azure-sentinel',
+    term: 'Azure Sentinel',
+    slug: 'azure-sentinel',
+    definition: 'A scalable, cloud-native, security information and event management (SIEM) and security orchestration automated response (SOAR) solution from Microsoft.',
+    example: 'The security operations center (SOC) used Azure Sentinel to get a unified view of security events across their entire enterprise.',
+  },
+  {
+    id: 'azure-sql',
+    term: 'Azure SQL',
+    slug: 'azure-sql',
+    definition: 'A family of managed, secure, and intelligent products that use the SQL Server database engine in the Azure cloud.',
+    example: 'They migrated their on-premises SQL Server database to a managed Azure SQL instance to reduce management overhead.',
+  },
+  {
+    id: 'azure-static-web-apps',
+    term: 'Azure Static Web Apps',
+    slug: 'azure-static-web-apps',
+    definition: 'A service on Azure that automatically builds and deploys full stack web apps from a code repository. It is optimized for serving static content.',
+    example: 'He deployed his JAMstack blog as an Azure Static Web App, taking advantage of its built-in CI/CD and global distribution.',
+  },
+  {
+    id: 'azure-virtual-desktop',
+    term: 'Azure Virtual Desktop',
+    slug: 'azure-virtual-desktop',
+    definition: 'A desktop and app virtualization service that runs on the cloud. It allows users to access a Windows desktop experience from virtually anywhere.',
+    example: 'The company provided remote employees with access to corporate applications through Azure Virtual Desktop.',
+  },
+  {
+    id: 'azure-vm-scale-sets',
+    term: 'Azure VM Scale Sets',
+    slug: 'azure-vm-scale-sets',
+    definition: 'An Azure compute resource that you can use to deploy and manage a set of identical VMs. It provides auto-scaling capabilities.',
+    example: 'The web front-end was deployed on an Azure VM Scale Set, which automatically added more VMs during peak traffic.',
   },
   {
     id: 'backoff-algorithm',
@@ -842,3629 +1794,1047 @@ export const terms: Term[] = [
     example: 'The API client uses an exponential backoff algorithm to retry failed requests, waiting longer after each subsequent failure.',
   },
   {
-    id: 'backplane-interconnect',
-    term: 'Backplane Interconnect',
-    slug: 'backplane-interconnect',
-    definition: 'A circuit board that connects several connectors in parallel, often used in blade servers to connect multiple server modules.',
-    example: 'The blade chassis features a high-speed backplane interconnect that provides power and data connectivity to all installed servers.',
+    id: 'backplane-bus',
+    term: 'Backplane Bus',
+    slug: 'backplane-bus',
+    definition: 'A group of parallel electrical connectors that form a bus, often used in blade servers or modular systems to connect multiple cards or modules.',
+    example: 'Each server blade slid into the chassis and connected to the high-speed backplane bus for power and data.',
   },
   {
-    id: 'backport-patch',
-    term: 'Backport Patch',
-    slug: 'backport-patch',
+    id: 'backpressure',
+    term: 'Backpressure',
+    slug: 'backpressure',
+    definition: 'In data streaming, a mechanism that allows a receiving component to signal to a sending component to slow down the rate of data transfer to prevent being overwhelmed.',
+    example: 'The streaming data pipeline uses a backpressure mechanism to prevent the data processor from being overwhelmed by a fast-producing source.',
+  },
+  {
+    id: 'backup-rotation',
+    term: 'Backup Rotation',
+    slug: 'backup-rotation',
+    definition: 'A strategy for managing backup media where older backups are overwritten by newer ones to conserve storage space. A common scheme is Grandfather-Father-Son.',
+    example: 'The backup rotation policy was to keep daily backups for a week, weekly backups for a month, and monthly backups for a year.',
+  },
+  {
+    id: 'backscatter-analysis',
+    term: 'Backscatter Analysis',
+    slug: 'backscatter-analysis',
+    definition: 'A technique in network security to analyze the response packets generated by a DDoS attack to infer information about the attack\'s source and scale.',
+    example: 'By analyzing the unsolicited SYN-ACK packets, the security team used backscatter analysis to estimate the size of the DDoS attack.',
+  },
+  {
+    id: 'backup-snapshot',
+    term: 'Backup Snapshot',
+    slug: 'backup-snapshot',
+    definition: 'A point-in-time copy of a file system or virtual machine, used for backups. It allows for consistent backups of running systems.',
+    example: 'The virtual machine was restored from a backup snapshot taken just before the system update was applied.',
+  },
+  {
+    id: 'backbone-network',
+    term: 'Backbone Network',
+    slug: 'backbone-network',
+    definition: 'The central, high-speed part of a large network that connects different network segments and core routers. The internet has a global backbone network.',
+    example: 'All the company\'s regional offices were connected to the corporate backbone network via high-speed fiber links.',
+  },
+  {
+    id: 'backdoor-logic',
+    term: 'Backdoor Logic',
+    slug: 'backdoor-logic',
+    definition: 'Undocumented code intentionally inserted into a program to allow an unauthorized user to bypass normal security mechanisms and gain access.',
+    example: 'The security audit discovered backdoor logic in the firmware that would allow anyone with a specific password to gain root access.',
+  },
+  {
+    id: 'backhaul-network',
+    term: 'Backhaul Network',
+    slug: 'backhaul-network',
+    definition: 'In telecommunications, the portion of the network that connects the core network to the smaller, edge networks. For example, connecting cell towers to the main phone network.',
+    example: 'The mobile carrier upgraded its backhaul network to high-speed fiber to support the increased data demands of 5G.',
+  },
+  {
+    id: 'background-daemon',
+    term: 'Background Daemon',
+    slug: 'background-daemon',
+    definition: 'A program that runs in the background, without direct user interaction, to perform tasks like system monitoring or maintenance.',
+    example: 'The `cron` daemon on Linux is a background process that runs scheduled tasks at specific times.',
+  },
+  {
+    id: 'background-job',
+    term: 'Background Job',
+    slug: 'background-job',
+    definition: 'A task or process that is run in the background, separate from the main application thread, to avoid blocking user interactions.',
+    example: 'Sending welcome emails to new users is handled by a background job processing system to avoid delaying the sign-up process.',
+  },
+  {
+    id: 'backport',
+    term: 'Backport',
+    slug: 'backport',
     definition: 'The process of taking a fix or feature from a newer version of software and applying it to an older version.',
     example: 'The security vulnerability was fixed in the latest release, and a developer was assigned to backport the patch to the previous stable version.',
   },
   {
-    id: 'back-pressure-mechanism',
-    term: 'Back-pressure Mechanism',
-    slug: 'back-pressure-mechanism',
-    definition: 'In data streaming, a mechanism that allows a receiving component to signal to a sending component to slow down the rate of data transfer.',
-    example: 'The streaming data pipeline uses a back-pressure mechanism to prevent the data processor from being overwhelmed by a fast-producing source.',
-  },
-  {
-    id: 'back-quote',
-    term: 'Back-quote (` `)',
-    slug: 'back-quote',
-    definition: 'The ` character, often used in programming languages for template literals (JavaScript) or to execute shell commands (Unix shells).',
-    example: 'In JavaScript, he used back-quotes to create a template literal that included variables directly in the string.',
-  },
-  {
-    id: 'backslash-escape-character',
-    term: 'Backslash (\\) Escape Character',
-    slug: 'backslash-escape-character',
-    definition: 'The \\ character, used in many programming languages to indicate that the following character has a special meaning.',
-    example: 'To include a double quote inside a string, you need to escape it with a backslash, like this: `"He said, \\"Hello!\\""`.',
+    id: 'back-end-system',
+    term: 'Back-end System',
+    slug: 'back-end-system',
+    definition: 'The part of a client-server application that resides on the server and is responsible for data storage, processing, and business logic.',
+    example: 'The mobile app communicated with a back-end system that managed user accounts and stored all the data.',
   },
   {
     id: 'backspace-character',
     term: 'Backspace Character',
     slug: 'backspace-character',
-    definition: 'A control character that moves the cursor one position backward, sometimes used in text files.',
-    example: 'He accidentally included a backspace character in the text file, which caused formatting issues.',
+    definition: 'A control character that moves the cursor one position backward. Its ASCII value is 8.',
+    example: 'He accidentally included a backspace character in the text file, which caused formatting issues when printing.',
   },
   {
-    id: 'backup-agent-software',
-    term: 'Backup Agent Software',
-    slug: 'backup-agent-software',
-    definition: 'A program installed on a computer or server that automatically backs up data to a remote location.',
-    example: 'The IT department installed a backup agent on all employee laptops.',
+    id: 'backtesting-engine',
+    term: 'Backtesting Engine',
+    slug: 'backtesting-engine',
+    definition: 'A software tool used in finance to test a trading strategy on historical market data to see how it would have performed.',
+    example: 'The quantitative analyst used the backtesting engine to simulate his new trading algorithm on the last 10 years of stock market data.',
   },
   {
-    id: 'backup-and-restore-strategy',
-    term: 'Backup and Restore Strategy',
-    slug: 'backup-and-restore-strategy',
-    definition: 'A plan for regularly creating copies of data and a procedure for restoring that data in the event of a data loss event.',
-    example: 'The company\'s backup and restore strategy includes daily incremental backups and a full backup every weekend.',
+    id: 'backend-for-frontend',
+    term: 'Backend for Frontend',
+    slug: 'backend-for-frontend',
+    definition: 'An architectural pattern where a dedicated backend service is created to support a specific frontend application, such as a mobile app or a single-page application.',
+    example: 'They created a Backend for Frontend (BFF) to aggregate data from several microservices into a single API endpoint for the mobile app.',
   },
   {
-    id: 'backup-archive-file',
-    term: 'Backup Archive File',
-    slug: 'backup-archive-file',
-    definition: 'A single file that contains a compressed collection of files and folders from a backup.',
-    example: 'He restored his documents from the backup archive file after his hard drive failed.',
+    id: 'bad-block',
+    term: 'Bad Block',
+    slug: 'bad-block',
+    definition: 'A sector on a hard disk or flash memory that is no longer reliable for storing data due to physical damage or wear.',
+    example: 'The hard drive\'s firmware automatically marked the bad block and remapped it to a spare block.',
   },
   {
-    id: 'backup-catalog',
-    term: 'Backup Catalog',
-    slug: 'backup-catalog',
-    definition: 'A database that stores information about backups, including what files were backed up, when they were backed up, and where they are stored.',
-    example: 'The backup software uses a catalog to quickly locate the correct version of a file for restoration.',
+    id: 'badge-component',
+    term: 'Badge Component',
+    slug: 'badge-component',
+    definition: 'In UI development, a small graphical element used to display a count or status, such as the number of unread notifications.',
+    example: 'He added a red badge component to the shopping cart icon to show the number of items inside.',
   },
   {
-    id: 'backup-compression-ratio',
-    term: 'Backup Compression Ratio',
-    slug: 'backup-compression-ratio',
-    definition: 'A measure of how much a backup has been compressed, calculated by dividing the original size by the compressed size.',
-    example: 'With a 3:1 backup compression ratio, the 300GB of data was compressed into a 100GB backup file.',
+    id: 'bag-of-words',
+    term: 'Bag-of-Words',
+    slug: 'bag-of-words',
+    definition: 'A simple representation model used in natural language processing and information retrieval. It represents a piece of text as an unordered collection (a "bag") of its words, disregarding grammar and word order.',
+    example: 'The spam filter used a bag-of-words model to classify emails based on the frequency of certain words like "free" and "viagra".',
   },
   {
-    id: 'backup-cycle-policy',
-    term: 'Backup Cycle Policy',
-    slug: 'backup-cycle-policy',
-    definition: 'A policy that defines how often backups are performed and how long they are kept.',
-    example: 'The company\'s backup cycle policy is to perform daily backups and retain them for 30 days.',
+    id: 'balanced-tree',
+    term: 'Balanced Tree',
+    slug: 'balanced-tree',
+    definition: 'A tree data structure where the depth of the left and right subtrees of any node differs by at most one. This ensures that operations like search, insert, and delete have a worst-case time complexity of O(log n).',
+    example: 'Red-black trees and AVL trees are two common types of self-balancing binary search trees.',
   },
   {
-    id: 'backup-deduplication-technology',
-    term: 'Backup Deduplication Technology',
-    slug: 'backup-deduplication-technology',
-    definition: 'A technology that reduces the amount of backup storage required by eliminating duplicate copies of data.',
-    example: 'The new backup system uses deduplication technology to significantly reduce storage costs.',
+    id: 'balancer-node',
+    term: 'Balancer Node',
+    slug: 'balancer-node',
+    definition: 'A server or process whose primary role is to distribute incoming traffic across a cluster of other servers. A load balancer.',
+    example: 'The balancer node checked the health of each web server before routing the user\'s request.',
   },
   {
-    id: 'backup-encryption-key',
-    term: 'Backup Encryption Key',
-    slug: 'backup-encryption-key',
-    definition: 'A secret key used to encrypt a backup, making it unreadable without the key.',
-    example: 'He stored the backup encryption key in a secure password manager.',
+    id: 'band-steering',
+    term: 'Band Steering',
+    slug: 'band-steering',
+    definition: 'A feature in dual-band Wi-Fi access points that encourages dual-band capable clients to connect to the less congested 5 GHz network.',
+    example: 'With band steering enabled, my phone automatically switched to the 5 GHz Wi-Fi network, which gave me much faster download speeds.',
   },
   {
-    id: 'backup-repository',
-    term: 'Backup Repository',
-    slug: 'backup-repository',
-    definition: 'A storage location where backups are stored, such as a network drive or a cloud storage service.',
-    example: 'The company uses a cloud-based backup repository to store its critical data.',
+    id: 'band-pass-filter',
+    term: 'Band-Pass Filter',
+    slug: 'band-pass-filter',
+    definition: 'An electronic filter that passes frequencies within a certain range and rejects (attenuates) frequencies outside that range.',
+    example: 'A radio receiver uses a band-pass filter to tune into a specific station while blocking out others.',
   },
   {
-    id: 'backup-retention-period',
-    term: 'Backup Retention Period',
-    slug: 'backup-retention-period',
-    definition: 'The length of time that a backup is kept before it is deleted.',
-    example: 'The backup retention period for financial records is seven years.',
+    id: 'bank-switching',
+    term: 'Bank Switching',
+    slug: 'bank-switching',
+    definition: 'A technique used in older computer systems to increase the amount of usable memory beyond what the CPU could directly address. It involves switching between different "banks" of memory.',
+    example: 'Early home computers used bank switching to access more than 64KB of RAM.',
   },
   {
-    id: 'backup-snapshot-image',
-    term: 'Backup Snapshot Image',
-    slug: 'backup-snapshot-image',
-    definition: 'A point-in-time copy of a file system or virtual machine, used for backups.',
-    example: 'The virtual machine was restored from a snapshot image taken just before the system update.',
+    id: 'banner-grabbing',
+    term: 'Banner Grabbing',
+    slug: 'banner-grabbing',
+    definition: 'A technique used to gain information about a computer system on a network and the services running on its open ports. An attacker can use this information to identify vulnerabilities.',
+    example: 'The penetration tester used banner grabbing to determine that the web server was running an old, vulnerable version of Apache.',
   },
   {
-    id: 'backup-tape-library',
-    term: 'Backup Tape Library',
-    slug: 'backup-tape-library',
-    definition: 'A storage device that uses magnetic tape cartridges to store backups, often used for long-term archiving.',
-    example: 'The university archives its research data in a large backup tape library.',
+    id: 'bar-chart-library',
+    term: 'Bar Chart Library',
+    slug: 'bar-chart-library',
+    definition: 'A software library or component that provides functions for creating and displaying bar charts to visualize data.',
+    example: 'The developer used Chart.js, a popular bar chart library, to create a dashboard showing monthly sales figures.',
   },
   {
-    id: 'c-adapter',
-    term: 'CAdapter',
-    slug: 'c-adapter',
-    definition: 'A software component that serves as an interface between two different systems, translating data and commands from one format to another. It is often used in C-based programming environments.',
-    example: 'The team wrote a CAdapter to allow the new user interface to communicate with the old legacy database system.'
+    id: 'bare-metal-server',
+    term: 'Bare-metal Server',
+    slug: 'bare-metal-server',
+    definition: 'A physical server dedicated to a single tenant. The tenant can install any operating system and has direct access to the underlying hardware without a hypervisor layer.',
+    example: 'For their high-performance database, they chose a bare-metal server to avoid the overhead of virtualization.',
   },
   {
-    id: 'c-agent',
-    term: 'CAgent',
-    slug: 'c-agent',
-    definition: 'A lightweight, autonomous program written in C that runs in the background to perform specific tasks, such as monitoring system health or collecting data.',
-    example: 'A CAgent was installed on each server to monitor CPU usage and report anomalies to the central management console.'
+    id: 'base-address-register',
+    term: 'Base Address Register',
+    slug: 'base-address-register',
+    definition: 'A register in a CPU that holds the beginning address of a memory region or a hardware device\'s memory-mapped I/O.',
+    example: 'The device driver read the Base Address Register to find out where the hardware\'s control registers were located in memory.',
   },
   {
-    id: 'c-alias',
-    term: 'CAlias',
-    slug: 'c-alias',
-    definition: 'In C programming, a simplified or alternative name given to a data type, variable, or function, often using a `typedef` or `#define` preprocessor directive to improve code readability and maintainability.',
-    example: 'The programmer used `typedef unsigned char byte;` to create a `byte` CAlias, making the code easier to understand.'
+    id: 'base-command',
+    term: 'Base Command',
+    slug: 'base-command',
+    definition: 'The fundamental command or program name in a command-line interface, to which sub-commands and options are added.',
+    example: 'In `git push origin main`, `git` is the base command.',
   },
   {
-    id: 'c-archive',
-    term: 'CArchive',
-    slug: 'c-archive',
-    definition: 'A file format or library in C-based applications, like those using MFC (Microsoft Foundation Classes), that is used for serializing objects—that is, converting them into a stream of bytes to be stored in a file or sent over a network.',
-    example: 'The application used a CArchive object to save the user\'s document settings to a configuration file.'
+    id: 'base-image',
+    term: 'Base Image',
+    slug: 'base-image',
+    definition: 'In containerization (like Docker), the starting image upon which you build your own custom images. It typically contains an operating system and essential libraries.',
+    example: 'He chose the official `node:16-alpine` image as the base image for his application to keep it small and secure.',
   },
   {
-    id: 'c-array',
-    term: 'CArray',
-    slug: 'c-array',
-    definition: 'A fixed-size, contiguous block of memory that holds a sequence of elements of the same data type. C-style arrays are a fundamental data structure in the C programming language.',
-    example: 'The developer declared a CArray of 10 integers to store the daily high temperatures for the week: `int temps[10];`.'
+    id: 'base-station',
+    term: 'Base Station',
+    slug: 'base-station',
+    definition: 'A fixed radio transceiver that is the central point of communication for a local wireless network, such as a cell tower for a mobile network or an access point for Wi-Fi.',
+    example: 'The mobile phone connected to the nearest cellular base station to make a call.',
   },
   {
-    id: 'cache-bank',
-    term: 'CacheBank',
-    slug: 'cache-bank',
-    definition: 'A subdivision of a CPU cache (like L2 or L3) that can be accessed independently. Splitting the cache into multiple banks allows for parallel access, reducing latency and increasing bandwidth.',
-    example: 'The processor\'s L3 cache is divided into eight CacheBanks, allowing multiple cores to retrieve data simultaneously without conflict.'
+    id: 'base64-encoding',
+    term: 'Base64 Encoding',
+    slug: 'base64-encoding',
+    definition: 'A method for encoding binary data into a sequence of ASCII characters. It is commonly used to embed binary data, like images, in text-based formats like HTML or JSON.',
+    example: 'To embed the small icon directly in the CSS file, the developer used Base64 encoding to convert the image into a string.',
   },
   {
-    id: 'cache-block',
-    term: 'CacheBlock',
-    slug: 'cache-block',
-    definition: 'The smallest unit of data that can be transferred between the main memory and a cache. A cache block (or cache line) typically holds a small, fixed number of bytes, such as 64 or 128.',
-    example: 'When the CPU needed a single byte of data, it had to fetch the entire 64-byte CacheBlock from RAM into the L1 cache.'
+    id: 'baseline-drift',
+    term: 'Baseline Drift',
+    slug: 'baseline-drift',
+    definition: 'A gradual change over time in the normal, baseline behavior of a system. Monitoring systems need to account for baseline drift to avoid false alarms.',
+    example: 'The AIOps tool detected a baseline drift in CPU usage, which was caused by a slow memory leak in the application.',
   },
   {
-    id: 'cache-buffer',
-    term: 'CacheBuffer',
-    slug: 'cache-buffer',
-    definition: 'A temporary storage area in memory used to hold data that is likely to be used again soon. It acts as a middleman between a fast process and a slower storage system to speed up data access.',
-    example: 'The database uses a large CacheBuffer to keep frequently accessed records in RAM, reducing the need for slow disk reads.'
+    id: 'bash-script',
+    term: 'Bash Script',
+    slug: 'bash-script',
+    definition: 'A script file containing a series of commands for the Bash shell (Bourne Again SHell). It is used for automating tasks on Linux and other Unix-like systems.',
+    example: 'He wrote a bash script to automate the process of backing up the database and uploading it to cloud storage.',
   },
   {
-    id: 'cache-bust',
-    term: 'CacheBust',
-    slug: 'cache-bust',
-    definition: 'A technique used in web development to force a browser or proxy server to fetch a fresh copy of a file from the server, rather than using a cached version. This is often done by appending a unique query string to the file URL.',
-    example: 'To ensure users got the latest CSS file after the update, the developer implemented a CacheBust by changing the URL to `style.css?version=1.2`.'
+    id: 'basic-input-output-system',
+    term: 'Basic Input Output System',
+    slug: 'basic-input-output-system',
+    definition: '(BIOS) Firmware used to perform hardware initialization during the booting process (power-on startup) and to provide runtime services for operating systems and programs.',
+    example: 'He entered the Basic Input Output System (BIOS) settings to change the boot order of his computer.',
   },
   {
-    id: 'cache-chain',
-    term: 'CacheChain',
-    slug: 'cache-chain',
-    definition: 'A hierarchical series of caches where one cache feeds into another. A request first checks the fastest, smallest cache, and if the data isn\'t there (a miss), it proceeds down the chain to slower, larger caches.',
-    example: 'A typical CPU has a CacheChain consisting of L1, L2, and L3 caches, with each level being larger and slower than the last.'
+    id: 'batch-file',
+    term: 'Batch File',
+    slug: 'batch-file',
+    definition: 'A script file in DOS, OS/2, and Microsoft Windows. It consists of a series of commands to be executed by the command-line interpreter, stored in a plain text file.',
+    example: 'He wrote a simple batch file with the `.bat` extension to automate a series of file copy operations on his Windows machine.',
   },
   {
-    id: 'cache-cleaner',
-    term: 'CacheCleaner',
-    slug: 'cache-cleaner',
-    definition: 'A utility or process that automatically removes old, unused, or invalid data from a cache to free up space and ensure data freshness.',
-    example: 'The server runs a CacheCleaner job every night to purge temporary files and expired session data from the Redis cache.'
+    id: 'batch-job',
+    term: 'Batch Job',
+    slug: 'batch-job',
+    definition: 'A program or set of programs that is executed without manual intervention. Batch jobs are often run during off-peak hours to process large amounts of data.',
+    example: 'The bank runs a nightly batch job to process all the transactions from the previous day and update account balances.',
   },
   {
-    id: 'cache-cluster',
-    term: 'CacheCluster',
-    slug: 'cache-cluster',
-    definition: 'A group of interconnected servers that work together as a single, distributed caching system. This provides higher capacity, availability, and performance than a single cache server.',
-    example: 'The high-traffic website uses a Memcached CacheCluster to handle millions of requests per second and reduce load on the main database.'
+    id: 'batch-normalization',
+    term: 'Batch Normalization',
+    slug: 'batch-normalization',
+    definition: 'A technique in deep learning that normalizes the inputs to each layer for each mini-batch. This helps to stabilize and speed up the training of deep neural networks.',
+    example: 'Adding batch normalization layers to the neural network significantly improved the training speed and final accuracy.',
   },
   {
-    id: 'cache-controller',
-    term: 'CacheController',
-    slug: 'cache-controller',
-    definition: 'A hardware component in a CPU that manages the flow of data between the main memory and the cache. It decides what data to store, where to store it, and how to handle cache hits and misses.',
-    example: 'The advanced CacheController can predict which data the CPU will need next and pre-fetch it from RAM to minimize latency.'
+    id: 'batch-processor',
+    term: 'Batch Processor',
+    slug: 'batch-processor',
+    definition: 'A system or software designed to execute batch jobs. It manages the queue of jobs, allocates resources, and runs them to completion.',
+    example: 'The company used AWS Batch as its batch processor to run large-scale scientific computations.',
   },
   {
-    id: 'cache-daemon',
-    term: 'CacheDaemon',
-    slug: 'cache-daemon',
-    definition: 'A background process that manages a cache, handling tasks like pre-loading data (warming the cache), evicting old data, and synchronizing the cache with a primary data source.',
-    example: 'The CacheDaemon runs in the background, ensuring that the web server\'s in-memory cache is always up-to-date with the latest product information.'
+    id: 'batch-queue',
+    term: 'Batch Queue',
+    slug: 'batch-queue',
+    definition: 'A queue that holds batch jobs waiting to be executed by a batch processing system.',
+    example: 'His data analysis job was number 57 in the batch queue and was estimated to start in about two hours.',
   },
   {
-    id: 'cache-directory',
-    term: 'CacheDirectory',
-    slug: 'cache-directory',
-    definition: 'A folder on a storage device where an application or operating system stores temporary files and data for faster access. Browsers, for example, use a cache directory to store images and scripts from websites.',
-    example: 'To free up disk space, he cleared his browser\'s CacheDirectory, which had grown to several gigabytes.'
+    id: 'bcrypt-hash',
+    term: 'Bcrypt Hash',
+    slug: 'bcrypt-hash',
+    definition: 'A password hashing function based on the Blowfish cipher. It is designed to be slow and computationally intensive to protect against brute-force attacks.',
+    example: 'The web application stored user passwords as a bcrypt hash, which is much more secure than using a simple MD5 or SHA-1 hash.',
   },
   {
-    id: 'cache-entry',
-    term: 'CacheEntry',
-    slug: 'cache-entry',
-    definition: 'A single record or item stored within a cache, typically consisting of a key (the identifier) and a value (the data being stored).',
-    example: 'Each CacheEntry in the session store contained the user\'s ID as the key and their shopping cart data as the value.'
+    id: 'beacon-frame',
+    term: 'Beacon Frame',
+    slug: 'beacon-frame',
+    definition: 'In Wi-Fi networks, a management frame that is periodically sent by an access point to announce its presence and provide network information, such as the SSID.',
+    example: 'Your phone discovers nearby Wi-Fi networks by listening for beacon frames from access points.',
   },
   {
-    id: 'cache-evict',
-    term: 'CacheEvict',
-    slug: 'cache-evict',
-    definition: 'The process of removing an entry from a cache to make room for new data. Eviction is typically governed by a policy, such as Least Recently Used (LRU), where the oldest data is removed first.',
-    example: 'When the cache became full, the system had to CacheEvict the least recently accessed items to store new information.'
+    id: 'beamforming',
+    term: 'Beamforming',
+    slug: 'beamforming',
+    definition: 'A signal processing technique used in antenna arrays for directional signal transmission or reception. In Wi-Fi, it focuses the signal towards the client device, improving range and speed.',
+    example: 'The new Wi-Fi 6 router used beamforming to provide a stronger and more stable connection to his laptop in the next room.',
   },
   {
-    id: 'cache-file',
-    term: 'CacheFile',
-    slug: 'cache-file',
-    definition: 'A file stored on a local computer that contains data from a remote source, such as a web page or online video, allowing it to be accessed more quickly on subsequent visits.',
-    example: 'The video played instantly the second time because it was already stored in a CacheFile on his hard drive.'
+    id: 'bearer-token',
+    term: 'Bearer Token',
+    slug: 'bearer-token',
+    definition: 'A type of access token used in the OAuth 2.0 framework. The "bearer" of the token can use it to access protected resources without having to prove possession of a cryptographic key.',
+    example: 'The API request included an `Authorization` header with a bearer token to authenticate the user.',
   },
   {
-    id: 'cache-flush',
-    term: 'CacheFlush',
-    slug: 'cache-flush',
-    definition: 'The action of completely clearing all data from a cache. This is often done to ensure that a system is using the most up-to-date information from the primary data source.',
-    example: 'After deploying the new website code, the developer performed a CacheFlush on the CDN to make sure all users saw the updated content.'
+    id: 'beautifier-tool',
+    term: 'Beautifier Tool',
+    slug: 'beautifier-tool',
+    definition: 'A tool that automatically formats source code to make it more readable and conform to a specific style guide. Also known as a code formatter or pretty-printer.',
+    example: 'He ran his messy JavaScript code through a beautifier tool like Prettier, which automatically fixed the indentation and spacing.',
   },
   {
-    id: 'cache-group',
-    term: 'CacheGroup',
-    slug: 'cache-group',
-    definition: 'In a distributed caching system, a logical collection of cache servers that are managed together. This allows for applying policies, like replication or eviction, to the entire group at once.',
-    example: 'The `user-sessions` CacheGroup was configured to replicate data across three different servers for high availability.'
+    id: 'beaver-code',
+    term: 'Beaver Code',
+    slug: 'beaver-code',
+    definition: 'Slang for overly complex or convoluted code that is difficult to understand and maintain, as if gnawed and patched together like a beaver\'s dam.',
+    example: 'The legacy system was full of beaver code that no one on the team fully understood.',
   },
   {
-    id: 'cache-hit',
-    term: 'CacheHit',
-    slug: 'cache-hit',
-    definition: 'An event where requested data is successfully found in a cache, eliminating the need to access a slower data store like a hard disk or a remote database. A high cache hit rate is crucial for performance.',
-    example: 'Because the user profile was already in the cache, it was a CacheHit, and the page loaded almost instantly.'
+    id: 'benchmark-suite',
+    term: 'Benchmark Suite',
+    slug: 'benchmark-suite',
+    definition: 'A collection of standardized tests and programs used to measure and compare the performance of computer hardware or software.',
+    example: 'The tech publication ran the SPEC CPU benchmark suite to compare the performance of the new processors.',
   },
   {
-    id: 'cache-index',
-    term: 'CacheIndex',
-    slug: 'cache-index',
-    definition: 'A data structure, often a hash table or a tree, that is used to quickly locate data within a cache. The index maps keys to the location of the corresponding cache entries.',
-    example: 'The CacheIndex allowed the system to find the requested user data in microseconds without scanning the entire cache.'
+    id: 'bend-radius-fiber',
+    term: 'Bend Radius (Fiber)',
+    slug: 'bend-radius-fiber',
+    definition: 'The minimum radius a fiber optic cable can be bent without damaging it or causing excessive signal loss.',
+    example: 'The installer was careful not to exceed the cable\'s bend radius when running the fiber optic line around the sharp corner.',
   },
   {
-    id: 'cache-injector',
-    term: 'CacheInjector',
-    slug: 'cache-injector',
-    definition: 'A component or service responsible for populating or "injecting" data into a cache. This can be done proactively (warming the cache) or in response to data being accessed for the first time.',
-    example: 'A CacheInjector service runs every morning to pre-load popular news articles into the cache before peak traffic hits.'
+    id: 'ber-bit-error-rate',
+    term: 'BER (Bit Error Rate)',
+    slug: 'ber-bit-error-rate',
+    definition: 'The number of bit errors per unit time. It is a key measure of the quality of a digital communication channel.',
+    example: 'The noisy radio channel had a high bit error rate, which required the use of strong error correction codes.',
   },
   {
-    id: 'cache-invalidation',
-    term: 'CacheInvalidation',
-    slug: 'cache-invalidation',
-    definition: 'The process of declaring cached data as no longer valid. This forces subsequent requests for that data to be fetched from the primary data source, ensuring that users receive the most up-to-date information.',
-    example: 'When a user updates their profile, the system performs a CacheInvalidation for that user\'s data to ensure the changes are reflected everywhere.'
+    id: 'berkeley-db',
+    term: 'Berkeley DB',
+    slug: 'berkeley-db',
+    definition: 'A high-performance, embedded database library that provides a simple key-value store. It is used in many well-known software products.',
+    example: 'Many Linux systems use Berkeley DB for various internal databases, such as package management.',
   },
   {
-    id: 'cache-key',
-    term: 'CacheKey',
-    slug: 'cache-key',
-    definition: 'A unique identifier used to store and retrieve a specific piece of data in a cache. A well-designed cache key is crucial for avoiding collisions and ensuring data is retrieved correctly.',
-    example: 'The developer used a composite CacheKey, combining the user ID and the article ID (`user:123:article:456`), to store personalized content.'
+    id: 'berkeley-packet-filter',
+    term: 'Berkeley Packet Filter',
+    slug: 'berkeley-packet-filter',
+    definition: 'A technology used in some operating systems to filter network packets. It allows a user-space program to supply a filter that specifies which packets it wants to receive.',
+    example: 'The `tcpdump` utility uses the Berkeley Packet Filter to capture only the network traffic that matches the user\'s criteria.',
   },
   {
-    id: 'cache-layer',
-    term: 'CacheLayer',
-    slug: 'cache-layer',
-    definition: 'A distinct tier in an application\'s architecture dedicated to caching. This layer sits between the application and the primary data store (like a database) to intercept requests and serve them from memory when possible.',
-    example: 'Adding a Redis CacheLayer significantly reduced the number of queries hitting the PostgreSQL database, improving overall application speed.'
+    id: 'beta-channel',
+    term: 'Beta Channel',
+    slug: 'beta-channel',
+    definition: 'A software release channel that provides early access to upcoming features that are still in development but are more stable than the "dev" or "canary" channels.',
+    example: 'He switched to the Chrome Beta channel to try out new browser features before they were released to the general public.',
   },
   {
-    id: 'cache-line',
-    term: 'CacheLine',
-    slug: 'cache-line',
-    definition: 'The smallest unit of data that can be transferred between main memory and a CPU cache. When a CPU requests a piece of data, it fetches the entire cache line that contains it.',
-    example: 'The CPU had to fetch a 64-byte CacheLine from RAM, even though it only needed a 4-byte integer, a principle known as spatial locality.'
+    id: 'beta-software',
+    term: 'Beta Software',
+    slug: 'beta-software',
+    definition: 'A pre-release version of a software that is given to a limited audience to test before its general release. It is expected to have some bugs.',
+    example: 'The company launched a closed beta for their new game, inviting 10,000 players to test it and provide feedback.',
   },
   {
-    id: 'cache-loader',
-    term: 'CacheLoader',
-    slug: 'cache-loader',
-    definition: 'A component that automatically fetches data from a primary data source (like a database) and loads it into the cache when a cache miss occurs. This simplifies application logic by abstracting away the data-fetching process.',
-    example: 'The application used a CacheLoader so that if a product wasn\'t in the cache, it would be automatically loaded from the database without extra code.'
+    id: 'bettercap-toolkit',
+    term: 'Bettercap Toolkit',
+    slug: 'bettercap-toolkit',
+    definition: 'A powerful, flexible, and portable tool for penetration testers and security researchers, used for performing various types of man-in-the-middle attacks.',
+    example: 'The security analyst used the Bettercap toolkit to demonstrate how an attacker could intercept traffic on the company\'s guest Wi-Fi network.',
   },
   {
-    id: 'cache-lookup',
-    term: 'CacheLookup',
-    slug: 'cache-lookup',
-    definition: 'The action of checking a cache to see if it contains a specific piece of data, identified by its key. This is the first step in trying to retrieve data from a caching system.',
-    example: 'Before querying the database, the application always performs a CacheLookup to see if the data is already available in memory.'
+    id: 'bezier-curve',
+    term: 'Bezier Curve',
+    slug: 'bezier-curve',
+    definition: 'A type of parametric curve used in computer graphics and related fields. It is defined by a set of control points and is known for being smooth and easy to manipulate.',
+    example: 'Vector graphics programs like Adobe Illustrator use Bezier curves to draw smooth, scalable shapes.',
   },
   {
-    id: 'cache-manager',
-    term: 'CacheManager',
-    slug: 'cache-manager',
-    definition: 'A high-level component or library that provides a unified interface for interacting with and configuring one or more caches. It handles the lifecycle of caches, including creation, configuration, and destruction.',
-    example: 'The Spring Boot application used a CacheManager to handle different caching strategies for different types of data.'
+    id: 'bfs-algorithm',
+    term: 'BFS Algorithm',
+    slug: 'bfs-algorithm',
+    definition: 'Breadth-First Search. An algorithm for traversing or searching tree or graph data structures. It explores the neighbor nodes first, before moving to the next level neighbors.',
+    example: 'The BFS algorithm is often used to find the shortest path between two nodes in an unweighted graph.',
   },
   {
-    id: 'cache-map',
-    term: 'CacheMap',
-    slug: 'cache-map',
-    definition: 'A data structure, often implementing a map or dictionary interface, that is used as an in-memory cache. It typically has features like size limits, expiration policies, and eviction rules.',
-    example: 'The developer used a Guava CacheMap to store frequently accessed but short-lived session tokens.'
+    id: 'bgp-routing-table',
+    term: 'BGP Routing Table',
+    slug: 'bgp-routing-table',
+    definition: 'A large table maintained by a router running the Border Gateway Protocol (BGP) that stores the paths to all reachable networks on the internet.',
+    example: 'The core internet routers have a massive BGP routing table with millions of entries.',
   },
   {
-    id: 'cache-mask',
-    term: 'CacheMask',
-    slug: 'cache-mask',
-    definition: 'A bitmask used in low-level hardware or set-associative caches to determine which set or block within the cache a particular memory address maps to. It helps in quickly finding where data might be stored.',
-    example: 'The cache controller applied the CacheMask to the memory address to calculate the index of the cache set to check.'
+    id: 'bgp-session',
+    term: 'BGP Session',
+    slug: 'bgp-session',
+    definition: 'A TCP connection between two routers running the Border Gateway Protocol, used to exchange routing information.',
+    example: 'The network engineer established a BGP session with their upstream internet service provider.',
   },
   {
-    id: 'cache-memory',
-    term: 'CacheMemory',
-    slug: 'cache-memory',
-    definition: 'A type of small, very fast memory (usually SRAM) used by a computer\'s CPU to store frequently accessed data and instructions. It is faster than main memory (RAM) and is essential for modern processor performance.',
-    example: 'The CPU\'s performance is heavily dependent on the speed and size of its onboard CacheMemory.'
+    id: 'bias-node',
+    term: 'Bias Node',
+    slug: 'bias-node',
+    definition: 'In an artificial neural network, a special neuron that is added to each layer and always has a value of 1. It provides a constant bias to the activation function, improving the model\'s flexibility.',
+    example: 'Adding a bias node to the layer allows the decision boundary to be shifted, which can be crucial for learning.',
   },
   {
-    id: 'cache-metadata',
-    term: 'CacheMetadata',
-    slug: 'cache-metadata',
-    definition: 'Data about the data stored in a cache, such as when an item was added, how often it has been accessed, and its expiration time (Time-to-Live or TTL). This metadata is used to manage cache eviction and invalidation.',
-    example: 'The CacheMetadata showed that the entry was set to expire in 60 seconds, so the system knew to refetch it after that time.'
+    id: 'bidirectional-bus',
+    term: 'Bidirectional Bus',
+    slug: 'bidirectional-bus',
+    definition: 'A computer bus that can transfer data in both directions. The data bus in most computer systems is a bidirectional bus.',
+    example: 'The bidirectional bus allowed the CPU to both read data from and write data to the main memory.',
   },
   {
-    id: 'cache-miss',
-    term: 'CacheMiss',
-    slug: 'cache-miss',
-    definition: 'An event where requested data is not found in the cache. A cache miss requires the system to fetch the data from a slower, primary data source, which increases latency.',
-    example: 'A CacheMiss occurred, so the application had to make a slow query to the database to retrieve the user\'s information.'
+    id: 'big-data-pipeline',
+    term: 'Big Data Pipeline',
+    slug: 'big-data-pipeline',
+    definition: 'An end-to-end workflow for processing large volumes of data. It typically involves stages for data ingestion, storage, processing, and analysis.',
+    example: 'Their big data pipeline used Kafka for ingestion, Hadoop for storage, and Spark for processing.',
   },
   {
-    id: 'cache-mode',
-    term: 'CacheMode',
-    slug: 'cache-mode',
-    definition: 'A configuration setting that defines how a cache interacts with a primary data store. Common modes include write-through (data is written to cache and backend simultaneously) and write-back (data is written to cache and later flushed to the backend).',
-    example: 'The system was configured in write-through CacheMode to ensure data consistency, even though it was slightly slower than write-back.'
+    id: 'big-endian',
+    term: 'Big Endian',
+    slug: 'big-endian',
+    definition: 'A system for ordering bytes in a multi-byte number where the most significant byte is stored first (at the lowest memory address).',
+    example: 'Network protocols typically use big-endian byte order, which is why it\'s also called network byte order.',
   },
   {
-    id: 'cache-monitor',
-    term: 'CacheMonitor',
-    slug: 'cache-monitor',
-    definition: 'A tool or service that observes and reports on the performance and health of a caching system. It tracks metrics like hit rate, miss rate, latency, and memory usage.',
-    example: 'The DevOps team used a CacheMonitor to diagnose why the cache hit rate had suddenly dropped, causing high database load.'
+    id: 'big-integer',
+    term: 'Big Integer',
+    slug: 'big-integer',
+    definition: 'A data type in some programming languages that can represent arbitrarily large integers, not limited by the standard 32-bit or 64-bit integer types.',
+    example: 'To perform calculations in cryptography, which involve very large numbers, he had to use a big integer library.',
   },
   {
-    id: 'cache-node',
-    term: 'CacheNode',
-    slug: 'cache-node',
-    definition: 'An individual server or process that is part of a larger distributed cache cluster. Each node holds a portion of the total cached data.',
-    example: 'The distributed system used consistent hashing to determine which CacheNode should store a particular piece of data.'
+    id: 'bikeshare-api',
+    term: 'Bikeshare API',
+    slug: 'bikeshare-api',
+    definition: 'An API provided by a bike-sharing service that allows developers to access real-time data about station locations, number of available bikes, and empty docks.',
+    example: 'He built a mobile app that used the city\'s bikeshare API to show users the closest station with available bikes.',
   },
   {
-    id: 'cache-object',
-    term: 'CacheObject',
-    slug: 'cache-object',
-    definition: 'A data object or structure that is stored in a cache. This is the "value" part of a key-value pair in a caching system.',
-    example: 'The entire user profile, serialized into JSON, was stored as a single CacheObject in Redis.'
+    id: 'binary-blob',
+    term: 'Binary Blob',
+    slug: 'binary-blob',
+    definition: 'Binary Large Object. A collection of binary data stored as a single entity in a database or other storage system. It is often used for storing images, audio, or other multimedia content.',
+    example: 'The user\'s profile picture was stored as a binary blob in the database.',
   },
   {
-    id: 'cache-optimizer',
-    term: 'CacheOptimizer',
-    slug: 'cache-optimizer',
-    definition: 'A system or algorithm that analyzes cache usage patterns and automatically adjusts cache parameters (like size, eviction policy, or TTL) to improve performance.',
-    example: 'The database includes a CacheOptimizer that dynamically adjusts the size of the buffer pool based on workload.'
+    id: 'binary-diff',
+    term: 'Binary Diff',
+    slug: 'binary-diff',
+    definition: 'A comparison of two binary files to identify their differences. This is used to create small patches for software updates.',
+    example: 'The game update was only a few megabytes because it was delivered as a binary diff, containing only the changes from the previous version.',
   },
   {
-    id: 'cache-page',
-    term: 'CachePage',
-    slug: 'cache-page',
-    definition: 'A block of memory within a cache that holds data. In the context of operating systems, it often refers to a page of memory from a file that is cached in RAM to speed up disk I/O.',
-    example: 'The operating system kept a copy of the executable file in a CachePage so it wouldn\'t have to read it from the slow hard drive every time.'
+    id: 'binary-heap',
+    term: 'Binary Heap',
+    slug: 'binary-heap',
+    definition: 'A tree-based data structure that satisfies the heap property: in a max heap, for any given node C, if P is a parent node of C, then the key of P is greater than or equal to the key of C.',
+    example: 'A binary heap is often used to implement a priority queue because it allows for efficient insertion and extraction of the maximum element.',
   },
   {
-    id: 'cache-pool',
-    term: 'CachePool',
-    slug: 'cache-pool',
-    definition: 'A collection of cache resources, such as memory or connections, that can be managed and allocated as a group. It provides a way to share and reuse cache components efficiently.',
-    example: 'The application server maintained a CachePool of pre-configured cache clients to avoid the overhead of creating a new one for every request.'
+    id: 'binary-protocol',
+    term: 'Binary Protocol',
+    slug: 'binary-protocol',
+    definition: 'A communication protocol where the data is encoded in a binary format, rather than a human-readable text format like JSON or XML. Binary protocols are generally more efficient.',
+    example: 'gRPC uses a binary protocol called Protocol Buffers, which is much faster and smaller than a text-based protocol like REST with JSON.',
   },
   {
-    id: 'cache-queue',
-    term: 'CacheQueue',
-    slug: 'cache-queue',
-    definition: 'A queue data structure used in conjunction with a cache, often to manage asynchronous operations like write-behinds or cache invalidation messages.',
-    example: 'Updates to be written to the database were placed in a CacheQueue, allowing the application to respond to the user immediately.'
+    id: 'binary-search',
+    term: 'Binary Search',
+    slug: 'binary-search',
+    definition: 'A search algorithm that finds the position of a target value within a sorted array. It works by repeatedly dividing the search interval in half.',
+    example: 'Binary search has a time complexity of O(log n), making it very efficient for searching large sorted lists.',
   },
   {
-    id: 'cache-reader',
-    term: 'CacheReader',
-    slug: 'cache-reader',
-    definition: 'A component or function specifically designed to read data from a cache. It encapsulates the logic for performing a cache lookup and handling the result.',
-    example: 'The data access layer used a CacheReader to attempt fetching the data from Redis before falling back to the database.'
+    id: 'binding-address',
+    term: 'Binding Address',
+    slug: 'binding-address',
+    definition: 'In networking, the IP address that a server socket is configured to listen on. An address of 0.0.0.0 typically means it will listen on all available network interfaces.',
+    example: 'The web server\'s binding address was set to the machine\'s specific IP address to prevent it from being accessible from other networks.',
   },
   {
-    id: 'cache-recovery',
-    term: 'CacheRecovery',
-    slug: 'cache-recovery',
-    definition: 'The process of restoring the state of a cache after a failure, such as a server restart. This might involve reloading data from a persistent backup or a primary data source.',
-    example: 'After the power outage, the CacheRecovery process began, repopulating the in-memory store from a snapshot on disk.'
+    id: 'binding-energy-computation',
+    term: 'Binding Energy (Computation)',
+    slug: 'binding-energy-computation',
+    definition: 'In computational chemistry and physics, the calculation of the energy required to disassemble a system of particles (like a molecule) into separate parts.',
+    example: 'The researchers ran a massive simulation to perform the binding energy computation for the new drug molecule.',
   },
   {
-    id: 'cache-region',
-    term: 'CacheRegion',
-    slug: 'cache-region',
-    definition: 'A named, logical partition within a larger cache. Different regions can have different configurations (e.g., size, TTL, eviction policy), allowing for fine-grained control over caching behavior for different types of data.',
-    example: 'The application defined a "users" CacheRegion with a long TTL and a "products" region with a shorter TTL.'
+    id: 'bing-spellcheck',
+    term: 'Bing Spellcheck',
+    slug: 'bing-spellcheck',
+    definition: 'An API service from Microsoft Azure that provides spell-checking and grammar correction capabilities.',
+    example: 'The application integrated the Bing Spellcheck API to add a "Did you mean?" feature to its search functionality.',
   },
   {
-    id: 'cache-replica',
-    term: 'CacheReplica',
-    slug: 'cache-replica',
-    definition: 'A copy of a cache or a portion of its data, maintained on a separate server for high availability and read scalability. If the primary cache fails, the replica can take over.',
-    example: 'For fault tolerance, each primary cache node had a corresponding CacheReplica on a different machine.'
+    id: 'bit-bang-mode',
+    term: 'Bit Bang Mode',
+    slug: 'bit-bang-mode',
+    definition: 'A technique for serial communication where the software directly controls the state of the I/O pins, effectively creating a serial protocol in software instead of using dedicated hardware.',
+    example: 'He used bit-bang mode on the microcontroller to communicate with a device that used a non-standard serial protocol.',
   },
   {
-    id: 'cache-request',
-    term: 'CacheRequest',
-    slug: 'cache-request',
-    definition: 'An operation sent to a cache to retrieve, store, or delete data. It is the fundamental command issued to interact with a caching system.',
-    example: 'The application sent a `GET user:123` CacheRequest to Redis to fetch the user\'s session data.'
+    id: 'bit-depth',
+    term: 'Bit Depth',
+    slug: 'bit-depth',
+    definition: 'In digital audio or imaging, the number of bits of information in each sample. Higher bit depth allows for a greater dynamic range and more accurate representation of the original signal.',
+    example: 'A 24-bit audio file has a much higher bit depth and dynamic range than a standard 16-bit CD audio file.',
   },
   {
-    id: 'cache-resolver',
-    term: 'CacheResolver',
-    slug: 'cache-resolver',
-    definition: 'A component that determines how a cache should be used for a specific operation. It can dynamically decide which cache to use, what key to generate, and whether to cache the result at all.',
-    example: 'A custom CacheResolver was implemented to prevent caching of requests made by administrative users.'
+    id: 'bit-error',
+    term: 'Bit Error',
+    slug: 'bit-error',
+    definition: 'An error in digital communication where a bit is flipped from a 0 to a 1 or vice versa, due to noise or interference.',
+    example: 'The satellite communication link was experiencing a high number of bit errors due to a solar flare.',
   },
   {
-    id: 'cache-scan',
-    term: 'CacheScan',
-    slug: 'cache-scan',
-    definition: 'An operation that iterates over some or all of the keys in a cache. This is generally an expensive operation and should be used cautiously in production environments as it can impact performance.',
-    example: 'The administrator ran a CacheScan to find all keys matching the pattern `session:*` for debugging purposes.'
+    id: 'bit-mask',
+    term: 'Bit Mask',
+    slug: 'bit-mask',
+    definition: 'A pattern of bits that is used to select specific bits from a value, typically using bitwise operations like AND, OR, and XOR.',
+    example: 'He used a bit mask and a bitwise AND operation to check if the 4th bit of a status byte was set.',
   },
   {
-    id: 'cache-scheduler',
-    term: 'CacheScheduler',
-    slug: 'cache-scheduler',
-    definition: 'A component that schedules background tasks related to cache maintenance, such as periodic eviction of expired items, pre-loading data, or generating usage reports.',
-    example: 'The CacheScheduler was configured to run a job every hour to clean up stale entries.'
+    id: 'bit-packing',
+    term: 'Bit Packing',
+    slug: 'bit-packing',
+    definition: 'A memory optimization technique where multiple smaller values are stored in a single byte or word to save space.',
+    example: 'To save memory in the embedded system, the developer used bit packing to store three 2-bit status values in a single byte.',
   },
   {
-    id: 'cache-segment',
-    term: 'CacheSegment',
-    slug: 'cache-segment',
-    definition: 'A logical or physical division of a cache. In a concurrent cache, data might be divided into segments, with each segment being protected by its own lock to reduce contention and improve performance.',
-    example: 'The concurrent hash map was divided into 16 CacheSegments, allowing up to 16 threads to write to the cache simultaneously.'
+    id: 'bit-rate',
+    term: 'Bit Rate',
+    slug: 'bit-rate',
+    definition: 'The number of bits that are conveyed or processed per unit of time, typically measured in bits per second (bps).',
+    example: 'The video was streamed at a bit rate of 5 megabits per second.',
   },
   {
-    id: 'cache-server',
-    term: 'CacheServer',
-    slug: 'cache-server',
-    definition: 'A dedicated server that runs a caching service, such as Redis or Memcached. Its primary purpose is to store frequently accessed data in memory to reduce load on backend systems.',
-    example: 'The company deployed a cluster of Redis CacheServers to handle user session storage.'
+    id: 'bit-rotation',
+    term: 'Bit Rotation',
+    slug: 'bit-rotation',
+    definition: 'A bitwise operation where the bits of a value are shifted, and the bits that are shifted off one end are wrapped around to the other end. Also known as a circular shift.',
+    example: 'Some encryption algorithms use bit rotation as part of their process.',
   },
   {
-    id: 'cache-set',
-    term: 'CacheSet',
-    slug: 'cache-set',
-    definition: 'In a set-associative CPU cache, a group of cache lines where a particular block of memory can be stored. The number of lines in a set determines the "associativity" of the cache.',
-    example: 'In an 8-way set-associative cache, a memory address maps to a specific CacheSet, which contains 8 possible locations for the data.'
+    id: 'bit-shift',
+    term: 'Bit Shift',
+    slug: 'bit-shift',
+    definition: 'A bitwise operation where the bits of a value are shifted to the left or right. A left shift is equivalent to multiplication by a power of 2, and a right shift is equivalent to division.',
+    example: 'He used a left bit shift by 1 to quickly multiply the integer by 2.',
   },
+
   {
-    id: 'cache-signal',
-    term: 'CacheSignal',
-    slug: 'cache-signal',
-    definition: 'A message or event used to signal a change or action related to the cache, such as an invalidation or a flush. This is often used in distributed systems to keep multiple caches synchronized.',
-    example: 'When the product price was updated, a CacheSignal was broadcast to all web servers to invalidate the old price in their local caches.'
+    id: 'backdoor',
+    term: 'Backdoor',
+    slug: 'backdoor',
+    definition: 'A hidden method of bypassing normal authentication or security controls in a computer system, often inserted by an attacker or a developer for maintenance.',
+    example: 'The security audit found a backdoor in the web server software that would allow anyone with a specific password to gain administrative access.',
   },
   {
-    id: 'cache-slice',
-    term: 'CacheSlice',
-    slug: 'cache-slice',
-    definition: 'A portion or partition of a larger, distributed cache. Each slice might be managed by a different cache node.',
-    example: 'The data was sharded across the cluster, with each node being responsible for a specific CacheSlice.'
+    id: 'backend',
+    term: 'Backend',
+    slug: 'backend',
+    definition: 'The part of a client-server application that resides on the server. It is responsible for data storage, processing, and business logic, and communicates with the frontend through an API.',
+    example: 'The backend was written in Python and used a PostgreSQL database to store user data.',
   },
   {
-    id: 'cache-space',
-    term: 'CacheSpace',
-    slug: 'cache-space',
-    definition: 'The total amount of storage (usually memory) allocated for use by a cache. Managing this space effectively is key to cache performance.',
-    example: 'The database administrator increased the CacheSpace allocated to the buffer pool to improve query performance.'
+    id: 'bandwidth',
+    term: 'Bandwidth',
+    slug: 'bandwidth',
+    definition: 'The maximum rate of data transfer across a given path, typically measured in bits per second (bps). It represents the capacity of a network connection.',
+    example: 'He upgraded his internet plan to get more bandwidth so he could stream 4K videos without buffering.',
   },
   {
-    id: 'cache-stack',
-    term: 'CacheStack',
-    slug: 'cache-stack',
-    definition: 'A conceptual model or implementation of a cache that uses a stack (Last-In, First-Out) data structure, often for managing recently used items.',
-    example: 'The browser\'s back/forward functionality can be thought of as a CacheStack of visited pages.'
+    id: 'baseband',
+    term: 'Baseband',
+    slug: 'baseband',
+    definition: 'A signal that has a very narrow frequency range, close to zero hertz. In telecommunications, it is a signal that has not yet been modulated onto a carrier frequency.',
+    example: 'The baseband processor in the mobile phone is responsible for all cellular communication functions.',
   },
   {
-    id: 'cache-state',
-    term: 'CacheState',
-    slug: 'cache-state',
-    definition: 'The current condition or status of a cache entry. In CPU cache coherency protocols (like MESI), a cache line can be in states like Modified, Exclusive, Shared, or Invalid.',
-    example: 'When another CPU core needed to read the data, the CacheState of the line transitioned from "Exclusive" to "Shared".'
+    id: 'baseline',
+    term: 'Baseline',
+    slug: 'baseline',
+    definition: 'A clearly defined starting point for comparison. In performance testing, a baseline is the initial set of measurements against which all future measurements will be compared.',
+    example: 'Before deploying the optimization, they took a performance baseline to measure its impact.',
   },
   {
-    id: 'cache-store',
-    term: 'CacheStore',
-    slug: 'cache-store',
-    definition: 'A component that provides a connection to the underlying, persistent data store (like a database) that a cache sits in front of. It\'s used by cache loaders and write-behind caches.',
-    example: 'The application configured a JDBC CacheStore to connect its in-memory cache to a MySQL database.'
+    id: 'batchfile',
+    term: 'Batchfile',
+    slug: 'batchfile',
+    definition: 'A script file in DOS, OS/2, and Microsoft Windows containing a series of commands to be executed by the command-line interpreter.',
+    example: 'He wrote a simple batchfile to automate the process of copying files and cleaning up temporary directories.',
   },
   {
-    id: 'cache-stream',
-    term: 'CacheStream',
-    slug: 'cache-stream',
-    definition: 'A data stream that is being read from or written to a cache. This allows for processing data as it is being cached, without having to load the entire object into memory first.',
-    example: 'The application used a CacheStream to efficiently serve a large video file directly from the cache.'
+    id: 'bash',
+    term: 'Bash',
+    slug: 'bash',
+    definition: 'Bourne Again SHell. A Unix shell and command language, and the default shell on most Linux distributions and macOS.',
+    example: 'She wrote a powerful script in Bash to automate the server deployment process.',
   },
   {
-    id: 'cache-sync',
-    term: 'CacheSync',
-    slug: 'cache-sync',
-    definition: 'The process of synchronizing the data in one or more caches with a master data source or with each other. This is crucial in distributed systems to ensure data consistency.',
-    example: 'A CacheSync mechanism was put in place to ensure that updates made on one web server were reflected in the caches of all other servers in the cluster.'
+    id: 'baudrate',
+    term: 'Baudrate',
+    slug: 'baudrate',
+    definition: 'The rate at which symbols are transmitted over a communication channel. While often used interchangeably with bit rate, they are not always the same.',
+    example: 'The old serial modem communicated at a baudrate of 9600.',
   },
   {
-    id: 'cache-system',
-    term: 'CacheSystem',
-    slug: 'cache-system',
-    definition: 'The entire infrastructure and logic related to caching in an application or system, including the cache servers, clients, configuration, and policies.',
-    example: 'The architect designed a multi-layered CacheSystem involving a browser cache, a CDN, and a distributed in-memory object cache.'
+    id: 'bearertoken',
+    term: 'BearerToken',
+    slug: 'bearertoken',
+    definition: 'A type of access token used in the OAuth 2.0 framework. The "bearer" of the token can use it to access protected resources, so it must be kept secure.',
+    example: 'The single-page application sent the BearerToken in the Authorization header of every API request.',
   },
   {
-    id: 'cache-table',
-    term: 'CacheTable',
-    slug: 'cache-table',
-    definition: 'A table-like data structure, often a hash table, used to implement a cache. It stores key-value pairs representing the cached data.',
-    example: 'Internally, the caching library used a concurrent CacheTable to allow for thread-safe access.'
+    id: 'betabuild',
+    term: 'BetaBuild',
+    slug: 'betabuild',
+    definition: 'A pre-release version of a software application that is distributed to a limited audience for testing before its official release.',
+    example: 'The company invited 10,000 users to test the BetaBuild of their new mobile app.',
   },
   {
-    id: 'cache-tag',
-    term: 'CacheTag',
-    slug: 'cache-tag',
-    definition: 'A label or piece of metadata attached to a group of cache entries. This allows for bulk operations, such as invalidating all entries associated with a specific tag.',
-    example: 'All cache entries related to user 123 were given the CacheTag `user:123`, so they could all be invalidated at once when the user logged out.'
+    id: 'bgp',
+    term: 'BGP',
+    slug: 'bgp',
+    definition: 'Border Gateway Protocol. The routing protocol used to exchange routing and reachability information among autonomous systems on the Internet.',
+    example: 'A BGP misconfiguration by a major ISP can cause widespread internet outages.',
   },
   {
-    id: 'cache-timer',
-    term: 'CacheTimer',
-    slug: 'cache-timer',
-    definition: 'A timer or scheduled task used to manage time-based operations in a cache, such as expiring old entries (TTL) or periodically refreshing data.',
-    example: 'A CacheTimer runs in the background, checking for and removing entries whose time-to-live has expired.'
+    id: 'bios',
+    term: 'BIOS',
+    slug: 'bios',
+    definition: 'Basic Input/Output System. Firmware used to perform hardware initialization during the booting process and to provide runtime services for operating systems.',
+    example: 'He entered the BIOS to change the boot order so he could install a new operating system from a USB drive.',
   },
   {
-    id: 'cache-trace',
-    term: 'CacheTrace',
-    slug: 'cache-trace',
-    definition: 'A log or record of operations performed on a cache, such as hits, misses, and evictions. Traces are used for performance analysis, simulation, and debugging of caching strategies.',
-    example: 'The researchers used a CacheTrace from a production system to simulate and compare the performance of different eviction algorithms.'
+    id: 'blob',
+    term: 'BLOB',
+    slug: 'blob',
+    definition: 'Binary Large Object. A collection of binary data stored as a single entity in a database management system.',
+    example: 'The user\'s profile picture was stored as a BLOB in the database.',
   },
   {
-    id: 'cache-tracker',
-    term: 'CacheTracker',
-    slug: 'cache-tracker',
-    definition: 'A component that monitors and keeps track of the state and statistics of a cache, such as its size, hit ratio, and the number of entries.',
-    example: 'The CacheTracker exposed its metrics via a JMX endpoint, allowing for real-time monitoring of the cache\'s health.'
+    id: 'blockchain',
+    term: 'Blockchain',
+    slug: 'blockchain',
+    definition: 'A distributed, immutable ledger that is used to record transactions. Each block in the chain is cryptographically linked to the previous one.',
+    example: 'Bitcoin is the most well-known application of blockchain technology.',
   },
   {
-    id: 'cache-trigger',
-    term: 'CacheTrigger',
-    slug: 'cache-trigger',
-    definition: 'A mechanism that automatically performs an action (like updating a search index or sending a notification) in response to an event in the cache (like an entry being created, updated, or removed).',
-    example: 'A CacheTrigger was set up to automatically clear a related user permission cache whenever a user\'s roles were modified.'
+    id: 'blueteam',
+    term: 'BlueTeam',
+    slug: 'blueteam',
+    definition: 'In cybersecurity, a group of security professionals who are responsible for defending an organization\'s network against attacks. They are the "defenders".',
+    example: 'During the cybersecurity exercise, the BlueTeam had to defend the network against attacks from the Red Team.',
   },
   {
-    id: 'cache-update',
-    term: 'CacheUpdate',
-    slug: 'cache-update',
-    definition: 'The action of modifying an existing entry in the cache. This could be to replace it with a newer version of the data or to update its metadata.',
-    example: 'After the user changed their email address, the application performed a CacheUpdate to reflect the new email in the session cache.'
+    id: 'bluetoothle',
+    term: 'BluetoothLE',
+    slug: 'bluetoothle',
+    definition: 'Bluetooth Low Energy. A power-conserving variant of Bluetooth, designed for low-power devices that transmit small amounts of data, like fitness trackers and IoT sensors.',
+    example: 'His new heart rate monitor used BluetoothLE to communicate with his phone, allowing its battery to last for months.',
   },
   {
-    id: 'cache-validator',
-    term: 'CacheValidator',
-    slug: 'cache-validator',
-    definition: 'A component that checks if a cached item is still valid or if it needs to be refreshed from the source. In HTTP, this is often done using ETags or Last-Modified headers.',
-    example: 'The browser sent the ETag to the server, and the CacheValidator on the server responded with a `304 Not Modified`, confirming the browser\'s cached version was still good.'
+    id: 'bottleneck',
+    term: 'Bottleneck',
+    slug: 'bottleneck',
+    definition: 'A point of congestion in a system that limits its overall performance. The bottleneck is the component with the lowest throughput.',
+    example: 'The application was slow because of a database bottleneck; the CPU and memory were fine, but the disk I/O couldn\'t keep up.',
   },
   {
-    id: 'cache-vector',
-    term: 'CacheVector',
-    slug: 'cache-vector',
-    definition: 'A data structure, typically a vector or array, used to manage or represent cache state, such as tracking the usage of different cache blocks for an eviction policy.',
-    example: 'The LRU eviction algorithm used a CacheVector to keep track of the access order of cache entries.'
+    id: 'bootstrap',
+    term: 'Bootstrap',
+    slug: 'bootstrap',
+    definition: 'The process of loading and starting a computer system or a software application. It can also refer to a popular front-end framework for building responsive websites.',
+    example: 'The server runs a bootstrap script on its first boot to install all the necessary software.',
   },
   {
-    id: 'cache-view',
-    term: 'CacheView',
-    slug: 'cache-view',
-    definition: 'A representation or interface that provides a specific perspective or filtered look at the data in a cache, without exposing the entire cache.',
-    example: 'The application provided a read-only CacheView to a monitoring tool, allowing it to see cache stats without being able to modify the data.'
+    id: 'botnet',
+    term: 'Botnet',
+    slug: 'botnet',
+    definition: 'A network of private computers infected with malicious software and controlled as a group without the owners\' knowledge, e.g., to send spam or launch DDoS attacks.',
+    example: 'The massive DDoS attack was launched by a botnet consisting of over 100,000 compromised IoT devices.',
   },
   {
-    id: 'cache-window',
-    term: 'CacheWindow',
-    slug: 'cache-window',
-    definition: 'A time-based or size-based segment of a cache that is being analyzed or operated on. For example, an eviction policy might only consider the "window" of the last 1000 accessed items.',
-    example: 'The sliding CacheWindow algorithm considered only the access patterns within the last 5 minutes to make its eviction decisions.'
+    id: 'branch',
+    term: 'Branch',
+    slug: 'branch',
+    definition: 'In version control systems like Git, a movable pointer to a commit. Branches are used to develop features in isolation without affecting the main codebase.',
+    example: 'She created a new branch called `feature/user-profile` to work on the new profile page.',
   },
   {
-    id: 'cad-file',
-    term: 'CADFile',
-    slug: 'cad-file',
-    definition: 'A file created by Computer-Aided Design (CAD) software, containing 2D or 3D models of a physical object. Common formats include DWG, DXF, and STEP.',
-    example: 'The architect sent the CADFile of the building plans to the engineering firm for review.'
+    id: 'breakfix',
+    term: 'BreakFix',
+    slug: 'breakfix',
+    definition: 'An IT support model where work is done only when something is broken. It is a reactive approach, as opposed to a proactive or managed services model.',
+    example: 'The small company relied on a break-fix IT consultant, calling him only when their server went down.',
   },
   {
-    id: 'cad-model',
-    term: 'CADModel',
-    slug: 'cad-model',
-    definition: 'A digital 3D representation of a physical object or structure created using Computer-Aided Design (CAD) software. It contains precise geometric data about the object\'s dimensions, shape, and materials.',
-    example: 'The engineer imported the CADModel of the engine part into a simulation software to test its stress tolerance.'
+    id: 'bridge',
+    term: 'Bridge',
+    slug: 'bridge',
+    definition: 'A network device that connects two or more local area networks (LANs) at the data link layer (Layer 2), allowing them to communicate as if they were a single network.',
+    example: 'They used a wireless bridge to connect the network in the main building to the one in the annex.',
   },
   {
-    id: 'cad-plugin',
-    term: 'CADPlugin',
-    slug: 'cad-plugin',
-    definition: 'An add-on software component that extends the functionality of a Computer-Aided Design (CAD) program, providing specialized tools or features.',
-    example: 'He installed a rendering CADPlugin to create photorealistic images of his 3D designs.'
+    id: 'bringup',
+    term: 'Bringup',
+    slug: 'bringup',
+    definition: 'In hardware engineering, the initial process of powering up and testing a new piece of hardware or a new system for the first time.',
+    example: 'The bringup of the new prototype board was successful; all the core components powered on and passed their initial diagnostics.',
   },
   {
-    id: 'c-address',
-    term: 'CAddress',
-    slug: 'c-address',
-    definition: 'In C programming, a memory address, which is the location of a variable, function, or other data structure in the computer\'s memory. It is typically represented and manipulated using pointers.',
-    example: 'The `&` operator is used to get the CAddress of a variable, which can then be stored in a pointer.'
+    id: 'bruteforce',
+    term: 'BruteForce',
+    slug: 'bruteforce',
+    definition: 'A trial-and-error method used to crack passwords or cryptographic keys by systematically trying all possible combinations.',
+    example: 'The attacker launched a brute-force attack against the login page, trying thousands of common passwords per minute.',
   },
   {
-    id: 'c-advisor',
-    term: 'CAdvisor',
-    slug: 'c-advisor',
-    definition: 'An open-source tool developed by Google (Container Advisor) that provides understanding of the resource usage and performance characteristics of running containers. It collects, aggregates, processes, and exports information about containers.',
-    example: 'The DevOps team deployed cAdvisor on each Docker host to monitor the CPU and memory consumption of their microservices.'
+    id: 'bufferoverflow',
+    term: 'BufferOverflow',
+    slug: 'bufferoverflow',
+    definition: 'A security vulnerability that occurs when a program writes data beyond the boundary of a buffer, overwriting adjacent memory. This can lead to crashes or arbitrary code execution.',
+    example: 'The vulnerability was caused by a buffer overflow in a function that didn\'t check the length of the user\'s input.',
   },
   {
-    id: 'ca-file',
-    term: 'CAFile',
-    slug: 'ca-file',
-    definition: 'A file containing one or more public key certificates of Certificate Authorities (CAs). This file is used by clients (like browsers or command-line tools) to verify the authenticity of SSL/TLS certificates presented by servers.',
-    example: 'The `curl` command failed with a certificate validation error until he specified the correct CAFile using the `--cacert` option.'
+    id: 'bugbash',
+    term: 'BugBash',
+    slug: 'bugbash',
+    definition: 'An event where all members of a team, including developers, testers, and product managers, set aside time to test a piece of software and find as many bugs as possible.',
+    example: 'The team held a bug bash a week before the release to catch any remaining critical issues.',
   },
   {
-    id: 'call-graph',
-    term: 'CallGraph',
-    slug: 'call-graph',
-    definition: 'A directed graph that represents the calling relationships between subroutines in a computer program. Each node represents a function, and an edge from function A to function B indicates that A calls B.',
-    example: 'A profiler generated a CallGraph to help developers visualize which functions were being called most frequently and where performance bottlenecks might exist.'
+    id: 'bugreport',
+    term: 'BugReport',
+    slug: 'bugreport',
+    definition: 'A formal report that describes a bug or defect in a piece of software. A good bug report includes steps to reproduce the issue, the expected behavior, and the actual behavior.',
+    example: 'The QA engineer filed a detailed bug report, including a screenshot and console logs, to help the developer fix the issue.',
   },
   {
-    id: 'call-handler',
-    term: 'CallHandler',
-    slug: 'call-handler',
-    definition: 'A function or method that is responsible for processing a specific type of call or request. It acts as the entry point for executing the logic associated with that request.',
-    example: 'In the API server, each endpoint was mapped to a specific CallHandler that would process the incoming HTTP request.'
+    id: 'buildartifact',
+    term: 'BuildArtifact',
+    slug: 'buildartifact',
+    definition: 'A file or set of files that are produced by a software build process, such as a compiled executable, a JAR file, or a container image.',
+    example: 'The CI/CD pipeline stored the build artifact in an artifact repository after a successful build.',
   },
   {
-    id: 'call-interface',
-    term: 'CallInterface',
-    slug: 'call-interface',
-    definition: 'A defined set of functions, methods, and protocols that a software component exposes to allow other components to interact with it. It is the "contract" for how to make calls to the component.',
-    example: 'The library provided a simple CallInterface with just three functions: `open()`, `read()`, and `close()`.'
+    id: 'buildpipeline',
+    term: 'BuildPipeline',
+    slug: 'buildpipeline',
+    definition: 'An automated workflow that takes source code from a version control system and builds, tests, and prepares it for deployment. It is a key part of Continuous Integration (CI).',
+    example: 'Their build pipeline automatically ran all unit tests and static code analysis on every commit.',
   },
   {
-    id: 'call-object',
-    term: 'CallObject',
-    slug: 'call-object',
-    definition: 'In some programming paradigms, an object that represents a function call itself. This allows the call to be stored, passed around, or executed at a later time.',
-    example: 'The command pattern was implemented by creating a CallObject for each user action, which could then be placed on an undo stack.'
+    id: 'burnin',
+    term: 'BurnIn',
+    slug: 'burnin',
+    definition: 'The process of running a new piece of computer hardware for a period of time to test for early failures. It can also refer to permanent image retention on a display.',
+    example: 'The data center performs a 48-hour burn-in test on all new servers before putting them into production.',
   },
   {
-    id: 'callback-queue',
-    term: 'CallbackQueue',
-    slug: 'callback-queue',
-    definition: 'In asynchronous programming, a queue that holds callback functions that are ready to be executed. In JavaScript, for example, once an async operation completes, its callback is placed in the CallbackQueue, waiting for the event loop to pick it up.',
-    example: 'After the API request finished, its callback function was moved to the CallbackQueue, waiting for the main thread to be free.'
+    id: 'bustopology',
+    term: 'BusTopology',
+    slug: 'bustopology',
+    definition: 'A network topology where all devices are connected to a single central cable, called the bus or backbone. It is simple to set up but is not very robust.',
+    example: 'Early Ethernet networks often used a bus topology with coaxial cable.',
   },
   {
-    id: 'callback-stack',
-    term: 'CallbackStack',
-    slug: 'callback-stack',
-    definition: 'A data structure that manages the execution of nested or chained callback functions. It\'s a conceptual inverse of a call stack for asynchronous operations, often leading to a pattern derisively called "callback hell".',
-    example: 'The deeply nested structure of the code created a complex CallbackStack that was difficult to debug.'
+    id: 'bytecode',
+    term: 'Bytecode',
+    slug: 'bytecode',
+    definition: 'A form of instruction set designed for efficient execution by a software interpreter or virtual machine. Java and Python are two languages that are compiled to bytecode.',
+    example: 'The Java compiler converts `.java` source files into `.class` files containing bytecode, which can then be run on any Java Virtual Machine (JVM).',
   },
   {
-    id: 'caller-id',
-    term: 'CallerID',
-    slug: 'caller-id',
-    definition: 'A telecommunication service that transmits a caller\'s phone number to the recipient\'s phone equipment during the ringing signal. In software, it can refer to any mechanism that identifies the originator of a call or request.',
-    example: 'The support center\'s software used the CallerID to automatically pull up the customer\'s account information before the agent answered the phone.'
+    id: 'byteorder',
+    term: 'ByteOrder',
+    slug: 'byteorder',
+    definition: 'The order in which a sequence of bytes is stored in computer memory. The two main types are big-endian and little-endian.',
+    example: 'When transferring data between two systems with different architectures, you have to be careful about byte order.',
   },
   {
-    id: 'calling-convention',
-    term: 'CallingConvention',
-    slug: 'calling-convention',
-    definition: 'A low-level scheme that defines how subroutines receive parameters from their caller and how they return a result. It specifies details like where parameters are placed (in registers or on the stack) and who is responsible for cleaning up the stack.',
-    example: 'The C programming language typically uses the `cdecl` CallingConvention on x86 architecture, where the caller cleans the stack.'
+    id: 'byod',
+    term: 'BYOD',
+    slug: 'byod',
+    definition: 'Bring Your Own Device. A policy that allows employees to use their personal devices, like laptops and smartphones, for work purposes.',
+    example: 'The company implemented a BYOD policy but required all personal devices to have security software installed.',
   },
   {
-    id: 'call-manager',
-    term: 'CallManager',
-    slug: 'call-manager',
-    definition: 'A system, often used in VoIP and telecommunications, that is responsible for setting up, controlling, and tearing down calls. It handles signaling, routing, and other call processing functions.',
-    example: 'Cisco Unified CallManager is a popular IP telephony solution used in many large enterprises.'
+    id: 'baas',
+    term: 'BaaS',
+    slug: 'baas',
+    definition: 'Backend as a Service. A cloud computing service model that provides backend functionality like user authentication, database management, and cloud storage, allowing developers to focus on the frontend.',
+    example: 'Firebase is a popular BaaS that handles user accounts, data storage, and hosting for web and mobile apps.',
   },
   {
-    id: 'call-module',
-    term: 'CallModule',
-    slug: 'call-module',
-    definition: 'A self-contained unit of code or a software module that encapsulates the logic for a specific type of function call or interaction.',
-    example: 'The application\'s payment processing was handled by a dedicated CallModule that interfaced with the Stripe API.'
+    id: 'baremetal',
+    term: 'BareMetal',
+    slug: 'baremetal',
+    definition: 'A physical server that is dedicated to a single tenant. The tenant can install any operating system and has direct access to the underlying hardware without a hypervisor layer.',
+    example: 'For their high-performance database, they chose a bare-metal server to avoid the overhead of virtualization.',
   },
   {
-    id: 'call-path',
-    term: 'CallPath',
-    slug: 'call-path',
-    definition: 'The sequence of function calls that leads from the beginning of a program\'s execution to a specific point. Understanding the call path is crucial for debugging and performance analysis.',
-    example: 'The profiler showed a long CallPath for the rendering function, indicating many nested function calls were contributing to the slowdown.'
+    id: 'baseimage',
+    term: 'BaseImage',
+    slug: 'baseimage',
+    definition: 'In containerization (like Docker), the starting image upon which you build your own custom images. It typically contains an operating system and essential libraries.',
+    example: 'He chose the official `node:16-alpine` image as the base image for his application to keep it small and secure.',
   },
   {
-    id: 'call-protocol',
-    term: 'CallProtocol',
-    slug: 'call-protocol',
-    definition: 'A set of rules and standards that govern how communication sessions (or "calls") are established, maintained, and terminated between endpoints. Examples include SIP for VoIP or RPC for software components.',
-    example: 'The two video conferencing systems could not connect because they supported different CallProtocols.'
+    id: 'batchprocess',
+    term: 'BatchProcess',
+    slug: 'batchprocess',
+    definition: 'A method of executing a series of jobs or programs without manual intervention. Batch processing is often used for tasks that require a large amount of computation or data.',
+    example: 'The company ran a nightly batch process to generate reports from the day\'s sales data.',
   },
   {
-    id: 'call-router',
-    term: 'CallRouter',
-    slug: 'call-router',
-    definition: 'A component in a system that directs incoming calls or requests to the appropriate destination or handler based on a set of rules.',
-    example: 'In the web framework, the CallRouter examined the URL of the request to determine which controller method should handle it.'
+    id: 'beaconframe',
+    term: 'BeaconFrame',
+    slug: 'beaconframe',
+    definition: 'In Wi-Fi networks, a management frame that is periodically sent by an access point to announce its presence and provide network information, such as the SSID.',
+    example: 'Your phone discovers nearby Wi-Fi networks by listening for beacon frames from access points.',
   },
   {
-    id: 'call-stack',
-    term: 'CallStack',
-    slug: 'call-stack',
-    definition: 'A stack data structure that stores information about the active subroutines of a computer program. When a function is called, a "stack frame" is pushed onto the stack, and when it returns, the frame is popped off.',
-    example: 'When the program crashed, the debugger printed the CallStack, showing the sequence of function calls that led to the error.'
+    id: 'bitdepth',
+    term: 'BitDepth',
+    slug: 'bitdepth',
+    definition: 'In digital audio or imaging, the number of bits of information in each sample. Higher bit depth allows for a greater dynamic range.',
+    example: 'A 24-bit audio file has a much higher bit depth and dynamic range than a standard 16-bit CD audio file.',
   },
   {
-    id: 'call-state',
-    term: 'CallState',
-    slug: 'call-state',
-    definition: 'The current status of a communication session or call, such as "ringing," "in progress," "on hold," or "terminated."',
-    example: 'The application monitored the CallState to automatically mute the microphone when a call was put on hold.'
+    id: 'bitrate',
+    term: 'BitRate',
+    slug: 'bitrate',
+    definition: 'The number of bits that are conveyed or processed per unit of time, typically measured in bits per second (bps).',
+    example: 'The video was streamed at a bitrate of 5 megabits per second.',
   },
   {
-    id: 'call-table',
-    term: 'CallTable',
-    slug: 'call-table',
-    definition: 'A data structure, often an array of function pointers, used to dispatch calls to the correct function. It is a way to implement dynamic dispatch or virtual functions.',
-    example: 'The operating system kernel used a system CallTable to map system call numbers to their corresponding kernel functions.'
+    id: 'bitbucket',
+    term: 'Bitbucket',
+    slug: 'bitbucket',
+    definition: 'A web-based version control repository hosting service, owned by Atlassian, for source code and development projects that use either Mercurial or Git.',
+    example: 'The team hosted their private Git repositories on Bitbucket.',
   },
   {
-    id: 'call-trace',
-    term: 'CallTrace',
-    slug: 'call-trace',
-    definition: 'A record of the sequence of function calls executed by a program during a specific period. It is more detailed than a call stack, as it records the entire history of calls, not just the currently active ones.',
-    example: 'The developer used `strace` to generate a CallTrace of all the system calls the application was making.'
+    id: 'blackbox',
+    term: 'BlackBox',
+    slug: 'blackbox',
+    definition: 'In software testing, a method where the tester has no knowledge of the internal workings of the system. They only provide inputs and observe the outputs.',
+    example: 'The QA team performed black-box testing on the API, checking that the correct outputs were returned for various inputs.',
   },
   {
-    id: 'call-wrapper',
-    term: 'CallWrapper',
-    slug: 'call-wrapper',
-    definition: 'A function or object that "wraps" another function call, adding extra behavior before or after the original function is executed. This is used for logging, timing, authentication, and other cross-cutting concerns.',
-    example: 'They created a CallWrapper to log the arguments and return value of every call to the critical payment function.'
+    id: 'blacklist',
+    term: 'Blacklist',
+    slug: 'blacklist',
+    definition: 'A list of entities, such as IP addresses or email addresses, that are denied access to a system or service. The term "denylist" or "blocklist" is now preferred.',
+    example: 'The email server used a blacklist to block messages from known spam sources.',
   },
   {
-    id: 'cam-memory',
-    term: 'CAMMemory',
-    slug: 'cam-memory',
-    definition: 'Content-Addressable Memory. A special type of computer memory where you supply the data and the memory returns the address where that data is stored. It is the reverse of standard RAM and is very fast for searching.',
-    example: 'High-speed network routers use CAMMemory to quickly look up MAC addresses in their forwarding tables.'
+    id: 'bladeserver',
+    term: 'BladeServer',
+    slug: 'bladeserver',
+    definition: 'A stripped-down server computer with a modular design optimized to minimize the use of physical space and energy. Blade servers are housed in a blade enclosure or chassis.',
+    example: 'The data center was filled with blade enclosures, each holding up to 16 powerful blade servers.',
   },
   {
-    id: 'cam-table',
-    term: 'CAMTable',
-    slug: 'cam-table',
-    definition: 'A table stored in Content-Addressable Memory (CAM), used by network switches to map MAC addresses to the physical port on the switch where the corresponding device is located. This allows the switch to efficiently forward traffic only to the correct port.',
-    example: 'When the switch received a frame, it looked up the destination MAC address in its CAMTable to determine where to send it.'
+    id: 'blockcipher',
+    term: 'BlockCipher',
+    slug: 'blockcipher',
+    definition: 'A symmetric key cipher that operates on fixed-length groups of bits, called blocks. AES is a well-known example of a block cipher.',
+    example: 'The AES block cipher encrypts data in 128-bit blocks.',
   },
   {
-    id: 'camera-module',
-    term: 'CameraModule',
-    slug: 'camera-module',
-    definition: 'A self-contained hardware unit that includes a camera sensor, lens, and processing circuitry. These modules are commonly used in smartphones, laptops, and embedded systems.',
-    example: 'The smartphone\'s impressive photo quality is thanks to its advanced CameraModule with a large sensor and optical image stabilization.'
+    id: 'blockstorage',
+    term: 'BlockStorage',
+    slug: 'blockstorage',
+    definition: 'A type of data storage where data is stored in blocks, which are then stored as separate pieces, each with a unique identifier. It is used for creating volumes for cloud virtual machines.',
+    example: 'Amazon EBS is a popular block storage service that provides persistent volumes for EC2 instances.',
   },
   {
-    id: 'camera-overlay',
-    term: 'CameraOverlay',
-    slug: 'camera-overlay',
-    definition: 'A graphical layer displayed on top of a live camera feed. This is used in augmented reality apps, photo editing apps, and for displaying information like QR code scanners or camera settings.',
-    example: 'The Instagram app uses a CameraOverlay to add face filters and effects to the live video.'
+    id: 'bootloader',
+    term: 'Bootloader',
+    slug: 'bootloader',
+    definition: 'A small program that loads the operating system into memory when a computer starts up.',
+    example: 'GRUB is a popular bootloader used by many Linux distributions.',
   },
   {
-    id: 'camera-service',
-    term: 'CameraService',
-    slug: 'camera-service',
-    definition: 'In an operating system like Android, a system-level service that manages access to the camera hardware, allowing multiple applications to use the camera without conflicts.',
-    example: 'An application must request permission to access the CameraService before it can take pictures or record video.'
+    id: 'bootvolume',
+    term: 'BootVolume',
+    slug: 'bootvolume',
+    definition: 'The storage volume that contains the operating system and other files needed to boot a computer.',
+    example: 'He attached the boot volume to the new virtual machine to start it up.',
   },
   {
-    id: 'camera-stack',
-    term: 'CameraStack',
-    slug: 'camera-stack',
-    definition: 'The complete set of software layers involved in capturing and processing an image from a camera, from the low-level hardware driver to the application-level APIs.',
-    example: 'Understanding the entire CameraStack was necessary to debug the rare image corruption issue.'
+    id: 'bootstraptoken',
+    term: 'BootstrapToken',
+    slug: 'bootstraptoken',
+    definition: 'In systems like Kubernetes, a special token used for securely bootstrapping new nodes and joining them to a cluster.',
+    example: 'He used the bootstrap token to add a new worker node to the Kubernetes cluster.',
   },
   {
-    id: 'can-bus',
-    term: 'CANBus',
-    slug: 'can-bus',
-    definition: 'Controller Area Network. A robust vehicle bus standard designed to allow microcontrollers and devices to communicate with each other in applications without a host computer. It is widely used in modern automobiles.',
-    example: 'In a modern car, the engine control unit (ECU), anti-lock brakes, and airbags all communicate over the CANBus.'
+    id: 'branchpredictor',
+    term: 'BranchPredictor',
+    slug: 'branchpredictor',
+    definition: 'A digital circuit in a modern CPU that tries to guess which way a branch (an if-then-else structure) will go before this is known for sure. This helps to keep the CPU\'s pipeline full.',
+    example: 'The advanced branch predictor in the new CPU significantly improved its performance on code with many conditional statements.',
   },
   {
-    id: 'cancel-token',
-    term: 'CancelToken',
-    slug: 'cancel-token',
-    definition: 'An object used in asynchronous programming to signal a request for cancellation to one or more operations. This allows long-running tasks, like file downloads or API requests, to be cleanly aborted.',
-    example: 'He passed a CancelToken to the API request so that if the user navigated away, the request could be cancelled to save bandwidth.'
+    id: 'breakpoint',
+    term: 'Breakpoint',
+    slug: 'breakpoint',
+    definition: 'A point in a program where the execution will be intentionally stopped, allowing the developer to inspect the program\'s state. This is a key feature of debuggers.',
+    example: 'He set a breakpoint on the line where the error was occurring to examine the values of the variables.',
   },
   {
-    id: 'candidate-key',
-    term: 'CandidateKey',
-    slug: 'candidate-key',
-    definition: 'In relational database theory, a column or a set of columns in a table that can uniquely identify any row in that table, without any redundant data. A table can have multiple candidate keys, one of which is chosen to be the "primary key".',
-    example: 'In the `Employees` table, both `EmployeeID` and `SocialSecurityNumber` were CandidateKeys, but `EmployeeID` was chosen as the primary key.'
+    id: 'broadcastdomain',
+    term: 'BroadcastDomain',
+    slug: 'broadcastdomain',
+    definition: 'A logical division of a computer network in which all nodes can reach each other by broadcast at the data link layer. Routers are used to separate broadcast domains.',
+    example: 'A single VLAN is a single broadcast domain.',
   },
   {
-    id: 'canonical-build',
-    term: 'CanonicalBuild',
-    slug: 'canonical-build',
-    definition: 'The official, authoritative build of a piece of software, produced by a standardized, reproducible process. It is the single source of truth against which other builds can be compared.',
-    example: 'The QA team only tests the CanonicalBuild that comes from the automated Jenkins pipeline to ensure consistency.'
+    id: 'buffercache',
+    term: 'BufferCache',
+    slug: 'buffercache',
+    definition: 'A region of memory used to cache disk blocks to improve the performance of disk I/O operations. Also known as a disk cache.',
+    example: 'The operating system\'s buffer cache kept a copy of recently accessed files in RAM, which made reading them again much faster.',
   },
   {
-    id: 'canonical-path',
-    term: 'CanonicalPath',
-    slug: 'canonical-path',
-    definition: 'The single, standard, and unambiguous path to a file or resource. It resolves any shortcuts, relative paths (like `..`), or symbolic links to provide the one "true" path.',
-    example: 'While the user typed `../config.cfg`, the program resolved it to its CanonicalPath: `/etc/app/config.cfg`.'
+    id: 'bugfixpatch',
+    term: 'BugfixPatch',
+    slug: 'bugfixpatch',
+    definition: 'A small piece of software designed to fix a specific bug or problem in a program.',
+    example: 'The company released a bugfix patch to address the critical security vulnerability.',
   },
   {
-    id: 'cantor-set-model',
-    term: 'CantorSetModel',
-    slug: 'cantor-set-model',
-    definition: 'A mathematical model using principles of the Cantor set, a fractal concept, often applied in computer science to problems of data distribution, network addressing, or analysis of complex systems.',
-    example: 'The researcher used a CantorSetModel to analyze the distribution of nodes in the peer-to-peer network.'
+    id: 'bundleid',
+    term: 'BundleID',
+    slug: 'bundleid',
+    definition: 'A unique identifier for an application in Apple\'s ecosystem (iOS, macOS). It is typically in a reverse-DNS format, like `com.example.myapp`.',
+    example: 'He had to register the new app\'s BundleID in the Apple Developer portal before he could build it.',
   },
   {
-    id: 'cap-layer',
-    term: 'CapLayer',
-    slug: 'cap-layer',
-    definition: 'In networking and software architecture, a "Capabilities" layer that manages and enforces access control based on what a user or process is permitted to do, rather than just their identity.',
-    example: 'The new security model introduced a CapLayer that granted processes specific capabilities, like "read-only access to /data," instead of running them as root.'
+    id: 'busmastering',
+    term: 'BusMastering',
+    slug: 'busmastering',
+    definition: 'A feature that allows a device on a computer bus to take control of the bus to transfer data directly to and from memory, without involving the CPU.',
+    example: 'High-speed network cards use bus mastering to achieve high throughput with low CPU usage.',
   },
   {
-    id: 'cap-module',
-    term: 'CapModule',
-    slug: 'cap-module',
-    definition: 'A module or component responsible for managing capabilities or access rights within a system. This is often part of a security framework.',
-    example: 'The Linux kernel\'s CapModule allows for fine-grained control over the privileges of a process.'
+    id: 'bytealignment',
+    term: 'ByteAlignment',
+    slug: 'bytealignment',
+    definition: 'The way data is arranged and accessed in computer memory. Data is said to be aligned when it is stored at a memory address that is a multiple of its size.',
+    example: 'Accessing a 4-byte integer is much faster if it has proper 4-byte alignment.',
   },
   {
-    id: 'cap-table',
-    term: 'CapTable',
-    slug: 'cap-table',
-    definition: 'A "Capabilities Table" used in some operating systems to keep track of the permissions or capabilities granted to different processes or users.',
-    example: 'The kernel consulted the CapTable to verify that the process had the right to open a raw network socket.'
+    id: 'bytecodevm',
+    term: 'BytecodeVM',
+    slug: 'bytecodevm',
+    definition: 'A virtual machine that is designed to execute bytecode. The Java Virtual Machine (JVM) is a well-known example of a bytecode VM.',
+    example: 'The BytecodeVM interpreted the compiled Python code and executed it.',
   },
   {
-    id: 'cap-theorem',
-    term: 'CAPTheorem',
-    slug: 'cap-theorem',
-    definition: 'A fundamental principle for distributed data stores that states it is impossible for a distributed system to simultaneously provide more than two out of the following three guarantees: Consistency, Availability, and Partition tolerance.',
-    example: 'When designing their new database, the architects had to make a tradeoff based on the CAPTheorem: they chose Availability and Partition tolerance, accepting eventual consistency.'
+    id: 'bitmask',
+    term: 'BITMASK',
+    slug: 'bitmask',
+    definition: 'A pattern of bits that is used to select specific bits from a value, typically using bitwise operations like AND, OR, and XOR.',
+    example: 'He used a bit mask and a bitwise AND operation to check if the 4th bit of a status byte was set.',
   },
   {
-    id: 'capacity-group',
-    term: 'CapacityGroup',
-    slug: 'capacity-group',
-    definition: 'A collection of resources (like servers or storage) that are managed together as a single pool of capacity. This is often used in cloud computing and virtualization.',
-    example: 'The auto-scaling system was configured to add new instances to the web server CapacityGroup when CPU utilization exceeded 70%.'
+    id: 'bmc',
+    term: 'BMC',
+    slug: 'bmc',
+    definition: 'Baseboard Management Controller. A specialized microcontroller embedded on the motherboard of a server that allows for remote monitoring and management of the server, even if it is powered off.',
+    example: 'The system administrator used the BMC\'s web interface to remotely reboot the crashed server.',
   },
   {
-    id: 'capacity-index',
-    term: 'CapacityIndex',
-    slug: 'capacity-index',
-    definition: 'A metric or score that represents the available capacity or performance capability of a system or component.',
-    example: 'The load balancer consulted the CapacityIndex of each server before routing a new request to the one with the most available resources.'
+    id: 'bootstrapping',
+    term: 'Bootstrapping',
+    slug: 'bootstrapping',
+    definition: 'The process of loading and starting a computer system or a software application. It can also refer to a statistical method for estimating the sampling distribution of an estimator.',
+    example: 'The server runs a bootstrap script on its first boot to install all the necessary software.',
   },
   {
-    id: 'capacity-monitor',
-    term: 'CapacityMonitor',
-    slug: 'capacity-monitor',
-    definition: 'A tool or service that continuously tracks the usage and availability of resources (like CPU, memory, disk space, or network bandwidth) to aid in capacity planning.',
-    example: 'The CapacityMonitor alerted the operations team that they would run out of disk space in two weeks at the current growth rate.'
+    id: 'bourneshell',
+    term: 'BourneShell',
+    slug: 'bourneshell',
+    definition: 'The original Unix shell, `sh`, written by Stephen Bourne. It was the default shell for Version 7 Unix and is the ancestor of many modern shells like Bash and Zsh.',
+    example: 'He wrote the script in the original Bourne shell for maximum portability across different Unix systems.',
   },
   {
-    id: 'capacity-plan',
-    term: 'CapacityPlan',
-    slug: 'capacity-plan',
-    definition: 'A strategic plan that outlines the process of forecasting future resource requirements and ensuring that sufficient capacity is available to meet expected demand.',
-    example: 'The IT department developed a CapacityPlan to prepare for the expected traffic spike during the Black Friday sale.'
+    id: 'browsercache',
+    term: 'BrowserCache',
+    slug: 'browsercache',
+    definition: 'A temporary storage area in your web browser that holds copies of files from websites you have visited, such as images and scripts. This makes loading those pages faster on subsequent visits.',
+    example: 'To see the latest changes to the website, he had to clear his browser cache.',
   },
   {
-    id: 'capacity-pool',
-    term: 'CapacityPool',
-    slug: 'capacity-pool',
-    definition: 'A collection of computing or storage resources that are available for allocation. It allows for flexible and on-demand provisioning of capacity.',
-    example: 'The private cloud was built on a large CapacityPool of virtualized servers.'
+    id: 'browserfingerprint',
+    term: 'BrowserFingerprint',
+    slug: 'browserfingerprint',
+    definition: 'A unique identifier for a user\'s browser, created by collecting a wide range of information such as browser version, installed fonts, and screen resolution. It can be used for tracking users.',
+    example: 'Advertising networks use browser fingerprinting to track users across different websites even if they clear their cookies.',
   },
   {
-    id: 'capacity-queue',
-    term: 'CapacityQueue',
-    slug: 'capacity-queue',
-    definition: 'A queue used to manage requests for a resource with limited capacity. Requests are queued up and processed as capacity becomes available.',
-    example: 'The video encoding service used a CapacityQueue to manage incoming jobs, ensuring that it only processed as many videos simultaneously as its servers could handle.'
+    id: 'browsersandbox',
+    term: 'BrowserSandbox',
+    slug: 'browsersandbox',
+    definition: 'A security mechanism in modern web browsers that isolates web pages and their code from the rest of the operating system. This prevents malicious websites from harming your computer.',
+    example: 'The browser sandbox prevented the malicious script on the web page from accessing files on his hard drive.',
   },
   {
-    id: 'capacity-set',
-    term: 'CapacitySet',
-    slug: 'capacity-set',
-    definition: 'In cloud environments, a defined set of resources (e.g., a specific number of VMs of a certain type) that are reserved or allocated for a particular task or application.',
-    example: 'They created a CapacitySet of five high-CPU virtual machines to run their data analytics jobs.'
+    id: 'bufferpool',
+    term: 'BufferPool',
+    slug: 'bufferpool',
+    definition: 'A region of memory used by a database management system to cache data pages from the disk. This significantly speeds up database operations.',
+    example: 'The database administrator increased the size of the buffer pool to improve the query performance.',
   },
   {
-    id: 'capacity-unit',
-    term: 'CapacityUnit',
-    slug: 'capacity-unit',
-    definition: 'A standardized measure of the throughput or performance of a resource, used for provisioning and billing in cloud services. For example, AWS DynamoDB uses Read Capacity Units (RCUs) and Write Capacity Units (WCUs).',
-    example: 'They provisioned their database with 100 read capacity units and 50 write capacity units.'
+    id: 'bugtracker',
+    term: 'BugTracker',
+    slug: 'bugtracker',
+    definition: 'A software application that is used to keep track of reported software bugs in software development projects. Jira and Bugzilla are popular examples.',
+    example: 'The QA team filed a new ticket in the bug tracker for the issue they found.',
   },
   {
-    id: 'capped-collection',
-    term: 'CappedCollection',
-    slug: 'capped-collection',
-    definition: 'In MongoDB, a fixed-size collection that works like a circular buffer. Once a collection fills its allocated space, it makes room for new documents by overwriting the oldest documents in the collection.',
-    example: 'The application used a CappedCollection to store the last 10,000 log entries, automatically discarding older ones.'
+    id: 'bulkheadpattern',
+    term: 'BulkheadPattern',
+    slug: 'bulkheadpattern',
+    definition: 'A design pattern in distributed systems where elements of an application are isolated into pools so that if one fails, the others will continue to function.',
+    example: 'They used the bulkhead pattern to isolate the connections for each downstream microservice, so a failure in one service wouldn\'t bring down the entire application.',
   },
   {
-    id: 'capture-buffer',
-    term: 'CaptureBuffer',
-    slug: 'capture-buffer',
-    definition: 'A region of memory used to temporarily store data that is being captured, such as audio from a microphone, video from a camera, or network packets.',
-    example: 'Wireshark uses a CaptureBuffer to hold incoming network packets before writing them to a file.'
-  },
-  {
-    id: 'capture-driver',
-    term: 'CaptureDriver',
-    slug: 'capture-driver',
-    definition: 'A low-level software driver that provides the interface for capturing data from a hardware device, like a video capture card or a network interface card.',
-    example: 'He had to install the correct CaptureDriver before the video editing software could recognize his new camera.'
-  },
-  {
-    id: 'capture-frame',
-    term: 'CaptureFrame',
-    slug: 'capture-frame',
-    definition: 'A single frame of data captured from a source, such as a video frame from a camera or a data frame from a network.',
-    example: 'The motion detection software analyzed each CaptureFrame to see if there were any changes from the previous one.'
-  },
-  {
-    id: 'capture-mode',
-    term: 'CaptureMode',
-    slug: 'capture-mode',
-    definition: 'A setting that determines how data is captured. For a network sniffer, this could be "promiscuous mode" to capture all traffic, or standard mode to capture only traffic for the host.',
-    example: 'He set the network card to promiscuous CaptureMode to debug a network issue between two other servers.'
-  },
-  {
-    id: 'capture-node',
-    term: 'CaptureNode',
-    slug: 'capture-node',
-    definition: 'In a distributed system, a node or server whose primary role is to capture incoming data, such as logs or events, before it is passed on for processing.',
-    example: 'The CaptureNode received real-time data streams from thousands of IoT devices.'
-  },
-  {
-    id: 'capture-packet',
-    term: 'CapturePacket',
-    slug: 'capture-packet',
-    definition: 'The action or result of capturing a single network packet for analysis. This is the fundamental operation of network sniffers.',
-    example: 'The `tcpdump` command allows you to CapturePacket data and display it in the console.'
-  },
-  {
-    id: 'capture-probe',
-    term: 'CaptureProbe',
-    slug: 'capture-probe',
-    definition: 'A software or hardware tool that is inserted into a system to monitor and capture data for analysis and debugging.',
-    example: 'A performance analyst attached a CaptureProbe to the application to trace the execution of slow database queries.'
-  },
-  {
-    id: 'capture-thread',
-    term: 'CaptureThread',
-    slug: 'capture-thread',
-    definition: 'A dedicated thread in a multithreaded application whose job is to continuously capture data from a source, like a network socket or an audio device.',
-    example: 'The CaptureThread read data from the microphone and passed it to a separate processing thread to avoid blocking the UI.'
-  },
-  {
-    id: 'carriage-return',
-    term: 'CarriageReturn',
-    slug: 'carriage-return',
-    definition: 'A control character (`\\r`) that, in text files, moves the cursor to the beginning of the line. Windows uses a Carriage Return followed by a Line Feed (`\\r\\n`) for newlines, while Unix-based systems use only a Line Feed (`\\n`).',
-    example: 'The script failed because it was written on Windows and the text file contained CarriageReturn characters, which the Linux parser did not expect.'
-  },
-  {
-    id: 'carrier-signal',
-    term: 'CarrierSignal',
-    slug: 'carrier-signal',
-    definition: 'A high-frequency electromagnetic wave that is modulated in amplitude, frequency, or phase to carry information, such as a radio or TV signal.',
-    example: 'The radio station transmits its audio by modulating a 98.1 MHz CarrierSignal.'
-  },
-  {
-    id: 'cartography-engine',
-    term: 'CartographyEngine',
-    slug: 'cartography-engine',
-    definition: 'A software component or system designed for creating and rendering maps. It handles tasks like projecting geographic data, rendering map tiles, and displaying geographic features.',
-    example: 'Google Maps is powered by a sophisticated CartographyEngine that can render detailed maps of the entire world in real-time.'
-  },
-  {
-    id: 'case-structure',
-    term: 'CaseStructure',
-    slug: 'case-structure',
-    definition: 'A type of selection control mechanism in programming that allows a variable or expression to be tested for equality against a list of values. It is commonly implemented with a `switch` or `case` statement.',
-    example: 'The developer used a CaseStructure to handle different user actions, with a separate case for "save", "delete", and "print".'
-  },
-  {
-    id: 'cast-operator',
-    term: 'CastOperator',
-    slug: 'cast-operator',
-    definition: 'An operator in a programming language that converts a value from one data type to another. This is also known as "type casting".',
-    example: 'He used a CastOperator to convert the floating-point number `9.7` to an integer, which resulted in the value `9`.'
-  },
-  {
-    id: 'catalog-db',
-    term: 'CatalogDB',
-    slug: 'catalog-db',
-    definition: 'A database that stores metadata about other data. For example, a data warehouse might have a CatalogDB that contains information about all the tables, columns, and data sources it manages.',
-    example: 'The backup software uses a CatalogDB to keep track of which files are in which backup set.'
-  },
-  {
-    id: 'catalog-entry',
-    term: 'CatalogEntry',
-    slug: 'catalog-entry',
-    definition: 'A single record or item within a catalog, containing metadata about a specific piece of data or an object.',
-    example: 'Each CatalogEntry for the product database included the product name, SKU, price, and a link to its image.'
-  },
-  {
-    id: 'catalog-export',
-    term: 'CatalogExport',
-    slug: 'catalog-export',
-    definition: 'The process of exporting the contents of a catalog (or a portion of it) into a file, often for backup, migration, or sharing purposes.',
-    example: 'The librarian performed a CatalogExport of all new book records into a CSV file.'
-  },
-  {
-    id: 'catalog-file',
-    term: 'CatalogFile',
-    slug: 'catalog-file',
-    definition: 'A file that contains a list or index of other files, often with associated metadata. It acts as a directory or table of contents.',
-    example: 'The software update package included a CatalogFile that listed all the files to be installed and their checksums.'
-  },
-  {
-    id: 'catalog-index',
-    term: 'CatalogIndex',
-    slug: 'catalog-index',
-    definition: 'An index created on a catalog database to speed up searches for metadata. For example, indexing the "table name" column in a system catalog.',
-    example: 'Creating a CatalogIndex on the file names greatly improved the speed of the backup software\'s search feature.'
-  },
-  {
-    id: 'catalog-item',
-    term: 'CatalogItem',
-    slug: 'catalog-item',
-    definition: 'A single, distinct item listed in a catalog, such as a product in an e-commerce catalog or a service in a service catalog.',
-    example: 'The user clicked on a CatalogItem to view the details of the laptop.'
-  },
-  {
-    id: 'catalog-loader',
-    term: 'CatalogLoader',
-    slug: 'catalog-loader',
-    definition: 'A component or process responsible for reading data from an external source and loading it into a catalog.',
-    example: 'A nightly batch job ran a CatalogLoader to import the latest product information from suppliers into the e-commerce store.'
-  },
-  {
-    id: 'catalog-merge',
-    term: 'CatalogMerge',
-    slug: 'catalog-merge',
-    definition: 'The process of combining two or more catalogs into a single catalog, often involving the resolution of conflicts or duplicate entries.',
-    example: 'After the company acquisition, the IT team faced the complex task of a CatalogMerge between the two different product databases.'
-  },
-  {
-    id: 'catalog-model',
-    term: 'CatalogModel',
-    slug: 'catalog-model',
-    definition: 'The data model or schema that defines the structure of a catalog, including the types of items it contains and their attributes.',
-    example: 'The developers designed a flexible CatalogModel that could accommodate various types of products, from electronics to clothing.'
-  },
-  {
-    id: 'catalog-parser',
-    term: 'CatalogParser',
-    slug: 'catalog-parser',
-    definition: 'A program or function that reads a catalog file in a specific format and extracts the structured data from it.',
-    example: 'He wrote a CatalogParser to read the XML-based product feed and import it into the database.'
-  },
-  {
-    id: 'catalog-queue',
-    term: 'CatalogQueue',
-    slug: 'catalog-queue',
-    definition: 'A queue that holds items waiting to be processed and added to a catalog, often used for asynchronous updates.',
-    example: 'New product submissions were placed in a CatalogQueue to be reviewed and approved by an administrator before going live.'
-  },
-  {
-    id: 'catalog-record',
-    term: 'CatalogRecord',
-    slug: 'catalog-record',
-    definition: 'A single record within a catalog database, representing one item and its associated metadata.',
-    example: 'Each CatalogRecord contained 37 fields of information about a single book in the library.'
-  },
-  {
-    id: 'catalog-schema',
-    term: 'CatalogSchema',
-    slug: 'catalog-schema',
-    definition: 'The formal definition of the structure of a catalog, specifying the tables, columns, data types, and relationships.',
-    example: 'The database administrator updated the CatalogSchema to add a new field for "country of origin".'
-  },
-  {
-    id: 'catalog-store',
-    term: 'CatalogStore',
-    slug: 'catalog-store',
-    definition: 'The underlying storage system (like a database or file system) where a catalog\'s data is physically stored.',
-    example: 'The e-commerce platform used a distributed NoSQL database as its CatalogStore to handle massive scale.'
-  },
-  {
-    id: 'category-filter',
-    term: 'CategoryFilter',
-    slug: 'category-filter',
-    definition: 'A user interface element or a piece of logic that allows users to filter a set of items based on their category.',
-    example: 'The e-commerce site had a CategoryFilter in the sidebar, allowing shoppers to view only "laptops" or "smartphones".'
-  },
-  {
-    id: 'category-index',
-    term: 'CategoryIndex',
-    slug: 'category-index',
-    definition: 'A data index that is specifically organized by category, allowing for fast retrieval of all items belonging to a particular category.',
-    example: 'The database had a CategoryIndex on the `product_type` column to speed up queries that filtered by category.'
-  },
-  {
-    id: 'category-key',
-    term: 'CategoryKey',
-    slug: 'category-key',
-    definition: 'A unique identifier or code used to represent a specific category in a system.',
-    example: 'In the database, the CategoryKey "ELEC" was used to represent the electronics category.'
-  },
-  {
-    id: 'category-tree',
-    term: 'CategoryTree',
-    slug: 'category-tree',
-    definition: 'A hierarchical structure used to organize categories and sub-categories, often visualized as a tree.',
-    example: 'The product management team designed a CategoryTree, with "Electronics" as a main branch and "Laptops," "Phones," and "Cameras" as sub-branches.'
-  },
-  {
-    id: 'c-auth',
-    term: 'CAuth',
-    slug: 'c-auth',
-    definition: 'A custom authentication or authorization system or library written in or for the C programming language.',
-    example: 'The embedded device used a lightweight CAuth library to handle user login and permissions.'
-  },
-  {
-    id: 'c-auth-token',
-    term: 'CAuthToken',
-    slug: 'c-auth-token',
-    definition: 'An authentication token that is generated, parsed, or validated by a system written in the C programming language.',
-    example: 'The server generated a JWT CAuthToken and sent it to the client after a successful login.'
-  },
-  {
-    id: 'cbs-file',
-    term: 'CBSFile',
-    slug: 'cbs-file',
-    definition: 'Component-Based Servicing file. A type of log file used by Windows to record information about the installation and uninstallation of Windows updates, service packs, and system components.',
-    example: 'The system administrator examined the CBSFile to troubleshoot a failed Windows update.'
-  },
-  {
-    id: 'cc-compiler',
-    term: 'CCCompiler',
-    slug: 'cc-compiler',
-    definition: 'A C-language compiler, a program that translates source code written in the C programming language into machine code that a computer can execute. `cc` is the traditional name for the C compiler on Unix-like systems.',
-    example: 'He compiled his program from the command line using the command `cc main.c -o myprogram`.'
-  },
-  {
-    id: 'cc-linker',
-    term: 'CCLinker',
-    slug: 'cc-linker',
-    definition: 'The linker component of a C compiler toolchain. After the compiler translates source files into object files, the CLinker combines these object files and links them with the necessary libraries to create a single executable file.',
-    example: 'The build failed at the final step because the CLinker could not find a required library.'
-  },
-  {
-    id: 'cc-processor',
-    term: 'CCProcessor',
-    slug: 'cc-processor',
-    definition: 'A C-language Preprocessor. It is a program that processes the source code before it is passed to the compiler. It handles directives like `#include` (to insert header files) and `#define` (to create macros).',
-    example: 'The CCProcessor replaced all instances of the macro `PI` with `3.14159` before the code was compiled.'
-  },
-  {
-    id: 'cdb-record',
-    term: 'CDBRecord',
-    slug: 'cdb-record',
-    definition: 'A record in a Constant Database (CDB), which is a simple, fast, and reliable database format for key-value data. CDB files are immutable, meaning they cannot be modified after they are created.',
-    example: 'The DNS server used a CDB file for fast lookups, retrieving the correct CDBRecord for a given domain name.'
-  },
-  {
-    id: 'cdf-file',
-    term: 'CDFFile',
-    slug: 'cdf-file',
-    definition: 'Computable Document Format file. A file format created by Wolfram Research for creating and sharing interactive documents that can contain computations, visualizations, and data.',
-    example: 'The professor shared a CDFFile with the class, which allowed them to interact with the 3D model of the molecule.'
-  },
-  {
-    id: 'cd-image',
-    term: 'CDImage',
-    slug: 'cd-image',
-    definition: 'A file that is a complete, sector-by-sector copy of a CD or DVD, such as an ISO or BIN/CUE file. It can be used to create a physical copy of the disc or be mounted as a virtual drive.',
-    example: 'He downloaded the Linux distribution as a CDImage and used it to create a bootable USB drive.'
-  },
-  {
-    id: 'cdn-cache',
-    term: 'CDNCache',
-    slug: 'cdn-cache',
-    definition: 'The cache on a Content Delivery Network (CDN) edge server. When a user requests a file, the CDN checks its CDNCache first. If the file is present (a cache hit), it is served directly from the nearby edge server, resulting in a very fast response.',
-    example: 'Since the image was in the CDNCache, it loaded instantly for users in Europe because it was served from the Frankfurt edge server.'
-  },
-  {
-    id: 'cdn-cluster',
-    term: 'CDNCluster',
-    slug: 'cdn-cluster',
-    definition: 'A group of geographically distributed but logically related CDN edge servers. The cluster works together to provide content delivery, load balancing, and failover for a specific region or set of content.',
-    example: 'The Asia-Pacific CDNCluster experienced a brief outage, but traffic was automatically rerouted to the US West cluster.'
-  },
-  {
-    id: 'cdn-config',
-    term: 'CDNConfig',
-    slug: 'cdn-config',
-    definition: 'The configuration settings for a Content Delivery Network. This includes defining the origin server, setting cache expiration rules (TTL), configuring security policies, and enabling features like image optimization.',
-    example: 'The developer updated the CDNConfig to set a longer cache duration for static assets like CSS and JavaScript files.'
-  },
-  {
-    id: 'cdn-edge',
-    term: 'CDNEdge',
-    slug: 'cdn-edge',
-    definition: 'A CDN edge server, which is a server located at the "edge" of the network, physically close to end-users. These servers cache content and serve it directly to users to reduce latency.',
-    example: 'A user in Australia received the website content from the CDNEdge server in Sydney, rather than the origin server in the US.'
-  },
-  {
-    id: 'cdn-endpoint',
-    term: 'CDNEndpoint',
-    slug: 'cdn-endpoint',
-    definition: 'The URL or hostname that is used to access content through a Content Delivery Network. This is the public-facing address that points to the CDN rather than the origin server.',
-    example: 'To use the CDN, the website changed its image URLs to point to the new CDNEndpoint, like `cdn.example.com/image.jpg`.'
-  },
-  {
-    id: 'cdn-failover',
-    term: 'CDNFailover',
-    slug: 'cdn-failover',
-    definition: 'A process where a CDN automatically reroutes traffic to a different edge server or even a different data center if the primary one becomes unavailable. This ensures high availability and resilience.',
-    example: 'During the network outage, the CDNFailover mechanism seamlessly switched traffic to a healthy data center with no downtime for users.'
-  },
-  {
-    id: 'cdn-filter',
-    term: 'CDNFilter',
-    slug: 'cdn-filter',
-    definition: 'A rule or set of rules on a Content Delivery Network that can modify, block, or redirect requests before they reach the origin server. This can be used for security (WAF), bot detection, or device-specific content delivery.',
-    example: 'They configured a CDNFilter to block all traffic from a country where they were experiencing a DDoS attack.'
-  },
-  {
-    id: 'cdn-gateway',
-    term: 'CDNGateway',
-    slug: 'cdn-gateway',
-    definition: 'A component of a CDN that acts as an entry point for requests. It can perform initial processing like SSL termination, authentication, and routing the request to the appropriate edge server or service.',
-    example: 'The CDNGateway handled the TLS handshake and then forwarded the decrypted request to the caching layer.'
-  },
-  {
-    id: 'cdn-group',
-    term: 'CDNGroup',
-    slug: 'cdn-group',
-    definition: 'A logical grouping of CDN resources, such as a set of edge servers or cache policies, that are managed together. This allows administrators to apply settings to a whole group at once.',
-    example: 'The "VideoStreaming" CDNGroup was configured with special caching rules optimized for large media files.'
-  },
-  {
-    id: 'cdn-health',
-    term: 'CDNHealth',
-    slug: 'cdn-health',
-    definition: 'The operational status and performance of a Content Delivery Network. CDN providers use health checks to constantly monitor their edge servers to ensure they are online and responding correctly.',
-    example: 'The load balancer uses CDNHealth checks to avoid sending traffic to any edge servers that are down or responding slowly.'
-  },
-  {
-    id: 'cdn-key',
-    term: 'CDNKey',
-    slug: 'cdn-key',
-    definition: 'A secret key or token used for security purposes on a CDN, such as signing URLs to prevent unauthorized access to content or for authenticating API requests to manage the CDN configuration.',
-    example: 'The video streaming service generated signed URLs with a short-lived CDNKey to protect its premium content.'
-  },
-  {
-    id: 'cdn-layer',
-    term: 'CDNLayer',
-    slug: 'cdn-layer',
-    definition: 'A tier in the overall web delivery architecture that is handled by the Content Delivery Network. The CDNLayer is responsible for caching, security, and traffic optimization before a request ever reaches the application\'s origin server.',
-    example: 'By adding a CDNLayer, they were able to offload most of their static traffic and reduce their server costs by 50%.'
-  },
-  {
-    id: 'cdn-load',
-    term: 'CDNLoad',
-    slug: 'cdn-load',
-    definition: 'The amount of traffic (requests per second, bandwidth) being handled by a Content Delivery Network or a specific part of it.',
-    example: 'After the new marketing campaign went viral, the CDNLoad spiked to over 100 Gbps.'
-  },
-  {
-    id: 'cdn-manager',
-    term: 'CDNManager',
-    slug: 'cdn-manager',
-    definition: 'The administrative interface or API used to configure and manage a Content Delivery Network. It allows users to purge caches, view analytics, and update settings.',
-    example: 'The developer logged into the CDNManager to purge the cache for the updated stylesheet.'
-  },
-  {
-    id: 'cdn-map',
-    term: 'CDNMap',
-    slug: 'cdn-map',
-    definition: 'A configuration or data structure within a CDN that maps incoming request paths to specific origin servers, caching rules, or other behaviors.',
-    example: 'They updated the CDNMap to route all requests for `/api/v2` to the new backend server.'
-  },
-  {
-    id: 'cdn-metric',
-    term: 'CDNMetric',
-    slug: 'cdn-metric',
-    definition: 'A specific data point used to measure the performance or usage of a CDN, such as cache hit ratio, latency, bandwidth usage, or error rate.',
-    example: 'The most important CDNMetric for them was the cache hit ratio, as it directly impacted their origin server costs.'
-  },
-  {
-    id: 'cdn-node',
-    term: 'CDNNode',
-    slug: 'cdn-node',
-    definition: 'An individual server within a Content Delivery Network\'s infrastructure. This is another term for an edge server or Point of Presence (PoP).',
-    example: 'The request was routed to the nearest CDNNode, which happened to be just 20 miles away from the user.'
-  },
-  {
-    id: 'cdn-object',
-    term: 'CDNObject',
-    slug: 'cdn-object',
-    definition: 'A single file or piece of content (like an image, video, or CSS file) that is stored and served by a Content Delivery Network.',
-    example: 'The CDN was configured to cache each CDNObject for 24 hours.'
-  },
-  {
-    id: 'cdn-optimizer',
-    term: 'CDNOptimizer',
-    slug: 'cdn-optimizer',
-    definition: 'A feature of a CDN that automatically applies performance optimizations to content, such as image compression, JavaScript minification, or protocol upgrades (like from HTTP/1.1 to HTTP/2).',
-    example: 'The CDNOptimizer automatically converted all JPEG images to the more efficient WebP format for supported browsers.'
-  },
-  {
-    id: 'cdn-pool',
-    term: 'CDNPool',
-    slug: 'cdn-pool',
-    definition: 'A collection of CDN edge servers that are grouped together to serve a specific region or type of content. Traffic can be load-balanced across the servers in the pool.',
-    example: 'The US-East CDNPool consists of servers in New York, Ashburn, and Miami.'
-  },
-  {
-    id: 'cdn-profile',
-    term: 'CDNProfile',
-    slug: 'cdn-profile',
-    definition: 'A named set of configuration settings for a CDN. This allows different websites or applications to use different sets of rules (e.g., for caching, security) on the same CDN infrastructure.',
-    example: 'He created a new CDNProfile for the staging environment with a very short cache TTL to make testing easier.'
-  },
-  {
-    id: 'cdn-queue',
-    term: 'CDNQueue',
-    slug: 'cdn-queue',
-    definition: 'A queue used to manage asynchronous tasks on a CDN, such as cache invalidation requests. When a user requests a purge, the request is added to a CDNQueue to be processed by the edge servers around the world.',
-    example: 'The "purge all" request was added to the CDNQueue and took about 30 seconds to propagate to all edge nodes.'
-  },
-  {
-    id: 'cdn-script',
-    term: 'CDNScript',
-    slug: 'cdn-script',
-    definition: 'A script (often JavaScript or Lua) that runs on the CDN edge servers, allowing for custom logic to be executed before a request reaches the origin. This is used for tasks like modifying headers, performing redirects, or A/B testing.',
-    example: 'They deployed a CDNScript to add a security header to all outgoing responses.'
-  },
-  {
-    id: 'cdn-server',
-    term: 'CDNServer',
-    slug: 'cdn-server',
-    definition: 'A server that is part of a Content Delivery Network. This is a general term for an edge server or Point of Presence (PoP).',
-    example: 'The image was served from a CDNServer in Brazil, providing a fast experience for local users.'
-  },
-  {
-    id: 'cdn-set',
-    term: 'CDNSet',
-    slug: 'cdn-set',
-    definition: 'A logical collection or set of rules and configurations that apply to a group of resources managed by a CDN.',
-    example: 'He applied the "no-cache" CDNSet to all HTML files to ensure they were always fresh.'
-  },
-  {
-    id: 'cdn-storage',
-    term: 'CDNStorage',
-    slug: 'cdn-storage',
-    definition: 'A storage service that is integrated with a Content Delivery Network. Files uploaded to CDNStorage are automatically distributed and made available across the CDN\'s global network of edge servers.',
-    example: 'Instead of serving images from their own server, they uploaded them to the CDNStorage for better performance and scalability.'
-  },
-  {
-    id: 'cdn-stream',
-    term: 'CDNStream',
-    slug: 'cdn-stream',
-    definition: 'A service offered by a CDN specifically for delivering streaming media (live or on-demand video and audio). It uses specialized protocols and caching strategies to ensure smooth playback.',
-    example: 'The live concert was broadcast to a global audience using a CDNStream service.'
-  },
-  {
-    id: 'cdn-sync',
-    term: 'CDNSync',
-    slug: 'cdn-sync',
-    definition: 'The process of synchronizing content between an origin server and the CDN edge servers. This can involve the CDN pulling new content or the origin actively pushing updates to the CDN.',
-    example: 'They used an S3 bucket as their origin and configured a CDNSync to automatically update the edge caches whenever a file was changed.'
-  },
-  {
-    id: 'cdn-switch',
-    term: 'CDNSwitch',
-    slug: 'cdn-switch',
-    definition: 'The process or mechanism for switching traffic between different CDNs, often for reasons of cost, performance, or redundancy. This is a common strategy in multi-CDN setups.',
-    example: 'During the outage of their primary provider, they performed a CDNSwitch by updating their DNS records to point to a secondary CDN.'
-  },
-  {
-    id: 'cdn-tag',
-    term: 'CDNTag',
-    slug: 'cdn-tag',
-    definition: 'A metadata tag that can be associated with cached objects on a CDN. This allows for granular cache purging, where you can invalidate all objects with a specific tag (e.g., all images related to a specific product).',
-    example: 'When the product details were updated, they purged the CDN cache by the product\'s CDNTag instead of purging the entire site.'
-  },
-  {
-    id: 'cdn-throttle',
-    term: 'CDNThrottle',
-    slug: 'cdn-throttle',
-    definition: 'A feature of a CDN that allows for rate limiting or "throttling" of requests to the origin server. This protects the origin from being overwhelmed by traffic spikes.',
-    example: 'They configured a CDNThrottle to ensure that requests to their API endpoint from a single IP address could not exceed 10 requests per second.'
-  },
-  {
-    id: 'cdn-tracker',
-    term: 'CDNTracker',
-    slug: 'cdn-tracker',
-    definition: 'A monitoring or analytics component that tracks the performance and usage of a CDN, providing insights into traffic patterns, cache performance, and user demographics.',
-    example: 'The marketing team used the CDNTracker to see which content was most popular in different geographic regions.'
-  },
-  {
-    id: 'cdn-validator',
-    term: 'CDNValidator',
-    slug: 'cdn-validator',
-    definition: 'A component or process on a CDN that validates requests or cached content. For example, it might check for a valid signature on a secure URL before serving the content.',
-    example: 'The CDNValidator rejected the request because the signed URL had expired.'
-  },
-  {
-    id: 'cdn-volume',
-    term: 'CDNVolume',
-    slug: 'cdn-volume',
-    definition: 'The total amount of data served by a CDN over a period of time, typically measured in gigabytes or terabytes. This is often a primary metric for billing.',
-    example: 'Their monthly CDNVolume exceeded 50 terabytes after the video went viral.'
-  },
-  {
-    id: 'cdp-backup',
-    term: 'CDPBackup',
-    slug: 'cdp-backup',
-    definition: 'Continuous Data Protection. A backup method that captures and saves a copy of every change made to data. This allows for restoration to any point in time, rather than just to the time of the last backup.',
-    example: 'With CDPBackup, they were able to restore the database to the exact state it was in one second before the accidental deletion.'
-  },
-  {
-    id: 'cd-pipeline',
-    term: 'CDPipeline',
-    slug: 'cd-pipeline',
-    definition: 'Continuous Delivery or Continuous Deployment. An automated software release pipeline that takes code from a version control system and automatically builds, tests, and deploys it to a production environment.',
-    example: 'Once a developer merges a pull request, the CDPipeline automatically runs all tests and, if they pass, deploys the change to the live website.'
-  },
-  {
-    id: 'cdp-sync',
-    term: 'CDPSync',
-    slug: 'cdp-sync',
-    definition: 'Continuous Data Protection Sync. The process of continuously synchronizing data changes to a backup or replica location in real-time, as part of a CDP system.',
-    example: 'The CDPSync process ensured that the disaster recovery site was never more than a few seconds out of date.'
-  },
-  {
-    id: 'c-driver',
-    term: 'CDriver',
-    slug: 'c-driver',
-    definition: 'A software driver written in the C programming language. Drivers are low-level programs that allow the operating system to communicate with and control a piece of hardware.',
-    example: 'He had to download and compile the open-source CDriver for his new network card to get it to work on Linux.'
-  },
-  {
-    id: 'ce-adapter',
-    term: 'CEAdapter',
-    slug: 'ce-adapter',
-    definition: 'A "Compute Engine" or "Cloud Engine" adapter. A software component designed to interface with a specific cloud computing platform\'s API, like Google Compute Engine.',
-    example: 'The orchestration tool used a CEAdapter to provision new virtual machines on the cloud platform.'
-  },
-  {
-    id: 'ce-cluster',
-    term: 'CECluster',
-    slug: 'ce-cluster',
-    definition: 'A "Compute Engine" or "Cloud Engine" cluster. A group of virtual machines or compute instances on a cloud platform that are managed as a single unit.',
-    example: 'The Kubernetes CECluster consisted of one master node and ten worker nodes.'
-  },
-  {
-    id: 'ce-config',
-    term: 'CEConfig',
-    slug: 'ce-config',
-    definition: 'The configuration settings for a cloud compute environment, specifying details like machine type, disk size, network settings, and startup scripts.',
-    example: 'He defined the CEConfig in a YAML file and used it to create a new virtual machine instance.'
-  },
-  {
-    id: 'ce-message',
-    term: 'CEMessage',
-    slug: 'ce-message',
-    definition: 'A "Cloud Events" message. A message that adheres to the CloudEvents specification, a standard format for describing event data in a common way across different services and platforms.',
-    example: 'The serverless function was triggered by a CEMessage that contained information about a newly uploaded file.'
-  },
-  {
-    id: 'ce-monitor',
-    term: 'CEMonitor',
-    slug: 'ce-monitor',
-    definition: 'A monitoring service for a cloud computing environment. It collects and displays metrics like CPU utilization, network traffic, and disk I/O for cloud instances.',
-    example: 'The CEMonitor sent an alert when the CPU usage on the web server went above 90% for five minutes.'
-  },
-  {
-    id: 'ce-network',
-    term: 'CENetwork',
-    slug: 'ce-network',
-    definition: 'A virtual private cloud (VPC) or network environment within a cloud computing platform. It provides a logically isolated section of the cloud where you can launch resources.',
-    example: 'The company created a dedicated CENetwork for its production environment with strict firewall rules.'
-  },
-  {
-    id: 'ce-protocol',
-    term: 'CEProtocol',
-    slug: 'ce-protocol',
-    definition: 'A communication protocol used within a cloud environment, or the CloudEvents protocol for describing event data.',
-    example: 'The microservices communicated with each other using gRPC as their internal CEProtocol.'
-  },
-  {
-    id: 'ce-system',
-    term: 'CESystem',
-    slug: 'ce-system',
-    definition: 'The entire system architecture built on a cloud computing platform, including compute instances, storage, networking, and other services.',
-    example: 'The CESystem was designed to be highly available, with resources distributed across multiple availability zones.'
-  },
-  {
-    id: 'ce-tag',
-    term: 'CETag',
-    slug: 'ce-tag',
-    definition: 'A metadata tag (a key-value pair) that is attached to a cloud resource, such as a compute instance. Tags are used for organizing, managing, and tracking costs.',
-    example: 'All resources belonging to the marketing department were given the CETag `department: marketing`.'
-  },
-  {
-    id: 'cfb-mode',
-    term: 'CFBMode',
-    slug: 'cfb-mode',
-    definition: 'Cipher Feedback Mode. A mode of operation for a block cipher that turns it into a self-synchronizing stream cipher. It allows for the encryption of data units smaller than the block size.',
-    example: 'CFBMode is useful for applications where data must be encrypted and transmitted in real-time, one byte at a time.'
-  },
-  {
-    id: 'c-file-system',
-    term: 'CFileSystem',
-    slug: 'c-file-system',
-    definition: 'A file system implementation written in the C programming language, or the set of standard library functions in C (like `fopen`, `fread`, `fwrite`) used to interact with a file system.',
-    example: 'The EXT4 CFileSystem is a core part of the Linux kernel.'
-  },
-  {
-    id: 'c-firewall',
-    term: 'CFirewall',
-    slug: 'c-firewall',
-    definition: 'A firewall application or module written in the C programming language. Because of C\'s performance, it is often used for low-level networking and security software.',
-    example: 'The `iptables` utility in Linux is a user-space tool that configures the kernel\'s powerful CFirewall.'
-  },
-  {
-    id: 'c-flow-graph',
-    term: 'CFlowGraph',
-    slug: 'c-flow-graph',
-    definition: 'A Control Flow Graph. A representation, using graph notation, of all paths that might be traversed through a program during its execution. Each node in the graph represents a basic block, and edges represent jumps in the control flow.',
-    example: 'The compiler generated a CFlowGraph to perform optimizations, such as removing unreachable code.'
-  },
-  {
-    id: 'c-flow-node',
-    term: 'CFlowNode',
-    slug: 'c-flow-node',
-    definition: 'A single node within a Control Flow Graph, representing a basic block of code (a sequence of instructions with no jumps in or out).',
-    example: 'The CFlowNode contained three assembly instructions that were always executed sequentially.'
-  },
-  {
-    id: 'c-framework',
-    term: 'CFramework',
-    slug: 'c-framework',
-    definition: 'A software framework or library written in the C programming language that provides a foundation for building applications. Examples include the GTK+ framework for graphical user interfaces.',
-    example: 'He used the GLib CFramework to get access to advanced data structures like hash tables and linked lists for his C program.'
-  },
-  {
-    id: 'c-function',
-    term: 'CFunction',
-    slug: 'c-function',
-    definition: 'A subroutine or procedure in the C programming language. A CFunction is a block of code that performs a specific task and can be called from other parts of the program.',
-    example: 'He wrote a CFunction called `calculate_average` that took an array of numbers and returned their mean.'
-  },
-  {
-    id: 'cg-renderer',
-    term: 'CGRenderer',
-    slug: 'cg-renderer',
-    definition: 'Computer Graphics Renderer. The software or hardware component responsible for taking a 3D scene description (models, textures, lighting) and generating a 2D image.',
-    example: 'Modern video games use a real-time CGRenderer to produce 60 frames per second.'
-  },
-  {
-    id: 'cg-shader',
-    term: 'CGShader',
-    slug: 'cg-shader',
-    definition: 'A program written in a specialized shading language (like GLSL, HLSL, or Cg) that runs on a Graphics Processing Unit (GPU). Shaders are used to control how 3D objects, surfaces, and images are rendered.',
-    example: 'The graphics programmer wrote a custom CGShader to create the realistic water effect in the game.'
-  },
-  {
-    id: 'chain-buffer',
-    term: 'ChainBuffer',
-    slug: 'chain-buffer',
-    definition: 'A data structure consisting of multiple buffers linked together to form a single, larger logical buffer. This is useful for handling data when its total size is not known in advance.',
-    example: 'The network driver used a ChainBuffer to assemble an incoming packet from multiple smaller hardware buffers.'
-  },
-  {
-    id: 'chain-call',
-    term: 'ChainCall',
-    slug: 'chain-call',
-    definition: 'A programming pattern where multiple method calls are chained together on a single object, with each method returning the object itself. This is also known as a "fluent interface".',
-    example: 'The query builder used ChainCalls to construct the SQL query: `query.select("id").from("users").where("age > 18");`'
-  },
-  {
-    id: 'chain-cluster',
-    term: 'ChainCluster',
-    slug: 'chain-cluster',
-    definition: 'In a blockchain context, a cluster of nodes that are all part of the same blockchain network, working together to validate transactions and maintain the distributed ledger.',
-    example: 'The Ethereum ChainCluster consists of thousands of nodes distributed around the world.'
-  },
-  {
-    id: 'chain-code',
-    term: 'ChainCode',
-    slug: 'chain-code',
-    definition: 'In Hyperledger Fabric, a piece of code that implements the business logic of a smart contract. ChainCode is installed and instantiated on the peer nodes of the blockchain network.',
-    example: 'The developers wrote ChainCode in Go to define the rules for transferring assets on their private blockchain.'
-  },
-  {
-    id: 'chain-commit',
-    term: 'ChainCommit',
-    slug: 'chain-commit',
-    definition: 'The act of committing a new block of transactions to a blockchain. This is an irreversible operation that adds the block to the end of the chain.',
-    example: 'After the block was validated by a majority of the nodes, the ChainCommit was performed.'
-  },
-  {
-    id: 'chain-engine',
-    term: 'ChainEngine',
-    slug: 'chain-engine',
-    definition: 'The core software engine that runs a blockchain node, responsible for tasks like transaction processing, consensus, and managing the state of the ledger.',
-    example: 'The Geth client is a popular ChainEngine for the Ethereum blockchain.'
-  },
-  {
-    id: 'chain-event',
-    term: 'ChainEvent',
-    slug: 'chain-event',
-    definition: 'An event that is emitted by a smart contract on a blockchain. Applications can listen for these events to be notified of changes or actions occurring on the chain.',
-    example: 'The decentralized application listened for a `Transfer` ChainEvent to update the user\'s token balance in the UI.'
-  },
-  {
-    id: 'chain-file',
-    term: 'ChainFile',
-    slug: 'chain-file',
-    definition: 'A file that contains a sequence of digital certificates, forming a "certificate chain". Each certificate in the chain signs the next one, creating a path of trust from a server\'s certificate up to a trusted Certificate Authority (CA).',
-    example: 'The web server was configured with a ChainFile that included its own certificate and the intermediate CA\'s certificate.'
-  },
-  {
-    id: 'chain-hash',
-    term: 'ChainHash',
-    slug: 'chain-hash',
-    definition: 'The hash of a block in a blockchain. Each block contains the hash of the previous block, which is what "chains" them together and makes the ledger tamper-proof.',
-    example: 'If a single byte in a previous block were changed, the ChainHash would be different, and all subsequent blocks would be invalidated.'
-  },
-  {
-    id: 'chain-index',
-    term: 'ChainIndex',
-    slug: 'chain-index',
-    definition: 'A database or index that is built from the data on a blockchain to allow for fast queries. Instead of scanning the entire blockchain, applications can query the ChainIndex.',
-    example: 'The block explorer used a ChainIndex to quickly find all transactions associated with a specific address.'
-  },
-  {
-    id: 'chain-layer',
-    term: 'ChainLayer',
-    slug: 'chain-layer',
-    definition: 'A logical layer in the architecture of a blockchain system. This could refer to the consensus layer, the networking layer, or the application layer.',
-    example: 'Layer 2 scaling solutions operate on a separate ChainLayer on top of the main blockchain to achieve higher throughput.'
-  },
-  {
-    id: 'chain-link',
-    term: 'ChainLink',
-    slug: 'chain-link',
-    definition: 'A decentralized oracle network that enables smart contracts to securely interact with real-world data and services existing outside of blockchain networks.',
-    example: 'The smart contract used a ChainLink oracle to get the current price of Ethereum from an external API.'
-  },
-  {
-    id: 'chain-map',
-    term: 'ChainMap',
-    slug: 'chain-map',
-    definition: 'A data structure that combines multiple dictionaries or maps into a single, updatable view. A lookup searches through the underlying mappings successively until a key is found. Python has a `ChainMap` class in its standard library.',
-    example: 'He used a ChainMap to combine default settings with user-provided settings, where the user\'s settings would take precedence.'
-  },
-  {
-    id: 'chain-mode',
-    term: 'ChainMode',
-    slug: 'chain-mode',
-    definition: 'A mode of operation for a block cipher, such as Cipher Block Chaining (CBC), which links blocks of data together during encryption.',
-    example: 'CBC is a popular ChainMode that XORs the previous ciphertext block with the current plaintext block before encryption.'
-  },
-  {
-    id: 'chain-network',
-    term: 'ChainNetwork',
-    slug: 'chain-network',
-    definition: 'The peer-to-peer network of all the nodes that participate in a specific blockchain, such as the Bitcoin network or the Ethereum network.',
-    example: 'New transactions are broadcast across the entire ChainNetwork to be included in the next block.'
-  },
-  {
-    id: 'chain-node',
-    term: 'ChainNode',
-    slug: 'chain-node',
-    definition: 'A single computer or server that is running the software for a specific blockchain and participating in its network.',
-    example: 'He set up a Raspberry Pi to run a Bitcoin ChainNode to help support the network.'
-  },
-  {
-    id: 'chain-object',
-    term: 'ChainObject',
-    slug: 'chain-object',
-    definition: 'A data object that is stored on a blockchain, such as a transaction, a block, or the state of a smart contract.',
-    example: 'The block explorer\'s API allowed you to retrieve any ChainObject by its hash.'
-  },
-  {
-    id: 'chain-packet',
-    term: 'ChainPacket',
-    slug: 'chain-packet',
-    definition: 'A network packet that is part of a blockchain\'s peer-to-peer communication protocol, used for tasks like broadcasting new transactions or blocks.',
-    example: 'The node received a ChainPacket containing a newly mined block from one of its peers.'
-  },
-  {
-    id: 'chain-parser',
-    term: 'ChainParser',
-    slug: 'chain-parser',
-    definition: 'A tool or library that can read, parse, and interpret the data stored on a blockchain, converting the raw block data into a human-readable format.',
-    example: 'The wallet software used a ChainParser to find and display all transactions related to the user\'s address.'
-  },
-  {
-    id: 'chain-queue',
-    term: 'ChainQueue',
-    slug: 'chain-queue',
-    definition: 'A queue that holds pending transactions waiting to be included in a block by a miner or validator on a blockchain network. Also known as a "mempool".',
-    example: 'During times of high traffic, the transaction fee increased because the ChainQueue was full.'
-  },
-  {
-    id: 'chain-record',
-    term: 'ChainRecord',
-    slug: 'chain-record',
-    definition: 'A single record or piece of data that is immutably stored on a blockchain, often as part of a transaction.',
-    example: 'The land registry system created a ChainRecord for each property transfer, providing an undeniable history of ownership.'
-  },
-  {
-    id: 'chain-replica',
-    term: 'ChainReplica',
-    slug: 'chain-replica',
-    definition: 'A full or partial copy of a blockchain\'s ledger. Every full node in a blockchain network keeps a ChainReplica.',
-    example: 'The decentralized nature of blockchain means there are thousands of ChainReplicas, making the data highly resilient.'
-  },
-  {
-    id: 'chain-request',
-    term: 'ChainRequest',
-    slug: 'chain-request',
-    definition: 'A request sent to a blockchain node, either to query data from the blockchain (a read request) or to submit a new transaction (a write request).',
-    example: 'The application made a ChainRequest to the smart contract to get the current owner of the digital asset.'
-  },
-  {
-    id: 'chain-resolver',
-    term: 'ChainResolver',
-    slug: 'chain-resolver',
-    definition: 'A service or component that resolves human-readable names or identifiers to on-chain addresses or resources, similar to how DNS resolves domain names to IP addresses.',
-    example: 'The Ethereum Name Service (ENS) acts as a ChainResolver, allowing you to send funds to `mywallet.eth` instead of a long hexadecimal address.'
-  },
-  {
-    id: 'chain-script',
-    term: 'ChainScript',
-    slug: 'chain-script',
-    definition: 'A scripting language used to define the logic of transactions on a blockchain. Bitcoin uses a simple, stack-based scripting language called Script.',
-    example: 'A multi-signature transaction was created using a custom ChainScript that required signatures from 2 out of 3 possible keys.'
-  },
-  {
-    id: 'chain-set',
-    term: 'ChainSet',
-    slug: 'chain-set',
-    definition: 'A collection of related data or configurations pertaining to a blockchain or a certificate chain.',
-    example: 'The security protocol required a specific ChainSet of trusted root certificates.'
-  },
-  {
-    id: 'chain-signature',
-    term: 'ChainSignature',
-    slug: 'chain-signature',
-    definition: 'A digital signature that is part of a transaction on a blockchain, used to prove ownership of the funds being spent and authorize the transaction.',
-    example: 'The transaction was invalid because the ChainSignature did not match the public key of the sender\'s address.'
-  },
-  {
-    id: 'chain-state',
-    term: 'ChainState',
-    slug: 'chain-state',
-    definition: 'The current state of a blockchain at a specific point in time. It is the cumulative result of executing all transactions in all blocks up to that point.',
-    example: 'An Ethereum full node must store the entire ChainState, which includes all account balances and smart contract data.'
-  },
-  {
-    id: 'chain-storage',
-    term: 'ChainStorage',
-    slug: 'chain-storage',
-    definition: 'The storage mechanism used by a blockchain node to store the blocks and state data of the ledger. This is typically a key-value database optimized for this purpose.',
-    example: 'Geth, the Go Ethereum client, uses LevelDB as its default ChainStorage engine.'
-  },
-  {
-    id: 'chain-stream',
-    term: 'ChainStream',
-    slug: 'chain-stream',
-    definition: 'A continuous stream of real-time data from a blockchain, such as new blocks or transactions as they occur.',
-    example: 'The trading bot connected to a ChainStream to get instant notification of new transactions being added to the mempool.'
-  },
-  {
-    id: 'chain-table',
-    term: 'ChainTable',
-    slug: 'chain-table',
-    definition: 'A conceptual table representing the data on a blockchain, or an indexed version of that data stored in a traditional database for easier querying.',
-    example: 'The analytics platform loaded the blockchain data into a ChainTable to run complex SQL queries.'
-  },
-  {
-    id: 'chain-timer',
-    term: 'ChainTimer',
-    slug: 'chain-timer',
-    definition: 'A timer or clock mechanism that is part of a blockchain protocol, often related to block times or other time-sensitive consensus rules.',
-    example: 'The proof-of-stake protocol used a ChainTimer to coordinate validator rounds.'
-  },
-  {
-    id: 'chain-token',
-    term: 'ChainToken',
-    slug: 'chain-token',
-    definition: 'A digital asset or token that exists on a specific blockchain, such as an ERC-20 token on Ethereum.',
-    example: 'USDT is a popular stablecoin ChainToken that exists on multiple blockchains.'
-  },
-  {
-    id: 'chain-trace',
-    term: 'ChainTrace',
-    slug: 'chain-trace',
-    definition: 'A tool or process for tracing the path of a transaction or a series of transactions through a blockchain, often for analysis or debugging.',
-    example: 'The forensic accountant used a ChainTrace tool to follow the flow of stolen funds across multiple addresses.'
-  },
-  {
-    id: 'chain-trigger',
-    term: 'ChainTrigger',
-    slug: 'chain-trigger',
-    definition: 'An event or condition on a blockchain that automatically triggers an action, either within a smart contract or in an off-chain application that is monitoring the chain.',
-    example: 'They set up a ChainTrigger to automatically send a notification whenever their smart contract received a deposit.'
-  },
-  {
-    id: 'chain-validator',
-    term: 'ChainValidator',
-    slug: 'chain-validator',
-    definition: 'A node in a proof-of-stake blockchain that is responsible for validating new transactions and proposing new blocks. Validators are chosen to create new blocks based on the number of coins they have "staked".',
-    example: 'To become a ChainValidator on the network, you need to lock up a minimum of 32 ETH.'
-  },
-  {
-    id: 'chain-vector',
-    term: 'ChainVector',
-    slug: 'chain-vector',
-    definition: 'In cryptography or blockchain, a vector (a one-dimensional array) of data that is linked or chained together, such as a vector of block hashes.',
-    example: 'The light client downloaded only the ChainVector of block headers to verify the chain\'s integrity.'
-  },
-  {
-    id: 'chain-window',
-    term: 'ChainWindow',
-    slug: 'chain-window',
-    definition: 'A specific range or "window" of blocks in a blockchain that is being analyzed or processed.',
-    example: 'The analysis script only looked at a ChainWindow of the last 1000 blocks to calculate the average transaction fee.'
-  },
-  {
-    id: 'chap-auth',
-    term: 'CHAPAuth',
-    slug: 'chap-auth',
-    definition: 'Challenge-Handshake Authentication Protocol. An authentication protocol that periodically verifies the identity of a client using a three-way handshake. It is more secure than PAP because the password is not sent over the network.',
-    example: 'The ISP used CHAPAuth to authenticate the user\'s dial-up connection.'
-  },
-  {
-    id: 'character-set',
-    term: 'CharacterSet',
-    slug: 'character-set',
-    definition: 'A defined list of characters recognized by a computer hardware or software. It maps characters to numerical values. Examples include ASCII and Unicode.',
-    example: 'The web page declared that it was using the UTF-8 CharacterSet to ensure that all international symbols would be displayed correctly.'
-  },
-  {
-    id: 'char-array',
-    term: 'CharArray',
-    slug: 'char-array',
-    definition: 'An array data structure that stores a sequence of characters. In languages like C, strings are typically implemented as a CharArray terminated by a null character.',
-    example: 'He declared a CharArray of size 20 to hold the user\'s name: `char name[20];`'
-  },
-  {
-    id: 'char-buffer',
-    term: 'CharBuffer',
-    slug: 'char-buffer',
-    definition: 'A buffer (a temporary region of memory) specifically used for holding character data. It is often used when reading from or writing to files or network streams.',
-    example: 'The program read the contents of the text file into a CharBuffer before parsing it.'
-  },
-  {
-    id: 'char-map',
-    term: 'CharMap',
-    slug: 'char-map',
-    definition: 'A table or data structure that maps one set of characters to another. The `charmap` utility in Windows allows you to view and use characters that are not on the keyboard.',
-    example: 'He used a CharMap to convert the text from a custom legacy encoding to standard Unicode.'
-  },
-  {
-    id: 'char-pointer',
-    term: 'CharPointer',
-    slug: 'char-pointer',
-    definition: 'In languages like C/C++, a pointer that holds the memory address of a character. A `char*` is the standard way to work with strings.',
-    example: 'The function took a `const char*` (a CharPointer to constant data) as an argument to avoid accidentally modifying the original string.'
-  },
-  {
-    id: 'char-stream',
-    term: 'CharStream',
-    slug: 'char-stream',
-    definition: 'A continuous stream of characters being read from a source (like a file or keyboard) or written to a destination. It allows for processing text data sequentially without loading it all into memory at once.',
-    example: 'The parser processed the input by reading from a CharStream one character at a time.'
-  },
-  {
-    id: 'charset-encoding',
-    term: 'CharsetEncoding',
-    slug: 'charset-encoding',
-    definition: 'A specific scheme for mapping a sequence of bytes to a sequence of characters. Examples include UTF-8, ISO-8859-1, and ASCII. Choosing the correct CharsetEncoding is crucial for correctly interpreting text data.',
-    example: 'The web browser had to use the correct CharsetEncoding (UTF-8) to display the Japanese characters on the page properly.'
-  },
-  {
-    id: 'check-bit',
-    term: 'CheckBit',
-    slug: 'check-bit',
-    definition: 'A single bit, often a parity bit, that is added to a block of data for error detection purposes. It allows the receiver to check if the data was likely corrupted during transmission.',
-    example: 'The system used a simple CheckBit to ensure that each byte transmitted had an even number of 1s.'
-  },
-  {
-    id: 'check-flag',
-    term: 'CheckFlag',
-    slug: 'check-flag',
-    definition: 'A boolean variable or flag in a program that is used to indicate the result of a check or validation. It is often set to true or false to control program flow.',
-    example: 'If the input validation failed, the `error` CheckFlag was set to true, and the form was not submitted.'
-  },
-  {
-    id: 'check-gate',
-    term: 'CheckGate',
-    slug: 'check-gate',
-    definition: 'A point in a process or workflow where a check or validation is performed before the process is allowed to continue. It acts as a quality gate.',
-    example: 'The continuous integration pipeline had a CheckGate that required all unit tests to pass before the code could be merged.'
-  },
-  {
-    id: 'check-handler',
-    term: 'CheckHandler',
-    slug: 'check-handler',
-    definition: 'A function or piece of code that is specifically responsible for performing a validation or check.',
-    example: 'The form submission was passed to a CheckHandler to verify that the email address was in a valid format.'
-  },
-  {
-    id: 'check-level',
-    term: 'CheckLevel',
-    slug: 'check-level',
-    definition: 'A setting that determines the strictness or thoroughness of a validation process. A higher CheckLevel might perform more exhaustive (and slower) checks.',
-    example: 'For development builds, the compiler was set to the highest CheckLevel to catch as many potential errors as possible.'
-  },
-  {
-    id: 'check-module',
-    term: 'CheckModule',
-    slug: 'check-module',
-    definition: 'A software module whose primary purpose is to perform validation, health checks, or integrity checks on a system or on data.',
-    example: 'The security framework included a CheckModule that scanned for common vulnerabilities.'
-  },
-  {
-    id: 'check-node',
-    term: 'CheckNode',
-    slug: 'check-node',
-    definition: 'In a graph or tree structure representing a process, a node that signifies a decision point or a condition that must be checked.',
-    example: 'In the workflow diagram, the diamond-shaped CheckNode asked, "Is the user authenticated?"'
-  },
-  {
-    id: 'check-object',
-    term: 'CheckObject',
-    slug: 'check-object',
-    definition: 'An object in a program that encapsulates the logic and state for performing a specific check or validation.',
-    example: 'He created a `PasswordStrength` CheckObject to validate that new passwords met the company\'s complexity requirements.'
-  },
-  {
-    id: 'check-queue',
-    term: 'CheckQueue',
-    slug: 'check-queue',
-    definition: 'A queue that holds items waiting to be validated or checked. This allows for asynchronous processing of checks.',
-    example: 'Newly uploaded files were placed in a CheckQueue to be scanned for viruses by a separate worker process.'
-  },
-  {
-    id: 'check-record',
-    term: 'CheckRecord',
-    slug: 'check-record',
-    definition: 'A record in a database or log file that stores the result of a check or validation performed at a specific time.',
-    example: 'The system kept a CheckRecord for every login attempt, including the timestamp, IP address, and whether it was successful.'
-  },
-  {
-    id: 'check-request',
-    term: 'CheckRequest',
-    slug: 'check-request',
-    definition: 'A request sent to a system to perform a check and return a result. For example, a health check request sent to a web server.',
-    example: 'The load balancer sends a `health` CheckRequest to the server every 5 seconds to ensure it is still online.'
-  },
-  {
-    id: 'check-segment',
-    term: 'CheckSegment',
-    slug: 'check-segment',
-    definition: 'A segment of data or code that is the subject of a validation or checksum operation.',
-    example: 'The bootloader calculated a checksum for each CheckSegment of the kernel before loading it into memory.'
-  },
-  {
-    id: 'check-step',
-    term: 'CheckStep',
-    slug: 'check-step',
-    definition: 'A single step in a multi-step validation process or workflow.',
-    example: 'The first CheckStep validated the user\'s credentials, and the second checked their permissions.'
-  },
-  {
-    id: 'check-sum',
-    term: 'CheckSum',
-    slug: 'check-sum',
-    definition: 'A small-sized datum derived from a block of digital data for the purpose of detecting errors that may have been introduced during its transmission or storage. The actual procedure that yields the checksum is called a checksum function or checksum algorithm.',
-    example: 'He downloaded the large file and then verified its CheckSum to make sure the download hadn\'t been corrupted.'
-  },
-  {
-    id: 'check-system',
-    term: 'CheckSystem',
-    slug: 'check-system',
-    definition: 'The entire system, including hardware and software, responsible for performing checks, validations, and monitoring.',
-    example: 'The company invested in a new automated CheckSystem to monitor the health of all its production servers.'
-  },
-  {
-    id: 'check-table',
-    term: 'CheckTable',
-    slug: 'check-table',
-    definition: 'A lookup table used to validate input data against a set of known valid values.',
-    example: 'The program used a CheckTable of valid country codes to ensure the user entered a real country.'
-  },
-  {
-    id: 'check-token',
-    term: 'CheckToken',
-    slug: 'check-token',
-    definition: 'A token or piece of data that is used to verify the integrity or authenticity of a request or session. A CSRF token is a type of CheckToken.',
-    example: 'The web application embedded a unique CheckToken in every form to prevent cross-site request forgery attacks.'
-  },
-  {
-    id: 'check-validator',
-    term: 'CheckValidator',
-    slug: 'check-validator',
-    definition: 'A component or function that encapsulates the logic for performing a specific type of validation. It takes an input and returns whether the input is valid, often with details about any errors.',
-    example: 'The `EmailFormat` CheckValidator confirmed that the input string contained an "@" symbol and a valid domain.'
-  },
-  {
-    id: 'check-vector',
-    term: 'CheckVector',
-    slug: 'check-vector',
-    definition: 'A vector or array of values used for validation purposes, such as a set of test vectors used to verify the correctness of a hardware or software implementation.',
-    example: 'The cryptography module was tested against a standard CheckVector of known plaintext/ciphertext pairs to ensure it was implemented correctly.'
-  },
-  {
-    id: 'child-process',
-    term: 'ChildProcess',
-    slug: 'child-process',
-    definition: 'A process that is created and controlled by another process, called the parent process. The child process inherits some of the parent\'s properties and can run concurrently with it.',
-    example: 'The web server created a ChildProcess to handle each incoming user request, allowing it to serve multiple users at once.'
-  },
-  {
-    id: 'child-thread',
-    term: 'ChildThread',
-    slug: 'child-thread',
-    definition: 'A thread that is created and managed by another thread (the parent thread) within the same process.',
-    example: 'The main UI thread spawned a ChildThread to perform a long-running calculation in the background, keeping the application responsive.'
-  },
-  {
-    id: 'chmod',
-    term: 'Chmod',
-    slug: 'chmod',
-    definition: 'A command in Unix-like operating systems that changes the access permissions of a file or directory. The name is an abbreviation of "change mode".',
-    example: 'He used the command `chmod 755 script.sh` to make the shell script executable.'
-  },
-  {
-    id: 'chown',
-    term: 'Chown',
-    slug: 'chown',
-    definition: 'A command in Unix-like operating systems that changes the owner and/or group of a file or directory. The name is an abbreviation of "change owner".',
-    example: 'The system administrator used `chown www-data:www-data /var/www/html` to give the web server ownership of the website files.'
-  },
-  {
-    id: 'chrome-driver',
-    term: 'ChromeDriver',
-    slug: 'chrome-driver',
-    definition: 'A standalone server that allows you to control the Google Chrome browser. It is primarily used for automated testing of web applications with tools like Selenium.',
-    example: 'The QA engineer wrote a test script that used Selenium and ChromeDriver to automatically log into the website and verify the dashboard.'
-  },
-  {
-    id: 'chrome-extension',
-    term: 'ChromeExtension',
-    slug: 'chrome-extension',
-    definition: 'A small software program that customizes the browsing experience in Google Chrome. It can add new features, modify the behavior of websites, or integrate with other services.',
-    example: 'He installed a ChromeExtension that acted as a password manager, automatically filling in his login credentials on websites.'
-  },
-  {
-    id: 'chrome-flag',
-    term: 'ChromeFlag',
-    slug: 'chrome-flag',
-    definition: 'An experimental feature in the Google Chrome browser that is not enabled by default. Users can access them by navigating to `chrome://flags` to test upcoming or unstable features.',
-    example: 'He enabled a ChromeFlag to test the new experimental video rendering engine.'
-  },
-  {
-    id: 'chrome-profile',
-    term: 'ChromeProfile',
-    slug: 'chrome-profile',
-    definition: 'A user profile in Google Chrome that stores a user\'s bookmarks, history, passwords, and extensions. This allows multiple users to share the same browser without their data getting mixed up.',
-    example: 'She created a separate ChromeProfile for her work account to keep her personal and professional browsing separate.'
-  },
-  {
-    id: 'chunk-allocator',
-    term: 'ChunkAllocator',
-    slug: 'chunk-allocator',
-    definition: 'A specialized memory allocator that allocates memory in fixed-size blocks, or "chunks." This can be more efficient than a general-purpose allocator when you need to allocate many small objects of the same size.',
-    example: 'The game engine used a ChunkAllocator to manage memory for all the bullet objects, which improved performance by reducing memory fragmentation.'
-  },
-  {
-    id: 'chunk-block',
-    term: 'ChunkBlock',
-    slug: 'chunk-block',
-    definition: 'A block of data that is part of a larger file or data stream, which has been divided into "chunks". This term is often used in file systems and data storage.',
-    example: 'The distributed file system stored the large video file as a series of 64MB ChunkBlocks spread across multiple servers.'
-  },
-  {
-    id: 'chunk-buffer',
-    term: 'ChunkBuffer',
-    slug: 'chunk-buffer',
-    definition: 'A buffer used to hold a single chunk of data as it is being processed, transferred, or reassembled.',
-    example: 'The video player used a ChunkBuffer to hold a few seconds of video data, ensuring smooth playback even with a fluctuating network connection.'
-  },
-  {
-    id: 'chunk-cluster',
-    term: 'ChunkCluster',
-    slug: 'chunk-cluster',
-    definition: 'A cluster of servers or nodes that are responsible for storing and managing the chunks of a distributed file system.',
-    example: 'The Hadoop ChunkCluster consisted of 100 data nodes, providing massive storage capacity and redundancy.'
-  },
-  {
-    id: 'chunk-compression',
-    term: 'ChunkCompression',
-    slug: 'chunk-compression',
-    definition: 'The process of compressing data one chunk at a time. This is useful for streaming applications, as you can start compressing and sending data before you have the entire file.',
-    example: 'The backup software used ChunkCompression to compress the large database file as it was being read, saving time and disk space.'
-  },
-  {
-    id: 'chunk-copy',
-    term: 'ChunkCopy',
-    slug: 'chunk-copy',
-    definition: 'The operation of copying a chunk of data from one location to another, either in memory or between storage devices.',
-    example: 'The file synchronization process performed a ChunkCopy for only the parts of the file that had changed, which was much faster than copying the whole file.'
-  },
-  {
-    id: 'chunk-decoder',
-    term: 'ChunkDecoder',
-    slug: 'chunk-decoder',
-    definition: 'A component that reads a stream of chunked data and decodes it. For example, in HTTP chunked transfer encoding, a ChunkDecoder reads the size of each chunk and then the chunk data itself.',
-    example: 'The browser\'s HTTP client used a ChunkDecoder to process the response from the server, which was sent using chunked encoding.'
-  },
-  {
-    id: 'chunk-encoder',
-    term: 'ChunkEncoder',
-    slug: 'chunk-encoder',
-    definition: 'A component that takes a stream of data and encodes it into a "chunked" format, typically by breaking it into smaller pieces and adding metadata like the size of each piece.',
-    example: 'The web server used a ChunkEncoder to send a large, dynamically generated file without needing to know its total size in advance.'
-  },
-  {
-    id: 'chunk-file',
-    term: 'ChunkFile',
-    slug: 'chunk-file',
-    definition: 'A file that is one of many "chunks" that make up a larger logical file. This is common in peer-to-peer file sharing and distributed file systems.',
-    example: 'BitTorrent downloaded the movie as hundreds of small ChunkFiles from different peers and then assembled them into the final video file.'
-  },
-  {
-    id: 'chunk-id',
-    term: 'ChunkID',
-    slug: 'chunk-id',
-    definition: 'A unique identifier for a specific chunk of data within a larger file or system.',
-    example: 'The file server requested ChunkID `f4c3-a2b1` from the storage node to retrieve a part of the user\'s document.'
-  },
-  {
-    id: 'chunk-index',
-    term: 'ChunkIndex',
-    slug: 'chunk-index',
-    definition: 'An index that maps a logical file to its constituent chunks, storing information about which chunks belong to the file and where they are located.',
-    example: 'The distributed file system\'s master node maintained a ChunkIndex for every file in the system.'
-  },
-  {
-    id: 'chunk-layer',
-    term: 'ChunkLayer',
-    slug: 'chunk-layer',
-    definition: 'A layer in a storage or networking stack that is responsible for handling data in chunks.',
-    example: 'The ChunkLayer was responsible for breaking large files into 64MB pieces before sending them to the storage nodes.'
-  },
-  {
-    id: 'chunk-loader',
-    term: 'ChunkLoader',
-    slug: 'chunk-loader',
-    definition: 'A component responsible for loading data chunks into memory when they are needed. In video games like Minecraft, a ChunkLoader loads the parts of the world that are near the player.',
-    example: 'As the player walked through the world, the game\'s ChunkLoader dynamically loaded new terrain into memory.'
-  },
-  {
-    id: 'chunk-map',
-    term: 'ChunkMap',
-    slug: 'chunk-map',
-    definition: 'A data structure that maps the logical offsets within a file to the physical locations of the corresponding data chunks.',
-    example: 'The ChunkMap showed that bytes 0-1023 of the file were stored in chunk A, and bytes 1024-2047 were in chunk B.'
-  },
-  {
-    id: 'chunk-mask',
-    term: 'ChunkMask',
-    slug: 'chunk-mask',
-    definition: 'A bitmask used to identify or select specific chunks, often for processing or status tracking.',
-    example: 'The ChunkMask indicated that chunks 1, 3, and 5 had been successfully downloaded, while the others were still pending.'
-  },
-  {
-    id: 'chunk-merge',
-    term: 'ChunkMerge',
-    slug: 'chunk-merge',
-    definition: 'The process of combining multiple smaller data chunks into a single, larger file or data stream.',
-    example: 'After all the parts were downloaded, the application performed a ChunkMerge to recreate the original ISO file.'
-  },
-  {
-    id: 'chunk-metadata',
-    term: 'ChunkMetadata',
-    slug: 'chunk-metadata',
-    definition: 'Data about a chunk, such as its size, checksum, location, and creation time. This metadata is essential for managing the chunk.',
-    example: 'The file system stored ChunkMetadata for each chunk, including a CRC32 checksum to verify its integrity.'
-  },
-  {
-    id: 'chunk-object',
-    term: 'ChunkObject',
-    slug: 'chunk-object',
-    definition: 'An object in a program that represents a single chunk of data.',
-    example: 'The data stream was parsed into a series of ChunkObjects, each containing a piece of the overall message.'
-  },
-  {
-    id: 'chunk-packet',
-    term: 'ChunkPacket',
-    slug: 'chunk-packet',
-    definition: 'A network packet that contains a single chunk of data. This is common in streaming protocols.',
-    example: 'The server sent the video as a series of ChunkPackets, allowing the client to start playing before the entire file was transferred.'
-  },
-  {
-    id: 'chunk-parser',
-    term: 'ChunkParser',
-    slug: 'chunk-parser',
-    definition: 'A parser that is designed to process data that arrives in chunks, rather than all at once.',
-    example: 'The JSON ChunkParser could process a large JSON file as it was being downloaded, without having to load the whole thing into memory.'
-  },
-  {
-    id: 'chunk-queue',
-    term: 'ChunkQueue',
-    slug: 'chunk-queue',
-    definition: 'A queue that holds chunks of data waiting to be processed, written to disk, or sent over the network.',
-    example: 'The file upload service used a ChunkQueue to manage incoming chunks of data from the user\'s browser.'
-  },
-  {
-    id: 'chunk-region',
-    term: 'ChunkRegion',
-    slug: 'chunk-region',
-    definition: 'A defined region or area that is managed in terms of chunks, such as a region of a game world.',
-    example: 'The server only sent updates for the ChunkRegion that the player was currently in.'
-  },
-  {
-    id: 'chunk-replica',
-    term: 'ChunkReplica',
-    slug: 'chunk-replica',
-    definition: 'A copy of a data chunk stored on a different server for redundancy and high availability. Distributed file systems like HDFS typically create multiple replicas of each chunk.',
-    example: 'The file system was configured to create three ChunkReplicas for each chunk, so the data would survive even if two servers failed.'
-  },
-  {
-    id: 'chunk-request',
-    term: 'ChunkRequest',
-    slug: 'chunk-request',
-    definition: 'A request for a specific chunk of data from a storage system or network server.',
-    example: 'The client sent a ChunkRequest for the next 1MB of the video file.'
-  },
-  {
-    id: 'chunk-router',
-    term: 'ChunkRouter',
-    slug: 'chunk-router',
-    definition: 'In a distributed storage system, a component that determines which server or node a request for a specific chunk should be routed to.',
-    example: 'The ChunkRouter used the file\'s metadata to find the IP addresses of the servers holding the requested data chunk.'
-  },
-  {
-    id: 'chunk-scheduler',
-    term: 'ChunkScheduler',
-    slug: 'chunk-scheduler',
-    definition: 'A scheduler that manages the processing or transfer of data chunks, often prioritizing them or scheduling them to optimize resource usage.',
-    example: 'The peer-to-peer client used a ChunkScheduler to request the rarest chunks first, which helps the overall health of the swarm.'
-  },
-  {
-    id: 'chunk-server',
-    term: 'ChunkServer',
-    slug: 'chunk-server',
-    definition: 'A server in a distributed file system (like GFS or HDFS) whose primary job is to store and serve data chunks.',
-    example: 'The master node instructed the client to contact a specific ChunkServer to retrieve the file data.'
-  },
-  {
-    id: 'chunk-set',
-    term: 'ChunkSet',
-    slug: 'chunk-set',
-    definition: 'A collection of chunks that together form a complete file or data set.',
-    example: 'The torrent client verified that it had the complete ChunkSet before reassembling the final file.'
-  },
-  {
-    id: 'chunk-shift',
-    term: 'ChunkShift',
-    slug: 'chunk-shift',
-    definition: 'An operation that involves shifting or moving data chunks, for example, during a data rebalancing operation in a distributed system.',
-    example: 'When a new server was added to the cluster, a ChunkShift operation began, moving some chunks to the new server to balance the load.'
-  },
-  {
-    id: 'chunk-slice',
-    term: 'ChunkSlice',
-    slug: 'chunk-slice',
-    definition: 'A smaller portion or "slice" of a single data chunk.',
-    example: 'To fulfill the request, the server only needed to read a 4KB ChunkSlice from the middle of the 64MB chunk on disk.'
-  },
-  {
-    id: 'chunk-state',
-    term: 'ChunkState',
-    slug: 'chunk-state',
-    definition: 'The current state of a data chunk, such as "available," "being written," "corrupted," or "under-replicated."',
-    example: 'The file system monitor showed that several chunks were in an "under-replicated" ChunkState, and it automatically started creating new replicas.'
-  },
-  {
-    id: 'chunk-storage',
-    term: 'ChunkStorage',
-    slug: 'chunk-storage',
-    definition: 'The underlying storage system or medium where data chunks are physically stored.',
-    example: 'The ChunkStorage for the distributed file system consisted of thousands of commodity hard drives.'
-  },
-  {
-    id: 'chunk-stream',
-    term: 'ChunkStream',
-    slug: 'chunk-stream',
-    definition: 'A data stream that is explicitly organized and transferred as a series of chunks.',
-    example: 'HTTP 1.1 supports a ChunkStream transfer encoding, which is useful for sending content of an unknown length.'
-  },
-  {
-    id: 'chunk-switch',
-    term: 'ChunkSwitch',
-    slug: 'chunk-switch',
-    definition: 'The action of switching from processing one chunk to another, or from one source of chunks to another.',
-    example: 'In adaptive video streaming, a ChunkSwitch to a lower bitrate stream occurs if the network connection degrades.'
-  },
-  {
-    id: 'chunk-system',
-    term: 'ChunkSystem',
-    slug: 'chunk-system',
-    definition: 'The entire system and its protocols for managing data as chunks.',
-    example: 'The Google File System is a well-known example of a large-scale ChunkSystem.'
-  },
-  {
-    id: 'chunk-tag',
-    term: 'ChunkTag',
-    slug: 'chunk-tag',
-    definition: 'A metadata tag attached to a data chunk, used for identification, categorization, or management.',
-    example: 'Each ChunkTag contained information about the original file the chunk belonged to.'
-  },
-  {
-    id: 'chunk-timer',
-    term: 'ChunkTimer',
-    slug: 'chunk-timer',
-    definition: 'A timer associated with the processing or transfer of a chunk, used for things like timeouts or performance measurement.',
-    example: 'If a ChunkRequest was not fulfilled before the ChunkTimer expired, the client would retry the request from a different server.'
-  },
-  {
-    id: 'chunk-vector',
-    term: 'ChunkVector',
-    slug: 'chunk-vector',
-    definition: 'A vector or array that holds a list of data chunks or pointers to them.',
-    example: 'The file object contained a ChunkVector that listed all the chunks making up the file in the correct order.'
-  },
-  {
-    id: 'cipher-block',
-    term: 'CipherBlock',
-    slug: 'cipher-block',
-    definition: 'A fixed-length block of plaintext that has been encrypted. In block ciphers, data is divided into blocks, and each block is encrypted separately.',
-    example: 'The AES algorithm transformed the 16-byte block of plaintext into a 16-byte CipherBlock.'
-  },
-  {
-    id: 'cipher-driver',
-    term: 'CipherDriver',
-    slug: 'cipher-driver',
-    definition: 'A low-level driver or software module that provides an interface to a hardware cryptography engine, allowing the system to offload encryption and decryption tasks.',
-    example: 'The VPN software used the Intel AES-NI CipherDriver to achieve high-speed encryption with low CPU overhead.'
-  },
-  {
-    id: 'cipher-engine',
-    term: 'CipherEngine',
-    slug: 'cipher-engine',
-    definition: 'A hardware or software component that implements a cryptographic cipher and is responsible for performing encryption and decryption.',
-    example: 'The TPM chip on the motherboard contains a hardware CipherEngine for secure key generation and storage.'
-  },
-  {
-    id: 'cipher-key',
-    term: 'CipherKey',
-    slug: 'cipher-key',
-    definition: 'A secret piece of information (a sequence of bits) used by a cipher to encrypt plaintext and decrypt ciphertext. The security of the encryption depends on the secrecy of the key.',
-    example: 'He used a 256-bit CipherKey to encrypt the document, making it virtually impossible to crack.'
-  },
-  {
-    id: 'cipher-mode',
-    term: 'CipherMode',
-    slug: 'cipher-mode',
-    definition: 'A mode of operation for a block cipher that defines how to repeatedly apply a cipher\'s single-block operation to securely transform amounts of data larger than a block. Examples include ECB, CBC, and GCM.',
-    example: 'For streaming data, he chose to use the CBC CipherMode to ensure that identical blocks of plaintext would not result in identical blocks of ciphertext.'
-  },
-  {
-    id: 'cipher-module',
-    term: 'CipherModule',
-    slug: 'cipher-module',
-    definition: 'A software module or library that provides cryptographic functions, such as encryption, decryption, hashing, and signing.',
-    example: 'The application used the OpenSSL CipherModule to handle all its TLS communication.'
-  },
-  {
-    id: 'cipher-packet',
-    term: 'CipherPacket',
-    slug: 'cipher-packet',
-    definition: 'A network packet whose payload has been encrypted.',
-    example: 'The VPN client encapsulated each IP packet into a CipherPacket before sending it over the internet.'
-  },
-  {
-    id: 'cipher-suite',
-    term: 'CipherSuite',
-    slug: 'cipher-suite',
-    definition: 'In protocols like TLS/SSL, a named combination of authentication, encryption, and message authentication code (MAC) algorithms that are used to negotiate the security settings for a connection.',
-    example: 'The client and server negotiated to use the `TLS_AES_256_GCM_SHA384` CipherSuite for their secure connection.'
-  },
-  {
-    id: 'cid-file',
-    term: 'CIDFile',
-    slug: 'cid-file',
-    definition: 'Content-ID file. A file that contains a Content Identifier (CID), a unique hash used in decentralized storage systems like IPFS to identify a piece of content.',
-    example: 'After uploading his document to IPFS, he received a CIDFile containing the unique hash that he could use to share and retrieve the file.'
-  },
-  {
-    id: 'cid-index',
-    term: 'CIDIndex',
-    slug: 'cid-index',
-    definition: 'An index that maps Content Identifiers (CIDs) to their corresponding data or metadata in a decentralized storage system.',
-    example: 'The IPFS node used a CIDIndex to quickly determine if it already had a copy of the requested content.'
-  },
-  {
-    id: 'cim-model',
-    term: 'CIMModel',
-    slug: 'cim-model',
-    definition: 'Common Information Model. A standard model for describing and managing computer systems, networks, and other IT components. It provides a common set of objects and relationships for representing managed resources.',
-    example: 'The system management software used the CIMModel to represent all the components of the server, from its CPU to its disk drives.'
-  },
-  {
-    id: 'cim-object',
-    term: 'CIMObject',
-    slug: 'cim-object',
-    definition: 'An object that conforms to the Common Information Model (CIM), representing a managed entity like a processor, a disk drive, or a running process.',
-    example: 'He wrote a script to query the CIMObject for the `Win32_Processor` class to get the CPU load percentage.'
-  },
-  {
-    id: 'cim-record',
-    term: 'CIMRecord',
-    slug: 'cim-record',
-    definition: 'A single record or instance of a CIM object, containing the specific attribute values for a particular managed resource.',
-    example: 'The CIMRecord for the physical disk showed its model number, serial number, and current free space.'
-  },
-  {
-    id: 'cim-schema',
-    term: 'CIMSchema',
-    slug: 'cim-schema',
-    definition: 'The schema that defines the classes, properties, and relationships available in a Common Information Model (CIM) implementation. It is the blueprint for all the manageable objects in the system.',
-    example: 'The hardware vendor provided an extension to the standard CIMSchema to expose detailed information about their specific storage arrays.'
-  },
-  {
-    id: 'cim-service',
-    term: 'CIMService',
-    slug: 'cim-service',
-    definition: 'A service or daemon that provides access to the Common Information Model (CIM) repository on a system, allowing management applications to query and interact with managed resources. WBEM is a common implementation.',
-    example: 'The monitoring tool connected to the CIMService on the server to gather hardware health information.'
-  },
-  {
-    id: 'cim-tree',
-    term: 'CIMTree',
-    slug: 'cim-tree',
-    definition: 'The hierarchical structure of classes in a Common Information Model (CIM) schema, showing the inheritance relationships between different types of managed objects.',
-    example: 'By browsing the CIMTree, he could see that the `Win32_LogicalDisk` class inherits from the `CIM_LogicalDevice` class.'
-  },
-  {
-    id: 'circular-buffer',
-    term: 'CircularBuffer',
-    slug: 'circular-buffer',
-    definition: 'A fixed-size buffer that works as if it were connected end-to-end. When the buffer is full, new data written to it overwrites the oldest data. It is useful for streaming data and logs.',
-    example: 'The audio driver used a CircularBuffer to store incoming audio data, ensuring a smooth stream without memory overflows.'
-  },
-  {
-    id: 'circular-queue',
-    term: 'CircularQueue',
-    slug: 'circular-queue',
-    definition: 'A queue data structure that uses a fixed-size array and behaves as if it were circular. When the end of the array is reached, the queue wraps around to the beginning. This avoids the need to shift elements when items are dequeued.',
-    example: 'He implemented a CircularQueue to efficiently manage a pool of network connections.'
-  },
-  {
-    id: 'circuit-breaker',
-    term: 'CircuitBreaker',
-    slug: 'circuit-breaker',
-    definition: 'A design pattern used in microservices to detect failures and prevent a failing service from being constantly retried. After a certain number of failures, the circuit breaker "trips" and subsequent calls automatically fail, giving the failing service time to recover.',
-    example: 'When the payment service went down, the CircuitBreaker tripped, preventing the checkout process from hanging and instead showing an error message to the user.'
-  },
-  {
-    id: 'circuit-key',
-    term: 'CircuitKey',
-    slug: 'circuit-key',
-    definition: 'A cryptographic key used to establish and secure a communication circuit, particularly in anonymizing networks like Tor.',
-    example: 'The Tor client negotiated a separate CircuitKey with each relay in the path to ensure layered encryption.'
-  },
-  {
-    id: 'circuit-map',
-    term: 'CircuitMap',
-    slug: 'circuit-map',
-    definition: 'A map or diagram that shows the layout and connections of an electronic circuit or a network communication path.',
-    example: 'The network engineer used a CircuitMap to trace the path of the data from the user\'s PC to the web server.'
-  },
-  {
-    id: 'circuit-node',
-    term: 'CircuitNode',
-    slug: 'circuit-node',
-    definition: 'An individual node or relay that is part of a larger communication circuit, such as a relay in the Tor network.',
-    example: 'The data passed through three different CircuitNodes—an entry guard, a middle relay, and an exit node—before reaching its destination.'
-  },
-  {
-    id: 'circuit-switch',
-    term: 'CircuitSwitch',
-    slug: 'circuit-switch',
-    definition: 'A networking method where a dedicated communication path (a circuit) is established between two nodes for the duration of the connection. The traditional telephone network is a classic example of circuit switching.',
-    example: 'Unlike the packet-switched internet, the old telephone system used CircuitSwitching, which guaranteed a fixed amount of bandwidth for each call.'
-  },
-  {
-    id: 'cisco-acl',
-    term: 'CiscoACL',
-    slug: 'cisco-acl',
-    definition: 'Access Control List. A set of rules applied to a Cisco router or firewall interface that specifies which types of traffic are allowed to pass and which are blocked.',
-    example: 'The network administrator configured a CiscoACL to block all incoming traffic on port 23 (Telnet) for security reasons.'
-  },
-  {
-    id: 'cisco-ios',
-    term: 'CiscoIOS',
-    slug: 'cisco-ios',
-    definition: 'Internetwork Operating System. The proprietary operating system that runs on most Cisco Systems routers and network switches.',
-    example: 'He logged into the router\'s command-line interface to configure the routing protocols in CiscoIOS.'
-  },
-  {
-    id: 'cisco-nexus',
-    term: 'CiscoNexus',
-    slug: 'cisco-nexus',
-    definition: 'A series of high-performance data center switches manufactured by Cisco. They are designed for large-scale, high-density environments and support advanced features like virtualization and unified fabric.',
-    example: 'The company\'s new data center was built around a pair of redundant CiscoNexus 9000 switches.'
-  },
-  {
-    id: 'c-kernel',
-    term: 'CKernel',
-    slug: 'c-kernel',
-    definition: 'An operating system kernel written predominantly in the C programming language. Most modern kernels, including Linux, Windows, and macOS, are C kernels.',
-    example: 'The Linux CKernel is a monolithic kernel, meaning that most of the core OS services run in the same memory space.'
-  },
-  {
-    id: 'class-attribute',
-    term: 'ClassAttribute',
-    slug: 'class-attribute',
-    definition: 'In object-oriented programming, a variable that belongs to the class itself, rather than to an instance of the class. All instances of the class share the same class attribute.',
-    example: 'In Python, he defined a `species` ClassAttribute for the `Dog` class, setting its value to "Canis lupus familiaris".'
-  },
-  {
-    id: 'class-binding',
-    term: 'ClassBinding',
-    slug: 'class-binding',
-    definition: 'In programming, the process of associating a name (a variable or identifier) with a class definition. It can also refer to frameworks that bind UI elements to class properties, like in Angular.',
-    example: 'The dependency injection framework used a ClassBinding to automatically provide an instance of the `UserService` class whenever it was requested.'
-  },
-  {
-    id: 'class-file',
-    term: 'ClassFile',
-    slug: 'class-file',
-    definition: 'In Java, a file with a `.class` extension that contains the compiled bytecode for a Java class. This is the file that is executed by the Java Virtual Machine (JVM).',
-    example: 'The Java compiler (`javac`) took the `MyProgram.java` source file and produced a `MyProgram.class` ClassFile.'
-  },
-  {
-    id: 'class-index',
-    term: 'ClassIndex',
-    slug: 'class-index',
-    definition: 'An index or registry that keeps track of all the classes available in a system or application, often used by frameworks for reflection or dependency injection.',
-    example: 'The plugin system scanned all the JAR files and built a ClassIndex to find all classes that implemented the `Plugin` interface.'
-  },
-  {
-    id: 'class-loader',
-    term: 'ClassLoader',
-    slug: 'class-loader',
-    definition: 'A component of the Java Runtime Environment (JRE) that is responsible for dynamically loading Java classes into the Java Virtual Machine (JVM) at runtime.',
-    example: 'The application server used a custom ClassLoader for each deployed web application to keep their dependencies isolated from each other.'
-  },
-  {
-    id: 'class-map',
-    term: 'ClassMap',
-    slug: 'class-map',
-    definition: 'A data structure, typically a map or dictionary, that maps identifiers (like names or IDs) to class definitions or objects. It is used for dynamically creating objects from their name.',
-    example: 'The serialization framework used a ClassMap to look up the correct class to instantiate when deserializing an object from JSON.'
-  },
-  {
-    id: 'class-method',
-    term: 'ClassMethod',
-    slug: 'class-method',
-    definition: 'In object-oriented programming, a method that is bound to the class and not the instance of the class. It operates on the class itself, and its first argument is typically the class, not the instance.',
-    example: 'The `User` class had a ClassMethod called `get_user_count()` that queried the database to find the total number of registered users.'
-  },
-  {
-    id: 'class-module',
-    term: 'ClassModule',
-    slug: 'class-module',
-    definition: 'In some programming environments like VBA, a special type of module that allows you to create your own custom objects with properties and methods.',
-    example: 'He created a `clsEmployee` ClassModule in his Excel macro to represent each employee as an object.'
-  },
-  {
-    id: 'class-object',
-    term: 'ClassObject',
-    slug: 'class-object',
-    definition: 'In object-oriented programming, an object that represents a class. This allows classes to be treated as first-class citizens, meaning they can be stored in variables and passed as arguments.',
-    example: 'In Python, every class is a ClassObject, which is why you can pass a class itself as an argument to a function.'
-  },
-  {
-    id: 'class-path',
-    term: 'ClassPath',
-    slug: 'class-path',
-    definition: 'In Java, an environment variable or command-line argument that tells the Java Virtual Machine (JVM) where to find the `.class` files and packages needed to run a program.',
-    example: 'The program failed to start with a `ClassNotFoundException` because the required JAR file was not included in the ClassPath.'
-  },
-  {
-    id: 'class-pointer',
-    term: 'ClassPointer',
-    slug: 'class-pointer',
-    definition: 'In languages like C++, a pointer that holds the memory address of an instance of a class (an object).',
-    example: 'The function took a ClassPointer to a `Widget` object as its argument: `void process_widget(Widget* widget);`'
-  },
-  {
-    id: 'class-proxy',
-    term: 'ClassProxy',
-    slug: 'class-proxy',
-    definition: 'A proxy object that stands in for a real object of a certain class. The proxy can intercept method calls to the real object to add behavior, such as lazy loading, logging, or access control.',
-    example: 'The object-relational mapping (ORM) framework used a ClassProxy to lazy-load the user\'s order history only when it was actually accessed.'
-  },
-  {
-    id: 'class-registry',
-    term: 'ClassRegistry',
-    slug: 'class-registry',
-    definition: 'A central registry or repository that keeps a record of all the classes in an application. This is often used by factories or serialization frameworks to look up and instantiate classes by name.',
-    example: 'The plugin framework required each plugin to register its main class in the global ClassRegistry.'
-  },
-  {
-    id: 'class-resolver',
-    term: 'ClassResolver',
-    slug: 'class-resolver',
-    definition: 'A component that is responsible for finding and loading a class based on its name or other criteria. It resolves a class name into an actual class definition.',
-    example: 'The custom ClassResolver was configured to first look for classes in the local directory before searching the standard classpath.'
-  },
-  {
-    id: 'class-scanner',
-    term: 'ClassScanner',
-    slug: 'class-scanner',
-    definition: 'A tool that scans directories or JAR files to find classes that match certain criteria, such as having a specific annotation or implementing a particular interface.',
-    example: 'The Spring framework uses a ClassScanner at startup to find all components annotated with `@Component`.'
-  },
-  {
-    id: 'class-set',
-    term: 'ClassSet',
-    slug: 'class-set',
-    definition: 'A collection or set of related classes that are often used or managed together.',
-    example: 'The persistence framework operated on a ClassSet that included all the entities to be mapped to the database.'
-  },
-  {
-    id: 'class-store',
-    term: 'ClassStore',
-    slug: 'class-store',
-    definition: 'A repository or storage location where class definitions (e.g., `.class` files) are stored.',
-    example: 'The application server maintained a ClassStore for all the web applications it was hosting.'
-  },
-  {
-    id: 'class-structure',
-    term: 'ClassStructure',
-    slug: 'class-structure',
-    definition: 'The definition of a class, including its name, its attributes (member variables), its methods, and its relationship to other classes (inheritance).',
-    example: 'He studied the ClassStructure of the `List` interface to understand which methods were available.'
-  },
-  {
-    id: 'class-symbol',
-    term: 'ClassSymbol',
-    slug: 'class-symbol',
-    definition: 'A symbol in a compiled program\'s symbol table that represents a class. It contains information used by the linker and debugger.',
-    example: 'The linker used the ClassSymbol to resolve references to the class\'s methods.'
-  },
-  {
-    id: 'class-table',
-    term: 'ClassTable',
-    slug: 'class-table',
-    definition: 'A data structure used by a runtime environment (like a JVM) to store information about loaded classes. It often maps class names to their internal representations.',
-    example: 'When a new class was loaded, the JVM added an entry for it in its internal ClassTable.'
-  },
-  {
-    id: 'class-token',
-    term: 'ClassToken',
-    slug: 'class-token',
-    definition: 'In some languages or frameworks, a special object or token that represents a class type. This token can be passed to functions or methods to work with the class itself.',
-    example: 'In Java, `String.class` is a ClassToken that represents the `String` class.'
-  },
-  {
-    id: 'class-tree',
-    term: 'ClassTree',
-    slug: 'class-tree',
-    definition: 'The hierarchical structure of classes in an object-oriented program, showing the inheritance relationships. It is also known as a class hierarchy.',
-    example: 'By examining the ClassTree, you could see that `JButton` inherits from `JComponent`, which in turn inherits from `Container`.'
-  },
-  {
-    id: 'class-type',
-    term: 'ClassType',
-    slug: 'class-type',
-    definition: 'In a typed programming language, a data type that is defined by a class. A variable of a certain ClassType can only hold objects of that class or its subclasses.',
-    example: 'The function signature specified that the `user` parameter must be of the `UserAccount` ClassType.'
-  },
-  {
-    id: 'cleanup-queue',
-    term: 'CleanupQueue',
-    slug: 'cleanup-queue',
-    definition: 'A queue that holds resources or objects that are waiting to be cleaned up or deallocated, often by a background thread.',
-    example: 'When a user logged out, their session object was placed in a CleanupQueue to be garbage collected later.'
-  },
-  {
-    id: 'cleanup-task',
-    term: 'CleanupTask',
-    slug: 'cleanup-task',
-    definition: 'A task, often run by a scheduler or in the background, that is responsible for performing cleanup operations, such as deleting temporary files or releasing resources.',
-    example: 'The application scheduled a nightly CleanupTask to purge old log files from the disk.'
-  },
-  {
-    id: 'cleanup-thread',
-    term: 'CleanupThread',
-    slug: 'cleanup-thread',
-    definition: 'A dedicated background thread in an application whose sole purpose is to perform cleanup operations.',
-    example: 'A CleanupThread ran every minute to check for expired user sessions and remove them from the cache.'
-  },
-  {
-    id: 'clear-cache',
-    term: 'ClearCache',
-    slug: 'clear-cache',
-    definition: 'The action of removing all items from a cache. This is often done to free up memory or to force the application to fetch fresh data.',
-    example: 'To see the latest changes on the website, he had to ClearCache in his browser.'
-  },
-  {
-    id: 'clear-flag',
-    term: 'ClearFlag',
-    slug: 'clear-flag',
-    definition: 'An operation that resets a flag (a boolean or status variable) to its default or "false" state.',
-    example: 'After the error was handled, the program would ClearFlag the `error_occurred` variable.'
-  },
-  {
-    id: 'clear-key',
-    term: 'ClearKey',
-    slug: 'clear-key',
-    definition: 'In digital rights management (DRM), a simple encryption system where the decryption key is provided directly to the client without being encrypted or obfuscated. It is used for basic content protection.',
-    example: 'While not as secure as commercial DRM systems, ClearKey provides a simple, royalty-free way to encrypt web video.'
-  },
-  {
-    id: 'clear-list',
-    term: 'ClearList',
-    slug: 'clear-list',
-    definition: 'An operation that removes all elements from a list or array data structure.',
-    example: 'Before starting a new search, the program would ClearList the previous search results.'
-  },
-  {
-    id: 'clear-memory',
-    term: 'ClearMemory',
-    slug: 'clear-memory',
-    definition: 'The process of setting a block of memory to all zeros or a known state, often for security reasons to ensure that old data is not accidentally exposed.',
-    example: 'Before deallocating the memory that held the user\'s password, the program would first ClearMemory for that block.'
-  },
-  {
-    id: 'clear-stack',
-    term: 'ClearStack',
-    slug: 'clear-stack',
-    definition: 'An operation that removes all items from a stack data structure.',
-    example: 'The "Clear History" button in the calculator app would ClearStack of all previous calculations.'
-  },
-  {
-    id: 'client-app',
-    term: 'ClientApp',
-    slug: 'client-app',
-    definition: 'The part of a client-server application that runs on the user\'s device (the client). This could be a web browser, a desktop application, or a mobile app.',
-    example: 'The ClientApp was written in React and was responsible for rendering the user interface and making API calls to the server.'
-  },
-  {
-    id: 'client-auth',
-    term: 'ClientAuth',
-    slug: 'client-auth',
-    definition: 'Client Authentication. The process of a server verifying the identity of a client that is trying to connect to it. In TLS, this is often done using client-side certificates.',
-    example: 'The high-security API required ClientAuth, so the client had to present a valid TLS certificate to be granted access.'
-  },
-  {
-    id: 'client-buffer',
-    term: 'ClientBuffer',
-    slug: 'client-buffer',
-    definition: 'A buffer on the client-side of an application used to store data being sent to or received from a server.',
-    example: 'The video player maintained a large ClientBuffer to ensure smooth playback even on a slow network.'
-  },
-  {
-    id: 'client-config',
-    term: 'ClientConfig',
-    slug: 'client-config',
-    definition: 'The configuration settings for a client application, such as the address of the server to connect to, timeouts, and security settings.',
-    example: 'The database driver was initialized with a ClientConfig object that specified the hostname, port, and credentials.'
-  },
-  {
-    id: 'client-connector',
-    term: 'ClientConnector',
-    slug: 'client-connector',
-    definition: 'A software component that handles the details of establishing and managing a connection from a client to a server.',
-    example: 'The application used a different ClientConnector depending on whether it was connecting to a MySQL or a PostgreSQL database.'
-  },
-  {
-    id: 'client-driver',
-    term: 'ClientDriver',
-    slug: 'client-driver',
-    definition: 'A software driver that allows a client application to communicate with a server or a piece of hardware. A database driver is a common example.',
-    example: 'He had to install the ODBC ClientDriver to allow Excel to connect to the corporate database.'
-  },
-  {
-    id: 'client-event',
-    term: 'ClientEvent',
-    slug: 'client-event',
-    definition: 'An event that occurs on the client-side of an application, such as a mouse click, a key press, or the completion of a download.',
-    example: 'The JavaScript code had a listener that would fire whenever a `click` ClientEvent occurred on the button.'
-  },
-  {
-    id: 'client-gateway',
-    term: 'ClientGateway',
-    slug: 'client-gateway',
-    definition: 'A gateway that acts on behalf of a client, often to provide access to a backend service or to simplify communication.',
-    example: 'The mobile app didn\'t connect directly to the microservices; instead, it went through a ClientGateway that aggregated the data.'
-  },
-  {
-    id: 'client-handler',
-    term: 'ClientHandler',
-    slug: 'client-handler',
-    definition: 'On a server, a piece of code (often a thread or an object) that is responsible for handling all communication with a single connected client.',
-    example: 'The chat server spawned a new ClientHandler thread for each user that connected.'
-  },
-  {
-    id: 'client-host',
-    term: 'ClientHost',
-    slug: 'client-host',
-    definition: 'The computer or device on which a client application is running.',
-    example: 'The server log recorded the IP address of the ClientHost for every incoming request.'
-  },
-  {
-    id: 'client-key',
-    term: 'ClientKey',
-    slug: 'client-key',
-    definition: 'A cryptographic key (public or private) that belongs to a client and is used for authentication or encryption.',
-    example: 'During the TLS handshake, the client proved its identity by signing a challenge with its private ClientKey.'
-  },
-  {
-    id: 'client-layer',
-    term: 'ClientLayer',
-    slug: 'client-layer',
-    definition: 'The presentation layer or user interface layer of an application, which is the part that the user directly interacts with.',
-    example: 'The developers focused on making the ClientLayer as responsive and intuitive as possible.'
-  },
-  {
-    id: 'client-manager',
-    term: 'ClientManager',
-    slug: 'client-manager',
-    definition: 'On a server, a component that keeps track of all the currently connected clients.',
-    example: 'The game server\'s ClientManager was responsible for sending game state updates to all connected players.'
-  },
-  {
-    id: 'client-map',
-    term: 'ClientMap',
-    slug: 'client-map',
-    definition: 'A data structure on a server that maps client identifiers (like session IDs or IP addresses) to their corresponding client objects or handlers.',
-    example: 'The server used a ClientMap to quickly find the correct WebSocket connection to send a message to a specific user.'
-  },
-  {
-    id: 'client-message',
-    term: 'ClientMessage',
-    slug: 'client-message',
-    definition: 'A message or data packet that is sent from a client to a server.',
-    example: 'The server parsed the ClientMessage to determine what action the user wanted to perform.'
-  },
-  {
-    id: 'client-module',
-    term: 'ClientModule',
-    slug: 'client-module',
-    definition: 'A module or library that runs on the client-side and provides a specific piece of functionality.',
-    example: 'The application was built from several ClientModules, including one for authentication and another for charting.'
-  },
-  {
-    id: 'client-network',
-    term: 'ClientNetwork',
-    slug: 'client-network',
-    definition: 'The network to which a client device is connected.',
-    example: 'The application detected that the user was on a slow ClientNetwork and automatically switched to loading lower-quality images.'
-  },
-  {
-    id: 'client-object',
-    term: 'ClientObject',
-    slug: 'client-object',
-    definition: 'An object in a program that represents or manages a connection to a server.',
-    example: 'He created a new `APIClient` ClientObject to handle all the requests to the REST API.'
-  },
-  {
-    id: 'client-packet',
-    term: 'ClientPacket',
-    slug: 'client-packet',
-    definition: 'A network packet originating from a client device.',
-    example: 'The firewall was configured to inspect every ClientPacket for signs of malicious activity.'
-  },
-  {
-    id: 'client-pool',
-    term: 'ClientPool',
-    slug: 'client-pool',
-    definition: 'A pool of pre-initialized client objects (e.g., database connections or HTTP clients) that can be reused. This avoids the overhead of creating a new client for every request.',
-    example: 'The application used a database connection ClientPool to improve the performance of its API endpoints.'
-  },
-  {
-    id: 'client-proxy',
-    term: 'ClientProxy',
-    slug: 'client-proxy',
-    definition: 'A proxy server that acts on behalf of a client or a group of clients. All outgoing requests from the client go through the ClientProxy.',
-    example: 'The corporation required all employees to configure their browsers to use a ClientProxy, which filtered their web traffic.'
-  },
-  {
-    id: 'client-queue',
-    term: 'ClientQueue',
-    slug: 'client-queue',
-    definition: 'A queue on the client-side used to hold tasks or messages waiting to be sent to the server.',
-    example: 'The offline-capable web app used a ClientQueue to store API requests made while the user was disconnected, and sent them once the connection was back.'
-  },
-  {
-    id: 'client-record',
-    term: 'ClientRecord',
-    slug: 'client-record',
-    definition: 'A record in a database or file that contains information about a specific client.',
-    example: 'The CRM system had a ClientRecord for each customer, containing their contact information and purchase history.'
-  },
-  {
-    id: 'client-request',
-    term: 'ClientRequest',
-    slug: 'client-request',
-    definition: 'A request for a service or resource made by a client to a server.',
-    example: 'The browser sent a GET ClientRequest to the web server to fetch the homepage.'
-  },
-  {
-    id: 'client-resolver',
-    term: 'ClientResolver',
-    slug: 'client-resolver',
-    definition: 'A component on the client-side that is responsible for resolving a name or identifier into a network address. A DNS resolver is a type of ClientResolver.',
-    example: 'The ClientResolver converted the server\'s hostname into an IP address before establishing a connection.'
-  },
-  {
-    id: 'client-script',
-    term: 'ClientScript',
-    slug: 'client-script',
-    definition: 'A script, typically written in JavaScript, that is executed by the client\'s web browser, rather than on the server.',
-    example: 'The ClientScript was responsible for validating the user\'s input in the form before it was submitted.'
-  },
-  {
-    id: 'client-service',
-    term: 'ClientService',
-    slug: 'client-service',
-    definition: 'A service that runs on the client machine, or a software component on the client that provides a service to other parts of the application.',
-    example: 'The caching ClientService stored frequently accessed data in the browser\'s local storage.'
-  },
-  {
-    id: 'client-session',
-    term: 'ClientSession',
-    slug: 'client-session',
-    definition: 'The period of interaction between a client and a server, which starts when the client connects and ends when they disconnect. The server often stores information about the ClientSession.',
-    example: 'The server stored the user\'s shopping cart contents in their ClientSession object.'
-  },
-  {
-    id: 'client-socket',
-    term: 'ClientSocket',
-    slug: 'client-socket',
-    definition: 'The endpoint of a two-way communication link on the client side. A ClientSocket is bound to a port number so that the server can identify it.',
-    example: 'The chat application created a ClientSocket to establish a persistent WebSocket connection to the server.'
-  },
-  {
-    id: 'client-state',
-    term: 'ClientState',
-    slug: 'client-state',
-    definition: 'The state or data that is stored on the client-side of an application. This can include UI state, user preferences, and cached data.',
-    example: 'The single-page application (SPA) managed all of its ClientState using a Redux store.'
-  },
-  {
-    id: 'client-store',
-    term: 'ClientStore',
-    slug: 'client-store',
-    definition: 'A storage mechanism on the client-side, such as the browser\'s localStorage, sessionStorage, or IndexedDB.',
-    example: 'The application used a ClientStore (IndexedDB) to store a large amount of data for offline use.'
-  },
-  {
-    id: 'client-stream',
-    term: 'ClientStream',
-    slug: 'client-stream',
-    definition: 'A data stream originating from a client. In protocols like gRPC, ClientStreaming allows the client to send a sequence of messages to the server over a single connection.',
-    example: 'The file upload was implemented using a ClientStream, allowing the large file to be sent in chunks.'
-  },
-  {
-    id: 'client-sync',
-    term: 'ClientSync',
-    slug: 'client-sync',
-    definition: 'The process of synchronizing the state or data on the client with the state on the server.',
-    example: 'The collaborative document editor used a ClientSync protocol to ensure that all users saw the same content in real-time.'
-  },
-  {
-    id: 'client-system',
-    term: 'ClientSystem',
-    slug: 'client-system',
-    definition: 'The complete hardware and software environment of the client, including their operating system, browser, and any client-side applications.',
-    example: 'The web application had to be compatible with a wide range of ClientSystems, from modern desktops to older mobile phones.'
-  },
-  {
-    id: 'client-table',
-    term: 'ClientTable',
-    slug: 'client-table',
-    definition: 'A table on the server that keeps track of information about connected clients.',
-    example: 'The server\'s ClientTable stored the session ID and last-seen timestamp for every active user.'
-  },
-  {
-    id: 'client-thread',
-    term: 'ClientThread',
-    slug: 'client-thread',
-    definition: 'A thread of execution that is running on the client machine.',
-    example: 'JavaScript in a web browser runs in a single main ClientThread, which is why long-running scripts can freeze the UI.'
-  },
-  {
-    id: 'client-token',
-    term: 'ClientToken',
-    slug: 'client-token',
-    definition: 'A token or credential that is issued to a client and used to identify or authenticate it. An API key is a type of ClientToken.',
-    example: 'The mobile app had to include its unique ClientToken in the header of every API request.'
-  },
-  {
-    id: 'client-trace',
-    term: 'ClientTrace',
-    slug: 'client-trace',
-    definition: 'A log or trace of the activities performed by a client application, used for debugging and performance analysis.',
-    example: 'The support team asked the user to provide a ClientTrace to help diagnose the issue they were experiencing.'
-  },
-  {
-    id: 'client-trigger',
-    term: 'ClientTrigger',
-    slug: 'client-trigger',
-    definition: 'An event on the client that triggers a specific action. For example, scrolling to the bottom of a page could be a ClientTrigger to load more content.',
-    example: 'An "on-click" ClientTrigger was attached to the button to submit the form.'
-  },
-  {
-    id: 'client-validator',
-    term: 'ClientValidator',
-    slug: 'client-validator',
-    definition: 'A piece of code that runs on the client to validate user input before it is even sent to the server. This provides faster feedback to the user.',
-    example: 'The form used a JavaScript ClientValidator to check that the user had entered a valid email address.'
-  },
-  {
-    id: 'client-vector',
-    term: 'ClientVector',
-    slug: 'client-vector',
-    definition: 'A vector or collection of data on the client side, or a representation of the client\'s state as a vector.',
-    example: 'The feature flag system used a ClientVector representing the user\'s attributes (like country and browser version) to decide which features to enable.'
-  },
-  {
-    id: 'clipboard-service',
-    term: 'ClipboardService',
-    slug: 'clipboard-service',
-    definition: 'A system service provided by an operating system that manages the clipboard, allowing users to copy and paste data between applications.',
-    example: 'The application used the OS\'s ClipboardService to place the selected text onto the clipboard.'
-  },
-  {
-    id: 'clipboard-state',
-    term: 'ClipboardState',
-    slug: 'clipboard-state',
-    definition: 'The current contents of the system clipboard.',
-    example: 'The application checked the ClipboardState to see if it contained a valid image that could be pasted.'
-  },
-  {
-    id: 'click-event',
-    term: 'ClickEvent',
-    slug: 'click-event',
-    definition: 'In user interface programming, an event that is generated when a user clicks a mouse button on a component.',
-    example: 'An event listener was attached to the button to handle the ClickEvent and run a function.'
-  },
-  {
-    id: 'click-handler',
-    term: 'ClickHandler',
-    slug: 'click-handler',
-    definition: 'A function that is executed in response to a click event.',
-    example: 'The ClickHandler for the "Save" button would collect the form data and send it to the server.'
-  },
-  {
-    id: 'click-listener',
-    term: 'ClickListener',
-    slug: 'click-listener',
-    definition: 'A component in a UI framework that "listens" for click events on a specific element and then triggers a corresponding handler function.',
-    example: 'He added a ClickListener to the image so that it would open a larger version in a modal window when clicked.'
-  },
-  {
-    id: 'click-stream',
-    term: 'ClickStream',
-    slug: 'click-stream',
-    definition: 'The sequence of hyperlinks a user clicks on while browsing a website. Analyzing clickstream data provides insights into user behavior and navigation patterns.',
-    example: 'The marketing team analyzed the ClickStream data to understand the user journey from the homepage to the final purchase.'
-  },
-  {
-    id: 'cli-command',
-    term: 'CLICommand',
-    slug: 'cli-command',
-    definition: 'A command that is entered into a Command-Line Interface (CLI).',
-    example: 'The `ls -l` CLICommand lists the files in a directory in long format.'
-  },
-  {
-    id: 'cli-layer',
-    term: 'CLILayer',
-    slug: 'cli-layer',
-    definition: 'The layer of an application that provides a command-line interface for users or other programs to interact with it.',
-    example: 'While the application had a graphical user interface, it also had a powerful CLILayer for scripting and automation.'
-  },
-  {
-    id: 'cli-module',
-    term: 'CLIModule',
-    slug: 'cli-module',
-    definition: 'A module or plugin for a command-line application that adds a new set of commands or functionality.',
-    example: 'He installed a CLIModule for the AWS CLI that added commands for managing his S3 buckets.'
-  },
-  {
-    id: 'cli-network',
-    term: 'CLINetwork',
-    slug: 'cli-network',
-    definition: 'A set of command-line tools for managing and interacting with a network.',
-    example: 'The network administrator used a CLINetwork toolset that included `ping`, `traceroute`, and `netstat` to diagnose the connectivity issue.'
-  },
-  {
-    id: 'c-linker',
-    term: 'CLinker',
-    slug: 'c-linker',
-    definition: 'A linker for the C programming language. It is a program that takes one or more object files generated by a compiler and combines them into a single executable file, shared library, or another object file.',
-    example: 'The CLinker resolved the references to the `printf` function by linking the program with the standard C library.'
-  },
-  {
-    id: 'clock-cycle',
-    term: 'ClockCycle',
-    slug: 'clock-cycle',
-    definition: 'The smallest unit of time for a processor. It is the time it takes for a single tick of the computer\'s internal clock. A CPU\'s speed is measured in clock cycles per second (Hertz).',
-    example: 'A modern 4 GHz CPU performs 4 billion ClockCycles per second.'
-  },
-  {
-    id: 'clock-divider',
-    term: 'ClockDivider',
-    slug: 'clock-divider',
-    definition: 'An electronic circuit that takes a clock signal of a certain frequency and produces a clock signal of a lower, divided frequency. For example, a clock divider could turn a 100 MHz signal into a 50 MHz signal.',
-    example: 'The microcontroller used a ClockDivider to run its peripherals at a slower speed than the main CPU core to save power.'
-  },
-  {
-    id: 'clock-domain',
-    term: 'ClockDomain',
-    slug: 'clock-domain',
-    definition: 'A part of a digital circuit that is synchronized by a specific clock signal. When data needs to pass between different clock domains, it requires special handling (Clock Domain Crossing or CDC) to avoid metastability issues.',
-    example: 'The USB controller and the CPU core operated in different ClockDomains, requiring a synchronizer to pass data between them safely.'
-  },
-  {
-    id: 'clock-drift',
-    term: 'ClockDrift',
-    slug: 'clock-drift',
-    definition: 'A phenomenon where two or more clocks run at slightly different rates, causing them to gradually drift apart over time. This is a common problem in distributed systems that needs to be managed with protocols like NTP.',
-    example: 'Over a week, the server\'s internal clock experienced a 2-second ClockDrift compared to the atomic clock standard.'
-  },
-  {
-    id: 'clock-edge',
-    term: 'ClockEdge',
-    slug: 'clock-edge',
-    definition: 'The transition of a clock signal from low to high (rising edge) or from high to low (falling edge). In synchronous digital circuits, state changes are typically triggered by a clock edge.',
-    example: 'The flip-flop was configured to capture its input value on the rising ClockEdge.'
-  },
-  {
-    id: 'clock-gate',
-    term: 'ClockGate',
-    slug: 'clock-gate',
-    definition: 'A technique used in digital circuit design to save power by disabling the clock signal to parts of the circuit that are not currently in use.',
-    example: 'The mobile phone\'s processor used an aggressive ClockGate strategy to turn off the clock to the GPU when it was not needed, significantly extending battery life.'
-  },
-  {
-    id: 'clock-manager',
-    term: 'ClockManager',
-    slug: 'clock-manager',
-    definition: 'A hardware or software component that is responsible for generating, managing, and distributing the various clock signals needed within a system.',
-    example: 'The SoC\'s ClockManager could dynamically change the frequency of the CPU clock to balance performance and power consumption.'
-  },
-  {
-    id: 'clock-mode',
-    term: 'ClockMode',
-    slug: 'clock-mode',
-    definition: 'A setting that determines how a clock signal is used, such as whether a device should use its internal clock or an external clock, or whether to trigger on the rising or falling edge.',
-    example: 'He set the ClockMode of the ADC to use an external, high-precision clock source for more accurate measurements.'
-  },
-  {
-    id: 'clock-pulse',
-    term: 'ClockPulse',
-    slug: 'clock-pulse',
-    definition: 'A single cycle of a clock signal, from one rising edge to the next. This is another term for a clock cycle.',
-    example: 'The processor could execute one simple instruction in a single ClockPulse.'
-  },
-  {
-    id: 'clock-skew',
-    term: 'ClockSkew',
-    slug: 'clock-skew',
-    definition: 'A phenomenon in synchronous digital circuits where the same clock signal arrives at different components at slightly different times due to propagation delays. This can cause timing errors.',
-    example: 'The chip designer had to carefully lay out the clock tree to minimize ClockSkew across the entire die.'
-  },
-  {
-    id: 'clock-source',
-    term: 'ClockSource',
-    slug: 'clock-source',
-    definition: 'The component that generates a clock signal. This can be a crystal oscillator on a motherboard, an external signal generator, or a signal from a network time server.',
-    example: 'The computer used a quartz crystal as its primary ClockSource to generate the CPU clock.'
-  },
-  {
-    id: 'clock-sync',
-    term: 'ClockSync',
-    slug: 'clock-sync',
-    definition: 'Clock Synchronization. The process of ensuring that multiple clocks in a distributed system are all set to the same time. The Network Time Protocol (NTP) is a common protocol for achieving ClockSync.',
-    example: 'The distributed database required precise ClockSync to ensure that transactions were ordered correctly across all nodes.'
-  },
-  {
-    id: 'clone-function',
-    term: 'CloneFunction',
-    slug: 'clone-function',
-    definition: 'A function that creates a copy of an object. A "deep clone" creates a copy of the object and all objects it references, while a "shallow clone" only copies the top-level object.',
-    example: 'He implemented a CloneFunction for his custom object to make it easy to create duplicates.'
-  },
-  {
-    id: 'clone-layer',
-    term: 'CloneLayer',
-    slug: 'clone-layer',
-    definition: 'In graphics or design software, an operation that duplicates a layer, creating an identical copy on top of the original.',
-    example: 'He used the CloneLayer feature to create a backup of his work before trying a destructive filter.'
-  },
-  {
-    id: 'clone-object',
-    term: 'CloneObject',
-    slug: 'clone-object',
-    definition: 'An object that is an exact copy of another object.',
-    example: 'The `Object.assign()` method in JavaScript can be used to create a shallow CloneObject.'
-  },
-  {
-    id: 'clone-record',
-    term: 'CloneRecord',
-    slug: 'clone-record',
-    definition: 'An operation that creates a duplicate of a record in a database.',
-    example: 'The CRM had a "Clone" button that would create a CloneRecord of the customer, which was useful for creating a new contact at the same company.'
-  },
-  {
-    id: 'clone-service',
-    term: 'CloneService',
-    slug: 'clone-service',
-    definition: 'A service that is responsible for creating copies or clones of resources, such as virtual machines or databases.',
-    example: 'The cloud platform\'s CloneService could create a complete copy of a running virtual machine in just a few minutes.'
-  },
-  {
-    id: 'clone-thread',
-    term: 'CloneThread',
-    slug: 'clone-thread',
-    definition: 'The action of creating a new thread of execution that is a copy of an existing one. In Linux, the `clone()` system call is a more general version of `fork()` that can create processes or threads.',
-    example: 'The `fork()` system call essentially performs a CloneThread operation, creating a new child process.'
-  },
-  {
-    id: 'cloud-adapter',
-    term: 'CloudAdapter',
-    slug: 'cloud-adapter',
-    definition: 'A software component that acts as a bridge between an application and a specific cloud provider\'s services, translating generic commands into the provider\'s specific API calls.',
-    example: 'They used a CloudAdapter to make their application portable, allowing it to be deployed on either AWS or Google Cloud with minimal code changes.'
-  },
-  {
-    id: 'cloud-agent',
-    term: 'CloudAgent',
-    slug: 'cloud-agent',
-    definition: 'A lightweight program that runs on a server or virtual machine to communicate with a central cloud management platform. It is used for tasks like monitoring, software updates, and configuration management.',
-    example: 'The CloudAgent on the VM reported its CPU and memory usage back to the cloud console every minute.'
-  },
-  {
-    id: 'cloud-api',
-    term: 'CloudAPI',
-    slug: 'cloud-api',
-    definition: 'An Application Programming Interface (API) provided by a cloud computing platform that allows developers to programmatically control and manage cloud resources, such as virtual machines, storage, and networks.',
-    example: 'He wrote a script that used the AWS CloudAPI to automatically spin up a new server whenever traffic exceeded a certain threshold.'
-  },
-  {
-    id: 'cloud-bucket',
-    term: 'CloudBucket',
-    slug: 'cloud-bucket',
-    definition: 'A container for storing objects in a cloud object storage service, such as Amazon S3 or Google Cloud Storage. Buckets have a globally unique name.',
-    example: 'The web application stored all of its user-uploaded images in a CloudBucket called `my-app-uploads`.'
-  },
-  {
-    id: 'cloud-cache',
-    term: 'CloudCache',
-    slug: 'cloud-cache',
-    definition: 'A managed caching service offered by a cloud provider, such as Amazon ElastiCache or Google Cloud Memorystore. These services provide in-memory caching (using Redis or Memcached) without the need to manage the underlying servers.',
-    example: 'They used a CloudCache service to store user session data, which was much faster than retrieving it from the database every time.'
-  },
-  {
-    id: 'cloud-cluster',
-    term: 'CloudCluster',
-    slug: 'cloud-cluster',
-    definition: 'A cluster of computers or virtual machines running on a cloud platform. This can be a Kubernetes cluster, a Hadoop cluster, or any group of instances working together.',
-    example: 'Their data processing jobs ran on a 50-node Spark CloudCluster that they could scale up or down as needed.'
-  },
-  {
-    id: 'cloud-config',
-    term: 'CloudConfig',
-    slug: 'cloud-config',
-    definition: 'The configuration settings for cloud resources. It can also refer to `cloud-init`, a standard for providing configuration data (like user data scripts) to a virtual machine when it first boots up.',
-    example: 'He passed a CloudConfig script to the new VM to automatically install a web server and download the application code on its first boot.'
-  },
-  {
-    id: 'cloud-connector',
-    term: 'CloudConnector',
-    slug: 'cloud-connector',
-    definition: 'A tool or service that provides a secure connection between an on-premises data center and a public cloud, allowing them to work together in a hybrid cloud setup.',
-    example: 'They used a CloudConnector to allow their on-premises application to securely access data stored in a cloud database.'
-  },
-  {
-    id: 'cloud-console',
-    term: 'CloudConsole',
-    slug: 'cloud-console',
-    definition: 'A web-based user interface provided by a cloud provider that allows users to manage all of their cloud resources, view billing information, and access support.',
-    example: 'He logged into the Google CloudConsole to create a new virtual machine and configure its firewall rules.'
-  },
-  {
-    id: 'cloud-daemon',
-    term: 'CloudDaemon',
-    slug: 'cloud-daemon',
-    definition: 'A background process that runs on a cloud instance to perform management or monitoring tasks.',
-    example: 'The CloudDaemon responsible for collecting logs and metrics runs on every VM in their fleet.'
-  },
-  {
-    id: 'cloud-deployment',
-    term: 'CloudDeployment',
-    slug: 'cloud-deployment',
-    definition: 'The process of deploying an application or service to a cloud computing environment.',
-    example: 'Their continuous integration system would automatically trigger a new CloudDeployment every time code was merged into the main branch.'
-  },
-  {
-    id: 'cloud-disk',
-    term: 'CloudDisk',
-    slug: 'cloud-disk',
-    definition: 'A virtual, block-level storage volume that can be attached to a cloud virtual machine. Examples include Amazon EBS and Google Persistent Disk.',
-    example: 'He attached a 500GB SSD CloudDisk to his virtual machine to store the application\'s database.'
-  },
-  {
-    id: 'cloud-driver',
-    term: 'CloudDriver',
-    slug: 'cloud-driver',
-    definition: 'A software driver that allows a system to interact with a specific cloud provider\'s API. It abstracts away the details of the specific cloud platform.',
-    example: 'The multi-cloud management tool used a different CloudDriver for each cloud it supported (AWS, Azure, GCP).'
-  },
-  {
-    id: 'cloud-engine',
-    term: 'CloudEngine',
-    slug: 'cloud-engine',
-    definition: 'The core compute service of a cloud provider that allows users to run virtual machines. Google Compute Engine is a prominent example.',
-    example: 'Their entire web application backend runs on a fleet of virtual machines in the Google CloudEngine.'
-  },
-  {
-    id: 'cloud-event',
-    term: 'CloudEvent',
-    slug: 'cloud-event',
-    definition: 'An event that occurs within a cloud environment, such as a new file being uploaded, a virtual machine starting up, or a database entry being modified. It can also refer to the CloudEvents specification, which provides a standard format for describing such events.',
-    example: 'They configured a serverless function to be triggered by a CloudEvent that fired whenever a new image was uploaded to their storage bucket.'
-  },
-  {
-    id: 'cloud-failover',
-    term: 'CloudFailover',
-    slug: 'cloud-failover',
-    definition: 'An automatic process where a cloud-based system switches to a redundant or standby server, system, or data center in the event of a failure of the primary one. This is key to achieving high availability.',
-    example: 'When the primary database in the US-East region failed, the CloudFailover process automatically promoted the read replica in the US-West region to be the new primary.'
-  },
-  {
-    id: 'cloud-firewall',
-    term: 'CloudFirewall',
-    slug: 'cloud-firewall',
-    definition: 'A virtual firewall service provided by a cloud provider that allows you to control incoming and outgoing traffic to your cloud resources at the network level.',
-    example: 'He configured the CloudFirewall to only allow incoming traffic on ports 80 and 443 for his web server.'
-  },
-  {
-    id: 'cloud-function',
-    term: 'CloudFunction',
-    slug: 'cloud-function',
-    definition: 'A piece of single-purpose code that runs in a serverless environment, executing in response to an event without the need to provision or manage servers. Examples include AWS Lambda and Google Cloud Functions.',
-    example: 'She wrote a CloudFunction that would automatically resize any image that was uploaded to a specific storage bucket.'
-  },
-  {
-    id: 'cloud-gateway',
-    term: 'CloudGateway',
-    slug: 'cloud-gateway',
-    definition: 'A service that acts as a single entry point for a set of backend services, often in a microservices architecture. It can handle tasks like authentication, rate limiting, and routing.',
-    example: 'The API Gateway was the single CloudGateway for all of their mobile and web clients.'
-  },
-  {
-    id: 'cloud-group',
-    term: 'CloudGroup',
-    slug: 'cloud-group',
-    definition: 'A logical grouping of cloud resources, used for management, billing, or applying policies. For example, a resource group in Azure or a group of instances in an auto-scaling group in AWS.',
-    example: 'All resources for the "production" environment were placed in the same CloudGroup to make it easy to manage their permissions and costs.'
-  },
-  {
-    id: 'cloud-instance',
-    term: 'CloudInstance',
-    slug: 'cloud-instance',
-    definition: 'A single virtual machine running in a public or private cloud. This is the most basic unit of computing in an IaaS (Infrastructure as a Service) model.',
-    example: 'He launched a new `t2.micro` CloudInstance on AWS to host his personal blog.'
-  },
-  {
-    id: 'cloud-key',
-    term: 'CloudKey',
-    slug: 'cloud-key',
-    definition: 'A cryptographic key that is managed by a cloud provider\'s key management service (KMS). This allows for secure storage and use of keys without the user having to manage the key material directly.',
-    example: 'The application used a CloudKey from AWS KMS to encrypt all its data at rest.'
-  },
-  {
-    id: 'cloud-layer',
-    term: 'CloudLayer',
-    slug: 'cloud-layer',
-    definition: 'A layer or tier of an application\'s architecture that is hosted in the cloud. This contrasts with on-premises layers.',
-    example: 'They decided to move their database from on-premises to the CloudLayer to take advantage of managed backups and scalability.'
-  },
-  {
-    id: 'cloud-load',
-    term: 'CloudLoad',
-    slug: 'cloud-load',
-    definition: 'The amount of computational work or traffic being handled by a cloud-based system.',
-    example: 'The CloudLoad on the servers peaked during the Super Bowl, but the auto-scaling system handled it without any issues.'
-  },
-  {
-    id: 'cloud-monitor',
-    term: 'CloudMonitor',
-    slug: 'cloud-monitor',
-    definition: 'A service provided by a cloud provider that collects and tracks metrics, collects and monitors log files, and sets alarms for cloud resources. Examples include Amazon CloudWatch and Google Cloud Monitoring.',
-    example: 'He set up a CloudMonitor alarm to send him an email if the CPU utilization of his server went above 80% for 5 minutes.'
-  },
-  {
-    id: 'cloud-network',
-    term: 'CloudNetwork',
-    slug: 'cloud-network',
-    definition: 'A virtual network that is provisioned and managed within a cloud provider\'s infrastructure. This allows you to create logically isolated networks for your resources. Also known as a Virtual Private Cloud (VPC).',
-    example: 'The company\'s CloudNetwork was divided into several subnets for the web servers, application servers, and databases.'
-  },
-  {
-    id: 'cloud-object',
-    term: 'CloudObject',
-    slug: 'cloud-object',
-    definition: 'A single piece of data, such as a file, image, or video, that is stored in a cloud object storage service.',
-    example: 'Each user photo was stored as a separate CloudObject in the S3 bucket.'
-  },
-  {
-    id: 'cloud-orchestrator',
-    term: 'CloudOrchestrator',
-    slug: 'cloud-orchestrator',
-    definition: 'A tool or service that automates the management, coordination, and deployment of complex cloud-based systems. Kubernetes and Terraform are examples of cloud orchestrators.',
-    example: 'The CloudOrchestrator used a configuration file to automatically provision the entire application stack, including networking, servers, and databases.'
-  },
-  {
-    id: 'cloud-policy',
-    term: 'CloudPolicy',
-    slug: 'cloud-policy',
-    definition: 'A set of rules that defines permissions and access control for cloud resources. For example, an IAM (Identity and Access Management) policy.',
-    example: 'The CloudPolicy granted the application read-only access to the S3 bucket but denied it permission to delete any objects.'
-  },
-  {
-    id: 'cloud-queue',
-    term: 'CloudQueue',
-    slug: 'cloud-queue',
-    definition: 'A managed message queuing service provided by a cloud provider, such as Amazon SQS or Google Cloud Pub/Sub. It allows for decoupling of application components by enabling asynchronous communication.',
-    example: 'When a new order was placed, a message was sent to a CloudQueue, where a separate worker process would pick it up to handle payment processing.'
-  },
-  {
-    id: 'cloud-registry',
-    term: 'CloudRegistry',
-    slug: 'cloud-registry',
-    definition: 'A managed service for storing and distributing container images (like Docker images). Examples include Amazon ECR and Google Container Registry.',
-    example: 'After building the new Docker image, the CI/CD pipeline pushed it to the CloudRegistry, from where it could be deployed to the Kubernetes cluster.'
-  },
-  {
-    id: 'cloud-router',
-    term: 'CloudRouter',
-    slug: 'cloud-router',
-    definition: 'A virtual router service provided by a cloud provider that allows you to manage routing for your cloud network and establish connections to on-premises networks.',
-    example: 'They used a CloudRouter to connect their VPC to their on-premises data center via a dedicated VPN connection.'
-  },
-  {
-    id: 'cloud-runtime',
-    term: 'CloudRuntime',
-    slug: 'cloud-runtime',
-    definition: 'The execution environment for code running in the cloud, particularly in serverless or PaaS (Platform as a Service) offerings. The CloudRuntime provides the operating system, language runtime, and libraries.',
-    example: 'The AWS Lambda CloudRuntime for Python includes the Boto3 library by default, making it easy to interact with other AWS services.'
-  },
-  {
-    id: 'cloud-scheduler',
-    term: 'CloudScheduler',
-    slug: 'cloud-scheduler',
-    definition: 'A managed cron (job scheduling) service in the cloud. It allows you to schedule tasks, such as calling an HTTP endpoint or sending a message to a queue, to run at a specific time or on a recurring basis.',
-    example: 'They used a CloudScheduler to trigger a batch job every night at 2 AM to generate daily reports.'
-  },
-  {
-    id: 'cloud-script',
-    term: 'CloudScript',
-    slug: 'cloud-script',
-    definition: 'A script that is run in a cloud environment, often to automate management tasks or as the logic for a serverless function.',
-    example: 'He wrote a CloudScript in Python to automatically stop all development instances over the weekend to save costs.'
-  },
-  {
-    id: 'cloud-service',
-    term: 'CloudService',
-    slug: 'cloud-service',
-    definition: 'Any service made available to users on demand via the Internet from a cloud computing provider\'s servers as opposed to being provided from a company\'s own on-premises servers. This includes IaaS, PaaS, and SaaS.',
-    example: 'Instead of buying and managing their own email servers, the company decided to use a CloudService like Google Workspace.'
-  },
-  {
-    id: 'cloud-storage',
-    term: 'CloudStorage',
-    slug: 'cloud-storage',
-    definition: 'A model of computer data storage in which the digital data is stored in logical pools, said to be on "the cloud". The physical storage spans multiple servers, and the physical environment is typically owned and managed by a hosting company.',
-    example: 'She backed up all her important photos and documents to a CloudStorage service so she could access them from any device.'
-  },
-  {
-    id: 'cloud-system',
-    term: 'CloudSystem',
-    slug: 'cloud-system',
-    definition: 'The entire architecture of an application or IT infrastructure that is hosted on a cloud computing platform.',
-    example: 'Their new CloudSystem was designed to be fully elastic, automatically scaling resources up and down based on demand.'
-  },
-  {
-    id: 'cloud-thread',
-    term: 'CloudThread',
-    slug: 'cloud-thread',
-    definition: 'A thread of execution that is running on a cloud server. In the context of some platforms, it may refer to a lightweight execution context for a serverless function.',
-    example: 'The serverless platform could spin up a new CloudThread to handle an incoming request in milliseconds.'
-  },
-  {
-    id: 'cloud-token',
-    term: 'CloudToken',
-    slug: 'cloud-token',
-    definition: 'An authentication token, such as an OAuth 2.0 token, that is used to grant access to a cloud provider\'s APIs.',
-    example: 'The command-line tool used a CloudToken that it obtained via an OAuth flow to authenticate its requests to the Google Cloud API.'
-  },
-  {
-    id: 'cloud-worker',
-    term: 'CloudWorker',
-    slug: 'cloud-worker',
-    definition: 'A serverless execution environment that allows you to run JavaScript and WebAssembly code at the edge of the cloud, close to users. Cloudflare Workers is a prominent example.',
-    example: 'They deployed a CloudWorker to intercept requests and perform A/B testing right at the CDN edge, without any changes to their origin server.'
+    id: 'bursttransfer',
+    term: 'BurstTransfer',
+    slug: 'bursttransfer',
+    definition: 'A data transfer mode where a device takes control of a bus and sends a large amount of data in a single, continuous burst, rather than one word at a time.',
+    example: 'The PCI Express bus supports burst transfers, which allows for very high data transfer rates.',
   }
 ];
