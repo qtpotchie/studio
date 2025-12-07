@@ -37,11 +37,19 @@ export default function VoiceSearchDialog() {
 
   useEffect(() => {
     if (error) {
-      toast({
-        variant: 'destructive',
-        title: 'Voice Search Error',
-        description: `Could not start voice search. Error: "${error}". Please check your internet connection and microphone permissions.`,
-      });
+      if (error === 'no-speech') {
+        toast({
+          variant: 'destructive',
+          title: 'Voice Search',
+          description: 'No speech was detected. Please try again.',
+        });
+      } else {
+        toast({
+          variant: 'destructive',
+          title: 'Voice Search Error',
+          description: `Could not start voice search. Error: "${error}". Please check your internet connection and microphone permissions.`,
+        });
+      }
       setOpen(false);
     }
   }, [error, setOpen, toast]);
