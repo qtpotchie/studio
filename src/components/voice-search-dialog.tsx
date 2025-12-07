@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from 'react';
-import { Dialog, DialogContent, DialogOverlay } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogOverlay, DialogTitle } from '@/components/ui/dialog';
 import { Mic, X } from 'lucide-react';
 import { useSpeechRecognition } from '@/hooks/use-speech-recognition';
 import { useVoiceSearch } from '@/context/voice-search-context';
@@ -53,6 +53,7 @@ export default function VoiceSearchDialog() {
         className="bg-transparent border-none shadow-none max-w-lg w-full flex flex-col items-center justify-center text-center p-0"
         onInteractOutside={(e) => e.preventDefault()}
       >
+        <DialogTitle className="sr-only">Voice Search</DialogTitle>
         <div className="w-full flex flex-col items-center gap-6">
           <p className="text-2xl text-foreground/80 font-medium">Listening...</p>
           <button
