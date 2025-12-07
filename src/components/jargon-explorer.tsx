@@ -20,6 +20,11 @@ export default function JargonExplorer({ terms }: { terms: Term[] }) {
   const { isListening, transcript, startListening, stopListening, isSupported } =
     useSpeechRecognition();
 
+  const [isClient, setIsClient] = useState(false);
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   useEffect(() => {
     if (transcript) {
       setSearchQuery(transcript);
@@ -69,7 +74,7 @@ export default function JargonExplorer({ terms }: { terms: Term[] }) {
               }}
             />
             <div className='flex items-center ml-2'>
-              {isSupported && (
+              {isClient && isSupported && (
                  <Button type="button" size="icon" variant="ghost" onClick={handleVoiceSearch} className={cn(isListening && 'text-primary animate-pulse')}>
                   <Mic className="h-5 w-5" />
                   <span className="sr-only">Search by voice</span>
