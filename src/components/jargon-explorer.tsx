@@ -12,13 +12,15 @@ import { Button } from '@/components/ui/button';
 import WordOfTheDay from './word-of-the-day';
 import { useSpeechRecognition } from '@/hooks/use-speech-recognition';
 import { cn } from '@/lib/utils';
+import { useToast } from '@/hooks/use-toast';
 
 export default function JargonExplorer({ terms }: { terms: Term[] }) {
   const [searchQuery, setSearchQuery] = useState('');
   const { addSearchQuery } = useSearchHistory();
   const debouncedSearchQuery = useDebounce(searchQuery, 300);
+  const { toast } = useToast();
 
-  const { isListening, transcript, startListening, stopListening, isSupported } =
+  const { isListening, transcript, startListening, stopListening, isSupported, error } =
     useSpeechRecognition();
 
   const [isClient, setIsClient] = useState(false);
@@ -31,6 +33,16 @@ export default function JargonExplorer({ terms }: { terms: Term[] }) {
       setSearchQuery(transcript);
     }
   }, [transcript]);
+
+  useEffect(() => {
+    if (error) {
+      toast({
+        variant: "destructive",
+        title: "Voice Search Error",
+        description: `Could not start voice search. Error: "${error}". Please check your internet connection and microphone permissions.`,
+      });
+    }
+  }, [error, toast]);
 
   const filteredTerms = useMemo(() => {
     if (!debouncedSearchQuery) {
