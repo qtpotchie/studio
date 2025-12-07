@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, useMemo, FormEvent, useEffect } from 'react';
@@ -73,7 +74,7 @@ export default function JargonExplorer({ terms }: { terms: Term[] }) {
                 setSearchQuery(e.target.value);
               }}
             />
-            <div className='flex items-center ml-2'>
+            <div className='flex items-center ml-2 gap-2'>
               {isClient && isSupported && (
                  <Button type="button" size="icon" onClick={handleVoiceSearch} className={cn(isListening && 'bg-primary/80 animate-pulse')}>
                   <Mic className="h-5 w-5" />
