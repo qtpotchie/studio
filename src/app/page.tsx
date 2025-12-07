@@ -1,6 +1,6 @@
-import JargonExplorer from '@/components/jargon-explorer';
 import Logo from '@/components/logo';
 import { terms } from '@/lib/data';
+import SearchTrigger from '@/components/search-trigger';
 
 export default function Home() {
   return (
@@ -15,7 +15,9 @@ export default function Home() {
           dictionary for IT and tech jargon, available offline.
         </p>
       </header>
-      <JargonExplorer terms={terms} />
+      <div className="px-4">
+        <SearchTrigger />
+      </div>
     </div>
   );
 }
