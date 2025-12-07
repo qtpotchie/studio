@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useMemo, FormEvent } from "react";
-import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Search, ArrowLeft, X, Mic } from "lucide-react";
@@ -82,6 +82,7 @@ export default function SearchDialog({ terms }: { terms: Term[] }) {
   return (
     <Dialog open={isOpen} onOpenChange={setOpen}>
       <DialogContent className="p-0 gap-0 max-w-2xl h-[calc(100%-4rem)] flex flex-col">
+        <DialogTitle className="sr-only">Search Terms</DialogTitle>
         <div className="p-4 border-b">
           <form onSubmit={handleSearchSubmit}>
             <div className="relative flex items-center gap-2">
