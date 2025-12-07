@@ -48,7 +48,6 @@ export function useSpeechRecognition() {
     };
 
     recognition.onerror = (event: any) => {
-      console.error('Speech recognition error:', event.error);
       setError(event.error);
       setIsListening(false);
     };
@@ -66,8 +65,12 @@ export function useSpeechRecognition() {
     if (recognitionRef.current && !isListening) {
       setTranscript('');
       setError(null);
-      recognitionRef.current.start();
-      setIsListening(true);
+      try {
+        recognitionRef.current.start();
+        setIsListening(true);
+      } catch (err: any) {
+        setError(err.name || 'start-error');
+      }
     }
   };
 
