@@ -10,8 +10,6 @@ import Link from 'next/link';
 import { useState } from 'react';
 import ExplorerDialog from '@/components/explorer-dialog';
 import { useSearch } from '@/hooks/use-search';
-import GlobalControls from '@/components/global-controls';
-import { usePathname } from 'next/navigation';
 import { useMobileSidebar } from '@/hooks/use-mobile-sidebar';
 import { useVoiceSearch } from '@/context/voice-search-context';
 
@@ -24,7 +22,7 @@ export default function Home() {
   return (
     <>
       <div className="relative container mx-auto px-4 flex flex-col h-screen py-8">
-        <header className="text-center flex flex-col items-center space-y-2 pt-12 flex-shrink-0">
+        <header className="relative text-center flex flex-col items-center space-y-2 pt-12 flex-shrink-0 border rounded-lg p-4 pb-6">
           <div className="absolute top-4 left-4 right-4 flex justify-between z-10">
             <Button 
               variant="outline" 
