@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import { ClientProviders } from '@/components/client-providers';
+import GlobalControls from '@/components/global-controls';
 
 export const metadata: Metadata = {
   title: 'TechTermz',
@@ -26,6 +27,7 @@ export default function RootLayout({
       </head>
       <body className="font-body antialiased">
         <ClientProviders>
+          <GlobalControls />
           <div className="relative flex min-h-screen w-full flex-col">
             <main className="flex-1">{children}</main>
           </div>
