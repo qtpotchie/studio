@@ -1,3 +1,4 @@
+
 "use client";
 import { useSearchHistory } from '@/context/search-history-context';
 import { Button } from '@/components/ui/button';
@@ -20,10 +21,10 @@ export default function HistoryPage() {
 
   return (
     <div className="container mx-auto px-4 py-8 space-y-8">
-      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-8 gap-4">
-        <h1 className="text-3xl md:text-4xl font-bold font-headline">Search History</h1>
+      <div className="flex flex-row items-center justify-between mb-8 gap-4">
+        <h1 className="text-2xl sm:text-3xl font-bold font-headline">Search History</h1>
         <div className="flex items-center gap-2">
-          <Button asChild variant="outline">
+          <Button asChild variant="outline" size="sm">
             <Link href="/">
               <ArrowLeft className="mr-2 h-4 w-4" />
               Back
@@ -32,7 +33,7 @@ export default function HistoryPage() {
           {history.length > 0 && (
             <AlertDialog>
               <AlertDialogTrigger asChild>
-                <Button variant="destructive">
+                <Button variant="destructive" size="sm">
                   <Trash2 className="mr-2 h-4 w-4" />
                   Clear
                 </Button>
