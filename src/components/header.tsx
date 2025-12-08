@@ -25,27 +25,26 @@ export default function Header() {
         </div>
 
         <div className="flex flex-1 items-center justify-end space-x-2">
-          <div className="hidden md:flex items-center space-x-2">
-             <SearchTrigger />
-             <Button variant="default" size="icon" onClick={() => setVoiceOpen(true)}>
-              <Mic className="h-5 w-5" />
-              <span className="sr-only">Voice Search</span>
-            </Button>
+          {/* Desktop Search */}
+          <div className="hidden md:block">
+            <SearchTrigger />
           </div>
-          <div className="flex md:hidden items-center space-x-2">
-            <Button variant="ghost" size="icon" onClick={() => setOpen(true)}>
-                <Search className="h-5 w-5" />
-                <span className="sr-only">Search</span>
-            </Button>
-            <Button variant="default" size="icon" onClick={() => setVoiceOpen(true)}>
-              <Mic className="h-5 w-5" />
-              <span className="sr-only">Voice Search</span>
-            </Button>
-             <Button variant="ghost" size="icon" onClick={onOpen}>
-                <Menu className="h-5 w-5" />
-                <span className="sr-only">Open menu</span>
-              </Button>
-          </div>
+
+          {/* Mobile Search Icon */}
+          <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setOpen(true)}>
+            <Search className="h-5 w-5" />
+            <span className="sr-only">Search</span>
+          </Button>
+
+          {/* Voice and Menu Icons (Visible on all sizes) */}
+          <Button variant="default" size="icon" onClick={() => setVoiceOpen(true)}>
+            <Mic className="h-5 w-5" />
+            <span className="sr-only">Voice Search</span>
+          </Button>
+          <Button variant="ghost" size="icon" onClick={onOpen}>
+            <Menu className="h-5 w-5" />
+            <span className="sr-only">Open menu</span>
+          </Button>
         </div>
       </div>
     </header>
