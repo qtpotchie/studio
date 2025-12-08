@@ -4,7 +4,7 @@
 import Logo from '@/components/logo';
 import { terms } from '@/lib/data';
 import { Button } from '@/components/ui/button';
-import { BookOpen, Search } from 'lucide-react';
+import { BookOpen, Menu, Mic, Search } from 'lucide-react';
 import WordOfTheDay from '@/components/word-of-the-day';
 import Link from 'next/link';
 import { useState } from 'react';
@@ -12,16 +12,34 @@ import ExplorerDialog from '@/components/explorer-dialog';
 import { useSearch } from '@/hooks/use-search';
 import GlobalControls from '@/components/global-controls';
 import { usePathname } from 'next/navigation';
+import { useMobileSidebar } from '@/hooks/use-mobile-sidebar';
+import { useVoiceSearch } from '@/context/voice-search-context';
 
 export default function Home() {
   const [isExplorerOpen, setIsExplorerOpen] = useState(false);
   const { setOpen } = useSearch();
+  const { setOpen: setVoiceOpen } = useVoiceSearch();
+  const { onOpen } = useMobileSidebar();
 
   return (
     <>
       <div className="relative container mx-auto px-4 flex flex-col h-screen py-8">
-        <GlobalControls />
         <header className="text-center flex flex-col items-center space-y-2 pt-12 flex-shrink-0">
+          <div className="absolute top-4 left-4 right-4 flex justify-between z-10">
+            <Button 
+              variant="outline" 
+              size="icon" 
+              onClick={onOpen}
+              className="h-12 w-12 transition-transform duration-200 ease-in-out active:rotate-90"
+            >
+              <Menu className="h-6 w-6" />
+              <span className="sr-only">Open menu</span>
+            </Button>
+            <Button variant="outline" size="icon" onClick={() => setVoiceOpen(true)} className="h-12 w-12">
+              <Mic className="h-6 w-6" />
+              <span className="sr-only">Voice Search</span>
+            </Button>
+          </div>
           <Logo className="w-16 h-16 md:w-24 md:h-24" />
           <h1 className="text-3xl md:text-5xl font-bold font-headline tracking-tighter">
             TechTermz
@@ -54,7 +72,6 @@ export default function Home() {
         </div>
 
         <div className="flex-shrink-0 pb-4 md:pb-0 relative">
-            <div className="absolute -inset-20 bg-primary/20 [filter:blur(100px)] -z-10"></div>
             <WordOfTheDay terms={terms} />
         </div>
       </div>
