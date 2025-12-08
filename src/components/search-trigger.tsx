@@ -10,7 +10,7 @@ export default function SearchTrigger() {
   return (
     <Button
       variant="outline"
-      className="h-14 text-muted-foreground text-lg justify-start px-8 border-2 hover:bg-accent/50 hover:text-foreground w-80"
+      className="h-14 text-muted-foreground text-lg justify-start px-8 border-2 hover:bg-accent/50 hover:text-foreground w-96"
       onClick={() => setOpen(true)}
     >
       <Search className="mr-4 h-5 w-5" />
