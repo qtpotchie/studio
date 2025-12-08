@@ -28,9 +28,9 @@ export default function WordOfTheDay({ terms }: { terms: Term[] }) {
     <div className="max-w-xl mx-auto">
       <Link href={`/term/${word.slug}`} className="block group">
         <Card className="overflow-hidden transition-all border-border hover:border-primary/50 bg-card/50">
-          <div className="p-6 md:p-8 bg-primary/20">
-              <h3 className="font-headline text-3xl md:text-4xl font-bold text-primary">{word.term}</h3>
-              <p className="text-base md:text-lg mt-2 text-foreground/80">{word.definition}</p>
+          <div className="p-6 md:p-8 bg-primary text-primary-foreground">
+              <h3 className="font-headline text-3xl md:text-4xl font-bold">{word.term}</h3>
+              <p className="text-base md:text-lg mt-2 text-primary-foreground/80">{word.definition}</p>
           </div>
           <CardContent className="p-6">
             <p className="text-xs md:text-sm font-semibold tracking-widest text-muted-foreground">WORD OF THE DAY</p>
