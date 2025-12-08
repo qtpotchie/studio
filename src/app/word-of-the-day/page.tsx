@@ -6,7 +6,6 @@ import { terms } from '@/lib/data';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, CalendarDays } from 'lucide-react';
-import { Separator } from '@/components/ui/separator';
 
 type WordHistoryItem = {
   date: string; // YYYY-MM-DD
@@ -46,9 +45,9 @@ export default function WordOfTheDayArchivePage() {
 
   return (
     <div className="container mx-auto px-4 py-8 max-w-4xl">
-      <div className="flex items-center justify-between mb-8">
+      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-8 gap-4">
         <h1 className="text-3xl md:text-4xl font-bold font-headline flex items-center">
-          <CalendarDays className="mr-4 h-8 w-8" />
+          <CalendarDays className="mr-3 h-7 w-7 md:h-8 md:w-8" />
           Word of the Day
         </h1>
         <Button asChild variant="outline">
@@ -68,10 +67,10 @@ export default function WordOfTheDayArchivePage() {
 
               return (
                 <li key={date}>
-                  <Link href={`/term/${term.slug}`} className="block p-4 hover:bg-accent transition-colors">
-                    <div className="flex items-center gap-4">
-                      <span className="text-sm font-mono text-muted-foreground w-20">{formatDate(date)}</span>
-                      <span className="font-semibold text-lg">{term.term}</span>
+                  <Link href={`/term/${term.slug}`} className="block p-3 md:p-4 hover:bg-accent transition-colors">
+                    <div className="flex items-center gap-3 md:gap-4">
+                      <span className="text-xs md:text-sm font-mono text-muted-foreground w-16 md:w-20 text-center">{formatDate(date)}</span>
+                      <span className="font-semibold text-base md:text-lg">{term.term}</span>
                     </div>
                   </Link>
                 </li>
