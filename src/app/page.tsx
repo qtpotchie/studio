@@ -10,14 +10,18 @@ import Link from 'next/link';
 import { useState } from 'react';
 import ExplorerDialog from '@/components/explorer-dialog';
 import { useSearch } from '@/hooks/use-search';
+import GlobalControls from '@/components/global-controls';
+import { usePathname } from 'next/navigation';
 
 export default function Home() {
   const [isExplorerOpen, setIsExplorerOpen] = useState(false);
   const { setOpen } = useSearch();
+  const pathname = usePathname();
 
   return (
     <>
-      <div className="container mx-auto px-4 flex flex-col h-screen py-8">
+      <div className="relative container mx-auto px-4 flex flex-col h-screen py-8">
+        {pathname === '/' && <GlobalControls />}
         <header className="text-center flex flex-col items-center space-y-2 pt-12 flex-shrink-0">
           <Logo className="w-16 h-16 md:w-24 md:h-24" />
           <h1 className="text-3xl md:text-5xl font-bold font-headline tracking-tighter">
@@ -33,7 +37,7 @@ export default function Home() {
             <div className="flex justify-center items-center gap-2 px-4 w-full max-w-sm sm:max-w-md mx-auto my-6">
             <Button
                 variant="outline"
-                className="h-12 text-base border-2 basis-2/3"
+                className="h-10 text-base border-2 basis-2/3"
                 onClick={() => setOpen(true)}
             >
                 <Search className="mr-3 h-5 w-5" />
@@ -41,7 +45,7 @@ export default function Home() {
             </Button>
             <Button
                 variant="outline"
-                className="h-12 text-base px-4 border-2 basis-1/3"
+                className="h-10 text-base px-4 border-2 basis-1/3"
                 onClick={() => setIsExplorerOpen(true)}
             >
                 <BookOpen className="mr-3 h-5 w-5" />
