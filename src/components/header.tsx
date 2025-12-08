@@ -33,11 +33,6 @@ export default function Header() {
               <span className="sr-only">Search</span>
             </Button>
             <Button asChild variant="ghost" size="icon">
-              <Link href="/history" aria-label="View Search History">
-                <History className="h-5 w-5" />
-              </Link>
-            </Button>
-            <Button asChild variant="ghost" size="icon">
               <Link href="/bookmarks" aria-label="View Bookmarks">
                 <Bookmark className="h-5 w-5" />
               </Link>
