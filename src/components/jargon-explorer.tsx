@@ -2,12 +2,8 @@
 
 import { useState, useMemo, useEffect } from 'react';
 import type { Term } from '@/lib/data';
-import { Button } from '@/components/ui/button';
-import { Mic } from 'lucide-react';
-import { useSpeechRecognition } from '@/hooks/use-speech-recognition';
 import TermCard from './term-card';
 import WordOfTheDay from './word-of-the-day';
-import { useVoiceSearch } from '@/context/voice-search-context';
 import {
   Select,
   SelectContent,
@@ -19,10 +15,6 @@ import {
 
 export default function JargonExplorer({ terms }: { terms: Term[] }) {
   const [sortOrder, setSortOrder] = useState('alphabetical');
-  const [searchQuery, setSearchQuery] = useState('');
-  const { setOpen, setOnResult } = useVoiceSearch();
-
-  const { isSupported } = useSpeechRecognition();
 
   const [isClient, setIsClient] = useState(false);
   
@@ -41,13 +33,6 @@ export default function JargonExplorer({ terms }: { terms: Term[] }) {
 
   }, [terms, sortOrder]);
 
-  const handleVoiceSearch = () => {
-    setOnResult((result: string) => {
-      // For now, voice search from here doesn't populate a search bar.
-      // You could implement a filter state if desired.
-    });
-    setOpen(true);
-  }
 
   return (
     <div className="space-y-8">
@@ -55,12 +40,6 @@ export default function JargonExplorer({ terms }: { terms: Term[] }) {
       <div className="space-y-6">
         <div className="flex flex-col md:flex-row gap-2 items-center justify-center max-w-xl mx-auto">
           <div className="flex w-full md:w-auto items-center gap-2">
-            {isClient && isSupported && (
-              <Button type="button" size="icon" variant="default" onClick={handleVoiceSearch} className="h-14 w-14">
-                <Mic className="h-6 w-6" />
-                <span className="sr-only">Search by voice</span>
-              </Button>
-            )}
             <Select value={sortOrder} onValueChange={setSortOrder}>
               <SelectTrigger className="w-full md:w-[180px] h-14 text-lg">
                 <SelectValue placeholder="Sort by" />
