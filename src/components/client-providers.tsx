@@ -10,25 +10,20 @@ import VoiceSearchDialog from "./voice-search-dialog";
 import { terms } from "@/lib/data";
 import { MobileSidebarProvider } from "@/context/mobile-sidebar-context";
 import MobileSidebar from "./mobile-sidebar";
-import { ExplorerProvider } from "@/context/explorer-context";
-import ExplorerDialog from "./explorer-dialog";
 
 export function ClientProviders({ children }: { children: ReactNode }) {
   return (
     <MobileSidebarProvider>
       <SearchHistoryProvider>
         <BookmarkProvider>
-          <ExplorerProvider>
             <SearchProvider>
               <VoiceSearchProvider>
                 {children}
                 <SearchDialog terms={terms} />
-                <ExplorerDialog terms={terms} />
                 <VoiceSearchDialog />
                 <MobileSidebar />
               </VoiceSearchProvider>
             </SearchProvider>
-          </ExplorerProvider>
         </BookmarkProvider>
       </SearchHistoryProvider>
     </MobileSidebarProvider>
