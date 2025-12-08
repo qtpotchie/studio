@@ -13,7 +13,7 @@ export default function GlobalControls() {
     <>
       <div className="fixed top-4 left-4 z-50">
         <Button 
-          variant="outline" 
+          variant="default" 
           size="icon" 
           onClick={onOpen}
           className="h-12 w-12 transition-transform duration-200 ease-in-out active:rotate-90"
