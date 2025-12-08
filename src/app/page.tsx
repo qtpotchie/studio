@@ -11,6 +11,10 @@ export default function Home() {
         <h1 className="text-4xl md:text-5xl font-bold font-headline tracking-tighter">
           TechTermz
         </h1>
+        <p className="text-lg text-muted-foreground max-w-md">
+          Search, browse, and master the language of tech. Your go-to dictionary
+          for IT and tech jargon, available offline.
+        </p>
       </header>
       <div className="flex justify-center px-4">
         <SearchTrigger />
