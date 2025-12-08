@@ -33,9 +33,6 @@ export default function TermPage({ params }: { params: { slug: string } }) {
       <Card className="relative overflow-hidden">
         <CardHeader>
           <CardTitle className="text-3xl md:text-4xl font-bold font-headline pr-16">{term.term}</CardTitle>
-          {term.meaning && (
-            <p className="text-lg md:text-xl text-muted-foreground font-semibold pt-1">{term.meaning}</p>
-          )}
         </CardHeader>
         <CardContent className="space-y-8 text-lg">
           <div className="absolute top-4 right-4 md:top-6 md:right-6">
