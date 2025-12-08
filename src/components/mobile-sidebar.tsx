@@ -44,6 +44,7 @@ export default function MobileSidebar() {
         </div>
         <div className="flex flex-col gap-2 px-4">
             <NavLink href="/word-of-the-day" icon={CalendarDays} onClick={onClose}>Word of the Day</NavLink>
+            <NavLink href="/all-terms" icon={BookOpen} onClick={onClose}>All Terms</NavLink>
             <Separator className="my-2 bg-border/50" />
             <NavLink href="/history" icon={History} onClick={onClose}>Recent</NavLink>
             <NavLink href="/bookmarks" icon={Bookmark} onClick={onClose}>Saved Words</NavLink>
