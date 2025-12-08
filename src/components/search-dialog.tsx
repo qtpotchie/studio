@@ -19,14 +19,29 @@ export default function SearchDialog({ terms }: { terms: Term[] }) {
   const [searchQuery, setSearchQuery] = useState("");
   const debouncedSearchQuery = useDebounce(searchQuery, 300);
   const { addSearchQuery } = useSearchHistory();
+  const { setOnResult } = useVoiceSearch();
   const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
+    // Define what happens when a voice search result is ready
+    setOnResult((result: string) => {
+      setOpen(true);
+      setSearchQuery(result);
+    });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [setOpen, setOnResult]);
+
+
+  useEffect(() => {
     if (isOpen) {
-      setSearchQuery(""); // Clear search on open
+      // Don't clear search on open if it was just populated by voice search
+      // setSearchQuery(""); 
       setTimeout(() => {
         inputRef.current?.focus();
       }, 100);
+    } else {
+      // Clear search query when closing the dialog
+      setSearchQuery("");
     }
   }, [isOpen]);
 
