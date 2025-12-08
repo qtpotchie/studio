@@ -10,15 +10,19 @@ export default function GlobalControls() {
   const { onOpen } = useMobileSidebar();
 
   return (
-    <div className="fixed top-4 right-4 z-50 flex items-center space-x-2">
-      <Button variant="default" size="icon" onClick={() => setVoiceOpen(true)}>
-        <Mic className="h-5 w-5" />
-        <span className="sr-only">Voice Search</span>
-      </Button>
-      <Button variant="ghost" size="icon" onClick={onOpen}>
-        <Menu className="h-5 w-5" />
-        <span className="sr-only">Open menu</span>
-      </Button>
-    </div>
+    <>
+      <div className="fixed top-4 left-4 z-50">
+        <Button variant="ghost" size="icon" onClick={onOpen}>
+          <Menu className="h-5 w-5" />
+          <span className="sr-only">Open menu</span>
+        </Button>
+      </div>
+      <div className="fixed top-4 right-4 z-50">
+        <Button variant="default" size="icon" onClick={() => setVoiceOpen(true)}>
+          <Mic className="h-5 w-5" />
+          <span className="sr-only">Voice Search</span>
+        </Button>
+      </div>
+    </>
   );
 }
