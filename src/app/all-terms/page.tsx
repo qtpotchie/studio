@@ -22,10 +22,13 @@ export default function AllTermsPage() {
   return (
     <div className="container mx-auto px-4 py-8 max-w-4xl">
       <div className="flex items-center justify-between mb-8">
-        <h1 className="text-3xl md:text-4xl font-bold font-headline flex items-center">
-          <BookOpen className="mr-4 h-8 w-8" />
-          All Terms
-        </h1>
+        <div className="flex items-end gap-4">
+          <h1 className="text-3xl md:text-4xl font-bold font-headline flex items-center">
+            <BookOpen className="mr-4 h-8 w-8" />
+            All Terms
+          </h1>
+          <span className="text-xl text-muted-foreground font-medium pb-1">({terms.length})</span>
+        </div>
         <Button asChild variant="outline">
           <Link href="/">
             <ArrowLeft className="mr-2 h-4 w-4" />
