@@ -1,15 +1,8 @@
-
 "use client";
 import { terms } from '@/lib/data';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion"
 import type { Term } from '@/lib/data';
 
 type GroupedTerms = {
@@ -41,26 +34,24 @@ export default function AllTermsPage() {
         </Button>
       </div>
 
-      <Accordion type="multiple" className="w-full">
+      <div className="space-y-8">
         {sortedKeys.map((letter) => (
-          <AccordionItem value={letter} key={letter}>
-            <AccordionTrigger className="text-2xl font-headline">
-              {letter} ({groupedTerms[letter].length})
-            </AccordionTrigger>
-            <AccordionContent>
-              <ul className="list-disc pl-5 space-y-2">
-                {groupedTerms[letter].map((term) => (
-                  <li key={term.id}>
-                    <Link href={`/term/${term.slug}`} className="hover:underline text-primary">
-                      {term.term}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </AccordionContent>
-          </AccordionItem>
+          <section key={letter}>
+            <h2 className="text-3xl font-bold font-headline pb-4 mb-4 border-b border-border">
+              {letter}
+            </h2>
+            <ul className="list-disc pl-5 space-y-2 text-lg">
+              {groupedTerms[letter].sort((a,b) => a.term.localeCompare(b.term)).map((term) => (
+                <li key={term.id}>
+                  <Link href={`/term/${term.slug}`} className="hover:underline text-primary">
+                    {term.term}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
         ))}
-      </Accordion>
+      </div>
     </div>
   );
 }
