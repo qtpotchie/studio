@@ -32,7 +32,7 @@ export default function TermPage({ params }: { params: { slug: string } }) {
       </div>
       <Card className="relative overflow-hidden">
         <CardHeader>
-          <CardTitle className="text-3xl md:text-5xl font-bold font-headline pr-16">{term.term}</CardTitle>
+          <CardTitle className="text-3xl md:text-4xl font-bold font-headline pr-16">{term.term}</CardTitle>
         </CardHeader>
         <CardContent className="space-y-8 text-lg">
           <div className="absolute top-4 right-4 md:top-6 md:right-6">

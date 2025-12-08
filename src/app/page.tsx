@@ -18,8 +18,8 @@ export default function Home() {
   return (
     <>
       <div className="container mx-auto px-4 py-8 space-y-12">
-        <header className="text-center flex flex-col items-center space-y-4 mt-8">
-          <Logo className="w-24 h-24" />
+        <header className="text-center flex flex-col items-center space-y-4 mt-8 md:mt-12">
+          <Logo className="w-20 h-20 md:w-24 md:h-24" />
           <h1 className="text-4xl md:text-5xl font-bold font-headline tracking-tighter">
             TechTermz
           </h1>

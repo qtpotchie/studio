@@ -20,7 +20,7 @@ export default function HistoryPage() {
 
   return (
     <div className="container mx-auto px-4 py-8 space-y-8">
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-8 gap-4">
         <h1 className="text-3xl md:text-4xl font-bold font-headline">Search History</h1>
         <div className="flex items-center gap-2">
           <Button asChild variant="outline">
