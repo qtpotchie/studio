@@ -21,8 +21,10 @@ export default function Home() {
       <div className="relative container mx-auto px-4 flex flex-col h-screen py-8">
         <header className="text-center flex flex-col items-center space-y-4 pt-12 flex-shrink-0">
           <GlobalControls />
-          <div className="border-2 border-dashed border-primary/40 rounded-2xl p-6 flex flex-col items-center gap-2">
-            <Logo className="w-16 h-16 md:w-24 md:h-24" />
+          <div className="relative border-2 border-dashed border-primary/40 rounded-2xl p-6 pt-16 md:pt-20 mt-8 w-full max-w-md">
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-background px-4">
+              <Logo className="w-16 h-16 md:w-24 md:h-24" />
+            </div>
             <h1 className="text-3xl md:text-5xl font-bold font-headline tracking-tighter">
               TechTermz
             </h1>
@@ -55,6 +57,7 @@ export default function Home() {
         </div>
 
         <div className="flex-shrink-0 pb-4 md:pb-0 relative">
+          <div className="absolute bottom-full left-0 w-full h-20 bg-gradient-to-t from-background to-transparent pointer-events-none"></div>
             <WordOfTheDay terms={terms} />
         </div>
       </div>
