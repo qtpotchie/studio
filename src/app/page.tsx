@@ -17,7 +17,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="container mx-auto px-4 flex flex-col h-[calc(100vh-80px)] md:h-auto md:space-y-12 py-8">
+      <div className="container mx-auto px-4 flex flex-col h-[calc(100vh-80px)] md:space-y-12 py-8">
         <header className="text-center flex flex-col items-center space-y-2 md:space-y-4 pt-8 md:pt-12 flex-shrink-0">
           <Logo className="w-16 h-16 md:w-24 md:h-24" />
           <h1 className="text-3xl md:text-5xl font-bold font-headline tracking-tighter">
@@ -30,10 +30,10 @@ export default function Home() {
         </header>
 
         <div className="flex-grow flex flex-col justify-center items-center">
-            <div className="flex flex-col sm:flex-row justify-center items-center gap-4 px-4 w-full max-w-sm sm:max-w-md mx-auto my-6">
+            <div className="flex justify-center items-center gap-4 px-4 w-full max-w-sm sm:max-w-md mx-auto my-6">
             <Button
                 variant="outline"
-                className="h-14 text-lg px-8 border-2 w-full sm:w-auto"
+                className="h-14 text-lg px-8 border-2 flex-grow"
                 onClick={() => setOpen(true)}
             >
                 <Search className="mr-3 h-5 w-5" />
@@ -41,7 +41,7 @@ export default function Home() {
             </Button>
             <Button
                 variant="outline"
-                className="h-14 text-lg px-8 border-2 w-full sm:w-auto"
+                className="h-14 text-lg px-8 border-2"
                 onClick={() => setIsExplorerOpen(true)}
             >
                 <BookOpen className="mr-3 h-5 w-5" />
