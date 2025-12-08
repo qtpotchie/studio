@@ -108,3 +108,4 @@ export default function SearchDialog({ terms }: { terms: Term[] }) {
     </Dialog>
   );
 }
+
