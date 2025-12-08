@@ -1,17 +1,15 @@
 
 "use client";
 
-import { useState } from 'react';
 import Logo from '@/components/logo';
 import { terms } from '@/lib/data';
 import SearchTrigger from '@/components/search-trigger';
-import JargonExplorer from '@/components/jargon-explorer';
 import { Button } from '@/components/ui/button';
 import { BookOpen } from 'lucide-react';
 import WordOfTheDay from '@/components/word-of-the-day';
+import Link from 'next/link';
 
 export default function Home() {
-  const [showExplorer, setShowExplorer] = useState(false);
 
   return (
     <div className="container mx-auto px-4 py-8 space-y-12">
@@ -30,16 +28,17 @@ export default function Home() {
         <Button
           variant="outline"
           className="h-14 text-lg px-8 border-2"
-          onClick={() => setShowExplorer(!showExplorer)}
+          asChild
         >
-          <BookOpen className="mr-3 h-5 w-5" />
-          <span>Explore</span>
+          <Link href="/all-terms">
+            <BookOpen className="mr-3 h-5 w-5" />
+            <span>Explore</span>
+          </Link>
         </Button>
       </div>
 
       <WordOfTheDay terms={terms} />
       
-      {showExplorer && <JargonExplorer terms={terms} />}
     </div>
   );
 }
