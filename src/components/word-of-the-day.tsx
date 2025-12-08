@@ -27,17 +27,18 @@ export default function WordOfTheDay({ terms }: { terms: Term[] }) {
   return (
     <div className="max-w-xl mx-auto">
       <Link href={`/term/${word.slug}`} className="block group">
-        <Card className="overflow-hidden transition-all bg-card/50 backdrop-blur-sm border-primary/20 hover:border-primary/50">
-          <div className="p-4 md:p-8">
-              <h3 className="font-headline text-2xl md:text-4xl font-bold text-primary">{word.term}</h3>
-              <p className="text-base md:text-lg mt-2 text-foreground/80 line-clamp-2 md:line-clamp-none">{word.definition}</p>
+        <Card className="overflow-hidden transition-all border-border hover:border-primary/50 bg-card/50">
+          <div className="p-6 md:p-8 bg-primary/20">
+              <h3 className="font-headline text-3xl md:text-4xl font-bold text-primary">{word.term}</h3>
+              <p className="text-base md:text-lg mt-2 text-foreground/80">{word.definition}</p>
           </div>
-          <CardContent className="p-4 md:p-6 bg-accent/30">
+          <CardContent className="p-6">
             <p className="text-xs md:text-sm font-semibold tracking-widest text-muted-foreground">WORD OF THE DAY</p>
-            <p className="text-xs md:text-sm text-muted-foreground mt-1">{currentDate}</p>
-            <div className="flex items-center mt-2 md:mt-4 font-semibold text-primary group-hover:underline">
+            <div className="w-12 h-px bg-border my-2"></div>
+            <p className="text-xs md:text-sm text-muted-foreground">{currentDate}</p>
+            <div className="flex items-center mt-4 font-semibold text-primary group-hover:underline">
               <span>LEARN MORE</span>
-              <ArrowRight className="ml-2 h-4 w-4" />
+              <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </div>
           </CardContent>
         </Card>
