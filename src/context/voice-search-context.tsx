@@ -1,6 +1,6 @@
 "use client";
 
-import React, { createContext, useState, ReactNode, useContext } from 'react';
+import React, { createContext, useState, ReactNode, useContext, useCallback } from 'react';
 
 type ResultCallback = (result: string) => void;
 
@@ -17,11 +17,15 @@ export const VoiceSearchProvider = ({ children }: { children: ReactNode }) => {
   const [isOpen, setOpen] = useState(false);
   const [onResult, setOnResult] = useState<ResultCallback>(() => () => {});
 
+  const memoizedSetOnResult = useCallback((callback: ResultCallback) => {
+    setOnResult(() => callback);
+  }, []);
+
   const value = {
     isOpen,
     setOpen,
     onResult,
-    setOnResult: (callback: ResultCallback) => setOnResult(() => callback),
+    setOnResult: memoizedSetOnResult,
   };
 
   return (
