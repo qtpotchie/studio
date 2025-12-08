@@ -48,14 +48,15 @@ export default function AllTermsPage() {
               {letter} ({groupedTerms[letter].length})
             </AccordionTrigger>
             <AccordionContent>
-              <div className="divide-y divide-border">
+              <ul className="list-disc pl-5 space-y-2">
                 {groupedTerms[letter].map((term) => (
-                  <Link href={`/term/${term.slug}`} key={term.id} className="block p-4 hover:bg-accent">
-                    <h3 className="font-semibold text-lg">{term.term}</h3>
-                    <p className="text-sm text-muted-foreground mt-1 line-clamp-2">{term.definition}</p>
-                  </Link>
+                  <li key={term.id}>
+                    <Link href={`/term/${term.slug}`} className="hover:underline text-primary">
+                      {term.term}
+                    </Link>
+                  </li>
                 ))}
-              </div>
+              </ul>
             </AccordionContent>
           </AccordionItem>
         ))}
