@@ -16,7 +16,7 @@ export default function Home() {
           dictionary for IT and tech jargon, available offline.
         </p>
       </header>
-      <div className="px-4">
+      <div className="flex justify-center px-4">
         <SearchTrigger />
       </div>
       <JargonExplorer terms={terms} />
