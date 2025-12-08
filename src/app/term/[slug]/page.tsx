@@ -24,7 +24,7 @@ export default function TermPage({ params }: { params: { slug: string } }) {
     <div className="max-w-4xl mx-auto py-8 px-4">
       <div className="mb-6">
         <Button asChild variant="outline">
-          <Link href="/">
+          <Link href="/all-terms">
             <ArrowLeft className="mr-2 h-4 w-4" />
             Back to all terms
           </Link>
