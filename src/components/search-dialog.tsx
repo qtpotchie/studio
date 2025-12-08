@@ -5,7 +5,7 @@ import { useState, useEffect, useMemo, useRef } from "react";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { Search, X } from "lucide-react";
+import { Search, X, ArrowLeft } from "lucide-react";
 import { useSearch } from "@/hooks/use-search";
 import type { Term } from "@/lib/data";
 import { useSearchHistory } from "@/context/search-history-context";
@@ -48,9 +48,19 @@ export default function SearchDialog({ terms }: { terms: Term[] }) {
 
   return (
     <Dialog open={isOpen} onOpenChange={setOpen}>
-      <DialogContent className="p-0 gap-0 max-w-lg h-[60vh] flex flex-col">
+      <DialogContent className="p-0 gap-0 max-w-lg h-[60vh] flex flex-col" hideCloseButton>
         <DialogTitle className="sr-only">Search Terms</DialogTitle>
         <div className="p-4 border-b flex items-center gap-2 sticky top-0 bg-background">
+          <Button
+              type="button"
+              variant="ghost"
+              size="icon"
+              className="h-9 w-9 shrink-0"
+              onClick={() => setOpen(false)}
+            >
+              <ArrowLeft className="h-5 w-5" />
+              <span className="sr-only">Back</span>
+            </Button>
           <div className="relative flex-grow">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
             <Input
@@ -108,4 +118,3 @@ export default function SearchDialog({ terms }: { terms: Term[] }) {
     </Dialog>
   );
 }
-
