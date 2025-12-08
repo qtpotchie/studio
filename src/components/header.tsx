@@ -37,7 +37,7 @@ export default function Header() {
                 <Search className="h-5 w-5" />
                 <span className="sr-only">Search</span>
             </Button>
-            <Button variant="default" size="icon" onClick={() => setVoiceOpen(Hometrue)}>
+            <Button variant="default" size="icon" onClick={() => setVoiceOpen(true)}>
               <Mic className="h-5 w-5" />
               <span className="sr-only">Voice Search</span>
             </Button>
