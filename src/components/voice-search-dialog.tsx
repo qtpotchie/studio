@@ -1,6 +1,7 @@
+
 "use client";
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Dialog, DialogContent, DialogOverlay, DialogTitle } from '@/components/ui/dialog';
 import { Mic, X } from 'lucide-react';
 import { useSpeechRecognition } from '@/hooks/use-speech-recognition';
@@ -18,9 +19,11 @@ export default function VoiceSearchDialog() {
     stopListening,
   } = useSpeechRecognition();
   const { toast } = useToast();
+  const [statusText, setStatusText] = useState('Listening...');
 
   useEffect(() => {
     if (isOpen) {
+      setStatusText('Listening...');
       startListening();
     } else {
       stopListening();
@@ -29,30 +32,44 @@ export default function VoiceSearchDialog() {
   }, [isOpen]);
 
   useEffect(() => {
-    if (transcript && !isListening) {
+    if (transcript && !isListening && isOpen) {
       onResult(transcript);
       setOpen(false);
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [transcript, isListening, onResult, setOpen]);
 
   useEffect(() => {
-    if (error) {
+    if (error && isOpen) {
       if (error === 'no-speech') {
-        toast({
-          variant: 'destructive',
-          title: 'Voice Search',
-          description: 'No speech was detected. Please try again.',
-        });
+        setStatusText('No speech detected. Try again.');
+        // Briefly show error, then restart listening
+        setTimeout(() => {
+          if (isOpen) {
+            setStatusText('Listening...');
+            startListening();
+          }
+        }, 2000);
       } else {
         toast({
           variant: 'destructive',
           title: 'Voice Search Error',
-          description: `Could not start voice search. Error: "${error}". Please check your internet connection and microphone permissions.`,
+          description: `Could not start voice search. Error: "${error}". Please check your microphone permissions.`,
         });
+        setOpen(false);
       }
-      setOpen(false);
     }
-  }, [error, setOpen, toast]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [error]);
+
+  const handleMicClick = () => {
+    if (isListening) {
+      stopListening();
+    } else {
+      setStatusText('Listening...');
+      startListening();
+    }
+  }
 
   return (
     <Dialog open={isOpen} onOpenChange={setOpen}>
@@ -63,9 +80,9 @@ export default function VoiceSearchDialog() {
       >
         <DialogTitle className="sr-only">Voice Search</DialogTitle>
         <div className="w-full flex flex-col items-center gap-6">
-          <p className="text-2xl text-foreground/80 font-medium">Listening...</p>
+          <p className="text-2xl text-foreground/80 font-medium h-8">{statusText}</p>
           <button
-            onClick={isListening ? stopListening : startListening}
+            onClick={handleMicClick}
             className={cn(
               "rounded-full w-24 h-24 flex items-center justify-center transition-all duration-300",
               isListening ? "bg-primary animate-pulse" : "bg-muted"
