@@ -4,16 +4,13 @@ import { useState, useEffect, useMemo, FormEvent, useRef } from "react";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { Search, ArrowLeft, X, Mic } from "lucide-react";
+import { Search, ArrowLeft, X } from "lucide-react";
 import { useSearch } from "@/hooks/use-search";
 import type { Term } from "@/lib/data";
 import { useSearchHistory } from "@/context/search-history-context";
 import { ScrollArea } from "./ui/scroll-area";
 import Link from "next/link";
 import { useDebounce } from "@/hooks/use-debounce";
-import { cn } from "@/lib/utils";
-import { useSpeechRecognition } from "@/hooks/use-speech-recognition";
-import { useToast } from "@/hooks/use-toast";
 import { useVoiceSearch } from "@/context/voice-search-context";
 
 export default function SearchDialog({ terms }: { terms: Term[] }) {
@@ -21,20 +18,11 @@ export default function SearchDialog({ terms }: { terms: Term[] }) {
   const [searchQuery, setSearchQuery] = useState("");
   const debouncedSearchQuery = useDebounce(searchQuery, 300);
   const { addSearchQuery } = useSearchHistory();
-  const { toast } = useToast();
-  const { setOpen: setVoiceOpen, setOnResult } = useVoiceSearch();
+  const { setOnResult } = useVoiceSearch();
   const inputRef = useRef<HTMLInputElement>(null);
-
-  const { isSupported } = useSpeechRecognition();
-  
-  const [isClient, setIsClient] = useState(false);
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
 
   useEffect(() => {
     if (isOpen) {
-      // Delay focus slightly to ensure dialog is fully rendered, especially on mobile
       setTimeout(() => {
         inputRef.current?.focus();
       }, 100);
@@ -49,20 +37,6 @@ export default function SearchDialog({ terms }: { terms: Term[] }) {
         term.definition.toLowerCase().includes(debouncedSearchQuery.toLowerCase())
     );
   }, [terms, debouncedSearchQuery]);
-
-  const handleSearchSubmit = (e: FormEvent) => {
-    e.preventDefault();
-    if (searchQuery.trim()) {
-      addSearchQuery(searchQuery);
-    }
-  };
-
-  const handleVoiceSearch = () => {
-    setOnResult((result: string) => {
-      setSearchQuery(result);
-    });
-    setVoiceOpen(true);
-  }
 
   const handleResultClick = () => {
     if (searchQuery.trim()) {
@@ -90,7 +64,6 @@ export default function SearchDialog({ terms }: { terms: Term[] }) {
               className="pl-10 pr-10 text-lg h-12"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              autoFocus
             />
             {searchQuery && (
               <Button
@@ -111,9 +84,9 @@ export default function SearchDialog({ terms }: { terms: Term[] }) {
           {debouncedSearchQuery && filteredTerms.length > 0 && (
               <div className="flex flex-col">
                 {filteredTerms.map((term) => (
-                  <Link 
-                    href={`/term/${term.slug}`} 
-                    key={term.id} 
+                  <Link
+                    href={`/term/${term.slug}`}
+                    key={term.id}
                     className="p-3 -mx-3 rounded-lg hover:bg-accent transition-colors"
                     onClick={handleResultClick}
                   >
