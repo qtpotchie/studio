@@ -16,13 +16,13 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 max-w-screen-2xl items-center">
-        <div className="mr-4 flex md:hidden">
-          <Button variant="ghost" size="icon" onClick={onOpen}>
+        <div className="mr-4 flex">
+          <Button variant="ghost" size="icon" onClick={onOpen} className="md:hidden">
             <Menu className="h-5 w-5" />
             <span className="sr-only">Open menu</span>
           </Button>
         </div>
-        <div className="mr-4 hidden md:flex">
+        <div className="mr-4 flex items-center">
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <Logo />
             <span className="font-bold">TechTermz</span>
@@ -48,44 +48,10 @@ export default function Header() {
               </Link>
             </Button>
           </nav>
-          <div className="hidden md:block">
-             <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="icon">
-                  <Menu className="h-5 w-5" />
-                  <span className="sr-only">Open menu</span>
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end">
-                <DropdownMenuItem asChild>
-                  <Link href="/">
-                    <HomeIcon className="mr-2 h-4 w-4" />
-                    <span>Home</span>
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link href="/all-terms">
-                    <BookOpen className="mr-2 h-4 w-4" />
-                    <span>All Terms</span>
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuSeparator />
-                <WordOfTheDayLink />
-                <DropdownMenuItem asChild>
-                  <Link href="/history">
-                    <History className="mr-2 h-4 w-4" />
-                    <span>Search History</span>
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link href="/bookmarks">
-                    <Bookmark className="mr-2 h-4 w-4" />
-                    <span>Bookmarked Terms</span>
-                  </Link>
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-          </div>
+           <Button variant="ghost" size="icon" onClick={onOpen}>
+              <Menu className="h-5 w-5" />
+              <span className="sr-only">Open menu</span>
+            </Button>
         </div>
       </div>
     </header>
