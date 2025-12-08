@@ -68,38 +68,42 @@ export default function SearchDialog({ terms }: { terms: Term[] }) {
         <DialogTitle className="sr-only">Search</DialogTitle>
         <div className="p-4 border-b">
           <form onSubmit={handleSearchSubmit}>
-            <div className="relative flex items-center gap-2">
-              <Button type="button" variant="ghost" size="icon" className="h-9 w-9 shrink-0" onClick={() => setOpen(false)}>
-                <ArrowLeft className="h-5 w-5" />
-                <span className="sr-only">Back</span>
-              </Button>
-              <Search className="absolute left-12 h-5 w-5 text-muted-foreground" />
+            <div className="relative">
+              <div className="absolute left-3 top-1/2 -translate-y-1/2 flex items-center">
+                <Button type="button" variant="ghost" size="icon" className="h-9 w-9 shrink-0" onClick={() => setOpen(false)}>
+                  <ArrowLeft className="h-5 w-5" />
+                  <span className="sr-only">Back</span>
+                </Button>
+              </div>
+              <Search className="absolute left-14 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
               <Input
                 type="search"
                 placeholder={"Search for a term..."}
-                className="pl-10 text-lg h-10"
+                className="pl-24 pr-24 text-lg h-12"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 autoFocus
               />
-              {searchQuery && (
-                <Button
-                  type="button"
-                  variant="ghost"
-                  size="icon"
-                  className="absolute right-[3.5rem] md:right-[4rem] h-9 w-9"
-                  onClick={() => setSearchQuery("")}
-                >
-                  <X className="h-5 w-5" />
-                  <span className="sr-only">Clear</span>
-                </Button>
-              )}
-               {isClient && isSupported && (
-                 <Button type="button" size="icon" onClick={handleVoiceSearch} variant="ghost" className="h-9 w-9">
-                  <Mic className="h-5 w-5" />
-                  <span className="sr-only">Search by voice</span>
-                </Button>
-              )}
+              <div className="absolute right-3 top-1/2 -translate-y-1/2 flex items-center gap-1">
+                {searchQuery && (
+                  <Button
+                    type="button"
+                    variant="ghost"
+                    size="icon"
+                    className="h-9 w-9"
+                    onClick={() => setSearchQuery("")}
+                  >
+                    <X className="h-5 w-5" />
+                    <span className="sr-only">Clear</span>
+                  </Button>
+                )}
+                 {isClient && isSupported && (
+                   <Button type="button" size="icon" onClick={handleVoiceSearch} variant="ghost" className="h-9 w-9">
+                    <Mic className="h-5 w-5" />
+                    <span className="sr-only">Search by voice</span>
+                  </Button>
+                )}
+              </div>
             </div>
           </form>
         </div>
