@@ -29,8 +29,8 @@ export default function GlobalControls() {
         </Button>
       </div>
       <div className="fixed top-4 right-4 z-50">
-        <Button variant="outline" size="icon" onClick={() => setVoiceOpen(true)}>
-          <Mic className="h-5 w-5" />
+        <Button variant="outline" size="icon" onClick={() => setVoiceOpen(true)} className="h-12 w-12">
+          <Mic className="h-6 w-6" />
           <span className="sr-only">Voice Search</span>
         </Button>
       </div>
