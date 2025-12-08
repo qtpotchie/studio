@@ -1,10 +1,11 @@
+
 "use client";
 
-import { useState, useEffect, useMemo, FormEvent, useRef } from "react";
+import { useState, useEffect, useMemo, useRef } from "react";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { Search, ArrowLeft, X } from "lucide-react";
+import { Search, X } from "lucide-react";
 import { useSearch } from "@/hooks/use-search";
 import type { Term } from "@/lib/data";
 import { useSearchHistory } from "@/context/search-history-context";
@@ -51,10 +52,6 @@ export default function SearchDialog({ terms }: { terms: Term[] }) {
       <DialogContent className="p-0 gap-0 max-w-2xl h-[calc(100%-4rem)] flex flex-col">
         <DialogTitle className="sr-only">Search Terms</DialogTitle>
         <div className="p-4 border-b flex items-center gap-2">
-          <Button type="button" variant="ghost" size="icon" className="h-9 w-9 shrink-0" onClick={() => setOpen(false)}>
-            <ArrowLeft className="h-5 w-5" />
-            <span className="sr-only">Back</span>
-          </Button>
           <div className="relative flex-grow">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
             <Input
