@@ -10,9 +10,9 @@ import Logo from "./logo";
 import { Separator } from "./ui/separator";
 
 const NavLink = ({ href, icon: Icon, children, onClick }: { href: string, icon: React.ElementType, children: React.ReactNode, onClick: () => void }) => (
-  <Button asChild variant="ghost" className="w-full justify-start text-lg h-14 gap-4 px-6">
+  <Button asChild variant="ghost" className="w-full justify-start text-base h-12 gap-4 px-4">
     <Link href={href} onClick={onClick}>
-      <Icon className="h-6 w-6" />
+      <Icon className="h-5 w-5" />
       {children}
     </Link>
   </Button>
@@ -32,23 +32,23 @@ export default function MobileSidebar() {
 
   return (
     <Sheet open={isOpen} onOpenChange={onClose}>
-      <SheetContent side="left" className="p-0 pt-10 w-80 bg-card border-r-0">
+      <SheetContent side="left" className="p-0 pt-8 w-72 bg-card border-r-0">
         <SheetHeader>
           <SheetTitle className="sr-only">Menu</SheetTitle>
         </SheetHeader>
-        <div className="flex justify-center mb-8">
-            <Link href="/" onClick={onClose} className="flex flex-col items-center gap-4">
-                <Logo className="w-20 h-20" />
-                <span className="text-xl font-bold">TechTermz</span>
+        <div className="flex justify-center mb-6">
+            <Link href="/" onClick={onClose} className="flex flex-col items-center gap-2">
+                <Logo className="w-16 h-16" />
+                <span className="text-lg font-bold">TechTermz</span>
             </Link>
         </div>
-        <div className="flex flex-col gap-2 px-4">
+        <div className="flex flex-col gap-1 px-2">
             <NavLink href="/word-of-the-day" icon={CalendarDays} onClick={onClose}>Word of the Day</NavLink>
             <NavLink href="/all-terms" icon={BookOpen} onClick={onClose}>All Terms</NavLink>
-            <Separator className="my-2 bg-border/50" />
+            <Separator className="my-1 bg-border/50" />
             <NavLink href="/history" icon={History} onClick={onClose}>Recent</NavLink>
             <NavLink href="/bookmarks" icon={Bookmark} onClick={onClose}>Saved Words</NavLink>
-            <Separator className="my-2 bg-border/50" />
+            <Separator className="my-1 bg-border/50" />
             <NavLink href="/about" icon={Info} onClick={onClose}>About</NavLink>
         </div>
       </SheetContent>
