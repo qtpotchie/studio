@@ -87,7 +87,7 @@ export default function SearchDialog({ terms }: { terms: Term[] }) {
                   type="button"
                   variant="ghost"
                   size="icon"
-                  className="absolute right-[3.5rem] md:right-[4.5rem] h-9 w-9"
+                  className="absolute right-[3.5rem] md:right-[4rem] h-9 w-9"
                   onClick={() => setSearchQuery("")}
                 >
                   <X className="h-5 w-5" />
