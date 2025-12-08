@@ -25,12 +25,12 @@ export default function AllTermsPage() {
 
   return (
     <div className="container mx-auto px-4 py-8 max-w-4xl">
-      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-8 gap-4">
-        <div className="flex items-center gap-4">
-          <h1 className="text-3xl md:text-4xl font-bold font-headline">All Terms</h1>
-          <Badge variant="secondary" className="text-lg">{terms.length}</Badge>
+      <div className="flex flex-row items-center justify-between mb-8 gap-4">
+        <div className="flex items-center gap-3">
+          <h1 className="text-2xl sm:text-3xl font-bold font-headline">All Terms</h1>
+          <Badge variant="secondary" className="text-base sm:text-lg">{terms.length}</Badge>
         </div>
-        <Button asChild variant="outline">
+        <Button asChild variant="outline" size="sm">
           <Link href="/">
             <ArrowLeft className="mr-2 h-4 w-4" />
             Back
@@ -41,10 +41,10 @@ export default function AllTermsPage() {
       <div className="space-y-8">
         {sortedKeys.map((letter) => (
           <section key={letter}>
-            <h2 className="text-3xl font-bold font-headline pb-4 mb-4 border-b border-border">
+            <h2 className="text-2xl sm:text-3xl font-bold font-headline pb-4 mb-4 border-b border-border">
               {letter}
             </h2>
-            <ul className="list-disc pl-5 space-y-2 text-lg">
+            <ul className="list-disc pl-5 space-y-2 text-base sm:text-lg">
               {groupedTerms[letter].sort((a,b) => a.term.localeCompare(b.term)).map((term) => (
                 <li key={term.id}>
                   <Link href={`/term/${term.slug}`} className="hover:underline text-primary">
