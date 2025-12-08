@@ -12,12 +12,12 @@ export default function BookmarksPage() {
 
   return (
     <div className="container mx-auto px-4 py-8 space-y-8">
-      <div className="flex items-center justify-between">
-        <h1 className="text-3xl md:text-4xl font-bold font-headline">Bookmarked Terms</h1>
-        <Button asChild variant="outline">
+      <div className="flex flex-row items-center justify-between mb-8 gap-4">
+        <h1 className="text-2xl sm:text-3xl font-bold font-headline">Bookmarked Terms</h1>
+        <Button asChild variant="outline" size="sm">
           <Link href="/">
             <ArrowLeft className="mr-2 h-4 w-4" />
-            Back to All
+            Back
           </Link>
         </Button>
       </div>
