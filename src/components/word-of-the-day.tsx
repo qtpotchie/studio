@@ -7,6 +7,7 @@ import Link from 'next/link';
 import { Card, CardContent } from '@/components/ui/card';
 import { ArrowRight } from 'lucide-react';
 import { useWordOfTheDay } from '@/hooks/use-word-of-the-day';
+import { Separator } from './ui/separator';
 
 export default function WordOfTheDay({ terms }: { terms: Term[] }) {
   const { word } = useWordOfTheDay(terms);
@@ -32,7 +33,8 @@ export default function WordOfTheDay({ terms }: { terms: Term[] }) {
               <h3 className="font-headline text-3xl md:text-4xl font-bold text-primary">{word.term}</h3>
               <p className="text-base md:text-lg mt-2 text-muted-foreground">{word.definition}</p>
           </div>
-          <CardContent className="p-6">
+          <CardContent className="p-6 pt-0">
+            <Separator className="mb-6"/>
             <p className="text-xs md:text-sm font-semibold tracking-widest text-muted-foreground">WORD OF THE DAY</p>
             <div className="w-12 h-px bg-border my-2"></div>
             <p className="text-xs md:text-sm text-muted-foreground">{currentDate}</p>
