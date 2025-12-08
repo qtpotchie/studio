@@ -12,8 +12,13 @@ export default function GlobalControls() {
   return (
     <>
       <div className="fixed top-4 left-4 z-50">
-        <Button variant="ghost" size="icon" onClick={onOpen}>
-          <Menu className="h-5 w-5" />
+        <Button 
+          variant="ghost" 
+          size="icon" 
+          onClick={onOpen}
+          className="h-12 w-12 transition-transform active:scale-90"
+        >
+          <Menu className="h-6 w-6" />
           <span className="sr-only">Open menu</span>
         </Button>
       </div>
