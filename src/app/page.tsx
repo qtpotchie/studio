@@ -28,10 +28,10 @@ export default function Home() {
             for IT and tech jargon, available offline.
           </p>
         </header>
-        <div className="flex justify-center items-center gap-4 px-4">
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-4 px-4">
           <Button
             variant="outline"
-            className="h-14 text-lg px-8 border-2"
+            className="h-14 text-lg px-8 border-2 w-full sm:w-auto"
             onClick={() => setOpen(true)}
           >
             <Search className="mr-3 h-5 w-5" />
@@ -39,7 +39,7 @@ export default function Home() {
           </Button>
           <Button
             variant="outline"
-            className="h-14 text-lg px-8 border-2"
+            className="h-14 text-lg px-8 border-2 w-full sm:w-auto"
             onClick={() => setIsExplorerOpen(true)}
           >
             <BookOpen className="mr-3 h-5 w-5" />
