@@ -31,6 +31,13 @@ export default function Header() {
 
         <div className="flex flex-1 items-center justify-end space-x-2">
           <nav className="flex items-center space-x-2">
+             <Button variant="ghost" className="hidden md:inline-flex" onClick={() => setOpen(true)}>
+              Search...
+             </Button>
+             <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setOpen(true)}>
+                <Mic className="h-5 w-5" />
+                <span className="sr-only">Search</span>
+             </Button>
              <Button variant="default" size="icon" onClick={() => setVoiceOpen(true)}>
               <Mic className="h-5 w-5" />
               <span className="sr-only">Voice Search</span>
