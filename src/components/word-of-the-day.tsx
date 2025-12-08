@@ -31,6 +31,7 @@ export default function WordOfTheDay({ terms }: { terms: Term[] }) {
         <Card className="overflow-hidden transition-all border-border hover:border-primary/50 bg-card/50">
           <div className="p-6 md:p-8">
               <h3 className="font-headline text-3xl md:text-4xl font-bold text-primary">{word.term}</h3>
+              {word.meaning && <p className="text-lg text-muted-foreground font-semibold pt-1">{word.meaning}</p>}
               <p className="text-base md:text-lg mt-2 text-muted-foreground">{word.definition}</p>
           </div>
           <CardContent className="p-6 pt-0">
