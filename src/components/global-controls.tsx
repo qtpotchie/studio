@@ -4,10 +4,16 @@ import { Button } from './ui/button';
 import { Menu, Mic } from 'lucide-react';
 import { useVoiceSearch } from '@/context/voice-search-context';
 import { useMobileSidebar } from '@/hooks/use-mobile-sidebar';
+import { usePathname } from 'next/navigation';
 
 export default function GlobalControls() {
   const { setOpen: setVoiceOpen } = useVoiceSearch();
   const { onOpen } = useMobileSidebar();
+  const pathname = usePathname();
+
+  if (pathname !== '/') {
+    return null;
+  }
 
   return (
     <>
@@ -23,7 +29,7 @@ export default function GlobalControls() {
         </Button>
       </div>
       <div className="fixed top-4 right-4 z-50">
-        <Button variant="default" size="icon" onClick={() => setVoiceOpen(true)}>
+        <Button variant="outline" size="icon" onClick={() => setVoiceOpen(true)}>
           <Mic className="h-5 w-5" />
           <span className="sr-only">Voice Search</span>
         </Button>
