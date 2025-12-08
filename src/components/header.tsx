@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import Logo from './logo';
 import { Button } from './ui/button';
-import { Menu, Mic, Search } from 'lucide-react';
+import { Menu, Mic } from 'lucide-react';
 import { useSearch } from '@/hooks/use-search';
 import { useVoiceSearch } from '@/context/voice-search-context';
 import { useMobileSidebar } from '@/hooks/use-mobile-sidebar';
@@ -24,13 +24,6 @@ export default function Header() {
         </div>
 
         <div className="flex flex-1 items-center justify-end space-x-2">
-          {/* Mobile Search Icon */}
-          <Button variant="ghost" size="icon" onClick={() => setOpen(true)}>
-            <Search className="h-5 w-5" />
-            <span className="sr-only">Search</span>
-          </Button>
-
-          {/* Voice and Menu Icons (Visible on all sizes) */}
           <Button variant="default" size="icon" onClick={() => setVoiceOpen(true)}>
             <Mic className="h-5 w-5" />
             <span className="sr-only">Voice Search</span>
