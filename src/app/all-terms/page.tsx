@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
 import type { Term } from '@/lib/data';
+import { Badge } from '@/components/ui/badge';
 
 type GroupedTerms = {
   [key: string]: Term[];
@@ -25,7 +26,10 @@ export default function AllTermsPage() {
   return (
     <div className="container mx-auto px-4 py-8 max-w-4xl">
       <div className="flex items-center justify-between mb-8">
-        <h1 className="text-3xl md:text-4xl font-bold font-headline">All Terms</h1>
+        <div className="flex items-center gap-4">
+          <h1 className="text-3xl md:text-4xl font-bold font-headline">All Terms</h1>
+          <Badge variant="secondary" className="text-lg">{terms.length}</Badge>
+        </div>
         <Button asChild variant="outline">
           <Link href="/">
             <ArrowLeft className="mr-2 h-4 w-4" />
