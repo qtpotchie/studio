@@ -88,12 +88,12 @@ export default function SearchDialog({ terms }: { terms: Term[] }) {
         <ScrollArea className="flex-1">
           <div className="p-4 pt-2">
           {debouncedSearchQuery && filteredTerms.length > 0 && (
-              <div className="flex flex-col">
+              <div className="flex flex-col gap-2">
                 {filteredTerms.map((term) => (
                   <Link
                     href={`/term/${term.slug}`}
                     key={term.id}
-                    className="p-3 -mx-3 rounded-lg hover:bg-accent transition-colors"
+                    className="p-3 border rounded-lg hover:bg-accent transition-colors"
                     onClick={handleResultClick}
                   >
                     <h3 className="font-semibold">{term.term}</h3>
