@@ -48,7 +48,7 @@ export default function SearchDialog({ terms }: { terms: Term[] }) {
 
   return (
     <Dialog open={isOpen} onOpenChange={setOpen}>
-      <DialogContent className="p-0 gap-0 max-w-lg h-[60vh] flex flex-col" hideCloseButton>
+      <DialogContent className="p-0 gap-0 w-screen h-screen max-w-full flex flex-col rounded-none" hideCloseButton>
         <DialogTitle className="sr-only">Search Terms</DialogTitle>
         <div className="p-4 border-b flex items-center gap-2 sticky top-0 bg-background">
           <Button
