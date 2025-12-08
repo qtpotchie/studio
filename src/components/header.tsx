@@ -7,6 +7,7 @@ import { Menu, Mic, Search } from 'lucide-react';
 import { useSearch } from '@/hooks/use-search';
 import { useVoiceSearch } from '@/context/voice-search-context';
 import { useMobileSidebar } from '@/hooks/use-mobile-sidebar';
+import SearchTrigger from './search-trigger';
 
 export default function Header() {
   const { setOpen } = useSearch();
@@ -24,20 +25,27 @@ export default function Header() {
         </div>
 
         <div className="flex flex-1 items-center justify-end space-x-2">
-          <nav className="flex items-center space-x-2">
-             <Button variant="ghost" size="icon" onClick={() => setOpen(true)}>
-                <Search className="h-5 w-5" />
-                <span className="sr-only">Search</span>
-             </Button>
+          <div className="hidden md:flex items-center space-x-2">
+             <SearchTrigger />
              <Button variant="default" size="icon" onClick={() => setVoiceOpen(true)}>
               <Mic className="h-5 w-5" />
               <span className="sr-only">Voice Search</span>
             </Button>
-          </nav>
-           <Button variant="ghost" size="icon" className="md:hidden" onClick={onOpen}>
-              <Menu className="h-5 w-5" />
-              <span className="sr-only">Open menu</span>
+          </div>
+          <div className="flex md:hidden items-center space-x-2">
+            <Button variant="ghost" size="icon" onClick={() => setOpen(true)}>
+                <Search className="h-5 w-5" />
+                <span className="sr-only">Search</span>
             </Button>
+            <Button variant="default" size="icon" onClick={() => setVoiceOpen(Hometrue)}>
+              <Mic className="h-5 w-5" />
+              <span className="sr-only">Voice Search</span>
+            </Button>
+             <Button variant="ghost" size="icon" onClick={onOpen}>
+                <Menu className="h-5 w-5" />
+                <span className="sr-only">Open menu</span>
+              </Button>
+          </div>
         </div>
       </div>
     </header>
