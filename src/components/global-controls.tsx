@@ -16,7 +16,7 @@ export default function GlobalControls() {
           variant="ghost" 
           size="icon" 
           onClick={onOpen}
-          className="h-12 w-12 transition-transform active:scale-90"
+          className="h-12 w-12 transition-transform active:rotate-90"
         >
           <Menu className="h-6 w-6" />
           <span className="sr-only">Open menu</span>
