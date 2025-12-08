@@ -17,37 +17,42 @@ export default function Home() {
 
   return (
     <>
-      <div className="container mx-auto px-4 py-8 space-y-12">
-        <header className="text-center flex flex-col items-center space-y-4 mt-8 md:mt-12">
-          <Logo className="w-20 h-20 md:w-24 md:h-24" />
-          <h1 className="text-4xl md:text-5xl font-bold font-headline tracking-tighter">
+      <div className="container mx-auto px-4 flex flex-col h-[calc(100vh-80px)] md:h-auto md:space-y-12 py-8">
+        <header className="text-center flex flex-col items-center space-y-2 md:space-y-4 pt-8 md:pt-12 flex-shrink-0">
+          <Logo className="w-16 h-16 md:w-24 md:h-24" />
+          <h1 className="text-3xl md:text-5xl font-bold font-headline tracking-tighter">
             TechTermz
           </h1>
-          <p className="text-lg text-muted-foreground max-w-md">
+          <p className="text-base md:text-lg text-muted-foreground max-w-md">
             Search, browse, and master the language of tech. Your go-to dictionary
             for IT and tech jargon, available offline.
           </p>
         </header>
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-4 px-4">
-          <Button
-            variant="outline"
-            className="h-14 text-lg px-8 border-2 w-full sm:w-auto"
-            onClick={() => setOpen(true)}
-          >
-            <Search className="mr-3 h-5 w-5" />
-            <span>Search</span>
-          </Button>
-          <Button
-            variant="outline"
-            className="h-14 text-lg px-8 border-2 w-full sm:w-auto"
-            onClick={() => setIsExplorerOpen(true)}
-          >
-            <BookOpen className="mr-3 h-5 w-5" />
-            <span>Explore</span>
-          </Button>
+
+        <div className="flex-grow flex flex-col justify-center items-center">
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-4 px-4 w-full max-w-sm sm:max-w-md mx-auto my-6">
+            <Button
+                variant="outline"
+                className="h-14 text-lg px-8 border-2 w-full sm:w-auto"
+                onClick={() => setOpen(true)}
+            >
+                <Search className="mr-3 h-5 w-5" />
+                <span>Search</span>
+            </Button>
+            <Button
+                variant="outline"
+                className="h-14 text-lg px-8 border-2 w-full sm:w-auto"
+                onClick={() => setIsExplorerOpen(true)}
+            >
+                <BookOpen className="mr-3 h-5 w-5" />
+                <span>Explore</span>
+            </Button>
+            </div>
         </div>
 
-        <WordOfTheDay terms={terms} />
+        <div className="flex-shrink-0 pb-4 md:pb-0">
+            <WordOfTheDay terms={terms} />
+        </div>
       </div>
       <ExplorerDialog 
         isOpen={isExplorerOpen} 
