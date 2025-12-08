@@ -18,12 +18,6 @@ export default function JargonExplorer({ terms }: JargonExplorerProps) {
         <h2 className="text-3xl md:text-4xl font-bold font-headline">
           Jargon Explorer
         </h2>
-        <Button asChild variant="outline">
-          <Link href="/">
-            <ArrowLeft className="mr-2 h-4 w-4" />
-            Back
-          </Link>
-        </Button>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {sortedTerms.map((term) => (
