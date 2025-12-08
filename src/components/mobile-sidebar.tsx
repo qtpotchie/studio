@@ -1,6 +1,6 @@
 "use client";
 
-import { Sheet, SheetContent } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet";
 import { useMobileSidebar } from "@/hooks/use-mobile-sidebar";
 import { useEffect, useState } from "react";
 import Link from "next/link";
@@ -33,6 +33,9 @@ export default function MobileSidebar() {
   return (
     <Sheet open={isOpen} onOpenChange={onClose}>
       <SheetContent side="left" className="p-0 pt-10 w-80 bg-card border-r-0">
+        <SheetHeader>
+          <SheetTitle className="sr-only">Menu</SheetTitle>
+        </SheetHeader>
         <div className="flex justify-center mb-8">
             <Link href="/" onClick={onClose} className="flex flex-col items-center gap-4">
                 <Logo className="w-20 h-20" />
