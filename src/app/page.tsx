@@ -21,7 +21,7 @@ export default function Home() {
       <div className="relative container mx-auto px-4 flex flex-col h-screen py-8">
         <header className="text-center flex flex-col items-center space-y-4 pt-12 flex-shrink-0">
           <GlobalControls />
-          <div className="border-2 border-primary/20 rounded-2xl p-6 flex flex-col items-center gap-2 shadow-lg shadow-primary/5">
+          <div className="border-2 border-dashed border-primary/40 rounded-2xl p-6 flex flex-col items-center gap-2">
             <Logo className="w-16 h-16 md:w-24 md:h-24" />
             <h1 className="text-3xl md:text-5xl font-bold font-headline tracking-tighter">
               TechTermz
