@@ -45,9 +45,9 @@ export default function WordOfTheDayArchivePage() {
 
   return (
     <div className="container mx-auto px-4 py-8 max-w-4xl">
-      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-8 gap-4">
-        <h1 className="text-3xl md:text-4xl font-bold font-headline flex items-center">
-          <CalendarDays className="mr-3 h-7 w-7 md:h-8 md:w-8" />
+      <div className="flex flex-row items-center justify-between mb-8 gap-4">
+        <h1 className="text-2xl sm:text-3xl font-bold font-headline flex items-center">
+          <CalendarDays className="mr-2 h-6 w-6 sm:mr-3 sm:h-7 sm:w-7" />
           Word of the Day
         </h1>
         <Button asChild variant="outline">
