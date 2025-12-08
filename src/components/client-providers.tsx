@@ -8,19 +8,24 @@ import { ReactNode } from "react";
 import SearchDialog from "./search-dialog";
 import VoiceSearchDialog from "./voice-search-dialog";
 import { terms } from "@/lib/data";
+import { MobileSidebarProvider } from "@/context/mobile-sidebar-context";
+import MobileSidebar from "./mobile-sidebar";
 
 export function ClientProviders({ children }: { children: ReactNode }) {
   return (
-    <SearchHistoryProvider>
-      <BookmarkProvider>
-        <SearchProvider>
-          <VoiceSearchProvider>
-            {children}
-            <SearchDialog terms={terms} />
-            <VoiceSearchDialog />
-          </VoiceSearchProvider>
-        </SearchProvider>
-      </BookmarkProvider>
-    </SearchHistoryProvider>
+    <MobileSidebarProvider>
+      <SearchHistoryProvider>
+        <BookmarkProvider>
+          <SearchProvider>
+            <VoiceSearchProvider>
+              {children}
+              <SearchDialog terms={terms} />
+              <VoiceSearchDialog />
+              <MobileSidebar />
+            </VoiceSearchProvider>
+          </SearchProvider>
+        </BookmarkProvider>
+      </SearchHistoryProvider>
+    </MobileSidebarProvider>
   )
 }
