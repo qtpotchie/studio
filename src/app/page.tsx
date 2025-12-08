@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState } from 'react';
@@ -7,6 +8,7 @@ import SearchTrigger from '@/components/search-trigger';
 import JargonExplorer from '@/components/jargon-explorer';
 import { Button } from '@/components/ui/button';
 import { BookOpen } from 'lucide-react';
+import WordOfTheDay from '@/components/word-of-the-day';
 
 export default function Home() {
   const [showExplorer, setShowExplorer] = useState(false);
@@ -34,6 +36,8 @@ export default function Home() {
           <span>Explore</span>
         </Button>
       </div>
+
+      <WordOfTheDay terms={terms} />
       
       {showExplorer && <JargonExplorer terms={terms} />}
     </div>
