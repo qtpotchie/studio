@@ -10,7 +10,7 @@ import Logo from "./logo";
 import { Separator } from "./ui/separator";
 
 const NavLink = ({ href, icon: Icon, children, onClick }: { href: string, icon: React.ElementType, children: React.ReactNode, onClick: () => void }) => (
-  <Button asChild variant="ghost" className="w-full justify-start text-base h-12 gap-4 px-4">
+  <Button asChild variant="ghost" className="w-full justify-start text-sm h-10 gap-3 px-4">
     <Link href={href} onClick={onClick}>
       <Icon className="h-5 w-5" />
       {children}
@@ -38,8 +38,8 @@ export default function MobileSidebar() {
         </SheetHeader>
         <div className="flex justify-center mb-6">
             <Link href="/" onClick={onClose} className="flex flex-col items-center gap-2">
-                <Logo className="w-16 h-16" />
-                <span className="text-lg font-bold">TechTermz</span>
+                <Logo className="w-12 h-12" />
+                <span className="text-base font-bold">TechTermz</span>
             </Link>
         </div>
         <div className="flex flex-col gap-1 px-2">
