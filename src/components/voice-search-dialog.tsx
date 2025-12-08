@@ -32,32 +32,25 @@ export default function VoiceSearchDialog() {
   }, [isOpen]);
 
   useEffect(() => {
+    // When the listening stops, and we have a result, use it.
     if (transcript && !isListening && isOpen) {
-      onResult(transcript);
-      setOpen(false);
+      // Check if we have a final transcript before closing.
+      if (transcript.trim().length > 0) {
+        onResult(transcript);
+        setOpen(false);
+      }
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [transcript, isListening, onResult, setOpen]);
 
   useEffect(() => {
     if (error && isOpen) {
-      if (error === 'no-speech') {
-        setStatusText('No speech detected. Try again.');
-        // Briefly show error, then restart listening
-        setTimeout(() => {
-          if (isOpen) {
-            setStatusText('Listening...');
-            startListening();
-          }
-        }, 2000);
-      } else {
-        toast({
-          variant: 'destructive',
-          title: 'Voice Search Error',
-          description: `Could not start voice search. Error: "${error}". Please check your microphone permissions.`,
-        });
-        setOpen(false);
-      }
+      toast({
+        variant: 'destructive',
+        title: 'Voice Search Error',
+        description: `Could not start voice search. Error: "${error}". Please check your microphone permissions.`,
+      });
+      setOpen(false);
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [error]);
@@ -80,7 +73,7 @@ export default function VoiceSearchDialog() {
       >
         <DialogTitle className="sr-only">Voice Search</DialogTitle>
         <div className="w-full flex flex-col items-center gap-6">
-          <p className="text-2xl text-foreground/80 font-medium h-8">{statusText}</p>
+          <p className="text-2xl text-foreground/80 font-medium h-8">{isListening ? 'Listening...' : (transcript ? ' ' : 'Say a command...')}</p>
           <button
             onClick={handleMicClick}
             className={cn(
