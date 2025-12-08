@@ -3,16 +3,17 @@
 
 import Logo from '@/components/logo';
 import { terms } from '@/lib/data';
-import SearchTrigger from '@/components/search-trigger';
 import { Button } from '@/components/ui/button';
-import { BookOpen } from 'lucide-react';
+import { BookOpen, Search } from 'lucide-react';
 import WordOfTheDay from '@/components/word-of-the-day';
 import Link from 'next/link';
 import { useState } from 'react';
 import ExplorerDialog from '@/components/explorer-dialog';
+import { useSearch } from '@/hooks/use-search';
 
 export default function Home() {
   const [isExplorerOpen, setIsExplorerOpen] = useState(false);
+  const { setOpen } = useSearch();
 
   return (
     <>
@@ -28,7 +29,14 @@ export default function Home() {
           </p>
         </header>
         <div className="flex justify-center items-center gap-4 px-4">
-          <SearchTrigger />
+          <Button
+            variant="outline"
+            className="h-14 text-lg px-8 border-2"
+            onClick={() => setOpen(true)}
+          >
+            <Search className="mr-3 h-5 w-5" />
+            <span>Search</span>
+          </Button>
           <Button
             variant="outline"
             className="h-14 text-lg px-8 border-2"

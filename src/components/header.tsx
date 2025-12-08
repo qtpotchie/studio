@@ -7,7 +7,6 @@ import { Menu, Mic, Search } from 'lucide-react';
 import { useSearch } from '@/hooks/use-search';
 import { useVoiceSearch } from '@/context/voice-search-context';
 import { useMobileSidebar } from '@/hooks/use-mobile-sidebar';
-import SearchTrigger from './search-trigger';
 
 export default function Header() {
   const { setOpen } = useSearch();
@@ -25,13 +24,8 @@ export default function Header() {
         </div>
 
         <div className="flex flex-1 items-center justify-end space-x-2">
-          {/* Desktop Search */}
-          <div className="hidden md:block">
-            <SearchTrigger />
-          </div>
-
           {/* Mobile Search Icon */}
-          <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setOpen(true)}>
+          <Button variant="ghost" size="icon" onClick={() => setOpen(true)}>
             <Search className="h-5 w-5" />
             <span className="sr-only">Search</span>
           </Button>
