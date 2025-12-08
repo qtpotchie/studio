@@ -19,11 +19,11 @@ export default function SearchDialog({ terms }: { terms: Term[] }) {
   const [searchQuery, setSearchQuery] = useState("");
   const debouncedSearchQuery = useDebounce(searchQuery, 300);
   const { addSearchQuery } = useSearchHistory();
-  const { setOnResult } = useVoiceSearch();
   const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     if (isOpen) {
+      setSearchQuery(""); // Clear search on open
       setTimeout(() => {
         inputRef.current?.focus();
       }, 100);
@@ -44,14 +44,13 @@ export default function SearchDialog({ terms }: { terms: Term[] }) {
       addSearchQuery(searchQuery);
     }
     setOpen(false);
-    setSearchQuery('');
   }
 
   return (
     <Dialog open={isOpen} onOpenChange={setOpen}>
-      <DialogContent className="p-0 gap-0 max-w-2xl h-[calc(100%-4rem)] flex flex-col">
+      <DialogContent className="p-0 gap-0 max-w-lg h-[60vh] flex flex-col">
         <DialogTitle className="sr-only">Search Terms</DialogTitle>
-        <div className="p-4 border-b flex items-center gap-2">
+        <div className="p-4 border-b flex items-center gap-2 sticky top-0 bg-background">
           <div className="relative flex-grow">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
             <Input
@@ -77,7 +76,7 @@ export default function SearchDialog({ terms }: { terms: Term[] }) {
           </div>
         </div>
         <ScrollArea className="flex-1">
-          <div className="p-4 pt-0">
+          <div className="p-4 pt-2">
           {debouncedSearchQuery && filteredTerms.length > 0 && (
               <div className="flex flex-col">
                 {filteredTerms.map((term) => (
@@ -96,6 +95,11 @@ export default function SearchDialog({ terms }: { terms: Term[] }) {
             {debouncedSearchQuery && filteredTerms.length === 0 && (
               <div className="text-center py-16 text-muted-foreground">
                 <p>No results found for &quot;{debouncedSearchQuery}&quot;.</p>
+              </div>
+            )}
+             {!debouncedSearchQuery && (
+              <div className="text-center py-16 text-muted-foreground">
+                <p>Start typing to search for terms.</p>
               </div>
             )}
           </div>
