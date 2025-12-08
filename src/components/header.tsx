@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import Logo from './logo';
 import { Button } from './ui/button';
-import { Menu, Mic } from 'lucide-react';
+import { Menu, Mic, Search } from 'lucide-react';
 import { useSearch } from '@/hooks/use-search';
 import { useVoiceSearch } from '@/context/voice-search-context';
 import { useMobileSidebar } from '@/hooks/use-mobile-sidebar';
@@ -25,11 +25,8 @@ export default function Header() {
 
         <div className="flex flex-1 items-center justify-end space-x-2">
           <nav className="flex items-center space-x-2">
-             <Button variant="ghost" className="hidden md:inline-flex" onClick={() => setOpen(true)}>
-              Search...
-             </Button>
-             <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setOpen(true)}>
-                <Mic className="h-5 w-5" />
+             <Button variant="ghost" size="icon" onClick={() => setOpen(true)}>
+                <Search className="h-5 w-5" />
                 <span className="sr-only">Search</span>
              </Button>
              <Button variant="default" size="icon" onClick={() => setVoiceOpen(true)}>
@@ -37,7 +34,7 @@ export default function Header() {
               <span className="sr-only">Voice Search</span>
             </Button>
           </nav>
-           <Button variant="ghost" size="icon" onClick={onOpen}>
+           <Button variant="ghost" size="icon" className="md:hidden" onClick={onOpen}>
               <Menu className="h-5 w-5" />
               <span className="sr-only">Open menu</span>
             </Button>
@@ -46,13 +43,3 @@ export default function Header() {
     </header>
   );
 }
-
-// Keeping dropdown for larger screens for now, can be removed if sidebar is desired everywhere
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-  DropdownMenuSeparator,
-} from '@/components/ui/dropdown-menu';
-import WordOfTheDayLink from './word-of-the-day-link';
