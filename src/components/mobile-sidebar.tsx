@@ -5,7 +5,7 @@ import { useMobileSidebar } from "@/hooks/use-mobile-sidebar";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Button } from "./ui/button";
-import { BookOpen, Bookmark, CalendarDays, History, HomeIcon } from "lucide-react";
+import { BookOpen, Bookmark, CalendarDays, History, HomeIcon, Info } from "lucide-react";
 import Logo from "./logo";
 import { Separator } from "./ui/separator";
 
@@ -47,6 +47,8 @@ export default function MobileSidebar() {
             <Separator className="my-2 bg-border/50" />
             <NavLink href="/history" icon={History} onClick={onClose}>Recent</NavLink>
             <NavLink href="/bookmarks" icon={Bookmark} onClick={onClose}>Saved Words</NavLink>
+            <Separator className="my-2 bg-border/50" />
+            <NavLink href="/about" icon={Info} onClick={onClose}>About</NavLink>
         </div>
       </SheetContent>
     </Sheet>
