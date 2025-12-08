@@ -8,8 +8,10 @@ import { Button } from '@/components/ui/button';
 import { BookOpen } from 'lucide-react';
 import WordOfTheDay from '@/components/word-of-the-day';
 import Link from 'next/link';
+import { useExplorer } from '@/hooks/use-explorer';
 
 export default function Home() {
+  const { setOpen } = useExplorer();
 
   return (
     <div className="container mx-auto px-4 py-8 space-y-12">
@@ -28,12 +30,10 @@ export default function Home() {
         <Button
           variant="outline"
           className="h-14 text-lg px-8 border-2"
-          asChild
+          onClick={() => setOpen(true)}
         >
-          <Link href="/all-terms">
-            <BookOpen className="mr-3 h-5 w-5" />
-            <span>Explore</span>
-          </Link>
+          <BookOpen className="mr-3 h-5 w-5" />
+          <span>Explore</span>
         </Button>
       </div>
 
