@@ -17,8 +17,8 @@ export default function Home() {
 
   return (
     <>
-      <div className="container mx-auto px-4 flex flex-col h-[calc(100vh-80px)] py-8">
-        <header className="text-center flex flex-col items-center space-y-2 pt-8 md:pt-12 flex-shrink-0">
+      <div className="container mx-auto px-4 flex flex-col h-screen py-8">
+        <header className="text-center flex flex-col items-center space-y-2 pt-12 flex-shrink-0">
           <Logo className="w-16 h-16 md:w-24 md:h-24" />
           <h1 className="text-3xl md:text-5xl font-bold font-headline tracking-tighter">
             TechTermz
@@ -30,10 +30,10 @@ export default function Home() {
         </header>
 
         <div className="flex-grow flex flex-col justify-center items-center">
-            <div className="flex justify-center items-center gap-4 px-4 w-full max-w-sm sm:max-w-md mx-auto my-6">
+            <div className="flex justify-center items-center gap-2 px-4 w-full max-w-sm sm:max-w-md mx-auto my-6">
             <Button
                 variant="outline"
-                className="h-14 text-lg border-2 flex-grow"
+                className="h-12 text-base border-2 basis-2/3"
                 onClick={() => setOpen(true)}
             >
                 <Search className="mr-3 h-5 w-5" />
@@ -41,7 +41,7 @@ export default function Home() {
             </Button>
             <Button
                 variant="outline"
-                className="h-14 text-lg px-4 border-2"
+                className="h-12 text-base px-4 border-2 basis-1/3"
                 onClick={() => setIsExplorerOpen(true)}
             >
                 <BookOpen className="mr-3 h-5 w-5" />
