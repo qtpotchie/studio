@@ -10,7 +10,6 @@ const Logo = ({ className }: { className?: string }) => (
     xmlns="http://www.w3.org/2000/svg"
     aria-label="TechTermz Logo"
   >
-    <rect width="24" height="24" fill="hsl(var(--background))" />
     <path 
       d="M19 8C19 6.89543 18.1046 6 17 6H7C5.89543 6 5 6.89543 5 8V14C5 15.1046 5.89543 16 7 16H17C18.1046 16 19 15.1046 19 14V8Z" 
       stroke="hsl(var(--primary))" 
