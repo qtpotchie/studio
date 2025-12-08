@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useMemo, FormEvent } from "react";
+import { useState, useEffect, useMemo, FormEvent, useRef } from "react";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -23,6 +23,7 @@ export default function SearchDialog({ terms }: { terms: Term[] }) {
   const { addSearchQuery } = useSearchHistory();
   const { toast } = useToast();
   const { setOpen: setVoiceOpen, setOnResult } = useVoiceSearch();
+  const inputRef = useRef<HTMLInputElement>(null);
 
   const { isSupported } = useSpeechRecognition();
   
@@ -30,6 +31,15 @@ export default function SearchDialog({ terms }: { terms: Term[] }) {
   useEffect(() => {
     setIsClient(true);
   }, []);
+
+  useEffect(() => {
+    if (isOpen) {
+      // Delay focus slightly to ensure dialog is fully rendered, especially on mobile
+      setTimeout(() => {
+        inputRef.current?.focus();
+      }, 100);
+    }
+  }, [isOpen]);
 
   const filteredTerms = useMemo(() => {
     if (!debouncedSearchQuery) return [];
@@ -66,30 +76,31 @@ export default function SearchDialog({ terms }: { terms: Term[] }) {
     <Dialog open={isOpen} onOpenChange={setOpen}>
       <DialogContent className="p-0 gap-0 max-w-2xl h-[calc(100%-4rem)] flex flex-col">
         <DialogTitle className="sr-only">Search Terms</DialogTitle>
-        <div className="p-4 border-b">
-          <form onSubmit={handleSearchSubmit} className="flex items-center gap-2">
-            <Button type="button" variant="ghost" size="icon" className="h-9 w-9 shrink-0" onClick={() => setOpen(false)}>
-              <ArrowLeft className="h-5 w-5" />
-              <span className="sr-only">Back</span>
-            </Button>
+        <div className="p-4 border-b flex items-center gap-2">
+          <Button type="button" variant="ghost" size="icon" className="h-9 w-9 shrink-0" onClick={() => setOpen(false)}>
+            <ArrowLeft className="h-5 w-5" />
+            <span className="sr-only">Back</span>
+          </Button>
+          <div className="relative flex-grow flex items-center gap-2">
             <div className="relative flex-grow">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
-              <Input
-                type="search"
-                placeholder={"Search for a term..."}
-                className="pl-10 pr-10 text-lg h-12"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                autoFocus
-              />
-              <div className="absolute right-3 top-1/2 -translate-y-1/2 flex items-center">
-                 {isClient && isSupported && (
-                   <Button type="button" size="icon" onClick={handleVoiceSearch} variant="ghost" className="h-9 w-9">
-                    <Mic className="h-5 w-5" />
-                    <span className="sr-only">Search by voice</span>
-                  </Button>
-                )}
-              </div>
+                <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
+                <Input
+                  ref={inputRef}
+                  type="search"
+                  placeholder={"Search for a term..."}
+                  className="pl-10 pr-10 text-lg h-12"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  autoFocus
+                />
+                 <div className="absolute right-3 top-1/2 -translate-y-1/2 flex items-center">
+                    {isClient && isSupported && (
+                      <Button type="button" size="icon" onClick={handleVoiceSearch} variant="ghost" className="h-9 w-9">
+                        <Mic className="h-5 w-5" />
+                        <span className="sr-only">Search by voice</span>
+                      </Button>
+                    )}
+                  </div>
             </div>
             {searchQuery && (
               <Button
@@ -103,7 +114,7 @@ export default function SearchDialog({ terms }: { terms: Term[] }) {
                 <span className="sr-only">Clear</span>
               </Button>
             )}
-          </form>
+          </div>
         </div>
         <ScrollArea className="flex-1">
           <div className="p-4 pt-0">
