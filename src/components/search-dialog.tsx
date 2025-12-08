@@ -81,26 +81,18 @@ export default function SearchDialog({ terms }: { terms: Term[] }) {
             <ArrowLeft className="h-5 w-5" />
             <span className="sr-only">Back</span>
           </Button>
-          <div className="relative flex-grow flex items-center gap-2">
+          <div className="relative flex-grow flex items-center">
             <div className="relative flex-grow">
                 <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
                 <Input
                   ref={inputRef}
                   type="search"
                   placeholder={"Search for a term..."}
-                  className="pl-10 pr-10 text-lg h-12"
+                  className="pl-10 pr-4 text-lg h-12"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   autoFocus
                 />
-                 <div className="absolute right-3 top-1/2 -translate-y-1/2 flex items-center">
-                    {isClient && isSupported && (
-                      <Button type="button" size="icon" onClick={handleVoiceSearch} variant="ghost" className="h-9 w-9">
-                        <Mic className="h-5 w-5" />
-                        <span className="sr-only">Search by voice</span>
-                      </Button>
-                    )}
-                  </div>
             </div>
             {searchQuery && (
               <Button
