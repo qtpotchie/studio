@@ -1,9 +1,16 @@
+"use client";
+
+import { useState } from 'react';
 import Logo from '@/components/logo';
 import { terms } from '@/lib/data';
 import SearchTrigger from '@/components/search-trigger';
 import JargonExplorer from '@/components/jargon-explorer';
+import { Button } from '@/components/ui/button';
+import { BookOpen } from 'lucide-react';
 
 export default function Home() {
+  const [showExplorer, setShowExplorer] = useState(false);
+
   return (
     <div className="container mx-auto px-4 py-8 space-y-12">
       <header className="text-center flex flex-col items-center space-y-4">
@@ -16,10 +23,19 @@ export default function Home() {
           for IT and tech jargon, available offline.
         </p>
       </header>
-      <div className="flex justify-center px-4">
+      <div className="flex justify-center items-center gap-4 px-4">
         <SearchTrigger />
+        <Button
+          variant="outline"
+          className="h-14 text-lg px-8 border-2"
+          onClick={() => setShowExplorer(!showExplorer)}
+        >
+          <BookOpen className="mr-3 h-5 w-5" />
+          <span>Explore</span>
+        </Button>
       </div>
-      <JargonExplorer terms={terms} />
+      
+      {showExplorer && <JargonExplorer terms={terms} />}
     </div>
   );
 }
