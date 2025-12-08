@@ -4,45 +4,30 @@
 import Logo from '@/components/logo';
 import { terms } from '@/lib/data';
 import { Button } from '@/components/ui/button';
-import { BookOpen, Menu, Mic, Search } from 'lucide-react';
+import { BookOpen, Search } from 'lucide-react';
 import WordOfTheDay from '@/components/word-of-the-day';
 import Link from 'next/link';
 import { useState } from 'react';
 import ExplorerDialog from '@/components/explorer-dialog';
 import { useSearch } from '@/hooks/use-search';
-import { useMobileSidebar } from '@/hooks/use-mobile-sidebar';
-import { useVoiceSearch } from '@/context/voice-search-context';
+import GlobalControls from '@/components/global-controls';
 
 export default function Home() {
   const [isExplorerOpen, setIsExplorerOpen] = useState(false);
   const { setOpen } = useSearch();
-  const { setOpen: setVoiceOpen } = useVoiceSearch();
-  const { onOpen } = useMobileSidebar();
 
   return (
     <>
       <div className="relative container mx-auto px-4 flex flex-col h-screen py-8">
-        <header className="relative text-center flex flex-col items-center space-y-2 pt-12 flex-shrink-0">
-          <div className="absolute top-4 left-4 right-4 flex justify-between z-10">
-            <Button 
-              variant="outline" 
-              size="icon" 
-              onClick={onOpen}
-              className="h-12 w-12 transition-transform duration-200 ease-in-out active:rotate-90"
-            >
-              <Menu className="h-6 w-6" />
-              <span className="sr-only">Open menu</span>
-            </Button>
-            <Button variant="outline" size="icon" onClick={() => setVoiceOpen(true)} className="h-12 w-12">
-              <Mic className="h-6 w-6" />
-              <span className="sr-only">Voice Search</span>
-            </Button>
+        <header className="text-center flex flex-col items-center space-y-4 pt-12 flex-shrink-0">
+          <GlobalControls />
+          <div className="border-2 border-primary/20 rounded-2xl p-6 flex flex-col items-center gap-2 shadow-lg shadow-primary/5">
+            <Logo className="w-16 h-16 md:w-24 md:h-24" />
+            <h1 className="text-3xl md:text-5xl font-bold font-headline tracking-tighter">
+              TechTermz
+            </h1>
           </div>
-          <Logo className="w-16 h-16 md:w-24 md:h-24" />
-          <h1 className="text-3xl md:text-5xl font-bold font-headline tracking-tighter">
-            TechTermz
-          </h1>
-          <p className="text-base md:text-lg text-muted-foreground max-w-md">
+          <p className="text-base md:text-lg text-muted-foreground max-w-md pt-2">
             Search, browse, and master the language of tech. Your go-to dictionary
             for IT and tech jargon, available offline.
           </p>
