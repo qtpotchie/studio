@@ -3234,126 +3234,126 @@ export const terms: Term[] = [
     id: 'mobo',
     term: 'Mobo',
     slug: 'mobo',
-    definition: 'Slang for Motherboard (Mobo), the main printed circuit board in a computer.',
+    definition: 'Slang for Motherboard, the main printed circuit board in a computer.',
     example: 'I need to upgrade my mobo to support the new CPU.'
   },
   {
     id: 'proc',
     term: 'Proc',
     slug: 'proc',
-    definition: 'Slang for Processor or CPU (Proc) (Central Processing Unit).',
+    definition: 'Slang for Processor or CPU (Central Processing Unit).',
     example: 'What proc are you running in that gaming rig?'
   },
   {
     id: 'vidcard-vgpu',
-    term: 'Vidcard / VGPU',
+    term: 'Vidcard / vGPU',
     slug: 'vidcard-vgpu',
-    definition: 'Slang for Video Card or Graphics Processing Unit (Vidcard / VGPU) (GPU).',
+    definition: 'Slang for Video Card or Graphics Processing Unit (GPU).',
     example: 'I need a better vidcard to play this game on ultra settings.'
   },
   {
     id: 'thermal-paste-tim',
     term: 'Thermal Paste (TIM)',
     slug: 'thermal-paste-tim',
-    definition: 'A Thermal Interface Material (Thermal Paste (TIM)) is a substance applied between a CPU/GPU and its heatsink to improve heat transfer.',
-    example: 'My CPU was overheating, so I had to clean off the old gunk and reapply some fresh thermal paste.'
+    definition: 'A Thermal Interface Material is a substance applied between a CPU/GPU and its heatsink to improve heat transfer.',
+    example: 'My CPU was overheating, so I had to reapply some fresh thermal paste.'
   },
   {
     id: 'speccing',
     term: 'Speccing',
     slug: 'speccing',
-    definition: 'Speccing is the act of choosing the specifications (specs) for a new computer or server.',
+    definition: 'The act of choosing the specifications (specs) for a new computer or server.',
     example: 'He spent all week speccing out his new PC build.'
   },
   {
     id: 'hard-reset',
     term: 'Hard Reset',
     slug: 'hard-reset',
-    definition: 'Hard Reset is restarting a device by cutting and reapplying power, such as holding down the power button or unplugging it. It does not erase data.',
+    definition: 'Restarting a device by cutting and reapplying power, such as holding down the power button or unplugging it. It does not erase data.',
     example: 'The router was frozen, so I had to perform a hard reset by pulling the power cord.'
   },
   {
     id: 'soft-reset',
     term: 'Soft Reset',
     slug: 'soft-reset',
-    definition: 'Soft Reset is restarting a device through the operating system\'s restart function, allowing for a graceful shutdown of programs.',
+    definition: 'Restarting a device through the operating system\'s restart function, allowing for a graceful shutdown of programs.',
     example: 'A simple soft reset fixed the minor software glitch on my phone.'
   },
   {
     id: 'qol-patch',
     term: 'QoL Patch',
     slug: 'qol-patch',
-    definition: 'A Quality of Life Patch (QoL Patch) is a software update that doesn\'t add major new features, but instead focuses on improving usability and user experience.',
+    definition: 'A Quality of Life Patch is a software update that doesn\'t add major new features, but instead focuses on improving usability and user experience.',
     example: 'The latest game update was just a QoL patch that improved the inventory management system.'
   },
   {
     id: 'bricked',
     term: 'Bricked',
     slug: 'bricked',
-    definition: 'Bricked is a slang term for an electronic device that has been rendered completely unusable, usually due to a failed firmware update or hardware damage.',
+    definition: 'A slang term for an electronic device that has been rendered completely unusable, usually due to a failed firmware update or hardware damage.',
     example: 'The power went out during the BIOS update and now my motherboard is completely bricked.'
   },
   {
     id: 'overclock',
     term: 'Overclock',
     slug: 'overclock',
-    definition: 'Overclock is the practice of increasing a component\'s clock rate, running it at a higher speed than it was designed to run.',
+    definition: 'The practice of increasing a component\'s clock rate, running it at a higher speed than it was designed to run.',
     example: 'He was able to overclock his CPU from 3.6 GHz to 4.2 GHz to get better gaming performance.'
   },
   {
     id: 'undervolt',
     term: 'Undervolt',
     slug: 'undervolt',
-    definition: 'Undervolt is the process of reducing the voltage supplied to a component (like a CPU or GPU) to decrease heat output and power consumption, often without losing performance.',
+    definition: 'The process of reducing the voltage supplied to a component (like a CPU or GPU) to decrease heat output and power consumption, often without losing performance.',
     example: 'He decided to undervolt his laptop\'s CPU to make it run cooler and extend its battery life.'
   },
   {
     id: 'silicon-lottery',
     term: 'Silicon Lottery',
     slug: 'silicon-lottery',
-    definition: 'Silicon Lottery is a slang term referring to the random variation in quality between individual microchips. A "good" chip can overclock much higher than a "bad" one from the exact same batch.',
+    definition: 'A slang term referring to the random variation in quality between individual microchips. A "good" chip can overclock much higher than a "bad" one from the exact same batch.',
     example: 'He won the silicon lottery; his new CPU could run at a much higher clock speed than his friend\'s identical model.'
   },
   {
     id: 'fork-bomb',
     term: 'Fork Bomb',
     slug: 'fork-bomb',
-    definition: 'A Fork Bomb is a denial-of-service attack wherein a process continually replicates itself to deplete available system resources, slowing down or crashing the system.',
+    definition: 'A denial-of-service attack wherein a process continually replicates itself to deplete available system resources, slowing down or crashing the system.',
     example: 'He accidentally ran a fork bomb script on the server, which quickly consumed all the RAM and forced a reboot.'
   },
   {
     id: 'kernel-dump',
     term: 'Kernel Dump',
     slug: 'kernel-dump',
-    definition: 'A Kernel Dump is a file containing the contents of the kernel\'s memory space at the time of a system crash, used for debugging the cause of the crash.',
+    definition: 'A file containing the contents of the kernel\'s memory space at the time of a system crash, used for debugging the cause of the crash.',
     example: 'After the server experienced a kernel panic, it saved a kernel dump file for the engineers to analyze.'
   },
   {
     id: 'bottlenecking',
     term: 'Bottlenecking',
     slug: 'bottlenecking',
-    definition: 'Bottlenecking is the act of a system\'s performance being limited by a single component (the bottleneck).',
+    definition: 'The act of a system\'s performance being limited by a single component (the bottleneck).',
     example: 'My new graphics card isn\'t reaching its full potential because my old CPU is bottlenecking it.'
   },
   {
     id: 'code-smell',
     term: 'Code Smell',
     slug: 'code-smell',
-    definition: 'A Code Smell is any characteristic in the source code of a program that possibly indicates a deeper problem. It is not a bug itself, but a hint that something might be wrong with the design.',
+    definition: 'Any characteristic in the source code of a program that possibly indicates a deeper problem. It is not a bug itself, but a hint that something might be wrong with the design.',
     example: 'A very long function with many responsibilities is a common code smell that suggests it should be broken up into smaller functions.'
   },
   {
     id: 'boilerplate',
     term: 'Boilerplate',
     slug: 'boilerplate',
-    definition: 'Boilerplate is sections of code that have to be included in many places with little or no alteration. It is often seen as "fluff" that is required by the language or framework.',
+    definition: 'Sections of code that have to be included in many places with little or no alteration. It is often seen as "fluff" that is required by the language or framework.',
     example: 'He created a project template with all the necessary boilerplate code so he could start new projects more quickly.'
   },
   {
     id: 'shitcode-slang',
     term: 'Shitcode (slang)',
     slug: 'shitcode-slang',
-    definition: 'Shitcode (slang) is a vulgar slang term for extremely poorly written, confusing, or non-functional source code.',
+    definition: 'A vulgar slang term for extremely poorly written, confusing, or non-functional source code.',
     example: 'The new developer had to spend a week rewriting the shitcode he inherited from the previous programmer.'
   },
   {
@@ -3367,141 +3367,603 @@ export const terms: Term[] = [
     id: 'zombie-thread',
     term: 'Zombie Thread',
     slug: 'zombie-thread',
-    definition: 'A Zombie Thread is a thread of execution that has completed its work but has not been properly cleaned up by the parent process, consuming system resources.',
+    definition: 'A thread of execution that has completed its work but has not been properly cleaned up by the parent process, consuming system resources.',
     example: 'The application became unstable as more and more zombie threads accumulated over time.'
   },
   {
     id: 'garbage-values',
     term: 'Garbage Values',
     slug: 'garbage-values',
-    definition: 'Garbage Values are the unintended, meaningless data that may be present in a variable or memory location that has been declared but not yet initialized.',
+    definition: 'Unintended, meaningless data that may be present in a variable or memory location that has been declared but not yet initialized.',
     example: 'The program produced an incorrect result because it was reading from a variable that contained a garbage value.'
   },
   {
     id: 'bitbanging',
     term: 'Bitbanging',
     slug: 'bitbanging',
-    definition: 'Bitbanging is a technique for serial communications using software instead of dedicated hardware. A programmer rapidly toggles the state of a GPIO pin to manually generate the signal waveform.',
+    definition: 'A technique for serial communications using software instead of dedicated hardware. A programmer rapidly toggles the state of a GPIO pin to manually generate the signal waveform.',
     example: 'To save money on the hardware, he used bit-banging to implement the I2C protocol in software.'
   },
   {
     id: 'memory-thrash',
     term: 'Memory Thrash',
     slug: 'memory-thrash',
-    definition: 'Memory Thrash occurs when a system spends an excessive amount of time swapping data between RAM and virtual memory on disk, leading to severe performance degradation.',
+    definition: 'Occurs when a system spends an excessive amount of time swapping data between RAM and virtual memory on disk, leading to severe performance degradation.',
     example: 'Opening too many applications on the old computer with only 4GB of RAM caused constant memory thrashing.'
   },
   {
     id: 'disk-thrash',
     term: 'Disk Thrash',
     slug: 'disk-thrash',
-    definition: 'Disk Thrash is a condition where a hard drive is being overworked by excessive read/write operations, causing a grinding or clicking noise and very slow performance.',
+    definition: 'A condition where a hard drive is being overworked by excessive read/write operations, causing a grinding or clicking noise and very slow performance.',
     example: 'The database server was experiencing severe disk thrashing as it tried to handle thousands of concurrent queries.'
   },
   {
     id: 'headcrash',
     term: 'Headcrash',
     slug: 'headcrash',
-    definition: 'A Headcrash is a catastrophic failure of a hard disk drive where the read-write head comes into contact with the spinning platters, physically destroying the drive and the data on it.',
+    definition: 'A catastrophic failure of a hard disk drive where the read-write head comes into contact with the spinning platters, physically destroying the drive and the data on it.',
     example: 'He dropped his laptop, and the sound of clicking indicated a headcrash, resulting in total data loss.'
   },
   {
     id: 'packet-loss-burst',
     term: 'Packet Loss Burst',
     slug: 'packet-loss-burst',
-    definition: 'A Packet Loss Burst is a situation where a large number of consecutive data packets are lost in transit over a network, often causing a noticeable disruption.',
+    definition: 'A situation where a large number of consecutive data packets are lost in transit over a network, often causing a noticeable disruption.',
     example: 'The online game became unplayable due to a sudden packet loss burst that lasted for several seconds.'
   },
   {
     id: 'shadow-it',
     term: 'Shadow IT',
     slug: 'shadow-it',
-    definition: 'Shadow IT refers to information-technology systems and solutions built and used inside organizations without explicit organizational approval.',
+    definition: 'Information-technology systems and solutions built and used inside organizations without explicit organizational approval.',
     example: 'The marketing team started using a cloud file-sharing service without telling the IT department, an example of Shadow IT that created a security risk.'
   },
   {
     id: 'snowflake-server',
     term: 'Snowflake Server',
     slug: 'snowflake-server',
-    definition: 'A Snowflake Server is a server that has been configured manually and uniquely, making it difficult to reproduce or replace automatically. It\'s the opposite of an infrastructure-as-code approach.',
+    definition: 'A server that has been configured manually and uniquely, making it difficult to reproduce or replace automatically. It\'s the opposite of an infrastructure-as-code approach.',
     example: 'They couldn\'t easily replace the failed server because it was a snowflake server with years of manual tweaks that were never documented.'
   },
   {
     id: 'duct-tape-code',
     term: 'Duct Tape Code',
     slug: 'duct-tape-code',
-    definition: 'Duct Tape Code is a slang term for code that is a quick and dirty fix, holding a system together but likely to fail or cause problems in the future.',
+    definition: 'A slang term for code that is a quick and dirty fix, holding a system together but likely to fail or cause problems in the future.',
     example: 'The temporary fix was just some duct tape code to get the site back online; they would need to properly engineer a solution later.'
   },
   {
     id: 'cloud-bursting',
     term: 'Cloud Bursting',
     slug: 'cloud-bursting',
-    definition: 'An Cloud Bursting is a pplication deployment model in which an application runs in a private cloud or data center and "bursts" to a public cloud when the demand for computing capacity spikes.',
+    definition: 'An application deployment model in which an application runs in a private cloud or data center and "bursts" to a public cloud when the demand for computing capacity spikes.',
     example: 'The retail site used cloud bursting to handle the massive traffic spike on Black Friday by offloading extra requests to AWS.'
   },
   {
     id: 'rage-click',
     term: 'Rage Click',
     slug: 'rage-click',
-    definition: 'Rage Click is when a user repeatedly and rapidly clicks on a button or link in frustration because the application is not responding.',
+    definition: 'When a user repeatedly and rapidly clicks on a button or link in frustration because the application is not responding.',
     example: 'Analytics showed a lot of users were rage clicking the "Submit" button, indicating a performance issue with the form submission process.'
   },
   {
     id: 'heisenbug',
     term: 'Heisenbug',
     slug: 'heisenbug',
-    definition: 'A Heisenbug is a software bug that seems to disappear or alter its behavior when one attempts to study it. The term is a pun on the Heisenberg uncertainty principle.',
+    definition: 'A software bug that seems to disappear or alter its behavior when one attempts to study it. The term is a pun on the Heisenberg uncertainty principle.',
     example: 'It was a classic Heisenbug; the error only occurred in the production environment and vanished whenever the developer tried to attach a debugger.'
   },
   {
     id: 'off-by-one-error',
     term: 'Off-by-One Error',
     slug: 'off-by-one-error',
-    definition: 'An Off-by-One Error is a logic error involving the discrete equivalent of a boundary condition. It often occurs in computer programming when an iterative loop iterates one time too many or too few.',
+    definition: 'A logic error involving the discrete equivalent of a boundary condition. It often occurs in computer programming when an iterative loop iterates one time too many or too few.',
     example: 'The loop was supposed to run 10 times, but an off-by-one error caused it to run only 9 times, resulting in incorrect output.'
   },
   {
     id: 'rubber-duck-debugging',
     term: 'Rubber Duck Debugging',
     slug: 'rubber-duck-debugging',
-    definition: 'Rubber Duck Debugging is a method of debugging code where a programmer explains their code, line-by-line, to an inanimate object, such as a rubber duck. The act of explaining often helps them find the solution.',
+    definition: 'A method of debugging code where a programmer explains their code, line-by-line, to an inanimate object, such as a rubber duck. The act of explaining often helps them find the solution.',
     example: 'After being stuck for an hour, he tried rubber duck debugging and found the bug in his code just by explaining it out loud.'
   },
   {
     id: 'yak-shaving',
     term: 'Yak Shaving',
     slug: 'yak-shaving',
-    definition: 'Yak Shaving is a programming slang term for the long series of tasks that must be performed before a primary task can be accomplished. It refers to getting sidetracked by a cascade of preliminary steps.',
+    definition: 'A programming slang term for the long series of tasks that must be performed before a primary task can be accomplished. It refers to getting sidetracked by a cascade of preliminary steps.',
     example: 'He just wanted to change the button color, but he ended up yak shaving for three hours, which involved upgrading the build system and three other libraries.'
   },
   {
     id: 'ghost-process',
     term: 'Ghost Process',
     slug: 'ghost-process',
-    definition: 'A Ghost Process is a process that has terminated but remains visible in the system\'s process list because its parent process has not yet "reaped" it. Similar to a zombie process.',
+    definition: 'A process that has terminated but remains visible in the system\'s process list because its parent process has not yet "reaped" it. Similar to a zombie process.',
     example: 'The system monitor showed several ghost processes left over from the crashed application.'
   },
   {
     id: 'race-condition',
     term: 'Race Condition',
     slug: 'race-condition',
-    definition: 'A Race Condition is an undesirable situation that occurs when a device or system attempts to perform two or more operations at the same time, but because of the nature of the device or system, the operations must be done in the proper sequence to be done correctly.',
+    definition: 'An undesirable situation that occurs when a device or system attempts to perform two or more operations at the same time, but because of the nature of the device or system, the operations must be done in the proper sequence to be done correctly.',
     example: 'A race condition in the code allowed two users to book the last available seat at the same time.'
   },
   {
     id: 'bus-error',
     term: 'Bus Error',
     slug: 'bus-error',
-    definition: 'A Bus Error is a fatal error raised by a program when it attempts to access memory that the CPU cannot physically address, often due to an unaligned memory access.',
+    definition: 'A fatal error raised by a program when it attempts to access memory that the CPU cannot physically address, often due to an unaligned memory access.',
     example: 'The program crashed with a bus error because it tried to read a 32-bit integer from an address that was not a multiple of four.'
   },
   {
     id: 'null-byte-injection',
     term: 'Null Byte Injection',
     slug: 'null-byte-injection',
-    definition: 'A Null Byte Injection is a security exploit where an attacker injects a null byte character (`%00`) into user-provided data to bypass security checks and manipulate strings in languages like C/C++.',
+    definition: 'A security exploit where an attacker injects a null byte character (`%00`) into user-provided data to bypass security checks and manipulate strings in languages like C/C++.',
     example: 'The attacker used a null byte injection vulnerability to trick the application into accessing a file outside of its intended directory.'
+  },
+  {
+    id: 'cooler-aio',
+    term: 'Cooler / AIO',
+    slug: 'cooler-aio',
+    definition: 'Slang for a CPU cooler. AIO stands for "All-In-One" liquid cooler, a self-contained liquid cooling unit.',
+    example: 'My proc was running hot, so I upgraded from the stock cooler to a much beefier AIO.'
+  },
+  {
+    id: 'vid-card-gfx-card',
+    term: 'Vid Card / GFX Card',
+    slug: 'vid-card-gfx-card',
+    definition: 'Slang for Video Card or Graphics Card, the component that renders images to the display.',
+    example: 'I need a new GFX card if I want to play the latest games on ultra settings.'
+  },
+  {
+    id: 'mem-sticks',
+    term: 'Mem Sticks',
+    slug: 'mem-sticks',
+    definition: 'Slang for RAM (Random Access Memory) modules.',
+    example: 'I added two more mem sticks to my mobo, upgrading my system to 32 gigs of RAM.'
+  },
+  {
+    id: 'power-brick-juice-box',
+    term: 'Power Brick / Juice Box',
+    slug: 'power-brick-juice-box',
+    definition: 'Slang for the PSU (Power Supply Unit) of a computer.',
+    example: 'Make sure your juice box has enough wattage to handle that new video card.'
+  },
+  {
+    id: 'throttling',
+    term: 'Throttling',
+    slug: 'throttling',
+    definition: 'Short for Thermal Throttling, a safety mechanism where a component reduces its performance to lower its temperature.',
+    example: 'My laptop gets slow when I game for too long due to thermal throttling.'
+  },
+  {
+    id: 'solid-state-solid',
+    term: 'Solid State / Solid',
+    slug: 'solid-state-solid',
+    definition: 'Slang for an SSD (Solid-State Drive), a type of storage device with no moving parts.',
+    example: 'I installed the OS on my new solid state for lightning-fast boot times.'
+  },
+  {
+    id: 'spinners-mechs',
+    term: 'Spinners / Mechs',
+    slug: 'spinners-mechs',
+    definition: 'Slang for traditional HDDs (Hard Disk Drives) with spinning platters.',
+    example: 'I use an SSD for my OS and keep all my large media files on the old spinners.'
+  },
+  {
+    id: 'chassis-fans',
+    term: 'Chassis Fans',
+    slug: 'chassis-fans',
+    definition: 'A more technical term for case fans, the fans that cool the inside of the computer case.',
+    example: 'I installed three new chassis fans to improve the airflow in my PC case.'
+  },
+  {
+    id: 'sink',
+    term: 'Sink',
+    slug: 'sink',
+    definition: 'Short for heatsink, a component designed to dissipate heat from a processor.',
+    example: 'That massive sink on the CPU cooler is doing a great job keeping temps down.'
+  },
+  {
+    id: 'pcie-lead',
+    term: 'PCIe Lead',
+    slug: 'pcie-lead',
+    definition: 'Slang for a PCIe power cable, used to provide extra power to high-end graphics cards.',
+    example: 'Don\'t forget to plug in both PCIe leads, or the GFX card won\'t turn on.'
+  },
+  {
+    id: 'sata-lead',
+    term: 'SATA Lead',
+    slug: 'sata-lead',
+    definition: 'Slang for a SATA cable, used to connect storage drives to the motherboard.',
+    example: 'I need another SATA lead to connect this new SSD.'
+  },
+  {
+    id: 'debug-buzzer',
+    term: 'Debug Buzzer',
+    slug: 'debug-buzzer',
+    definition: 'Slang for the small internal speaker that connects to the motherboard to provide audible error codes (beeps) during startup.',
+    example: 'The PC wouldn\'t boot, but the debug buzzer gave me three short beeps, which means a RAM issue.'
+  },
+  {
+    id: 'app',
+    term: 'App',
+    slug: 'app',
+    definition: 'Short form for Application, a computer program designed for a specific task.',
+    example: 'Have you tried the new photo editing app?'
+  },
+  {
+    id: 'deps',
+    term: 'Deps',
+    slug: 'deps',
+    definition: 'Short for Dependencies, the external libraries or packages a program needs to run.',
+    example: 'Just run `npm install` to download all the project deps.'
+  },
+  {
+    id: 'config',
+    term: 'Config',
+    slug: 'config',
+    definition: 'Short for Configuration, the settings or parameters for a piece of software or hardware.',
+    example: 'I had to edit the config file to change the database connection string.'
+  },
+  {
+    id: 'repo',
+    term: 'Repo',
+    slug: 'repo',
+    definition: 'Short for Repository, a central location where code is stored and managed, usually with version control like Git.',
+    example: 'Just push your latest changes to the main repo.'
+  },
+  {
+    id: 'docs',
+    term: 'Docs',
+    slug: 'docs',
+    definition: 'Short for Documentation, the explanatory material that comes with a piece of software.',
+    example: 'When in doubt, read the docs.'
+  },
+  {
+    id: 'admin',
+    term: 'Admin',
+    slug: 'admin',
+    definition: 'Short for Administrator, a user with elevated privileges to manage a system.',
+    example: 'You\'ll need admin rights to install that software.'
+  },
+  {
+    id: 'perms',
+    term: 'Perms',
+    slug: 'perms',
+    definition: 'Short for Permissions, the access rights granted to users or files on a system.',
+    example: 'The script failed because I didn\'t have write perms on that directory.'
+  },
+  {
+    id: 'init',
+    term: 'Init',
+    slug: 'init',
+    definition: 'Short for Initialization, the process of preparing a system or object for use.',
+    example: 'The init script runs every time the server boots up.'
+  },
+  {
+    id: 'temp-files',
+    term: 'Temp Files / Temps',
+    slug: 'temp-files',
+    definition: 'Short for Temporary Files, files created by a program that are only needed for a short period.',
+    example: 'You can clear out your temp files to free up some disk space.'
+  },
+  {
+    id: 'js',
+    term: 'JS',
+    slug: 'js',
+    definition: 'Abbreviation for JavaScript, a high-level programming language used for web development.',
+    example: 'The entire front end is built with JS, HTML, and CSS.'
+  },
+  {
+    id: 'ts',
+    term: 'TS',
+    slug: 'ts',
+    definition: 'Abbreviation for TypeScript, a statically typed superset of JavaScript.',
+    example: 'We use TS in our project to catch type errors at compile time.'
+  },
+  {
+    id: 'exe',
+    term: 'Exe',
+    slug: 'exe',
+    definition: 'Short for Executable, a file that contains a program that can be run by a computer.',
+    example: 'Just double-click the setup.exe to start the installation.'
+  },
+  {
+    id: 'comp-errors',
+    term: 'Comp Errors',
+    slug: 'comp-errors',
+    definition: 'Short for Compilation Errors, errors that occur when a compiler tries to convert source code into machine code.',
+    example: 'I spent an hour fixing comp errors because I missed a semicolon.'
+  },
+  {
+    id: 'rt',
+    term: 'RT',
+    slug: 'rt',
+    definition: 'Abbreviation for Router, a device that forwards data packets between computer networks.',
+    example: 'I had to reboot the RT to get the internet working again.'
+  },
+  {
+    id: 'ap',
+    term: 'AP',
+    slug: 'ap',
+    definition: 'Abbreviation for Access Point, a networking hardware device that allows other Wi-Fi devices to connect to a wired network.',
+    example: 'We need to install another AP on the third floor to improve the Wi-Fi signal.'
+  },
+  {
+    id: 'pcap',
+    term: 'pcap',
+    slug: 'pcap',
+    definition: 'Short for Packet Capture, a file containing data packets intercepted from a network.',
+    example: 'I used Wireshark to analyze the pcap and diagnose the network issue.'
+  },
+  {
+    id: 'fw',
+    term: 'FW',
+    slug: 'fw',
+    definition: 'Abbreviation for Firewall, a network security system that monitors and controls incoming and outgoing network traffic.',
+    example: 'We need to open port 8080 on the FW for the new web service.'
+  },
+  {
+    id: 'config-dump',
+    term: 'Config Dump',
+    slug: 'config-dump',
+    definition: 'Slang for a configuration backup, a file containing the complete configuration of a device.',
+    example: 'I always take a config dump of the router before making any changes.'
+  },
+  {
+    id: 'bw',
+    term: 'BW',
+    slug: 'bw',
+    definition: 'Abbreviation for Bandwidth, the maximum rate of data transfer across a given path.',
+    example: 'The video stream is lagging; we must be running out of BW.'
+  },
+  {
+    id: 'ping-delay',
+    term: 'Ping / Delay',
+    slug: 'ping-delay',
+    definition: 'Slang for Latency, the time it takes for a data packet to travel from the source to the destination.',
+    example: 'My ping to the game server is over 200ms, it\'s unplayable.'
+  },
+  {
+    id: 'switch-stack',
+    term: 'Stack',
+    slug: 'switch-stack',
+    definition: 'A switch stack is a set of network switches that have been configured to operate together as a single logical switch.',
+    example: 'We can increase our port capacity by adding another switch to the stack.'
+  },
+  {
+    id: 'lb',
+    term: 'LB',
+    slug: 'lb',
+    definition: 'Abbreviation for Load Balancer, a device that distributes network or application traffic across a number of servers.',
+    example: 'The traffic is routed through the LB to ensure no single server gets overloaded.'
+  },
+  {
+    id: 'nic',
+    term: 'NIC',
+    slug: 'nic',
+    definition: 'Abbreviation for Network Interface Card, the hardware that connects a computer to a computer network.',
+    example: 'The server has a 10 gigabit NIC for faster network performance.'
+  },
+  {
+    id: 'vm',
+    term: 'VM',
+    slug: 'vm',
+    definition: 'Abbreviation for Virtual Machine, an emulation of a computer system.',
+    example: 'I\'m running a Linux VM on my Windows laptop to test the application.'
+  },
+  {
+    id: 'image',
+    term: 'Image',
+    slug: 'image',
+    definition: 'Short for Container Image, a lightweight, standalone, executable package of software that includes everything needed to run it.',
+    example: 'He pushed the latest Docker image to the container registry.'
+  },
+  {
+    id: 'env-vars',
+    term: 'Env Vars',
+    slug: 'env-vars',
+    definition: 'Short for Environment Variables, a dynamic-named value that can affect the way running processes will behave on a computer.',
+    example: 'The database password is not hardcoded; it\'s passed in through env vars.'
+  },
+  {
+    id: 'config-mgmt',
+    term: 'Config Mgmt',
+    slug: 'config-mgmt',
+    definition: 'Short for Configuration Management, the process for maintaining computer systems and software in a desired, consistent state.',
+    example: 'We use Ansible for our config mgmt to automate server setup.'
+  },
+  {
+    id: 'reboot-bounce',
+    term: 'Reboot / Bounce',
+    slug: 'reboot-bounce',
+    definition: 'Slang for restarting a server or service.',
+    example: 'The service is frozen, can you give it a bounce?'
+  },
+  {
+    id: 'debug',
+    term: 'Debug',
+    slug: 'debug',
+    definition: 'Short for Debugging, the process of finding and resolving defects or problems within a computer program.',
+    example: 'I have to debug this function to figure out why it\'s returning the wrong value.'
+  },
+  {
+    id: 'deploy',
+    term: 'Deploy',
+    slug: 'deploy',
+    definition: 'Short for Deployment, the process of making an application or system available for use.',
+    example: 'We\'re going to deploy the new version to production tonight.'
+  },
+  {
+    id: 'prod',
+    term: 'Prod',
+    slug: 'prod',
+    definition: 'Short for Production, the live environment where software is used by end-users.',
+    example: 'Don\'t test new features in prod; use the dev environment.'
+  },
+  {
+    id: 'dev',
+    term: 'Dev',
+    slug: 'dev',
+    definition: 'Short for Development, the environment where developers build and test software.',
+    example: 'The latest changes are on the dev server if you want to test them.'
+  },
+  {
+    id: 'stage-stg',
+    term: 'Stage / Stg',
+    slug: 'stage-stg',
+    definition: 'Short for Staging, an environment for testing that exactly resembles the production environment.',
+    example: 'The feature has passed QA and is now deployed to stg for final review.'
+  },
+  {
+    id: 'dt',
+    term: 'DT',
+    slug: 'dt',
+    definition: 'Abbreviation for Downtime, a period when a system is unavailable.',
+    example: 'The planned DT for the server maintenance is scheduled for Sunday at 2 AM.'
+  },
+  {
+    id: 'svc-account',
+    term: 'Svc Account',
+    slug: 'svc-account',
+    definition: 'Short for Service Account, a special type of account used by an application or service rather than a person.',
+    example: 'The backup script runs under a svc account with limited permissions.'
+  },
+  {
+    id: 'mal',
+    term: 'Mal',
+    slug: 'mal',
+    definition: 'Short for Malware, software that is specifically designed to disrupt, damage, or gain unauthorized access to a computer system.',
+    example: 'The antivirus scan detected some mal on his computer.'
+  },
+  {
+    id: 'sploit',
+    term: 'Sploit',
+    slug: 'sploit',
+    definition: 'Slang for Exploit, a piece of code that takes advantage of a software vulnerability.',
+    example: 'He wrote a sploit for the new browser vulnerability.'
+  },
+  {
+    id: 'vuln',
+    term: 'Vuln',
+    slug: 'vuln',
+    definition: 'Short for Vulnerability, a weakness which can be exploited by a threat actor.',
+    example: 'They need to patch that server immediately to fix a critical RCE vuln.'
+  },
+  {
+    id: 'creds',
+    term: 'Creds',
+    slug: 'creds',
+    definition: 'Short for Credentials, such as a username and password, used to verify a user\'s identity.',
+    example: 'Never share your login creds with anyone.'
+  },
+  {
+    id: 'logger',
+    term: 'Logger',
+    slug: 'logger',
+    definition: 'Short for Keylogger, a type of malware that records the keys struck on a keyboard.',
+    example: 'The attacker installed a logger to steal the victim\'s passwords.'
+  },
+  {
+    id: '2fa',
+    term: '2FA',
+    slug: '2fa',
+    definition: 'Abbreviation for Two-Factor Authentication, a security process where users provide two different authentication factors to verify themselves.',
+    example: 'You should enable 2FA on all your important accounts.'
+  },
+  {
+    id: 'mitm',
+    term: 'MITM',
+    slug: 'mitm',
+    definition: 'Abbreviation for Man-in-the-Middle, a cyberattack where the attacker secretly relays and possibly alters the communication between two parties.',
+    example: 'Using public Wi-Fi without a VPN makes you vulnerable to MITM attacks.'
+  },
+  {
+    id: '0-day',
+    term: '0-Day',
+    slug: '0-day',
+    definition: 'Short for Zero-Day, a vulnerability that is unknown to those who should be interested in mitigating it (including the vendor of the target software).',
+    example: 'The hackers used a 0-day exploit to breach the network.'
+  },
+  {
+    id: 'bot-herd',
+    term: 'Bot Herd',
+    slug: 'bot-herd',
+    definition: 'Slang for a botnet, a network of private computers infected with malicious software and controlled as a group without the owners\' knowledge.',
+    example: 'The DDoS attack was launched from a massive bot herd of IoT devices.'
+  },
+  {
+    id: 'brick',
+    term: 'Brick',
+    slug: 'brick',
+    definition: 'Slang for a device that has been rendered completely non-functional.',
+    example: 'A failed firmware update turned his expensive router into a brick.'
+  },
+  {
+    id: 'lag',
+    term: 'Lag',
+    slug: 'lag',
+    definition: 'A noticeable delay between the action of a user and the response of the application.',
+    example: 'There\'s too much lag in this game, my character is moving a second after I press the key.'
+  },
+  {
+    id: 'buggy-glitchy',
+    term: 'Buggy / Glitchy',
+    slug: 'buggy-glitchy',
+    definition: 'Slang for software that has many bugs or glitches, causing it to behave unpredictably.',
+    example: 'I can\'t use this new app, it\'s too buggy and crashes all the time.'
+  },
+  {
+    id: 'thermal-issue-running-hot',
+    term: 'Thermal Issue / Running Hot',
+    slug: 'thermal-issue-running-hot',
+    definition: 'Slang for a component that is overheating.',
+    example: 'My laptop is running hot, I think the fans are clogged with dust.'
+  },
+  {
+    id: 'oc',
+    term: 'OC',
+    slug: 'oc',
+    definition: 'Abbreviation for Overclock, the practice of making a computer component run at a higher clock speed than its original rating.',
+    example: 'I managed to get a stable OC on my CPU and gained a 10% performance boost.'
+  },
+  {
+    id: 'uv',
+    term: 'UV',
+    slug: 'uv',
+    definition: 'Abbreviation for Undervolt, the process of reducing the voltage to a component to lower heat and power consumption.',
+    example: 'A slight UV on my GPU made it run much quieter.'
+  },
+  {
+    id: 'borked',
+    term: 'Borked',
+    slug: 'borked',
+    definition: 'Slang for something that is broken or not working correctly.',
+    example: 'The latest update completely borked my audio drivers.'
+  },
+  {
+    id: 'shortcut',
+    term: 'Shortcut',
+    slug: 'shortcut',
+    definition: 'A more common term for a hotkey, a key or combination of keys providing quick access to a particular function.',
+    example: 'The shortcut for copy is Ctrl+C.'
+  },
+  {
+    id: 'cmd',
+    term: 'Cmd',
+    slug: 'cmd',
+    definition: 'Short for Command, often used to refer to the command prompt or a command-line interface.',
+    example: 'Just open cmd and type `ping google.com`.'
+  },
+  {
+    id: 'ss',
+    term: 'SS',
+    slug: 'ss',
+    definition: 'Short for Screenshot, an image taken of what is on a computer screen.',
+    example: 'Can you send me a ss of the error message?'
   }
 ];
 
