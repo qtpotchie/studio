@@ -49,7 +49,6 @@ export default function MobileSidebar() {
         </div>
         <div className="flex flex-col gap-1 px-2">
             <NavLink href="/word-of-the-day" icon={CalendarDays} onClick={onClose}>Word of the Day</NavLink>
-            <NavLink href="/jargon-explorer" icon={Layers} onClick={onClose}>Jargon Explorer</NavLink>
             <NavLink href="/all-terms" icon={BookOpen} onClick={onClose}>All Terms (A-Z)</NavLink>
             <Separator className="my-1 bg-border/50" />
             <NavLink href="/history" icon={History} onClick={onClose}>Recent</NavLink>
