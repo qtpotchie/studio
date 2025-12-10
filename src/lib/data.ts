@@ -616,5 +616,222 @@ export const terms: Term[] = [
     slug: 'ss',
     definition: 'Abbreviation for screenshot, an image taken of the contents of a computer display.',
     example: 'Can you send me a ss of the error message you\'re seeing?'
+  },
+  {
+    id: 'dimms',
+    term: 'DIMMs',
+    slug: 'dimms',
+    definition: 'Dual In-line Memory Modules (DIMMs) are the physical RAM sticks that plug into a computer\'s motherboard.',
+    example: 'I upgraded my PC by installing two new 16GB DIMMs for a total of 32GB of RAM.'
+    },
+    {
+    id: 'vrms',
+    term: 'VRMs',
+    slug: 'vrms',
+    definition: 'Voltage Regulator Modules (VRMs) are components on a motherboard that provide a clean and stable voltage to the CPU.',
+    example: 'A motherboard with high-quality VRMs is essential for stable overclocking.'
+    },
+    {
+    id: 'qvl',
+    term: 'QVL',
+    slug: 'qvl',
+    definition: 'A Qualified Vendor List (QVL) is a list of components, like RAM or storage drives, that have been tested and confirmed to be compatible with a specific motherboard.',
+    example: 'Before buying the RAM, I checked the motherboard\'s QVL to ensure it was officially supported.'
+    },
+    {
+    id: 'post',
+    term: 'POST',
+    slug: 'post',
+    definition: 'The Power-On Self-Test (POST) is the initial diagnostic sequence a computer runs when it is first turned on to check for basic hardware functionality.',
+    example: 'The computer failed to POST and emitted a series of beeps, indicating a memory issue.'
+    },
+    {
+    id: 'cmos-reset',
+    term: 'CMOS reset',
+    slug: 'cmos-reset',
+    definition: 'A CMOS reset is the process of clearing the BIOS/UEFI settings on a motherboard back to their factory defaults, often done to fix boot issues.',
+    example: 'After a failed overclock, I had to perform a CMOS reset by shorting the jumper on the motherboard.'
+    },
+    {
+    id: 'debug-leds',
+    term: 'Debug LEDs',
+    slug: 'debug-leds',
+    definition: 'Debug LEDs are a set of lights on a motherboard that indicate the status of key components (CPU, RAM, GPU, Boot) during the POST process to help diagnose startup failures.',
+    example: 'The debug LEDs stayed lit on "DRAM," which told me there was a problem with the RAM sticks.'
+    },
+    {
+    id: 'soc',
+    term: 'SoC',
+    slug: 'soc',
+    definition: 'A System on a Chip (SoC) is an integrated circuit that combines all the main components of a computer, such as the CPU, GPU, and memory controller, onto a single chip.',
+    example: 'Modern smartphones are powered by powerful and efficient SoCs that handle everything from processing to graphics.'
+    },
+    {
+    id: 'ihs',
+    term: 'IHS',
+    slug: 'ihs',
+    definition: 'The Integrated Heat Spreader (IHS) is the metal lid on top of a CPU that protects the delicate silicon die and helps transfer heat to the CPU cooler.',
+    example: 'Some enthusiasts delid their CPUs to remove the IHS and apply liquid metal directly to the die for better cooling.'
+    },
+    {
+    id: 'lga-socket',
+    term: 'LGA socket',
+    slug: 'lga-socket',
+    definition: 'A Land Grid Array (LGA) socket is a type of CPU socket where the pins are on the motherboard and make contact with flat pads on the bottom of the CPU.',
+    example: 'Intel CPUs commonly use an LGA socket, so you have to be careful not to bend the pins on the motherboard.'
+    },
+    {
+    id: 'pga-socket',
+    term: 'PGA socket',
+    slug: 'pga-socket',
+    definition: 'A Pin Grid Array (PGA) socket is a type of CPU socket where the pins are on the CPU itself and fit into holes on the motherboard socket.',
+    example: 'AMD\'s AM4 platform uses a PGA socket, which is why the CPUs have pins on the bottom.'
+    },
+    {
+    id: 'atx12v',
+    term: 'ATX12V',
+    slug: 'atx12v',
+    definition: 'The ATX12V is a power supply standard that provides a dedicated 12-volt rail to the CPU through a 4-pin or 8-pin connector.',
+    example: 'Don\'t forget to plug in the 8-pin ATX12V connector, or the CPU won\'t get any power.'
+    },
+    {
+    id: 'eps-connector',
+    term: 'EPS connector',
+    slug: 'eps-connector',
+    definition: 'An EPS connector is an 8-pin connector (often split into 4+4) that provides power to the CPU, typically used for high-end or server motherboards.',
+    example: 'My new motherboard requires two EPS connectors to provide enough stable power for the high-core-count CPU.'
+    },
+    {
+    id: 'fan-curve',
+    term: 'Fan curve',
+    slug: 'fan-curve',
+    definition: 'A fan curve is a user-defined setting that dictates how fast a fan should spin based on the temperature of a component like the CPU or GPU.',
+    example: 'I set an aggressive fan curve in the BIOS to keep my GPU cool during intense gaming sessions.'
+    },
+    {
+    id: 'pwm-fan',
+    term: 'PWM fan',
+    slug: 'pwm-fan',
+    definition: 'A Pulse Width Modulation (PWM) fan is a type of 4-pin fan that allows for precise speed control by the motherboard or a fan controller.',
+    example: 'I replaced the stock case fans with PWM fans so they can run quietly at idle and ramp up only when needed.'
+    },
+    {
+    id: 'dc-fan',
+    term: 'DC fan',
+    slug: 'dc-fan',
+    definition: 'A DC fan is a 3-pin fan whose speed is controlled by varying the voltage supplied to it, which is less precise than PWM control.',
+    example: 'Most cheap case fans are DC fans, which can be controlled by voltage adjustments in the BIOS.'
+    },
+    {
+    id: 'shroud',
+    term: 'Shroud',
+    slug: 'shroud',
+    definition: 'In hardware, a shroud is a cover used to direct airflow or conceal parts of a component, such as the fan shroud on a GPU or a PSU shroud in a PC case.',
+    example: 'The new GPU has a sleek metal shroud that not only looks good but also helps direct air over the heatsink.'
+    },
+    {
+    id: 'thermal-pad',
+    term: 'Thermal pad',
+    slug: 'thermal-pad',
+    definition: 'A thermal pad is a soft, conductive material used to transfer heat between components, especially where there are gaps, like on VRAM chips or VRMs.',
+    example: 'I had to replace the old, dried-out thermal pads on my graphics card to fix the overheating VRAM.'
+    },
+    {
+    id: 'matx',
+    term: 'MicroATX → “mATX”',
+    slug: 'matx',
+    definition: 'MicroATX (mATX) is a motherboard form factor that is smaller than standard ATX but larger than ITX, offering a balance of size and features.',
+    example: 'I built a compact gaming PC using an mATX case and motherboard.'
+    },
+    {
+    id: 'itx-board',
+    term: 'ITX board',
+    slug: 'itx-board',
+    definition: 'An ITX (Information Technology eXtended) board is a very small motherboard form factor, ideal for building extremely compact or portable PCs.',
+    example: 'Building a powerful system with an ITX board can be challenging due to the limited space for components and cooling.'
+    },
+    {
+    id: 'flex-atx',
+    term: 'Flex ATX',
+    slug: 'flex-atx',
+    definition: 'FlexATX is a motherboard form factor that is a smaller derivative of microATX, often used in slim or custom-built systems.',
+    example: 'FlexATX boards are rare but are sometimes used in small form factor OEM systems like those from Dell or HP.'
+    },
+    {
+    id: 'nvme-drive',
+    term: 'NVMe drive',
+    slug: 'nvme-drive',
+    definition: 'An NVMe (Non-Volatile Memory Express) drive is a type of SSD that connects directly to the motherboard\'s PCIe bus, offering significantly faster speeds than SATA SSDs.',
+    example: 'I upgraded to an NVMe drive, and now my applications and games load almost instantly.'
+    },
+    {
+    id: 'qlc-ssd',
+    term: 'QLC SSD',
+    slug: 'qlc-ssd',
+    definition: 'A QLC (Quad-Level Cell) SSD is a type of solid-state drive that stores four bits of data per cell, offering high capacity at a lower cost but with lower endurance and performance compared to TLC or MLC.',
+    example: 'I bought a large QLC SSD for storing my game library because it was much cheaper than a TLC drive of the same size.'
+    },
+    {
+    id: 'tlc-ssd',
+    term: 'TLC SSD',
+    slug: 'tlc-ssd',
+    definition: 'A TLC (Triple-Level Cell) SSD is a type of solid-state drive that stores three bits of data per cell, offering a good balance of performance, endurance, and cost.',
+    example: 'For my operating system drive, I chose a TLC SSD for its reliability and speed.'
+    },
+    {
+    id: 'dram-less-ssd',
+    term: 'DRAM-less SSD',
+    slug: 'dram-less-ssd',
+    definition: 'A DRAM-less SSD is a budget-oriented solid-state drive that lacks a dedicated DRAM cache, which can result in slower performance during sustained write operations.',
+    example: 'DRAM-less SSDs are fine for light use, but they can feel slow when transferring large files.'
+    },
+    {
+    id: 'vram-chips',
+    term: 'VRAM chips',
+    slug: 'vram-chips',
+    definition: 'VRAM (Video RAM) chips are the dedicated memory modules on a graphics card used for storing image data and textures for the GPU to process.',
+    example: 'The heatsink on the GPU makes direct contact with the VRAM chips to keep them cool.'
+    },
+    {
+    id: 'gddr6x',
+    term: 'GDDR6X',
+    slug: 'gddr6x',
+    definition: 'GDDR6X is a type of high-performance graphics memory that offers higher bandwidth than standard GDDR6, used in high-end GPUs.',
+    example: 'NVIDIA\'s RTX 3080 was one of the first cards to feature ultra-fast GDDR6X memory.'
+    },
+    {
+    id: 'hbm-memory',
+    term: 'HBM memory',
+    slug: 'hbm-memory',
+    definition: 'High Bandwidth Memory (HBM) is a type of stacked DRAM that offers extremely wide memory buses for very high bandwidth, often used in high-performance computing and some GPUs.',
+    example: 'Some professional GPUs use HBM memory for its massive bandwidth, which is crucial for scientific simulations.'
+    },
+    {
+    id: 'chiplet-design',
+    term: 'Chiplet design',
+    slug: 'chiplet-design',
+    definition: 'A chiplet design is a CPU architecture where multiple smaller dies (chiplets) are combined to create a single, more powerful processor, instead of using one large monolithic die.',
+    example: 'AMD\'s Ryzen processors utilize a chiplet design, which improves manufacturing yields and scalability.'
+    },
+    {
+    id: 'power-phases',
+    term: 'Power phases',
+    slug: 'power-phases',
+    definition: 'Power phases refer to the number of individual voltage regulator circuits on a motherboard. More phases generally lead to cleaner and more stable power delivery to the CPU.',
+    example: 'This high-end motherboard has a 16+2 power phase design, making it ideal for extreme overclocking.'
+    },
+    {
+    id: 'pcb-trace',
+    term: 'PCB trace',
+    slug: 'pcb-trace',
+    definition: 'A PCB (Printed Circuit Board) trace is a conductive path on a circuit board that connects different electronic components.',
+    example: 'A scratch on the motherboard can sever a critical PCB trace and cause the entire board to fail.'
+    },
+    {
+    id: 'bios-flashback',
+    term: 'BIOS flashback',
+    slug: 'bios-flashback',
+    definition: 'BIOS Flashback is a feature on some motherboards that allows you to update the BIOS without needing a CPU or RAM installed.',
+    example: 'I had to use BIOS Flashback to update the motherboard so it would support the new generation of CPU.'
   }
 ];
