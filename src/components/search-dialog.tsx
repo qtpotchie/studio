@@ -96,7 +96,7 @@ export default function SearchDialog({ terms }: { terms: Term[] }) {
               ref={inputRef}
               type="search"
               placeholder={"Search for a term..."}
-              className="pl-10 pr-4 text-lg h-12"
+              className="pl-10 pr-4 text-lg h-12 bg-black/20 shadow-md shadow-black/20"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               onKeyDown={handleKeyDown}
