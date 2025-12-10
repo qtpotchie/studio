@@ -2,19 +2,18 @@
 "use client";
 
 import Logo from '@/components/logo';
-import { terms } from '@/lib/data';
 import { Button } from '@/components/ui/button';
 import { BookOpen, Search } from 'lucide-react';
 import WordOfTheDay from '@/components/word-of-the-day';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
-import ExplorerDialog from '@/components/explorer-dialog';
 import { useSearch } from '@/hooks/use-search';
 import GlobalControls from '@/components/global-controls';
 import { cn } from '@/lib/utils';
+import { terms } from '@/lib/data';
+
 
 export default function Home() {
-  const [isExplorerOpen, setIsExplorerOpen] = useState(false);
   const { setOpen } = useSearch();
   const [isAnimating, setIsAnimating] = useState(false);
 
@@ -56,10 +55,12 @@ export default function Home() {
             <Button
                 variant="secondary"
                 className="h-12 text-base px-4 border-2 border-transparent basis-1/3 shadow-md group"
-                onClick={() => setIsExplorerOpen(true)}
+                asChild
             >
-                <BookOpen className="mr-3 h-5 w-5 transition-transform group-hover:animate-book-open" />
-                <span>Explore</span>
+                <Link href="/all-terms">
+                    <BookOpen className="mr-3 h-5 w-5 transition-transform group-hover:animate-book-open" />
+                    <span>Explore</span>
+                </Link>
             </Button>
             </div>
         </div>
@@ -69,11 +70,6 @@ export default function Home() {
             <WordOfTheDay terms={terms} />
         </div>
       </div>
-      <ExplorerDialog 
-        isOpen={isExplorerOpen} 
-        setOpen={setIsExplorerOpen} 
-        terms={terms} 
-      />
     </>
   );
 }

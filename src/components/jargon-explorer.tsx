@@ -1,8 +1,5 @@
 import type { Term } from '@/lib/data';
 import TermCard from './term-card';
-import { Button } from './ui/button';
-import Link from 'next/link';
-import { ArrowLeft } from 'lucide-react';
 
 interface JargonExplorerProps {
   terms: Term[];

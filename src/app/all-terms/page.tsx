@@ -3,10 +3,10 @@
 import { Button } from '@/components/ui/button';
 import { ArrowLeft } from 'lucide-react';
 import { useRouter } from 'next/navigation';
-import AllTermsClient from './all-terms-client';
 import { Badge } from '@/components/ui/badge';
 import { terms } from '@/lib/data';
 import { useEffect, useState } from 'react';
+import JargonExplorer from '@/components/jargon-explorer';
 
 export default function AllTermsPage() {
   const [isClient, setIsClient] = useState(false);
@@ -23,13 +23,13 @@ export default function AllTermsPage() {
           <h1 className="text-2xl sm:text-3xl font-bold font-headline">All Terms</h1>
           {isClient && <Badge variant="secondary" className="text-base sm:text-lg">{terms.length}</Badge>}
         </div>
-        <Button variant="secondary" size="sm" className="shadow-md" onClick={() => router.back()}>
+        <Button variant="secondary" size="sm" className="shadow-md" onClick={() => router.push('/')}>
           <ArrowLeft className="mr-2 h-4 w-4" />
-          Back
+          Home
         </Button>
       </div>
 
-      <AllTermsClient />
+      <JargonExplorer terms={terms} />
     </div>
   );
 }

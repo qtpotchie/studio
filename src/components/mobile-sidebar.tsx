@@ -6,7 +6,7 @@ import { useMobileSidebar } from "@/hooks/use-mobile-sidebar";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Button } from "./ui/button";
-import { BookOpen, Bookmark, CalendarDays, History, HomeIcon, Info } from "lucide-react";
+import { BookOpen, Bookmark, CalendarDays, History, Info } from "lucide-react";
 import Logo from "./logo";
 import { Separator } from "./ui/separator";
 
@@ -20,7 +20,7 @@ const NavLink = ({ href, icon: Icon, children, onClick }: { href: string, icon: 
 );
 
 export default function MobileSidebar() {
-  const { isOpen, onClose, onOpen } = useMobileSidebar();
+  const { isOpen, onClose } = useMobileSidebar();
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
