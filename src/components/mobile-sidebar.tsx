@@ -1,4 +1,3 @@
-
 "use client";
 
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet";
@@ -53,7 +52,7 @@ export default function MobileSidebar() {
             <NavLink href="/about" icon={Info} onClick={onClose}>About</NavLink>
         </div>
         <div className="mt-auto p-4 text-center text-xs text-muted-foreground">
-          Gawa ni: Archie Macahilig
+          Made by: Archie Macahilig
         </div>
       </SheetContent>
     </Sheet>
