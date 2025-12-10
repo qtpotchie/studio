@@ -23,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${fontHeadline.variable} dark`} suppressHydrationWarning>
+    <html lang="en" className={`${inter.variable} ${fontHeadline.variable}`} suppressHydrationWarning>
       <head>
       </head>
       <body className="font-sans antialiased">
