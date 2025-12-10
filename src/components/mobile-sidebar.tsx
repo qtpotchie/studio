@@ -1,3 +1,4 @@
+
 "use client";
 
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet";
@@ -32,7 +33,7 @@ export default function MobileSidebar() {
 
   return (
     <Sheet open={isOpen} onOpenChange={onClose}>
-      <SheetContent side="left" className="p-0 pt-8 w-72 bg-card border-r-0">
+      <SheetContent side="left" className="p-0 pt-8 w-72 bg-card border-r-0 flex flex-col">
         <SheetHeader>
           <SheetTitle className="sr-only">Menu</SheetTitle>
         </SheetHeader>
@@ -50,6 +51,9 @@ export default function MobileSidebar() {
             <NavLink href="/bookmarks" icon={Bookmark} onClick={onClose}>Saved Words</NavLink>
             <Separator className="my-1 bg-border/50" />
             <NavLink href="/about" icon={Info} onClick={onClose}>About</NavLink>
+        </div>
+        <div className="mt-auto p-4 text-center text-xs text-muted-foreground">
+          Gawa ni: Archie Macahilig
         </div>
       </SheetContent>
     </Sheet>
