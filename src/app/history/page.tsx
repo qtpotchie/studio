@@ -24,7 +24,7 @@ export default function HistoryPage() {
       <div className="flex flex-row items-center justify-between mb-8 gap-4">
         <h1 className="text-2xl sm:text-3xl font-bold font-headline">Search History</h1>
         <div className="flex items-center gap-2">
-          <Button asChild variant="outline" size="sm">
+          <Button asChild variant="secondary" size="sm" className="shadow-md">
             <Link href="/">
               <ArrowLeft className="mr-2 h-4 w-4" />
               Back
@@ -33,7 +33,7 @@ export default function HistoryPage() {
           {history.length > 0 && (
             <AlertDialog>
               <AlertDialogTrigger asChild>
-                <Button variant="destructive" size="sm">
+                <Button variant="destructive" size="sm" className="shadow-md">
                   <Trash2 className="mr-2 h-4 w-4" />
                   Clear
                 </Button>

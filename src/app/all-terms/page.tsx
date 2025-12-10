@@ -22,7 +22,7 @@ export default function AllTermsPage() {
           <h1 className="text-2xl sm:text-3xl font-bold font-headline">All Terms</h1>
           {isClient && <Badge variant="secondary" className="text-base sm:text-lg">{terms.length}</Badge>}
         </div>
-        <Button asChild variant="outline" size="sm">
+        <Button asChild variant="secondary" size="sm" className="shadow-md">
           <Link href="/">
             <ArrowLeft className="mr-2 h-4 w-4" />
             Back

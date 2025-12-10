@@ -50,7 +50,7 @@ export default function WordOfTheDayArchivePage() {
           <CalendarDays className="mr-2 h-6 w-6 sm:mr-3 sm:h-7 sm:w-7" />
           Word of the Day
         </h1>
-        <Button asChild variant="outline" size="sm">
+        <Button asChild variant="secondary" size="sm" className="shadow-md">
           <Link href="/">
             <ArrowLeft className="mr-2 h-4 w-4" />
             Back
