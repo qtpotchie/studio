@@ -2,12 +2,10 @@
 "use client";
 
 import { Button } from './ui/button';
-import { Menu, Mic } from 'lucide-react';
-import { useVoiceSearch } from '@/context/voice-search-context';
+import { Menu } from 'lucide-react';
 import { useMobileSidebar } from '@/hooks/use-mobile-sidebar';
 
 export default function GlobalControls() {
-  const { setOpen: setVoiceOpen } = useVoiceSearch();
   const { onOpen } = useMobileSidebar();
 
   return (
@@ -22,10 +20,7 @@ export default function GlobalControls() {
         <span className="sr-only">Open menu</span>
       </Button>
       <div className="flex items-center gap-2">
-        <Button variant="secondary" size="icon" onClick={() => setVoiceOpen(true)} className="h-12 w-12 shadow-md">
-          <Mic className="h-6 w-6" />
-          <span className="sr-only">Voice Search</span>
-        </Button>
+        
       </div>
     </div>
   );
