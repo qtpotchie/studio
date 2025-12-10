@@ -15,7 +15,7 @@ interface ExplorerDialogProps {
 }
 
 export default function ExplorerDialog({ isOpen, setOpen, terms }: ExplorerDialogProps) {
-  const termCount = 100;
+  const termCount = terms.length;
   
   return (
     <Dialog open={isOpen} onOpenChange={setOpen}>
