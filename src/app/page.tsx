@@ -28,8 +28,7 @@ export default function Home() {
             </h1>
           </div>
           <p className="text-base md:text-lg text-muted-foreground max-w-md pt-2">
-            Search, browse, and master the language of tech. Your go-to dictionary
-            for IT and tech jargon.
+            Search, browse, and master the language of tech. Your go-to dictionary for IT and tech jargon.
           </p>
         </header>
 
@@ -44,8 +43,8 @@ export default function Home() {
                 <span>Search</span>
             </Button>
             <Button
-                variant="outline"
-                className="h-12 text-base px-4 border-2 basis-1/3"
+                variant="secondary"
+                className="h-12 text-base px-4 border-2 border-transparent basis-1/3 shadow-md"
                 onClick={() => setIsExplorerOpen(true)}
             >
                 <BookOpen className="mr-3 h-5 w-5" />
