@@ -36,8 +36,8 @@ export default function Home() {
         <div className="flex-grow flex flex-col justify-center items-center">
             <div className="flex justify-center items-center gap-2 px-4 w-full max-w-sm sm:max-w-md mx-auto my-6">
             <Button
-                variant="outline"
-                className="h-12 text-base border-2 basis-2/3"
+                variant="secondary"
+                className="h-12 text-base border-2 border-transparent basis-2/3 shadow-md"
                 onClick={() => setOpen(true)}
             >
                 <Search className="mr-3 h-5 w-5" />
