@@ -29,7 +29,7 @@ export default function Home() {
           </div>
           <p className="text-base md:text-lg text-muted-foreground max-w-md pt-2">
             Search, browse, and master the language of tech. Your go-to dictionary
-            for IT and tech jargon, available offline.
+            for IT and tech jargon.
           </p>
         </header>
 
