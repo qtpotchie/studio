@@ -21,10 +21,12 @@ export default function GlobalControls() {
         <Menu className="h-6 w-6" />
         <span className="sr-only">Open menu</span>
       </Button>
-      <Button variant="outline" size="icon" onClick={() => setVoiceOpen(true)} className="h-12 w-12">
-        <Mic className="h-6 w-6" />
-        <span className="sr-only">Voice Search</span>
-      </Button>
+      <div className="flex items-center gap-2">
+        <Button variant="outline" size="icon" onClick={() => setVoiceOpen(true)} className="h-12 w-12">
+          <Mic className="h-6 w-6" />
+          <span className="sr-only">Voice Search</span>
+        </Button>
+      </div>
     </div>
   );
 }

@@ -13,19 +13,19 @@ import MobileSidebar from "./mobile-sidebar";
 
 export function ClientProviders({ children }: { children: ReactNode }) {
   return (
-    <MobileSidebarProvider>
-      <SearchHistoryProvider>
-        <BookmarkProvider>
-            <SearchProvider>
-              <VoiceSearchProvider>
-                {children}
-                <SearchDialog terms={terms} />
-                <VoiceSearchDialog />
-                <MobileSidebar />
-              </VoiceSearchProvider>
-            </SearchProvider>
-        </BookmarkProvider>
-      </SearchHistoryProvider>
-    </MobileSidebarProvider>
+      <MobileSidebarProvider>
+        <SearchHistoryProvider>
+          <BookmarkProvider>
+              <SearchProvider>
+                <VoiceSearchProvider>
+                  {children}
+                  <SearchDialog terms={terms} />
+                  <VoiceSearchDialog />
+                  <MobileSidebar />
+                </VoiceSearchProvider>
+              </SearchProvider>
+          </BookmarkProvider>
+        </SearchHistoryProvider>
+      </MobileSidebarProvider>
   )
 }
