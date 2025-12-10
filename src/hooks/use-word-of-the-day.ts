@@ -20,10 +20,10 @@ const simpleHash = (str: string) => {
 
 const getTodayString = () => {
   const today = new Date();
-  // Use local date parts to form YYYY-MM-DD to avoid timezone issues
-  const year = today.getFullYear();
-  const month = (today.getMonth() + 1).toString().padStart(2, '0');
-  const day = today.getDate().toString().padStart(2, '0');
+  // Use UTC date parts to form YYYY-MM-DD to ensure it's the same for all users
+  const year = today.getUTCFullYear();
+  const month = (today.getUTCMonth() + 1).toString().padStart(2, '0');
+  const day = today.getUTCDate().toString().padStart(2, '0');
   return `${year}-${month}-${day}`;
 };
 
