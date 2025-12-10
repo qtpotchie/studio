@@ -21,10 +21,12 @@ export default function Home() {
       <div className="relative container mx-auto px-4 flex flex-col h-screen py-8">
         <header className="text-center flex flex-col items-center space-y-4 pt-12 flex-shrink-0">
           <GlobalControls />
-          <Logo className="w-16 h-16 md:w-24 md:h-24" />
-          <h1 className="text-3xl md:text-5xl font-bold font-headline tracking-tighter">
-            TechTermz
-          </h1>
+          <div className="border rounded-lg p-6 flex flex-col items-center gap-4 bg-card/50">
+            <Logo className="w-16 h-16 md:w-24 md:h-24" />
+            <h1 className="text-3xl md:text-5xl font-bold font-headline tracking-tighter">
+              TechTermz
+            </h1>
+          </div>
           <p className="text-base md:text-lg text-muted-foreground max-w-md pt-2">
             Search, browse, and master the language of tech. Your go-to dictionary
             for IT and tech jargon, available offline.
