@@ -51,7 +51,7 @@ export default function MobileSidebar() {
             <Separator className="my-1 bg-border/50" />
             <NavLink href="/about" icon={Info} onClick={onClose}>About</NavLink>
         </div>
-        <div className="mt-auto p-4 text-center text-xs text-muted-foreground">
+        <div className="mt-auto border-t p-4 text-center text-xs text-muted-foreground">
           Made by: Archie Macahilig
         </div>
       </SheetContent>
