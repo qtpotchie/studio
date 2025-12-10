@@ -37,12 +37,17 @@ export default function MobileSidebar() {
         <SheetHeader>
           <SheetTitle className="sr-only">Menu</SheetTitle>
         </SheetHeader>
-        <div className="flex justify-center mb-6 pb-6 border-b">
-            <Link href="/" onClick={onClose} className="flex flex-col items-center gap-2">
+        <div className="p-4">
+            <Link 
+              href="/" 
+              onClick={onClose} 
+              className="flex flex-col items-center gap-3 p-4 rounded-lg border-2 border-border/50 hover:border-primary/50 transition-colors"
+            >
                 <Logo className="w-12 h-12" />
                 <span className="text-base font-bold">TechTermz</span>
             </Link>
         </div>
+        <Separator className="mb-2" />
         <div className="flex flex-col gap-1 px-2">
             <NavLink href="/word-of-the-day" icon={CalendarDays} onClick={onClose}>Word of the Day</NavLink>
             <NavLink href="/all-terms" icon={BookOpen} onClick={onClose}>All Terms</NavLink>
