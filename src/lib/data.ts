@@ -3283,7 +3283,7 @@ export const terms: Term[] = [
     id: 'autohealing',
     term: 'Autohealing',
     slug: 'autohealing',
-    definition: 'Autohealing is a system\'s ability to automatically detect and recover from failures without human intervention.',
+    definition: 'A system\'s ability to automatically detect and recover from failures without human intervention.',
     example: 'The Kubernetes cluster has an autohealing capability; if a pod crashes, it will automatically be restarted.'
   },
   {
@@ -4118,7 +4118,3225 @@ export const terms: Term[] = [
     slug: 'phantom-packet',
     definition: 'A phantom packet is a term for a network packet that appears in logs or analysis but seems to have no valid source or reason for being there, often the result of a network glitch or misconfiguration.',
     example: 'The network analyst was trying to trace the source of some phantom packets that were appearing on the firewall logs.'
+  },
+  {
+    id: 'dimm',
+    term: 'DIMM',
+    slug: 'dimm',
+    definition: 'A Dual Inline Memory Module (DIMM) is a type of computer memory that is installed on motherboards.',
+    example: 'I need to buy two 8GB DIMMs to upgrade my computer\'s RAM to 16GB.'
+  },
+  {
+    id: 'sodimm',
+    term: 'SODIMM',
+    slug: 'sodimm',
+    definition: 'A Small Outline DIMM (SODIMM) is a smaller type of computer memory module, typically used in laptops and other small form-factor computers.',
+    example: 'My laptop uses SODIMM memory, which is smaller than the DIMMs in my desktop.'
+  },
+  {
+    id: 'tdp',
+    term: 'TDP',
+    slug: 'tdp',
+    definition: 'Thermal Design Power (TDP) is the maximum amount of heat a computer chip, like a CPU or GPU, is expected to generate under a typical workload.',
+    example: 'This CPU has a TDP of 65 watts, so I need a cooler that can handle at least that much heat.'
+  },
+  {
+    id: 'vrm',
+    term: 'VRM',
+    slug: 'vrm',
+    definition: 'A Voltage Regulator Module (VRM) is an electronic circuit that provides a clean and stable voltage to the CPU.',
+    example: 'A good motherboard with a robust VRM is important for overclocking.'
+  },
+  {
+    id: 'ish',
+    term: 'ISH',
+    slug: 'ish',
+    definition: 'The IO Shield (ISH) is the metal plate that covers the back ports of a motherboard.',
+    example: 'Don\'t forget to install the IO shield before you mount the motherboard in the case.'
+  },
+  {
+    id: 'occt',
+    term: 'OCCT',
+    slug: 'occt',
+    definition: 'OverClock Checking Tool (OCCT) is a popular software used to stress test computer components like the CPU and GPU to check for stability.',
+    example: 'I ran OCCT for an hour to make sure my new overclock settings were stable.'
+  },
+  {
+    id: 'tpm',
+    term: 'TPM',
+    slug: 'tpm',
+    definition: 'A Trusted Platform Module (TPM) is a dedicated micro-controller designed to secure hardware through integrated cryptographic keys.',
+    example: 'Windows 11 requires a TPM 2.0 module to be enabled for installation.'
+  },
+  {
+    id: 'smps',
+    term: 'SMPS',
+    slug: 'smps',
+    definition: 'A Switched-Mode Power Supply (SMPS) is an electronic power supply that incorporates a switching regulator to convert electrical power efficiently. Modern computer PSUs are SMPS.',
+    example: 'The computer\'s SMPS efficiently converts AC power from the wall into the various DC voltages needed by the components.'
+  },
+  {
+    id: 'mosfet',
+    term: 'MOSFET',
+    slug: 'mosfet',
+    definition: 'A Metal-Oxide-Semiconductor Field-Effect Transistor (MOSFET) is a type of transistor used for amplifying or switching electronic signals, commonly found in a motherboard\'s VRM.',
+    example: 'The quality of the MOSFETs in the VRM can affect the motherboard\'s overclocking potential.'
+  },
+  {
+    id: 'fsb',
+    term: 'FSB',
+    slug: 'fsb',
+    definition: 'The Front-Side Bus (FSB) is a now-legacy computer communication interface that was used to connect the CPU with main memory and other components.',
+    example: 'In older computers, the FSB speed was a key factor in overall system performance.'
+  },
+  {
+    id: 'i-o',
+    term: 'I/O',
+    slug: 'i-o',
+    definition: 'Input/Output (I/O) refers to the communication between a computer and the outside world, including devices like keyboards, mice, and storage drives.',
+    example: 'A slow hard drive can create an I/O bottleneck that slows down the entire system.'
+  },
+  {
+    id: 'rpm',
+    term: 'RPM',
+    slug: 'rpm',
+    definition: 'Revolutions Per Minute (RPM) is a measure of the speed of a spinning object, like a hard drive platter or a cooling fan.',
+    example: 'A 7200 RPM hard drive is faster than a 5400 RPM one.'
+  },
+  {
+    id: 'uefi',
+    term: 'UEFI',
+    slug: 'uefi',
+    definition: 'The Unified Extensible Firmware Interface (UEFI) is a modern replacement for the traditional BIOS, providing a more advanced interface for initializing hardware and booting the OS.',
+    example: 'I entered the UEFI setup to enable XMP for my RAM.'
+  },
+  {
+    id: 'dvi',
+    term: 'DVI',
+    slug: 'dvi',
+    definition: 'The Digital Visual Interface (DVI) is a video display interface used to connect a video source to a display device, like a computer monitor. It has been largely replaced by HDMI and DisplayPort.',
+    example: 'My old monitor only has DVI and VGA inputs.'
+  },
+  {
+    id: 'dp',
+    term: 'DP',
+    slug: 'dp',
+    definition: 'DisplayPort (DP) is a digital display interface primarily used to connect a video source to a display device such as a computer monitor.',
+    example: 'To get the highest refresh rate, I have to use the DisplayPort connection on my monitor.'
+  },
+  {
+    id: 'pcb',
+    term: 'PCB',
+    slug: 'pcb',
+    definition: 'A Printed Circuit Board (PCB) is a board made of non-conductive material with conductive pathways etched or printed onto it, used to connect electronic components.',
+    example: 'The motherboard is the main PCB in a computer.'
+  },
+  {
+    id: 'hotswap',
+    term: 'HOTSWAP',
+    slug: 'hotswap',
+    definition: 'A hot-swappable component is one that can be removed and replaced while the computer is running.',
+    example: 'The server has hot-swap drive bays, so I can replace a failed drive without any downtime.'
+  },
+  {
+    id: 'pci',
+    term: 'PCI',
+    slug: 'pci',
+    definition: 'Peripheral Component Interconnect (PCI) is a local computer bus for attaching hardware devices in a computer. It is a legacy standard, replaced by PCIe.',
+    example: 'I have an old sound card that still uses a PCI slot.'
+  },
+  {
+    id: 'pcie-lane',
+    term: 'PCIe Lane',
+    slug: 'pcie-lane',
+    definition: 'A PCI Express (PCIe) Lane is a single serial data connection. A PCIe slot can have multiple lanes (e.g., x1, x4, x8, x16) for higher bandwidth.',
+    example: 'A graphics card typically uses a PCIe x16 slot to get the maximum number of lanes.'
+  },
+  {
+    id: 'rgb',
+    term: 'RGB',
+    slug: 'rgb',
+    definition: 'Red, Green, and Blue (RGB) are the primary colors of light used in displays and lighting systems to create a wide spectrum of colors.',
+    example: 'I synchronized the RGB lighting on my keyboard, mouse, and PC case.'
+  },
+  {
+    id: 'dram',
+    term: 'DRAM',
+    slug: 'dram',
+    definition: 'Dynamic RAM (DRAM) is a type of random-access semiconductor memory that stores each bit of data in a separate capacitor within an integrated circuit.',
+    example: 'Modern computer memory (RAM) is a type of DRAM.'
+  },
+  {
+    id: 'vram',
+    term: 'VRAM',
+    slug: 'vram',
+    definition: 'Video RAM (VRAM) is a type of RAM used to store image data for a computer display. It is the memory used by a graphics card.',
+    example: 'This game requires a graphics card with at least 8GB of VRAM.'
+  },
+  {
+    id: 'cas',
+    term: 'CAS',
+    slug: 'cas',
+    definition: 'Column Address Strobe (CAS) Latency is a key timing measurement for RAM that indicates the delay between the memory controller telling the memory module to access a particular memory column, and the data from that column being available.',
+    example: 'RAM with a lower CAS latency is generally faster.'
+  },
+  {
+    id: 'ecc',
+    term: 'ECC',
+    slug: 'ecc',
+    definition: 'Error-Correcting Code (ECC) memory is a type of RAM that can detect and correct the most common kinds of internal data corruption. It is used in servers and workstations.',
+    example: 'The server requires ECC memory to ensure data integrity.'
+  },
+  {
+    id: 'raid',
+    term: 'RAID',
+    slug: 'raid',
+    definition: 'A Redundant Array of Independent Disks (RAID) is a data storage virtualization technology that combines multiple physical disk drive components into one or more logical units for the purposes of data redundancy, performance improvement, or both.',
+    example: 'I set up a RAID 1 array to mirror my data across two drives for redundancy.'
+  },
+  {
+    id: 'jbod',
+    term: 'JBOD',
+    slug: 'jbod',
+    definition: 'Just a Bunch of Disks (JBOD) is a storage architecture that consists of multiple disk drives in a single enclosure, where each drive is managed as a separate volume.',
+    example: 'Instead of using RAID, I configured the drive enclosure as a JBOD, so I see each drive individually.'
+  },
+  {
+    id: 'nas',
+    term: 'NAS',
+    slug: 'nas',
+    definition: 'A Network-Attached Storage (NAS) is a dedicated file storage device that is connected to a network, allowing multiple users to access and share files.',
+    example: 'I store all my movies and music on a NAS in my home network.'
+  },
+  {
+    id: 'san',
+    term: 'SAN',
+    slug: 'san',
+    definition: 'A Storage Area Network (SAN) is a specialized, high-speed network that provides block-level network access to storage. It is typically used in enterprise environments.',
+    example: 'The virtual machines are running on a high-performance SAN.'
+  },
+  {
+    id: 'mac',
+    term: 'MAC',
+    slug: 'mac',
+    definition: 'A Media Access Control (MAC) address is a unique identifier assigned to a network interface controller (NIC) for use as a network address in communications within a network segment.',
+    example: 'I had to provide the MAC address of my device to get access to the corporate Wi-Fi.'
+  },
+  {
+    id: 'dhcp',
+    term: 'DHCP',
+    slug: 'dhcp',
+    definition: 'The Dynamic Host Configuration Protocol (DHCP) is a network management protocol used to automate the process of configuring devices on IP networks.',
+    example: 'The router acts as a DHCP server, automatically assigning IP addresses to devices on the network.'
+  },
+  {
+    id: 'dns',
+    term: 'DNS',
+    slug: 'dns',
+    definition: 'The Domain Name System (DNS) is the hierarchical and decentralized naming system used to identify computers, services, and other resources reachable through the Internet or other Internet Protocol networks.',
+    example: 'When you type a website address in your browser, your computer performs a DNS lookup to find its IP address.'
+  },
+  {
+    id: 'whois',
+    term: 'WHOIS',
+    slug: 'whois',
+    definition: 'WHOIS is a query and response protocol that is widely used for querying databases that store the registered users or assignees of an Internet resource, such as a domain name.',
+    example: 'I used a WHOIS lookup to find out who owns that domain name.'
+  },
+  {
+    id: 'cdn',
+    term: 'CDN',
+    slug: 'cdn',
+    definition: 'A Content Delivery Network (CDN) is a geographically distributed network of proxy servers and their data centers, which provide high availability and performance by distributing the service spatially relative to end-users.',
+    example: 'The website loads quickly all over the world because it uses a CDN to serve its images and videos.'
+  },
+  {
+    id: 'ttl',
+    term: 'TTL',
+    slug: 'ttl',
+    definition: 'Time To Live (TTL) is a mechanism that limits the lifespan or lifetime of data in a computer or network. For DNS, it specifies how long a record should be cached.',
+    example: 'I set a low TTL on the DNS record so that the change would propagate quickly.'
+  },
+  {
+    id: 'wan',
+    term: 'WAN',
+    slug: 'wan',
+    definition: 'A Wide Area Network (WAN) is a telecommunications network that extends over a large geographical area for the primary purpose of computer networking.',
+    example: 'The company uses a private WAN to connect its offices in different cities.'
+  },
+  {
+    id: 'lan',
+    term: 'LAN',
+    slug: 'lan',
+    definition: 'A Local Area Network (LAN) is a computer network that interconnects computers within a limited area such as a residence, school, laboratory, university campus or office building.',
+    example: 'We are having a LAN party this weekend to play games together.'
+  },
+  {
+    id: 'vlan',
+    term: 'VLAN',
+    slug: 'vlan',
+    definition: 'A Virtual LAN (VLAN) is any broadcast domain that is partitioned and isolated in a computer network at the data link layer (OSI layer 2).',
+    example: 'We put the guest Wi-Fi on a separate VLAN to isolate it from our internal corporate network.'
+  },
+  {
+    id: 'nat',
+    term: 'NAT',
+    slug: 'nat',
+    definition: 'Network Address Translation (NAT) is a method of remapping an IP address space into another by modifying network address information in the IP header of packets while they are in transit across a traffic routing device.',
+    example: 'My home router uses NAT to allow all my devices to share a single public IP address.'
+  },
+  {
+    id: 'noc',
+    term: 'NOC',
+    slug: 'noc',
+    definition: 'A Network Operations Center (NOC) is a central location from which network administrators manage, control and monitor one or more networks.',
+    example: 'The NOC team is investigating the cause of the network outage.'
+  },
+  {
+    id: 'qos',
+    term: 'QoS',
+    slug: 'qos',
+    definition: 'Quality of Service (QoS) is the description or measurement of the overall performance of a service, such as a telecommunications or computer network, particularly the performance seen by the users of the network.',
+    example: 'I configured QoS on my router to prioritize gaming traffic.'
+  },
+  {
+    id: 'snmp',
+    term: 'SNMP',
+    slug: 'snmp',
+    definition: 'The Simple Network Management Protocol (SNMP) is an Internet Standard protocol for collecting and organizing information about managed devices on IP networks.',
+    example: 'Our monitoring system uses SNMP to query the status of our routers and switches.'
+  },
+  {
+    id: 'ssh',
+    term: 'SSH',
+    slug: 'ssh',
+    definition: 'Secure Shell (SSH) is a cryptographic network protocol for operating network services securely over an unsecured network.',
+    example: 'I used SSH to securely connect to the remote server and manage it from the command line.'
+  },
+  {
+    id: 'sftp',
+    term: 'SFTP',
+    slug: 'sftp',
+    definition: 'Secure File Transfer Protocol (SFTP) is a network protocol that provides file access, file transfer, and file management over any reliable data stream. It was designed as an extension of SSH.',
+    example: 'I used an SFTP client to securely upload the files to the web server.'
+  },
+  {
+    id: 'tls',
+    term: 'TLS',
+    slug: 'tls',
+    definition: 'Transport Layer Security (TLS) is a cryptographic protocol designed to provide communications security over a computer network. It is the successor to SSL.',
+    example: 'Websites that use HTTPS are secured with TLS encryption.'
+  },
+  {
+    id: 'ssl',
+    term: 'SSL',
+    slug: 'ssl',
+    definition: 'Secure Sockets Layer (SSL) is a standard security technology for establishing an encrypted link between a server and a client—typically a web server and a browser. It has been superseded by TLS.',
+    example: 'Although the term SSL is still widely used, modern secure connections actually use TLS.'
+  },
+  {
+    id: 'siem',
+    term: 'SIEM',
+    slug: 'siem',
+    definition: 'Security Information and Event Management (SIEM) is a field within the field of computer security, where software products and services combine security information management and security event management.',
+    example: 'Our SIEM system aggregates logs from all our servers and alerts us to suspicious activity.'
+  },
+  {
+    id: 'sop',
+    term: 'SOP',
+    slug: 'sop',
+    definition: 'A Standard Operating Procedure (SOP) is a set of step-by-step instructions compiled by an organization to help workers carry out complex routine operations.',
+    example: 'When a new employee is onboarded, they are given the SOP for setting up their development environment.'
+  },
+  {
+    id: 'pdu',
+    term: 'PDU',
+    slug: 'pdu',
+    definition: 'A Power Distribution Unit (PDU) is a device fitted with multiple outputs designed to distribute electric power, especially to racks of computers and networking equipment located within a data center.',
+    example: 'I plugged all the servers in the rack into the new PDU.'
+  },
+  {
+    id: 'sso',
+    term: 'SSO',
+    slug: 'sso',
+    definition: 'Single Sign-On (SSO) is an authentication scheme that allows a user to log in with a single ID and password to any of several related, yet independent, software systems.',
+    example: 'Our company uses SSO, so I can log into all my work applications with my one corporate account.'
+  },
+  {
+    id: 'mfa',
+    term: 'MFA',
+    slug: 'mfa',
+    definition: 'Multi-Factor Authentication (MFA) is an electronic authentication method in which a user is granted access to a website or application only after successfully presenting two or more pieces of evidence to an authentication mechanism.',
+    example: 'I enabled MFA on my email account for extra security.'
+  },
+  {
+    id: 'rbac',
+    term: 'RBAC',
+    slug: 'rbac',
+    definition: 'Role-Based Access Control (RBAC) is a method of restricting network access based on the roles of individual users within an enterprise.',
+    example: 'We use RBAC to ensure that only managers have access to the financial reports.'
+  },
+  {
+    id: 'iam',
+    term: 'IAM',
+    slug: 'iam',
+    definition: 'Identity and Access Management (IAM) is a framework of policies and technologies for ensuring that the right users have the appropriate access to technology resources.',
+    example: 'I configured an IAM policy in AWS to give the application read-only access to the S3 bucket.'
+  },
+  {
+    id: 'kpi',
+    term: 'KPI',
+    slug: 'kpi',
+    definition: 'A Key Performance Indicator (KPI) is a measurable value that demonstrates how effectively a company is achieving key business objectives.',
+    example: 'Our team\'s main KPI for this quarter is to reduce application response time by 20%.'
+  },
+  {
+    id: 'sre',
+    term: 'SRE',
+    slug: 'sre',
+    definition: 'A Site Reliability Engineer (SRE) is a software engineer who is responsible for the reliability, scalability, and performance of a system.',
+    example: 'The SRE team is on call to handle any production outages.'
+  },
+  {
+    id: 'sla',
+    term: 'SLA',
+    slug: 'sla',
+    definition: 'A Service Level Agreement (SLA) is a commitment between a service provider and a client. Particular aspects of the service – quality, availability, responsibilities – are agreed between the service provider and the service user.',
+    example: 'Our cloud provider guarantees 99.99% uptime in their SLA.'
+  },
+  {
+    id: 'eta',
+    term: 'ETA',
+    slug: 'eta',
+    definition: 'Estimated Time of Arrival (ETA) is a projection of when a task, process, or delivery will be completed.',
+    example: 'The file transfer has an ETA of 5 minutes.'
+  },
+  {
+    id: 'eta-reset',
+    term: 'ETA Reset',
+    slug: 'eta-reset',
+    definition: 'An ETA Reset is a recalculation or update of the estimated time of arrival, often due to a change in conditions.',
+    example: 'The download speed increased, so we got an ETA reset showing it would finish sooner.'
+  },
+  {
+    id: 'rmm',
+    term: 'RMM',
+    slug: 'rmm',
+    definition: 'Remote Monitoring and Management (RMM) is a type of software used by IT service providers to remotely monitor and manage their clients\' IT infrastructure and systems.',
+    example: 'Our IT support company uses an RMM tool to proactively manage our servers.'
+  },
+  {
+    id: 'bmc',
+    term: 'BMC',
+    slug: 'bmc',
+    definition: 'A Baseboard Management Controller (BMC) is a specialized service processor that monitors the physical state of a computer, network server or other hardware device using sensors and communicating with the system administrator through an independent connection.',
+    example: 'I used the BMC to remotely power cycle the server even though the operating system was frozen.'
+  },
+  {
+    id: 'lun',
+    term: 'LUN',
+    slug: 'lun',
+    definition: 'A Logical Unit Number (LUN) is a unique identifier for individual or collections of hard disk devices that are part of a storage area network (SAN).',
+    example: 'I provisioned a new LUN from the SAN and presented it to the virtual machine.'
+  },
+  {
+    id: 'mttr',
+    term: 'MTTR',
+    slug: 'mttr',
+    definition: 'Mean Time To Repair (MTTR) is a basic measure of the maintainability of repairable items. It represents the average time required to repair a failed component or device.',
+    example: 'Our goal is to reduce the MTTR for critical incidents to under 15 minutes.'
+  },
+  {
+    id: 'mtbf',
+    term: 'MTBF',
+    slug: 'mtbf',
+    definition: 'Mean Time Between Failures (MTBF) is the predicted elapsed time between inherent failures of a mechanical or electronic system, during normal system operation.',
+    example: 'This enterprise-grade hard drive has a very high MTBF.'
+  },
+  {
+    id: 'eeprom',
+    term: 'EEPROM',
+    slug: 'eeprom',
+    definition: 'Electrically Erasable Programmable Read-Only Memory (EEPROM) is a type of non-volatile memory used in computers and other electronic devices to store small amounts of data that must be saved when power is removed.',
+    example: 'The device settings are stored in an EEPROM chip.'
+  },
+  {
+    id: 'uart',
+    term: 'UART',
+    slug: 'uart',
+    definition: 'A Universal Asynchronous Receiver-Transmitter (UART) is a computer hardware device for asynchronous serial communication in which the data format and transmission speeds are configurable.',
+    example: 'I connected to the device\'s serial console using a USB-to-UART adapter.'
+  },
+  {
+    id: 'qos-queue',
+    term: 'QOS Queue',
+    slug: 'qos-queue',
+    definition: 'A Quality of Service (QoS) Queue is a buffer in a network device that holds packets and prioritizes them for transmission based on their QoS markings.',
+    example: 'Voice traffic is placed in a high-priority QoS queue to ensure low latency.'
+  },
+  {
+    id: 'apipa',
+    term: 'APIPA',
+    slug: 'apipa',
+    definition: 'Automatic Private IP Addressing (APIPA) is a feature of Windows-based operating systems that enables a computer to automatically assign itself an IP address when there is no DHCP server available.',
+    example: 'My computer couldn\'t contact the DHCP server, so it got an APIPA address in the 169.254.x.x range.'
+  },
+  {
+    id: 'cidr',
+    term: 'CIDR',
+    slug: 'cidr',
+    definition: 'Classless Inter-Domain Routing (CIDR) is a method for allocating IP addresses and for IP routing. It allows for more flexible allocation of IP addresses compared to the old classful system.',
+    example: 'The network was defined using CIDR notation as 192.168.1.0/24.'
+  },
+  {
+    id: 'snat',
+    term: 'SNAT',
+    slug: 'snat',
+    definition: 'Source NAT (SNAT) is a type of Network Address Translation where the source IP address of a packet is changed as it passes through a router or firewall.',
+    example: 'The firewall uses SNAT to change the private IP address of my computer to its public IP address.'
+  },
+  {
+    id: 'dnat',
+    term: 'DNAT',
+    slug: 'dnat',
+    definition: 'Destination NAT (DNAT) is a type of Network Address Translation where the destination IP address of a packet is changed. It is often used for port forwarding.',
+    example: 'I configured DNAT to forward traffic coming to my public IP on port 80 to my internal web server.'
+  },
+  {
+    id: 'mfa-token',
+    term: 'MFA Token',
+    slug: 'mfa-token',
+    definition: 'A Multi-Factor Authentication (MFA) Token is a one-time code generated by an authenticator app or hardware device, used as a second factor of authentication.',
+    example: 'I entered my password and then the MFA token from my phone to log in.'
+  },
+  {
+    id: 'radius',
+    term: 'RADIUS',
+    slug: 'radius',
+    definition: 'Remote Authentication Dial-In User Service (RADIUS) is a networking protocol that provides centralized Authentication, Authorization, and Accounting (AAA) management for users who connect and use a network service.',
+    example: 'Our corporate Wi-Fi uses a RADIUS server to authenticate users with their domain credentials.'
+  },
+  {
+    id: 'tacacs',
+    term: 'TACACS',
+    slug: 'tacacs',
+    definition: 'Terminal Access Controller Access-Control System (TACACS) is a family of related protocols handling remote authentication and related services for networked access control through a centralized server.',
+    example: 'We use TACACS+ to control who can log into and manage our network devices.'
+  },
+  {
+    id: 'vpn',
+    term: 'VPN',
+    slug: 'vpn',
+    definition: 'A Virtual Private Network (VPN) extends a private network across a public network and enables users to send and receive data across shared or public networks as if their computing devices were directly connected to the private network.',
+    example: 'I have to connect to the company VPN to access the internal servers from home.'
+  },
+  {
+    id: 'ipsec',
+    term: 'IPsec',
+    slug: 'ipsec',
+    definition: 'Internet Protocol Security (IPsec) is a secure network protocol suite that authenticates and encrypts the packets of data to provide secure encrypted communication between two computers over an Internet Protocol network.',
+    example: 'The site-to-site VPN is secured with an IPsec tunnel.'
+  },
+  {
+    id: 'gre',
+    term: 'GRE',
+    slug: 'gre',
+    definition: 'Generic Routing Encapsulation (GRE) is a tunneling protocol developed by Cisco Systems that can encapsulate a wide variety of network layer protocols inside virtual point-to-point links over an Internet Protocol network.',
+    example: 'We set up a GRE tunnel to pass routing protocol updates between our two sites.'
+  },
+  {
+    id: 'ospf',
+    term: 'OSPF',
+    slug: 'ospf',
+    definition: 'Open Shortest Path First (OSPF) is a routing protocol for Internet Protocol (IP) networks. It uses a link state routing algorithm and falls into the group of interior gateway protocols.',
+    example: 'Our internal network uses OSPF to dynamically learn the best routes between our routers.'
+  },
+  {
+    id: 'bgp',
+    term: 'BGP',
+    slug: 'bgp',
+    definition: 'Border Gateway Protocol (BGP) is a standardized exterior gateway protocol designed to exchange routing and reachability information among autonomous systems (AS) on the Internet.',
+    example: 'The internet itself runs on BGP, with large ISPs peering with each other to exchange routes.'
+  },
+  {
+    id: 'rstp',
+    term: 'RSTP',
+    slug: 'rstp',
+    definition: 'Rapid Spanning Tree Protocol (RSTP) is an evolution of the Spanning Tree Protocol (STP) that provides faster network convergence after a topology change.',
+    example: 'We enabled RSTP on our switches to reduce the time the network is down after a link failure.'
+  },
+  {
+    id: 'stp',
+    term: 'STP',
+    slug: 'stp',
+    definition: 'The Spanning Tree Protocol (STP) is a network protocol that builds a logical, loop-free topology for Ethernet networks.',
+    example: 'STP prevents broadcast storms by blocking redundant paths in the network.'
+  },
+  {
+    id: 'arp',
+    term: 'ARP',
+    slug: 'arp',
+    definition: 'The Address Resolution Protocol (ARP) is a communication protocol used for discovering the link layer address, such as a MAC address, associated with a given internet layer address, typically an IPv4 address.',
+    example: 'My computer sent an ARP request to find the MAC address of the default gateway.'
+  },
+  {
+    id: 'ntp',
+    term: 'NTP',
+    slug: 'ntp',
+    definition: 'The Network Time Protocol (NTP) is a networking protocol for clock synchronization between computer systems over packet-switched, variable-latency data networks.',
+    example: 'All our servers are configured to sync their time with an internal NTP server.'
+  },
+  {
+    id: 'etl',
+    term: 'ETL',
+    slug: 'etl',
+    definition: 'Extract, Transform, Load (ETL) is a three-phase process where data is extracted from a source, transformed into a proper format, and then loaded into a data warehouse.',
+    example: 'We have a nightly ETL job that pulls data from our production database and loads it into our analytics platform.'
+  },
+  {
+    id: 'json',
+    term: 'JSON',
+    slug: 'json',
+    definition: 'JavaScript Object Notation (JSON) is an open standard file format, and data interchange format, that uses human-readable text to store and transmit data objects consisting of attribute–value pairs and array data types.',
+    example: 'The API returns the data in JSON format.'
+  },
+  {
+    id: 'yaml',
+    term: 'YAML',
+    slug: 'yaml',
+    definition: 'YAML (YAML Ain\'t Markup Language) is a human-readable data-serialization language. It is commonly used for configuration files and in applications where data is being stored or transmitted.',
+    example: 'Our Kubernetes configurations are all written in YAML.'
+  },
+  {
+    id: 'csv',
+    term: 'CSV',
+    slug: 'csv',
+    definition: 'A Comma-Separated Values (CSV) file is a delimited text file that uses a comma to separate values. Each line of the file is a data record.',
+    example: 'I exported the report as a CSV file so I could open it in Excel.'
+  },
+  {
+    id: 'ide',
+    term: 'IDE',
+    slug: 'ide',
+    definition: 'An Integrated Development Environment (IDE) is a software application that provides comprehensive facilities to computer programmers for software development. An IDE normally consists of at least a source code editor, build automation tools, and a debugger.',
+    example: 'I use Visual Studio Code as my main IDE for web development.'
+  },
+  {
+    id: 'sdk',
+    term: 'SDK',
+    slug: 'sdk',
+    definition: 'A Software Development Kit (SDK) is a collection of software development tools in one installable package.',
+    example: 'I had to download the Android SDK to start developing apps for Android.'
+  },
+  {
+    id: 'cli',
+    term: 'CLI',
+    slug: 'cli',
+    definition: 'A Command-Line Interface (CLI) processes commands to a computer program in the form of lines of text.',
+    example: 'I prefer using the Git CLI over a graphical client.'
+  },
+  {
+    id: 'tui',
+    term: 'TUI',
+    slug: 'tui',
+    definition: 'A Text-based User Interface (TUI), is a retronym for a type of user interface which was common from the mid-1960s through the mid-1980s, before the advent of graphical user interfaces (GUIs).',
+    example: 'The old BIOS setup screen is a classic example of a TUI.'
+  },
+  {
+    id: 'gui',
+    term: 'GUI',
+    slug: 'gui',
+    definition: 'A Graphical User Interface (GUI) is a type of user interface that allows users to interact with electronic devices through graphical icons and visual indicators such as secondary notation, instead of text-based user interfaces.',
+    example: 'Windows and macOS are both operating systems with a sophisticated GUI.'
+  },
+  {
+    id: 'wsl',
+    term: 'WSL',
+    slug: 'wsl',
+    definition: 'The Windows Subsystem for Linux (WSL) is a compatibility layer for running Linux binary executables natively on Windows 10 and Windows Server 2019.',
+    example: 'I use WSL to run my Linux development tools directly on my Windows machine.'
+  },
+  {
+    id: 'crt',
+    term: 'CRT',
+    slug: 'crt',
+    definition: 'A Cathode-Ray Tube (CRT) is a vacuum tube containing one or more electron guns, and a phosphorescent screen used to display images. It is the technology used in older, bulky monitors and televisions.',
+    example: 'Some retro gamers prefer playing on a CRT monitor for its low input lag.'
+  },
+  {
+    id: 'ips',
+    term: 'IPS',
+    slug: 'ips',
+    definition: 'In-Plane Switching (IPS) is a screen technology for liquid-crystal displays (LCDs). It is known for its wide viewing angles and excellent color accuracy.',
+    example: 'I bought an IPS monitor for photo editing because of its superior color reproduction.'
+  },
+  {
+    id: 'va',
+    term: 'VA',
+    slug: 'va',
+    definition: 'Vertical Alignment (VA) is a type of LCD panel technology. VA panels are known for their high contrast ratios, which produce deep blacks.',
+    example: 'My VA monitor is great for watching movies because the black levels are so good.'
+  },
+  {
+    id: 'tn',
+    term: 'TN',
+    slug: 'tn',
+    definition: 'Twisted Nematic (TN) is a type of LCD panel technology. TN panels are known for their very fast response times, but have poorer color reproduction and viewing angles than IPS or VA panels.',
+    example: 'Competitive gamers often use TN monitors because of their high refresh rates and fast response times.'
+  },
+  {
+    id: 'hdr',
+    term: 'HDR',
+    slug: 'hdr',
+    definition: 'High Dynamic Range (HDR) is a technology that produces a greater dynamic range of luminosity than is possible with standard digital imaging or photographic techniques.',
+    example: 'The game looks amazing in HDR, with much brighter highlights and deeper shadows.'
+  },
+  {
+    id: 'oem',
+    term: 'OEM',
+    slug: 'oem',
+    definition: 'An Original Equipment Manufacturer (OEM) is a company that produces parts and equipment that may be marketed by another manufacturer.',
+    example: 'My Dell computer came with an OEM version of Windows.'
+  },
+  {
+    id: 'odm',
+    term: 'ODM',
+    slug: 'odm',
+    definition: 'An Original Design Manufacturer (ODM) is a company that designs and manufactures a product, as specified, that is eventually rebranded by another firm for sale.',
+    example: 'Many well-known electronics brands don\'t manufacture their own products; they use an ODM.'
+  },
+  {
+    id: 'rma',
+    term: 'RMA',
+    slug: 'rma',
+    definition: 'A Return Merchandise Authorization (RMA) is a part of the process of returning a product to receive a refund, replacement, or repair during the product\'s warranty period.',
+    example: 'My new graphics card was dead on arrival, so I had to contact support to get an RMA number.'
+  },
+  {
+    id: 'sku',
+    term: 'SKU',
+    slug: 'sku',
+    definition: 'A Stock Keeping Unit (SKU) is a scannable bar code, most often seen printed on product labels in a retail store. The label allows vendors to automatically track the movement of inventory.',
+    example: 'Can you give me the SKU for that specific model of laptop?'
+  },
+  {
+    id: 'upc',
+    term: 'UPC',
+    slug: 'upc',
+    definition: 'The Universal Product Code (UPC) is a barcode symbology that is widely used in the United States, Canada, Europe, Australia, New Zealand, and other countries for tracking trade items in stores.',
+    example: 'I scanned the UPC on the box to look up the product online.'
+  },
+  {
+    id: 'bom',
+    term: 'BOM',
+    slug: 'bom',
+    definition: 'A Bill of Materials (BOM) is a comprehensive list of all the raw materials, components, and assemblies required to build or manufacture a product.',
+    example: 'The engineer reviewed the BOM to see if they could substitute a cheaper component.'
+  },
+  {
+    id: 'eol',
+    term: 'EOL',
+    slug: 'eol',
+    definition: 'End of Life (EOL) is a term used with respect to a product supplied to customers, indicating that the product is at the end of its useful life and a vendor will no longer be marketing, selling, or provisioning parts, services or software updates for it.',
+    example: 'Windows 7 has reached its EOL, so it no longer receives security updates.'
+  },
+  {
+    id: 'eos',
+    term: 'EOS',
+    slug: 'eos',
+    definition: 'End of Support (EOS) is the date after which a product or service is no longer supported by its developer or vendor.',
+    example: 'The EOS for this software version is next year, so we need to plan our upgrade.'
+  },
+  {
+    id: 'lts',
+    term: 'LTS',
+    slug: 'lts',
+    definition: 'Long-Term Support (LTS) is a product lifecycle management policy in which a stable release of computer software is maintained for a longer period of time than the standard edition.',
+    example: 'We use the LTS version of Ubuntu for our servers because we need the stability and long-term security updates.'
+  },
+  {
+    id: 'rc',
+    term: 'RC',
+    slug: 'rc',
+    definition: 'A Release Candidate (RC) is a beta version of a software product with the potential to be a final product, which is ready to be released unless significant bugs emerge.',
+    example: 'The new version of the software is now in the RC phase, so it should be released to the public soon.'
+  },
+  {
+    id: 'eta-patch',
+    term: 'ETA Patch',
+    slug: 'eta-patch',
+    definition: 'The Estimated Time of Arrival (ETA) for a patch is the projected time when a software update to fix a bug or vulnerability will be released.',
+    example: 'The vendor has an ETA for the patch of next Tuesday.'
+  },
+  {
+    id: 'patchset',
+    term: 'Patchset',
+    slug: 'patchset',
+    definition: 'A patchset is a collection of patches or updates that are bundled together and applied as a single unit.',
+    example: 'The quarterly security update was delivered as a single patchset.'
+  },
+  {
+    id: 'changelog',
+    term: 'Changelog',
+    slug: 'changelog',
+    definition: 'A changelog is a log or record of all notable changes made to a project, such as a software application or website.',
+    example: 'I read the changelog to see what new features were included in the latest update.'
+  },
+  {
+    id: 'fork',
+    term: 'Fork',
+    slug: 'fork',
+    definition: 'A fork is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project.',
+    example: 'I created a fork of the project on GitHub so I could work on my own version.'
+  },
+  {
+    id: 'merge',
+    term: 'Merge',
+    slug: 'merge',
+    definition: 'In version control, a merge is the process of combining the changes from two different branches into a single branch.',
+    example: 'I need to merge the feature branch into the main branch to release the new feature.'
+  },
+  {
+    id: 'pr',
+    term: 'PR',
+    slug: 'pr',
+    definition: 'A Pull Request (PR) is a feature of version control systems like GitHub that lets a developer propose changes to a repository. It\'s a way to initiate a code review.',
+    example: 'I opened a PR to get my code changes reviewed by the team.'
+  },
+  {
+    id: 'cr',
+    term: 'CR',
+    slug: 'cr',
+    definition: 'A Code Review (CR) is a software quality assurance activity in which one or several humans check a program mainly by viewing and reading parts of its source code.',
+    example: 'My pull request can\'t be merged until it passes the code review.'
+  },
+  {
+    id: 'lint',
+    term: 'Lint',
+    slug: 'lint',
+    definition: 'A linter is a tool that analyzes source code to flag programming errors, bugs, stylistic errors, and suspicious constructs.',
+    example: 'I have to fix the linting errors before I can commit my code.'
+  },
+  {
+    id: 'minify',
+    term: 'Minify',
+    slug: 'minify',
+    definition: 'Minification is the process of removing all unnecessary characters from source code without changing its functionality, to reduce file size.',
+    example: 'Our build process will minify the JavaScript files before deploying them to production.'
+  },
+  {
+    id: 'obfuscate',
+    term: 'Obfuscate',
+    slug: 'obfuscate',
+    definition: 'Obfuscation is the deliberate act of creating source or machine code that is difficult for humans to understand.',
+    example: 'The company obfuscates its client-side JavaScript to make it harder to reverse-engineer.'
+  },
+  {
+    id: 'decompile',
+    term: 'Decompile',
+    slug: 'decompile',
+    definition: 'A decompiler is a computer program that takes an executable file as input, and attempts to create a high-level source file that can be recompiled successfully.',
+    example: 'I used a decompiler to try to understand how the old application worked.'
+  },
+  {
+    id: 'hexdump',
+    term: 'Hexdump',
+    slug: 'hexdump',
+    definition: 'A hexdump is a hexadecimal view of computer data. It is often used for debugging or reverse engineering.',
+    example: 'I took a hexdump of the file to see its raw binary content.'
+  },
+  {
+    id: 'binwalk',
+    term: 'Binwalk',
+    slug: 'binwalk',
+    definition: 'Binwalk is a tool for analyzing, reverse engineering, and extracting firmware images.',
+    example: 'I used Binwalk to extract the filesystem from the router\'s firmware dump.'
+  },
+  {
+    id: 'stub',
+    term: 'Stub',
+    slug: 'stub',
+    definition: 'In software development, a stub is a piece of code used to stand in for some other programming functionality. A stub may simulate the behavior of existing code or be a temporary substitute for yet-to-be-developed code.',
+    example: 'I created a stub for the API client so I could test my UI code without making real network requests.'
+  },
+  {
+    id: 'mock',
+    term: 'Mock',
+    slug: 'mock',
+    definition: 'A mock object is a simulated object that mimics the behavior of real objects in controlled ways, used in unit testing.',
+    example: 'In my test, I replaced the database connection with a mock object that returns fake data.'
+  },
+  {
+    id: 'payload',
+    term: 'Payload',
+    slug: 'payload',
+    definition: 'In computing and telecommunications, the payload is the part of transmitted data that is the actual intended message. Headers and metadata are sent only to enable payload delivery.',
+    example: 'The XSS payload was a script that stole the user\'s session cookie.'
+  },
+  {
+    id: 'beacon',
+    term: 'Beacon',
+    slug: 'beacon',
+    definition: 'In security, a beacon is a periodic signal sent from a compromised system to a command and control server to indicate that it is still active and ready for commands.',
+    example: 'The malware sent a beacon out to the C2 server every 10 minutes.'
+  },
+  {
+    id: 'c2',
+    term: 'C2',
+    slug: 'c2',
+    definition: 'Command and Control (C2) infrastructure consists of servers and other technology that attackers use to maintain communications with compromised devices.',
+    example: 'The security team is trying to take down the attacker\'s C2 server.'
+  },
+  {
+    id: 'rat',
+    term: 'RAT',
+    slug: 'rat',
+    definition: 'A Remote Access Trojan (RAT) is a type of malware that includes a back door for administrative control over the target computer.',
+    example: 'The attacker used a RAT to gain complete control over the victim\'s computer.'
+  },
+  {
+    id: 'edr',
+    term: 'EDR',
+    slug: 'edr',
+    definition: 'Endpoint Detection and Response (EDR) is a cybersecurity technology that continuously monitors and responds to mitigate advanced threats on endpoint devices.',
+    example: 'Our EDR solution detected and blocked the ransomware before it could encrypt any files.'
+  },
+  {
+    id: 'xdr',
+    term: 'XDR',
+    slug: 'xdr',
+    definition: 'Extended Detection and Response (XDR) is a security technology that provides holistic, cross-platform visibility and response capabilities, integrating data from endpoints, networks, and cloud environments.',
+    example: 'XDR gives us a more complete picture of an attack than EDR alone.'
+  },
+  {
+    id: 'ipsec-tunnel',
+    term: 'IPSec Tunnel',
+    slug: 'ipsec-tunnel',
+    definition: 'An IPSec Tunnel is a secure communication channel created between two networks or devices using the IPsec protocol suite to encrypt the traffic.',
+    example: 'All traffic between our two offices is sent through an encrypted IPSec tunnel.'
+  },
+  {
+    id: 'hash',
+    term: 'Hash',
+    slug: 'hash',
+    definition: 'A hash is a function that converts an input of letters and numbers into an encrypted output of a fixed length. Hashing is used for everything from data storage to cryptography.',
+    example: 'I compared the file\'s hash to the one on the website to make sure it hadn\'t been tampered with.'
+  },
+  {
+    id: 'salt',
+    term: 'Salt',
+    slug: 'salt',
+    definition: 'In cryptography, a salt is random data that is used as an additional input to a one-way function that "hashes" a password or passphrase.',
+    example: 'Adding a unique salt to each password before hashing makes them much more resistant to rainbow table attacks.'
+  },
+  {
+    id: 'scrypt',
+    term: 'Scrypt',
+    slug: 'scrypt',
+    definition: 'Scrypt is a password-based key derivation function created by Colin Percival, originally for the Tarsnap online backup service. The algorithm was specifically designed to make it costly to perform large-scale custom hardware attacks by requiring large amounts of memory.',
+    example: 'We use Scrypt to hash our users\' passwords because it is more secure against brute-force attacks than older algorithms.'
+  },
+  {
+    id: 'sha256',
+    term: 'SHA256',
+    slug: 'sha256',
+    definition: 'SHA-256 (Secure Hash Algorithm 256-bit) is a patented cryptographic hash function that outputs a value that is 256 bits long.',
+    example: 'Bitcoin uses the SHA-256 hashing algorithm.'
+  },
+  {
+    id: 'md5',
+    term: 'MD5',
+    slug: 'md5',
+    definition: 'The MD5 message-digest algorithm is a widely used hash function producing a 128-bit hash value. Although MD5 was initially designed to be used as a cryptographic hash function, it has been found to suffer from extensive vulnerabilities and is no longer considered secure for that purpose.',
+    example: 'MD5 is still sometimes used to verify file integrity, but it should not be used for security-related purposes.'
+  },
+  {
+    id: 'hmac',
+    term: 'HMAC',
+    slug: 'hmac',
+    definition: 'A Hashed Message Authentication Code (HMAC) is a specific type of message authentication code involving a cryptographic hash function and a secret cryptographic key.',
+    example: 'The API uses HMAC to verify the authenticity and integrity of requests.'
+  },
+  {
+    id: 'rootkit',
+    term: 'ROOTKIT',
+    slug: 'rootkit',
+    definition: 'A rootkit is a clandestine computer program designed to provide continued privileged access to a computer while actively hiding its presence.',
+    example: 'The rootkit was installed deep in the operating system, making it very difficult to detect and remove.'
+  },
+  {
+    id: 'backdoor',
+    term: 'BACKDOOR',
+    slug: 'backdoor',
+    definition: 'A backdoor is a means of access to a computer system or encrypted data that bypasses the system\'s customary security mechanisms.',
+    example: 'The attacker left a backdoor on the server so they could get back in later.'
+  },
+  {
+    id: 'bot',
+    term: 'BOT',
+    slug: 'bot',
+    definition: 'A bot is a software application that runs automated tasks (scripts) over the Internet.',
+    example: 'A chatbot is a bot that can have a conversation with a human.'
+  },
+  {
+    id: 'botnet',
+    term: 'BOTNET',
+    slug: 'botnet',
+    definition: 'A botnet is a number of Internet-connected devices, each of which is running one or more bots. Botnets can be used to perform Distributed Denial-of-Service (DDoS) attacks, steal data, send spam, and allows the attacker to access the device and its connection.',
+    example: 'The attacker used a massive botnet to launch the DDoS attack.'
+  },
+  {
+    id: 'worm',
+    term: 'WORM',
+    slug: 'worm',
+    definition: 'A computer worm is a standalone malware computer program that replicates itself in order to spread to other computers.',
+    example: 'Unlike a virus, a worm can spread by itself without any human interaction.'
+  },
+  {
+    id: 'trojan',
+    term: 'TROJAN',
+    slug: 'trojan',
+    definition: 'A Trojan horse, or Trojan, is any malware which misleads users of its true intent. The term is derived from the Ancient Greek story of the deceptive Trojan Horse that led to the fall of the city of Troy.',
+    example: 'The user thought they were downloading a free game, but it was actually a Trojan that installed a keylogger on their system.'
+  },
+  {
+    id: 'pup',
+    term: 'PUP',
+    slug: 'pup',
+    definition: 'A Potentially Unwanted Program (PUP) is a program that may be unwanted, despite the user having consented to download it. PUPs include spyware, adware, and dialers.',
+    example: 'My antivirus scan found a PUP that was bundled with a free software I downloaded.'
+  },
+  {
+    id: 'sig',
+    term: 'SIG',
+    slug: 'sig',
+    definition: 'A signature file (SIG) contains data that identifies a particular virus, worm, or other malware. Antivirus programs use these signature files to detect threats.',
+    example: 'The antivirus software needs to be updated with the latest signature files to detect new threats.'
+  },
+  {
+    id: 'sigdb',
+    term: 'SIGDB',
+    slug: 'sigdb',
+    definition: 'A signature database (SIGDB) is a collection of signatures used by security software to identify known threats.',
+    example: 'The intrusion detection system uses a SIGDB to match network traffic against known attack patterns.'
+  },
+  {
+    id: 'baseline',
+    term: 'BASELINE',
+    slug: 'baseline',
+    definition: 'A baseline is a known state by which all future states are measured. In security, it refers to the normal, expected behavior of a system.',
+    example: 'Our security monitoring system first establishes a baseline of normal network traffic, and then alerts on any deviations.'
+  },
+  {
+    id: 'whitelist',
+    term: 'WHITELIST',
+    slug: 'whitelist',
+    definition: 'A whitelist is a list of approved or trusted entities, such as applications or IP addresses, that are allowed to run or access a system.',
+    example: 'The application whitelist prevents any unauthorized software from running on the corporate workstations.'
+  },
+  {
+    id: 'blacklist',
+    term: 'BLACKLIST',
+    slug: 'blacklist',
+    definition: 'A blacklist is a list of entities, such as IP addresses or email domains, that are denied access to a system.',
+    example: 'We added the spammer\'s IP address to our email server\'s blacklist.'
+  },
+  {
+    id: 'grep',
+    term: 'GREP',
+    slug: 'grep',
+    definition: 'grep is a command-line utility for searching plain-text data sets for lines that match a regular expression.',
+    example: 'I used grep to search through the log files for any error messages.'
+  },
+  {
+    id: 'chmod',
+    term: 'CHMOD',
+    slug: 'chmod',
+    definition: 'chmod is a command in Unix and Unix-like operating systems that is used to change the access permissions of file system objects (files and directories).',
+    example: 'I used `chmod 755` to make the script executable.'
+  },
+  {
+    id: 'chown',
+    term: 'CHOWN',
+    slug: 'chown',
+    definition: 'chown is a command in Unix and Unix-like operating systems that is used to change the owner of file system objects (files and directories).',
+    example: 'I used chown to change the ownership of the file to the `www-data` user.'
+  },
+  {
+    id: 'sudo',
+    term: 'SUDO',
+    slug: 'sudo',
+    definition: 'sudo is a program for Unix-like computer operating systems that allows users to run programs with the security privileges of another user, by default the superuser.',
+    example: 'I had to use sudo to run the command with root privileges.'
+  },
+  {
+    id: 'lsblk',
+    term: 'LSBLK',
+    slug: 'lsblk',
+    definition: 'lsblk is a command-line utility in Linux that lists information about all available or the specified block devices.',
+    example: 'I ran lsblk to see all the hard drives and partitions on my system.'
+  },
+  {
+    id: 'df',
+    term: 'DF',
+    slug: 'df',
+    definition: 'df (abbreviation for disk free) is a standard Unix command used to display the amount of available disk space for file systems.',
+    example: 'I ran `df -h` to see how much free space was left on the server.'
+  },
+  {
+    id: 'du',
+    term: 'DU',
+    slug: 'du',
+    definition: 'du (abbreviation for disk usage) is a standard Unix program used to estimate file space usage—space used under a particular directory or files on a file system.',
+    example: 'I used `du -sh *` to see which directories were taking up the most space.'
+  },
+  {
+    id: 'top',
+    term: 'TOP',
+    slug: 'top',
+    definition: 'top is a task manager program found in many Unix-like operating systems that displays information about CPU and memory utilization.',
+    example: 'I ran top to see which process was using up all the CPU.'
+  },
+  {
+    id: 'htop',
+    term: 'HTOP',
+    slug: 'htop',
+    definition: 'htop is an interactive process viewer for Unix systems. It is a more advanced and user-friendly alternative to the `top` command.',
+    example: 'I prefer using htop because of its color-coded display and easier process management.'
+  },
+  {
+    id: 'kill',
+    term: 'KILL',
+    slug: 'kill',
+    definition: 'kill is a command that is used in Unix-like operating systems to send a signal to a process.',
+    example: 'The process was frozen, so I had to use `kill -9` to force it to terminate.'
+  },
+  {
+    id: 'pkill',
+    term: 'PKILL',
+    slug: 'pkill',
+    definition: 'pkill is a command-line utility that sends signals to the processes of a program based on its name.',
+    example: 'I used pkill to terminate all the running instances of Chrome.'
+  },
+  {
+    id: 'logrotate',
+    term: 'LOGROTATE',
+    slug: 'logrotate',
+    definition: 'logrotate is a system utility that automates the management of log files. It can rotate, compress, and mail log files.',
+    example: 'I configured logrotate to rotate the web server\'s logs daily and keep 7 days of archives.'
+  },
+  {
+    id: 'cron',
+    term: 'CRON',
+    slug: 'cron',
+    definition: 'cron is a time-based job scheduler in Unix-like computer operating systems. Users who set up and maintain software environments use cron to schedule jobs to run periodically at fixed times, dates, or intervals.',
+    example: 'I set up a cron job to run my backup script every night at 2 AM.'
+  },
+  {
+    id: 'crontab',
+    term: 'CRONTAB',
+    slug: 'crontab',
+    definition: 'A crontab is a file that contains the schedule of cron entries to be run and at specified times.',
+    example: 'I edited the crontab file to add a new scheduled task.'
+  },
+  {
+    id: 'daemon',
+    term: 'DAEMON',
+    slug: 'daemon',
+    definition: 'A daemon is a computer program that runs as a background process, rather than being under the direct control of an interactive user.',
+    example: 'The SSH server runs as a daemon, always listening for incoming connections.'
+  },
+  {
+    id: 'syslog',
+    term: 'SYSLOG',
+    slug: 'syslog',
+    definition: 'Syslog is a standard for message logging. It allows separation of the software that generates messages, the system that stores them, and the software that reports and analyzes them.',
+    example: 'I checked the syslog to find the error messages from the kernel.'
+  },
+  {
+    id: 'journalctl',
+    term: 'JOURNALCTL',
+    slug: 'journalctl',
+    definition: 'journalctl is a utility for querying and displaying logs from journald, the systemd logging service.',
+    example: 'I used `journalctl -u nginx` to view the logs specifically for the NGINX service.'
+  },
+  {
+    id: 'initd',
+    term: 'INITD',
+    slug: 'initd',
+    definition: 'init.d is the sub-directory of /etc in Unix-like systems that contains the scripts used by the legacy System V init process to control services.',
+    example: 'On older Linux systems, you would start and stop services using scripts in /etc/init.d.'
+  },
+  {
+    id: 'systemd',
+    term: 'SYSTEMD',
+    slug: 'systemd',
+    definition: 'systemd is a software suite that provides an array of system components for Linux operating systems. Its main aim is to unify service configuration and behavior across Linux distributions. It has replaced the traditional init system.',
+    example: 'On modern Linux systems, I use `systemctl` to manage services controlled by systemd.'
+  },
+  {
+    id: 'kernel-panic',
+    term: 'KERNEL PANIC',
+    slug: 'kernel-panic',
+    definition: 'A kernel panic is a safety measure taken by an operating system\'s kernel upon detecting an internal fatal error from which it cannot safely recover. This is the equivalent of a Blue Screen of Death in Windows.',
+    example: 'A faulty driver caused a kernel panic, and the server rebooted.'
+  },
+  {
+    id: 'swap',
+    term: 'SWAP',
+    slug: 'swap',
+    definition: 'In computing, swap is a space on a hard disk used as a temporary location to store information that is not currently being used by the RAM.',
+    example: 'The system started using swap space when it ran out of physical RAM.'
+  },
+  {
+    id: 'fsck',
+    term: 'FSCK',
+    slug: 'fsck',
+    definition: 'fsck (file system consistency check) is a tool for checking the consistency of a file system in Unix and Unix-like operating systems.',
+    example: 'After the improper shutdown, the system ran fsck on the next boot to check for file system errors.'
+  },
+  {
+    id: 'lvm',
+    term: 'LVM',
+    slug: 'lvm',
+    definition: 'The Logical Volume Manager (LVM) is a device mapper framework that provides logical volume management for the Linux kernel. It allows for more flexible disk space management.',
+    example: 'I used LVM to create a logical volume that spans across two physical hard drives.'
+  },
+  {
+    id: 'parted',
+    term: 'PARTED',
+    slug: 'parted',
+    definition: 'GNU Parted is a free partition editor for creating and manipulating partition tables.',
+    example: 'I used parted to create a new partition on my hard drive.'
+  },
+  {
+    id: 'fstab',
+    term: 'FSTAB',
+    slug: 'fstab',
+    definition: 'The fstab file is a system configuration file on Linux and other Unix-like operating systems that contains information about all the partitions and storage devices on the system.',
+    example: 'I edited the /etc/fstab file to automatically mount my network drive on boot.'
+  },
+  {
+    id: 'zfs',
+    term: 'ZFS',
+    slug: 'zfs',
+    definition: 'ZFS is a combined file system and logical volume manager designed by Sun Microsystems. It is known for its data integrity features.',
+    example: 'I built my home server using ZFS for its robust data protection and snapshot capabilities.'
+  },
+  {
+    id: 'btrfs',
+    term: 'BTRFS',
+    slug: 'btrfs',
+    definition: 'Btrfs (B-tree file system) is a modern copy-on-write (CoW) file system for Linux aimed at implementing advanced features while focusing on fault tolerance, repair and easy administration.',
+    example: 'I use Btrfs on my laptop because it allows me to take snapshots of the system before an update.'
+  },
+  {
+    id: 'ext4',
+    term: 'EXT4',
+    slug: 'ext4',
+    definition: 'The ext4 file system is the default file system for many modern Linux distributions.',
+    example: 'I formatted the new hard drive with the ext4 file system.'
+  },
+  {
+    id: 'ntfs',
+    term: 'NTFS',
+    slug: 'ntfs',
+    definition: 'NTFS (New Technology File System) is the primary file system used by Microsoft Windows operating systems.',
+    example: 'I can\'t write to the external hard drive from my Mac because it is formatted with NTFS.'
+  },
+  {
+    id: 'fat32',
+    term: 'FAT32',
+    slug: 'fat32',
+    definition: 'FAT32 is a file system that is compatible with a wide range of devices, but has limitations such as a 4GB maximum file size.',
+    example: 'I formatted my USB drive with FAT32 so it would be compatible with both my Windows PC and my Mac.'
+  },
+  {
+    id: 'gpt',
+    term: 'GPT',
+    slug: 'gpt',
+    definition: 'GUID Partition Table (GPT) is a standard for the layout of partition tables of a physical computer storage device, such as a hard disk drive or solid-state drive, using universally unique identifiers.',
+    example: 'Modern systems use GPT for their partition tables, which supports larger drives and more partitions than the old MBR standard.'
+  },
+  {
+    id: 'mbr',
+    term: 'MBR',
+    slug: 'mbr',
+    definition: 'The Master Boot Record (MBR) is a special type of boot sector at the very beginning of partitioned computer mass storage devices. It is a legacy standard, replaced by GPT.',
+    example: 'The MBR was corrupted, so the computer wouldn\'t boot.'
+  },
+  {
+    id: 'iso',
+    term: 'ISO',
+    slug: 'iso',
+    definition: 'An ISO image is a disk image of an optical disc. In other words, it is an archive file that contains everything that would be written to an optical disc, sector by sector, including the file system.',
+    example: 'I downloaded the ISO file for the Linux distribution and created a bootable USB drive.'
+  },
+  {
+    id: 'img',
+    term: 'IMG',
+    slug: 'img',
+    definition: 'An IMG file is a raw disk image of a storage device, such as a hard drive or a memory card.',
+    example: 'I wrote the Raspberry Pi OS IMG file to the SD card.'
+  },
+  {
+    id: 'dmg',
+    term: 'DMG',
+    slug: 'dmg',
+    definition: 'A DMG file is an Apple Disk Image file, used by macOS.',
+    example: 'To install the application on my Mac, I just had to open the DMG file and drag the app to the Applications folder.'
+  },
+  {
+    id: 'vhd',
+    term: 'VHD',
+    slug: 'vhd',
+    definition: 'A Virtual Hard Disk (VHD) is a file format which represents a virtual hard disk drive. It may contain what is found on a physical HDD, such as disk partitions and a file system.',
+    example: 'My virtual machine uses a VHD file for its storage.'
+  },
+  {
+    id: 'vmdk',
+    term: 'VMDK',
+    slug: 'vmdk',
+    definition: 'VMDK (Virtual Machine Disk) is a file format that represents a virtual hard disk drive, developed by VMware.',
+    example: 'I converted the VHD file to a VMDK file so I could use it with VMware.'
+  },
+  {
+    id: 'qcow2',
+    term: 'QCOW2',
+    slug: 'qcow2',
+    definition: 'QCOW2 (QEMU Copy-On-Write) is a file format for disk image files used by QEMU, a hosted virtual machine monitor. It supports features like snapshots and compression.',
+    example: 'KVM virtual machines often use the QCOW2 format for their disk images.'
+  },
+  {
+    id: 'snapshot',
+    term: 'SNAPSHOT',
+    slug: 'snapshot',
+    definition: 'A snapshot is a point-in-time copy of a virtual machine or a file system. It can be used to restore the system to a previous state.',
+    example: 'I took a snapshot of the virtual machine before I installed the risky software update.'
+  },
+  {
+    id: 'clone',
+    term: 'CLONE',
+    slug: 'clone',
+    definition: 'A clone is an exact copy of a virtual machine or a hard drive.',
+    example: 'I created a clone of the server so I could test the upgrade in a safe environment.'
+  },
+  {
+    id: 'live-migrate',
+    term: 'LIVE MIGRATE',
+    slug: 'live-migrate',
+    definition: 'Live migration is the process of moving a running virtual machine from one physical host to another without any downtime.',
+    example: 'I used live migration to move the virtual machine to a different server for maintenance, and the users never noticed.'
+  },
+  {
+    id: 'hot-migrate',
+    term: 'HOT MIGRATE',
+    slug: 'hot-migrate',
+    definition: 'Hot migration is another term for live migration, the process of moving a running VM without downtime.',
+    example: 'The system supports hot migration, so we can balance the load across our servers without any service interruption.'
+  },
+  {
+    id: 'guest-additions',
+    term: 'GUEST ADDITIONS',
+    slug: 'guest-additions',
+    definition: 'Guest Additions are a set of device drivers and system applications for virtual machines that optimize the guest operating system for better performance and usability.',
+    example: 'I installed the VirtualBox Guest Additions to get better screen resolution and mouse integration.'
+  },
+  {
+    id: 'hypervisor',
+    term: 'HYPERVISOR',
+    slug: 'hypervisor',
+    definition: 'A hypervisor is a piece of software, firmware, or hardware that creates and runs virtual machines.',
+    example: 'VMware ESXi and Microsoft Hyper-V are both examples of Type-1 hypervisors.'
+  },
+  {
+    id: 'k8s',
+    term: 'K8s',
+    slug: 'k8s',
+    definition: 'K8s is a common abbreviation for Kubernetes, an open-source container orchestration system.',
+    example: 'We run all our microservices on a K8s cluster.'
+  },
+  {
+    id: 'pod',
+    term: 'Pod',
+    slug: 'pod',
+    definition: 'In Kubernetes, a Pod is the smallest and simplest unit in the Kubernetes object model that you create or deploy. A Pod represents a set of running containers on your cluster.',
+    example: 'Our application runs in a Pod that contains two containers.'
+  },
+  {
+    id: 'node',
+    term: 'Node',
+    slug: 'node',
+    definition: 'A node is a worker machine in Kubernetes, previously known as a minion. A node may be a VM or physical machine, depending on the cluster.',
+    example: 'The scheduler assigned the new pod to a node with available resources.'
+  },
+  {
+    id: 'kubectl',
+    term: 'Kubectl',
+    slug: 'kubectl',
+    definition: 'kubectl is the command-line tool for controlling Kubernetes clusters.',
+    example: 'I used `kubectl get pods` to see all the running pods in the cluster.'
+  },
+  {
+    id: 'helm',
+    term: 'Helm',
+    slug: 'helm',
+    definition: 'Helm is a package manager for Kubernetes that helps you manage Kubernetes applications.',
+    example: 'I installed Prometheus on our cluster using a Helm chart.'
+  },
+  {
+    id: 'flux',
+    term: 'Flux',
+    slug: 'flux',
+    definition: 'Flux is a GitOps tool for Kubernetes that ensures that the state of your cluster matches the configuration you’ve supplied in Git.',
+    example: 'We use Flux to automatically deploy changes to our cluster whenever we push to our Git repository.'
+  },
+  {
+    id: 'gitops',
+    term: 'GitOps',
+    slug: 'gitops',
+    definition: 'GitOps is an operational framework that takes DevOps best practices used for application development such as version control, collaboration, compliance, and CI/CD, and applies them to infrastructure automation.',
+    example: 'By using GitOps, we have a complete, version-controlled history of our infrastructure changes.'
+  },
+  {
+    id: 'terraform',
+    term: 'Terraform',
+    slug: 'terraform',
+    definition: 'Terraform is an open-source infrastructure as code software tool created by HashiCorp.',
+    example: 'We use Terraform to define and provision our entire cloud infrastructure.'
+  },
+  {
+    id: 'plan-file',
+    term: 'Plan File',
+    slug: 'plan-file',
+    definition: 'A Terraform plan file is a file created by the `terraform plan` command that contains the planned changes to your infrastructure. It can be reviewed before being applied.',
+    example: 'I saved the Terraform plan to a file so that it could be reviewed and approved before applying.'
+  },
+  {
+    id: 'apply',
+    term: 'Apply',
+    slug: 'apply',
+    definition: 'In Terraform, `apply` is the command used to apply the changes required to reach the desired state of the configuration.',
+    example: 'After reviewing the plan, I ran `terraform apply` to create the new servers.'
+  },
+  {
+    id: 'drift',
+    term: 'Drift',
+    slug: 'drift',
+    definition: 'In infrastructure as code, drift is the term for when the real-world state of your infrastructure differs from the state defined in your configuration.',
+    example: 'Someone made a manual change in the cloud console, which caused drift in our Terraform state.'
+  },
+  {
+    id: 'dockerfile',
+    term: 'Dockerfile',
+    slug: 'dockerfile',
+    definition: 'A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image.',
+    example: 'I wrote a Dockerfile to define how to build the container image for my application.'
+  },
+  {
+    id: 'compose',
+    term: 'Compose',
+    slug: 'compose',
+    definition: 'Docker Compose is a tool for defining and running multi-container Docker applications.',
+    example: 'I used a Docker Compose file to define my web server and database containers and run them together.'
+  },
+  {
+    id: 'layer',
+    term: 'Layer',
+    slug: 'layer',
+    definition: 'A Docker image is built up from a series of layers. Each layer represents an instruction in the image’s Dockerfile.',
+    example: 'Docker is efficient because it can cache layers, so it only has to rebuild the parts of the image that have changed.'
+  },
+  {
+    id: 'registry',
+    term: 'Registry',
+    slug: 'registry',
+    definition: 'A container registry is a storage system for container images.',
+    example: 'I pushed the new version of my application to our private Docker registry.'
+  },
+  {
+    id: 'tag',
+    term: 'Tag',
+    slug: 'tag',
+    definition: 'A tag is a label applied to a Docker image to distinguish different versions or variants.',
+    example: 'I tagged the image with the version number `v1.2.3`.'
+  },
+  {
+    id: 'digest',
+    term: 'Digest',
+    slug: 'digest',
+    definition: 'A digest is a content-addressable identifier for a Docker image. It is a SHA256 hash of the image\'s configuration and layers.',
+    example: 'To ensure I am running the exact same image, I pull it by its digest instead of its tag.'
+  },
+  {
+    id: 'init-container',
+    term: 'Init container',
+    slug: 'init-container',
+    definition: 'Init containers are specialized containers that run before app containers in a Pod. Init containers can contain utilities or setup scripts not present in an app image.',
+    example: 'We use an init container to download some configuration files before the main application starts.'
+  },
+  {
+    id: 'nginx',
+    term: 'NGINX',
+    slug: 'nginx',
+    definition: 'NGINX is a web server that can also be used as a reverse proxy, load balancer, mail proxy and HTTP cache.',
+    example: 'We use NGINX as a reverse proxy in front of our Node.js application.'
+  },
+  {
+    id: 'haproxy',
+    term: 'HAProxy',
+    slug: 'haproxy',
+    definition: 'HAProxy is a free, very fast and reliable solution offering high availability, load balancing, and proxying for TCP and HTTP-based applications.',
+    example: 'We use HAProxy to load balance traffic across our fleet of web servers.'
+  },
+  {
+    id: 'traefik',
+    term: 'Traefik',
+    slug: 'traefik',
+    definition: 'Traefik is a modern HTTP reverse proxy and load balancer that makes deploying microservices easy.',
+    example: 'Traefik automatically discovers our services in Kubernetes and creates routes for them.'
+  },
+  {
+    id: 'envoy',
+    term: 'Envoy',
+    slug: 'envoy',
+    definition: 'Envoy is an open source edge and service proxy, designed for cloud-native applications.',
+    example: 'The Istio service mesh uses Envoy as its sidecar proxy.'
+  },
+  {
+    id: 'forward-proxy',
+    term: 'Forward proxy',
+    slug: 'forward-proxy',
+    definition: 'A forward proxy is a server that sits between a client and the internet, forwarding requests on behalf of the client.',
+    example: 'Our corporate network uses a forward proxy to filter and monitor all outbound internet traffic.'
+  },
+  {
+    id: 'queue',
+    term: 'Queue',
+    slug: 'queue',
+    definition: 'A queue is a data structure that stores items in a first-in, first-out (FIFO) manner. In software architecture, it is often used as a buffer for jobs or messages.',
+    example: 'We put the email sending tasks into a queue to be processed by a background worker.'
+  },
+  {
+    id: 'worker',
+    term: 'Worker',
+    slug: 'worker',
+    definition: 'A worker is a background process that consumes tasks from a queue and executes them.',
+    example: 'We have a pool of worker processes that handle image resizing tasks.'
+  },
+  {
+    id: 'cluster',
+    term: 'Cluster',
+    slug: 'cluster',
+    definition: 'A cluster is a group of servers or other resources that act like a single system and enable high availability and, in some cases, load balancing and parallel processing.',
+    example: 'Our database runs on a three-node cluster for high availability.'
+  },
+  {
+    id: 'failover',
+    term: 'Failover',
+    slug: 'failover',
+    definition: 'Failover is the process of automatically switching to a redundant or standby computer server, system, hardware component or network upon the failure or abnormal termination of the previously active application, server, system, hardware component, or network.',
+    example: 'When the primary database server failed, the system automatically performed a failover to the standby server.'
+  },
+  {
+    id: 'redundancy',
+    term: 'Redundancy',
+    slug: 'redundancy',
+    definition: 'Redundancy is the duplication of critical components or functions of a system with the intention of increasing reliability of the system, usually in the form of a backup or fail-safe.',
+    example: 'We have redundancy at every layer of our infrastructure, from power supplies to internet connections.'
+  },
+  {
+    id: 'fallback',
+    term: 'Fallback',
+    slug: 'fallback',
+    definition: 'A fallback is a mechanism for accomplishing a task when the primary mechanism fails.',
+    example: 'If the application can\'t connect to the primary database, it has a fallback to connect to a read-only replica.'
+  },
+  {
+    id: 'heartbeat',
+    term: 'Heartbeat',
+    slug: 'heartbeat',
+    definition: 'A heartbeat is a periodic signal generated by hardware or software to indicate normal operation or to synchronize other parts of a system.',
+    example: 'The two servers in the high-availability cluster send a heartbeat to each other to know that the other is still online.'
+  },
+  {
+    id: 'ddos',
+    term: 'DDoS',
+    slug: 'ddos',
+    definition: 'A Distributed Denial-of-Service (DDoS) attack is a malicious attempt to disrupt normal traffic of a targeted server, service or network by overwhelming the target or its surrounding infrastructure with a flood of Internet traffic.',
+    example: 'The website was unavailable for an hour due to a massive DDoS attack.'
+  },
+  {
+    id: 'udp-flood',
+    term: 'UDP Flood',
+    slug: 'udp-flood',
+    definition: 'A UDP flood is a type of denial-of-service attack in which the attacker overwhelms the target with User Datagram Protocol (UDP) packets.',
+    example: 'The firewall is configured to mitigate UDP flood attacks.'
+  },
+  {
+    id: 'amplification-attack',
+    term: 'Amplification Attack',
+    slug: 'amplification-attack',
+    definition: 'An amplification attack is a type of reflection-based DDoS attack where an attacker uses a smaller request to generate a much larger response, amplifying the size of the attack.',
+    example: 'The attacker used a DNS amplification attack to generate a massive amount of traffic.'
+  },
+  {
+    id: 'enum',
+    term: 'ENUM',
+    slug: 'enum',
+    definition: 'Enumeration is the process of extracting user names, machine names, network resources, shares, and services from a system.',
+    example: 'The first phase of the penetration test was to perform an enumeration of the target network.'
+  },
+  {
+    id: 'nmap',
+    term: 'Nmap',
+    slug: 'nmap',
+    definition: 'Nmap ("Network Mapper") is a free and open-source network scanner created by Gordon Lyon.',
+    example: 'I used nmap to scan the network and find all the open ports on the server.'
+  },
+  {
+    id: 'dirb',
+    term: 'Dirb',
+    slug: 'dirb',
+    definition: 'DIRB is a Web Content Scanner. It looks for existing (and/or hidden) Web Objects. It basically works by launching a dictionary-based attack against a web server and analyzing the response.',
+    example: 'I ran DIRB against the website to look for hidden directories and files.'
+  },
+  {
+    id: 'gobuster',
+    term: 'Gobuster',
+    slug: 'gobuster',
+    definition: 'Gobuster is a tool used to brute-force URIs (directories and files), DNS subdomains, and virtual host names on web servers.',
+    example: 'I used Gobuster with a large wordlist to find hidden subdomains.'
+  },
+  {
+    id: 'hydra',
+    term: 'Hydra',
+    slug: 'hydra',
+    definition: 'Hydra is a parallelized login cracker which supports numerous protocols to attack. It is very fast and flexible, and new modules are easy to add.',
+    example: 'The attacker used Hydra to brute-force the SSH password.'
+  },
+  {
+    id: 'hashcat',
+    term: 'Hashcat',
+    slug: 'hashcat',
+    definition: 'Hashcat is the self-proclaimed world\'s fastest and most advanced password recovery utility.',
+    example: 'I used Hashcat and a powerful GPU to crack the password hashes.'
+  },
+  {
+    id: 'cain',
+    term: 'Cain',
+    slug: 'cain',
+    definition: 'Cain & Abel is a password recovery tool for Microsoft Operating Systems. It allows easy recovery of various kind of passwords by sniffing the network, cracking encrypted passwords using Dictionary, Brute-Force and Cryptanalysis attacks.',
+    example: 'Cain is a classic but still powerful tool for password cracking on Windows networks.'
+  },
+  {
+    id: 'impacket',
+    term: 'Impacket',
+    slug: 'impacket',
+    definition: 'Impacket is a collection of Python classes for working with network protocols. Impacket is focused on providing low-level programmatic access to the packets and for some protocols (e.g. SMB, MSRPC) the protocol implementation itself.',
+    example: 'Penetration testers often use the Impacket library to perform attacks against Windows network services.'
+  },
+  {
+    id: 'bloodhound',
+    term: 'BloodHound',
+    slug: 'bloodhound',
+    definition: 'BloodHound is a single page Javascript web application, built on top of Linkurious, compiled with Electron, with a Neo4j database fed by a C# data collector. It is used to reveal the hidden and often unintended relationships within an Active Directory environment.',
+    example: 'I used BloodHound to visualize the attack paths in the Active Directory domain.'
+  },
+  {
+    id: 'kerberoasting',
+    term: 'Kerberoasting',
+    slug: 'kerberoasting',
+    definition: 'Kerberoasting is a post-exploitation attack technique that attempts to crack the password of a service account within Active Directory.',
+    example: 'The attacker performed a Kerberoasting attack to get the password hash for the SQL server service account.'
+  },
+  {
+    id: 'pass-the-hash',
+    term: 'Pass-the-Hash',
+    slug: 'pass-the-hash',
+    definition: 'A pass-the-hash attack is a type of replay attack that allows an attacker to authenticate to a remote server or service by using the underlying NTLM or LanMan hash of a user\'s password, instead of the associated plaintext password.',
+    example: 'Even though the attacker didn\'t know the user\'s password, they were able to move laterally through the network using a pass-the-hash attack.'
+  },
+  {
+    id: 'pass-the-ticket',
+    term: 'Pass-the-Ticket',
+    slug: 'pass-the-ticket',
+    definition: 'A pass-the-ticket attack is a method of authenticating to a system using a stolen Kerberos ticket.',
+    example: 'The attacker stole a Kerberos ticket from memory and used a pass-the-ticket attack to access a file server.'
+  },
+  {
+    id: 'golden-ticket',
+    term: 'Golden Ticket',
+    slug: 'golden-ticket',
+    definition: 'A Golden Ticket is a type of Kerberos ticket that can grant an attacker administrative access to an entire Active Directory domain.',
+    example: 'By compromising the domain controller, the attacker was able to create a Golden Ticket and become a domain admin.'
+  },
+  {
+    id: 'silver-ticket',
+    term: 'Silver Ticket',
+    slug: 'silver-ticket',
+    definition: 'A Silver Ticket is a forged Kerberos ticket that can grant an attacker access to a specific service on a network.',
+    example: 'The attacker created a Silver Ticket to get access to the company\'s file share.'
+  },
+  {
+    id: 'lsass-dump',
+    term: 'LSASS Dump',
+    slug: 'lsass-dump',
+    definition: 'An LSASS dump is the process of extracting credentials from the memory of the Local Security Authority Subsystem Service (LSASS) process on Windows.',
+    example: 'The attacker used Mimikatz to perform an LSASS dump and steal user passwords.'
+  },
+  {
+    id: 'sam-dump',
+    term: 'SAM Dump',
+    slug: 'sam-dump',
+    definition: 'A SAM dump is the process of extracting password hashes from the Security Account Manager (SAM) database on a Windows system.',
+    example: 'The attacker gained physical access to the machine and performed a SAM dump to get the local administrator password hash.'
+  },
+  {
+    id: 'bits',
+    term: 'BITS',
+    slug: 'bits',
+    definition: 'The Background Intelligent Transfer Service (BITS) is a component of Microsoft Windows which facilitates prioritized, throttled, and asynchronous transfer of files between machines using idle network bandwidth.',
+    example: 'Windows Update uses BITS to download updates in the background without impacting your network performance.'
+  },
+  {
+    id: 'wmi',
+    term: 'WMI',
+    slug: 'wmi',
+    definition: 'Windows Management Instrumentation (WMI) is the infrastructure for management data and operations on Windows-based operating systems.',
+    example: 'I wrote a script that uses WMI to query the amount of free disk space on all our servers.'
+  },
+  {
+    id: 'psexec',
+    term: 'PSExec',
+    slug: 'psexec',
+    definition: 'PsExec is a light-weight telnet-replacement that lets you execute processes on other systems, complete with full interactivity for console applications, without having to manually install client software.',
+    example: 'The system administrator used PsExec to remotely run a command on the user\'s computer.'
+  },
+  {
+    id: 'smb',
+    term: 'SMB',
+    slug: 'smb',
+    definition: 'The Server Message Block (SMB) protocol is a network file sharing protocol that allows applications on a computer to read and write to files and to request services from server programs in a computer network.',
+    example: 'I connected to the file share on the server using the SMB protocol.'
+  },
+  {
+    id: 'rdp',
+    term: 'RDP',
+    slug: 'rdp',
+    definition: 'The Remote Desktop Protocol (RDP) is a proprietary protocol developed by Microsoft, which provides a user with a graphical interface to connect to another computer over a network connection.',
+    example: 'I used RDP to connect to my work computer from home.'
+  },
+  {
+    id: 'vnc',
+    term: 'VNC',
+    slug: 'vnc',
+    definition: 'Virtual Network Computing (VNC) is a graphical desktop-sharing system that uses the Remote Frame Buffer protocol (RFB) to remotely control another computer.',
+    example: 'I used a VNC client to connect to my Raspberry Pi and see its desktop.'
+  },
+  {
+    id: 'ica',
+    term: 'ICA',
+    slug: 'ica',
+    definition: 'Independent Computing Architecture (ICA) is a proprietary protocol for an application server system, designed by Citrix Systems.',
+    example: 'Our company uses Citrix to publish applications, which we access using the ICA protocol.'
+  },
+  {
+    id: 'pcoip',
+    term: 'PCoIP',
+    slug: 'pcoip',
+    definition: 'PC-over-IP (PCoIP) is a proprietary remote display protocol developed by Teradici. It is known for its high-performance graphics capabilities.',
+    example: 'Amazon WorkSpaces uses the PCoIP protocol to deliver a high-quality remote desktop experience.'
+  },
+  {
+    id: 'spi',
+    term: 'SPI',
+    slug: 'spi',
+    definition: 'The Serial Peripheral Interface (SPI) is a synchronous serial communication interface specification used for short-distance communication, primarily in embedded systems.',
+    example: 'The microcontroller communicates with the sensor using the SPI bus.'
+  },
+  {
+    id: 'i2c',
+    term: 'I2C',
+    slug: 'i2c',
+    definition: 'Inter-Integrated Circuit (I2C) is a synchronous, multi-master, multi-slave, packet switched, single-ended, serial computer bus invented by Philips Semiconductor.',
+    example: 'I connected multiple sensors to my Raspberry Pi using the I2C bus.'
+  },
+  {
+    id: 'gpio',
+    term: 'GPIO',
+    slug: 'gpio',
+    definition: 'A general-purpose input/output (GPIO) is an uncommitted digital signal pin on an integrated circuit or electronic circuit board whose behavior—including whether it is an input or output pin—is controllable by the user at run time.',
+    example: 'I used the GPIO pins on my Raspberry Pi to control an LED.'
+  },
+  {
+    id: 'uart-console',
+    term: 'UART Console',
+    slug: 'uart-console',
+    definition: 'A UART Console is a serial console that uses a UART interface for communication. It is often used for debugging embedded systems.',
+    example: 'I connected to the router\'s UART console to see the boot-up messages.'
+  },
+  {
+    id: 'sbc',
+    term: 'SBC',
+    slug: 'sbc',
+    definition: 'A single-board computer (SBC) is a complete computer built on a single circuit board, with microprocessor(s), memory, input/output (I/O) and other features required of a functional computer.',
+    example: 'The Raspberry Pi is a popular example of an SBC.'
+  },
+  {
+    id: 'arm',
+    term: 'ARM',
+    slug: 'arm',
+    definition: 'ARM is a family of reduced instruction set computing (RISC) architectures for computer processors, configured for various environments.',
+    example: 'Most modern smartphones use processors based on the ARM architecture.'
+  },
+  {
+    id: 'x86',
+    term: 'x86',
+    slug: 'x86',
+    definition: 'x86 is a family of instruction set architectures initially developed by Intel based on the Intel 8086 microprocessor and its 8088 variant.',
+    example: 'Most desktop and laptop computers use processors based on the x86 architecture.'
+  },
+  {
+    id: 'x64',
+    term: 'x64',
+    slug: 'x64',
+    definition: 'x64 is the 64-bit version of the x86 instruction set. It is also known as AMD64 or Intel 64.',
+    example: 'I am running a 64-bit version of Windows, so my processor must be x64 compatible.'
+  },
+  {
+    id: 'apu',
+    term: 'APU',
+    slug: 'apu',
+    definition: 'An Accelerated Processing Unit (APU) is the marketing term for a series of 64-bit microprocessors from Advanced Micro Devices (AMD), which integrate a CPU and GPU on a single die.',
+    example: 'I built a small form-factor PC using an AMD APU, so I didn\'t need a separate graphics card.'
+  },
+  {
+    id: 'hbm',
+    term: 'HBM',
+    slug: 'hbm',
+    definition: 'High Bandwidth Memory (HBM) is a high-performance RAM interface for 3D-stacked synchronous dynamic random-access memory (SDRAM).',
+    example: 'Some high-end graphics cards use HBM for its extremely high memory bandwidth.'
+  },
+  {
+    id: 'nvme',
+    term: 'NVMe',
+    slug: 'nvme',
+    definition: 'NVM Express (NVMe) is a specification for accessing solid-state drives (SSDs) attached through the PCI Express (PCIe) bus. It offers much higher performance than older SATA interfaces.',
+    example: 'I upgraded my computer with an NVMe SSD, and now it boots in seconds.'
+  },
+  {
+    id: 'qlc',
+    term: 'QLC',
+    slug: 'qlc',
+    definition: 'Quad-level cell (QLC) is a type of NAND flash memory that stores four bits of data per cell. It offers high density and low cost, but has lower endurance and performance than other types.',
+    example: 'I use a large QLC SSD to store my games, as it offers a lot of capacity for the price.'
+  },
+  {
+    id: 'tlc',
+    term: 'TLC',
+    slug: 'tlc',
+    definition: 'Triple-level cell (TLC) is a type of NAND flash memory that stores three bits of data per cell. It offers a good balance of cost, performance, and endurance.',
+    example: 'My main operating system drive is a TLC SSD for its reliability.'
+  },
+  {
+    id: 'slc',
+    term: 'SLC',
+    slug: 'slc',
+    definition: 'Single-level cell (SLC) is a type of NAND flash memory that stores one bit of data per cell. It offers the highest performance, endurance, and reliability, but is also the most expensive.',
+    example: 'Enterprise-grade SSDs often use SLC flash for its high endurance.'
+  },
+  {
+    id: 'plp',
+    term: 'PLP',
+    slug: 'plp',
+    definition: 'Power loss protection (PLP) is a feature on some SSDs that uses capacitors to provide enough power to flush any data in the drive\'s cache to the NAND flash in the event of a sudden power loss.',
+    example: 'I chose an SSD with PLP for my server to protect against data corruption from power outages.'
+  },
+  {
+    id: 'wear-level',
+    term: 'Wear Level',
+    slug: 'wear-level',
+    definition: 'Wear leveling is a technique for prolonging the service life of some kinds of erasable computer storage media, such as Flash memory used in solid-state drives (SSDs).',
+    example: 'The SSD\'s controller uses wear leveling to evenly distribute writes across all the memory cells.'
+  },
+  {
+    id: 'smart',
+    term: 'SMART',
+    slug: 'smart',
+    definition: 'S.M.A.R.T. (Self-Monitoring, Analysis and Reporting Technology) is a monitoring system included in computer hard disk drives (HDDs) and solid-state drives (SSDs) that detects and reports on various indicators of drive reliability, with the intent of enabling the anticipation of hardware failures.',
+    example: 'I checked the SMART data on my hard drive to see if it was showing any signs of failure.'
+  },
+  {
+    id: 'chkdsk',
+    term: 'CHKDSK',
+    slug: 'chkdsk',
+    definition: 'CHKDSK (check disk) is a system tool in DOS, OS/2 and Windows. It verifies the file system integrity of a volume and fixes logical file system errors.',
+    example: 'I ran CHKDSK on my hard drive to fix some file system errors.'
+  },
+  {
+    id: 'dism',
+    term: 'DISM',
+    slug: 'dism',
+    definition: 'Deployment Image Servicing and Management (DISM) is a command-line tool that is used to mount and service Windows images before deployment.',
+    example: 'I used DISM to repair my corrupted Windows system files.'
+  },
+  {
+    id: 'sfc',
+    term: 'SFC',
+    slug: 'sfc',
+    definition: 'System File Checker (SFC) is a utility in Microsoft Windows that allows users to scan for and restore corruptions in Windows system files.',
+    example: 'I ran `sfc /scannow` to check for and repair any corrupt system files.'
+  },
+  {
+    id: 'gpedit',
+    term: 'GPEDIT',
+    slug: 'gpedit',
+    definition: 'Group Policy Editor (gpedit.msc) is a tool in Windows that allows you to edit the Group Policy settings.',
+    example: 'I used gpedit to disable automatic Windows updates.'
+  },
+  {
+    id: 'regedit',
+    term: 'REGEDIT',
+    slug: 'regedit',
+    definition: 'The Windows Registry Editor (regedit) is a graphical tool in the Windows operating system that allows authorized users to view and make changes to the Windows registry.',
+    example: 'I had to use regedit to manually remove some leftover entries from a program I uninstalled.'
+  },
+  {
+    id: 'msconfig',
+    term: 'MSCONFIG',
+    slug: 'msconfig',
+    definition: 'MSConfig (System Configuration) is a system utility to troubleshoot the Microsoft Windows startup process.',
+    example: 'I used msconfig to disable some programs from starting up with Windows.'
+  },
+  {
+    id: 'netstat',
+    term: 'NETSTAT',
+    slug: 'netstat',
+    definition: 'netstat is a command-line tool that displays network connections for TCP, routing tables, and a number of network interface and network protocol statistics.',
+    example: 'I ran `netstat -an` to see all the active network connections on my computer.'
+  },
+  {
+    id: 'ipconfig',
+    term: 'IPCONFIG',
+    slug: 'ipconfig',
+    definition: 'In Windows, ipconfig is a command-line tool that displays the current TCP/IP network configuration values.',
+    example: 'I ran ipconfig to find my computer\'s IP address.'
+  },
+  {
+    id: 'arp-a',
+    term: 'ARP -a',
+    slug: 'arp-a',
+    definition: '`arp -a` is a command used to display the current ARP table, which shows the mapping of IP addresses to MAC addresses on the local network.',
+    example: 'I ran `arp -a` to see the MAC addresses of all the devices on my network.'
+  },
+  {
+    id: 'tracert',
+    term: 'TRACERT',
+    slug: 'tracert',
+    definition: 'tracert is a command-line utility in Windows that displays the route (path) and measures transit delays of packets across an Internet Protocol (IP) network.',
+    example: 'I used tracert to see the path my packets were taking to reach the Google server.'
+  },
+  {
+    id: 'pathping',
+    term: 'PATHPING',
+    slug: 'pathping',
+    definition: 'pathping is a Windows network utility that combines the functionality of ping and tracert. It provides information about network latency and packet loss at each hop between a source and a destination.',
+    example: 'I used pathping to diagnose a network issue and found that there was packet loss at my ISP\'s router.'
+  },
+  {
+    id: 'winpe',
+    term: 'WINPE',
+    slug: 'winpe',
+    definition: 'Windows Preinstallation Environment (WinPE) is a lightweight version of Windows used for the deployment of PCs, workstations, and servers or for troubleshooting an operating system while it is offline.',
+    example: 'I booted into WinPE to repair my corrupted Windows installation.'
+  },
+  {
+    id: 'pxe',
+    term: 'PXE',
+    slug: 'pxe',
+    definition: 'The Preboot Execution Environment (PXE) is an environment to boot computers using a network interface independently of data storage devices or installed operating systems.',
+    example: 'I configured the server to PXE boot from the network to install the operating system.'
+  },
+  {
+    id: 'wds',
+    term: 'WDS',
+    slug: 'wds',
+    definition: 'Windows Deployment Services (WDS) is a server role for the remote installation of Windows operating systems.',
+    example: 'We use WDS to deploy Windows to all the new computers in our office.'
+  },
+  {
+    id: 'mdt',
+    term: 'MDT',
+    slug: 'mdt',
+    definition: 'The Microsoft Deployment Toolkit (MDT) is a free tool from Microsoft for automating Windows and Windows Server operating system deployment.',
+    example: 'We use MDT to create a customized Windows image with all our standard applications pre-installed.'
+  },
+  {
+    id: 'ghost',
+    term: 'GHOST',
+    slug: 'ghost',
+    definition: 'Ghost is a disk cloning and backup tool originally developed by Murray Haszard in 1995.',
+    example: 'I used Ghost to create an image of my hard drive before I upgraded to a new one.'
+  },
+  {
+    id: 'sysprep',
+    term: 'SYSPREP',
+    slug: 'sysprep',
+    definition: 'The System Preparation Tool (Sysprep) is a Microsoft tool for IT administrators who want to prepare an installation of Windows for duplication, auditing, and customer delivery.',
+    example: 'I ran Sysprep on the master image before deploying it to all the new computers.'
+  },
+  {
+    id: 'sccm',
+    term: 'SCCM',
+    slug: 'sccm',
+    definition: 'System Center Configuration Manager (SCCM) is a software management suite provided by Microsoft that allows users to manage a large number of Windows based computers.',
+    example: 'Our IT department uses SCCM to deploy software updates and manage all the corporate workstations.'
+  },
+  {
+    id: 'intune',
+    term: 'Intune',
+    slug: 'intune',
+    definition: 'Microsoft Intune is a cloud-based unified endpoint management service for managing both corporate and personally owned devices.',
+    example: 'My work phone is managed by Intune, which enforces certain security policies.'
+  },
+  {
+    id: 'azuread',
+    term: 'AzureAD',
+    slug: 'azuread',
+    definition: 'Azure Active Directory (Azure AD) is Microsoft’s cloud-based identity and access management service.',
+    example: 'We use Azure AD to manage user access to our cloud applications.'
+  },
+  {
+    id: 'oauth',
+    term: 'OAuth',
+    slug: 'oauth',
+    definition: 'OAuth is an open standard for access delegation, commonly used as a way for Internet users to grant websites or applications access to their information on other websites but without giving them the passwords.',
+    example: 'I used OAuth to log into the application with my Google account.'
+  },
+  {
+    id: 'oidc',
+    term: 'OIDC',
+    slug: 'oidc',
+    definition: 'OpenID Connect (OIDC) is a simple identity layer on top of the OAuth 2.0 protocol. It allows clients to verify the identity of the end-user based on the authentication performed by an authorization server.',
+    example: 'OIDC provides a standard way to get user profile information during the authentication process.'
+  },
+  {
+    id: 'saml',
+    term: 'SAML',
+    slug: 'saml',
+    definition: 'Security Assertion Markup Language (SAML) is an open standard for exchanging authentication and authorization data between parties, in particular, between an identity provider and a service provider.',
+    example: 'Our corporate SSO solution uses SAML to authenticate users to our various cloud applications.'
+  },
+  {
+    id: 'token',
+    term: 'Token',
+    slug: 'token',
+    definition: 'A token is a piece of data that represents a right to perform some operation. An access token is a credential that can be used to access protected resources.',
+    example: 'After I logged in, the application gave me an access token that I have to include in all my API requests.'
+  },
+  {
+    id: 'claims',
+    term: 'Claims',
+    slug: 'claims',
+    definition: 'In identity management, claims are statements about a user, such as their name, email, or roles, that are included in an authentication token.',
+    example: 'The JWT token contained claims about the user\'s name and administrator role.'
+  },
+  {
+    id: 'federation',
+    term: 'Federation',
+    slug: 'federation',
+    definition: 'Identity federation is the practice of linking a person\'s electronic identity and attributes, stored across multiple distinct identity management systems.',
+    example: 'We set up a federation trust between our on-premises Active Directory and Azure AD.'
+  },
+  {
+    id: 'csp',
+    term: 'CSP',
+    slug: 'csp',
+    definition: 'A Content Security Policy (CSP) is a computer security standard introduced to prevent cross-site scripting (XSS), clickjacking and other code injection attacks resulting from execution of malicious content in the trusted web page context.',
+    example: 'I configured a CSP header on my website to only allow scripts from my own domain to be executed.'
+  },
+  {
+    id: 'xss',
+    term: 'XSS',
+    slug: 'xss',
+    definition: 'Cross-Site Scripting (XSS) is a type of computer security vulnerability typically found in web applications. XSS enables attackers to inject client-side scripts into web pages viewed by other users.',
+    example: 'The website was vulnerable to XSS because it did not properly sanitize user input.'
+  },
+  {
+    id: 'csrf',
+    term: 'CSRF',
+    slug: 'csrf',
+    definition: 'Cross-Site Request Forgery (CSRF) is a type of attack that occurs when a malicious website, email, blog, instant message, or program causes a user’s web browser to perform an unwanted action on a trusted site when the user is authenticated.',
+    example: 'The application was vulnerable to CSRF because it did not use anti-CSRF tokens.'
+  },
+  {
+    id: 'lfi',
+    term: 'LFI',
+    slug: 'lfi',
+    definition: 'Local File Inclusion (LFI) is a type of vulnerability that allows an attacker to include a file, usually exploiting a "dynamic file inclusion" mechanisms implemented in the web application.',
+    example: 'The attacker used an LFI vulnerability to read the /etc/passwd file on the server.'
+  },
+  {
+    id: 'rfi',
+    term: 'RFI',
+    slug: 'rfi',
+    definition: 'Remote File Inclusion (RFI) is a type of vulnerability that allows an attacker to include a remote file, usually through a script on the web server.',
+    example: 'The attacker used an RFI vulnerability to execute a malicious script from their own server.'
+  },
+  {
+    id: 'rce',
+    term: 'RCE',
+    slug: 'rce',
+    definition: 'Remote Code Execution (RCE) is a class of software security flaw that allows an attacker to execute arbitrary code on a remote machine.',
+    example: 'The vulnerability was a critical RCE that allowed an attacker to take complete control of the server.'
+  },
+  {
+    id: 'sqli',
+    term: 'SQLi',
+    slug: 'sqli',
+    definition: 'SQL injection (SQLi) is a code injection technique, used to attack data-driven applications, in which malicious SQL statements are inserted into an entry field for execution.',
+    example: 'The attacker used SQLi to bypass the login form and gain access to the application.'
+  },
+  {
+    id: 'nosqli',
+    term: 'NoSQLi',
+    slug: 'nosqli',
+    definition: 'NoSQL injection is a vulnerability where an attacker can interfere with the queries that an application makes to its NoSQL database.',
+    example: 'The application was vulnerable to NoSQLi because it was constructing database queries by concatenating strings with user input.'
+  },
+  {
+    id: 'desync',
+    term: 'Desync',
+    slug: 'desync',
+    definition: 'An HTTP Desync Attack is a type of request smuggling attack where an attacker can split an HTTP request into two, allowing them to bypass security controls and smuggle a malicious request to the backend server.',
+    example: 'The load balancer was vulnerable to an HTTP desync attack, which allowed the attacker to bypass the WAF.'
+  },
+  {
+    id: 'burp',
+    term: 'Burp',
+    slug: 'burp',
+    definition: 'Burp Suite is a graphical tool for testing Web application security.',
+    example: 'I used Burp Suite to intercept and modify the HTTP requests to test the application for vulnerabilities.'
+  },
+  {
+    id: 'zap',
+    term: 'ZAP',
+    slug: 'zap',
+    definition: 'The Zed Attack Proxy (ZAP) is a free, open-source penetration testing tool for testing Web application security.',
+    example: 'I ran a ZAP scan against the website to automatically find common vulnerabilities.'
+  },
+  {
+    id: 'nikto',
+    term: 'Nikto',
+    slug: 'nikto',
+    definition: 'Nikto is a free software command-line vulnerability scanner that scans webservers for dangerous files/CGIs, outdated server software and other problems.',
+    example: 'I used Nikto to check the web server for any known vulnerabilities.'
+  },
+  {
+    id: 'waf',
+    term: 'WAF',
+    slug: 'waf',
+    definition: 'A Web Application Firewall (WAF) is a firewall that monitors, filters or blocks HTTP traffic to and from a Web application.',
+    example: 'Our WAF blocked the SQL injection attack.'
+  },
+  {
+    id: 'cdn-shield',
+    term: 'CDN Shield',
+    slug: 'cdn-shield',
+    definition: 'A CDN Shield is a feature of a Content Delivery Network that provides an additional layer of caching and protection for the origin server.',
+    example: 'We enabled the CDN shield to reduce the load on our web servers.'
+  },
+  {
+    id: 'csp-header',
+    term: 'CSP Header',
+    slug: 'csp-header',
+    definition: 'A Content Security Policy (CSP) Header is an HTTP response header that modern browsers use to enhance the security of a document.',
+    example: 'I added a CSP header to my website to prevent XSS attacks.'
+  },
+  {
+    id: 'hsts',
+    term: 'HSTS',
+    slug: 'hsts',
+    definition: 'HTTP Strict Transport Security (HSTS) is a web security policy mechanism that helps to protect websites against protocol downgrade attacks and cookie hijacking.',
+    example: 'I enabled HSTS on my website to ensure that browsers always connect to it using HTTPS.'
+  },
+  {
+    id: 'cors',
+    term: 'CORS',
+    slug: 'cors',
+    definition: 'Cross-Origin Resource Sharing (CORS) is a mechanism that allows restricted resources on a web page to be requested from another domain outside the domain from which the first resource was served.',
+    example: 'I had to configure CORS on my API server to allow requests from my frontend web application.'
+  },
+  {
+    id: 'u2f',
+    term: 'U2F',
+    slug: 'u2f',
+    definition: 'Universal 2nd Factor (U2F) is an open authentication standard that strengthens and simplifies two-factor authentication (2FA) using specialized USB or NFC devices.',
+    example: 'I use a YubiKey, which is a U2F device, as my second factor of authentication.'
+  },
+  {
+    id: 'authenticator',
+    term: 'Authenticator',
+    slug: 'authenticator',
+    definition: 'An authenticator app is a software application that generates one-time passcodes for use in two-factor authentication.',
+    example: 'I use Google Authenticator to generate codes for my online accounts.'
+  },
+  {
+    id: 'hash-salt',
+    term: 'Hash Salt',
+    slug: 'hash-salt',
+    definition: 'A hash salt is random data that is used as an additional input to a one-way function that hashes a password.',
+    example: 'Salting passwords before hashing them makes them much more resistant to brute-force attacks.'
+  },
+  {
+    id: 'pepper',
+    term: 'Pepper',
+    slug: 'pepper',
+    definition: 'A pepper is a secret value that is added to a password before hashing. Unlike a salt, the pepper is not stored with the password hash and is kept secret on the server.',
+    example: 'We add a pepper to our password hashes for an extra layer of security.'
+  },
+  {
+    id: 'lockout',
+    term: 'Lockout',
+    slug: 'lockout',
+    definition: 'A lockout policy is a security measure that temporarily disables a user account after a certain number of failed login attempts.',
+    example: 'The account lockout policy is configured to lock an account for 30 minutes after 5 failed login attempts.'
+  },
+  {
+    id: 'audit-log',
+    term: 'Audit Log',
+    slug: 'audit-log',
+    definition: 'An audit log is a security-relevant chronological record, set of records, and/or destination and source of records that provide documentary evidence of the sequence of activities that have affected at any time a specific operation, procedure, or event.',
+    example: 'I checked the audit log to see who had accessed the sensitive file.'
+  },
+  {
+    id: 'sysmon',
+    term: 'Sysmon',
+    slug: 'sysmon',
+    definition: 'System Monitor (Sysmon) is a Windows system service and device driver that, once installed on a system, remains resident across system reboots to monitor and log system activity to the Windows event log.',
+    example: 'I use Sysmon to get more detailed information about process creation and network connections on my Windows machine.'
+  },
+  {
+    id: 'etw',
+    term: 'ETW',
+    slug: 'etw',
+    definition: 'Event Tracing for Windows (ETW) is a mechanism for tracing and logging events that are raised by user-mode applications and kernel-mode drivers.',
+    example: 'I used ETW to trace the performance of my application.'
+  },
+  {
+    id: 'yara',
+    term: 'YARA',
+    slug: 'yara',
+    definition: 'YARA is a tool aimed at helping malware researchers to identify and classify malware samples.',
+    example: 'I wrote a YARA rule to detect the new malware variant.'
+  },
+  {
+    id: 'sigma-rule',
+    term: 'Sigma Rule',
+    slug: 'sigma-rule',
+    definition: 'Sigma is a generic and open signature format that allows you to describe relevant log events in a flexible and shareable manner.',
+    example: 'I converted the YARA rule to a Sigma rule so that it could be used with our SIEM.'
+  },
+  {
+    id: 'ioc',
+    term: 'IoC',
+    slug: 'ioc',
+    definition: 'An Indicator of Compromise (IoC) is a piece of forensic data, such as a file hash or an IP address, that indicates a security breach has occurred.',
+    example: 'The security bulletin provided a list of IoCs to search for in our logs.'
+  },
+  {
+    id: 'ioa',
+    term: 'IoA',
+    slug: 'ioa',
+    definition: 'An Indicator of Attack (IoA) is a series of actions or behaviors that indicate an attack is in progress.',
+    example: 'Our EDR system alerted us to an IoA that was consistent with a ransomware attack.'
+  },
+  {
+    id: 'ttp',
+    term: 'TTP',
+    slug: 'ttp',
+    definition: 'Tactics, Techniques, and Procedures (TTPs) is a concept in cybersecurity that describes the behavior of a threat actor.',
+    example: 'We use the MITRE ATT&CK framework to understand the TTPs of various threat actors.'
+  },
+  {
+    id: 'mitre',
+    term: 'MITRE',
+    slug: 'mitre',
+    definition: 'The MITRE ATT&CK framework is a curated knowledge base and model for cyber adversary behavior, reflecting the various phases of an adversary\'s lifecycle and the platforms they are known to target.',
+    example: 'We map our security controls to the MITRE ATT&CK framework to ensure we have coverage for all the common attack techniques.'
+  },
+  {
+    id: 'threat-hunt',
+    term: 'Threat Hunt',
+    slug: 'threat-hunt',
+    definition: 'Threat hunting is the proactive practice of searching for cyber threats that are lurking undetected in a network.',
+    example: 'Our security team conducts regular threat hunts to look for any signs of a compromise.'
+  },
+  {
+    id: 'artifact',
+    term: 'Artifact',
+    slug: 'artifact',
+    definition: 'In digital forensics, an artifact is an object of interest that is left behind on a computer system after an event has occurred.',
+    example: 'The forensic investigator found several artifacts on the suspect\'s computer that proved they had visited the malicious website.'
+  },
+  {
+    id: 'memory-dump',
+    term: 'Memory dump',
+    slug: 'memory-dump',
+    definition: 'A memory dump is a process in which the contents of memory are displayed and stored in case of an application or system crash.',
+    example: 'I took a memory dump of the crashed process to analyze it for the cause of the crash.'
+  },
+  {
+    id: 'disk-image',
+    term: 'Disk image',
+    slug: 'disk-image',
+    definition: 'A disk image is a computer file containing the complete contents and structure of a data storage device, such as a hard drive, tape drive, floppy disk, optical disc or USB flash drive.',
+    example: 'I created a disk image of my hard drive before I upgraded to a new one.'
+  },
+  {
+    id: 'clonezilla',
+    term: 'Clonezilla',
+    slug: 'clonezilla',
+    definition: 'Clonezilla is a free and open-source disk cloning, disk imaging and system deployment utility.',
+    example: 'I used Clonezilla to clone my old hard drive to my new SSD.'
+  },
+  {
+    id: 'volatility',
+    term: 'Volatility',
+    slug: 'volatility',
+    definition: 'The Volatility Framework is a completely open collection of tools, implemented in Python under the GNU General Public License, for the extraction of digital artifacts from volatile memory (RAM) samples.',
+    example: 'I used Volatility to analyze the memory dump and find evidence of the malware.'
+  },
+  {
+    id: 'ftk',
+    term: 'FTK',
+    slug: 'ftk',
+    definition: 'Forensic Toolkit (FTK) is a computer forensics software made by AccessData.',
+    example: 'The forensic investigator used FTK to analyze the hard drive of the suspect\'s computer.'
+  },
+  {
+    id: 'encase',
+    term: 'EnCase',
+    slug: 'encase',
+    definition: 'EnCase is the shared technology within a suite of digital investigations products by Guidance Software. The software is used for forensic, cyber security, security analytics, and e-discovery use.',
+    example: 'EnCase is a popular tool among law enforcement for digital forensics.'
+  },
+  {
+    id: 'grc',
+    term: 'GRC',
+    slug: 'grc',
+    definition: 'Governance, Risk Management, and Compliance (GRC) is a structured approach to aligning IT with business objectives, while effectively managing risk and meeting compliance requirements.',
+    example: 'Our GRC team is responsible for ensuring that we are compliant with all the relevant regulations.'
+  },
+  {
+    id: 'dlp',
+    term: 'DLP',
+    slug: 'dlp',
+    definition: 'Data Loss Prevention (DLP) is a strategy for making sure that end users do not send sensitive or critical information outside the corporate network.',
+    example: 'Our DLP solution automatically blocks emails that contain credit card numbers.'
+  },
+  {
+    id: 'casb',
+    term: 'CASB',
+    slug: 'casb',
+    definition: 'A Cloud Access Security Broker (CASB) is a point of security policy enforcement located between cloud service consumers and cloud service providers to combine and interject enterprise security policies as the cloud-based resources are accessed.',
+    example: 'We use a CASB to monitor and control access to our cloud applications.'
+  },
+  {
+    id: 'zero-trust',
+    term: 'Zero Trust',
+    slug: 'zero-trust',
+    definition: 'Zero trust is a security model that assumes no user or device is trusted by default, and requires verification for every access request.',
+    example: 'We are moving to a zero-trust architecture, where every request is authenticated and authorized.'
+  },
+  {
+    id: 'least-privilege',
+    term: 'Least Privilege',
+    slug: 'least-privilege',
+    definition: 'The principle of least privilege is an information security concept in which a user is given the minimum levels of access – or permissions – needed to perform his/her job functions.',
+    example: 'We follow the principle of least privilege, so users only have access to the data and systems they need to do their jobs.'
+  },
+  {
+    id: 'superuser',
+    term: 'Superuser',
+    slug: 'superuser',
+    definition: 'A superuser is a special user account used for system administration. In Unix-like systems, the superuser is also called root.',
+    example: 'I had to log in as the superuser to make changes to the system configuration.'
+  },
+  {
+    id: 'rooting',
+    term: 'Rooting',
+    slug: 'rooting',
+    definition: 'Rooting is the process of allowing users of smartphones, tablets and other devices running the Android mobile operating system to attain privileged control (known as root access) over various Android subsystems.',
+    example: 'I rooted my old Android phone to install a custom ROM.'
+  },
+  {
+    id: 'jailbreak',
+    term: 'Jailbreak',
+    slug: 'jailbreak',
+    definition: 'Jailbreaking is the process of removing software restrictions imposed by Apple on devices running iOS and iPadOS.',
+    example: 'I jailbroke my old iPhone so I could install apps from outside the App Store.'
+  },
+  {
+    id: 'bootloader',
+    term: 'Bootloader',
+    slug: 'bootloader',
+    definition: 'A bootloader is a computer program that is responsible for booting a computer.',
+    example: 'I unlocked the bootloader on my phone so I could install a custom ROM.'
+  },
+  {
+    id: 'fastboot',
+    term: 'Fastboot',
+    slug: 'fastboot',
+    definition: 'Fastboot is a protocol that can be used to re-flash partitions on your device (update the flash file system). It is this small tool that comes with the Android SDK (software developer kit) that is an alternative to the recovery mode for doing installations and updates.',
+    example: 'I booted my phone into fastboot mode to flash a new recovery image.'
+  },
+  {
+    id: 'edl-mode',
+    term: 'EDL Mode',
+    slug: 'edl-mode',
+    definition: 'Emergency Download (EDL) mode is a special boot mode on Qualcomm-powered devices that can be used to recover a bricked device.',
+    example: 'My phone was bricked, but I was able to recover it by booting into EDL mode and flashing the stock firmware.'
+  },
+  {
+    id: 'odin',
+    term: 'Odin',
+    slug: 'odin',
+    definition: 'Odin is a utility software developed and used by Samsung internally which can be used to flash a custom recovery image to a Samsung Android device.',
+    example: 'I used Odin to flash a custom ROM on my Samsung phone.'
+  },
+  {
+    id: 'recovery-mode',
+    term: 'Recovery Mode',
+    slug: 'recovery-mode',
+    definition: 'Recovery mode is a special bootable partition on Android devices that can be used to perform system maintenance tasks, such as factory resetting the device or installing updates.',
+    example: 'I booted my phone into recovery mode to wipe the cache partition.'
+  },
+  {
+    id: 'twrp',
+    term: 'TWRP',
+    slug: 'twrp',
+    definition: 'Team Win Recovery Project (TWRP) is an open-source software custom recovery image for Android-based devices.',
+    example: 'I installed TWRP on my phone so I could easily install custom ROMs and make backups.'
+  },
+  {
+    id: 'rom',
+    term: 'ROM',
+    slug: 'rom',
+    definition: 'In mobile devices, a ROM is a file containing the executable instructions of a mobile device\'s operating system.',
+    example: 'I downloaded the latest nightly build of the LineageOS ROM for my phone.'
+  },
+  {
+    id: 'custom-rom',
+    term: 'Custom ROM',
+    slug: 'custom-rom',
+    definition: 'A custom ROM is a modified version of a mobile device\'s operating system.',
+    example: 'I installed a custom ROM on my phone to get a stock Android experience.'
+  },
+  {
+    id: 'kernel',
+    term: 'Kernel',
+    slug: 'kernel',
+    definition: 'The kernel is the core of an operating system. It has complete control over everything in the system.',
+    example: 'I installed a custom kernel on my phone to get better performance and battery life.'
+  },
+  {
+    id: 'scheduler',
+    term: 'Scheduler',
+    slug: 'scheduler',
+    definition: 'A scheduler is a part of the operating system that decides which process should run at a certain point in time.',
+    example: 'The Linux kernel has several different CPU schedulers to choose from.'
+  },
+  {
+    id: 'heap',
+    term: 'Heap',
+    slug: 'heap',
+    definition: 'In computer science, the heap is a region of a computer\'s memory that is not managed automatically for you and is not as tightly managed by the CPU. It is a more free-floating region of memory.',
+    example: 'In C++, I have to manually manage the memory I allocate on the heap.'
+  },
+  {
+    id: 'process-stack',
+    term: 'Process Stack',
+    slug: 'process-stack',
+    definition: 'A process stack is a region of a computer\'s memory that stores temporary variables created by a function. The stack is a "LIFO" (last in, first out) data structure.',
+    example: 'When a function is called, its local variables are pushed onto the process stack.'
+  },
+  {
+    id: 'garbage-collector',
+    term: 'Garbage Collector',
+    slug: 'garbage-collector',
+    definition: 'A garbage collector is a form of automatic memory management. The garbage collector attempts to reclaim memory that was allocated by the program, but is no longer referenced.',
+    example: 'Languages like Java and C# have a garbage collector, so I don\'t have to manually manage memory.'
+  },
+  {
+    id: 'thread',
+    term: 'Thread',
+    slug: 'thread',
+    definition: 'A thread is a single sequence of execution within a process. A process can have multiple threads.',
+    example: 'My application uses multiple threads to perform different tasks in parallel.'
+  },
+  {
+    id: 'deadlock',
+    term: 'Deadlock',
+    slug: 'deadlock',
+    definition: 'A deadlock is a state in which each member of a group is waiting for another member, including itself, to take action, such as sending a message or more commonly releasing a lock.',
+    example: 'The application froze due to a deadlock between two threads.'
+  },
+  {
+    id: 'syscall',
+    term: 'Syscall',
+    slug: 'syscall',
+    definition: 'A system call (syscall) is the programmatic way in which a computer program requests a service from the kernel of the operating system it is executed on.',
+    example: 'When I open a file, my program makes a `open` syscall to the operating system.'
+  },
+  {
+    id: 'interrupt',
+    term: 'Interrupt',
+    slug: 'interrupt',
+    definition: 'An interrupt is a signal to the processor emitted by hardware or software indicating an event that needs immediate attention.',
+    example: 'When I move my mouse, the mouse hardware sends an interrupt to the CPU.'
+  },
+  {
+    id: 'boot-sector',
+    term: 'Boot Sector',
+    slug: 'boot-sector',
+    definition: 'A boot sector is a sector of a persistent data storage device which contains machine code to be loaded into random-access memory (RAM) and then executed by a computer system\'s built-in firmware.',
+    example: 'The MBR is a type of boot sector.'
+  },
+  {
+    id: 'initramfs',
+    term: 'Initramfs',
+    slug: 'initramfs',
+    definition: 'initramfs is the successor of initrd. It is a cpio archive of the initial file system that gets loaded into memory during the Linux startup process.',
+    example: 'The initramfs contains all the necessary drivers to mount the root file system.'
+  },
+  {
+    id: 'swapfile',
+    term: 'Swapfile',
+    slug: 'swapfile',
+    definition: 'A swapfile is a file on a hard disk that is used as a temporary location to store information that is not currently being used by the RAM.',
+    example: 'I created a swapfile to increase the amount of virtual memory on my system.'
+  },
+  {
+    id: 'paging',
+    term: 'Paging',
+    slug: 'paging',
+    definition: 'Paging is a memory management scheme by which a computer stores and retrieves data from secondary storage for use in main memory. In this scheme, the operating system retrieves data from secondary storage in same-size blocks called pages.',
+    example: 'When the system runs out of RAM, it starts paging data to the hard disk.'
+  },
+  {
+    id: 'memory-leak',
+    term: 'Memory leak',
+    slug: 'memory-leak',
+    definition: 'A memory leak is a type of resource leak that occurs when a computer program incorrectly manages memory allocations in such a way that memory which is no longer needed is not released.',
+    example: 'The application had a memory leak, and its memory usage would grow over time until it crashed.'
+  },
+  {
+    id: 'buffers',
+    term: 'Buffers',
+    slug: 'buffers',
+    definition: 'A buffer is a region of a physical memory storage used to temporarily store data while it is being moved from one place to another.',
+    example: 'The video player uses a buffer to store a few seconds of video ahead of time to ensure smooth playback.'
+  },
+  {
+    id: 'cache-line',
+    term: 'Cache line',
+    slug: 'cache-line',
+    definition: 'A cache line is the smallest unit of data that can be transferred between the main memory and the CPU cache.',
+    example: 'When the CPU needs to read a piece of data from RAM, it fetches an entire cache line.'
+  },
+  {
+    id: 'pipeline',
+    term: 'Pipeline',
+    slug: 'pipeline',
+    definition: 'In CPUs, a pipeline is a set of data processing elements connected in series, where the output of one element is the input of the next one. This allows for instruction-level parallelism.',
+    example: 'Modern CPUs use a deep pipeline to execute multiple instructions simultaneously.'
+  },
+  {
+    id: 'fpu',
+    term: 'FPU',
+    slug: 'fpu',
+    definition: 'A floating-point unit (FPU) is a part of a computer system specially designed to carry out operations on floating-point numbers.',
+    example: 'The CPU\'s FPU is used for all the mathematical calculations involving decimal numbers.'
+  },
+  {
+    id: 'isa',
+    term: 'ISA',
+    slug: 'isa',
+    definition: 'An instruction set architecture (ISA) is an abstract model of a computer. It is also referred to as architecture or computer architecture.',
+    example: 'x86 and ARM are two different ISAs.'
+  },
+  {
+    id: 'mmu',
+    term: 'MMU',
+    slug: 'mmu',
+    definition: 'A memory management unit (MMU) is a computer hardware unit having all memory references passed through itself, primarily performing the translation of virtual memory addresses to physical addresses.',
+    example: 'The MMU is responsible for managing the virtual memory system.'
+  },
+  {
+    id: 'tlb',
+    term: 'TLB',
+    slug: 'tlb',
+    definition: 'A translation lookaside buffer (TLB) is a memory cache that is used to reduce the time taken to access a user memory location.',
+    example: 'The TLB stores recent translations of virtual memory to physical memory.'
+  },
+  {
+    id: 'hyperthreading',
+    term: 'Hyperthreading',
+    slug: 'hyperthreading',
+    definition: 'Hyper-threading is Intel\'s proprietary simultaneous multithreading (SMT) implementation used to improve parallelization of computations performed on x86 microprocessors.',
+    example: 'My 4-core CPU shows up as 8 logical cores in the operating system because it has Hyper-threading.'
+  },
+  {
+    id: 'smt',
+    term: 'SMT',
+    slug: 'smt',
+    definition: 'Simultaneous multithreading (SMT) is a technique for improving the overall efficiency of superscalar CPUs with hardware multithreading.',
+    example: 'AMD\'s version of SMT allows each CPU core to run two threads simultaneously.'
+  },
+  {
+    id: 'big-little',
+    term: 'Big.Little',
+    slug: 'big-little',
+    definition: 'big.LITTLE is a heterogeneous computing architecture developed by ARM Holdings, coupling relatively battery-saving and slower processor cores (LITTLE) with relatively more powerful and power-hungry ones (big).',
+    example: 'Modern Intel processors use a big.LITTLE architecture with Performance-cores and Efficiency-cores.'
+  },
+  {
+    id: 'benchmark',
+    term: 'Benchmark',
+    slug: 'benchmark',
+    definition: 'A benchmark is the act of running a computer program, a set of programs, or other operations, in order to assess the relative performance of an object, normally by running a number of standard tests and trials against it.',
+    example: 'I ran a benchmark to see how my new CPU compares to the previous generation.'
+  },
+  {
+    id: 'cinebench',
+    term: 'Cinebench',
+    slug: 'cinebench',
+    definition: 'Cinebench is a cross-platform test suite which tests your computer\'s performance capabilities. It is a popular benchmark for CPUs.',
+    example: 'My new CPU got a score of 15000 in Cinebench.'
+  },
+  {
+    id: '3dmark',
+    term: '3DMark',
+    slug: '3dmark',
+    definition: '3DMark is a popular benchmarking tool for measuring the gaming performance of your PC.',
+    example: 'I ran 3DMark to see how well my new graphics card would perform in games.'
+  },
+  {
+    id: 'furmark',
+    term: 'Furmark',
+    slug: 'furmark',
+    definition: 'FurMark is a very intensive GPU stress test and benchmark.',
+    example: 'I ran FurMark for an hour to make sure my GPU was stable after overclocking.'
+  },
+  {
+    id: 'memtest86',
+    term: 'Memtest86',
+    slug: 'memtest86',
+    definition: 'Memtest86 is the original, free, stand-alone memory testing software for x86 and x86-64 architecture computers.',
+    example: 'I ran Memtest86 overnight to check my RAM for errors.'
+  },
+  {
+    id: 'power-plan',
+    term: 'Power Plan',
+    slug: 'power-plan',
+    definition: 'A power plan is a collection of hardware and system settings that manages how your computer uses power.',
+    example: 'I switched to the High Performance power plan to get the best performance out of my CPU.'
+  },
+  {
+    id: 'undervolt',
+    term: 'Undervolt',
+    slug: 'undervolt',
+    definition: 'Undervolting is the process of reducing the voltage to your CPU or GPU, which can reduce heat and power consumption without sacrificing performance.',
+    example: 'I undervolted my laptop\'s CPU to get better battery life.'
+  },
+  {
+    id: 'overvolt',
+    term: 'Overvolt',
+    slug: 'overvolt',
+    definition: 'Overvolting is the process of increasing the voltage to your CPU or GPU, which can help to stabilize an overclock but also increases heat and power consumption.',
+    example: 'I had to overvolt my CPU to get it stable at 5.0 GHz.'
+  },
+  {
+    id: 'overclock',
+    term: 'Overclock',
+    slug: 'overclock',
+    definition: 'Overclocking is the action of increasing a component\'s clock rate, running it at a higher speed than it was designed to run.',
+    example: 'I overclocked my CPU to get better performance in games.'
+  },
+  {
+    id: 'underclock',
+    term: 'Underclock',
+    slug: 'underclock',
+    definition: 'Underclocking is the action of decreasing a component\'s clock rate, running it at a lower speed than it was designed to run. This can be done to reduce heat and power consumption.',
+    example: 'I underclocked my GPU to make my computer quieter.'
+  },
+  {
+    id: 'curve-optimizer',
+    term: 'Curve Optimizer',
+    slug: 'curve-optimizer',
+    definition: 'Curve Optimizer is a feature on AMD Ryzen processors that allows you to fine-tune the voltage curve of each individual core, which can help to improve performance and reduce power consumption.',
+    example: 'I used the Curve Optimizer to undervolt my CPU and get better performance.'
+  },
+  {
+    id: 'thermal-pad-2',
+    term: 'Thermal Pad',
+    slug: 'thermal-pad-2',
+    definition: 'A thermal pad is a pre-formed square or rectangle of solid material (often paraffin wax or silicone based) commonly found on the underside of heatsinks to aid the conduction of heat away from the component being cooled and into the heatsink.',
+    example: 'I replaced the thermal pads on my GPU\'s VRAM to improve cooling.'
+  },
+  {
+    id: 'cold-boot-2',
+    term: 'Cold Boot',
+    slug: 'cold-boot-2',
+    definition: 'A cold boot is the process of starting a computer from a powered-down or off state.',
+    example: 'A cold boot is sometimes necessary to fix certain hardware issues.'
+  },
+  {
+    id: 'warm-boot-2',
+    term: 'Warm Boot',
+    slug: 'warm-boot-2',
+    definition: 'A warm boot is the process of restarting a computer that is already on.',
+    example: 'A warm boot is faster than a cold boot because it doesn\'t have to go through the full POST process.'
+  },
+  {
+    id: 'soft-reset',
+    term: 'Soft Reset',
+    slug: 'soft-reset',
+    definition: 'A soft reset is the process of restarting a device without cutting its power, such as by using the "Restart" option in the operating system.',
+    example: 'I performed a soft reset on my phone to fix a minor software glitch.'
+  },
+  {
+    id: 'hard-reset',
+    term: 'Hard Reset',
+    slug: 'hard-reset',
+    definition: 'A hard reset is the process of restarting a device by cutting its power, such as by holding down the power button or unplugging it.',
+    example: 'My computer was frozen, so I had to perform a hard reset.'
+  },
+  {
+    id: 'safe-mode',
+    term: 'Safe Mode',
+    slug: 'safe-mode',
+    definition: 'Safe mode is a diagnostic mode of a computer operating system. It is intended to help fix most, if not all, problems within an operating system. It is also widely used for removing rogue security software.',
+    example: 'I booted into safe mode to uninstall a problematic driver.'
+  },
+  {
+    id: 'bios-flash',
+    term: 'BIOS Flash',
+    slug: 'bios-flash',
+    definition: 'A BIOS flash is the process of updating the firmware of a computer\'s BIOS.',
+    example: 'I had to flash the BIOS to add support for the new CPU.'
+  },
+  {
+    id: 'dump-file',
+    term: 'Dump File',
+    slug: 'dump-file',
+    definition: 'A dump file is a file that contains a record of the state of a program at a specific time, generally when the program has crashed.',
+    example: 'The application created a dump file when it crashed, which I sent to the developers to help them debug the issue.'
+  },
+  {
+    id: 'core-dump',
+    term: 'Core Dump',
+    slug: 'core-dump',
+    definition: 'A core dump is the recorded state of the working memory of a computer program at a specific time, generally when the program has terminated abnormally (crashed).',
+    example: 'I analyzed the core dump to find the cause of the crash.'
+  },
+  {
+    id: 'minidump',
+    term: 'Minidump',
+    slug: 'minidump',
+    definition: 'A minidump is a smaller version of a crash dump that contains only the most essential information needed to debug a crash.',
+    example: 'Windows created a minidump when the blue screen of death occurred.'
+  },
+  {
+    id: 'event-viewer',
+    term: 'Event Viewer',
+    slug: 'event-viewer',
+    definition: 'Event Viewer is a component of Microsoft\'s Windows NT line of operating systems that lets administrators and users view the event logs on a local or remote machine.',
+    example: 'I checked the Event Viewer to find the error message that was causing the application to crash.'
+  },
+  {
+    id: 'pnp',
+    term: 'PnP',
+    slug: 'pnp',
+    definition: 'Plug and Play (PnP) is a standard for the connection of peripherals to personal computers, whereby a device can be added to a computer system and be ready to work with, more or less, minimal user intervention.',
+    example: 'USB is a PnP interface, so I can just plug in my mouse and it works right away.'
+  },
+  {
+    id: 'hotplug',
+    term: 'Hotplug',
+    slug: 'hotplug',
+    definition: 'Hot-plugging is the ability to add and remove devices to a computer system while the computer is running.',
+    example: 'USB and Thunderbolt are hot-pluggable interfaces.'
+  },
+  {
+    id: 'irq',
+    term: 'IRQ',
+    slug: 'irq',
+    definition: 'An Interrupt Request (IRQ) is a hardware signal sent to the processor that temporarily stops a running program and allows a special program, an interrupt handler, to run instead.',
+    example: 'In the old days, you sometimes had to manually assign IRQs to your expansion cards to avoid conflicts.'
+  },
+  {
+    id: 'dma',
+    term: 'DMA',
+    slug: 'dma',
+    definition: 'Direct Memory Access (DMA) is a feature of computer systems that allows certain hardware subsystems to access main system memory (RAM) independently of the central processing unit (CPU).',
+    example: 'DMA allows the hard drive to transfer data directly to RAM without involving the CPU, which improves performance.'
+  },
+  {
+    id: 'bus-speed',
+    term: 'Bus Speed',
+    slug: 'bus-speed',
+    definition: 'The bus speed is the speed at which data is transferred between the CPU and other components on the motherboard.',
+    example: 'The bus speed of this motherboard is 100 MHz.'
+  },
+  {
+    id: 'latency-timer',
+    term: 'Latency Timer',
+    slug: 'latency-timer',
+    definition: 'The Latency Timer is a setting for PCI devices that determines how long a device can hold onto the PCI bus before it has to let another device use it.',
+    example: 'I had to adjust the latency timer for my sound card to fix some audio crackling issues.'
+  },
+  {
+    id: 'bottleneck',
+    term: 'Bottleneck',
+    slug: 'bottleneck',
+    definition: 'A bottleneck is a point of congestion in a system that limits its overall performance.',
+    example: 'My fast CPU is being held back by my slow hard drive; it\'s a classic bottleneck.'
+  },
+  {
+    id: 'throttle',
+    term: 'Throttle',
+    slug: 'throttle',
+    definition: 'Throttling is the intentional slowing or speeding of a service to manage its use and performance.',
+    example: 'My CPU is throttling because it is getting too hot.'
+  },
+  {
+    id: 'power-limit-2',
+    term: 'Power Limit',
+    slug: 'power-limit-2',
+    definition: 'The power limit is the maximum amount of power that a CPU or GPU is allowed to draw.',
+    example: 'I increased the power limit on my GPU to get a higher overclock.'
+  },
+  {
+    id: 'pl1-pl2',
+    term: 'PL1/PL2',
+    slug: 'pl1-pl2',
+    definition: 'PL1 and PL2 are power limit states for Intel CPUs. PL1 is the long-term power limit, while PL2 is the short-term boost power limit.',
+    example: 'My CPU can boost to a high clock speed for a short period of time, thanks to its high PL2 power limit.'
+  },
+  {
+    id: 'vdroop',
+    term: 'Vdroop',
+    slug: 'vdroop',
+    definition: 'Vdroop is a phenomenon where the voltage supplied to the CPU drops slightly when it is under a heavy load.',
+    example: 'I had to enable Load-Line Calibration to counteract the Vdroop and get my overclock stable.'
+  },
+  {
+    id: 'load-line',
+    term: 'Load Line',
+    slug: 'load-line',
+    definition: 'Load-Line Calibration (LLC) is a BIOS feature that helps to counteract Vdroop and maintain a stable voltage to the CPU under load.',
+    example: 'I set the LLC to a medium level to get a stable overclock without overvolting the CPU too much.'
+  },
+  {
+    id: 'nb-voltage',
+    term: 'NB Voltage',
+    slug: 'nb-voltage',
+    definition: 'The Northbridge Voltage (NB Voltage) is the voltage supplied to the Northbridge chipset on a motherboard.',
+    example: 'I had to increase the NB voltage to get my high-speed RAM stable.'
+  },
+  {
+    id: 'sb-voltage',
+    term: 'SB Voltage',
+    slug: 'sb-voltage',
+    definition: 'The Southbridge Voltage (SB Voltage) is the voltage supplied to the Southbridge chipset on a motherboard.',
+    example: 'Adjusting the SB voltage is rarely necessary for overclocking.'
+  },
+  {
+    id: 'qd1',
+    term: 'QD1',
+    slug: 'qd1',
+    definition: 'Queue Depth 1 (QD1) is a measure of storage performance that represents a workload with a single outstanding command at a time. It is a good indicator of real-world performance for typical desktop use.',
+    example: 'This SSD has excellent QD1 read speeds, which makes it feel very responsive in everyday tasks.'
+  },
+  {
+    id: 'chunk-size',
+    term: 'Chunk Size',
+    slug: 'chunk-size',
+    definition: 'The chunk size is the size of the blocks of data that are written to a RAID array at one time.',
+    example: 'I set a larger chunk size for my RAID array to improve performance for large file transfers.'
+  },
+  {
+    id: 'block-size',
+    term: 'Block Size',
+    slug: 'block-size',
+    definition: 'The block size is the smallest unit of data that can be written to a storage device.',
+    example: 'I formatted my hard drive with a 4K block size.'
+  },
+  {
+    id: 'sector',
+    term: 'Sector',
+    slug: 'sector',
+    definition: 'A sector is a subdivision of a track on a magnetic disk or optical disc.',
+    example: 'My hard drive is starting to get bad sectors, so I need to back it up and replace it.'
+  },
+  {
+    id: 'partition-table',
+    term: 'Partition Table',
+    slug: 'partition-table',
+    definition: 'A partition table is a table maintained on disk by the operating system describing the partitions on that disk.',
+    example: 'The partition table was corrupted, so the operating system couldn\'t see any of the partitions on the drive.'
+  },
+  {
+    id: 'chs',
+    term: 'CHS',
+    slug: 'chs',
+    definition: 'Cylinder-head-sector (CHS) is an early method for giving addresses to each physical block of data on a hard disk drive.',
+    example: 'Modern hard drives use Logical Block Addressing (LBA) instead of CHS.'
+  },
+  {
+    id: 's-m-a-r-t-flags',
+    term: 'S.M.A.R.T Flags',
+    slug: 's-m-a-r-t-flags',
+    definition: 'S.M.A.R.T. flags are the individual attributes that are monitored by the S.M.A.R.T. system to determine the health of a hard drive.',
+    example: 'The S.M.A.R.T. flags for my hard drive were showing a high number of reallocated sectors, which is a sign of impending failure.'
+  },
+  {
+    id: 'trim',
+    term: 'TRIM',
+    slug: 'trim',
+    definition: 'TRIM is a command that allows an operating system to inform a solid-state drive (SSD) which blocks of data are no longer considered in use and can be wiped internally.',
+    example: 'I made sure that TRIM was enabled for my SSD to maintain its performance over time.'
+  },
+  {
+    id: 'overprovision',
+    term: 'Overprovision',
+    slug: 'overprovision',
+    definition: 'Over-provisioning is the practice of reserving a portion of an SSD\'s capacity for the controller to use for tasks like wear leveling and garbage collection.',
+    example: 'I overprovisioned my SSD by 10% to improve its performance and endurance.'
+  },
+  {
+    id: 'wear-leveling',
+    term: 'Wear Leveling',
+    slug: 'wear-leveling',
+    definition: 'Wear leveling is a technique for prolonging the service life of some kinds of erasable computer storage media, such as Flash memory used in solid-state drives (SSDs).',
+    example: 'The SSD\'s controller uses wear leveling to evenly distribute writes across all the memory cells.'
+  },
+  {
+    id: 'temp-sensor',
+    term: 'Temp Sensor',
+    slug: 'temp-sensor',
+    definition: 'A temp sensor is a device that measures the temperature of a component, such as a CPU or GPU.',
+    example: 'My motherboard has several temp sensors that I can monitor in the BIOS.'
+  },
+  {
+    id: 'bus-width',
+    term: 'Bus Width',
+    slug: 'bus-width',
+    definition: 'The bus width is the number of bits that can be transferred at one time between the CPU and other components.',
+    example: 'A 64-bit CPU has a 64-bit bus width.'
+  },
+  {
+    id: 'chipset',
+    term: 'Chipset',
+    slug: 'chipset',
+    definition: 'A chipset is a set of electronic components in an integrated circuit known as a "Data Flow Management System" that manages the data flow between the processor, memory and peripherals.',
+    example: 'The Z690 chipset supports DDR5 memory and PCIe 5.0.'
+  },
+  {
+    id: 'module',
+    term: 'Module',
+    slug: 'module',
+    definition: 'A module is a self-contained unit of software or hardware.',
+    example: 'I installed a new RAM module to upgrade my computer\'s memory.'
+  },
+  {
+    id: 'header',
+    term: 'Header',
+    slug: 'header',
+    definition: 'A header is a connector on a motherboard that allows you to connect other components, such as case fans or USB ports.',
+    example: 'I connected the front panel USB cable to the USB header on the motherboard.'
+  },
+  {
+    id: 'jumper',
+    term: 'Jumper',
+    slug: 'jumper',
+    definition: 'A jumper is a short length of conductor used to close, open or bypass part of an electronic circuit. They are typically used for setting up or configuring printed circuit boards.',
+    example: 'I had to move a jumper on the motherboard to clear the CMOS.'
+  },
+  {
+    id: 'standoff',
+    term: 'Standoff',
+    slug: 'standoff',
+    definition: 'A standoff is a small piece of hardware used to mount a motherboard in a computer case, creating a gap between the motherboard and the case to prevent short circuits.',
+    example: 'I installed the motherboard standoffs in the case before mounting the motherboard.'
+  },
+  {
+    id: 'mesh-panel',
+    term: 'Mesh Panel',
+    slug: 'mesh-panel',
+    definition: 'A mesh panel is a type of computer case panel that has a large number of small holes, allowing for good airflow.',
+    example: 'I chose a case with a mesh front panel to get the best possible cooling.'
+  },
+  {
+    id: 'molex',
+    term: 'Molex',
+    slug: 'molex',
+    definition: 'A Molex connector is a type of power connector that was commonly used in older computers to power components like hard drives and case fans.',
+    example: 'I had to use a SATA to Molex adapter to power my old case fan.'
+  },
+  {
+    id: 'daisy-chain',
+    term: 'Daisy Chain',
+    slug: 'daisy-chain',
+    definition: 'A daisy chain is a wiring scheme in which multiple devices are wired together in sequence or in a ring.',
+    example: 'I daisy-chained my case fans together so I only had to use one fan header on the motherboard.'
+  },
+  {
+    id: 'pwm',
+    term: 'PWM',
+    slug: 'pwm',
+    definition: 'Pulse Width Modulation (PWM) is a technique for getting analog results with digital means. It is often used to control the speed of fans.',
+    example: 'My new case fans are PWM, so I can control their speed precisely in the BIOS.'
+  },
+  {
+    id: 'dc-mode',
+    term: 'DC Mode',
+    slug: 'dc-mode',
+    definition: 'DC mode is a method of controlling fan speed by varying the voltage supplied to the fan.',
+    example: 'My older case fans are not PWM, so I have to set them to DC mode in the BIOS.'
+  },
+  {
+    id: 'bios-lock',
+    term: 'BIOS Lock',
+    slug: 'bios-lock',
+    definition: 'A BIOS lock is a feature that prevents the BIOS from being flashed with a modified or unofficial version.',
+    example: 'I had to disable the BIOS lock to install a custom BIOS on my motherboard.'
+  },
+  {
+    id: 'secure-boot',
+    term: 'Secure Boot',
+    slug: 'secure-boot',
+    definition: 'Secure Boot is a security standard developed by members of the PC industry to help make sure that a device boots using only software that is trusted by the Original Equipment Manufacturer (OEM).',
+    example: 'I had to disable Secure Boot to install Linux on my new laptop.'
+  },
+  {
+    id: 'tpm-2-0',
+    term: 'TPM 2.0',
+    slug: 'tpm-2-0',
+    definition: 'Trusted Platform Module 2.0 (TPM 2.0) is a specification for a secure cryptoprocessor, a dedicated microcontroller designed to secure hardware through integrated cryptographic keys.',
+    example: 'Windows 11 requires a TPM 2.0 module to be enabled for installation.'
+  },
+  {
+    id: 'kernel-mode',
+    term: 'Kernel Mode',
+    slug: 'kernel-mode',
+    definition: 'Kernel mode is a privileged mode of operation in which the processor has unrestricted access to all system resources.',
+    example: 'Device drivers run in kernel mode.'
+  },
+  {
+    id: 'user-mode',
+    term: 'User Mode',
+    slug: 'user-mode',
+    definition: 'User mode is a non-privileged mode of operation in which the processor has restricted access to system resources.',
+    example: 'Applications run in user mode.'
+  },
+  {
+    id: 'runtime',
+    term: 'Runtime',
+    slug: 'runtime',
+    definition: 'A runtime environment is the environment in which a program or application is executed.',
+    example: 'The Java Runtime Environment (JRE) is required to run Java applications.'
+  },
+  {
+    id: 'build',
+    term: 'Build',
+    slug: 'build',
+    definition: 'A build is the process of converting source code files into standalone software artifact that can be run on a computer.',
+    example: 'The build failed because of a syntax error in one of the source files.'
+  },
+  {
+    id: 'hotfix',
+    term: 'Hotfix',
+    slug: 'hotfix',
+    definition: 'A hotfix is a software update that is intended to fix a specific bug or security vulnerability.',
+    example: 'Microsoft released a hotfix to patch the critical security vulnerability.'
+  },
+  {
+    id: 'rollback',
+    term: 'Rollback',
+    slug: 'rollback',
+    definition: 'A rollback is the process of restoring a system to a previous state.',
+    example: 'The update caused some issues, so I had to perform a rollback to the previous version.'
+  },
+  {
+    id: 'breakpoint',
+    term: 'Breakpoint',
+    slug: 'breakpoint',
+    definition: 'A breakpoint is an intentional stopping or pausing place in a program, put in place for debugging purposes.',
+    example: 'I set a breakpoint in my code to inspect the value of a variable at a certain point in the execution.'
+  },
+  {
+    id: 'profiler',
+    term: 'Profiler',
+    slug: 'profiler',
+    definition: 'A profiler is a software analysis tool that measures the performance of a program, such as its memory or time complexity.',
+    example: 'I used a profiler to find the bottlenecks in my code.'
+  },
+  {
+    id: 'observer',
+    term: 'Observer',
+    slug: 'observer',
+    definition: 'The observer pattern is a software design pattern in which an object, named the subject, maintains a list of its dependents, called observers, and notifies them automatically of any state changes, usually by calling one of their methods.',
+    example: 'I used the observer pattern to update the UI whenever the data model changed.'
+  },
+  {
+    id: 'dependency-tree',
+    term: 'Dependency Tree',
+    slug: 'dependency-tree',
+    definition: 'A dependency tree is a hierarchical structure that shows the dependencies of a software project.',
+    example: 'I used a tool to visualize the dependency tree of my project to see all the libraries it was using.'
+  },
+  {
+    id: 'stub-file',
+    term: 'Stub File',
+    slug: 'stub-file',
+    definition: 'A stub file is a file containing empty or incomplete function or class definitions, which can be used as a placeholder for yet-to-be-developed code.',
+    example: 'I created a stub file for the new module so I could start writing the code that depends on it.'
+  },
+  {
+    id: 'schema',
+    term: 'Schema',
+    slug: 'schema',
+    definition: 'A schema is a blueprint or model for the structure of a database or other data format.',
+    example: 'I defined the schema for my database tables before I started writing any code.'
+  },
+  {
+    id: 'query',
+    term: 'Query',
+    slug: 'query',
+    definition: 'A query is a request for data or information from a database table or combination of tables.',
+    example: 'I wrote a SQL query to get all the users who have signed up in the last month.'
+  },
+  {
+    id: 'cursor',
+    term: 'Cursor',
+    slug: 'cursor',
+    definition: 'A database cursor is a control structure that enables traversal over the records in a database.',
+    example: 'I used a cursor to iterate through the results of my query.'
+  },
+  {
+    id: 'commit',
+    term: 'Commit',
+    slug: 'commit',
+    definition: 'In the context of databases, a commit is the process of making a set of tentative changes permanent.',
+    example: 'I committed the transaction after I was sure all the changes were correct.'
+  },
+  {
+    id: 'dead-tuple',
+    term: 'Dead Tuple',
+    slug: 'dead-tuple',
+    definition: 'In PostgreSQL, a dead tuple is a version of a row that has been deleted or updated and is no longer visible to any active transaction.',
+    example: 'The database vacuuming process cleans up dead tuples to reclaim disk space.'
+  },
+  {
+    id: 'index-scan',
+    term: 'Index Scan',
+    slug: 'index-scan',
+    definition: 'An index scan is a database operation that uses an index to find the requested data, which is much faster than a full table scan.',
+    example: 'The query was fast because the database was able to use an index scan.'
+  },
+  {
+    id: 'full-scan',
+    term: 'Full Scan',
+    slug: 'full-scan',
+    definition: 'A full table scan is a database operation that reads every row in a table to find the requested data. It is generally slow and should be avoided if possible.',
+    example: 'The query was slow because the database had to perform a full table scan.'
+  },
+  {
+    id: 'replication',
+    term: 'Replication',
+    slug: 'replication',
+    definition: 'Replication is the process of sharing information so as to ensure consistency between redundant resources, such as software or hardware components, to improve reliability, fault-tolerance, or accessibility.',
+    example: 'We set up database replication to a standby server for high availability.'
+  },
+  {
+    id: 'sharding',
+    term: 'Sharding',
+    slug: 'sharding',
+    definition: 'Sharding is a type of database partitioning that separates very large databases into smaller, faster, more easily managed parts called data shards.',
+    example: 'We sharded our database by user ID to distribute the load across multiple servers.'
+  },
+  {
+    id: 'hot-backup',
+    term: 'Hot Backup',
+    slug: 'hot-backup',
+    definition: 'A hot backup is a backup of a database that is taken while the database is online and in use.',
+    example: 'We perform a hot backup of our database every hour.'
+  },
+  {
+    id: 'seed-node',
+    term: 'Seed Node',
+    slug: 'seed-node',
+    definition: 'A seed node is an initial node in a peer-to-peer network that is used to bootstrap new nodes joining the network.',
+    example: 'I configured my new node to connect to a seed node to join the network.'
+  },
+  {
+    id: 'leader-node',
+    term: 'Leader Node',
+    slug: 'leader-node',
+    definition: 'In a distributed system, a leader node is a node that is responsible for coordinating the other nodes in the cluster.',
+    example: 'The leader node is responsible for assigning tasks to the worker nodes.'
+  },
+  {
+    id: 'worker-node',
+    term: 'Worker Node',
+    slug: 'worker-node',
+    definition: 'In a distributed system, a worker node is a node that performs tasks assigned to it by the leader node.',
+    example: 'I added more worker nodes to the cluster to increase its processing capacity.'
+  },
+  {
+    id: 'health-check',
+    term: 'Health Check',
+    slug: 'health-check',
+    definition: 'A health check is a test to determine if a system is running correctly.',
+    example: 'The load balancer performs a health check on each server to make sure it is able to handle requests.'
+  },
+  {
+    id: 'logs',
+    term: 'Logs',
+    slug: 'logs',
+    definition: 'A log file is a file that records either events that occur in an operating system or other software runs, or messages between different users of a communication software.',
+    example: 'I checked the web server logs to see who had accessed the website.'
+  },
+  {
+    id: 'metrics',
+    term: 'Metrics',
+    slug: 'metrics',
+    definition: 'Metrics are quantitative measurements of a system\'s behavior.',
+    example: 'I am monitoring the CPU usage and memory consumption metrics of the server.'
+  },
+  {
+    id: 'telemetry',
+    term: 'Telemetry',
+    slug: 'telemetry',
+    definition: 'Telemetry is the automatic recording and transmission of data from remote or inaccessible sources to an IT system in a different location for monitoring and analysis.',
+    example: 'The application sends telemetry data to our servers to help us understand how it is being used.'
+  },
+  {
+    id: 'trigger',
+    term: 'Trigger',
+    slug: 'trigger',
+    definition: 'A trigger is a set of actions that are automatically performed in response to a specific event.',
+    example: 'I created a trigger that sends an email notification whenever a new record is inserted into the database.'
+  },
+  {
+    id: 'hook',
+    term: 'Hook',
+    slug: 'hook',
+    definition: 'A hook is a mechanism by which a program can intercept events or messages and perform some action.',
+    example: 'I used a Git hook to run my unit tests before every commit.'
   }
 ];
-
-    

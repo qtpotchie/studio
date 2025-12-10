@@ -1,3 +1,4 @@
+
 "use client";
 
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
@@ -7,14 +8,21 @@ import type { Term } from "@/lib/data";
 import { ScrollArea } from "./ui/scroll-area";
 import JargonExplorer from "./jargon-explorer";
 import { Badge } from "./ui/badge";
+import { terms as staticTerms } from '@/lib/data';
+import { useState, useEffect } from 'react';
 
 interface ExplorerDialogProps {
   isOpen: boolean;
   setOpen: (isOpen: boolean) => void;
-  terms: Term[];
 }
 
-export default function ExplorerDialog({ isOpen, setOpen, terms }: ExplorerDialogProps) {
+export default function ExplorerDialog({ isOpen, setOpen }: ExplorerDialogProps) {
+  const [terms, setTerms] = useState<Term[]>([]);
+
+  useEffect(() => {
+    setTerms(staticTerms);
+  }, []);
+
   const termCount = terms.length;
   
   return (
