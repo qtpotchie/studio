@@ -52,7 +52,7 @@ export default function Home() {
             </div>
         </div>
 
-        <div className="flex-shrink-0 pb-4 md:pb-0 relative">
+        <div className="flex-shrink-0 pb-4 md:pb-8 relative">
           <div className="absolute bottom-full left-0 w-full h-20 bg-gradient-to-t from-background to-transparent pointer-events-none"></div>
             <WordOfTheDay terms={terms} />
         </div>
