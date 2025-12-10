@@ -11,6 +11,7 @@ type GroupedTerms = {
 };
 
 export default function AllTermsPage() {
+  const termCount = terms.length;
 
   const groupedTerms = terms.reduce((acc, term) => {
     const firstLetter = term.term[0].toUpperCase();
@@ -28,7 +29,7 @@ export default function AllTermsPage() {
       <div className="flex flex-row items-center justify-between mb-8 gap-4">
         <div className="flex items-center gap-3">
           <h1 className="text-2xl sm:text-3xl font-bold font-headline">All Terms</h1>
-          <Badge variant="secondary" className="text-base sm:text-lg">{terms.length}</Badge>
+          <Badge variant="secondary" className="text-base sm:text-lg">{termCount}</Badge>
         </div>
         <Button asChild variant="outline" size="sm">
           <Link href="/">

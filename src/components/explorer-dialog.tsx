@@ -6,6 +6,7 @@ import { ArrowLeft } from "lucide-react";
 import type { Term } from "@/lib/data";
 import { ScrollArea } from "./ui/scroll-area";
 import JargonExplorer from "./jargon-explorer";
+import { Badge } from "./ui/badge";
 
 interface ExplorerDialogProps {
   isOpen: boolean;
@@ -14,6 +15,8 @@ interface ExplorerDialogProps {
 }
 
 export default function ExplorerDialog({ isOpen, setOpen, terms }: ExplorerDialogProps) {
+  const termCount = terms.length;
+  
   return (
     <Dialog open={isOpen} onOpenChange={setOpen}>
       <DialogContent className="p-0 gap-0 w-screen h-screen max-w-full flex flex-col rounded-none" hideCloseButton>
@@ -29,9 +32,12 @@ export default function ExplorerDialog({ isOpen, setOpen, terms }: ExplorerDialo
               <ArrowLeft className="h-5 w-5" />
               <span className="sr-only">Back</span>
             </Button>
-          <h2 className="text-xl font-bold font-headline">
-            Jargon Explorer
-          </h2>
+          <div className="flex items-center gap-3">
+            <h2 className="text-xl font-bold font-headline">
+              Jargon Explorer
+            </h2>
+            <Badge variant="secondary" className="text-base">{termCount}</Badge>
+          </div>
         </div>
         <ScrollArea className="flex-1">
           <div className="p-4 pt-2">
