@@ -55,10 +55,10 @@ export default function Home() {
             </Button>
             <Button
                 variant="secondary"
-                className="h-12 text-base px-4 border-2 border-transparent basis-1/3 shadow-md"
+                className="h-12 text-base px-4 border-2 border-transparent basis-1/3 shadow-md group"
                 onClick={() => setIsExplorerOpen(true)}
             >
-                <BookOpen className="mr-3 h-5 w-5" />
+                <BookOpen className="mr-3 h-5 w-5 transition-transform group-hover:animate-book-open" />
                 <span>Explore</span>
             </Button>
             </div>

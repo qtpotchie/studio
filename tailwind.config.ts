@@ -93,11 +93,17 @@ export default {
           '0%': { transform: 'rotate(0deg)' },
           '100%': { transform: 'rotate(360deg)' },
         },
+        'book-open': {
+          '0%': { transform: 'rotateY(0deg) scale(1)' },
+          '50%': { transform: 'rotateY(25deg) scale(1.05)' },
+          '100%': { transform: 'rotateY(0deg) scale(1)' },
+        }
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         'rotate-timed': 'rotate-once 1.5s ease-in-out',
+        'book-open': 'book-open 0.6s ease-in-out',
       },
     },
   },
