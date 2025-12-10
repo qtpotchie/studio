@@ -13,16 +13,16 @@ export default function GlobalControls() {
   return (
     <div className="absolute top-4 left-4 right-4 flex justify-between z-10">
       <Button 
-        variant="outline" 
+        variant="secondary" 
         size="icon" 
         onClick={onOpen}
-        className="h-12 w-12 transition-transform duration-200 ease-in-out active:rotate-90"
+        className="h-12 w-12 transition-transform duration-200 ease-in-out active:rotate-90 shadow-md"
       >
         <Menu className="h-6 w-6" />
         <span className="sr-only">Open menu</span>
       </Button>
       <div className="flex items-center gap-2">
-        <Button variant="outline" size="icon" onClick={() => setVoiceOpen(true)} className="h-12 w-12">
+        <Button variant="secondary" size="icon" onClick={() => setVoiceOpen(true)} className="h-12 w-12 shadow-md">
           <Mic className="h-6 w-6" />
           <span className="sr-only">Voice Search</span>
         </Button>
