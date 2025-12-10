@@ -1,3 +1,4 @@
+
 "use client";
 
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet";
@@ -36,7 +37,7 @@ export default function MobileSidebar() {
         <SheetHeader>
           <SheetTitle className="sr-only">Menu</SheetTitle>
         </SheetHeader>
-        <div className="flex justify-center mb-6">
+        <div className="flex justify-center mb-6 pb-6 border-b">
             <Link href="/" onClick={onClose} className="flex flex-col items-center gap-2">
                 <Logo className="w-12 h-12" />
                 <span className="text-base font-bold">TechTermz</span>
