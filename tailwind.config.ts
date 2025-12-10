@@ -89,16 +89,15 @@ export default {
             height: '0',
           },
         },
-        'wiggle': {
-          '0%, 100%': { transform: 'rotate(-3deg)' },
-          '50%': { transform: 'rotate(3deg)' },
+        'rotate-once': {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
         },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
-        'wiggle': 'wiggle 1s ease-in-out infinite',
-        'wiggle-timed': 'wiggle 0.5s ease-in-out 3',
+        'rotate-timed': 'rotate-once 1.5s ease-in-out',
       },
     },
   },
