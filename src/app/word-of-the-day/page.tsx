@@ -6,6 +6,7 @@ import { terms } from '@/lib/data';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, CalendarDays } from 'lucide-react';
+import { useRouter } from 'next/navigation';
 
 type WordHistoryItem = {
   date: string; // YYYY-MM-DD
@@ -15,6 +16,7 @@ type WordHistoryItem = {
 export default function WordOfTheDayArchivePage() {
   const [history, setHistory] = useState<WordHistoryItem[]>([]);
   const [isLoaded, setIsLoaded] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
     try {
@@ -50,11 +52,9 @@ export default function WordOfTheDayArchivePage() {
           <CalendarDays className="mr-2 h-6 w-6 sm:mr-3 sm:h-7 sm:w-7" />
           Word of the Day
         </h1>
-        <Button asChild variant="secondary" size="sm" className="shadow-md">
-          <Link href="/">
-            <ArrowLeft className="mr-2 h-4 w-4" />
-            Back
-          </Link>
+        <Button variant="secondary" size="sm" className="shadow-md" onClick={() => router.back()}>
+          <ArrowLeft className="mr-2 h-4 w-4" />
+          Back
         </Button>
       </div>
 

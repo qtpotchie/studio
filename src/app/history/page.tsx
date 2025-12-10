@@ -3,7 +3,7 @@
 import { useSearchHistory } from '@/context/search-history-context';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, History, Trash2 } from 'lucide-react';
-import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import {
   AlertDialog,
   AlertDialogAction,
@@ -18,17 +18,16 @@ import {
 
 export default function HistoryPage() {
   const { history, clearHistory } = useSearchHistory();
+  const router = useRouter();
 
   return (
     <div className="container mx-auto px-4 py-8 space-y-8">
       <div className="flex flex-row items-center justify-between mb-8 gap-4">
         <h1 className="text-2xl sm:text-3xl font-bold font-headline">Search History</h1>
         <div className="flex items-center gap-2">
-          <Button asChild variant="secondary" size="sm" className="shadow-md">
-            <Link href="/">
-              <ArrowLeft className="mr-2 h-4 w-4" />
-              Back
-            </Link>
+          <Button variant="secondary" size="sm" className="shadow-md" onClick={() => router.back()}>
+            <ArrowLeft className="mr-2 h-4 w-4" />
+            Back
           </Button>
           {history.length > 0 && (
             <AlertDialog>

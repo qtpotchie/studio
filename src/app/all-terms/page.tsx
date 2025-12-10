@@ -2,7 +2,7 @@
 "use client";
 import { Button } from '@/components/ui/button';
 import { ArrowLeft } from 'lucide-react';
-import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import AllTermsClient from './all-terms-client';
 import { Badge } from '@/components/ui/badge';
 import { terms } from '@/lib/data';
@@ -10,6 +10,7 @@ import { useEffect, useState } from 'react';
 
 export default function AllTermsPage() {
   const [isClient, setIsClient] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
     setIsClient(true);
@@ -22,11 +23,9 @@ export default function AllTermsPage() {
           <h1 className="text-2xl sm:text-3xl font-bold font-headline">All Terms</h1>
           {isClient && <Badge variant="secondary" className="text-base sm:text-lg">{terms.length}</Badge>}
         </div>
-        <Button asChild variant="secondary" size="sm" className="shadow-md">
-          <Link href="/">
-            <ArrowLeft className="mr-2 h-4 w-4" />
-            Back
-          </Link>
+        <Button variant="secondary" size="sm" className="shadow-md" onClick={() => router.back()}>
+          <ArrowLeft className="mr-2 h-4 w-4" />
+          Back
         </Button>
       </div>
 

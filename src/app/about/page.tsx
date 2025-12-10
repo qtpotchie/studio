@@ -1,18 +1,20 @@
-import { ArrowLeft, Info } from 'lucide-react';
-import Link from 'next/link';
+"use client";
+
+import { ArrowLeft } from 'lucide-react';
+import { useRouter } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import Logo from '@/components/logo';
 
 export default function AboutPage() {
+  const router = useRouter();
+
   return (
     <div className="container mx-auto max-w-4xl py-8 px-4">
       <div className="mb-6">
-        <Button asChild variant="secondary" className="shadow-md">
-          <Link href="/">
-            <ArrowLeft className="mr-2 h-4 w-4" />
-            Back
-          </Link>
+        <Button variant="secondary" className="shadow-md" onClick={() => router.back()}>
+          <ArrowLeft className="mr-2 h-4 w-4" />
+          Back
         </Button>
       </div>
       <Card>
