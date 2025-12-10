@@ -7,14 +7,25 @@ import { Button } from '@/components/ui/button';
 import { BookOpen, Search } from 'lucide-react';
 import WordOfTheDay from '@/components/word-of-the-day';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import ExplorerDialog from '@/components/explorer-dialog';
 import { useSearch } from '@/hooks/use-search';
 import GlobalControls from '@/components/global-controls';
+import { cn } from '@/lib/utils';
 
 export default function Home() {
   const [isExplorerOpen, setIsExplorerOpen] = useState(false);
   const { setOpen } = useSearch();
+  const [isWiggling, setIsWiggling] = useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsWiggling(true);
+      setTimeout(() => setIsWiggling(false), 1500); // Duration of 3 wiggles (0.5s * 3)
+    }, 10000); // Repeat every 10 seconds
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <>
@@ -22,7 +33,7 @@ export default function Home() {
         <header className="text-center flex flex-col items-center space-y-4 pt-12 flex-shrink-0">
           <GlobalControls />
           <div className="border rounded-lg p-6 flex flex-col items-center gap-4 bg-card/50">
-            <Logo className="w-16 h-16 md:w-24 md:h-24" />
+            <Logo className={cn("w-16 h-16 md:w-24 md:h-24", isWiggling && "animate-wiggle-timed")} />
             <h1 className="text-3xl md:text-5xl font-bold font-headline tracking-tighter">
               TechTermz
             </h1>
