@@ -826,8 +826,8 @@ export const terms: Term[] = [
     slug: 'pcb-trace',
     definition: 'A PCB (Printed Circuit Board) trace is a conductive path on a circuit board that connects different electronic components.',
     example: 'A scratch on the motherboard can sever a critical PCB trace and cause the entire board to fail.'
-    },
-    {
+  },
+  {
     id: 'bios-flashback',
     term: 'BIOS flashback',
     slug: 'bios-flashback',
@@ -2150,7 +2150,6 @@ export const terms: Term[] = [
     definition: 'A tagged frame is an Ethernet frame that has a VLAN tag added to it, which identifies the VLAN to which it belongs. These are used on trunk links.',
     example: 'The switch receives a tagged frame and knows to only forward it to other ports belonging to the same VLAN.'
   },
-
   {
     id: 'untagged-frame',
     term: 'Untagged frame',
@@ -3152,7 +3151,6 @@ export const terms: Term[] = [
     definition: 'Caller context is information about the source of a request or function call, which is passed along to downstream services for tracing and debugging purposes.',
     example: 'Our microservices propagate the caller context so we can trace a single user request across the entire system.'
   },
-
   {
     id: 'cloudwatch-alarms',
     term: 'CloudWatch alarms',
@@ -4442,6 +4440,13 @@ export const terms: Term[] = [
     example: 'Our SIEM system aggregates logs from all our servers and alerts us to suspicious activity.'
   },
   {
+    id: 'soc-2',
+    term: 'SOC',
+    slug: 'soc-2',
+    definition: 'A Security Operations Center (SOC) is a centralized unit that deals with security issues on an organizational and technical level.',
+    example: 'The SOC team is responsible for monitoring and responding to security incidents.'
+  },
+  {
     id: 'sop',
     term: 'SOP',
     slug: 'sop',
@@ -4951,6 +4956,13 @@ export const terms: Term[] = [
     slug: 'binwalk',
     definition: 'Binwalk is a tool for analyzing, reverse engineering, and extracting firmware images.',
     example: 'I used Binwalk to extract the filesystem from the router\'s firmware dump.'
+  },
+  {
+    id: 'sandbox',
+    term: 'Sandbox',
+    slug: 'sandbox',
+    definition: 'An isolated test environment for running programs or opening files without affecting the application or system on which they run.',
+    example: 'The security software runs suspicious files in a sandbox to see how they behave.'
   },
   {
     id: 'stub',
@@ -5604,11 +5616,25 @@ export const terms: Term[] = [
     example: 'The Istio service mesh uses Envoy as its sidecar proxy.'
   },
   {
+    id: 'reverse-proxy',
+    term: 'Reverse proxy',
+    slug: 'reverse-proxy',
+    definition: 'A reverse proxy is a server that sits in front of one or more web servers, forwarding client requests to the appropriate web server.',
+    example: 'We use a reverse proxy to provide load balancing and SSL termination for our web servers.'
+  },
+  {
     id: 'forward-proxy',
     term: 'Forward proxy',
     slug: 'forward-proxy',
     definition: 'A forward proxy is a server that sits between a client and the internet, forwarding requests on behalf of the client.',
     example: 'Our corporate network uses a forward proxy to filter and monitor all outbound internet traffic.'
+  },
+  {
+    id: 'api-gateway-2',
+    term: 'API Gateway',
+    slug: 'api-gateway-2',
+    definition: 'An API Gateway is a server that acts as a single entry point for a group of microservices, handling requests by routing them to the appropriate service.',
+    example: 'Instead of having clients call a dozen different microservices, they all go through the API Gateway, which simplifies authentication and logging.'
   },
   {
     id: 'queue',
@@ -6129,6 +6155,13 @@ export const terms: Term[] = [
     example: 'Our corporate SSO solution uses SAML to authenticate users to our various cloud applications.'
   },
   {
+    id: 'kerberos',
+    term: 'Kerberos',
+    slug: 'kerberos',
+    definition: 'Kerberos is a computer network authentication protocol that works on the basis of tickets to allow nodes communicating over a non-secure network to prove their identity to one another in a secure manner.',
+    example: 'Active Directory uses Kerberos for authentication.'
+  },
+  {
     id: 'token',
     term: 'Token',
     slug: 'token',
@@ -6155,6 +6188,13 @@ export const terms: Term[] = [
     slug: 'csp',
     definition: 'A Content Security Policy (CSP) is a computer security standard introduced to prevent cross-site scripting (XSS), clickjacking and other code injection attacks resulting from execution of malicious content in the trusted web page context.',
     example: 'I configured a CSP header on my website to only allow scripts from my own domain to be executed.'
+  },
+  {
+    id: 'sop-2',
+    term: 'SOP',
+    slug: 'sop-2',
+    definition: 'The same-origin policy (SOP) is an important concept in the web application security model. Under the policy, a web browser permits scripts contained in a first web page to access data in a second web page, but only if both web pages have the same origin.',
+    example: 'CORS is a mechanism to relax the same-origin policy.'
   },
   {
     id: 'xss',
@@ -7338,5 +7378,12 @@ export const terms: Term[] = [
     slug: 'hook',
     definition: 'A hook is a mechanism by which a program can intercept events or messages and perform some action.',
     example: 'I used a Git hook to run my unit tests before every commit.'
+  },
+  {
+    id: 'mobo',
+    term: 'Mobo',
+    slug: 'mobo',
+    definition: 'Short for motherboard, the main printed circuit board in a computer.',
+    example: 'I need to upgrade my mobo to support the new CPU.'
   }
 ];
