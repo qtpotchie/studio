@@ -89,21 +89,28 @@ export default {
             height: '0',
           },
         },
-        'rotate-once': {
+        'rotate-timed': {
           '0%': { transform: 'rotate(0deg)' },
+          '20%': { transform: 'rotate(360deg)' },
           '100%': { transform: 'rotate(360deg)' },
         },
         'book-open': {
           '0%': { transform: 'rotateY(0deg) scale(1)' },
           '50%': { transform: 'rotateY(25deg) scale(1.05)' },
           '100%': { transform: 'rotateY(0deg) scale(1)' },
-        }
+        },
+        'search-pulse': {
+          '0%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.2)' },
+          '100%': { transform: 'scale(1)' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
-        'rotate-timed': 'rotate-once 1.5s ease-in-out',
+        'rotate-timed': 'rotate-timed 5s ease-in-out infinite',
         'book-open': 'book-open 0.6s ease-in-out',
+        'search-pulse': 'search-pulse 0.6s ease-in-out',
       },
     },
   },
