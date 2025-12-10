@@ -13,6 +13,7 @@ import { ScrollArea } from "./ui/scroll-area";
 import Link from "next/link";
 import { useDebounce } from "@/hooks/use-debounce";
 import { useVoiceSearch } from "@/context/voice-search-context";
+import { useRouter } from "next/navigation";
 
 export default function SearchDialog({ terms }: { terms: Term[] }) {
   const { isOpen, setOpen } = useSearch();
@@ -21,6 +22,7 @@ export default function SearchDialog({ terms }: { terms: Term[] }) {
   const { addSearchQuery } = useSearchHistory();
   const { setOnResult } = useVoiceSearch();
   const inputRef = useRef<HTMLInputElement>(null);
+  const router = useRouter();
 
   useEffect(() => {
     // Define what happens when a voice search result is ready
@@ -59,6 +61,20 @@ export default function SearchDialog({ terms }: { terms: Term[] }) {
     setOpen(false);
   }
 
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter') {
+      const trimmedQuery = searchQuery.trim().toLowerCase();
+      if (trimmedQuery) {
+        const exactMatch = terms.find(term => term.term.toLowerCase() === trimmedQuery);
+        if (exactMatch) {
+          addSearchQuery(exactMatch.term);
+          router.push(`/term/${exactMatch.slug}`);
+          setOpen(false);
+        }
+      }
+    }
+  };
+
   return (
     <Dialog open={isOpen} onOpenChange={setOpen}>
       <DialogContent className="p-0 gap-0 w-screen h-screen max-w-full flex flex-col rounded-none" hideCloseButton>
@@ -83,6 +99,7 @@ export default function SearchDialog({ terms }: { terms: Term[] }) {
               className="pl-10 pr-10 text-lg h-12"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
+              onKeyDown={handleKeyDown}
             />
             {searchQuery && (
               <Button
