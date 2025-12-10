@@ -8,10 +8,12 @@ import BookmarkToggle from '@/components/bookmark-toggle';
 import { Separator } from '@/components/ui/separator';
 import { ArrowLeft } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import React from 'react';
 
 export default function TermPage({ params }: { params: { slug: string } }) {
   const router = useRouter();
-  const term = terms.find((t) => t.slug === params.slug);
+  const resolvedParams = React.use(params);
+  const term = terms.find((t) => t.slug === resolvedParams.slug);
 
   if (!term) {
     notFound();
