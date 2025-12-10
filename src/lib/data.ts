@@ -3964,7 +3964,3478 @@ export const terms: Term[] = [
     slug: 'ss',
     definition: 'Short for Screenshot, an image taken of what is on a computer screen.',
     example: 'Can you send me a ss of the error message?'
+  },
+  {
+    id: 'dimms',
+    term: 'DIMMs',
+    slug: 'dimms',
+    definition: 'Dual In-Line Memory Modules are the physical sticks of RAM that plug into a motherboard.',
+    example: 'To upgrade his memory, he bought two new 16GB DIMMs.'
+  },
+  {
+    id: 'vrms',
+    term: 'VRMs',
+    slug: 'vrms',
+    definition: 'Voltage Regulator Modules are components on a motherboard that provide a clean and stable power supply to the CPU.',
+    example: 'A motherboard with high-quality VRMs is essential for stable overclocking.'
+  },
+  {
+    id: 'qvl',
+    term: 'QVL',
+    slug: 'qvl',
+    definition: 'The Qualified Vendor List is a list published by a motherboard manufacturer that details which RAM kits have been tested and are guaranteed to work.',
+    example: 'He checked the QVL to make sure the RAM he wanted was compatible with his motherboard.'
+  },
+  {
+    id: 'post',
+    term: 'POST',
+    slug: 'post',
+    definition: 'The Power-On Self-Test is the initial set of diagnostic tests performed by the BIOS when a computer is turned on.',
+    example: 'The computer failed to POST, so he checked the debug LEDs to see what was wrong.'
+  },
+  {
+    id: 'cmos-reset',
+    term: 'CMOS reset',
+    slug: 'cmos-reset',
+    definition: 'The act of clearing the CMOS memory on a motherboard to reset the BIOS settings to their factory defaults.',
+    example: 'After a failed overclock, he had to perform a CMOS reset by shorting two pins on the motherboard.'
+  },
+  {
+    id: 'debug-leds',
+    term: 'Debug LEDs',
+    slug: 'debug-leds',
+    definition: 'A set of small lights on a motherboard that indicate the status of the CPU, RAM, GPU, and boot devices during the POST sequence.',
+    example: 'The debug LEDs stopped at "DRAM," indicating a problem with the memory sticks.'
+  },
+  {
+    id: 'soc',
+    term: 'SoC',
+    slug: 'soc',
+    definition: 'A System on a Chip integrates all or most components of a computer or other electronic system into a single chip. Common in smartphones.',
+    example: 'The new smartphone features a powerful SoC that combines the CPU, GPU, and AI accelerator.'
+  },
+  {
+    id: 'ihs',
+    term: 'IHS',
+    slug: 'ihs',
+    definition: 'The Integrated Heat Spreader is the metal "lid" on top of a CPU that protects the delicate die underneath and helps transfer heat to the cooler.',
+    example: 'For extreme overclocking, some enthusiasts delid their CPU to replace the thermal material under the IHS.'
+  },
+  {
+    id: 'lga-socket',
+    term: 'LGA socket',
+    slug: 'lga-socket',
+    definition: 'A Land Grid Array socket is a type of CPU socket where the pins are on the motherboard, and the CPU has flat contacts.',
+    example: 'Intel CPUs typically use an LGA socket, so you have to be careful not to bend the pins on the motherboard.'
+  },
+  {
+    id: 'pga-socket',
+    term: 'PGA socket',
+    slug: 'pga-socket',
+    definition: 'A Pin Grid Array socket is a type of CPU socket where the pins are on the CPU itself, which then fits into holes on the motherboard socket.',
+    example: 'AMD\'s AM4 platform uses a PGA socket, making the CPU itself more fragile.'
+  },
+  {
+    id: 'atx12v',
+    term: 'ATX12V',
+    slug: 'atx12v',
+    definition: 'The standard power supply connector that provides 12-volt power to the motherboard, typically a 4-pin or 8-pin connector.',
+    example: 'He made sure to plug in the 8-pin ATX12V connector to provide enough power for the high-end CPU.'
+  },
+  {
+    id: 'eps-connector',
+    term: 'EPS connector',
+    slug: 'eps-connector',
+    definition: 'An 8-pin power connector that provides additional 12V power to the CPU, required for high-performance or server motherboards.',
+    example: 'The enthusiast motherboard had two EPS connectors for extreme overclocking stability.'
+  },
+  {
+    id: 'fan-curve',
+    term: 'Fan curve',
+    slug: 'fan-curve',
+    definition: 'A user-defined setting that determines how fast a fan should spin based on the temperature of a component.',
+    example: 'He set a custom fan curve in the BIOS to keep his PC quiet at idle but ramp up the fans during gaming.'
+  },
+  {
+    id: 'pwm-fan',
+    term: 'PWM fan',
+    slug: 'pwm-fan',
+    definition: 'A fan with a 4-pin connector that allows for precise speed control via Pulse Width Modulation, enabling finer control over cooling and noise.',
+    example: 'All his case fans were PWM fans, allowing the motherboard to control their speed automatically.'
+  },
+  {
+    id: 'dc-fan',
+    term: 'DC fan',
+    slug: 'dc-fan',
+    definition: 'A fan with a 3-pin connector where speed is controlled by adjusting the voltage. Less precise than PWM control.',
+    example: 'The cheaper case came with DC fans, which ran at a constant speed unless he adjusted the voltage in the BIOS.'
+  },
+  {
+    id: 'shroud',
+    term: 'Shroud',
+    slug: 'shroud',
+    definition: 'The plastic or metal casing around a graphics card\'s heatsink and fans, designed to direct airflow.',
+    example: 'He painted the GPU shroud white to match the theme of his PC build.'
+  },
+  {
+    id: 'thermal-pad',
+    term: 'Thermal pad',
+    slug: 'thermal-pad',
+    definition: 'A soft, squishy material used to transfer heat from electronic components like VRAM or VRMs to a heatsink.',
+    example: 'He replaced the old, dried-out thermal pads on his graphics card to improve its cooling performance.'
+  },
+  {
+    id: 'microatx',
+    term: 'mATX',
+    slug: 'microatx',
+    definition: 'MicroATX is a smaller motherboard form factor than standard ATX, offering fewer expansion slots but fitting in smaller cases.',
+    example: 'He chose an mATX board for his compact desktop build.'
+  },
+  {
+    id: 'itx-board',
+    term: 'ITX board',
+    slug: 'itx-board',
+    definition: 'Mini-ITX is a very small motherboard form factor, typically with only one expansion slot, designed for extremely compact PCs.',
+    example: 'Building in an ITX case was challenging, but the tiny final result was worth it.'
+  },
+  {
+    id: 'flex-atx',
+    term: 'Flex ATX',
+    slug: 'flex-atx',
+    definition: 'A small motherboard form factor, even smaller than Mini-ITX, often used in industrial or embedded systems.',
+    example: 'The custom server appliance used a Flex ATX board to fit inside the 1U rackmount chassis.'
+  },
+  {
+    id: 'nvme-drive',
+    term: 'NVMe drive',
+    slug: 'nvme-drive',
+    definition: 'A storage drive that uses the Non-Volatile Memory Express interface, offering significantly faster speeds than traditional SATA SSDs.',
+    example: 'He installed his operating system on an NVMe drive for near-instant boot times.'
+  },
+  {
+    id: 'qlc-ssd',
+    term: 'QLC SSD',
+    slug: 'qlc-ssd',
+    definition: 'An SSD that uses Quad-Level Cell NAND flash memory, which offers high capacity at a lower cost but with lower endurance and performance than other types.',
+    example: 'The 4TB QLC SSD was great for storing his game library, but not ideal for his OS drive.'
+  },
+  {
+    id: 'tlc-ssd',
+    term: 'TLC SSD',
+    slug: 'tlc-ssd',
+    definition: 'An SSD that uses Triple-Level Cell NAND flash memory, offering a good balance of price, performance, and endurance.',
+    example: 'Most consumer SSDs today use TLC flash, which is a good all-around choice.'
+  },
+  {
+    id: 'dram-less-ssd',
+    term: 'DRAM-less SSD',
+    slug: 'dram-less-ssd',
+    definition: 'A cheaper type of SSD that lacks a dedicated DRAM cache, which can result in slower performance during sustained write operations.',
+    example: 'The budget-friendly DRAM-less SSD was fine for light use, but it slowed down when transferring large files.'
+  },
+  {
+    id: 'vram-chips',
+    term: 'VRAM chips',
+    slug: 'vram-chips',
+    definition: 'The physical memory chips on a graphics card that store texture and frame data.',
+    example: 'He put small heatsinks on the VRAM chips to keep them cool during overclocking.'
+  },
+  {
+    id: 'gddr6x',
+    term: 'GDDR6X',
+    slug: 'gddr6x',
+    definition: 'A very high-performance type of graphics memory (VRAM) known for its high bandwidth and also for running very hot.',
+    example: 'The new high-end graphics card uses GDDR6X memory, which requires robust cooling.'
+  },
+  {
+    id: 'hbm-memory',
+    term: 'HBM memory',
+    slug: 'hbm-memory',
+    definition: 'High Bandwidth Memory is a type of stacked DRAM that offers extremely wide communication lanes for very high bandwidth, often used in high-end server and professional GPUs.',
+    example: 'The data center GPU used HBM memory to process massive datasets quickly.'
+  },
+  {
+    id: 'chiplet-design',
+    term: 'Chiplet design',
+    slug: 'chiplet-design',
+    definition: 'A CPU design approach where a processor is made of multiple smaller dies (chiplets) connected together, rather than one single large die.',
+    example: 'AMD\'s Ryzen CPUs use a chiplet design, which improves manufacturing yields and allows for more core counts.'
+  },
+  {
+    id: 'power-phases',
+    term: 'Power phases',
+    slug: 'power-phases',
+    definition: 'Refers to the number of individual voltage regulator circuits (part of the VRM) on a motherboard. More phases generally lead to cleaner, more stable power delivery.',
+    example: 'The overclocking motherboard advertised a "16+2" power phase design for maximum CPU stability.'
+  },
+  {
+    id: 'pcb-trace',
+    term: 'PCB trace',
+    slug: 'pcb-trace',
+    definition: 'The conductive pathways, tracks, or signals etched from copper sheets laminated onto a non-conductive substrate in a Printed Circuit Board.',
+    example: 'He accidentally scratched a PCB trace on the motherboard, which broke the connection to the USB port.'
+  },
+  {
+    id: 'bios-flashback',
+    term: 'BIOS flashback',
+    slug: 'bios-flashback',
+    definition: 'A feature on some motherboards that allows you to update the BIOS even without a compatible CPU or RAM installed.',
+    example: 'He had to use BIOS flashback to update the motherboard so it would support the new CPU he bought.'
+  },
+  {
+    id: 'q-flash',
+    term: 'Q-Flash',
+    slug: 'q-flash',
+    definition: 'Gigabyte\'s branding for a feature that allows a user to update the BIOS from within the BIOS menu itself, typically from a USB drive.',
+    example: 'Updating the firmware was easy; he just entered the BIOS and used the Q-Flash utility.'
+  },
+  {
+    id: 'flash-rom',
+    term: 'Flash ROM',
+    slug: 'flash-rom',
+    definition: 'A type of non-volatile memory that can be electrically erased and reprogrammed, used to store firmware like the BIOS.',
+    example: 'The BIOS update process involves writing a new image to the motherboard\'s flash ROM chip.'
+  },
+  {
+    id: 'bclk',
+    term: 'BCLK',
+    slug: 'bclk',
+    definition: 'The Base Clock is the fundamental clock speed for a motherboard, from which other system clock speeds (like CPU and RAM) are derived.',
+    example: 'Advanced overclockers can increase the BCLK to raise the speed of the entire system, but it can cause instability.'
+  },
+  {
+    id: 'xmp-profile',
+    term: 'XMP profile',
+    slug: 'xmp-profile',
+    definition: 'Extreme Memory Profile is an Intel specification that allows you to easily set your RAM to its advertised high-performance speeds and timings with a single BIOS setting.',
+    example: 'He enabled the XMP profile in the BIOS to run his 3200MHz RAM at its full speed.'
+  },
+  {
+    id: 'expo-profile',
+    term: 'EXPO profile',
+    slug: 'expo-profile',
+    definition: 'AMD Extended Profiles for Overclocking is AMD\'s equivalent of XMP, allowing for one-click memory overclocking on AMD platforms.',
+    example: 'For his new AMD build, he bought RAM with an EXPO profile for easy setup.'
+  },
+  {
+    id: 'gpu-core-clock',
+    term: 'GPU core clock',
+    slug: 'gpu-core-clock',
+    definition: 'The speed at which the main processor on a graphics card operates, measured in MHz or GHz.',
+    example: 'He overclocked the GPU core clock by 150 MHz to get a few extra frames per second.'
+  },
+  {
+    id: 'memory-clock',
+    term: 'Memory clock',
+    slug: 'memory-clock',
+    definition: 'The speed at which the VRAM on a graphics card operates, which affects the card\'s memory bandwidth.',
+    example: 'Increasing the memory clock is another way to overclock a GPU for better performance.'
+  },
+  {
+    id: 'shader-units',
+    term: 'Shader units',
+    slug: 'shader-units',
+    definition: 'Processing units within a GPU that are responsible for the complex calculations needed to render graphics, particularly how surfaces are lit and colored.',
+    example: 'The more shader units a GPU has, the more powerful it generally is.'
+  },
+  {
+    id: 'tensor-cores',
+    term: 'Tensor cores',
+    slug: 'tensor-cores',
+    definition: 'Specialized processing cores in NVIDIA GPUs designed to accelerate the matrix multiplication operations used in AI and machine learning.',
+    example: 'NVIDIA\'s DLSS technology relies on the GPU\'s Tensor Cores to upscale images with AI.'
+  },
+  {
+    id: 'rt-cores',
+    term: 'RT cores',
+    slug: 'rt-cores',
+    definition: 'Specialized processing cores in NVIDIA GPUs designed to accelerate the calculations for real-time ray tracing, which simulates how light behaves.',
+    example: 'Enabling ray tracing in the game significantly drops performance unless you have a GPU with dedicated RT Cores.'
+  },
+  {
+    id: 'sm-units',
+    term: 'SM units',
+    slug: 'sm-units',
+    definition: 'Streaming Multiprocessors are the fundamental building blocks of an NVIDIA GPU, each containing a set of CUDA cores, Tensor cores, and RT cores.',
+    example: 'The high-end GPU had 84 SM units, each capable of handling a large number of parallel threads.'
+  },
+  {
+    id: 'tgp',
+    term: 'TGP',
+    slug: 'tgp',
+    definition: 'Total Graphics Power is the maximum amount of power a graphics card is designed to consume, including the GPU, VRAM, and other components.',
+    example: 'The new GPU has a TGP of 350 watts, so he needed to make sure his PSU could handle it.'
+  },
+  {
+    id: 'tdp-headroom',
+    term: 'TDP headroom',
+    slug: 'tdp-headroom',
+    definition: 'The difference between a component\'s actual power consumption and its maximum rated Thermal Design Power (TDP). More headroom allows for higher boost clocks.',
+    example: 'Because of the excellent cooling, the CPU had plenty of TDP headroom and could maintain its max boost clock for longer.'
+  },
+  {
+    id: 'die-shrink',
+    term: 'Die shrink',
+    slug: 'die-shrink',
+    definition: 'The process of scaling down the size of a semiconductor chip by moving to a smaller manufacturing process (e.g., from 7nm to 5nm).',
+    example: 'The die shrink allowed the company to fit more transistors on the chip, making it more powerful and efficient.'
+  },
+  {
+    id: 'fab-node',
+    term: 'Fab node',
+    slug: 'fab-node',
+    definition: 'Refers to a specific semiconductor manufacturing process generation, denoted by a size in nanometers (e.g., 5nm node).',
+    example: 'TSMC\'s 5nm fab node is used to produce chips for many of the latest smartphones and computers.'
+  },
+  {
+    id: 'capacitor-bank',
+    term: 'Capacitor bank',
+    slug: 'capacitor-bank',
+    definition: 'A group of capacitors on a motherboard or graphics card used to smooth out the power delivery and handle sudden changes in load.',
+    example: 'The back of the GPU PCB had a large capacitor bank to ensure stable power during transient loads.'
+  },
+  {
+    id: 'vrm-heatsinks',
+    term: 'VRM heatsinks',
+    slug: 'vrm-heatsinks',
+    definition: 'Heatsinks specifically designed to cool the Voltage Regulator Modules on a motherboard to prevent them from overheating and throttling.',
+    example: 'A good motherboard for overclocking will have large, effective VRM heatsinks.'
+  },
+  {
+    id: 'io-shield',
+    term: 'I/O shield',
+    slug: 'io-shield',
+    definition: 'The metal plate that fits into the back of a PC case to cover the openings around the motherboard\'s rear ports.',
+    example: 'He forgot to install the I/O shield before putting the motherboard in the case and had to take it all apart again.'
+  },
+  {
+    id: 'backplate',
+    term: 'Backplate',
+    slug: 'backplate',
+    definition: 'A metal plate attached to the back of a graphics card\'s PCB to provide structural rigidity and, in some cases, additional cooling.',
+    example: 'The GPU backplate not only looks good, but it also helps prevent the heavy card from sagging.'
+  },
+  {
+    id: 'hyperspeed-fan-mode',
+    term: 'Hyperspeed fan mode',
+    slug: 'hyperspeed-fan-mode',
+    definition: 'A slang or marketing term for a BIOS setting that runs all connected fans at their maximum possible speed.',
+    example: 'He enabled hyperspeed fan mode before running the benchmark; the PC sounded like a jet engine.'
+  },
+  {
+    id: 'thermal-runway',
+    term: 'Thermal runway',
+    slug: 'thermal-runway',
+    definition: 'A dangerous condition where a component gets hotter, which increases its electrical resistance, which in turn makes it even hotter, leading to a rapid and uncontrolled temperature rise.',
+    example: 'Poor cooling on the VRMs led to a thermal runaway situation that damaged the motherboard.'
+  },
+  {
+    id: 'vrm-throttling',
+    term: 'VRM throttling',
+    slug: 'vrm-throttling',
+    definition: 'A condition where the CPU\'s performance is reduced not because the CPU itself is too hot, but because the motherboard\'s VRMs are overheating.',
+    example: 'His CPU was throttling under load, and he realized it was VRM throttling because his cheap motherboard couldn\'t handle the power draw.'
+  },
+  {
+    id: 'coil-whine',
+    term: 'Coil whine',
+    slug: 'coil-whine',
+    definition: 'A high-pitched noise produced by an electronic component, typically an inductor or GPU, when it is under high load.',
+    example: 'His new graphics card was powerful, but the coil whine was so loud it was distracting.'
+  },
+  {
+    id: 'silicon-aging',
+    term: 'Silicon aging',
+    slug: 'silicon-aging',
+    definition: 'The process by which a semiconductor chip\'s performance degrades over time, especially when run at high voltages and temperatures.',
+    example: 'After years of heavy overclocking, silicon aging meant his CPU was no longer stable at its original overclocked speed.'
+  },
+  {
+    id: 'binning',
+    term: 'Binning',
+    slug: 'binning',
+    definition: 'The process of testing and sorting chips (like CPUs or GPUs) based on their quality and performance characteristics. The best chips are "binned" for high-end models.',
+    example: 'The "KS" version of the Intel CPU is a specially binned chip that is guaranteed to reach a higher clock speed.'
+  },
+  {
+    id: 'silicon-degradation',
+    term: 'Silicon degradation',
+    slug: 'silicon-degradation',
+    definition: 'The physical breakdown of the transistors and pathways in a silicon chip over time, accelerated by high voltage and heat.',
+    example: 'Pushing too much voltage through the CPU caused rapid silicon degradation, and it failed after only a year.'
+  },
+  {
+    id: 'chip-lottery',
+    term: 'Chip lottery',
+    slug: 'chip-lottery',
+    definition: 'A slang term referring to the luck involved in getting a CPU or GPU that overclocks well due to natural variations in manufacturing.',
+    example: 'You can buy two identical CPUs, but winning the chip lottery means you get one that can overclock much higher.'
+  },
+  {
+    id: 'memory-channels',
+    term: 'Memory channels',
+    slug: 'memory-channels',
+    definition: 'The communication paths between the CPU and the RAM. Most consumer platforms have dual-channel memory, meaning two independent paths.',
+    example: 'He installed two sticks of RAM to take advantage of the motherboard\'s dual memory channels for better performance.'
+  },
+  {
+    id: 'ecc-memory',
+    term: 'ECC memory',
+    slug: 'ecc-memory',
+    definition: 'Error-Correcting Code memory is a type of RAM that can detect and correct common kinds of internal data corruption. It is used in servers and workstations.',
+    example: 'For the mission-critical server, they used ECC memory to prevent data errors that could lead to crashes.'
+  },
+  {
+    id: 'registered-memory',
+    term: 'Registered memory',
+    slug: 'registered-memory',
+    definition: 'Also known as buffered memory, it has a register between the DRAM modules and the system\'s memory controller, reducing electrical load and allowing for more memory modules.',
+    example: 'Server motherboards often require registered memory to support their large RAM capacities.'
+  },
+  {
+    id: 'q-code',
+    term: 'Q-code',
+    slug: 'q-code',
+    definition: 'A two-digit display on some high-end motherboards that shows codes during the boot process to help diagnose problems.',
+    example: 'The motherboard was stuck on Q-code "55," which the manual said meant a memory initialization error.'
+  },
+  {
+    id: 'fan-hub',
+    term: 'Fan hub',
+    slug: 'fan-hub',
+    definition: 'A small device that allows you to connect and control multiple fans from a single motherboard fan header.',
+    example: 'Since his motherboard only had two fan headers, he used a fan hub to connect all six of his case fans.'
+  },
+  {
+    id: 'usb-header',
+    term: 'USB header',
+    slug: 'usb-header',
+    definition: 'A connector on a motherboard used to provide USB ports on the front or top of a PC case.',
+    example: 'He plugged the cable from the front panel into the USB header on the motherboard to make the front USB ports work.'
+  },
+  {
+    id: 'front-panel-header',
+    term: 'Front panel header',
+    slug: 'front-panel-header',
+    definition: 'A group of small pins on a motherboard used to connect the power button, reset button, and status LEDs from the PC case.',
+    example: 'Connecting the tiny wires to the front panel header is often the most tedious part of building a PC.'
+  },
+  {
+    id: 'sata-hot-swap',
+    term: 'SATA hot swap',
+    slug: 'sata-hot-swap',
+    definition: 'A feature that allows SATA drives to be removed and replaced while the computer is running.',
+    example: 'The server\'s drive bays supported SATA hot swap, so he could replace a failed drive without any downtime.'
+  },
+  {
+    id: 'raid-cache',
+    term: 'RAID cache',
+    slug: 'raid-cache',
+    definition: 'A dedicated memory cache on a hardware RAID controller used to speed up disk I/O operations.',
+    example: 'The RAID controller with a large, battery-backed cache significantly improved the storage array\'s write performance.'
+  },
+  {
+    id: 'preboot',
+    term: 'Preboot',
+    slug: 'preboot',
+    definition: 'The very first stage of the computer boot process, before the operating system begins to load.',
+    example: 'The preboot environment is where the BIOS or UEFI firmware initializes hardware.'
+  },
+  {
+    id: 'boot-table',
+    term: 'Boot table',
+    slug: 'boot-table',
+    definition: 'A table in the master boot record or GUID partition table that lists the available bootable partitions.',
+    example: 'The bootloader failed because the boot table was corrupted.'
+  },
+  {
+    id: 'silent-bios-mode',
+    term: 'Silent BIOS mode',
+    slug: 'silent-bios-mode',
+    definition: 'A BIOS/UEFI setting on some motherboards that prioritizes quiet operation by using a less aggressive fan curve.',
+    example: 'He switched to the silent BIOS mode for everyday use to keep his PC from making noise.'
+  },
+  {
+    id: 'vbios',
+    term: 'VBIOS',
+    slug: 'vbios',
+    definition: 'The Video BIOS is the firmware on a graphics card that controls its basic operations before the full graphics driver is loaded by the OS.',
+    example: 'He had to flash a new VBIOS onto his GPU to enable a new feature.'
+  },
+  {
+    id: 'gpu-sag',
+    term: 'GPU sag',
+    slug: 'gpu-sag',
+    definition: 'The bending or drooping of a long, heavy graphics card over time due to its own weight.',
+    example: 'To prevent GPU sag, he bought a small support bracket to prop up the end of his video card.'
+  },
+  {
+    id: 'gpu-retention-bracket',
+    term: 'GPU retention bracket',
+    slug: 'gpu-retention-bracket',
+    definition: 'A mechanism or bracket that helps to secure a heavy GPU in place and prevent it from sagging or breaking the PCIe slot.',
+    example: 'The high-end motherboard came with a reinforced GPU retention bracket.'
+  },
+  {
+    id: 'daisy-chain-fans',
+    term: 'Daisy chain fans',
+    slug: 'daisy-chain-fans',
+    definition: 'The practice of connecting multiple fans to each other in a series, allowing them to be controlled by a single motherboard header.',
+    example: 'The new RGB fans could be daisy-chained, which made cable management much cleaner.'
+  },
+  {
+    id: 'dual-bios',
+    term: 'Dual BIOS',
+    slug: 'dual-bios',
+    definition: 'A feature on some motherboards that includes two separate BIOS chips, providing a backup in case one becomes corrupted during a failed update.',
+    example: 'He wasn\'t afraid to try the beta firmware because his motherboard had a dual BIOS he could switch to if something went wrong.'
+  },
+  {
+    id: 'power-cycling',
+    term: 'Power cycling',
+    slug: 'power-cycling',
+    definition: 'The act of turning a piece of equipment off and then on again. A hard reset.',
+    example: 'The first step in troubleshooting is always power cycling the device.'
+  },
+  {
+    id: 'fan-rpm',
+    term: 'Fan RPM',
+    slug: 'fan-rpm',
+    definition: 'The speed of a fan, measured in Revolutions Per Minute.',
+    example: 'He set the fans to run at a constant 1200 RPM for a balance of cooling and noise.'
+  },
+  {
+    id: 'nvlink',
+    term: 'NVLink',
+    slug: 'nvlink',
+    definition: 'A high-speed interconnect developed by NVIDIA for connecting multiple GPUs together, allowing them to share memory and work on tasks jointly.',
+    example: 'He connected two RTX 3090s with an NVLink bridge for his machine learning workstation.'
+  },
+  {
+    id: 'gen4-lanes',
+    term: 'Gen4 lanes',
+    slug: 'gen4-lanes',
+    definition: 'Refers to PCI Express 4.0 lanes, which offer double the bandwidth of the previous PCIe 3.0 generation.',
+    example: 'The new motherboard supported 16 Gen4 lanes for the GPU and another 4 for the primary M.2 SSD.'
+  },
+  {
+    id: 'gen5-ssd',
+    term: 'Gen5 SSD',
+    slug: 'gen5-ssd',
+    definition: 'An SSD that uses the PCI Express 5.0 interface, offering theoretical speeds up to twice as fast as Gen4 SSDs.',
+    example: 'A Gen5 SSD can reach read speeds of over 12,000 MB/s, but requires a modern motherboard to support it.'
+  },
+  {
+    id: 'acpi-tables',
+    term: 'ACPI tables',
+    slug: 'acpi-tables',
+    definition: 'Data tables in the system firmware that describe hardware devices, their power states, and other configuration information to the operating system.',
+    example: 'To get macOS running on his PC, he had to create custom ACPI tables to make the hardware look like a real Mac.'
+  },
+  {
+    id: 'i2c-bus',
+    term: 'I2C bus',
+    slug: 'i2c-bus',
+    definition: 'A serial communication bus commonly used for attaching low-speed peripherals like sensors and RGB controllers to a motherboard or microcontroller.',
+    example: 'The RGB lighting software communicated with the fan controller over the system\'s I2C bus.'
+  },
+  {
+    id: 'spi-flash',
+    term: 'SPI flash',
+    slug: 'spi-flash',
+    definition: 'A type of flash memory chip that uses the Serial Peripheral Interface, commonly used to store a device\'s BIOS or firmware.',
+    example: 'He used a special clip and programmer to directly read the contents of the SPI flash chip.'
+  },
+  {
+    id: 'thunderbolt-controller',
+    term: 'Thunderbolt controller',
+    slug: 'thunderbolt-controller',
+    definition: 'The chip on a motherboard or add-in card that manages the high-speed Thunderbolt interface.',
+    example: 'The new motherboard included an Intel Thunderbolt controller, enabling 40Gbps data transfer and display output through a single USB-C port.'
+  },
+  {
+    id: 'pcie-bifurcation',
+    term: 'PCIe bifurcation',
+    slug: 'pcie-bifurcation',
+    definition: 'A feature that allows a single PCIe x16 slot to be split into multiple smaller slots (e.g., x8/x8 or x4/x4/x4/x4) with an appropriate adapter card.',
+    example: 'He used PCIe bifurcation to run four NVMe SSDs from a single PCIe slot.'
+  },
+  {
+    id: 'memory-training',
+    term: 'Memory training',
+    slug: 'memory-training',
+    definition: 'A process that occurs during boot where the motherboard\'s memory controller tests and calibrates the optimal settings for the installed RAM modules.',
+    example: 'The PC took a long time to boot the first time after installing new RAM because it was performing memory training.'
+  },
+  {
+    id: 'direct-die-cooling',
+    term: 'Direct Die cooling',
+    slug: 'direct-die-cooling',
+    definition: 'An extreme cooling method where the CPU cooler makes direct contact with the CPU\'s silicon die, after the Integrated Heat Spreader (IHS) has been removed.',
+    example: 'For the best possible temperatures, the overclocker used a direct die cooling water block on his delidded CPU.'
+  },
+  {
+    id: 'top-flow-cooler',
+    term: 'Top-flow cooler',
+    slug: 'top-flow-cooler',
+    definition: 'A type of CPU cooler where the fan blows air down towards the motherboard, which can help cool the surrounding VRMs and RAM.',
+    example: 'In his small form factor case, he used a top-flow cooler because a large tower cooler wouldn\'t fit.'
+  },
+  {
+    id: 'tower-cooler',
+    term: 'Tower cooler',
+    slug: 'tower-cooler',
+    definition: 'A large CPU cooler with a vertical heatsink tower and one or more fans that blow air horizontally, parallel to the motherboard.',
+    example: 'He installed a massive dual-tower cooler to tame his high-end, overclocked CPU.'
+  },
+  {
+    id: 'heatpipe-array',
+    term: 'Heatpipe array',
+    slug: 'heatpipe-array',
+    definition: 'A set of sealed copper tubes containing a fluid that transfers heat from the CPU base to the heatsink fins through evaporation and condensation.',
+    example: 'The cooler\'s effectiveness is largely determined by the number and arrangement of its heatpipe array.'
+  },
+  {
+    id: 'vertical-gpu-mount',
+    term: 'Vertical GPU mount',
+    slug: 'vertical-gpu-mount',
+    definition: 'A bracket that allows a graphics card to be mounted vertically in a PC case, showing off its fans and shroud.',
+    example: 'He bought a vertical GPU mount to better display his new, aesthetically pleasing graphics card.'
+  },
+  {
+    id: 'riser-cable',
+    term: 'Riser cable',
+    slug: 'riser-cable',
+    definition: 'A flexible extension cable for a PCIe slot, often used to mount a GPU in a non-standard position, such as vertically.',
+    example: 'He needed a high-quality PCIe 4.0 riser cable to vertically mount his GPU without losing performance.'
+  },
+  {
+    id: 'fan-splitter',
+    term: 'Fan splitter',
+    slug: 'fan-splitter',
+    definition: 'A simple cable that splits one fan header into two or more, allowing multiple fans to be connected to a single header.',
+    example: 'He used a fan splitter to connect both of his front intake fans to the same motherboard header.'
+  },
+  {
+    id: 'bios-checksum',
+    term: 'BIOS checksum',
+    slug: 'bios-checksum',
+    definition: 'A value calculated from the BIOS firmware that is used to verify its integrity. A mismatch indicates corruption.',
+    example: 'The PC wouldn\'t boot and displayed a "BIOS checksum error," indicating the firmware was corrupted.'
+  },
+  {
+    id: 'debug-code-00',
+    term: 'Debug code 00',
+    slug: 'debug-code-00',
+    definition: 'A Q-code displayed on some motherboards that typically indicates the CPU is not detected or has failed.',
+    example: 'After installing the new CPU, the motherboard showed debug code 00, meaning something was wrong with the installation.'
+  },
+  {
+    id: 'tach-signal',
+    term: 'Tach signal',
+    slug: 'tach-signal',
+    definition: 'The signal from a fan that reports its rotational speed (RPM) back to the motherboard.',
+    example: 'The motherboard wasn\'t reading the fan speed because the tach signal wire was broken.'
+  },
+  {
+    id: 'liquid-metal',
+    term: 'Liquid metal',
+    slug: 'liquid-metal',
+    definition: 'A high-performance thermal interface material made of a metallic alloy that is liquid at room temperature, offering superior thermal conductivity to traditional paste.',
+    example: 'He replaced the standard thermal paste with liquid metal to drop his CPU temperatures by another 10 degrees.'
+  },
+  {
+    id: 'delidding',
+    term: 'Delidding',
+    slug: 'delidding',
+    definition: 'The process of removing the Integrated Heat Spreader (IHS) from a CPU to replace the internal thermal material with a higher-performance one.',
+    example: 'Delidding his CPU was a risky process, but it resulted in a significant drop in temperatures.'
+  },
+  {
+    id: 'resizable-bar',
+    term: 'Resizable BAR',
+    slug: 'resizable-bar',
+    definition: 'A PCIe technology that allows the CPU to access the entire GPU VRAM at once, rather than in small chunks, which can improve performance in some games.',
+    example: 'He enabled Resizable BAR in his BIOS to get a small performance uplift in supported titles.'
+  },
+  {
+    id: 'soc-voltage',
+    term: 'SOC voltage',
+    slug: 'soc-voltage',
+    definition: 'The voltage supplied to the System on a Chip components of a CPU, such as the integrated memory controller and PCIe controller. Important for memory overclocking.',
+    example: 'To get his high-speed RAM stable, he had to slightly increase the SOC voltage.'
+  },
+  {
+    id: 'hot-reload',
+    term: 'Hot reload',
+    slug: 'hot-reload',
+    definition: 'A development feature that allows code changes to be injected into a running application without restarting it, preserving its current state.',
+    example: 'With hot reload, he could see his UI changes instantly without losing the data he had entered in the form.'
+  },
+  {
+    id: 'cold-start',
+    term: 'Cold start',
+    slug: 'cold-start',
+    definition: 'In serverless computing, a cold start is the delay that occurs when an inactive function is invoked for the first time and the cloud provider needs to provision resources for it.',
+    example: 'The first API request was slow due to a cold start, but subsequent requests were fast.'
+  },
+  {
+    id: 'tech-stack',
+    term: 'Tech stack',
+    slug: 'tech-stack',
+    definition: 'The combination of programming languages, frameworks, databases, and other technologies used to build an application.',
+    example: 'Their web application\'s tech stack consists of React for the frontend, Node.js for the backend, and a PostgreSQL database.'
+  },
+  {
+    id: 'runtime-engine',
+    term: 'Runtime engine',
+    slug: 'runtime-engine',
+    definition: 'The environment in which a program is executed. It provides core services like memory management and program execution.',
+    example: 'Node.js is a runtime engine that allows you to run JavaScript code on a server.'
+  },
+  {
+    id: 'interpreter',
+    term: 'Interpreter',
+    slug: 'interpreter',
+    definition: 'A program that directly executes instructions written in a programming language, without requiring them to have been compiled into machine code.',
+    example: 'Python is an interpreted language, meaning an interpreter reads and executes the code line by line.'
+  },
+  {
+    id: 'tokenizer',
+    term: 'Tokenizer',
+    slug: 'tokenizer',
+    definition: 'The first stage of a compiler or interpreter, which breaks a stream of source code text into a series of individual tokens (like keywords, identifiers, and operators).',
+    example: 'The tokenizer converted the string "let x = 10;" into a series of tokens: LET, IDENTIFIER(x), EQUALS, NUMBER(10), SEMICOLON.'
+  },
+  {
+    id: 'transpiler',
+    term: 'Transpiler',
+    slug: 'transpiler',
+    definition: 'A tool that reads source code written in one programming language and produces the equivalent code in another language. For example, converting TypeScript to JavaScript.',
+    example: 'Babel is a popular transpiler used to convert modern JavaScript into an older version that more browsers can understand.'
+  },
+  {
+    id: 'minification',
+    term: 'Minification',
+    slug: 'minification',
+    definition: 'The process of removing all unnecessary characters from source code (like whitespace, comments, and new lines) to reduce its file size.',
+    example: 'The build process includes a minification step to make the JavaScript files smaller and faster to download.'
+  },
+  {
+    id: 'bundler',
+    term: 'Bundler',
+    slug: 'bundler',
+    definition: 'A tool that takes multiple JavaScript modules and their dependencies and combines them into one or more optimized files for the browser.',
+    example: 'They used Webpack as their bundler to manage all the different JavaScript files and assets in their project.'
+  },
+  {
+    id: 'tree-shaking',
+    term: 'Tree-shaking',
+    slug: 'tree-shaking',
+    definition: 'A process in modern JavaScript bundlers that eliminates unused code from the final bundle, resulting in a smaller file size.',
+    example: 'Tree-shaking removed the unused functions from the library, reducing the app\'s initial load time.'
+  },
+  {
+    id: 'code-splitting',
+    term: 'Code splitting',
+    slug: 'code-splitting',
+    definition: 'The practice of splitting the code for a large web application into smaller bundles that can be loaded on demand.',
+    example: 'They used code splitting to load the code for the admin panel only when a user navigates to that page.'
+  },
+  {
+    id: 'shadow-dom',
+    term: 'Shadow DOM',
+    slug: 'shadow-dom',
+    definition: 'A web browser technology that allows for encapsulated DOM and CSS within a web component, preventing styles from leaking in or out.',
+    example: 'Web Components use the Shadow DOM to keep their structure and styles separate from the rest of the page.'
+  },
+  {
+    id: 'virtual-dom',
+    term: 'Virtual DOM',
+    slug: 'virtual-dom',
+    definition: 'A programming concept where a virtual representation of a UI is kept in memory and synced with the "real" DOM. Used by frameworks like React to optimize updates.',
+    example: 'React uses a Virtual DOM to figure out the most efficient way to update the actual DOM, improving performance.'
+  },
+  {
+    id: 'event-bubbling',
+    term: 'Event bubbling',
+    slug: 'event-bubbling',
+    definition: 'In the DOM, it is the process where an event triggered on a nested element will also trigger on all of its parent elements, from the inside out.',
+    example: 'He used event bubbling to attach a single click listener to the container instead of to each individual button inside it.'
+  },
+  {
+    id: 'event-capturing',
+    term: 'Event capturing',
+    slug: 'event-capturing',
+    definition: 'The opposite of event bubbling, where an event is first captured by the outermost element and then triggers on successively deeper nested elements.',
+    example: 'Event capturing is used less often than bubbling, but it can be useful for intercepting events at a higher level.'
+  },
+  {
+    id: 'memoization',
+    term: 'Memoization',
+    slug: 'memoization',
+    definition: 'An optimization technique used to speed up computer programs by storing the results of expensive function calls and returning the cached result when the same inputs occur again.',
+    example: 'He used memoization to cache the result of the complex calculation, so it wouldn\'t need to be recomputed on every render.'
+  },
+  {
+    id: 'dead-code',
+    term: 'Dead code',
+    slug: 'dead-code',
+    definition: 'Code in a program that is never executed. It is often removed by optimization processes like tree-shaking.',
+    example: 'The linter warned him about a function that was never called, which was considered dead code.'
+  },
+  {
+    id: 'async-pipeline',
+    term: 'Async pipeline',
+    slug: 'async-pipeline',
+    definition: 'A series of asynchronous operations that are executed in sequence, where the output of one operation becomes the input for the next.',
+    example: 'He created an async pipeline to first fetch user data, then their posts, and finally their comments.'
+  },
+  {
+    id: 'callback-hell',
+    term: 'Callback hell',
+    slug: 'callback-hell',
+    definition: 'A situation in asynchronous programming where multiple nested callbacks create a deeply indented, hard-to-read structure.',
+    example: 'The code descended into callback hell, with callbacks nested five levels deep. He refactored it to use Promises instead.'
+  },
+  {
+    id: 'promise-chain',
+    term: 'Promise chain',
+    slug: 'promise-chain',
+    definition: 'A sequence of asynchronous operations linked together using the `.then()` method of Promises, which avoids callback hell.',
+    example: 'The promise chain made the asynchronous code much cleaner and easier to follow.'
+  },
+  {
+    id: 'stale-state',
+    term: 'Stale state',
+    slug: 'stale-state',
+    definition: 'A common issue in UI programming where the data displayed to the user is out of sync with the actual current state of the application.',
+    example: 'The user saw a stale state of their shopping cart because the UI didn\'t update after they removed an item.'
+  },
+  {
+    id: 'merge-conflict',
+    term: 'Merge conflict',
+    slug: 'merge-conflict',
+    definition: 'An event that occurs in version control when two developers make conflicting changes to the same line in a file.',
+    example: 'He had to resolve a merge conflict before he could combine his feature branch with the main branch.'
+  },
+  {
+    id: 'semantic-tokens',
+    term: 'Semantic tokens',
+    slug: 'semantic-tokens',
+    definition: 'A feature in code editors that provides more detailed and accurate syntax highlighting based on the language server\'s understanding of the code.',
+    example: 'The new theme used semantic tokens to color variables differently based on whether they were local variables or class properties.'
+  },
+  {
+    id: 'patch-version',
+    term: 'Patch version',
+    slug: 'patch-version',
+    definition: 'In semantic versioning (MAJOR.MINOR.PATCH), the patch version is incremented for backward-compatible bug fixes.',
+    example: 'They released version 1.2.1, which was just a patch version to fix a small bug.'
+  },
+  {
+    id: 'rolling-release',
+    term: 'Rolling release',
+    slug: 'rolling-release',
+    definition: 'A software development model where updates are delivered continuously, rather than in large, discrete versions. Arch Linux is a classic example.',
+    example: 'He preferred a rolling release distribution so he would always have the latest software without having to do major system upgrades.'
+  },
+  {
+    id: 'compiler-flags',
+    term: 'Compiler flags',
+    slug: 'compiler-flags',
+    definition: 'Command-line options passed to a compiler to change its behavior, such as enabling optimizations or showing warnings.',
+    example: 'He used the `-O3` compiler flag to enable the highest level of optimization.'
+  },
+  {
+    id: 'hot-module-swap',
+    term: 'Hot module swap',
+    slug: 'hot-module-swap',
+    definition: 'Similar to hot reload, this feature allows modules to be replaced in a running application without a full reload.',
+    example: 'The development server was configured for hot module swapping, making the development feedback loop incredibly fast.'
+  },
+  {
+    id: 'build-artifacts',
+    term: 'Build artifacts',
+    slug: 'build-artifacts',
+    definition: 'The files produced by a software build process, such as compiled executables, libraries, and bundled assets.',
+    example: 'The CI/CD pipeline stored the build artifacts in a repository for later deployment.'
+  },
+  {
+    id: 'code-injection',
+    term: 'Code injection',
+    slug: 'code-injection',
+    definition: 'A security vulnerability where an attacker can introduce (or "inject") malicious code into a program, which is then executed.',
+    example: 'An SQL injection is a type of code injection where an attacker injects malicious SQL into a database query.'
+  },
+  {
+    id: 'template-literal',
+    term: 'Template literal',
+    slug: 'template-literal',
+    definition: 'A feature in modern JavaScript that allows for embedding expressions inside string literals, using backticks (`` ` ``).',
+    example: 'He used a template literal to easily construct the welcome message: `Hello, ${userName}!`.'
+  },
+  {
+    id: 'dsl-domain-specific-language',
+    term: 'DSL',
+    slug: 'dsl-domain-specific-language',
+    definition: 'A Domain-Specific Language is a computer language specialized to a particular application domain.',
+    example: 'SQL is a DSL for managing and querying databases.'
+  },
+  {
+    id: 'pointer-dereference',
+    term: 'Pointer dereference',
+    slug: 'pointer-dereference',
+    definition: 'In languages like C, it is the act of accessing the data that a pointer is pointing to.',
+    example: 'A null pointer dereference is a common cause of program crashes.'
+  },
+  {
+    id: 'memory-fragmentation',
+    term: 'Memory fragmentation',
+    slug: 'memory-fragmentation',
+    definition: 'A problem where the free memory in a system is divided into many small, non-contiguous blocks, which can make it impossible to allocate a large block of memory even if the total free memory is sufficient.',
+    example: 'The long-running server process suffered from memory fragmentation, eventually leading to allocation failures.'
+  },
+  {
+    id: 'monkey-patching',
+    term: 'Monkey patching',
+    slug: 'monkey-patching',
+    definition: 'The practice of extending or modifying the runtime code of dynamic languages without altering the original source code.',
+    example: 'He used monkey patching to add a new method to a built-in class for a quick fix, though it\'s generally not a recommended practice.'
+  },
+  {
+    id: 'duck-typing',
+    term: 'Duck typing',
+    slug: 'duck-typing',
+    definition: 'A concept in dynamic typing where an object\'s suitability for a certain purpose is determined by the presence of certain methods and properties, rather than its explicit type.',
+    example: '"If it walks like a duck and it quacks like a duck, then it must be a duck." That\'s the principle of duck typing.'
+  },
+  {
+    id: 'static-typing',
+    term: 'Static typing',
+    slug: 'static-typing',
+    definition: 'A type system where variable types are checked at compile-time. Languages like Java and C++ are statically typed.',
+    example: 'Static typing helps catch many common errors before the program is even run.'
+  },
+  {
+    id: 'dynamic-typing',
+    term: 'Dynamic typing',
+    slug: 'dynamic-typing',
+    definition: 'A type system where variable types are checked at run-time. Languages like Python and JavaScript are dynamically typed.',
+    example: 'Dynamic typing offers more flexibility, but you lose the safety of compile-time checks.'
+  },
+  {
+    id: 'pure-function',
+    term: 'Pure function',
+    slug: 'pure-function',
+    definition: 'A function whose return value is only determined by its input values, without observable side effects.',
+    example: 'In functional programming, it\'s best to use pure functions whenever possible to make code more predictable.'
+  },
+  {
+    id: 'side-effects',
+    term: 'Side effects',
+    slug: 'side-effects',
+    definition: 'A function has side effects if it modifies some state outside its local environment, such as changing a global variable or writing to a file.',
+    example: 'A function that logs a message to the console has a side effect.'
+  },
+  {
+    id: 'immutable-state',
+    term: 'Immutable state',
+    slug: 'immutable-state',
+    definition: 'A practice where application state is never modified directly. Instead, a new state object is created whenever a change is needed.',
+    example: 'Frameworks like React encourage using immutable state to make state changes more explicit and easier to track.'
+  },
+  {
+    id: 'oop-design',
+    term: 'OOP design',
+    slug: 'oop-design',
+    definition: 'Object-Oriented Programming design is a programming paradigm based on the concept of "objects", which can contain data and code.',
+    example: 'He used an OOP design, creating classes for `User`, `Product`, and `Order`.'
+  },
+  {
+    id: 'fsm-finite-state-machine',
+    term: 'FSM',
+    slug: 'fsm-finite-state-machine',
+    definition: 'A Finite State Machine is a mathematical model of computation that can be in exactly one of a finite number of states at any given time.',
+    example: 'A traffic light is a simple example of a finite state machine, with states for red, yellow, and green.'
+  },
+  {
+    id: 'ast-abstract-syntax-tree',
+    term: 'AST',
+    slug: 'ast-abstract-syntax-tree',
+    definition: 'An Abstract Syntax Tree is a tree representation of the abstract syntactic structure of source code written in a programming language.',
+    example: 'Linters and transpilers work by first parsing the code into an AST and then analyzing or transforming it.'
+  },
+  {
+    id: 'cli-flags',
+    term: 'CLI flags',
+    slug: 'cli-flags',
+    definition: 'Options passed to a command-line program to modify its behavior, typically prefixed with a hyphen (-) or double hyphen (--).',
+    example: 'He used the `--verbose` CLI flag to get more detailed output from the script.'
+  },
+  {
+    id: 'graceful-shutdown',
+    term: 'Graceful shutdown',
+    slug: 'graceful-shutdown',
+    definition: 'The process of shutting down a program or service in an orderly way, allowing it to finish current tasks and save its state before exiting.',
+    example: 'The server was configured for a graceful shutdown, ensuring no data was lost when it was restarted.'
+  },
+  {
+    id: 'staging-area',
+    term: 'Staging area',
+    slug: 'staging-area',
+    definition: 'In Git, the staging area (or index) is an intermediate area where you can prepare commits. You add changes to the staging area before committing them.',
+    example: 'He added the two files he wanted to the staging area, then created a commit.'
+  },
+  {
+    id: 'git-hooks',
+    term: 'Git hooks',
+    slug: 'git-hooks',
+    definition: 'Scripts that run automatically every time a particular event occurs in a Git repository, such as before a commit or after a push.',
+    example: 'They used a pre-commit Git hook to run the linter and prevent committing code with style errors.'
+  },
+  {
+    id: 'soft-delete',
+    term: 'Soft delete',
+    slug: 'soft-delete',
+    definition: 'A method where a record is not actually deleted from a database, but instead marked as deleted with a flag (e.g., an `is_deleted` column).',
+    example: 'The application uses soft delete so that users can restore their deleted posts.'
+  },
+  {
+    id: 'hard-delete',
+    term: 'Hard delete',
+    slug: 'hard-delete',
+    definition: 'The process of permanently removing a record from a database.',
+    example: 'Due to privacy regulations, user data must be hard deleted upon account closure.'
+  },
+  {
+    id: 'error-bubbling',
+    term: 'Error bubbling',
+    slug: 'error-bubbling',
+    definition: 'The process where an unhandled error in a nested component or function propagates up to its parent components or callers until it is caught.',
+    example: 'The error bubbled all the way up to the root of the application, causing it to crash.'
+  },
+  {
+    id: 'lsp-language-server-protocol',
+    term: 'LSP',
+    slug: 'lsp-language-server-protocol',
+    definition: 'A protocol that provides code editors with language-specific features like autocomplete, go to definition, and diagnostics.',
+    example: 'His code editor used the LSP to communicate with the TypeScript language server for rich intellisense.'
+  },
+  {
+    id: 'compiler-pipeline',
+    term: 'Compiler pipeline',
+    slug: 'compiler-pipeline',
+    definition: 'The sequence of stages a compiler goes through to transform source code into executable code, including tokenizing, parsing, optimization, and code generation.',
+    example: 'Understanding the compiler pipeline can help you write more performant code.'
+  },
+  {
+    id: 'modularization',
+    term: 'Modularization',
+    slug: 'modularization',
+    definition: 'The process of breaking down a large software system into smaller, independent, and interchangeable modules.',
+    example: 'The modularization of the codebase made it much easier for different teams to work on it simultaneously.'
+  },
+  {
+    id: 'weakmap',
+    term: 'WeakMap',
+    slug: 'weakmap',
+    definition: 'A collection of key/value pairs in JavaScript where the keys are objects and are held "weakly," meaning they do not prevent garbage collection if they are the only reference.',
+    example: 'He used a WeakMap to associate metadata with an object without causing a memory leak.'
+  },
+  {
+    id: 'hash-table',
+    term: 'Hash table',
+    slug: 'hash-table',
+    definition: 'A data structure that implements an associative array abstract data type, a structure that can map keys to values.',
+    example: 'Hash tables offer fast lookups, insertions, and deletions on average.'
+  },
+  {
+    id: 'trie-structure',
+    term: 'Trie structure',
+    slug: 'trie-structure',
+    definition: 'A tree-like data structure used for storing a dynamic set of strings, often used for implementing autocomplete features.',
+    example: 'The search engine used a trie to quickly find all words starting with the user\'s query.'
+  },
+  {
+    id: 'linked-list',
+    term: 'Linked list',
+    slug: 'linked-list',
+    definition: 'A linear data structure where elements are not stored at contiguous memory locations, but are linked using pointers.',
+    example: 'A linked list is efficient for insertions and deletions, but slow for random access.'
+  },
+  {
+    id: 'circular-buffer',
+    term: 'Circular buffer',
+    slug: 'circular-buffer',
+    definition: 'A fixed-size data structure that works as if it were connected end-to-end, often used for streaming data.',
+    example: 'The audio player used a circular buffer to store the incoming audio stream.'
+  },
+  {
+    id: 'priority-queue',
+    term: 'Priority queue',
+    slug: 'priority-queue',
+    definition: 'An abstract data type where each element has a "priority" associated with it. Elements with higher priority are served before elements with lower priority.',
+    example: 'The task scheduler used a priority queue to ensure that urgent tasks were executed first.'
+  },
+  {
+    id: 'mutex-lock',
+    term: 'Mutex lock',
+    slug: 'mutex-lock',
+    definition: 'A synchronization primitive that prevents multiple threads from concurrently accessing a shared resource.',
+    example: 'He used a mutex lock to protect the shared variable from being corrupted by simultaneous writes from different threads.'
+  },
+  {
+    id: 'semaphore',
+    term: 'Semaphore',
+    slug: 'semaphore',
+    definition: 'A variable or abstract data type used to control access to a common resource by multiple processes in a concurrent system.',
+    example: 'A semaphore was used to limit the number of threads that could access the database connection pool at the same time.'
+  },
+  {
+    id: 'dead-mutex',
+    term: 'Dead mutex',
+    slug: 'dead-mutex',
+    definition: 'A situation where a thread holding a mutex terminates without releasing it, potentially causing other threads to block indefinitely.',
+    example: 'The application froze because a worker thread crashed and created a dead mutex.'
+  },
+  {
+    id: 'critical-section',
+    term: 'Critical section',
+    slug: 'critical-section',
+    definition: 'A part of a program that accesses a shared resource and must not be concurrently accessed by more than one thread of execution.',
+    example: 'He wrapped the code that modified the shared counter in a critical section using a mutex.'
+  },
+  {
+    id: 'event-emitter',
+    term: 'Event emitter',
+    slug: 'event-emitter',
+    definition: 'A design pattern where an object (the emitter) can emit named events that cause previously registered "listeners" to be called.',
+    example: 'Node.js\'s `EventEmitter` class is a core part of its asynchronous event-driven architecture.'
+  },
+  {
+    id: 'type-guard',
+    term: 'Type guard',
+    slug: 'type-guard',
+    definition: 'In TypeScript, a type guard is a runtime check that guarantees the type of a variable within a certain scope.',
+    example: 'He wrote a type guard to check if the object was a `User` before trying to access its `name` property.'
+  },
+  {
+    id: 'dev-dependency',
+    term: 'Dev dependency',
+    slug: 'dev-dependency',
+    definition: 'A software dependency that is only needed for local development and testing, not for the application to run in production.',
+    example: 'Testing libraries and linters are usually installed as dev dependencies.'
+  },
+  {
+    id: 'runtime-error',
+    term: 'Runtime error',
+    slug: 'runtime-error',
+    definition: 'An error that occurs during the execution of a program.',
+    example: 'A "division by zero" is a classic example of a runtime error.'
+  },
+  {
+    id: 'build-error',
+    term: 'Build error',
+    slug: 'build-error',
+    definition: 'An error that occurs during the compilation or bundling process, preventing the application from being built.',
+    example: 'A simple typo in the code caused a build error, and the CI pipeline failed.'
+  },
+  {
+    id: 'entry-point',
+    term: 'Entry point',
+    slug: 'entry-point',
+    definition: 'The location in a program where execution begins.',
+    example: 'In a C program, the `main` function is the entry point.'
+  },
+  {
+    id: 'polyfill',
+    term: 'Polyfill',
+    slug: 'polyfill',
+    definition: 'A piece of code (usually JavaScript on the Web) used to provide modern functionality on older browsers that do not natively support it.',
+    example: 'He included a polyfill for the `fetch` API so his code would work on older versions of Internet Explorer.'
+  },
+  {
+    id: 'watch-mode',
+    term: 'Watch mode',
+    slug: 'watch-mode',
+    definition: 'A feature in development tools that automatically re-runs a task (like compiling or running tests) whenever a file change is detected.',
+    example: 'He ran the test runner in watch mode so he could get instant feedback as he was coding.'
+  },
+  {
+    id: 'rollup-config',
+    term: 'Rollup config',
+    slug: 'rollup-config',
+    definition: 'The configuration file for Rollup, a popular JavaScript module bundler.',
+    example: 'He edited the rollup.config.js file to add a new plugin to the build process.'
+  },
+  {
+    id: 'ci-runner',
+    term: 'CI runner',
+    slug: 'ci-runner',
+    definition: 'A machine or container that executes the jobs (like building and testing) defined in a Continuous Integration pipeline.',
+    example: 'They set up their own CI runner on a powerful server to speed up their build times.'
+  },
+  {
+    id: 'dependency-injection',
+    term: 'Dependency injection',
+    slug: 'dependency-injection',
+    definition: 'A design pattern in which an object or function receives other objects or functions that it depends on, rather than creating them itself.',
+    example: 'Using dependency injection made their components more modular and easier to test in isolation.'
+  },
+  {
+    id: 'microservice-mesh',
+    term: 'Microservice mesh',
+    slug: 'microservice-mesh',
+    definition: 'A dedicated infrastructure layer for making service-to-service communication safe, fast, and reliable in a microservices architecture. Also known as a service mesh.',
+    example: 'They used Istio as a microservice mesh to handle traffic management, security, and observability between their services.'
+  },
+  {
+    id: 'lambda-function',
+    term: 'Lambda function',
+    slug: 'lambda-function',
+    definition: 'An anonymous function that can be defined without being bound to an identifier. Also refers to functions run on serverless platforms like AWS Lambda.',
+    example: 'He wrote a simple lambda function in Python to sort the list.'
+  },
+  {
+    id: 'version-bump',
+    term: 'Version bump',
+    slug: 'version-bump',
+    definition: 'The act of incrementing the version number of a software package before a new release.',
+    example: 'After fixing the bug, he did a patch version bump from 1.2.3 to 1.2.4.'
+  },
+  {
+    id: 'orphan-branch',
+    term: 'Orphan branch',
+    slug: 'orphan-branch',
+    definition: 'In Git, a branch that starts from a clean slate, with no commit history.',
+    example: 'He created an orphan branch to host the documentation, completely separate from the main codebase.'
+  },
+  {
+    id: 'detached-head',
+    term: 'Detached HEAD',
+    slug: 'detached-head',
+    definition: 'A state in Git where you are not on any local branch. This happens when you check out a specific commit, tag, or remote branch.',
+    example: 'He entered a detached HEAD state when he checked out an old commit to inspect the code.'
+  },
+  {
+    id: 'upstream-repo',
+    term: 'Upstream repo',
+    slug: 'upstream-repo',
+    definition: 'In a forked Git repository, the upstream repo is the original repository that was forked.',
+    example: 'He fetched the latest changes from the upstream repo to keep his fork up to date.'
+  },
+  {
+    id: 'fork-sync',
+    term: 'Fork sync',
+    slug: 'fork-sync',
+    definition: 'The process of updating a forked Git repository with the latest changes from the original (upstream) repository.',
+    example: 'He performed a fork sync every morning to make sure he was working with the latest code.'
+  },
+  {
+    id: 'git-diff',
+    term: 'Git diff',
+    slug: 'git-diff',
+    definition: 'A Git command that shows the differences between commits, branches, or files.',
+    example: 'He used `git diff` to review his changes before creating a commit.'
+  },
+  {
+    id: 'diff-merge',
+    term: 'Diff merge',
+    slug: 'diff-merge',
+    definition: 'The process of manually resolving differences between two versions of a file during a version control merge.',
+    example: 'The automatic merge failed, so he had to use a diff merge tool to resolve the conflicts.'
+  },
+  {
+    id: 'patch-file',
+    term: 'Patch file',
+    slug: 'patch-file',
+    definition: 'A file that contains a list of differences between two versions of a file or set of files, which can be used to apply those changes to another copy.',
+    example: 'He created a patch file of his changes to send to a collaborator who didn\'t have access to the repository.'
+  },
+  {
+    id: 'ssr-server-side-rendering',
+    term: 'SSR',
+    slug: 'ssr-server-side-rendering',
+    definition: 'Server-Side Rendering is the process of rendering a web page on the server and sending the fully rendered HTML to the browser.',
+    example: 'They used SSR for their public-facing pages to improve SEO and initial load performance.'
+  },
+  {
+    id: 'csr-client-side-rendering',
+    term: 'CSR',
+    slug: 'csr-client-side-rendering',
+    definition: 'Client-Side Rendering is the process where a web page is rendered in the browser using JavaScript, after the initial HTML is loaded.',
+    example: 'The dashboard was built as a single-page application using CSR, as SEO was not a concern.'
+  },
+  {
+    id: 'hydration',
+    term: 'Hydration',
+    slug: 'hydration',
+    definition: 'In web development, hydration is the process of making a server-rendered HTML page interactive by attaching JavaScript event listeners to the DOM.',
+    example: 'After the initial page load, the JavaScript framework began the hydration process to make the buttons clickable.'
+  },
+  {
+    id: 'hotfix-patch',
+    term: 'Hotfix patch',
+    slug: 'hotfix-patch',
+    definition: 'A small, urgent update released to fix a critical issue in a production environment.',
+    example: 'They had to roll out a hotfix patch to close a major security hole.'
+  },
+  {
+    id: 'api-schema',
+    term: 'API schema',
+    slug: 'api-schema',
+    definition: 'A formal definition of the structure of data that an API expects in requests and sends in responses.',
+    example: 'The API schema, defined using OpenAPI, served as the contract between the frontend and backend teams.'
+  },
+  {
+    id: 'rate-limiter',
+    term: 'Rate limiter',
+    slug: 'rate-limiter',
+    definition: 'A mechanism that controls the rate of traffic or requests sent or received by a network interface or application.',
+    example: 'The public API used a rate limiter to prevent abuse, allowing only 100 requests per minute per user.'
+  },
+  {
+    id: 'jwt-token',
+    term: 'JWT token',
+    slug: 'jwt-token',
+    definition: 'A JSON Web Token is a compact, URL-safe means of representing claims to be transferred between two parties, often used for authentication.',
+    example: 'After logging in, the user was issued a JWT token to use for authenticating subsequent requests.'
+  },
+  {
+    id: 'secret-rotation',
+    term: 'Secret rotation',
+    slug: 'secret-rotation',
+    definition: 'The security practice of regularly changing sensitive information like API keys, passwords, and encryption keys.',
+    example: 'The company policy required a mandatory secret rotation for all database credentials every 90 days.'
+  },
+  {
+    id: 'replay-attack',
+    term: 'Replay attack',
+    slug: 'replay-attack',
+    definition: 'A network attack where a valid data transmission is maliciously or fraudulently repeated or delayed.',
+    example: 'Using a nonce in the authentication request helps prevent replay attacks.'
+  },
+  {
+    id: 'middleware-chain',
+    term: 'Middleware chain',
+    slug: 'middleware-chain',
+    definition: 'In a web server, it is a series of middleware functions that are executed in order for an incoming request.',
+    example: 'The request passed through a middleware chain that first logged the request, then checked for authentication, and finally parsed the body.'
+  },
+  {
+    id: 'webhook',
+    term: 'Webhook',
+    slug: 'webhook',
+    definition: 'A method of augmenting or altering the behavior of a web page or web application with custom callbacks. An HTTP POST that is triggered by an event.',
+    example: 'He set up a webhook so that every time he pushed to GitHub, it would automatically trigger a new build on his server.'
+  },
+  {
+    id: 'endpoints',
+    term: 'Endpoints',
+    slug: 'endpoints',
+    definition: 'The URLs of an API where requests can be sent to perform specific actions.',
+    example: 'The API has endpoints for getting users, creating a user, and deleting a user.'
+  },
+  {
+    id: 'code-freeze',
+    term: 'Code freeze',
+    slug: 'code-freeze',
+    definition: 'A period during software development when no new code is added to a repository, usually in the final stages before a major release, to focus on testing and bug fixing.',
+    example: 'The project is now in a code freeze; only critical bug fixes are allowed.'
+  },
+  {
+    id: 'refactoring-sprint',
+    term: 'Refactoring sprint',
+    slug: 'refactoring-sprint',
+    definition: 'A development sprint dedicated entirely to improving the internal structure and quality of existing code without adding new features.',
+    example: 'The team dedicated the next two weeks to a refactoring sprint to pay down their accumulated tech debt.'
+  },
+  {
+    id: 'static-routing',
+    term: 'Static routing',
+    slug: 'static-routing',
+    definition: 'A form of routing where the path a packet takes is manually configured by a network administrator, rather than being determined by a dynamic routing protocol.',
+    example: 'He added a static route to the router to ensure all traffic to the branch office went over the dedicated VPN link.'
+  },
+  {
+    id: 'dynamic-routing',
+    term: 'Dynamic routing',
+    slug: 'dynamic-routing',
+    definition: 'A networking technique where routers automatically learn about network paths from other routers and update their routing tables accordingly.',
+    example: 'They used a dynamic routing protocol like OSPF so the network could automatically reroute traffic if a link went down.'
+  },
+  {
+    id: 'ospf-area',
+    term: 'OSPF area',
+    slug: 'ospf-area',
+    definition: 'In the OSPF routing protocol, an area is a logical grouping of routers that helps to simplify administration and optimize routing in large networks.',
+    example: 'The large corporate network was divided into multiple OSPF areas to reduce the size of the routing tables on each router.'
+  },
+  {
+    id: 'route-poisoning',
+    term: 'Route poisoning',
+    slug: 'route-poisoning',
+    definition: 'A method used by distance-vector routing protocols to prevent routing loops by advertising a failed route with an infinite metric.',
+    example: 'When the link failed, the router used route poisoning to immediately inform its neighbors that the path was no longer available.'
+  },
+  {
+    id: 'packet-burst',
+    term: 'Packet burst',
+    slug: 'packet-burst',
+    definition: 'A short, rapid transmission of a large number of data packets.',
+    example: 'The traffic shaping algorithm allows for a small packet burst before it starts to throttle the connection.'
+  },
+  {
+    id: 'packet-shaping',
+    term: 'Packet shaping',
+    slug: 'packet-shaping',
+    definition: 'The practice of controlling the rate of network traffic to optimize performance, improve latency, and/or increase usable bandwidth.',
+    example: 'The ISP uses packet shaping to de-prioritize peer-to-peer traffic during peak hours.'
+  },
+  {
+    id: 'traffic-policing',
+    term: 'Traffic policing',
+    slug: 'traffic-policing',
+    definition: 'A Quality of Service (QoS) mechanism that monitors network traffic for compliance with a defined traffic rate and drops or re-marks packets that exceed the limit.',
+    example: 'The firewall used traffic policing to drop all traffic from the source IP that was exceeding the rate limit.'
+  },
+  {
+    id: 'mtu-size',
+    term: 'MTU size',
+    slug: 'mtu-size',
+    definition: 'The Maximum Transmission Unit is the largest size of a data packet that can be transmitted over a specific network. For Ethernet, it is typically 1500 bytes.',
+    example: 'A mismatched MTU size between the client and server was causing fragmentation and performance issues.'
+  },
+  {
+    id: 'jumbo-frames',
+    term: 'Jumbo frames',
+    slug: 'jumbo-frames',
+    definition: 'Ethernet frames with a size larger than the standard 1500 bytes, used on some high-speed networks to increase efficiency.',
+    example: 'They enabled jumbo frames on their storage network to improve the throughput of large file transfers.'
+  },
+  {
+    id: 'lacp',
+    term: 'LACP',
+    slug: 'lacp',
+    definition: 'Link Aggregation Control Protocol is a standard that allows for the bundling of several physical network ports together to form a single logical channel, increasing bandwidth and providing redundancy.',
+    example: 'He configured LACP to bond two 1Gbps ports on the switch, creating a single 2Gbps link to the server.'
+  },
+  {
+    id: 'port-channel',
+    term: 'Port-channel',
+    slug: 'port-channel',
+    definition: 'A logical interface on a network switch that is created by bundling multiple physical ports together using a technology like LACP.',
+    example: 'The server was connected to the port-channel, which provided both increased bandwidth and link redundancy.'
+  },
+  {
+    id: 'etherchannel',
+    term: 'EtherChannel',
+    slug: 'etherchannel',
+    definition: 'A Cisco-proprietary technology for bundling multiple physical Ethernet links into a single logical link.',
+    example: 'Before LACP became the standard, many networks used Cisco\'s EtherChannel for link aggregation.'
+  },
+  {
+    id: 'routing-table',
+    term: 'Routing table',
+    slug: 'routing-table',
+    definition: 'A data table stored in a router or networked computer that lists the routes to particular network destinations.',
+    example: 'He examined the routing table to see which path the packets would take to reach the remote network.'
+  },
+  {
+    id: 'mac-aging',
+    term: 'MAC aging',
+    slug: 'mac-aging',
+    definition: 'The process by which a network switch automatically removes old entries from its MAC address table after a certain period of inactivity.',
+    example: 'The default MAC aging time on the switch was 300 seconds.'
+  },
+  {
+    id: 'bpdu',
+    term: 'BPDU',
+    slug: 'bpdu',
+    definition: 'Bridge Protocol Data Units are data messages exchanged between switches within a network that uses the Spanning Tree Protocol (STP) to prevent loops.',
+    example: 'The switches exchanged BPDUs to elect a root bridge and determine the best path through the network.'
+  },
+  {
+    id: 'root-bridge',
+    term: 'Root bridge',
+    slug: 'root-bridge',
+    definition: 'In a Spanning Tree Protocol network, the root bridge is the master switch that serves as the central point for calculating network paths.',
+    example: 'The administrator manually configured the core switch to be the root bridge to ensure a stable network topology.'
+  },
+  {
+    id: 'stp-recalculation',
+    term: 'STP recalculation',
+    slug: 'stp-recalculation',
+    definition: 'The process where the Spanning Tree Protocol recalculates the network topology after a change, such as a link failure or a new switch being added.',
+    example: 'Plugging the cable into the wrong port caused a brief network outage while STP recalculation occurred.'
+  },
+  {
+    id: 'vlan-trunk',
+    term: 'VLAN trunk',
+    slug: 'vlan-trunk',
+    definition: 'A network link that carries traffic for multiple VLANs. Frames sent over a trunk link are "tagged" with a VLAN ID.',
+    example: 'The link between the two switches was configured as a VLAN trunk to allow devices on all VLANs to communicate.'
+  },
+  {
+    id: 'tagged-frame',
+    term: 'Tagged frame',
+    slug: 'tagged-frame',
+    definition: 'An Ethernet frame that has a VLAN tag inserted into it, used for carrying traffic over a trunk link.',
+    example: 'The switch added a VLAN tag to the frame before sending it across the trunk port.'
+  },
+  {
+    id: 'untagged-frame',
+    term: 'Untagged frame',
+    slug: 'untagged-frame',
+    definition: 'A standard Ethernet frame without a VLAN tag, typically used on access ports that belong to a single VLAN.',
+    example: 'The switch removed the VLAN tag from the frame before sending it to the untagged access port where the user\'s PC was connected.'
+  },
+  {
+    id: 'broadcast-storm',
+    term: 'Broadcast storm',
+    slug: 'broadcast-storm',
+    definition: 'A condition where a network is flooded with an excessive number of broadcast packets, which can overwhelm network devices and cause the network to fail.',
+    example: 'A network loop caused a broadcast storm that brought the entire office network to a halt.'
+  },
+  {
+    id: 'dhcp-snooping',
+    term: 'DHCP snooping',
+    slug: 'dhcp-snooping',
+    definition: 'A security feature on network switches that blocks untrusted DHCP messages to prevent rogue DHCP servers from being added to the network.',
+    example: 'Enabling DHCP snooping on the switch prevented an employee from accidentally causing an outage by plugging in their home router.'
+  },
+  {
+    id: 'arp-poisoning',
+    term: 'ARP poisoning',
+    slug: 'arp-poisoning',
+    definition: 'A type of attack where an attacker sends forged ARP messages onto a local area network to associate their MAC address with the IP address of another host, allowing them to intercept traffic.',
+    example: 'The attacker used ARP poisoning to carry out a man-in-the-middle attack.'
+  },
+  {
+    id: 'evil-twin-ap',
+    term: 'Evil twin AP',
+    slug: 'evil-twin-ap',
+    definition: 'A rogue Wi-Fi access point that appears to be a legitimate one, but is set up to eavesdrop on wireless communications.',
+    example: 'The evil twin AP had the same name as the legitimate corporate Wi-Fi, tricking users into connecting to it.'
+  },
+  {
+    id: 'rogue-ap',
+    term: 'Rogue AP',
+    slug: 'rogue-ap',
+    definition: 'An unauthorized Wi-Fi access point connected to a wired network, which can create a security vulnerability.',
+    example: 'The network scanner detected a rogue AP that an employee had set up under their desk.'
+  },
+  {
+    id: 'wps-attack',
+    term: 'WPS attack',
+    slug: 'wps-attack',
+    definition: 'An attack that exploits a vulnerability in Wi-Fi Protected Setup (WPS) to brute-force the PIN and gain access to a Wi-Fi network.',
+    example: 'He disabled WPS on his router because it was vulnerable to a WPS attack.'
+  },
+  {
+    id: 'packet-replay',
+    term: 'Packet replay',
+    slug: 'packet-replay',
+    definition: 'A type of attack where a captured sequence of data packets is re-transmitted to the network.',
+    example: 'The old authentication protocol was vulnerable to a packet replay attack, allowing an attacker to gain access by re-sending a captured login sequence.'
+  },
+  {
+    id: 'beacon-frame',
+    term: 'Beacon frame',
+    slug: 'beacon-frame',
+    definition: 'In Wi-Fi, a beacon frame is a type of management frame sent periodically by an access point to announce its presence and provide network information.',
+    example: 'Your phone learns about nearby Wi-Fi networks by listening for their beacon frames.'
+  },
+  {
+    id: 'probe-request',
+    term: 'Probe request',
+    slug: 'probe-request',
+    definition: 'A type of Wi-Fi management frame sent by a client device to ask if a specific network is nearby.',
+    example: 'Your laptop sends out probe requests for all your saved Wi-Fi networks to see if any are in range.'
+  },
+  {
+    id: 'probe-response',
+    term: 'Probe response',
+    slug: 'probe-response',
+    definition: 'A frame sent by a Wi-Fi access point in response to a probe request, confirming its presence.',
+    example: 'The access point sent a probe response after receiving the client\'s request.'
+  },
+  {
+    id: 'deauth-packet',
+    term: 'Deauth packet',
+    slug: 'deauth-packet',
+    definition: 'A Wi-Fi management frame that is used to disconnect a client from an access point. It can be used maliciously in a denial-of-service attack.',
+    example: 'The attacker sent a flood of deauth packets to kick all the users off the Wi-Fi network.'
+  },
+  {
+    id: 'captive-portal',
+    term: 'Captive portal',
+    slug: 'captive-portal',
+    definition: 'A web page that is displayed to newly connected users of a Wi-Fi network before they are granted broader access to network resources. Often used for authentication or accepting terms of service.',
+    example: 'The hotel Wi-Fi made him go through a captive portal where he had to enter his room number to get internet access.'
+  },
+  {
+    id: 'honeypot',
+    term: 'Honeypot',
+    slug: 'honeypot',
+    definition: 'A security mechanism set to detect, deflect, or, in some manner, counteract attempts at unauthorized use of information systems. It is a decoy system designed to be attacked.',
+    example: 'The security team set up a honeypot that looked like a vulnerable web server to study the techniques used by attackers.'
+  },
+  {
+    id: 'port-knocking',
+    term: 'Port knocking',
+    slug: 'port-knocking',
+    definition: 'A security method where an external client must attempt to connect to a specific sequence of closed ports before a real port is opened, as a way to hide services.',
+    example: 'To open the SSH port, he had to perform a port knocking sequence by sending packets to ports 1000, 2000, and then 3000.'
+  },
+  {
+    id: 'reverse-proxying',
+    term: 'Reverse proxying',
+    slug: 'reverse-proxying',
+    definition: 'The process of using a reverse proxy server to forward requests from the internet to one or more servers on an internal network.',
+    example: 'They used Nginx for reverse proxying to provide a single public entry point for their multiple backend microservices.'
+  },
+  {
+    id: 'fail2ban',
+    term: 'Fail2ban',
+    slug: 'fail2ban',
+    definition: 'An intrusion prevention software framework that protects computer servers from brute-force attacks by monitoring log files and banning IPs that show malicious signs.',
+    example: 'He installed Fail2ban on his SSH server to automatically block IPs that had too many failed login attempts.'
+  },
+  {
+    id: 'hash-poisoning',
+    term: 'Hash poisoning',
+    slug: 'hash-poisoning',
+    definition: 'An attack that exploits hash table collisions to cause a denial-of-service by feeding a program carefully crafted data that results in many hash collisions.',
+    example: 'The web application was vulnerable to a hash poisoning attack, allowing an attacker to crash the server with a malicious POST request.'
+  },
+  {
+    id: 'key-escrow',
+    term: 'Key escrow',
+    slug: 'key-escrow',
+    definition: 'A system where the keys needed to decrypt encrypted data are held in escrow so that, under certain circumstances, an authorized third party may gain access.',
+    example: 'The corporation had a key escrow policy for all employee laptops to ensure the company could access the data if an employee left.'
+  },
+  {
+    id: 'ransom-note',
+    term: 'Ransom note',
+    slug: 'ransom-note',
+    definition: 'A file left on a computer system by ransomware that provides instructions on how to pay the ransom to get the encrypted files back.',
+    example: 'After the attack, every folder contained a `readme.txt` file which was the ransom note.'
+  },
+  {
+    id: 'botnet-c2',
+    term: 'Botnet C2',
+    slug: 'botnet-c2',
+    definition: 'The Command and Control server used by an attacker to manage and issue commands to a network of compromised computers (a botnet).',
+    example: 'The security team worked to identify and sinkhole the botnet C2 server to disrupt the attack.'
+  },
+  {
+    id: 'command-injection',
+    term: 'Command injection',
+    slug: 'command-injection',
+    definition: 'A type of security attack where an attacker is able to execute arbitrary commands on the host operating system through a vulnerable application.',
+    example: 'The web form was vulnerable to command injection because it didn\'t properly sanitize user input before passing it to a system shell.'
+  },
+  {
+    id: 'ssrf',
+    term: 'SSRF',
+    slug: 'ssrf',
+    definition: 'A Server-Side Request Forgery attack where an attacker can coerce a web application to make HTTP requests to an arbitrary domain of the attacker\'s choosing.',
+    example: 'The attacker used an SSRF vulnerability to make the server scan its own internal network.'
+  },
+  {
+    id: 'csrf-token',
+    term: 'CSRF token',
+    slug: 'csrf-token',
+    definition: 'A unique, secret, unpredictable value that is generated by the server-side application and transmitted to the client to prevent Cross-Site Request Forgery attacks.',
+    example: 'The form submission failed because the CSRF token was invalid.'
+  },
+  {
+    id: 'xss-payload',
+    term: 'XSS payload',
+    slug: 'xss-payload',
+    definition: 'The malicious script that an attacker injects into a web page as part of a Cross-Site Scripting (XSS) attack.',
+    example: 'His XSS payload was a simple script that stole the user\'s session cookie and sent it to his server.'
+  },
+  {
+    id: 'shellcode',
+    term: 'Shellcode',
+    slug: 'shellcode',
+    definition: 'A small piece of code used as the payload in the exploitation of a software vulnerability. It typically starts a command shell from which the attacker can control the compromised machine.',
+    example: 'After exploiting the buffer overflow, the attacker injected and executed their shellcode.'
+  },
+  {
+    id: 'root-privilege',
+    term: 'Root privilege',
+    slug: 'root-privilege',
+    definition: 'The highest level of administrative access on a Unix-like operating system, allowing a user to do anything.',
+    example: 'The goal of the exploit was to gain root privilege on the target server.'
+  },
+  {
+    id: 'kernel-exploit',
+    term: 'Kernel exploit',
+    slug: 'kernel-exploit',
+    definition: 'An exploit that targets a vulnerability in the operating system\'s kernel, often with the goal of privilege escalation.',
+    example: 'A successful kernel exploit can give an attacker complete control over a system.'
+  },
+  {
+    id: 'side-channel-exploit',
+    term: 'Side-channel exploit',
+    slug: 'side-channel-exploit',
+    definition: 'An exploit that gathers information from the physical implementation of a system, such as its power consumption, timing, or electromagnetic emissions, rather than targeting a software bug.',
+    example: 'The Spectre and Meltdown vulnerabilities were types of side-channel exploits that affected modern CPUs.'
+  },
+  {
+    id: 'privilege-escalation',
+    term: 'Privilege escalation',
+    slug: 'privilege-escalation',
+    definition: 'The act of exploiting a bug, design flaw, or configuration oversight in an operating system or software application to gain elevated access to resources that are normally protected from an application or user.',
+    example: 'The attacker first gained a foothold as a low-privileged user, then used another exploit for privilege escalation to become root.'
+  },
+  {
+    id: 'buffer-overrun',
+    term: 'Buffer overrun',
+    slug: 'buffer-overrun',
+    definition: 'Another term for a buffer overflow, where a program writes data beyond the boundary of its intended buffer.',
+    example: 'The legacy C code was full of potential buffer overrun vulnerabilities.'
+  },
+  {
+    id: 'heap-spray',
+    term: 'Heap spray',
+    slug: 'heap-spray',
+    definition: 'A technique used in exploits that involves filling a program\'s heap memory with a large amount of shellcode to increase the chances of a successful exploit.',
+    example: 'The exploit used a heap spray to make it more likely that the corrupted function pointer would land on the attacker\'s malicious code.'
+  },
+  {
+    id: 'shallow-scan',
+    term: 'Shallow scan',
+    slug: 'shallow-scan',
+    definition: 'A quick security scan that only checks for the most common and easily identifiable vulnerabilities.',
+    example: 'The nightly shallow scan found no issues, but the more thorough weekly deep scan found a hidden vulnerability.'
+  },
+  {
+    id: 'deep-scan',
+    term: 'Deep scan',
+    slug: 'deep-scan',
+    definition: 'A comprehensive and time-consuming security scan that thoroughly examines a system for a wide range of vulnerabilities.',
+    example: 'He ran a deep scan of the system after the suspected breach.'
+  },
+  {
+    id: 'packet-mirroring',
+    term: 'Packet mirroring',
+    slug: 'packet-mirroring',
+    definition: 'The practice of copying network packets seen on one switch port to another port, often for analysis by a network monitoring tool.',
+    example: 'The administrator configured packet mirroring to send a copy of all web traffic to the intrusion detection system.'
+  },
+  {
+    id: 'gre-tunnel',
+    term: 'GRE tunnel',
+    slug: 'gre-tunnel',
+    definition: 'A Generic Routing Encapsulation tunnel is a tunneling protocol that can encapsulate a wide variety of network layer protocols inside virtual point-to-point links over an IP network.',
+    example: 'They used a GRE tunnel to extend their internal network between two different office locations over the internet.'
+  },
+  {
+    id: 'ipsec-peer',
+    term: 'IPsec peer',
+    slug: 'ipsec-peer',
+    definition: 'The remote endpoint of an IPsec VPN tunnel.',
+    example: 'The firewall could not establish a connection because the IPsec peer was not responding.'
+  },
+  {
+    id: 'ssl-offloading',
+    term: 'SSL offloading',
+    slug: 'ssl-offloading',
+    definition: 'The process of removing the SSL-based encryption from incoming traffic to relieve a web server of the processing burden of encryption and decryption.',
+    example: 'They used a dedicated load balancer for SSL offloading, allowing the web servers to focus on serving content.'
+  },
+  {
+    id: 'dpi-firewall',
+    term: 'DPI firewall',
+    slug: 'dpi-firewall',
+    definition: 'A firewall that uses Deep Packet Inspection to examine the content of data packets, allowing for more granular control over network traffic.',
+    example: 'The DPI firewall was configured to block all BitTorrent traffic, regardless of which port it used.'
+  },
+  {
+    id: 'acl-rule',
+    term: 'ACL rule',
+    slug: 'acl-rule',
+    definition: 'A single entry in an Access Control List that specifies a permission or restriction for a particular user or system.',
+    example: 'He added an ACL rule to deny all traffic from the malicious IP address.'
+  },
+  {
+    id: 'nat-table',
+    term: 'NAT table',
+    slug: 'nat-table',
+    definition: 'A table in a router or firewall that keeps track of the mapping between internal private IP addresses and the single public IP address.',
+    example: 'The NAT table was full, preventing any new devices from accessing the internet.'
+  },
+  {
+    id: 'socket-binding',
+    term: 'Socket binding',
+    slug: 'socket-binding',
+    definition: 'The process of associating a network socket with a specific IP address and port number.',
+    example: 'The web server failed to start because another process was already using the same socket binding on port 80.'
+  },
+  {
+    id: 'port-exhaustion',
+    term: 'Port exhaustion',
+    slug: 'port-exhaustion',
+    definition: 'A condition where a system runs out of available source ports for making new outgoing network connections, often a symptom of a misbehaving application or a denial-of-service attack.',
+    example: 'The server crashed due to port exhaustion from too many outgoing connections in a TIME_WAIT state.'
+  },
+  {
+    id: 'dns-leak',
+    term: 'DNS leak',
+    slug: 'dns-leak',
+    definition: 'A security flaw where DNS requests are sent to the default ISP\'s DNS servers, even when using a VPN, potentially revealing a user\'s browsing habits.',
+    example: 'He checked for a DNS leak to ensure his VPN was correctly routing all of his traffic, including DNS queries.'
+  },
+  {
+    id: 'dns-filtering',
+    term: 'DNS filtering',
+    slug: 'dns-filtering',
+    definition: 'A security practice where a DNS server blocks requests to known malicious or undesirable domains.',
+    example: 'The company used DNS filtering to block access to social media and malware sites.'
+  },
+  {
+    id: 'dnssec',
+    term: 'DNSSEC',
+    slug: 'dnssec',
+    definition: 'Domain Name System Security Extensions is a suite of specifications for securing certain kinds of information provided by the DNS, such as by using digital signatures to ensure authenticity.',
+    example: 'Enabling DNSSEC on their domain helped protect their users from DNS spoofing attacks.'
+  },
+  {
+    id: 'mx-record',
+    term: 'MX record',
+    slug: 'mx-record',
+    definition: 'A Mail Exchanger record is a type of DNS record that specifies the mail server responsible for accepting email messages on behalf of a domain.',
+    example: 'He configured the MX record to point to Google\'s mail servers to use Google Workspace for his domain\'s email.'
+  },
+  {
+    id: 'ptr-record',
+    term: 'PTR record',
+    slug: 'ptr-record',
+    definition: 'A Pointer record is a type of DNS record used for reverse DNS lookups, mapping an IP address back to a domain name.',
+    example: 'Many mail servers will reject email from an IP address that doesn\'t have a valid PTR record.'
+  },
+  {
+    id: 'reverse-lookup',
+    term: 'Reverse lookup',
+    slug: 'reverse-lookup',
+    definition: 'A DNS query that determines the domain name associated with a given IP address, using a PTR record.',
+    example: 'He performed a reverse lookup on the IP address to see who it belonged to.'
+  },
+  {
+    id: 'dhcp-pool',
+    term: 'DHCP pool',
+    slug: 'dhcp-pool',
+    definition: 'A range of IP addresses that a DHCP server is configured to lease out to clients on a network.',
+    example: 'The DHCP pool was almost full, so they needed to expand the subnet to accommodate more devices.'
+  },
+  {
+    id: 'lease-time',
+    term: 'Lease time',
+    slug: 'lease-time',
+    definition: 'The amount of time that a DHCP server grants an IP address to a client.',
+    example: 'He set a short lease time on the public Wi-Fi network so that IP addresses would be recycled quickly.'
+  },
+  {
+    id: 'connection-timeout',
+    term: 'Connection timeout',
+    slug: 'connection-timeout',
+    definition: 'The amount of time a program will wait for a connection to be established before giving up.',
+    example: 'The application failed with a connection timeout error because the database server was down.'
+  },
+  {
+    id: 'syn-flood',
+    term: 'SYN flood',
+    slug: 'syn-flood',
+    definition: 'A type of denial-of-service attack where an attacker sends a succession of SYN requests to a target\'s system in an attempt to consume enough server resources to make the system unresponsive.',
+    example: 'The firewall detected and blocked a SYN flood attack that was attempting to overwhelm the web server.'
+  },
+  {
+    id: 'ack-flood',
+    term: 'ACK flood',
+    slug: 'ack-flood',
+    definition: 'A type of denial-of-service attack that aims to overwhelm a server with TCP ACK packets.',
+    example: 'The server\'s CPU usage spiked due to an ACK flood, as it struggled to process all the bogus packets.'
+  },
+  {
+    id: 'handshake-timeout',
+    term: 'Handshake timeout',
+    slug: 'handshake-timeout',
+    definition: 'An error that occurs when the SSL/TLS handshake between a client and server does not complete within a certain time frame.',
+    example: 'A poor network connection led to a handshake timeout when trying to access the secure website.'
+  },
+  {
+    id: 'half-open-connection',
+    term: 'Half-open connection',
+    slug: 'half-open-connection',
+    definition: 'A TCP connection where one end has closed or aborted the connection without the other end being aware of it. SYN floods create many half-open connections.',
+    example: 'The server\'s connection table was filled with half-open connections from the SYN flood attack.'
+  },
+  {
+    id: 'proxy-pass',
+    term: 'Proxy pass',
+    slug: 'proxy-pass',
+    definition: 'A directive in web servers like Nginx that forwards a request to a backend server.',
+    example: 'He configured a `proxy_pass` rule to send all requests for `/api` to the backend Node.js application.'
+  },
+  {
+    id: 'traffic-mirror',
+    term: 'Traffic mirror',
+    slug: 'traffic-mirror',
+    definition: 'Another term for packet mirroring, where network traffic is copied to another interface for monitoring or analysis.',
+    example: 'The intrusion detection system analyzed the traffic mirror to look for malicious activity.'
+  },
+  {
+    id: 'network-probe',
+    term: 'Network probe',
+    slug: 'network-probe',
+    definition: 'A device or software agent used to monitor and collect data about a network\'s performance and health.',
+    example: 'They deployed network probes throughout their WAN to monitor latency and packet loss.'
+  },
+  {
+    id: 'route-flapping',
+    term: 'Route flapping',
+    slug: 'route-flapping',
+    definition: 'A situation where a routing table entry for a particular network is repeatedly added and removed, often due to an unstable network link.',
+    example: 'The constant route flapping was causing intermittent connectivity issues to the remote site.'
+  },
+  {
+    id: 'icmp-block',
+    term: 'ICMP block',
+    slug: 'icmp-block',
+    definition: 'A firewall rule that blocks Internet Control Message Protocol traffic, which can prevent tools like `ping` and `traceroute` from working.',
+    example: 'The server appeared to be down, but it was just an ICMP block on the firewall preventing ping requests from getting through.'
+  },
+  {
+    id: 'udp-relay',
+    term: 'UDP relay',
+    slug: 'udp-relay',
+    definition: 'A server or service that forwards UDP packets between clients, often used to bypass NAT or firewalls.',
+    example: 'The online game used a UDP relay to help players behind restrictive firewalls connect to each other.'
+  },
+  {
+    id: 'wan-link',
+    term: 'WAN link',
+    slug: 'wan-link',
+    definition: 'The network connection that links a local area network (LAN) to a wide area network (WAN), such as the internet.',
+    example: 'The entire office lost internet access because the primary WAN link went down.'
+  },
+  {
+    id: 'leo-satellite-link',
+    term: 'LEO satellite link',
+    slug: 'leo-satellite-link',
+    definition: 'An internet connection provided by a constellation of satellites in Low Earth Orbit, such as Starlink.',
+    example: 'In the remote area with no cable or fiber, a LEO satellite link was the only option for high-speed internet.'
+  },
+  {
+    id: 'qoe-metrics',
+    term: 'QoE metrics',
+    slug: 'qoe-metrics',
+    definition: 'Quality of Experience metrics are used to measure the overall satisfaction of a user with a service, going beyond technical metrics like latency and bandwidth.',
+    example: 'The video streaming service tracked QoE metrics like buffering time and video start-up time.'
+  },
+  {
+    id: 'siem-logs',
+    term: 'SIEM logs',
+    slug: 'siem-logs',
+    definition: 'Logs collected and analyzed by a Security Information and Event Management system to detect security threats and suspicious activity.',
+    example: 'The security analyst reviewed the SIEM logs to investigate the source of the breach.'
+  },
+  {
+    id: 'ioc-indicator',
+    term: 'IOC indicator',
+    slug: 'ioc-indicator',
+    definition: 'An Indicator of Compromise is a piece of digital forensic evidence, such as a file hash or IP address, that indicates a security breach has occurred.',
+    example: 'The antivirus software flagged the file because its hash matched a known IOC for that piece of ransomware.'
+  },
+  {
+    id: 'mitre-att-ck',
+    term: 'MITRE ATT&CK',
+    slug: 'mitre-att-ck',
+    definition: 'A globally accessible knowledge base of adversary tactics and techniques based on real-world observations.',
+    example: 'The security team used the MITRE ATT&CK framework to model the threat actor\'s likely next moves.'
+  },
+  {
+    id: 'threat-model',
+    term: 'Threat model',
+    slug: 'threat-model',
+    definition: 'A process for identifying, communicating, and understanding threats and mitigations within the context of protecting something of value.',
+    example: 'They created a threat model for the new application to identify potential security risks before writing any code.'
+  },
+  {
+    id: 'cyber-kill-chain',
+    term: 'Cyber kill chain',
+    slug: 'cyber-kill-chain',
+    definition: 'A model developed by Lockheed Martin that identifies the steps an attacker must go through to carry out a successful cyberattack.',
+    example: 'By disrupting the cyber kill chain at the delivery stage, they were able to prevent the malware from being executed.'
+  },
+  {
+    id: 'air-gap',
+    term: 'Air gap',
+    slug: 'air-gap',
+    definition: 'A security measure where a computer or network is physically isolated from other networks, such as the internet.',
+    example: 'The classified network was protected by an air gap to prevent any possibility of remote access.'
+  },
+  {
+    id: 'sandbox-execution',
+    term: 'Sandbox execution',
+    slug: 'sandbox-execution',
+    definition: 'Running a program in a restricted, isolated environment (a sandbox) to prevent it from harming the host system.',
+    example: 'The antivirus software used sandbox execution to safely run and analyze the suspicious file.'
+  },
+  {
+    id: 'zero-trust-model',
+    term: 'Zero-trust model',
+    slug: 'zero-trust-model',
+    definition: 'A security model based on the principle of "never trust, always verify," where no user or device is trusted by default, regardless of its location.',
+    example: 'The company moved to a zero-trust model, requiring multi-factor authentication for access to all internal applications.'
+  },
+  {
+    id: 'shadow-credentials',
+    term: 'Shadow credentials',
+    slug: 'shadow-credentials',
+    definition: 'Unauthorized or undocumented user accounts and credentials that exist within an organization\'s IT environment, often creating a security risk.',
+    example: 'The audit found several shadow credentials left over from old service accounts.'
+  },
+  {
+    id: 'session-replay',
+    term: 'Session replay',
+    slug: 'session-replay',
+    definition: 'The ability to replay a user\'s journey on a web site or web application. It can be used for debugging or, maliciously, for stealing information.',
+    example: 'The support team used a session replay tool to see exactly what the user did before the error occurred.'
+  },
+  {
+    id: 'token-expiration',
+    term: 'Token expiration',
+    slug: 'token-expiration',
+    definition: 'The time at which an authentication token (like a JWT or OAuth token) becomes invalid.',
+    example: 'He set a short token expiration time for the session tokens to reduce the risk if one was stolen.'
+  },
+  {
+    id: 'broken-auth',
+    term: 'Broken auth',
+    slug: 'broken-auth',
+    definition: 'Short for Broken Authentication, a common category of web application vulnerabilities where authentication mechanisms are implemented incorrectly.',
+    example: 'The application was vulnerable to broken auth because it allowed users to set weak passwords.'
+  },
+  {
+    id: 'key-rotation',
+    term: 'Key rotation',
+    slug: 'key-rotation',
+    definition: 'The security practice of periodically changing cryptographic keys to limit the amount of data that could be compromised if a key is stolen.',
+    example: 'The KMS was configured to perform automatic key rotation every year.'
+  },
+  {
+    id: 'ssh-fingerprint',
+    term: 'SSH fingerprint',
+    slug: 'ssh-fingerprint',
+    definition: 'A short sequence of bytes used to authenticate or identify a longer public key. It is shown to the user on first connect to verify the server\'s identity.',
+    example: 'He verified the SSH fingerprint matched the one provided by the server admin before connecting for the first time.'
+  },
+  {
+    id: 'mfa-fatigue',
+    term: 'MFA fatigue',
+    slug: 'mfa-fatigue',
+    definition: 'An attack where an attacker who has a user\'s password spams them with multi-factor authentication push notifications until the user gets annoyed and approves one.',
+    example: 'The attacker gained access through an MFA fatigue attack after sending the user over 100 push notifications in a minute.'
+  },
+  {
+    id: 'blue-green-deploy',
+    term: 'Blue-green deploy',
+    slug: 'blue-green-deploy',
+    definition: 'A deployment strategy where two identical production environments ("blue" and "green") are maintained. The new version is deployed to the inactive environment, and traffic is switched over once it\'s verified.',
+    example: 'They used a blue-green deployment to ensure zero downtime and instant rollback capabilities.'
+  },
+  {
+    id: 'canary-deploy',
+    term: 'Canary deploy',
+    slug: 'canary-deploy',
+    definition: 'A deployment strategy where the new version is gradually rolled out to a small subset of users before being rolled out to the entire user base.',
+    example: 'They did a canary deploy, releasing the new feature to 5% of users first to monitor for any issues.'
+  },
+  {
+    id: 'rolling-deploy',
+    term: 'Rolling deploy',
+    slug: 'rolling-deploy',
+    definition: 'A deployment strategy where the new version is slowly deployed across the production servers one by one or in batches, without taking the entire service down.',
+    example: 'A rolling deploy updated the servers over a period of 10 minutes, ensuring the service remained available throughout.'
+  },
+  {
+    id: 'immutable-deploy',
+    term: 'Immutable deploy',
+    slug: 'immutable-deploy',
+    definition: 'A deployment strategy where servers are never modified in place. Instead, a new server with the updated application is created, and the old one is terminated.',
+    example: 'They adopted an immutable deployment model, which made their infrastructure more predictable and easier to manage.'
+  },
+  {
+    id: 'iac-infrastructure-as-code',
+    term: 'IaC',
+    slug: 'iac-infrastructure-as-code',
+    definition: 'Infrastructure as Code is the process of managing and provisioning computer data centers through machine-readable definition files, rather than physical hardware configuration or interactive configuration tools.',
+    example: 'They used Terraform for IaC, allowing them to version control their entire cloud setup in Git.'
+  },
+  {
+    id: 'terraform-plan',
+    term: 'Terraform plan',
+    slug: 'terraform-plan',
+    definition: 'A Terraform command that creates an execution plan, showing you what actions Terraform will take to modify your infrastructure without actually making any changes.',
+    example: 'He reviewed the `terraform plan` output carefully before applying the changes to production.'
+  },
+  {
+    id: 'helm-chart',
+    term: 'Helm chart',
+    slug: 'helm-chart',
+    definition: 'In Kubernetes, a Helm chart is a package containing all of the resource definitions necessary to run an application, tool, or service inside of a Kubernetes cluster.',
+    example: 'He installed the Prometheus monitoring stack on his cluster by using a community-provided Helm chart.'
+  },
+  {
+    id: 'kubelet',
+    term: 'Kubelet',
+    slug: 'kubelet',
+    definition: 'An agent that runs on each node in a Kubernetes cluster. It makes sure that containers are running in a Pod.',
+    example: 'The Kubelet on the worker node was responsible for pulling the container image and starting the pod.'
+  },
+  {
+    id: 'sidecar-container',
+    term: 'Sidecar container',
+    slug: 'sidecar-container',
+    definition: 'A container that runs alongside the main application container in a Kubernetes pod, often used for tasks like logging, monitoring, or proxying.',
+    example: 'They used a sidecar container to handle log forwarding, so the main application didn\'t have to worry about it.'
+  },
+  {
+    id: 'node-drain',
+    term: 'Node drain',
+    slug: 'node-drain',
+    definition: 'The process in Kubernetes of gracefully terminating all pods on a node to prepare it for maintenance or shutdown.',
+    example: 'He initiated a node drain before taking the server offline for a hardware upgrade.'
+  },
+  {
+    id: 'node-taint',
+    term: 'Node taint',
+    slug: 'node-taint',
+    definition: 'A Kubernetes feature that allows a node to repel a set of pods. A pod must have a "toleration" for the taint to be scheduled on that node.',
+    example: 'They applied a node taint to the GPU-enabled nodes to ensure only GPU-requesting pods would run there.'
+  },
+  {
+    id: 'pod-eviction',
+    term: 'Pod eviction',
+    slug: 'pod-eviction',
+    definition: 'The process in Kubernetes where the kubelet proactively terminates pods on a node to reclaim resources, for example when the node is running low on memory or disk space.',
+    example: 'The pod was terminated due to pod eviction when the node ran out of memory.'
+  },
+  {
+    id: 'pod-disruption-budget',
+    term: 'Pod disruption budget',
+    slug: 'pod-disruption-budget',
+    definition: 'A Kubernetes feature that limits the number of pods of a replicated application that are down simultaneously from voluntary disruptions.',
+    example: 'He configured a Pod Disruption Budget to ensure that at least two replicas of his application would always be running during a rolling update.'
+  },
+  {
+    id: 'statefulset',
+    term: 'StatefulSet',
+    slug: 'statefulset',
+    definition: 'A Kubernetes workload object used to manage stateful applications, providing stable network identifiers and persistent storage.',
+    example: 'They used a StatefulSet to deploy their database, which required a stable hostname and storage.'
+  },
+  {
+    id: 'daemonset',
+    term: 'DaemonSet',
+    slug: 'daemonset',
+    definition: 'A Kubernetes workload object that ensures a copy of a pod runs on all (or some) nodes in a cluster.',
+    example: 'They used a DaemonSet to deploy a log collection agent to every node in the cluster.'
+  },
+  {
+    id: 'cronjob',
+    term: 'CronJob',
+    slug: 'cronjob',
+    definition: 'A Kubernetes workload object that creates Jobs on a repeating schedule.',
+    example: 'He created a CronJob to run the database backup script every night at 2 AM.'
+  },
+  {
+    id: 'service-mesh',
+    term: 'Service mesh',
+    slug: 'service-mesh',
+    definition: 'A dedicated infrastructure layer for handling service-to-service communication in a microservices architecture. It provides features like traffic management, security, and observability.',
+    example: 'They implemented a service mesh using Linkerd to get automatic mTLS and detailed metrics for all their microservices.'
+  },
+  {
+    id: 'ingress-controller',
+    term: 'Ingress controller',
+    slug: 'ingress-controller',
+    definition: 'In Kubernetes, an ingress controller is a component that is responsible for fulfilling Ingress resources, typically by managing a load balancer to expose services to the outside world.',
+    example: 'They deployed the Nginx Ingress Controller to manage how external traffic reached the services inside their cluster.'
+  },
+  {
+    id: 'load-balancer-healthcheck',
+    term: 'Load balancer healthcheck',
+    slug: 'load-balancer-healthcheck',
+    definition: 'A periodic check performed by a load balancer to ensure that a backend server is healthy and able to receive traffic.',
+    example: 'The load balancer automatically removed the failed server from the pool after it failed three consecutive health checks.'
+  },
+  {
+    id: 'autoscaling-group',
+    term: 'Autoscaling group',
+    slug: 'autoscaling-group',
+    definition: 'In cloud computing, an autoscaling group is a collection of server instances that can automatically grow or shrink in size based on defined conditions.',
+    example: 'He configured the autoscaling group to add a new server whenever the average CPU utilization went above 70%.'
+  },
+  {
+    id: 'scaling-cooldown',
+    term: 'Scaling cooldown',
+    slug: 'scaling-cooldown',
+    definition: 'A period of time after a scaling activity during which an autoscaling group will not launch or terminate additional instances.',
+    example: 'He set a scaling cooldown of 5 minutes to prevent the autoscaling group from fluctuating too rapidly.'
+  },
+  {
+    id: 'warm-instance',
+    term: 'Warm instance',
+    slug: 'warm-instance',
+    definition: 'A serverless function or container instance that is kept running after handling a request, allowing it to respond to subsequent requests without a cold start delay.',
+    example: 'The second request was much faster because it hit a warm instance of the Lambda function.'
+  },
+  {
+    id: 'cold-instance',
+    term: 'Cold instance',
+    slug: 'cold-instance',
+    definition: 'A serverless function or container instance that has to be started from scratch to handle a request, incurring a "cold start" delay.',
+    example: 'The latency spike was caused by the request hitting a cold instance.'
+  },
+  {
+    id: 'spot-instance',
+    term: 'Spot instance',
+    slug: 'spot-instance',
+    definition: 'In cloud computing, a spot instance is a way to purchase spare computing capacity at a very low price, but with the caveat that the cloud provider can terminate the instance with little notice.',
+    example: 'They used spot instances for their non-critical batch processing jobs to save money.'
+  },
+  {
+    id: 'reserved-instance',
+    term: 'Reserved instance',
+    slug: 'reserved-instance',
+    definition: 'A cloud computing pricing model where you commit to a certain amount of usage for a one- or three-year term in exchange for a significant discount compared to on-demand pricing.',
+    example: 'They purchased reserved instances for their production database servers, which ran 24/7.'
+  },
+  {
+    id: 'nat-gateway',
+    term: 'NAT gateway',
+    slug: 'nat-gateway',
+    definition: 'A managed cloud service that allows instances in a private subnet to connect to the internet or other AWS services, but prevents the internet from initiating a connection with those instances.',
+    example: 'The EC2 instances in the private subnet could download updates by routing their traffic through the NAT gateway.'
+  },
+  {
+    id: 'vpc-endpoint',
+    term: 'VPC endpoint',
+    slug: 'vpc-endpoint',
+    definition: 'A cloud feature that enables you to privately connect your Virtual Private Cloud (VPC) to supported cloud services without requiring an internet gateway, NAT device, or VPN connection.',
+    example: 'They used a VPC endpoint to allow their application to access S3 without the traffic ever leaving the AWS network.'
+  },
+  {
+    id: 'bastion-host',
+    term: 'Bastion host',
+    slug: 'bastion-host',
+    definition: 'A special-purpose computer on a network specifically designed and configured to withstand attacks. It is a hardened server that provides access to a private network from an external network.',
+    example: 'To access the servers in the private subnet, administrators first had to SSH into the bastion host.'
+  },
+  {
+    id: 'route-table-entry',
+    term: 'Route table entry',
+    slug: 'route-table-entry',
+    definition: 'A single rule in a route table that specifies where network traffic from your subnet or gateway is directed.',
+    example: 'He added a route table entry to direct all internet-bound traffic to the internet gateway.'
+  },
+  {
+    id: 'cloud-formation-stack',
+    term: 'Cloud formation stack',
+    slug: 'cloud-formation-stack',
+    definition: 'In AWS, a CloudFormation stack is a collection of AWS resources that you can manage as a single unit, created from a CloudFormation template.',
+    example: 'He deployed the entire application environment by launching a single CloudFormation stack.'
+  },
+  {
+    id: 'docker-layers',
+    term: 'Docker layers',
+    slug: 'docker-layers',
+    definition: 'Docker images are built up from a series of read-only layers. Each layer represents an instruction in the image’s Dockerfile.',
+    example: 'Because Docker uses layers, pulling the updated image was fast as it only had to download the single layer that had changed.'
+  },
+  {
+    id: 'docker-prune',
+    term: 'Docker prune',
+    slug: 'docker-prune',
+    definition: 'A Docker command used to clean up unused resources, such as stopped containers, dangling images, and unused networks.',
+    example: 'He ran `docker system prune` to free up disk space by removing all unused Docker objects.'
+  },
+  {
+    id: 'registry-mirror',
+    term: 'Registry mirror',
+    slug: 'registry-mirror',
+    definition: 'A local cache of a container image registry (like Docker Hub) that can speed up image pulls and provide redundancy.',
+    example: 'The company set up a registry mirror to reduce their reliance on the public Docker Hub and speed up their CI/CD pipelines.'
+  },
+  {
+    id: 'storage-class',
+    term: 'Storage class',
+    slug: 'storage-class',
+    definition: 'In Kubernetes, a StorageClass provides a way for administrators to describe the "classes" of storage they offer. Different classes might map to different storage backends or performance levels.',
+    example: 'He created a "fast" storage class that provisioned high-performance SSD storage and a "slow" one for archival purposes.'
+  },
+  {
+    id: 'persistent-volume',
+    term: 'Persistent volume',
+    slug: 'persistent-volume',
+    definition: 'In Kubernetes, a Persistent Volume is a piece of storage in the cluster that has been provisioned by an administrator. It is a resource in the cluster just like a node is a cluster resource.',
+    example: 'The database pod was configured to use a Persistent Volume to ensure its data would survive pod restarts.'
+  },
+  {
+    id: 'ephemeral-storage',
+    term: 'Ephemeral storage',
+    slug: 'ephemeral-storage',
+    definition: 'Storage that is temporary and is destroyed when the associated resource (like a pod or VM) is terminated.',
+    example: 'The container used ephemeral storage for its temporary files, as they didn\'t need to be saved.'
+  },
+  {
+    id: 'node-affinity',
+    term: 'Node affinity',
+    slug: 'node-affinity',
+    definition: 'A Kubernetes feature that allows you to constrain which nodes your pod is eligible to be scheduled on, based on labels on the node.',
+    example: 'He used node affinity to ensure the machine learning pod was always scheduled on a node with a GPU.'
+  },
+  {
+    id: 'pod-affinity',
+    term: 'Pod affinity',
+    slug: 'pod-affinity',
+    definition: 'A Kubernetes feature that allows you to constrain which nodes your pod is eligible to be scheduled on, based on labels on pods that are already running on the node.',
+    example: 'He used pod affinity to try and co-locate the frontend and backend pods on the same node for lower latency.'
+  },
+  {
+    id: 'pod-anti-affinity',
+    term: 'Pod anti-affinity',
+    slug: 'pod-anti-affinity',
+    definition: 'A Kubernetes feature that allows you to prevent pods from being co-located on the same node, which can be used to improve high availability.',
+    example: 'He used pod anti-affinity to ensure that the replicas of his database were always running on different nodes.'
+  },
+  {
+    id: 'health-probe',
+    term: 'Health probe',
+    slug: 'health-probe',
+    definition: 'A mechanism used by orchestrators and load balancers to check if an application instance is healthy and able to serve traffic.',
+    example: 'The load balancer took the server out of rotation after it failed three consecutive health probes.'
+  },
+  {
+    id: 'liveness-probe',
+    term: 'Liveness probe',
+    slug: 'liveness-probe',
+    definition: 'In Kubernetes, a liveness probe is used by the kubelet to check if a container is still running. If the probe fails, the kubelet will kill and restart the container.',
+    example: 'He configured a liveness probe to restart the application if it ever entered a deadlocked state.'
+  },
+  {
+    id: 'readiness-probe',
+    term: 'Readiness probe',
+    slug: 'readiness-probe',
+    definition: 'In Kubernetes, a readiness probe is used by the kubelet to know when a container is ready to start accepting traffic.',
+    example: 'The readiness probe prevented traffic from being sent to the pod until the application had finished its startup sequence and connected to the database.'
+  },
+  {
+    id: 'job-runner',
+    term: 'Job runner',
+    slug: 'job-runner',
+    definition: 'A system or agent that is responsible for executing background jobs or tasks from a queue.',
+    example: 'They scaled up the number of job runners to process the backlog of video encoding tasks.'
+  },
+  {
+    id: 'build-runner',
+    term: 'Build runner',
+    slug: 'build-runner',
+    definition: 'A machine or agent that executes the build and test jobs in a CI/CD pipeline.',
+    example: 'The build failed because the build runner ran out of disk space.'
+  },
+  {
+    id: 'artifact-registry',
+    term: 'Artifact registry',
+    slug: 'artifact-registry',
+    definition: 'A repository for storing and managing software build artifacts, such as Docker images, language packages, and compiled binaries.',
+    example: 'They pushed the new Docker image to their artifact registry after the build passed.'
+  },
+  {
+    id: 's3-bucket',
+    term: 'S3 bucket',
+    slug: 's3-bucket',
+    definition: 'In Amazon Web Services, an S3 bucket is a container for objects stored in the Simple Storage Service (S3).',
+    example: 'The web application stored all user-uploaded files in an S3 bucket.'
+  },
+  {
+    id: 'object-versioning',
+    term: 'Object versioning',
+    slug: 'object-versioning',
+    definition: 'A feature in object storage systems that keeps multiple versions of an object, allowing you to recover from accidental deletions or overwrites.',
+    example: 'He enabled object versioning on the S3 bucket to protect against accidental data loss.'
+  },
+  {
+    id: 'lifecycle-rules',
+    term: 'Lifecycle rules',
+    slug: 'lifecycle-rules',
+    definition: 'In cloud storage, lifecycle rules are used to automatically transition objects to cheaper storage classes or delete them after a certain period of time.',
+    example: 'He set up lifecycle rules to move old logs to archival storage after 30 days and delete them after a year.'
+  },
+  {
+    id: 'iam-policy',
+    term: 'IAM policy',
+    slug: 'iam-policy',
+    definition: 'In cloud computing, an IAM policy is a document that defines permissions for an identity (like a user or service account) or a resource.',
+    example: 'He created an IAM policy that granted the application read-only access to the S3 bucket.'
+  },
+  {
+    id: 'privilege-boundary',
+    term: 'Privilege boundary',
+    slug: 'privilege-boundary',
+    definition: 'A logical boundary in a system that separates code and data of different security levels.',
+    example: 'The separation between kernel space and user space is a fundamental privilege boundary in an operating system.'
+  },
+  {
+    id: 'key-vault',
+    term: 'Key vault',
+    slug: 'key-vault',
+    definition: 'A secure cloud service for storing and managing secrets, encryption keys, and certificates.',
+    example: 'The application retrieved its database password from the key vault at startup, instead of having it in a configuration file.'
+  },
+  {
+    id: 'metrics-server',
+    term: 'Metrics server',
+    slug: 'metrics-server',
+    definition: 'A centralized server that collects and stores metrics (like CPU usage, memory, and request counts) from a distributed system.',
+    example: 'They used Prometheus as their metrics server and Grafana to visualize the data.'
+  },
+  {
+    id: 'log-forwarder',
+    term: 'Log forwarder',
+    slug: 'log-forwarder',
+    definition: 'An agent that collects log messages from a server or application and sends them to a central logging system.',
+    example: 'They installed a log forwarder on every server to ship logs to their central Elasticsearch cluster.'
+  },
+  {
+    id: 'service-discovery',
+    term: 'Service discovery',
+    slug: 'service-discovery',
+    definition: 'The process of automatically detecting devices and services on a network. In microservices, it\'s how services find each other\'s network locations.',
+    example: 'The application used a service discovery mechanism to find the current IP address of the database service.'
+  },
+  {
+    id: 'alert-fatigue',
+    term: 'Alert fatigue',
+    slug: 'alert-fatigue',
+    definition: 'The desensitization that occurs when a person is exposed to a large number of frequent, often meaningless, alerts, leading them to ignore important ones.',
+    example: 'The on-call engineer was suffering from alert fatigue after being paged for hundreds of non-critical issues.'
+  },
+  {
+    id: 'incident-bridge',
+    term: 'Incident bridge',
+    slug: 'incident-bridge',
+    definition: 'A dedicated communication channel (like a video call or chat room) that is opened to coordinate the response to a production incident.',
+    example: 'As soon as the outage was detected, an incident bridge was opened for all the engineers involved.'
+  },
+  {
+    id: 'runbook',
+    term: 'Runbook',
+    slug: 'runbook',
+    definition: 'A compilation of routine procedures and operations that a system administrator or operator carries out.',
+    example: 'The runbook had a step-by-step guide for what to do if the database server went down.'
+  },
+  {
+    id: 'post-mortem',
+    term: 'Post-mortem',
+    slug: 'post-mortem',
+    definition: 'A process, usually performed at the end of a project or after a production incident, to analyze what went right, what went wrong, and what to do differently next time.',
+    example: 'The team held a blameless post-mortem after the outage to understand the root cause.'
+  },
+  {
+    id: 'log-ingestion',
+    term: 'Log ingestion',
+    slug: 'log-ingestion',
+    definition: 'The process of collecting, parsing, and storing log data from various sources into a central logging system.',
+    example: 'The log ingestion pipeline was struggling to keep up with the volume of data during peak traffic.'
+  },
+  {
+    id: 'retention-policy',
+    term: 'Retention policy',
+    slug: 'retention-policy',
+    definition: 'A policy that defines how long data should be kept before it is archived or deleted.',
+    example: 'The data retention policy required all logs to be kept for at least one year.'
+  },
+  {
+    id: 'trace-spans',
+    term: 'Trace spans',
+    slug: 'trace-spans',
+    definition: 'In distributed tracing, a trace is a view into a request as it travels through a distributed system. A span represents a single unit of work within that trace.',
+    example: 'By looking at the trace spans, he could see that the latency was coming from a slow database query in the authentication service.'
+  },
+  {
+    id: 'caller-context',
+    term: 'Caller context',
+    slug: 'caller-context',
+    definition: 'Information about the entity (user, service, etc.) that initiated a request, which is passed along through a distributed system for tracing and auditing.',
+    example: 'The caller context was propagated through all the microservices, allowing them to trace the entire request from start to finish.'
+  },
+  {
+    id: 'cloudwatch-alarms',
+    term: 'CloudWatch alarms',
+    slug: 'cloudwatch-alarms',
+    definition: 'In AWS, a CloudWatch alarm is a feature that watches a single metric over a time period you specify, and performs one or more actions based on the value of the metric relative to a threshold.',
+    example: 'He set up a CloudWatch alarm to send him an email if the CPU utilization of the server went above 90% for 5 minutes.'
+  },
+  {
+    id: 'dead-letter-queue',
+    term: 'Dead-letter queue',
+    slug: 'dead-letter-queue',
+    definition: 'A queue where messages that cannot be successfully processed by a message broker are sent, so they can be analyzed later.',
+    example: 'The message was sent to the dead-letter queue after failing to be processed three times.'
+  },
+  {
+    id: 'message-broker',
+    term: 'Message broker',
+    slug: 'message-broker',
+    definition: 'An intermediary computer program module that translates a message from the formal messaging protocol of the sender to the formal messaging protocol of the receiver. RabbitMQ and Kafka are examples.',
+    example: 'The different microservices communicated asynchronously by sending messages through a message broker.'
+  },
+  {
+    id: 'event-bus',
+    term: 'Event bus',
+    slug: 'event-bus',
+    definition: 'A design pattern that allows different components to communicate with each other by broadcasting and listening for events, without directly depending on each other.',
+    example: 'When a new user signed up, the user service published a "user_created" event to the event bus, which the email service was listening for.'
+  },
+  {
+    id: 'snapshot-replication',
+    term: 'Snapshot replication',
+    slug: 'snapshot-replication',
+    definition: 'A data backup and disaster recovery method where periodic snapshots of a storage volume are copied to a secondary location.',
+    example: 'They used snapshot replication to create a nightly copy of their database volume in another region for disaster recovery.'
+  },
+  {
+    id: 'warm-backup',
+    term: 'Warm backup',
+    slug: 'warm-backup',
+    definition: 'A backup system where a secondary server is kept running and is periodically updated from the primary server. It can be brought online relatively quickly.',
+    example: 'The warm backup site was an hour behind the primary site, but it could be made active within minutes.'
+  },
+  {
+    id: 'cold-backup',
+    term: 'Cold backup',
+    slug: 'cold-backup',
+    definition: 'A backup system where the backup data is stored offline. Restoring from a cold backup is typically a slow process.',
+    example: 'They kept a weekly cold backup of their data on tapes stored in a vault.'
+  },
+  {
+    id: 'high-availability-set',
+    term: 'High availability set',
+    slug: 'high-availability-set',
+    definition: 'In cloud computing, it is a group of virtual machines that are deployed across different physical locations (fault domains) within a datacenter to ensure that an application remains available during hardware failures or maintenance.',
+    example: 'He deployed the web servers in a high availability set to ensure the website would stay online even if one server rack lost power.'
+  },
+  {
+    id: 'load-shedding',
+    term: 'Load shedding',
+    slug: 'load-shedding',
+    definition: 'A strategy for handling excessive load on a system by intentionally dropping or degrading service for some requests to ensure the system remains available for others.',
+    example: 'During the traffic spike, the system started load shedding by serving a static "over capacity" page to some users.'
+  },
+  {
+    id: 'fault-domain',
+    term: 'Fault domain',
+    slug: 'fault-domain',
+    definition: 'A set of hardware components (like a server rack or a power supply) that share a single point of failure.',
+    example: 'By distributing the VMs across multiple fault domains, they ensured a single hardware failure wouldn\'t take down their entire application.'
+  },
+  {
+    id: 'availability-zone',
+    term: 'Availability zone',
+    slug: 'availability-zone',
+    definition: 'In cloud computing, an Availability Zone is one or more discrete data centers with redundant power, networking, and connectivity in a region.',
+    example: 'For high availability, they deployed their application across multiple availability zones.'
+  },
+  {
+    id: 'throttling-limit',
+    term: 'Throttling limit',
+    slug: 'throttling-limit',
+    definition: 'The maximum rate at which requests are allowed, as enforced by a rate limiter.',
+    example: 'He hit the API\'s throttling limit and had to wait a minute before making more requests.'
+  },
+  {
+    id: 'request-quota',
+    term: 'Request quota',
+    slug: 'request-quota',
+    definition: 'A limit on the total number of requests that can be made to a service over a certain period (e.g., per day or per month).',
+    example: 'He used up his monthly request quota for the free tier of the API.'
+  },
+  {
+    id: 'error-budget',
+    term: 'Error budget',
+    slug: 'error-budget',
+    definition: 'In Site Reliability Engineering (SRE), an error budget is the maximum amount of time a system is allowed to be unavailable or broken, based on its Service Level Objective (SLO).',
+    example: 'They still had some error budget left for the quarter, so they decided to go ahead with the risky deployment.'
+  },
+  {
+    id: 'sla-breach',
+    term: 'SLA breach',
+    slug: 'sla-breach',
+    definition: 'A failure to meet the terms of a Service Level Agreement, such as the guaranteed uptime.',
+    example: 'The prolonged outage resulted in an SLA breach, and the provider had to issue service credits to its customers.'
+  },
+  {
+    id: 'usage-spike',
+    term: 'Usage spike',
+    slug: 'usage-spike',
+    definition: 'A sudden, sharp increase in the usage of a system\'s resources.',
+    example: 'The usage spike was caused by a popular social media post linking to the website.'
+  },
+  {
+    id: 'zombie-nodes',
+    term: 'Zombie nodes',
+    slug: 'zombie-nodes',
+    definition: 'Nodes in a cluster that are no longer functioning correctly but have not yet been removed from the cluster.',
+    example: 'The orchestrator was still trying to schedule tasks on the zombie nodes, causing failures.'
+  },
+  {
+    id: 'orphan-pods',
+    term: 'Orphan pods',
+    slug: 'orphan-pods',
+    definition: 'In Kubernetes, pods that are still running on a node but are no longer managed by any controller.',
+    example: 'After deleting the Deployment, there were several orphan pods left over that had to be cleaned up manually.'
+  },
+  {
+    id: 'autohealing',
+    term: 'Autohealing',
+    slug: 'autohealing',
+    definition: 'The ability of a system to automatically detect and recover from failures, such as by restarting failed services or replacing failed nodes.',
+    example: 'The Kubernetes cluster\'s autohealing capabilities automatically rescheduled the pods from the failed node.'
+  },
+  {
+    id: 'orchestrator',
+    term: 'Orchestrator',
+    slug: 'orchestrator',
+    definition: 'A tool for automating the deployment, management, scaling, and networking of containers. Kubernetes is a popular example.',
+    example: 'The orchestrator handled all the complexity of running the microservices across the cluster of servers.'
+  },
+  {
+    id: 'multi-cloud',
+    term: 'Multi-cloud',
+    slug: 'multi-cloud',
+    definition: 'The practice of using multiple cloud computing services from different providers in a single architecture.',
+    example: 'They used a multi-cloud strategy to avoid vendor lock-in and take advantage of the best services from both AWS and Google Cloud.'
+  },
+  {
+    id: 'hybrid-cloud',
+    term: 'Hybrid cloud',
+    slug: 'hybrid-cloud',
+    definition: 'A computing environment that combines a private cloud (on-premises infrastructure) with a public cloud, allowing data and applications to be shared between them.',
+    example: 'They ran their sensitive database on their on-prem private cloud but used the public cloud for scalable web servers in a hybrid cloud setup.'
+  },
+  {
+    id: 'cloud-tenancy',
+    term: 'Cloud tenancy',
+    slug: 'cloud-tenancy',
+    definition: 'Refers to how cloud resources are shared among different customers. In a multi-tenant architecture, multiple customers share the same infrastructure.',
+    example: 'A single-tenant cloud environment provides a dedicated set of resources for one customer, offering higher security and isolation.'
+  },
+  {
+    id: 'container-registry',
+    term: 'Container registry',
+    slug: 'container-registry',
+    definition: 'A storage system for container images, used to store and distribute them.',
+    example: 'He pushed the new version of the application\'s Docker image to the container registry.'
+  },
+  {
+    id: 'image-scanning',
+    term: 'Image scanning',
+    slug: 'image-scanning',
+    definition: 'The process of analyzing a container image for known security vulnerabilities.',
+    example: 'The CI/CD pipeline included an image scanning step to prevent images with critical vulnerabilities from being deployed.'
+  },
+  {
+    id: 'pipeline-stages',
+    term: 'Pipeline stages',
+    slug: 'pipeline-stages',
+    definition: 'The individual steps in a CI/CD pipeline, such as "build," "test," and "deploy."',
+    example: 'The build failed in the "test" pipeline stage due to a failing unit test.'
+  },
+  {
+    id: 'secret-mounting',
+    term: 'Secret mounting',
+    slug: 'secret-mounting',
+    definition: 'The process of making sensitive information (secrets) available to a container or application, typically by mounting them as a file or environment variable.',
+    example: 'The database password was made available to the application through secret mounting, so it never had to be stored in the container image.'
+  },
+  {
+    id: 'federation-cluster',
+    term: 'Federation cluster',
+    slug: 'federation-cluster',
+    definition: 'A concept where multiple Kubernetes clusters are managed as a single logical cluster, allowing for multi-cluster application deployment and service discovery.',
+    example: 'They used a federation cluster to deploy their application across data centers in different geographic regions.'
+  },
+  {
+    id: 'traffic-gateway',
+    term: 'Traffic gateway',
+    slug: 'traffic-gateway',
+    definition: 'A component in a service mesh that manages ingress and egress traffic for the mesh.',
+    example: 'The traffic gateway was responsible for all TLS termination and routing requests to the correct services.'
+  },
+  {
+    id: 'ssl-termination',
+    term: 'SSL termination',
+    slug: 'ssl-termination',
+    definition: 'The process of decrypting SSL/TLS encrypted traffic at a load balancer or reverse proxy, so that the backend servers receive unencrypted traffic.',
+    example: 'The load balancer handled all the SSL termination, which simplified the configuration of the backend web servers.'
+  },
+  {
+    id: 'kms-keyring',
+    term: 'KMS keyring',
+    slug: 'kms-keyring',
+    definition: 'In a Key Management Service, a keyring is a logical grouping of encryption keys, often used to organize keys by application or environment.',
+    example: 'He created a new KMS keyring for all the keys related to the new project.'
+  },
+  {
+    id: 'drift-detection',
+    term: 'Drift detection',
+    slug: 'drift-detection',
+    definition: 'In Infrastructure as Code, drift detection is the process of identifying differences between the actual state of the infrastructure and the state defined in the code.',
+    example: 'The drift detection tool alerted him that someone had manually changed a firewall rule outside of Terraform.'
+  },
+  {
+    id: 'resource-tagging',
+    term: 'Resource tagging',
+    slug: 'resource-tagging',
+    definition: 'The practice of assigning metadata tags (key-value pairs) to cloud resources to help with organization, cost tracking, and automation.',
+    example: 'They used resource tagging to identify which resources belonged to which project, making it easy to track costs.'
+  },
+  {
+    id: 'pod-sandbox',
+    term: 'Pod sandbox',
+    slug: 'pod-sandbox',
+    definition: 'In Kubernetes, the pod sandbox is a special container that is created first to set up the networking and other namespaces for all the other containers that will run in the pod.',
+    example: 'When a pod starts, the container runtime first creates the pod sandbox, and then starts the application containers inside it.'
+  },
+  {
+    id: 'node-pressure',
+    term: 'Node pressure',
+    slug: 'node-pressure',
+    definition: 'A condition in Kubernetes where a node is running out of resources, such as memory or disk space.',
+    example: 'The kubelet reported a node pressure condition, and began evicting pods to reclaim memory.'
+  },
+  {
+    id: 'cluster-autoscaler',
+    term: 'Cluster autoscaler',
+    slug: 'cluster-autoscaler',
+    definition: 'A Kubernetes component that automatically adjusts the size of a Kubernetes cluster by adding or removing nodes based on the pending pods.',
+    example: 'The cluster autoscaler added two new nodes to accommodate the increased workload.'
+  },
+  {
+    id: 'horizontal-scaling',
+    term: 'Horizontal scaling',
+    slug: 'horizontal-scaling',
+    definition: 'The practice of scaling an application by adding more instances or nodes, as opposed to increasing the resources of a single instance (vertical scaling).',
+    example: 'The web application was designed for horizontal scaling, allowing them to handle more traffic by simply adding more web servers.'
+  },
+  {
+    id: 'clipped-fps',
+    term: 'Clipped FPS',
+    slug: 'clipped-fps',
+    definition: 'When the frame rate of a game is limited or "clipped" at a certain value, such as the monitor\'s refresh rate, by a feature like V-Sync.',
+    example: 'With V-Sync on, his frame rate was clipped at 60 FPS.'
+  },
+  {
+    id: 'microstutter',
+    term: 'Microstutter',
+    slug: 'microstutter',
+    definition: 'A form of visual artifact where the frame rate appears inconsistent even if the average FPS is high, caused by uneven frame times.',
+    example: 'The game ran at over 100 FPS, but he was still experiencing annoying microstutter.'
+  },
+  {
+    id: 'dpc-latency',
+    term: 'DPC latency',
+    slug: 'dpc-latency',
+    definition: 'Deferred Procedure Call latency is a measure of how long a Windows system takes to process certain high-priority tasks. High DPC latency can cause audio dropouts and other real-time issues.',
+    example: 'A bad audio driver was causing high DPC latency, which resulted in clicks and pops in his audio.'
+  },
+  {
+    id: 'cache-trashing',
+    term: 'Cache trashing',
+    slug: 'cache-trashing',
+    definition: 'A situation where a CPU\'s cache is constantly being invalidated and refilled, often because multiple threads are repeatedly accessing memory in a way that conflicts with each other. This severely degrades performance.',
+    example: 'The poorly optimized algorithm was causing cache trashing, which made it run much slower than expected.'
+  },
+  {
+    id: 'pcie-bottleneck',
+    term: 'PCIe bottleneck',
+    slug: 'pcie-bottleneck',
+    definition: 'A performance limitation that occurs when a PCIe slot does not have enough bandwidth for the device installed in it, such as a high-end graphics card.',
+    example: 'Running a PCIe 4.0 GPU in a PCIe 3.0 slot can create a slight PCIe bottleneck in some games.'
+  },
+  {
+    id: 'garbage-frames',
+    term: 'Garbage frames',
+    slug: 'garbage-frames',
+    definition: 'Slang for corrupted or glitched frames that can appear on a display, often due to an unstable GPU overclock or failing VRAM.',
+    example: 'When he pushed his GPU overclock too far, he started seeing garbage frames and artifacts on the screen.'
+  },
+  {
+    id: 'silent-crash',
+    term: 'Silent crash',
+    slug: 'silent-crash',
+    definition: 'A crash where a program terminates unexpectedly without displaying an error message.',
+    example: 'The game had a silent crash, it just closed to the desktop with no explanation.'
+  },
+  {
+    id: 'hard-crash',
+    term: 'Hard crash',
+    slug: 'hard-crash',
+    definition: 'A system crash that requires a physical reboot of the computer, such as a Blue Screen of Death or a kernel panic.',
+    example: 'The unstable RAM overclock caused a hard crash, forcing him to restart his PC.'
+  },
+  {
+    id: 'soft-crash',
+    term: 'Soft crash',
+    slug: 'soft-crash',
+    definition: 'A crash where a single application terminates, but the operating system remains stable.',
+    example: 'The browser had a soft crash, but he was able to just reopen it without restarting his computer.'
+  },
+  {
+    id: 'boot-loop',
+    term: 'Boot loop',
+    slug: 'boot-loop',
+    definition: 'A condition where a device repeatedly tries to boot up but fails, causing it to restart over and over.',
+    example: 'A corrupted system file sent his phone into a boot loop.'
+  },
+  {
+    id: 'post-loop',
+    term: 'Post loop',
+    slug: 'post-loop',
+    definition: 'A condition where a computer gets stuck in the Power-On Self-Test (POST) sequence, repeatedly restarting without ever reaching the OS bootloader.',
+    example: 'An incompatible RAM kit caused a post loop; the computer would turn on for a few seconds and then restart.'
+  },
+  {
+    id: 'power-fault',
+    term: 'Power fault',
+    slug: 'power-fault',
+    definition: 'An error indicating a problem with the power delivery to a component, often due to a failing PSU or bad connection.',
+    example: 'The server logs indicated a power fault just before it shut down, pointing to a problem with the power supply.'
+  },
+  {
+    id: 'memory-training-fail',
+    term: 'Memory training fail',
+    slug: 'memory-training-fail',
+    definition: 'An error that occurs during boot when the motherboard is unable to find stable settings for the installed RAM.',
+    example: 'He couldn\'t boot with the new RAM because it was causing a memory training fail.'
+  },
+  {
+    id: 'driver-bloat',
+    term: 'Driver bloat',
+    slug: 'driver-bloat',
+    definition: 'The situation where a hardware driver package includes a large amount of unnecessary extra software and features.',
+    example: 'He used a third-party tool to strip the driver bloat from the graphics driver, installing only the essential components.'
+  },
+  {
+    id: 'driver-conflict',
+    term: 'Driver conflict',
+    slug: 'driver-conflict',
+    definition: 'A problem where two or more hardware drivers interfere with each other, causing system instability or crashes.',
+    example: 'The blue screens were caused by a driver conflict between the old and new audio devices.'
+  },
+  {
+    id: 'fps-dips',
+    term: 'FPS dips',
+    slug: 'fps-dips',
+    definition: 'Sudden, temporary drops in the frame rate of a game, which can cause stuttering.',
+    example: 'The game ran smoothly most of the time, but he experienced major FPS dips in crowded city areas.'
+  },
+  {
+    id: 'shader-compilation',
+    term: 'Shader compilation',
+    slug: 'shader-compilation',
+    definition: 'The process where a game engine converts high-level shader code into a low-level format that the GPU can execute. This can sometimes cause stutter the first time an effect is seen.',
+    example: 'The stuttering in the game was caused by shader compilation happening in the background.'
+  },
+  {
+    id: 'e-cores',
+    term: 'E-cores',
+    slug: 'e-cores',
+    definition: 'Short for "Efficient-cores," a type of smaller, lower-power CPU core used in some modern Intel processors to handle background tasks.',
+    example: 'The new Intel CPU has 8 P-cores for performance and 8 E-cores for efficiency.'
+  },
+  {
+    id: 'p-cores',
+    term: 'P-cores',
+    slug: 'p-cores',
+    definition: 'Short for "Performance-cores," the primary, high-performance CPU cores in a modern Intel processor.',
+    example: 'Games and other demanding applications are scheduled to run on the P-cores.'
+  },
+  {
+    id: 'thread-scheduler',
+    term: 'Thread scheduler',
+    slug: 'thread-scheduler',
+    definition: 'A component of the operating system that decides which threads should be executed by the CPU at any given time.',
+    example: 'Windows 11 has an updated thread scheduler that is better at utilizing CPUs with both P-cores and E-cores.'
+  },
+  {
+    id: 'frame-pacing',
+    term: 'Frame pacing',
+    slug: 'frame-pacing',
+    definition: 'A technique used in graphics drivers and games to ensure that frames are delivered to the display at a consistent, even interval, which can reduce stutter.',
+    example: 'The latest driver update included improvements to frame pacing, resulting in a smoother gameplay experience.'
+  },
+  {
+    id: 'dlss',
+    term: 'DLSS',
+    slug: 'dlss',
+    definition: 'Deep Learning Super Sampling is an NVIDIA technology that uses AI to upscale a lower-resolution image to a higher resolution, boosting performance with minimal loss in image quality.',
+    example: 'He enabled DLSS to get a playable frame rate with ray tracing turned on.'
+  },
+  {
+    id: 'fsr',
+    term: 'FSR',
+    slug: 'fsr',
+    definition: 'FidelityFX Super Resolution is AMD\'s open-source upscaling technology, which is similar to DLSS but does not require dedicated AI hardware.',
+    example: 'Since he had an AMD graphics card, he used FSR to boost his performance in the game.'
+  },
+  {
+    id: 'motion-interpolation',
+    term: 'Motion interpolation',
+    slug: 'motion-interpolation',
+    definition: 'A video processing technique that generates intermediate frames between existing ones to create the illusion of smoother motion. Also known as the "soap opera effect" on TVs.',
+    example: 'He disliked the unnatural look of motion interpolation, so he turned it off on his TV.'
+  },
+  {
+    id: 'volumetric-lighting',
+    term: 'Volumetric lighting',
+    slug: 'volumetric-lighting',
+    definition: 'A 3D graphics effect that simulates the scattering of light in the air, creating visible light beams or "god rays."',
+    example: 'The volumetric lighting in the forest scene looked incredibly realistic.'
+  },
+  {
+    id: 'anti-aliasing',
+    term: 'Anti-aliasing',
+    slug: 'anti-aliasing',
+    definition: 'A graphics technique used to smooth out the jagged edges (or "jaggies") of objects in a 3D scene.',
+    example: 'He increased the anti-aliasing setting to make the game look cleaner and less pixelated.'
+  },
+  {
+    id: 'taa',
+    term: 'TAA',
+    slug: 'taa',
+    definition: 'Temporal Anti-Aliasing is a modern anti-aliasing technique that uses information from previous frames to smooth out edges. It can sometimes cause a slight blurring effect on moving objects.',
+    example: 'TAA provided the best balance of image quality and performance in the game.'
+  },
+  {
+    id: 'smaa',
+    term: 'SMAA',
+    slug: 'smaa',
+    definition: 'Subpixel Morphological Anti-Aliasing is an anti-aliasing technique known for producing a sharp image with good edge smoothing.',
+    example: 'He preferred SMAA because it didn\'t have the ghosting artifacts that TAA sometimes produced.'
+  },
+  {
+    id: 'upscaling',
+    term: 'Upscaling',
+    slug: 'upscaling',
+    definition: 'The process of taking a lower-resolution image or video and increasing its size to fit a higher-resolution display. Technologies like DLSS and FSR are forms of smart upscaling.',
+    example: 'His 4K TV did a good job of upscaling 1080p content.'
+  },
+  {
+    id: 'render-pipeline',
+    term: 'Render pipeline',
+    slug: 'render-pipeline',
+    definition: 'The sequence of steps a GPU takes to render a 3D scene, from processing vertices to outputting the final pixels on the screen.',
+    example: 'Modern game engines use a complex render pipeline to achieve realistic graphics.'
+  },
+  {
+    id: 'vr-reprojection',
+    term: 'VR reprojection',
+    slug: 'vr-reprojection',
+    definition: 'A technique used in virtual reality where, if the application fails to render a new frame in time, the last frame is re-projected based on the user\'s latest head movement to reduce nausea.',
+    example: 'When the frame rate dropped, VR reprojection kicked in to keep the experience from becoming uncomfortable.'
+  },
+  {
+    id: 'latency-artifacts',
+    term: 'Latency artifacts',
+    slug: 'latency-artifacts',
+    definition: 'Visual or audio glitches caused by high latency, such as stuttering, ghosting, or delayed audio.',
+    example: 'The cloud gaming service was unusable due to the distracting latency artifacts.'
+  },
+  {
+    id: 'input-delay',
+    term: 'Input delay',
+    slug: 'input-delay',
+    definition: 'The time between when you perform an action (like a mouse click) and when you see the result on screen. Also known as input lag.',
+    example: 'Competitive gamers try to minimize input delay as much as possible by using high-refresh-rate monitors and wired peripherals.'
+  },
+  {
+    id: 'cold-cache',
+    term: 'Cold cache',
+    slug: 'cold-cache',
+    definition: 'A state where a cache (like a CPU cache or disk cache) is empty or contains irrelevant data, resulting in slower access times as data must be fetched from main memory or disk.',
+    example: 'The application was slow to start up because it was dealing with a cold cache.'
+  },
+  {
+    id: 'hot-cache',
+    term: 'Hot cache',
+    slug: 'hot-cache',
+    definition: 'A state where a cache contains the data that is currently needed by the application, resulting in very fast access times.',
+    example: 'The database query was instant because all the required data was already in the hot cache.'
+  },
+  {
+    id: 'cache-hit',
+    term: 'Cache hit',
+    slug: 'cache-hit',
+    definition: 'An event where the data requested by an application is found in the cache.',
+    example: 'A high cache hit rate is crucial for good performance.'
+  },
+  {
+    id: 'cache-miss',
+    term: 'Cache miss',
+    slug: 'cache-miss',
+    definition: 'An event where the data requested by an application is not found in the cache, requiring it to be fetched from a slower level of memory.',
+    example: 'Every cache miss resulted in a noticeable delay as the data had to be loaded from the main RAM.'
+  },
+  {
+    id: 'memory-access-pattern',
+    term: 'Memory access pattern',
+    slug: 'memory-access-pattern',
+    definition: 'The way in which a program accesses data in memory. Predictable, sequential patterns are much more cache-friendly than random access patterns.',
+    example: 'He refactored the code to have a more linear memory access pattern, which significantly improved performance.'
+  },
+  {
+    id: 'floating-point-error',
+    term: 'Floating point error',
+    slug: 'floating-point-error',
+    definition: 'Small inaccuracies that can occur when performing calculations with floating-point numbers due to their limited precision.',
+    example: 'The simulation results were slightly off due to the accumulation of floating-point errors over millions of calculations.'
+  },
+  {
+    id: 'nan-crash',
+    term: 'NaN crash',
+    slug: 'nan-crash',
+    definition: 'A program crash caused by an operation that results in a "Not a Number" (NaN) value, which can then propagate and cause further errors.',
+    example: 'Dividing zero by zero resulted in a NaN, which eventually led to a NaN crash.'
+  },
+  {
+    id: 'dead-pixel',
+    term: 'Dead pixel',
+    slug: 'dead-pixel',
+    definition: 'A pixel on a display that is permanently unlit and always appears black.',
+    example: 'He had to return the new monitor because it had a dead pixel right in the center of the screen.'
+  },
+  {
+    id: 'backlight-bleed',
+    term: 'Backlight bleed',
+    slug: 'backlight-bleed',
+    definition: 'An issue on LCD screens where the backlight shines through the edges of the display, causing uneven brightness, especially noticeable on dark screens.',
+    example: 'The monitor had some noticeable backlight bleed in the corners, but it was only visible in a dark room.'
+  },
+  {
+    id: 'color-banding',
+    term: 'Color banding',
+    slug: 'color-banding',
+    definition: 'An artifact in digital images where smooth gradients of color are broken up into distinct bands, often due to insufficient color depth.',
+    example: 'The compressed video had visible color banding in the sky gradient.'
+  },
+  {
+    id: 'dithering',
+    term: 'Dithering',
+    slug: 'dithering',
+    definition: 'A technique used in computer graphics to create the illusion of more colors than are actually available by using a pattern of differently colored pixels. This can help reduce color banding.',
+    example: 'The old GIF image format used dithering to simulate more colors than its 256-color limit.'
+  },
+  {
+    id: 'hdr-tone-mapping',
+    term: 'HDR tone mapping',
+    slug: 'hdr-tone-mapping',
+    definition: 'The process of converting High Dynamic Range (HDR) image data to a format that can be displayed on a standard screen, attempting to preserve the look of the original HDR image.',
+    example: 'The game\'s HDR tone mapping determined how the bright highlights and dark shadows would look on his non-HDR monitor.'
+  },
+  {
+    id: 'power-draw-spikes',
+    term: 'Power draw spikes',
+    slug: 'power-draw-spikes',
+    definition: 'Sudden, brief increases in the amount of power a component is consuming, which can sometimes cause system instability if the PSU can\'t handle them.',
+    example: 'Some new high-end GPUs are known for having power draw spikes that can trip the safety on weaker power supplies.'
+  },
+  {
+    id: 'vrm-overheating',
+    term: 'VRM overheating',
+    slug: 'vrm-overheating',
+    definition: 'A condition where the motherboard\'s Voltage Regulator Modules become too hot, which can cause the CPU to throttle its performance.',
+    example: 'His CPU was throttling despite low temperatures, and he realized it was due to VRM overheating on his cheap motherboard.'
+  },
+  {
+    id: 'power-limit',
+    term: 'Power limit',
+    slug: 'power-limit',
+    definition: 'A setting that determines the maximum amount of power a CPU or GPU is allowed to consume.',
+    example: 'He increased the power limit on his graphics card to allow it to maintain a higher boost clock.'
+  },
+  {
+    id: 'voltage-offset',
+    term: 'Voltage offset',
+    slug: 'voltage-offset',
+    definition: 'An overclocking/undervolting technique where a fixed positive or negative offset is applied to the component\'s default voltage curve.',
+    example: 'He applied a negative voltage offset of -50mV to undervolt his CPU and reduce temperatures.'
+  },
+  {
+    id: 'stress-test',
+    term: 'Stress test',
+    slug: 'stress-test',
+    definition: 'The process of running a demanding program to push a component to its maximum performance and temperature to check for stability.',
+    example: 'He ran a CPU stress test for an hour to make sure his overclock was stable.'
+  },
+  {
+    id: 'burn-in-test',
+    term: 'Burn-in test',
+    slug: 'burn-in-test',
+    definition: 'A prolonged stress test performed on new hardware to check for any early failures.',
+    example: 'After building his new PC, he ran a 24-hour burn-in test to ensure all the components were working correctly.'
+  },
+  {
+    id: 'p-state',
+    term: 'P-state',
+    slug: 'p-state',
+    definition: 'Performance states are different frequency and voltage combinations that a CPU can operate at to balance performance and power consumption.',
+    example: 'The CPU switched to a higher P-state when he launched the game.'
+  },
+  {
+    id: 'c-state',
+    term: 'C-state',
+slug: 'c-state',
+    definition: 'Core states are idle power-saving states that a CPU core can enter when it is not busy.',
+    example: 'When the computer was idle, the CPU cores entered a deep C-state to save power.'
+  },
+  {
+    id: 'idle-clock',
+    term: 'Idle clock',
+    slug: 'idle-clock',
+    definition: 'The very low clock speed a CPU or GPU drops to when it is not under load to save power.',
+    example: 'At the desktop, the GPU\'s idle clock was only 300 MHz.'
+  },
+  {
+    id: 'gpu-hotspot-temp',
+    term: 'GPU hotspot temp',
+    slug: 'gpu-hotspot-temp',
+    definition: 'A reading from the hottest sensor on a GPU die, which can be significantly higher than the average temperature.',
+    example: 'While the average GPU temp was 75°C, the GPU hotspot temp was reaching 95°C, indicating a need for better cooling.'
+  },
+  {
+    id: 'negative-scaling',
+    term: 'Negative scaling',
+    slug: 'negative-scaling',
+    definition: 'A situation where adding more resources (like a second GPU or more CPU cores) actually decreases performance due to overhead or poor optimization.',
+    example: 'The old game exhibited negative scaling with the second GPU, running slower than it did with just one.'
+  },
+  {
+    id: 'render-queue',
+    term: 'Render queue',
+    slug: 'render-queue',
+    definition: 'A queue of frames that are ready to be rendered by the GPU. A long render queue can increase input lag.',
+    example: 'He used a driver setting to limit the render queue to one frame to reduce input lag.'
+  },
+  {
+    id: 'dirty-shutdown',
+    term: 'Dirty shutdown',
+    slug: 'dirty-shutdown',
+    definition: 'An improper shutdown of a computer, such as from a power loss or hard reset, which can lead to data corruption.',
+    example: 'The file system had to be checked for errors after the dirty shutdown.'
+  },
+  {
+    id: 'warm-boot',
+    term: 'Warm boot',
+    slug: 'warm-boot',
+    definition: 'Restarting a computer through the operating system, without cutting the power. A soft reset.',
+    example: 'A warm boot is usually sufficient to fix minor software glitches.'
+  },
+  {
+    id: 'cold-boot',
+    term: 'Cold boot',
+    slug: 'cold-boot',
+    definition: 'Starting a computer from a completely powered-off state.',
+    example: 'Some BIOS changes only take effect after a cold boot.'
+  },
+  {
+    id: 'hot-patch',
+    term: 'Hot patch',
+    slug: 'hot-patch',
+    definition: 'Applying a patch to a running system without needing to restart it.',
+    example: 'The kernel security vulnerability was fixed with a hot patch, avoiding any server downtime.'
+  },
+  {
+    id: 'output-buffer',
+    term: 'Output buffer',
+    slug: 'output-buffer',
+    definition: 'A memory buffer used to store data that is waiting to be sent to an output device, like a screen or a network card.',
+    example: 'The graphics driver stores the completed frame in the output buffer before sending it to the monitor.'
+  },
+  {
+    id: 'render-target',
+    term: 'Render target',
+    slug: 'render-target',
+    definition: 'A memory buffer in the GPU that graphics are rendered to. This is often a texture that can then be used in another rendering pass.',
+    example: 'He rendered the reflections to a separate render target, which was then applied to the water surface.'
+  },
+  {
+    id: 'double-buffer',
+    term: 'Double buffer',
+    slug: 'double-buffer',
+    definition: 'A graphics technique where two buffers are used: one is displayed on the screen while the next frame is being drawn to the other. This prevents the user from seeing a partially drawn frame.',
+    example: 'Double buffering is a standard technique for preventing screen tearing and creating smooth animation.'
+  },
+  {
+    id: 'triple-buffer',
+    term: 'Triple buffer',
+    slug: 'triple-buffer',
+    definition: 'An extension of double buffering that uses three buffers. It can provide smoother performance than double buffering but can also increase input lag.',
+    example: 'Enabling triple buffering can help when your frame rate is lower than your monitor\'s refresh rate.'
+  },
+  {
+    id: 'shader-model',
+    term: 'Shader model',
+    slug: 'shader-model',
+    definition: 'A version number that specifies the set of features and capabilities available to shaders on a particular GPU.',
+    example: 'The game required a graphics card that supported at least Shader Model 5.0.'
+  },
+  {
+    id: 'driver-microcode',
+    term: 'Driver microcode',
+    slug: 'driver-microcode',
+    definition: 'Firmware-like code that is loaded onto a GPU by the graphics driver at startup to enable its features or fix hardware bugs.',
+    example: 'The latest driver included updated driver microcode to improve the stability of the new graphics card.'
+  },
+  {
+    id: 'repaste',
+    term: 'Repaste',
+    slug: 'repaste',
+    definition: 'The act of cleaning off old thermal paste from a CPU or GPU and applying a fresh layer.',
+    example: 'He had to repaste his aging laptop to get its temperatures back under control.'
+  },
+  {
+    id: 'reballing',
+    term: 'Reballing',
+    slug: 'reballing',
+    definition: 'A complex hardware repair process that involves removing a chip (like a GPU), cleaning off the old solder balls, and applying new ones to re-attach it to the PCB.',
+    example: 'He sent his failing laptop to a specialist for a reballing service to fix the broken GPU connection.'
+  },
+  {
+    id: 'reflow',
+    term: 'Reflow',
+    slug: 'reflow',
+    definition: 'A less reliable repair technique where a chip is heated up in an attempt to melt and reset the solder connections underneath, without actually replacing the solder.',
+    example: 'He tried to reflow the GPU in his old Xbox 360, but the fix only lasted a few weeks.'
+  },
+  {
+    id: 'hot-air-station',
+    term: 'Hot air station',
+    slug: 'hot-air-station',
+    definition: 'A tool used in electronics repair that blows a precise stream of hot air to solder or de-solder surface-mount components.',
+    example: 'He used a hot air station to replace a tiny capacitor on the motherboard.'
+  },
+  {
+    id: 'esd-strap',
+    term: 'ESD strap',
+    slug: 'esd-strap',
+    definition: 'An anti-static wrist strap used to safely ground a person working on sensitive electronic components to prevent damage from electrostatic discharge.',
+    example: 'He always wore an ESD strap when building a PC to avoid frying any of the components.'
+  },
+  {
+    id: 'bench-table',
+    term: 'Bench table',
+    slug: 'bench-table',
+    definition: 'An open-air PC case used for testing and benchmarking hardware, providing easy access to all components.',
+    example: 'The hardware reviewer mounted the components on a bench table to quickly swap out different GPUs for testing.'
+  },
+  {
+    id: 'modular-psu',
+    term: 'Modular PSU',
+    slug: 'modular-psu',
+    definition: 'A power supply unit where the cables are detachable, allowing the builder to use only the cables they need, which improves airflow and cable management.',
+    example: 'He chose a modular PSU for his new build to make the cable management cleaner.'
+  },
+  {
+    id: 'loud-coil-whine',
+    term: 'Loud coil whine',
+    slug: 'loud-coil-whine',
+    definition: 'A particularly distracting high-pitched noise produced by a GPU or PSU under load.',
+    example: 'He had to return the graphics card because the loud coil whine was unbearable.'
+  },
+  {
+    id: 'psu-transient',
+    term: 'PSU transient',
+    slug: 'psu-transient',
+    definition: 'A very short, high-power spike drawn by a component, typically a GPU. A good PSU must be able to handle these transients without shutting down.',
+    example: 'His old PSU couldn\'t handle the new GPU\'s power transients and would shut down under load.'
+  },
+  {
+    id: 'brown-out',
+    term: 'Brown-out',
+    slug: 'brown-out',
+    definition: 'A drop in voltage in an electrical power supply system. It can cause unexpected behavior or shutdowns in computers.',
+    example: 'The computer restarted during the brown-out because the PSU\'s voltage protection kicked in.'
+  },
+  {
+    id: 'overcurrent',
+    term: 'Overcurrent',
+    slug: 'overcurrent',
+    definition: 'A situation where more electrical current is drawn than a component or circuit is rated to handle, which can cause damage or trigger safety protections.',
+    example: 'The PSU shut down to protect itself from an overcurrent situation caused by a short circuit.'
+  },
+  {
+    id: 'undervoltage',
+    term: 'Undervoltage',
+    slug: 'undervoltage',
+    definition: 'A condition where the voltage supplied to a component is below its required operating level, which can cause instability or shutdowns.',
+    example: 'The system was unstable because the cheap PSU had poor undervoltage protection.'
+  },
+  {
+    id: 'fast-boot',
+    term: 'Fast boot',
+    slug: 'fast-boot',
+    definition: 'A BIOS/UEFI feature that speeds up the boot process by skipping some hardware initialization steps.',
+    example: 'With fast boot enabled, he couldn\'t enter the BIOS because it skipped the keyboard check.'
+  },
+  {
+    id: 'secure-boot-off',
+    term: 'Secure boot off',
+    slug: 'secure-boot-off',
+    definition: 'Disabling the Secure Boot feature in the UEFI BIOS, which is often necessary to install operating systems other than Windows.',
+    example: 'He had to turn secure boot off to install Linux on his new laptop.'
+  },
+  {
+    id: 'vcore',
+    term: 'Vcore',
+    slug: 'vcore',
+    definition: 'The voltage supplied to the main CPU cores. It is a critical setting for overclocking.',
+    example: 'He had to increase the Vcore to get his CPU stable at the higher clock speed.'
+  },
+  {
+    id: 'vdimm',
+    term: 'Vdimm',
+    slug: 'vdimm',
+    definition: 'The voltage supplied to the RAM modules (DIMMs).',
+    example: 'To overclock the memory, he had to raise the Vdimm from 1.35V to 1.45V.'
+  },
+  {
+    id: 'vccio',
+    term: 'VccIO',
+    slug: 'vccio',
+    definition: 'On Intel platforms, this is the voltage for the integrated memory controller\'s I/O components. It can sometimes help with memory stability.',
+    example: 'Tweaking the VccIO voltage helped him stabilize his high-speed memory overclock.'
+  },
+  {
+    id: 'vccsa',
+    term: 'VccSA',
+    slug: 'vccsa',
+    definition: 'On Intel platforms, this is the System Agent voltage, which can also affect memory overclocking stability.',
+    example: 'He found that a slight increase to the VccSA voltage was needed to get his RAM kit stable.'
+  },
+  {
+    id: 'dip-switch',
+    term: 'DIP switch',
+    slug: 'dip-switch',
+    definition: 'A small set of manual electric switches in a small package, often used on older motherboards or expansion cards to configure settings.',
+    example: 'He had to change a DIP switch on the legacy sound card to set its IRQ.'
+  },
+  {
+    id: 'debug-port',
+    term: 'Debug port',
+    slug: 'debug-port',
+    definition: 'A special port on a device (like a router or motherboard) used by engineers for low-level debugging and diagnostics.',
+    example: 'The technician connected to the debug port to get more information about why the device was failing.'
+  },
+  {
+    id: 'bios-mod',
+    term: 'BIOS mod',
+    slug: 'bios-mod',
+    definition: 'A modified version of a device\'s BIOS firmware, often created by enthusiasts to unlock hidden features or support new hardware.',
+    example: 'He flashed a BIOS mod onto his old motherboard to add support for newer CPUs.'
+  },
+  {
+    id: 'firmware-dump',
+    term: 'Firmware dump',
+    slug: 'firmware-dump',
+    definition: 'A file containing a complete copy of a device\'s firmware, extracted from its flash memory.',
+    example: 'He created a firmware dump of his router before trying to install the custom firmware, just in case he needed to restore it.'
+  },
+  {
+    id: 'rom-flashing',
+    term: 'ROM flashing',
+    slug: 'rom-flashing',
+    definition: 'The process of overwriting the Read-Only Memory (or flash memory) of a device with new firmware.',
+    example: 'ROM flashing is a risky process that can brick your device if it fails.'
+  },
+  {
+    id: 'overpower-state',
+    term: 'Overpower state',
+    slug: 'overpower-state',
+    definition: 'A protection mechanism where a PSU shuts down when a component tries to draw more power than the PSU is rated to deliver.',
+    example: 'The system shut down under load because the GPU was tripping the PSU\'s overpower state protection.'
+  },
+  {
+    id: 'power-ripple',
+    term: 'Power ripple',
+    slug: 'power-ripple',
+    definition: 'Small, unwanted variations in the DC voltage supplied by a power supply. Excessive ripple can cause system instability.',
+    example: 'High-quality power supplies have very low power ripple, which is important for stable overclocking.'
+  },
+  {
+    id: 'system-hang',
+    term: 'System hang',
+    slug: 'system-hang',
+    definition: 'A condition where the entire operating system becomes unresponsive and requires a hard reset. A freeze.',
+    example: 'An unstable overclock caused a random system hang every few hours.'
+  },
+  {
+    id: 'memory-stall',
+    term: 'Memory stall',
+    slug: 'memory-stall',
+    definition: 'A delay in the execution of a program because the CPU is waiting for data to be fetched from memory.',
+    example: 'A high cache miss rate leads to frequent memory stalls, which hurts performance.'
+  },
+  {
+    id: 'cpu-stall',
+    term: 'CPU stall',
+    slug: 'cpu-stall',
+    definition: 'A delay in the CPU\'s processing pipeline, often caused by waiting for data from memory or a branch misprediction.',
+    example: 'The code was optimized to reduce CPU stalls by prefetching data into the cache.'
+  },
+  {
+    id: 'disk-stall',
+    term: 'Disk stall',
+    slug: 'disk-stall',
+    definition: 'A delay where the system is unresponsive because it is waiting for a slow disk I/O operation to complete.',
+    example: 'The application experienced a disk stall while trying to read a large file from the slow hard drive.'
+  },
+  {
+    id: 'thread-starvation',
+    term: 'Thread starvation',
+    slug: 'thread-starvation',
+    definition: 'A situation where a thread is perpetually denied the resources it needs to run, often because higher-priority threads are monopolizing the CPU.',
+    example: 'The low-priority background task was experiencing thread starvation and never got a chance to complete.'
+  },
+  {
+    id: 'worker-thread',
+    term: 'Worker thread',
+    slug: 'worker-thread',
+    definition: 'A background thread that is used to perform a long-running or computationally intensive task without blocking the main application thread.',
+    example: 'The application offloaded the image processing task to a worker thread to keep the UI responsive.'
+  },
+  {
+    id: 'shadow-process',
+    term: 'Shadow process',
+    slug: 'shadow-process',
+    definition: 'A hidden or undocumented process running on a system, which can sometimes be a sign of malware.',
+    example: 'The security scan detected a shadow process that was communicating with a suspicious IP address.'
+  },
+  {
+    id: 'phantom-packet',
+    term: 'Phantom packet',
+    slug: 'phantom-packet',
+    definition: 'A data packet that is observed on a network but appears to have no valid source or is otherwise anomalous. Can be a sign of a network issue or an attack.',
+    example: 'The network analyzer was picking up phantom packets that were causing confusion.'
   }
 ];
 
-    
