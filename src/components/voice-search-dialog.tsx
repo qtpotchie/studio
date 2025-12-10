@@ -17,19 +17,29 @@ export default function VoiceSearchDialog() {
     error,
     startListening,
     stopListening,
+    isSupported,
   } = useSpeechRecognition();
   const { toast } = useToast();
   const [statusText, setStatusText] = useState('Listening...');
 
   useEffect(() => {
     if (isOpen) {
+      if (!isSupported) {
+        toast({
+          variant: 'destructive',
+          title: 'Voice Search Not Supported',
+          description: 'Your browser does not support the Web Speech API. Please try a different browser like Chrome on desktop or Android.',
+        });
+        setOpen(false);
+        return;
+      }
       setStatusText('Listening...');
       startListening();
     } else {
       stopListening();
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isOpen]);
+  }, [isOpen, isSupported]);
 
   useEffect(() => {
     // When the listening stops, and we have a result, use it.
@@ -45,10 +55,17 @@ export default function VoiceSearchDialog() {
 
   useEffect(() => {
     if (error && isOpen) {
+      let description = `An unknown error occurred. Please try again.`;
+      if (error === 'not-allowed' || error === 'service-not-allowed') {
+        description = `Microphone access was denied. Please check your browser's site permissions.`;
+      } else if (error === 'NOT_SUPPORTED') {
+        description = 'Your browser does not support the Web Speech API. Please try a different browser like Chrome on desktop or Android.';
+      }
+
       toast({
         variant: 'destructive',
         title: 'Voice Search Error',
-        description: `Could not start voice search. Error: "${error}". Please check your microphone permissions.`,
+        description: description,
       });
       setOpen(false);
     }

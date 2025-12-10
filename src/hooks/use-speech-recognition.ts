@@ -17,7 +17,7 @@ export function useSpeechRecognition() {
 
   useEffect(() => {
     if (!SpeechRecognition) {
-      console.warn('Speech Recognition API is not supported in this browser.');
+      setError('NOT_SUPPORTED');
       return;
     }
 
