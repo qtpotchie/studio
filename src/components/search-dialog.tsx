@@ -96,23 +96,11 @@ export default function SearchDialog({ terms }: { terms: Term[] }) {
               ref={inputRef}
               type="search"
               placeholder={"Search for a term..."}
-              className="pl-10 pr-10 text-lg h-12"
+              className="pl-10 pr-4 text-lg h-12"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               onKeyDown={handleKeyDown}
             />
-            {searchQuery && (
-              <Button
-                type="button"
-                variant="ghost"
-                size="icon"
-                className="absolute right-1 top-1/2 -translate-y-1/2 h-9 w-9 shrink-0"
-                onClick={() => setSearchQuery("")}
-              >
-                <X className="h-5 w-5" />
-                <span className="sr-only">Clear</span>
-              </Button>
-            )}
           </div>
         </div>
         <ScrollArea className="flex-1">
