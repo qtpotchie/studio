@@ -41,7 +41,7 @@ export default function MobileSidebar() {
             <Link 
               href="/" 
               onClick={onClose} 
-              className="flex flex-col items-center gap-3 p-4 rounded-lg border-2 border-border/50 hover:border-primary/50 transition-colors"
+              className="flex flex-col items-center gap-3 p-2 rounded-lg border-2 border-border/50 hover:border-primary/50 transition-colors"
             >
                 <Logo className="w-12 h-12" />
                 <span className="text-base font-bold">TechTermz</span>
