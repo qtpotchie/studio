@@ -47,7 +47,6 @@ export default function MobileSidebar() {
                 <span className="text-base font-bold">TechTermz</span>
             </Link>
         </div>
-        <Separator className="mb-2" />
         <div className="flex flex-col gap-1 px-2">
             <NavLink href="/word-of-the-day" icon={CalendarDays} onClick={onClose}>Word of the Day</NavLink>
             <NavLink href="/all-terms" icon={BookOpen} onClick={onClose}>All Terms</NavLink>
