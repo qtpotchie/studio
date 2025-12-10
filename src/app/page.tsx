@@ -57,7 +57,7 @@ export default function Home() {
                 className="h-12 text-base px-4 border-2 border-transparent basis-1/3 shadow-md group"
                 asChild
             >
-                <Link href="/all-terms">
+                <Link href="/jargon-explorer">
                     <BookOpen className="mr-3 h-5 w-5 transition-transform group-hover:animate-book-open" />
                     <span>Explore</span>
                 </Link>
