@@ -1,19 +1,16 @@
+
+"use client";
+
 import { terms } from '@/lib/data';
-import { notFound } from 'next/navigation';
+import { notFound, useRouter } from 'next/navigation';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import BookmarkToggle from '@/components/bookmark-toggle';
 import { Separator } from '@/components/ui/separator';
-import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
-export async function generateStaticParams() {
-  return terms.map((term) => ({
-    slug: term.slug,
-  }));
-}
-
 export default function TermPage({ params }: { params: { slug: string } }) {
+  const router = useRouter();
   const term = terms.find((t) => t.slug === params.slug);
 
   if (!term) {
@@ -23,11 +20,9 @@ export default function TermPage({ params }: { params: { slug: string } }) {
   return (
     <div className="max-w-4xl mx-auto py-8 px-4">
       <div className="mb-6">
-        <Button asChild variant="secondary" className="shadow-md">
-          <Link href="/">
-            <ArrowLeft className="mr-2 h-4 w-4" />
-            Back
-          </Link>
+        <Button variant="secondary" className="shadow-md" onClick={() => router.back()}>
+          <ArrowLeft className="mr-2 h-4 w-4" />
+          Back
         </Button>
       </div>
       <Card className="relative overflow-hidden">
