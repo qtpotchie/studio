@@ -47,10 +47,8 @@ export default function SearchDialog({ terms }: { terms: Term[] }) {
 
   const filteredTerms = useMemo(() => {
     if (!debouncedSearchQuery) return [];
-    return terms.filter(
-      (term) =>
-        term.term.toLowerCase().includes(debouncedSearchQuery.toLowerCase()) ||
-        term.definition.toLowerCase().includes(debouncedSearchQuery.toLowerCase())
+    return terms.filter((term) =>
+      term.term.toLowerCase().startsWith(debouncedSearchQuery.toLowerCase())
     );
   }, [terms, debouncedSearchQuery]);
 
