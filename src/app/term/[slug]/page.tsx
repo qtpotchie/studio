@@ -39,12 +39,12 @@ export default function TermPage({ params }: { params: { slug: string } }) {
             <BookmarkToggle termId={term.id} />
           </div>
           <div>
-            <h3 className="text-2xl font-semibold mb-3 text-foreground">Definition</h3>
+            <h3 className="text-2xl font-semibold mb-3 text-primary">Definition</h3>
             <p className="text-foreground/90 leading-relaxed">{term.definition}</p>
           </div>
           <Separator />
           <div>
-            <h3 className="text-2xl font-semibold mb-3 text-foreground">Example</h3>
+            <h3 className="text-2xl font-semibold mb-3 text-primary">Example</h3>
             <blockquote className="border-l-4 border-primary/50 pl-6 italic text-muted-foreground">
               {term.example}
             </blockquote>
