@@ -3,6 +3,7 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import { ClientProviders } from '@/components/client-providers';
 import { Inter, Chivo as FontHeadline } from 'next/font/google';
+import BottomNav from '@/components/bottom-nav';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 const fontHeadline = FontHeadline({
@@ -29,7 +30,8 @@ export default function RootLayout({
       <body className="font-sans antialiased">
         <ClientProviders>
           <div className="relative flex min-h-screen w-full flex-col">
-            <main className="flex-1">{children}</main>
+            <main className="flex-1 pb-16 md:pb-0">{children}</main>
+            <BottomNav />
           </div>
           <Toaster />
         </ClientProviders>
