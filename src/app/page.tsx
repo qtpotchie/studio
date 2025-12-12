@@ -45,7 +45,7 @@ export default function Home() {
         <div className="flex-grow flex flex-col justify-center items-center">
             <div className="flex flex-row justify-center items-center gap-2 px-4 w-full max-w-md mx-auto my-6">
             <Button
-                variant="outline"
+                variant="secondary"
                 className="h-12 text-base basis-2/3 shadow-md group"
                 onClick={() => setOpen(true)}
             >
@@ -53,7 +53,7 @@ export default function Home() {
                 <span>Search</span>
             </Button>
             <Button
-                variant="outline"
+                variant="secondary"
                 className="h-12 text-base basis-1/3 shadow-md group"
                 asChild
             >
