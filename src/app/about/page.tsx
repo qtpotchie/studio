@@ -46,7 +46,7 @@ export default function AboutPage() {
           </p>
         </CardContent>
         <CardFooter className="p-6 pt-4 text-center text-muted-foreground">
-          <p className="w-full">Made by: Archie Macahilig</p>
+          <p className="w-full">Developed by: Archie Macahilig</p>
         </CardFooter>
       </Card>
     </div>

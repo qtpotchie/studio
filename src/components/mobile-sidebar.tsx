@@ -58,7 +58,7 @@ export default function MobileSidebar() {
         </div>
         <div className="mt-auto border-t p-4 flex items-center justify-between">
           <p className="text-xs text-muted-foreground">
-            Made by: Archie Macahilig
+            Developed by: Archie Macahilig
           </p>
         </div>
       </SheetContent>
