@@ -1,9 +1,10 @@
+
 "use client";
 
 import { ArrowLeft } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle, CardFooter } from '@/components/ui/card';
 import Logo from '@/components/logo';
 
 export default function AboutPage() {
@@ -44,6 +45,9 @@ export default function AboutPage() {
             This application was built to be a Progressive Web App (PWA), which means you can install it on your mobile device or desktop for an app-like experience. Our goal is to make technical knowledge accessible and easy to understand for everyone.
           </p>
         </CardContent>
+        <CardFooter className="p-6 pt-4 text-center text-muted-foreground">
+          <p className="w-full">Made by: Archie Macahilig</p>
+        </CardFooter>
       </Card>
     </div>
   );
