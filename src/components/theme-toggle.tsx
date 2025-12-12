@@ -1,3 +1,4 @@
+
 "use client"
 
 import * as React from "react"
@@ -15,7 +16,7 @@ export function ThemeToggle({ className, ...props }: React.ComponentProps<typeof
 
   return (
     <Button
-      variant="secondary"
+      variant="ghost"
       size="icon"
       onClick={toggleTheme}
       className={className}
