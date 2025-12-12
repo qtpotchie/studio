@@ -5,8 +5,19 @@ import type { Term } from '@/lib/data';
 import { terms } from '@/lib/data';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { ArrowLeft, CalendarDays } from 'lucide-react';
+import { ArrowLeft, CalendarDays, Trash2 } from 'lucide-react';
 import { useRouter } from 'next/navigation';
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog";
 
 type WordHistoryItem = {
   date: string; // YYYY-MM-DD
@@ -34,6 +45,15 @@ export default function WordOfTheDayArchivePage() {
     setIsLoaded(true);
   }, []);
 
+  const clearHistory = () => {
+    try {
+      window.localStorage.removeItem('word_of_the_day_history');
+      setHistory([]);
+    } catch (error) {
+      console.error('Failed to clear word of the day history', error);
+    }
+  };
+
   const getTermById = (id: string): Term | undefined => {
     return terms.find((term) => term.id === id);
   };
@@ -52,10 +72,36 @@ export default function WordOfTheDayArchivePage() {
           <CalendarDays className="mr-2 h-6 w-6 sm:mr-3 sm:h-7 sm:w-7" />
           Word of the Day
         </h1>
-        <Button variant="secondary" size="sm" className="shadow-md" onClick={() => router.back()}>
-          <ArrowLeft className="mr-2 h-4 w-4" />
-          Back
-        </Button>
+        <div className="flex items-center gap-2">
+          <Button variant="secondary" size="sm" className="shadow-md" onClick={() => router.back()}>
+            <ArrowLeft className="mr-2 h-4 w-4" />
+            Back
+          </Button>
+          {isLoaded && history.length > 0 && (
+            <AlertDialog>
+              <AlertDialogTrigger asChild>
+                <Button variant="destructive" size="sm" className="shadow-md">
+                  <Trash2 className="mr-2 h-4 w-4" />
+                  Clear
+                </Button>
+              </AlertDialogTrigger>
+              <AlertDialogContent>
+                <AlertDialogHeader>
+                  <AlertDialogTitle>Are you sure?</AlertDialogTitle>
+                  <AlertDialogDescription>
+                    This will permanently delete your Word of the Day history. This action cannot be undone.
+                  </AlertDialogDescription>
+                </AlertDialogHeader>
+                <AlertDialogFooter>
+                  <AlertDialogCancel>Cancel</AlertDialogCancel>
+                  <AlertDialogAction onClick={clearHistory}>
+                    Yes, clear history
+                  </AlertDialogAction>
+                </AlertDialogFooter>
+              </AlertDialogContent>
+            </AlertDialog>
+          )}
+        </div>
       </div>
 
       {isLoaded && history.length > 0 ? (
