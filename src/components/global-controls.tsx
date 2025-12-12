@@ -4,12 +4,13 @@
 import { Button } from './ui/button';
 import { Menu } from 'lucide-react';
 import { useMobileSidebar } from '@/hooks/use-mobile-sidebar';
+import { ThemeToggle } from './theme-toggle';
 
 export default function GlobalControls() {
   const { onOpen } = useMobileSidebar();
 
   return (
-    <div className="absolute top-4 left-4 right-4 flex justify-start z-10">
+    <div className="absolute top-4 left-4 right-4 flex justify-between items-center z-10">
       <Button 
         variant="secondary" 
         size="icon" 
@@ -19,6 +20,9 @@ export default function GlobalControls() {
         <Menu className="h-6 w-6" />
         <span className="sr-only">Open menu</span>
       </Button>
+      <div className="shadow-md rounded-full">
+        <ThemeToggle />
+      </div>
     </div>
   );
 }
