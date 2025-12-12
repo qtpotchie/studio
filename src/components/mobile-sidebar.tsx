@@ -9,6 +9,7 @@ import { Button } from "./ui/button";
 import { BookOpen, Bookmark, CalendarDays, History, Info } from "lucide-react";
 import Logo from "./logo";
 import { Separator } from "./ui/separator";
+import { ThemeToggle } from "./theme-toggle";
 
 const NavLink = ({ href, icon: Icon, children, onClick }: { href: string, icon: React.ElementType, children: React.ReactNode, onClick: () => void }) => (
   <Button asChild variant="ghost" className="w-full justify-start text-base h-12 gap-4 px-4">
@@ -56,8 +57,11 @@ export default function MobileSidebar() {
             <Separator className="my-2 bg-border/50" />
             <NavLink href="/about" icon={Info} onClick={onClose}>About</NavLink>
         </div>
-        <div className="mt-auto border-t p-4 text-center text-xs text-muted-foreground">
-          Made by: Archie Macahilig
+        <div className="mt-auto border-t p-4 flex items-center justify-between">
+          <p className="text-xs text-muted-foreground">
+            Made by: Archie Macahilig
+          </p>
+          <ThemeToggle />
         </div>
       </SheetContent>
     </Sheet>

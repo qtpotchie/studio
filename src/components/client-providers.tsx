@@ -9,9 +9,16 @@ import SearchDialog from "./search-dialog";
 import { terms } from "@/lib/data";
 import { MobileSidebarProvider } from "@/context/mobile-sidebar-context";
 import MobileSidebar from "./mobile-sidebar";
+import { ThemeProvider } from "next-themes";
 
 export function ClientProviders({ children }: { children: ReactNode }) {
   return (
+    <ThemeProvider
+      attribute="class"
+      defaultTheme="dark"
+      enableSystem
+      disableTransitionOnChange
+    >
       <MobileSidebarProvider>
         <SearchHistoryProvider>
           <BookmarkProvider>
@@ -23,5 +30,6 @@ export function ClientProviders({ children }: { children: ReactNode }) {
           </BookmarkProvider>
         </SearchHistoryProvider>
       </MobileSidebarProvider>
+    </ThemeProvider>
   )
 }
