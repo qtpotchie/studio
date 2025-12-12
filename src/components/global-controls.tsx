@@ -20,9 +20,7 @@ export default function GlobalControls() {
         <Menu className="h-6 w-6" />
         <span className="sr-only">Open menu</span>
       </Button>
-      <div className="shadow-md rounded-full">
-        <ThemeToggle />
-      </div>
+      <ThemeToggle className="h-12 w-12 shadow-md" />
     </div>
   );
 }
