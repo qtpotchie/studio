@@ -45,16 +45,16 @@ export default function Home() {
         <div className="flex-grow flex flex-col justify-center items-center">
             <div className="flex flex-row justify-center items-center gap-2 px-4 w-full max-w-md mx-auto my-6">
             <Button
-                variant="secondary"
-                className="h-12 text-base border-2 border-transparent basis-2/3 shadow-md group"
+                variant="outline"
+                className="h-12 text-base basis-2/3 shadow-md group"
                 onClick={() => setOpen(true)}
             >
                 <Search className="mr-3 h-5 w-5 transition-transform group-hover:animate-search-pulse" />
                 <span>Search</span>
             </Button>
             <Button
-                variant="secondary"
-                className="h-12 text-base px-4 border-2 border-transparent basis-1/3 shadow-md group"
+                variant="outline"
+                className="h-12 text-base basis-1/3 shadow-md group"
                 asChild
             >
                 <Link href="/jargon-explorer">
