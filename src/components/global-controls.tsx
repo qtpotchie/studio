@@ -9,7 +9,7 @@ export default function GlobalControls() {
   const { onOpen } = useMobileSidebar();
 
   return (
-    <div className="absolute top-4 left-4 right-4 flex justify-between z-10">
+    <div className="absolute top-4 left-4 right-4 flex justify-start z-10">
       <Button 
         variant="secondary" 
         size="icon" 
@@ -19,9 +19,6 @@ export default function GlobalControls() {
         <Menu className="h-6 w-6" />
         <span className="sr-only">Open menu</span>
       </Button>
-      <div className="flex items-center gap-2">
-        
-      </div>
     </div>
   );
 }

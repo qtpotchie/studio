@@ -31,22 +31,22 @@ export default function Home() {
       <div className="relative container mx-auto px-4 flex flex-col h-screen py-8">
         <header className="text-center flex flex-col items-center space-y-4 pt-12 flex-shrink-0">
           <GlobalControls />
-          <div className="border rounded-lg p-6 flex flex-col items-center gap-4 bg-card/50">
+          <div className="border rounded-lg p-4 md:p-6 flex flex-col items-center gap-4 bg-card/50">
             <Logo className={cn("w-16 h-16 md:w-24 md:h-24", isAnimating && "animate-rotate-timed")} />
-            <h1 className="text-3xl md:text-5xl font-bold font-headline tracking-tighter">
+            <h1 className="text-4xl md:text-5xl font-bold font-headline tracking-tighter">
               TechTermz
             </h1>
           </div>
-          <p className="text-base md:text-lg text-muted-foreground max-w-md pt-2">
+          <p className="text-base md:text-lg text-muted-foreground max-w-md pt-2 px-4 sm:px-0">
             Search, browse, and master the language of tech. Your go-to dictionary for IT and tech jargon.
           </p>
         </header>
 
         <div className="flex-grow flex flex-col justify-center items-center">
-            <div className="flex justify-center items-center gap-2 px-4 w-full max-w-sm sm:max-w-md mx-auto my-6">
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-2 px-4 w-full max-w-sm sm:max-w-md mx-auto my-6">
             <Button
                 variant="secondary"
-                className="h-12 text-base border-2 border-transparent basis-2/3 shadow-md group"
+                className="h-12 text-base border-2 border-transparent w-full sm:basis-2/3 shadow-md group"
                 onClick={() => setOpen(true)}
             >
                 <Search className="mr-3 h-5 w-5 transition-transform group-hover:animate-search-pulse" />
@@ -54,7 +54,7 @@ export default function Home() {
             </Button>
             <Button
                 variant="secondary"
-                className="h-12 text-base px-4 border-2 border-transparent basis-1/3 shadow-md group"
+                className="h-12 text-base px-4 border-2 border-transparent w-full sm:basis-1/3 shadow-md group"
                 asChild
             >
                 <Link href="/jargon-explorer">

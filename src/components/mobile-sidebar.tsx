@@ -6,12 +6,12 @@ import { useMobileSidebar } from "@/hooks/use-mobile-sidebar";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Button } from "./ui/button";
-import { BookOpen, Bookmark, CalendarDays, History, Info, Layers } from "lucide-react";
+import { BookOpen, Bookmark, CalendarDays, History, Info } from "lucide-react";
 import Logo from "./logo";
 import { Separator } from "./ui/separator";
 
 const NavLink = ({ href, icon: Icon, children, onClick }: { href: string, icon: React.ElementType, children: React.ReactNode, onClick: () => void }) => (
-  <Button asChild variant="ghost" className="w-full justify-start text-sm h-10 gap-3 px-4">
+  <Button asChild variant="ghost" className="w-full justify-start text-base h-12 gap-4 px-4">
     <Link href={href} onClick={onClick}>
       <Icon className="h-5 w-5" />
       {children}
@@ -41,19 +41,19 @@ export default function MobileSidebar() {
             <Link 
               href="/" 
               onClick={onClose} 
-              className="flex flex-col items-center gap-3 p-2 rounded-lg border-2 border-border/50 hover:border-primary/50 transition-colors"
+              className="flex flex-col items-center gap-3 p-4 rounded-lg border-2 border-border/50 hover:border-primary/50 transition-colors"
             >
                 <Logo className="w-12 h-12" />
-                <span className="text-base font-bold">TechTermz</span>
+                <span className="text-lg font-bold">TechTermz</span>
             </Link>
         </div>
-        <div className="flex flex-col gap-1 px-2">
+        <div className="flex flex-col gap-1 px-2 mt-4">
             <NavLink href="/word-of-the-day" icon={CalendarDays} onClick={onClose}>Word of the Day</NavLink>
             <NavLink href="/all-terms" icon={BookOpen} onClick={onClose}>All Terms (A-Z)</NavLink>
-            <Separator className="my-1 bg-border/50" />
+            <Separator className="my-2 bg-border/50" />
             <NavLink href="/history" icon={History} onClick={onClose}>Recent</NavLink>
             <NavLink href="/bookmarks" icon={Bookmark} onClick={onClose}>Saved Words</NavLink>
-            <Separator className="my-1 bg-border/50" />
+            <Separator className="my-2 bg-border/50" />
             <NavLink href="/about" icon={Info} onClick={onClose}>About</NavLink>
         </div>
         <div className="mt-auto border-t p-4 text-center text-xs text-muted-foreground">
