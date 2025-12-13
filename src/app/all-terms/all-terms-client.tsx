@@ -1,7 +1,5 @@
 
 "use client";
-import { useState, useEffect } from 'react';
-import { terms as staticTerms } from '@/lib/data';
 import type { Term } from '@/lib/data';
 import Link from 'next/link';
 
@@ -9,20 +7,7 @@ type GroupedTerms = {
   [key: string]: Term[];
 };
 
-export default function AllTermsClient() {
-  const [terms, setTerms] = useState<Term[]>([]);
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    setTerms(staticTerms);
-    setIsClient(true);
-  }, []);
-
-  if (!isClient) {
-    // Render a loading state or nothing on the server and initial client render
-    return <p>Loading terms...</p>;
-  }
-  
+export default function AllTermsClient({ terms }: { terms: Term[] }) {
   const groupedTerms = terms.reduce((acc, term) => {
     const firstLetter = term.term[0].toUpperCase();
     if (!acc[firstLetter]) {

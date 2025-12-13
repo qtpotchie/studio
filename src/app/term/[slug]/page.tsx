@@ -1,19 +1,13 @@
 
-"use client";
-
 import { terms } from '@/lib/data';
-import { notFound, useRouter } from 'next/navigation';
+import { notFound } from 'next/navigation';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import BookmarkToggle from '@/components/bookmark-toggle';
 import { Separator } from '@/components/ui/separator';
-import { ArrowLeft } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import React from 'react';
+import BackButton from './back-button';
 
 export default function TermPage({ params }: { params: { slug: string } }) {
-  const router = useRouter();
-  const resolvedParams = React.use(params);
-  const term = terms.find((t) => t.slug === resolvedParams.slug);
+  const term = terms.find((t) => t.slug === params.slug);
 
   if (!term) {
     notFound();
@@ -22,10 +16,7 @@ export default function TermPage({ params }: { params: { slug: string } }) {
   return (
     <div className="max-w-4xl mx-auto py-8 px-4">
       <div className="mb-6">
-        <Button variant="secondary" className="shadow-md" onClick={() => router.back()}>
-          <ArrowLeft className="mr-2 h-4 w-4" />
-          Back
-        </Button>
+        <BackButton />
       </div>
       <Card className="relative overflow-hidden">
         <CardHeader>
