@@ -10,6 +10,8 @@ import { terms } from "@/lib/data";
 import { MobileSidebarProvider } from "@/context/mobile-sidebar-context";
 import MobileSidebar from "./mobile-sidebar";
 import { ThemeProvider } from "next-themes";
+import { VoiceSearchProvider } from "@/context/voice-search-context";
+import VoiceSearchDialog from "./voice-search-dialog";
 
 export function ClientProviders({ children }: { children: ReactNode }) {
   return (
@@ -22,11 +24,14 @@ export function ClientProviders({ children }: { children: ReactNode }) {
       <MobileSidebarProvider>
         <SearchHistoryProvider>
           <BookmarkProvider>
+            <VoiceSearchProvider>
               <SearchProvider>
                   {children}
                   <SearchDialog terms={terms} />
+                  <VoiceSearchDialog />
                   <MobileSidebar />
               </SearchProvider>
+            </VoiceSearchProvider>
           </BookmarkProvider>
         </SearchHistoryProvider>
       </MobileSidebarProvider>
