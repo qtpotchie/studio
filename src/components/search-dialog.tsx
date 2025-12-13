@@ -5,7 +5,7 @@ import { useState, useEffect, useMemo, useRef } from "react";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { Search, Mic, ArrowLeft } from "lucide-react";
+import { Search, ArrowLeft } from "lucide-react";
 import { useSearch } from "@/hooks/use-search";
 import type { Term } from "@/lib/data";
 import { useSearchHistory } from "@/context/search-history-context";
@@ -13,7 +13,6 @@ import { ScrollArea } from "./ui/scroll-area";
 import Link from "next/link";
 import { useDebounce } from "@/hooks/use-debounce";
 import { useRouter } from "next/navigation";
-import { useVoiceSearch } from "@/context/voice-search-context";
 
 export default function SearchDialog({ terms }: { terms: Term[] }) {
   const { isOpen, setOpen } = useSearch();
@@ -22,7 +21,6 @@ export default function SearchDialog({ terms }: { terms: Term[] }) {
   const { addSearchQuery } = useSearchHistory();
   const inputRef = useRef<HTMLInputElement>(null);
   const router = useRouter();
-  const { setOpen: setVoiceSearchOpen, setOnResult } = useVoiceSearch();
 
   useEffect(() => {
     if (isOpen) {
@@ -61,14 +59,6 @@ export default function SearchDialog({ terms }: { terms: Term[] }) {
       }
     }
   };
-  
-  const handleVoiceSearch = () => {
-    setOnResult((result) => {
-      setSearchQuery(result);
-    });
-    setVoiceSearchOpen(true);
-  };
-
 
   return (
     <Dialog open={isOpen} onOpenChange={setOpen}>
@@ -91,21 +81,11 @@ export default function SearchDialog({ terms }: { terms: Term[] }) {
               ref={inputRef}
               type="search"
               placeholder={"Search for a term..."}
-              className="pl-10 pr-12 text-lg h-12"
+              className="pl-10 text-lg h-12"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               onKeyDown={handleKeyDown}
             />
-             <Button
-                type="button"
-                variant="ghost"
-                size="icon"
-                className="absolute right-1 top-1/2 -translate-y-1/2 h-9 w-9"
-                onClick={handleVoiceSearch}
-              >
-                <Mic className="h-5 w-5" />
-                <span className="sr-only">Voice Search</span>
-            </Button>
           </div>
         </div>
         <ScrollArea className="flex-1">
