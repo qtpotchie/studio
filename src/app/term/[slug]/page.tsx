@@ -6,6 +6,12 @@ import BookmarkToggle from '@/components/bookmark-toggle';
 import { Separator } from '@/components/ui/separator';
 import BackButton from './back-button';
 
+export async function generateStaticParams() {
+  return terms.map((term) => ({
+    slug: term.slug,
+  }));
+}
+
 export default function TermPage({ params }: { params: { slug: string } }) {
   const term = terms.find((t) => t.slug === params.slug);
 
