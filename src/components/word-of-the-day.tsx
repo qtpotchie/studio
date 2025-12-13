@@ -1,25 +1,19 @@
 
-"use client";
-
-import { useState, useEffect } from 'react';
 import type { Term } from '@/lib/data';
 import Link from 'next/link';
 import { Card, CardContent } from '@/components/ui/card';
 import { ArrowRight } from 'lucide-react';
-import { useWordOfTheDay } from '@/hooks/use-word-of-the-day';
+import { getWordOfTheDay } from '@/lib/word-of-the-day';
 import { Separator } from './ui/separator';
 
-export default function WordOfTheDay({ terms }: { terms: Term[] }) {
-  const { word } = useWordOfTheDay(terms);
-  const [currentDate, setCurrentDate] = useState('');
-
-  useEffect(() => {
-    setCurrentDate(new Date().toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric',
-    }));
-  }, []);
+export default async function WordOfTheDay() {
+  const word = await getWordOfTheDay();
+  
+  const currentDate = new Date().toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
 
   if (!word) {
     return null;
