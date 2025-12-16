@@ -1,16 +1,11 @@
 export async function generateStaticParams() {
-  return [{ slug: "sample" }];
+  return [
+    { slug: "first-term" },
+    { slug: "second-term" },
+    // …other slugs you want to statically generate
+  ];
 }
 
-export default function TermPage({
-  params,
-}: {
-  params: { slug: string };
-}) {
-  return (
-    <main style={{ padding: 40 }}>
-      <h1>Term Page</h1>
-      <p>Slug: {params.slug}</p>
-    </main>
-  );
+export default function TermPage({ params }) {
+  return <div>Term: {params.slug}</div>;
 }
